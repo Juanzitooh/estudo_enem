@@ -23,6 +23,8 @@ Há um PDF oficial em `sources/inep_matriz_referencia.pdf` que deve ser a fonte 
 - Evitar textos longos: preferir tópicos.
 - Questões devem ser originais (não copiar enunciados reais).
 - Seguir as instruções globais do Codex (AGENTS) para qualidade e versionamento.
+- Em conteúdo em português, usar ortografia e acentuação corretas (UTF-8).
+- Não remover acentos para ASCII em materiais de estudo, resumos, questões e planos.
 
 ## Integração de contexto
 - Ao iniciar uma sessão de estudo, considerar `prompts/contexto_sessao.md` quando existir.
