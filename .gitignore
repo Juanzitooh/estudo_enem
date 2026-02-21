@@ -1,2 +1,5 @@
 # Dados pessoais de sessão (não versionar)
 prompts/contexto_sessao.md
+
+# Ambiente local usado pelo conversor MD -> PDF
+.venv_mdpdf/

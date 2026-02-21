@@ -130,6 +130,28 @@ Vou enviar meu resultado de simulado.
 Classifique os erros por habilidade da matriz e atualize plano/plano_semanal.md e plano/tracker.md.
 ```
 
+## Conversao MD para PDF (Prince)
+
+Se a extensao do VSCode falhar na exportacao, use o conversor do projeto:
+
+```bash
+scripts/md_to_pdf_prince.sh <arquivo.md> [arquivo.pdf]
+```
+
+Exemplo com o arquivo de teste:
+
+```bash
+scripts/md_to_pdf_prince.sh teste_aula_habilidade_base_h18.md
+```
+
+Saida esperada:
+- `teste_aula_habilidade_base_h18.pdf`
+
+Atalho no VSCode (sem extensao):
+1. `Ctrl+Shift+P`
+2. `Tasks: Run Task`
+3. `MD -> PDF (Prince) arquivo atual`
+
 ## Fluxo recomendado (simples)
 
 1. Planejar a semana em `plano/plano_semanal.md`.
