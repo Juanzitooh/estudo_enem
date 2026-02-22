@@ -22,6 +22,9 @@ if [[ ! -f "$INPUT_MD" ]]; then
   echo "Erro: arquivo nao encontrado: $INPUT_MD" >&2
   exit 1
 fi
+INPUT_ABS="$(realpath "$INPUT_MD")"
+INPUT_DIR="$(dirname "$INPUT_ABS")"
+INPUT_BASEURL="file://$INPUT_DIR/"
 
 if [[ $# -ge 2 ]]; then
   OUTPUT_PDF="$2"
@@ -94,6 +97,7 @@ html_doc = f"""<!doctype html>
       font-size: 11pt;
       line-height: 1.5;
       color: #1f1f1f;
+      overflow-wrap: break-word;
     }}
     h1, h2, h3 {{ line-height: 1.2; margin: 1.2em 0 0.5em; }}
     h1 {{ font-size: 24pt; }}
@@ -139,6 +143,22 @@ html_doc = f"""<!doctype html>
       color: #444;
       background: #fafafa;
     }}
+    img {{
+      display: block;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      margin: 0.9em auto;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }}
+    p > img:only-child {{
+      margin: 1em auto;
+    }}
+    figure {{
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }}
     hr {{
       border: 0;
       border-top: 1px solid #ddd;
@@ -155,6 +175,6 @@ html_doc = f"""<!doctype html>
 output_html.write_text(html_doc, encoding="utf-8")
 PY
 
-"$PRINCE_BIN" "$TMP_HTML" --javascript -o "$OUTPUT_PDF"
+"$PRINCE_BIN" "$TMP_HTML" --baseurl "$INPUT_BASEURL" --javascript -o "$OUTPUT_PDF"
 
 echo "PDF gerado: $OUTPUT_PDF"
