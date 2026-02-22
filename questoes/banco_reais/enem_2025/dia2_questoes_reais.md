@@ -1,0 +1,2126 @@
+# Banco ENEM 2025 — Dia 2
+
+Gerado automaticamente a partir do PDF oficial e gabarito oficial.
+
+Total de blocos extraídos: **90**
+
+## Questão 091
+
+- Área: Ciências da Natureza
+- Gabarito: C
+
+TEXTO I
+As mariposas
+As mariposa, quando chega o frio
+Fica dando volta em volta da lâmpida pra se esquentá. [sic]
+BARBOSA, A. Reviva: Adoniran Barbosa.
+São Paulo: Som Livre, 2002 (fragmento).
+TEXTO II
+As mariposas se aproximam das lâmpadas atraídas pela luz,
+pois, sendo basicamente criaturas noturnas, estão adaptadas
+a seguir o brilho da lua, em um processo conhecido como
+orientação transversal. Assim, o que o sambista Adoniran
+Barbosa, no Texto I, descreve não é a causa, mas sim uma das
+consequências possíveis dessa aproximação. De fato, o calor
+gerado pelas lâmpadas, sobretudo as incandescentes, pode
+aquecer as mariposas.
+HERTZBERG, R. Por que as mariposas são tão atraídas por luzes fortes?
+National Geographic, nov. 2020 (adaptado).
+Nesse contexto, o processo de transferência de calor para as
+mariposas que independe da presença de fluidos é a
+- A) reflexão.
+- B) refração.
+- C) irradiação.
+- D) dispersão.
+- E) convecção.
+
+## Questão 092
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+Os sapinhos-ponta-de-flecha constituem um grupo de
+espécies encontradas na América Central e do Sul. Seus venenos
+são obtidos por meio do consumo de algumas formigas e cupins
+que se alimentam de plantas que contêm esses venenos. Esses
+anfíbios são usados para envenenar as flechas das zarabatanas
+dos caçadores nativos. Quando capturados e criados em
+condições artificiais, ou quando nascidos em cativeiro, não
+são tóxicos.
+BADIO, B. et al. Epibatidine: Discovery and Definition as a Potent
+Analgesic and Nicotinic Agonist. Med. Chem. Res.,
+n. 4, 1994 (adaptado).
+A perda da capacidade de se obter a toxina nos nascidos em
+cativeiro é causada pela
+- A) diferença de umidade entre os ambientes.
+- B) ausência de alimentação natural.
+- C) adaptação ao novo ambiente.
+- D) mudança de comportamento.
+- E) variabilidade genética.
+
+## Questão 093
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+A produção de vacinas exige uma sequência de procedimentos,
+além do cumprimento estrito de verificações de segurança.
+No esquema, estão demonstradas as etapas básicas realizadas
+para a fabricação de uma vacina utilizando a tecnologia tradicional
+e o efeito dela no organismo.
+O antígeno utilizado na vacina causa um efeito protetor contra
+o vírus porque
+- A) mata o vírus pela ligação.
+- B) aglutina o vírus por associação.
+- C) contém imunoglobulinas de defesa.
+- D) induz a produção de proteínas neutralizadoras.
+- E) mantém a quantidade de anticorpos preexistentes.
+
+## Questão 094
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+O bioma Cerrado é caracterizado por apresentar ampla e
+natural diversidade de espécies vegetais. Nos últimos tempos,
+o homem vem modificando esse cenário pela inserção de
+plantas exóticas nesse ambiente. Exemplo disso é o cultivo do
+capim-gordura, nativo do continente africano e utilizado nesse
+tipo de ecossistema como forma de pastagem. É importante
+ressaltar que essa espécie vegetal é capaz de se espalhar por
+grandes áreas, devido à sua agressividade e poder competitivo.
+CARLOS JR., L. A.; BARBOSA, N. P. U.; FERNANDES, G. W.
+O capim-gordura e as invasões no Cerrado brasileiro.
+Jornal do Biólogo, mar.-jun. 2008 (adaptado).
+Em longo prazo, essa ação do homem pode gerar qual
+consequência?
+- A) Diversificar nichos ecológicos.
+- B) Assorear as nascentes do bioma.
+- C) Dificultar a infiltração de água na terra.
+- D) Diminuir as espécies nativas do bioma.
+- E) Contribuir com a redução das queimadas.
+
+## Questão 095
+
+- Área: Ciências da Natureza
+- Gabarito: C
+
+O monstro de gila, um lagarto encontrado em um deserto dos
+Estados Unidos, apresenta adaptações à falta de alimento nesse
+ambiente. Esse lagarto possui um hormônio que controla os níveis
+de açúcar em seu próprio sangue. Foi observado que esse hormônio
+também controla os níveis de açúcar no sangue de pessoas diabéticas.
+RUSSELL, C. Ozempic e outros remédios inspirados em veneno de animais.
+Disponível em: www.bbc.com. Acesso em: 6 dez. 2024 (adaptado).
+Considerando que animais de um mesmo grupo taxonômico
+podem apresentar características adaptativas semelhantes em
+ambientes similares, onde seria mais provável encontrar lagartos
+com essas características no território brasileiro?
+- A) Cerrado.
+- B) Pampas.
+- C) Caatinga.
+- D) Restinga.
+- E) Pantanal.
+
+## Questão 096
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+Existe um processo de purificação de água em que são
+removidos os sais dissolvidos. A água que passa por esse processo
+é muito utilizada em laboratórios de química, em indústrias
+(como solvente), em baterias de carros etc. Entretanto, esse
+tipo de água não é adequado para ingestão, pois pode causar
+problemas de saúde, como carência iônica e diarreia.
+Essa água é chamada de
+- A) dura.
+- B) pesada.
+- C) sanitária.
+- D) destilada.
+- E) oxigenada.
+
+## Questão 097
+
+- Área: Ciências da Natureza
+- Gabarito: A
+
+Por que os olhos ficam vermelhos
+em algumas fotografias?
+Em fotos tiradas com câmeras fotográficas antigas, por
+vezes as pessoas aparecem com os olhos vermelhos. Isso
+ocorre porque a luz do flash da câmera incide diretamente
+no globo ocular, sendo refletida por uma região repleta de
+vasos sanguíneos.
+Disponível em: www.uol.com.br. Acesso em: 14 jun. 2017 (adaptado).
+Esse efeito é mais comum à noite ou em lugares pouco iluminados
+porque, com a pupila
+- A) dilatada, chega mais luz à retina.
+- B) retraída, chega mais luz vermelha à retina.
+- C) retraída, chega mais luz vermelha aos bastonetes.
+- D) retraída, chegam menos luzes azul e verde aos cones.
+- E) dilatada, chegam menos luzes azul e verde aos bastonetes.
+
+## Questão 098
+
+- Área: Ciências da Natureza
+- Gabarito: E
+
+O sashimi (filé de peixe cru) de baiacu é uma iguaria muito
+apreciada no Japão. Entretanto, sua ingestão pode causar a
+morte por parada respiratória, pois esse peixe contém uma
+potente neurotoxina termoestável, a tetrodotoxina, que é
+produzida e armazenada nas gônadas e vísceras.
+Que ação poderia evitar essa intoxicação?
+- A) Criar os peixes em cativeiro.
+- B) Realizar a pesca com redes.
+- C) Consumir peixes cozidos ou fritos.
+- D) Preparar o peixe em condições adequadas de higiene.
+- E) Manusear o peixe sem provocar o rompimento dos órgãos
+internos.
+
+## Questão 099
+
+- Área: Ciências da Natureza
+- Gabarito: A
+
+A deficiência da enzima lipase ácida causa uma doença em
+que o portador apresenta células que não degradam colesterol
+esterificado nem triglicerídeos, resultando no depósito desses
+compostos em diversos órgãos, principalmente no fígado.
+ANDERSON, R. A. et al. In Situ Localization of the
+Genetic Locus Encoding [...]. Genomics,
+n. 1, jan. 1993 (adaptado).
+Essa doença resulta da insuficiência funcional de qual estrutura
+celular?
+- A) Lisossomos.
+- B) Ribossomos.
+- C) Mitocôndrias.
+- D) Peroxissomos.
+- E) Retículo endoplasmático liso.
+
+## Questão 100
+
+- Área: Ciências da Natureza
+- Gabarito: A
+
+A quantidade de CO2 na atmosfera da Terra aumentou em
+50%, e a temperatura está agora cerca de 1,2 °C mais quente
+em comparação ao século XIX. O ritmo de aumento da temperatura
+precisa diminuir se quisermos evitar as piores consequências das
+mudanças climáticas. Cientistas afirmam que o aquecimento global
+precisa ser mantido em 1,5 °C até o ano 2100. No entanto, a menos
+que outras ações sejam tomadas, o planeta ainda pode aquecer
+mais de 2 °C até o final deste século. Na prática, os países precisam
+enfrentar as mudanças climáticas com ações mitigadoras, que
+reduzam tanto as emissões quanto os níveis de CO2 na atmosfera.
+Um guia rápido para entender as mudanças climáticas.
+Disponível em: www.bbc.com. Acesso em: 6 dez. 2021 (adaptado).
+Qual ação mitigadora auxilia na remoção desse gás presente na
+atmosfera, reduzindo seus níveis?
+- A) Plantar mais árvores.
+- B) Instalar mais usinas eólicas.
+- C) Ampliar o uso de energia solar.
+- D) Manter os combustíveis fósseis no solo.
+- E) Produzir menos resíduos sólidos urbanos.
+
+## Questão 101
+
+- Área: Ciências da Natureza
+- Gabarito: A
+
+A icterícia é uma doença que acomete recém-nascidos e
+pode ser tratada com um método de fototerapia conhecido como
+banho de luz, que consiste na exposição do recém-nascido a uma
+fonte luminosa equipada com LEDs azuis. Para o monitoramento
+da dosagem dessa radiação, é utilizada a resposta óptica de um
+sensor constituído de materiais orgânicos que luminescem quando
+expostos à luz azul. Com o passar do tempo, essa radiação oxida os
+materiais do sensor, alterando sua coloração de vermelho-laranja
+para verde, o que indica o final do tratamento.
+O gráfico apresenta o espectro de fotoluminescência do sensor
+em função do comprimento de onda da luz emitida no início do
+tratamento, quando o sensor, colado na fralda do bebê (Figura 1),
+luminesce na região do vermelho-laranja (∼600 nm). A Figura 2
+apresenta a evolução da coloração do sensor, mostrando que a
+frequência da luz emitida por ele aumenta em função do tempo de
+exposição à luz azul.
+SILVA, M. M. et al. Fabricação de sensor orgânico flexível para aplicação
+em terapia com luz azul. Tecnol. Metal. Mater. Miner.,
+n. 3, jul.-set. 2011 (adaptado).
+P1_2_Dia_CNT_REG_5_Amarelo.indd 4
+Os espectros de fotoluminescência do sensor no início e no final
+do tratamento estão esboçados no gráfico:
+A
+B
+C
+D
+E
+
+## Questão 102
+
+- Área: Ciências da Natureza
+- Gabarito: E
+
+A figura apresenta a herança genética de uma característica
+a partir do cruzamento de insetos de uma mesma espécie.
+Qual alternativa representa a proporção fenotípica da prole
+resultante do cruzamento entre indivíduos da primeira geração?
+A
+B
+C
+D
+E
+
+## Questão 103
+
+- Área: Ciências da Natureza
+- Gabarito: C
+
+Para transportar uma caixa do primeiro para o segundo
+piso de uma construção, um trabalhador precisará arrasta-lá
+sobre um plano inclinado. O trabalhador começa a arrastar a
+caixa no primeiro piso, exercendo sobre ela uma força de grande
+intensidade, paralela ao seu deslocamento. Na medida em que a
+caixa sobe o plano inclinado, ele decide reduzir a força sobre ela,
+arrastando-a lentamente até chegar ao segundo piso. Considere
+que a caixa permanece em movimento nos encontros dos pisos
+com o plano inclinado, e que a rugosidade entre as superfícies
+permanece a mesma durante todo o percurso.
+O comportamento da força de atrito entre a caixa e o chão no
+plano inclinado é representado em:
+A
+B
+C
+D
+E
+
+## Questão 104
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+A Figura 1 apresenta o esquema de um tubo de imagem em que
+um filamento, na posição A, libera elétrons por efeito termiônico.
+Esses elétrons formam um feixe estreito, que é acelerado por
+campos elétricos em direção à parte interna da tela. Nesse
+caminho, o feixe de elétrons passa por outro campo elétrico, na
+região B, atingindo, em seguida, a parte interna da tela do tubo,
+a qual é recoberta por um material que emite luz ao receber o
+impacto dos elétrons.
+Na Figura 2, a carga negativa representa o feixe de elétrons
+que é acelerado e, posteriormente, atinge um ponto da tela.
+O campo elétrico na região B apresenta a seguinte configuração:
+Figura 2
+Grupo de Reelaboração do Ensino de Física. Física 3:
+eletromagnetismo. São Paulo: Edusp, 2000 (adaptado).
+Nessa situação, qual ponto da tela será atingido pelo feixe de
+elétrons?
+A1
+B2
+C3
+D4
+E5
+P1_2_Dia_CNT_REG_5_Amarelo.indd 6
+
+## Questão 105
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+A tirinha ilustra um processo físico em que uma onda sonora,
+produzida pela Mônica, causa a quebra das taças de cristal.
+O fenômeno ondulatório que provoca a quebra das taças só é
+possível em razão de uma característica da voz produzida pela
+Mônica naquele momento, que, diferentemente do que sugere
+a tirinha, não está relacionada à sua intensidade.
+Disponível em: https://artedafisicapibid.blogspot.com.
+Acesso em: 23 nov. 2021 (adaptado).
+Esse fenômeno e a característica associada à voz da Mônica
+são, respectivamente,
+- A) reflexão e comprimento de onda.
+- B) ressonância e frequência.
+- C) interferência e velocidade.
+- D) ressonância e timbre.
+- E) reflexão e amplitude.
+
+## Questão 106
+
+- Área: Ciências da Natureza
+- Gabarito: C
+
+Em uma aula prática de química orgânica, um professor
+identificou os frascos de várias substâncias apenas por suas
+fórmulas moleculares. Em seguida, apresentou a representação
+tridimensional da molécula do borneol, um álcool secundário,
+conforme a figura. Ele explicou que, quando oxidado, o borneol
+dá origem à cânfora, uma cetona usada desde a Antiguidade
+como incenso e no preparo de medicamentos. Finalmente, o
+professor solicitou que os alunos identificassem o frasco contendo
+a substância cânfora.
+Borneol
+SANTOS, A. P. B. et al. Oxidação do borneol à cânfora com água sanitária:
+um experimento simples de baixo custo e limpo.
+Química Nova, n. 6, 2009 (adaptado).
+O frasco contendo cânfora apresenta a fórmula molecular:
+- A) C9H16O
+- B) C9H17O
+- C) C10H16O
+- D) C10H16O2
+- E) C10H18O2
+
+## Questão 107
+
+- Área: Ciências da Natureza
+- Gabarito: E
+
+As usinas termonucleares são aquelas que produzem energia elétrica a partir da geração de energia térmica proveniente das
+reações nucleares. Normalmente, essas usinas funcionam por meio de dois circuitos, denominados circuito primário (vaso de pressão,
+pressurizador e bomba) e circuito secundário (gerador de vapor, turbina, condensador, tanque de alimentação e bombas), além de
+um sistema de água de refrigeração, formado por uma bomba ligada a uma fonte hídrica natural.
+Durante a operação da usina, se o sistema de água de refrigeração funcionar de forma ineficiente pode causar poluição
+térmica, comprometendo a vida no ecossistema aquático.
+Para o ecossistema aquático, a ineficiência do sistema de água de refrigeração tem como consequência a
+- A) diminuição do pH.
+- B) liberação de gases poluentes.
+- C) contaminação por combustíveis.
+- D) liberação de elementos radioativos.
+- E) diminuição da solubilidade do gás oxigênio.
+
+## Questão 108
+
+- Área: Ciências da Natureza
+- Gabarito: A
+
+No início do século XX, as fórmulas das substâncias eram representadas de modo diferente do atual. A figura apresenta uma
+fotografia bem antiga (1909) que registra uma aula de química ministrada em um colégio em Santos (SP). Um olhar mais atento
+permite identificar como os compostos químicos eram representados.
+O nitrogênio era chamado de azoto e representado pelo símbolo Az. Vê-se na lousa a equação representativa da adição do
+oxigênio atômico (O) ao monóxido de nitrogênio (AzO) com a formação de dióxido de nitrogênio (AzO2). Analogamente, o nitrato
+de sódio era representado por NaAzO3.
+Em 1909, as representações das substâncias ácido nítrico e cloreto de cálcio, tendo por base essas informações e seguindo a
+mesma lógica, seriam, respectivamente:
+- A) HAzO3 e CaCl2
+- B) HAz3O e Ca2Cl
+- C) H3AzO4 e CaCl
+- D) HAz3O e KCl2
+- E) HAzO2 e KCl
+P1_2_Dia_CNT_REG_5_Amarelo.indd 7
+Disponível em: www.eletronuclear.gov.br. Acesso em: 29 nov. 2021 (adaptado).
+Disponível em: www.novomilenio.inf.br. Acesso em: 29 ago. 2014 (adaptado).
+
+## Questão 109
+
+- Área: Ciências da Natureza
+- Gabarito: E
+
+O fruto do cajueiro é um aquênio repleto de um líquido
+escuro, quase preto, cáustico e inflamável. Esse líquido da
+casca da castanha do caju (LCC) representa aproximadamente
+25% da massa da castanha e é um subproduto de agronegócio
+do caju. Quando submetido a altas temperaturas, o ácido
+anacárdico presente no LCC é convertido a cardanol, que recebe
+a denominação de LCC técnico, conforme o esquema:
+MAZZETTO, S. E.; LOMONACO, D.; MELE, G. Óleo da castanha de caju:
+oportunidades e desafios no contexto do desenvolvimento e
+sustentabilidade industrial. Química Nova, n. 3, 2009 (adaptado).
+O LCC técnico é produzido por meio de uma reação orgânica
+do tipo
+- A) hidrólise.
+- B) fenilação.
+- C) esterificação.
+- D) hidrogenação.
+- E) descarboxilação.
+
+## Questão 110
+
+- Área: Ciências da Natureza
+- Gabarito: E
+
+A química nuclear é uma importante ferramenta
+na produção de substâncias utilizadas na área da saúde
+humana. A radiação emitida pelo cobalto-60 é utilizada na
+medicina como ferramenta de diagnóstico e no tratamento
+do câncer. No entanto, esse radioisótopo tem um tempo de
+armazenamento limitado, pois seu tempo de meia-vida é
+de 5,3 anos. Considere um frasco com uma amostra contendo
+2,00 mg de cobalto-60, armazenado durante um período
+de 26,5 anos.
+A massa de cobalto-60, em miligrama, que restará ao final
+desse tempo é mais próxima de
+- A) 2,00 mg.
+- B) 1,00 mg.
+- C) 0,40 mg.
+- D) 0,13 mg.
+- E) 0,06 mg.
+P1_2_Dia_CNT_REG_5_Amarelo.indd 8
+
+## Questão 111
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+O esquema apresenta as etapas do processo de biodigestão,
+uma forma de dar um destino sustentável a excrementos animais
+e restos de comida produzidos em áreas de criação de gado e
+porcos confinados.
+Disponível em: www.engquimicasantossp.com.br.
+Acesso em: 11 fev. 2015 (adaptado).
+Dar destino sustentável às sobras, conforme apresentado na
+etapa 4, ajuda a evitar a
+- A) bioacumulação de toxinas em plantas.
+- B) eutrofização dos corpos de água.
+- C) destruição da camada de ozônio.
+- D) ocorrência de inversão térmica.
+- E) produção de chuva ácida.
+
+## Questão 112
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+Golden Rice, ou arroz dourado, é uma variedade de arroz
+enriquecida em betacaroteno, precursor da vitamina A.
+Foi desenvolvida para ajudar a combater a doença decorrente
+da deficiência dessa vitamina. Para a obtenção dessa variedade
+de arroz, foram utilizados métodos de engenharia genética.
+BORÉM, A.; SANTOS, F. R. Entendendo a biotecnologia.
+Viçosa: UFV, 2008 (adaptado).
+Esse alimento contribui para diminuir a carência associada a
+qual doença?
+- A) Hemofilia.
+- B) Escorbuto.
+- C) Raquitismo.
+- D) Cegueira noturna.
+- E) Anemia perniciosa.
+
+## Questão 113
+
+- Área: Ciências da Natureza
+- Gabarito: E
+
+Em sua maioria, os equipamentos eletrônicos domésticos
+demandam baixa potência elétrica em corrente contínua.
+Para alimentá-los, uma fonte externa ou embutida transforma
+a corrente alternada em corrente contínua de baixa tensão.
+Entretanto, cada equipamento tem suas especificidades, e muitas
+vezes não é possível simplesmente trocar essas fontes sem levar
+em conta a tensão, a corrente ou a potência elétrica de saída.
+Considere um equipamento de resistência elétrica RC que
+funciona corretamente apenas em um dado valor de tensão.
+Porém, a única fonte de alimentação disponível fornece uma
+tensão 20% superior à tensão recomendada. Para adaptar essa
+fonte ao aparelho, a associação de um resistor de proteção RP,
+de potência adequada, se faz necessária.
+A configuração adequada do circuito e o valor do resistor de
+proteção, em relação ao valor da resistência do equipamento, são:
+A
+B
+I 
+
+I0 
+C
+D
+E
+
+## Questão 114
+
+- Área: Ciências da Natureza
+- Gabarito: E
+
+O Brasil é o maior produtor mundial de nióbio (massa
+molar = 93 g mol −1), metal utilizado na fabricação de
+vários tipos de aço: automotivos, estruturais e inoxidáveis.
+O processo utilizado na produção do nióbio é a redução
+aluminotérmica de Nb2O5 com excesso de 10% de Al (massa
+molar = 27 g mol −1), em relação à quantidade estequiométrica
+da reação, representada pela equação química:
+3 Nb2O5 (s) + 10 Al (s) → 6 Nb (s) + 5 Al2O3 (s)
+Uma engenheira metalúrgica estimou a massa de alumínio
+necessária para produzir 9,3 kg de nióbio, nas condições descritas,
+para a produção de um lote de peças de aço encomendado por
+uma indústria, considerando um rendimento de 100%.
+Disponível em: www.cbmm.com.br. Acesso em: 17 out. 2015 (adaptado).
+A massa de alumínio, em quilograma, estimada pela engenheira
+é mais próxima de
+- A) 2,7 kg.
+- B) 3,0 kg.
+- C) 4,1 kg.
+- D) 4,5 kg.
+- E) 5,0 kg.
+
+## Questão 115
+
+- Área: Ciências da Natureza
+- Gabarito: Anulado
+
+O nível sonoro, em decibel (dB), é calculado pela expressão:
+n  10 log10
+Uma conversa normal entre duas pessoas gera sons de
+níveis sonoros entre 50 e 60 dB, enquanto pessoas gritando
+podem gerar sons de níveis superiores a 100 dB. Supondo que,
+no centro de um estádio de futebol, foram realizadas medidas
+para avaliar o ruído médio de uma pessoa gritando a palavra
+“gol” em diferentes posições das arquibancadas. O valor médio
+obtido, considerando um grande número de medidas, foi de
+100 dB. Com esse dado, estimou-se o ruído sonoro produzido por
+10 000 pessoas, distribuídas aleatoriamente nas arquibancadas,
+enquanto gritavam, simultaneamente, a palavra “gol”.
+O valor médio estimado para o ruído produzido por essas
+pessoas, na posição central desse estádio hipotético, foi de
+- A) 60 dB.
+- B) 104 dB.
+- C) 140 dB.
+- D) 400 dB.
+- E) 800 dB.
+
+## Questão 116
+
+- Área: Ciências da Natureza
+- Gabarito: A
+
+O despejo acidental de óleo nos oceanos tem ocasionado
+incontáveis prejuízos à vida marinha e à economia de regiões
+costeiras. Métodos tradicionais de tratamento do despejo geram
+resíduos de difícil descarte e nem sempre são eficazes. Por isso,
+pesquisadores desenvolveram um filtro capaz de separar óleo
+e água. O dispositivo é montado sobre uma malha de aço com
+uma sequência de camadas. A primeira camada é formada
+por um polímero de carga positiva, a segunda é composta por
+nanopartículas de sílica (SiO2), a terceira é formada pelo mesmo
+polímero e a última é um surfactante, conforme apresentado
+na figura.
+Representação esquemática do dispositivo
+BROWN, P. S.; BHUSHAN, B. Mechanically durable, superoleophobic
+coatings prepared by layer-by-layer technique for anti-smudge
+and oil-water separation. Scientific Reports,
+v. 5, mar. 2015 (adaptado).
+Na utilização desse dispositivo, a retenção do óleo ocorre
+- A) no surfactante.
+- B) na camada superior de polímero.
+- C) nas nanopartículas de sílica.
+- D) na camada inferior de polímero.
+- E) na malha de aço.
+
+## Questão 117
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+Alguns hormônios sexuais têm ganhado notável atenção nos
+últimos anos por suas concentrações cada vez maiores no solo e
+na água em todo o mundo. O motivo da preocupação é porque,
+em níveis poluentes, eles têm sido associados ao câncer de mama
+e ao câncer de próstata, além de perturbarem a fisiologia dos
+peixes, podendo, ainda, afetarem o desenvolvimento reprodutivo
+de animais domésticos e selvagens. Assim, o descarte inadequado
+desses hormônios representa uma séria ameaça ao solo, plantas,
+recursos hídricos e humanos. De baixa polaridade, eles apresentam
+uma solubilidade pequena e variável em água, dependendo dos
+grupos presentes em suas estruturas, representando um grande
+risco para os ambientes aquáticos. As figuras a seguir apresentam
+as estruturas de alguns desses hormônios.
+MUHAMMAD, A. et al. Environmental Impact of Estrogens
+on Human, Animal and Plant Life: a Critical Review.
+Environment International, n. 99, 2017 (adaptado).
+Do ponto de vista das interações químicas, qual desses hormônios
+apresenta maior solubilidade em ambientes aquáticos?
+- A) Estradiol.
+- B) Estriol.
+- C) Estrona.
+- D) Novestrol.
+- E) Noretindrona.
+
+## Questão 118
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+A figura ilustra as informações contidas no manual de um
+sistema de alarme que utiliza transmissores e receptores de
+radiação eletromagnética para a detecção de movimento.
+O receptor é regulado pelo tempo de resposta, que corresponde ao
+intervalo de tempo necessário para o corpo do invasor atravessar
+completamente o feixe, de diâmetro d = 15 cm. Considere que a
+menor porção do corpo de um invasor é a sua posição de perfil,
+cuja espessura típica é 20 cm. São indicados cinco possíveis
+movimentos de um invasor e suas velocidades típicas, que devem
+ser observadas para a escolha do tempo de resposta.
+Manual de referência e instalação: sensor de barreira ativo.
+Disponível em: cs.ind.br. Acesso em: 2 dez. 2021 (adaptado).
+Nesse sistema, o menor tempo de resposta, em milissegundo,
+que garante a detecção de um possível invasor é mais próximo de
+- A) 30 ms.
+- B) 70 ms.
+- C) 300 ms.
+- D) 400 ms.
+- E) 700 ms.
+
+## Questão 119
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+A dimetilamina é uma substância de elevada toxidez que
+entra em ebulição a 7 °C. Na madrugada de um dia frio, essa
+substância se espalhou por uma rodovia após um acidente de
+trânsito envolvendo um caminhão que transportava esse produto.
+Para minimizar a agressão ao meio ambiente, bem como evitar
+a evaporação da dimetilamina com a elevação da temperatura
+ao longo do dia, um químico considerou o uso de algumas
+substâncias ou misturas como água, vinagre, óleo de soja, sal
+de cozinha e bicarbonato de sódio.
+Dentre as opções apresentadas, o tratamento correto para
+minimizar esse problema é usar
+- A) água.
+- B) vinagre.
+- C) óleo de soja.
+- D) sal de cozinha.
+- E) bicarbonato de sódio.
+
+## Questão 120
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+O aquecimento em fogões por indução utiliza bobinas
+para produzir um campo magnético variável. Essa bobina se
+localiza abaixo do vidro cerâmico sobre o qual a panela se apoia.
+O mecanismo aquece apenas a panela que se encontra na zona
+de cozimento, o que é uma das principais vantagens em relação
+ao uso do fogão a gás ou de resistência elétrica.
+PEREIRA, A. B. et al. Fogões de indução: montagem e testes de um circuito
+disponível. Disponível em: https://publicacoes.fatecsertaozinho.edu.br.
+Acesso em: 21 maio 2025 (adaptado).
+O uso do campo magnético variável tem a finalidade de
+- A) imantar o material da panela por indução.
+- B) movimentar os átomos de ferro concentrados no fundo da panela.
+- C) emitir radiação eletromagnética, aquecendo a panela através
+do vidro cerâmico.
+- D) induzir corrente elétrica na parte inferior da panela, aquecendo-a
+por efeito Joule.
+- E) gerar um fluxo de corrente de convecção no ar contido entre
+a região da bobina e o vidro cerâmico.
+
+## Questão 121
+
+- Área: Ciências da Natureza
+- Gabarito: Anulado
+
+Plantas e algas realizam fotossíntese oxigênica para
+síntese de matéria orgânica e, para isso, utilizam trifosfato de
+adenosina (ATP) e nicotinamida adenina dinucleotídeo fosfato
+reduzido (NADPH). Já algumas bactérias fotossintetizantes
+não apresentam cloroplasto e clorofila, mas um pigmento
+denominado bacterioclorofila. Esses procariotos realizam a
+fotossíntese anoxigênica, um processo de síntese de matéria
+orgânica utilizando o gás carbônico (CO2) e o gás sulfídrico (H2S).
+Na fotossíntese oxigênica, qual composto desempenha função
+análoga à do H2S?
+- A) ATP.
+- B) NADPH.
+- C) Oxigênio.
+- D) Clorofila.
+- E) Água.
+
+## Questão 122
+
+- Área: Ciências da Natureza
+- Gabarito: C
+
+As cangas são ambientes resultantes da atuação, ao longo
+de milhões de anos, de chuvas, enxurradas, calor e ventos em
+rochas ricas em ferro. São compostas por até 90% de óxidos
+de ferro e contêm solos muito ácidos, rasos, com reduzidos
+índices de fertilidade e temperaturas que atingem quase 70 °C
+na superfície. Ao contrário do que se imagina, esse tipo de
+ambiente abriga comunidades de plantas e animais com elevado
+número de espécies e distribuição restrita.
+CARMO, F. F. et al. Ilhas de ferro estratégicas para a conservação.
+Disponível em: http://cienciahoje.org.br.
+Acesso em: 2 dez. 2018 (adaptado).
+A seleção adaptativa nesses ambientes favorece a ocorrência
+de espécies
+- A) exóticas.
+- B) migratórias.
+- C) endêmicas.
+- D) dominantes.
+- E) generalistas.
+
+## Questão 123
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+Para a produção de titânio metálico ou dióxido de titânio
+puros, é necessário fazer a cloração do minério que contém
+dióxido de titânio, com o objetivo de separar esse óxido de
+outras substâncias presentes no minério. A principal reação
+química de cloração é representada por:
+TiO2 (s) + 2 Cl2 (g)                                                                    TiCl4 (g) + O2 (g) ΔH = +175 kJ/mol
+Depois da cloração, o tetracloreto de titânio é condensado
+e convertido, novamente, a dióxido de titânio.
+Após o sistema atingir o equilíbrio químico, como a formação
+do TiCl4 pode ser favorecida?
+- A) Aumentando a pressão total do sistema.
+- B) Diminuindo a temperatura do sistema.
+- C) Aumentando a pressão parcial de O2.
+- D) Aumentando a pressão parcial de Cl2.
+- E) Variando a quantidade de TiO2.
+
+## Questão 124
+
+- Área: Ciências da Natureza
+- Gabarito: C
+
+A laje de um depósito de bebidas tem 50 m2 de área útil de
+armazenamento e foi projetada para suportar pressões de até
+104 Pa. O gerente do estabelecimento pretende armazenar um
+produto cuja densidade é 1 250 kg/m3. Considere a aceleração
+da gravidade igual a 10 m/s2.
+A altura máxima, em metro, de empilhamento do produto que
+essa laje é capaz de suportar é
+- A) 0,16 m.
+- B) 0,50 m.
+- C) 0,80 m.
+- D) 1,60 m.
+- E) 8,00 m.
+
+## Questão 125
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+Em uma comunidade rural, os moradores utilizam uma
+bomba-d’água alimentada por 100 V de tensão contínua,
+podendo variar em até 5 V. Um eletrotécnico pretende instalar
+placas fotovoltaicas para alimentar essa bomba. As placas são
+idênticas e cada uma apresenta tensão de operação igual a
+34 V com corrente de 7,5 A. Além disso, cada placa apresenta
+40 V de tensão elétrica, quando em circuito aberto. Assim,
+considerando que a placa descrita é um gerador não ideal, em
+circuito aberto ela pode ser representada conforme a figura:
+O eletrotécnico construiu um circuito que permite à
+bomba-d’água operar corretamente com o menor número
+possível de placas conectadas. Para isso, desenhou um diagrama
+no qual todas essas placas são representadas como um único
+gerador não ideal, com a especificação das correspondentes
+características elétricas.
+O diagrama que representa o circuito construído pelo
+eletrotécnico é:
+A
+B
+C
+D
+E
+
+## Questão 126
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+Objetos de prata escurecem em contato com compostos
+contendo enxofre por causa da formação de uma fina camada
+de sulfeto de prata. Um método simples para clarear o objeto
+consiste em forrar um recipiente com papel alumínio, adicionar
+ao recipiente uma solução aquosa de cloreto de sódio e,
+enfim, mergulhar o objeto de prata enegrecido. Em cerca de
+três minutos, a prata volta à coloração original. As seguintes
+semirreações e os respectivos potenciais-padrão de redução
+são úteis para a compreensão dos fenômenos ocorridos.
+Ag2S (s) + 2 e− → 2 Ag (s) + S2− (aq)                                                                                                                                  −0,69 V
+O2 (g) + 4 H+ (aq) + 4 e− → 2 H2O (l)                                                                                                                                   +1,23 V
+Al (aq) + 3 e → Al (s)
+3+                                            −
+−1,68 V
+SARTORI, E. R.; BATISTA, E. F.; FATIBELLO-FILHO, O. Escurecimento e limpeza
+de objetos de prata: um experimento simples e de fácil execução envolvendo
+reações de oxidação-redução. Química Nova na Escola, n. 30, 2008 (adaptado).
+Os valores das diferenças de potencial-padrão das reações que
+representam o escurecimento e o clareamento do objeto de
+prata são, respectivamente:
+- A) +0,54 V e +2,37 V.
+- B) +1,92 V e +0,99 V.
+- C) −0,15 V e +5,43 V.
+- D) +2,61 V e +1,29 V.
+- E) +0,15 V e −1,29 V.
+
+## Questão 127
+
+- Área: Ciências da Natureza
+- Gabarito: B
+
+Apaixonada por culinária e química, uma chefe de cozinha
+calculou que, para promover o crescimento adequado da
+massa durante o cozimento de um bolo a 180 °C (453 K) e
+1,00 atm, ela precisaria utilizar uma quantidade de fermento
+químico suficiente para produzir um volume de gás igual a
+4,00 L. Com esse objetivo, ela escolheu utilizar o bicarbonato de
+amônio, um composto que, sob aquecimento, degrada-se em
+três gases distintos, que são os responsáveis pelo crescimento
+da massa. A decomposição do bicarbonato de amônio ocorre
+conforme a equação química apresentada e, nas condições do
+cozimento, seu rendimento é de 80%.
+NH4HCO3 (s) → NH3 (g) + CO2 (g) + H2O (g)
+Considere que a mistura dos gases se comporta como gás
+ideal nas condições de cozimento utilizadas pela chefe.
+Dados: Massa molar do NH 4 HCO 3 = 79 g ⋅ mol −1 e
+R = 0,082 atm ⋅ L ⋅ mol −1 ⋅ K −1.
+A massa, em grama, de bicarbonato de amônio que ela deve
+utilizar é mais próxima de
+- A) 2,3 g.
+- B) 3,5 g.
+- C) 5,9 g.
+- D) 6,8 g.
+- E) 8,9 g.
+
+## Questão 128
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+Segundo o princípio da independência dos movimentos, de
+Galileu, sempre que a velocidade resultante de um corpo puder
+ser decomposta em duas ou mais componentes perpendiculares
+entre si, cada um desses movimentos poderá ser analisado
+separadamente como se os outros não existissem. Esse princípio
+é muito útil para a simplificação de alguns problemas reais, em
+três dimensões.
+Considere um avião que, ao decolar, é instruído pela
+torre a atingir, em 6 minutos, uma posição de 20 km a Leste,
+20 km a Norte e 1 km de altitude em relação ao ponto de
+decolagem, conforme a figura (fora de escala). No entanto,
+no instante da decolagem, começa a soprar um vento cujo
+vetor velocidade tem componentes 30 km/h para Leste,
+20 km/h para Sul e 1 km/h de cima para baixo.
+Durante a ação do vento, a velocidade v que o piloto deve
+estabelecer em relação ao ar para que o avião chegue à posição
+esperada no tempo indicado tem as componentes
+- A) 230 km/h para Leste, 180 km/h para Sul e 9 km/h para baixo.
+- B) 230 km/h para Leste, 180 km/h para Norte e 9 km/h para cima.
+- C) 200 km/h para Oeste, 200 km/h para Norte e 10 km/h para cima.
+- D) 170 km/h para Leste, 220 km/h para Norte e 11 km/h para cima.
+- E) 170 km/h para Leste, 180 km/h para Norte e 11 km/h para cima.
+
+## Questão 129
+
+- Área: Ciências da Natureza
+- Gabarito: C
+
+Nos processos de transformação e reciclagem de recursos
+naturais, as velocidades das reações químicas são estudadas pela
+cinética química. Uma reação A → B é realizada na presença
+e na ausência de uma enzima, com todas as demais condições
+permanecendo inalteradas. Considere que, no gráfico da
+variação de energia ao longo dessa reação, a linha contínua
+representa o avanço da reação na ausência da enzima, e a linha
+pontilhada, na presença da enzima.
+O gráfico que representa a situação descrita é:
+A
+B
+C
+D
+E                                                                                                                                                 ￼
+
+## Questão 130
+
+- Área: Ciências da Natureza
+- Gabarito: E
+
+A resistência de um fio de platina pode ser usada para
+medir temperaturas entre 0 °C e 100 °C e já foi utilizada como
+referência para a escala internacional de temperatura. Para
+um sensor feito de platina, a relação entre a resistência e
+a temperatura pode ser descrita por uma equação do tipo
+R(T) = A + BT, em que T é a temperatura e A e B são constantes.
+O gráfico apresenta a dependência da resistência em função
+da temperatura para cinco diferentes sensores.
+Os sensores que apresentam maior sensibilidade são
+- A) 1 e 2.
+- B) 1 e 3.
+- C) 2 e 3.
+- D) 2 e 4.
+- E) 2 e 5.
+
+## Questão 131
+
+- Área: Ciências da Natureza
+- Gabarito: A
+
+O ácido úsnico é retirado de liquens e foi testado contra
+diversas espécies, conforme o quadro.
+Teste                                                                                                        Resultado
+Aedes aegypti (larvas)                                                                                                             Baixa eficiência
+Bacilo de Koch                                                                                                     Média eficiência
+Moluscos aquáticos (adultos)                                                                                                                       Alta eficiência
+Pernilongo (larvas)                                                                                                        Média eficiência
+Vermes platelmintos                                                                                                                       Ineficiente
+O ácido úsnico mostrou-se mais indicado para o controle da
+- A) esquistossomose.
+- B) febre amarela.
+- C) coqueluche.
+- D) tuberculose.
+- E) dengue.
+
+## Questão 132
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+A filtração em carvão é uma das mais antigas formas de
+purificação de água. O carvão ativado, diferentemente do carvão
+comum, é útil para ser empregado na remoção de material
+orgânico, cloro e outros contaminantes. Essa capacidade decorre
+de suas propriedades de adsorção. A origem do material utilizado
+para produzir o carvão ativado pode influenciar sua porosidade
+e, consequentemente, interferir na capacidade do material de
+remover impurezas. Na figura, é ilustrada esquematicamente
+a diferença entre as estruturas físicas do carvão comum e do
+carvão ativado.
+CORRÊA, M. A. Cosmetologia: ciência e técnica.
+São Paulo: Medfarma, 2012 (adaptado).
+Qual característica do carvão ativado explica a sua maior
+eficiência nesse processo?
+- A) Massa.
+- B) Dureza.
+- C) Densidade.
+- D) Superfície.
+- E) Condutividade.
+
+## Questão 133
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+A maioria dos seres vivos tem um relógio biológico
+(ciclo circadiano), que regula as mudanças metabólicas e
+comportamentais de acordo com o ciclo de 24 horas de
+rotação da Terra. Em 2015, um artigo publicado na revista
+Science Advantage mostrou ser possível a transferência dos
+genes do relógio circadiano da cianobactéria Synechococcus
+elongatus para o genoma da bactéria Escherichia coli, um
+organismo não circadiano.
+CHEN, A. H. et al. Transplantability of a Circardian Lock
+to Noncircardian Organism. Science Advantage,
+n. 1, 2015 (adaptado).
+Estarão presentes no organismo geneticamente modificado os
+genes do
+- A) metabolismo de E. coli, apenas.
+- B) ciclo circadiano de E. coli, apenas.
+- C) metabolismo de S. elongatus e do ciclo circadiano de E. coli.
+- D) ciclo circadiano de S. elongatus e do metabolismo de E. coli.
+- E) ciclo circadiano de S. elongatus e do ciclo circadiano de E. coli.
+
+## Questão 134
+
+- Área: Ciências da Natureza
+- Gabarito: C
+
+Os funcionários de um zoológico observaram um aumento
+na taxa de mortalidade de aves aquáticas por afogamento.
+Um grupo de biólogos analisou o comportamento das aves por
+várias semanas e observou que elas apresentavam dificuldade
+de flutuação, por causa do encharcamento das penas com água.
+O aumento na taxa de mortalidade dessas aves estava associado
+a uma redução na
+- A) dilatação do papo.
+- B) reposição de penas das asas.
+- C) secreção da glândula uropigial.
+- D) formação da membrana natatória.
+- E) largura das cavidades de ossos pneumáticos.
+
+## Questão 135
+
+- Área: Ciências da Natureza
+- Gabarito: D
+
+Réguas elétricas são dispositivos que permitem a ligação
+segura e simultânea de dois ou mais aparelhos eletroeletrônicos
+à rede elétrica. Uma estudante comprou uma régua com seis
+tomadas, conforme a figura. Essa régua suporta uma intensidade
+máxima de corrente elétrica igual a 20 A. Acima desse valor, o
+fusível de segurança da régua se rompe, inutilizando-a até que
+um novo fusível seja instalado. Considere as potências nominais
+de alguns aparelhos eletroeletrônicos apresentadas no quadro.
+Aparelho                                                              Potência (watt)
+Luminária de LED                                                                                                 5
+Computador                                                                                         250
+Impressora a laser                                                                                            660
+Secador de cabelos                                                                                              750
+Cafeteira                                                                                  900
+Condicionador
+1 100
+de ar portátil
+Em um dia quente, a estudante mantém o computador e o
+condicionador de ar portátil ligados à régua permanentemente.
+Nessa situação, ela tenta realizar algumas atividades, uma de
+cada vez, utilizando a mesma régua, na seguinte ordem:
+1º – imprimir um trabalho escolar;
+2º – fazer um café com a cafeteira;
+3º – ligar a luminária;
+4º – secar os cabelos.
+Sabe-se que a régua foi ligada à tensão elétrica de 110 V,
+adequada para o funcionamento desses aparelhos.
+Considerando a ordem das tentativas, quantas atividades a
+estudante conseguiu realizar sem queimar o fusível?
+A4
+B3
+C2
+D1
+E0
+MATEMÁTICA E SUAS TECNOLOGIAS
+Questões de 136 a 180
+
+## Questão 136
+
+- Área: Matemática
+- Gabarito: C
+
+No entorno de uma lagoa circular, cujo raio mede 1 km,
+há um uma ciclovia. Devido aos frequentes roubos de bicicleta,
+a prefeitura planeja alocar policiais em posições estratégicas
+para patrulhar essa ciclovia, de forma a torná-la totalmente
+protegida. Um ponto da ciclovia é considerado protegido se
+houver pelo menos um policial a, no máximo, 200 m de distância
+daquele ponto, posicionado sobre a ciclovia. A figura ilustra
+um ponto P sobre a ciclovia, que estará protegido se houver
+pelo menos um policial posicionado sobre a região de cor
+cinza escuro.
+Desconsidere a largura da pista da ciclovia e utilize 3 como
+aproximação para p.
+Nessas condições, a quantidade mínima necessária de policiais a
+serem alocados ao longo dessa ciclovia para torná-la protegida é
+- A) 4.
+- B) 8.
+- C) 15.
+- D) 30.
+- E) 60.
+
+## Questão 137
+
+- Área: Matemática
+- Gabarito: E
+
+Em um laboratório, um recipiente contém 10 litros de
+uma solução composta apenas pelas substâncias S1 e S2.
+Dessa solução, 99,95% é de S1. Uma quantidade de S1 será
+retirada dessa solução, mantendo a quantidade inicial de S2,
+de modo que 99,90% da nova solução seja de S1.
+Qual é a quantidade de S1, em litro, que será retirada?
+- A) 0,0050
+- B) 0,0100
+- C) 0,5000
+- D) 4,9775
+- E) 5,0000
+16                                                                                                                                                                                                                                        MATEMÁTICA
+
+## Questão 138
+
+- Área: Matemática
+- Gabarito: C
+
+Uma distribuidora de combustível possui caminhões-tanque
+com capacidade de 30 000 litros cada. Em qualquer transporte
+realizado por esses caminhões, um mesmo volume de combustível
+é descartado, pois fica com muitas impurezas. Esse volume
+descartado independe da quantidade transportada.
+Um posto de combustível encomendou 10 000 litros de
+gasolina dessa distribuidora, que enviou 10 200 litros, considerando
+o volume descartado no transporte. Mesmo assim, a quantidade
+de gasolina entregue ao posto foi de 9 900 litros.
+Em um novo pedido, esse posto solicitou que fosse entregue
+exatamente o dobro do volume de gasolina encomendado no
+pedido anterior.
+Utilizando o mesmo caminhão da entrega anterior, qual é o volume
+mínimo de gasolina, em litro, que a distribuidora deverá enviar para
+garantir a entrega da quantidade encomendada nesse novo pedido?
+- A) 20 100
+- B) 20 200
+- C) 20 300
+- D) 20 400
+- E) 20 600
+
+## Questão 139
+
+- Área: Matemática
+- Gabarito: C
+
+Uma empresa de tecnologia vai padronizar a velocidade de
+conexão de internet que oferece a seus clientes em dez cidades.
+A direção da empresa decide que seu novo padrão de velocidade de
+referência será a mediana dos valores das velocidades de referência
+de conexões nessas dez cidades. Esses valores, em megabyte
+por segundo (MB/s), são apresentados no quadro.
+Cidades                                                                Velocidade de referência (MB/s)
+C1                                                                                                                   390
+C2                                                                                                                  380
+C3                                                                                                                   320
+C4                                                                                                                   390
+C5                                                                                                                  340
+C6                                                                                                                  380
+C7                                                                                                                   390
+C8                                                                                                                  400
+C9                                                                                                                   350
+C10                                                                                                                     360
+A velocidade de referência, em megabyte por segundo, a ser
+adotada por essa empresa é
+- A) 360.
+- B) 370.
+- C) 380.
+- D) 390.
+- E) 400.
+
+## Questão 140
+
+- Área: Matemática
+- Gabarito: A
+
+Na cantina de uma escola, há cinco alimentos vendidos em
+pacotes com diferentes quantidades de porções.
+As informações nutricionais contidas nos rótulos desses
+produtos estão indicadas nas imagens.
+Uma estudante opta sempre pelo alimento com a menor
+quantidade total de sódio por pacote.
+Qual desses produtos deve ser o escolhido pela estudante?
+- A) Batata chips.
+- B) Palitos salgados.
+- C) Biscoito multigrãos.
+- D) Biscoito de polvilho.
+- E) Biscoito de água e sal.
+
+## Questão 141
+
+- Área: Matemática
+- Gabarito: D
+
+Uma fábrica utilizou uma impressora 3D para produzir o
+protótipo de uma peça. O protótipo tem forma de um poliedro
+convexo, obtido pela justaposição de dois sólidos distintos, um
+com a forma de um prisma hexagonal regular reto e o outro com
+a forma de um tronco de pirâmide hexagonal reta. A base maior
+do tronco de pirâmide coincide com uma das bases do prisma.
+Após a impressão do protótipo, ele foi encaminhado ao setor
+de customização para realização da pintura de sua superfície.
+O critério definido para realização da pintura considera que faces
+congruentes entre si devem ser pintadas com uma mesma cor, e
+faces não congruentes entre si devem apresentar cores distintas.
+Qual é a quantidade de cores utilizadas para pintar o protótipo?
+A9
+B8
+C6
+D4
+E3
+
+## Questão 142
+
+- Área: Matemática
+- Gabarito: D
+
+Pesquisas na área de neurobiologia confirmam que a prática
+meditativa é responsável por diminuir consideravelmente
+a frequência respiratória para praticantes avançados, que,
+após iniciarem a meditação, têm suas frequências respiratórias
+reduzidas até se estabilizarem em um nível mais baixo. O gráfico
+apresenta a relação da frequência respiratória, em incursões de
+respirações por minuto (rpm), em relação ao tempo, em minuto,
+de um praticante avançado, em que (f1) representa a frequência
+no instante t1, no qual se inicia a prática meditativa; e (f2), a
+frequência no instante t2, a partir do qual esta se estabiliza
+durante a meditação.
+Disponível em: www.redepsi.com.br. Acesso em: 3 dez. 2018 (adaptado).
+A partir do instante t1, em que se inicia a prática meditativa,
+o comportamento da frequência respiratória, em relação
+ao tempo,
+- A) mantém-se constante.
+- B) é diretamente proporcional ao tempo.
+- C) é inversamente proporcional ao tempo.
+- D) diminui até o instante t2, a partir do qual se torna constante.
+- E) diminui de forma proporcional ao tempo, tanto entre t1 e t2
+quanto após t2.
+
+## Questão 143
+
+- Área: Matemática
+- Gabarito: B
+
+No atletismo, um grande desafio da prova de 100 metros
+rasos é a sua conclusão num tempo abaixo da marca de
+referência dos 10,00 segundos. Vários atletas já alcançaram
+esse feito. Em 2009, o jamaicano Usain Bolt estabeleceu o
+recorde mundial masculino dessa prova, com o tempo de
+9,58 segundos.
+Qual é a diferença, em segundo, entre a marca de referência e
+a marca estabelecida por Usain Bolt em 2009?
+- A) 0,02
+- B) 0,42
+- C) 0,52
+- D) 1,02
+- E) 1,42
+
+## Questão 144
+
+- Área: Matemática
+- Gabarito: E
+
+Em um jogo de computador, um cubo se encontra inicialmente posicionado conforme indicado na figura.
+Cada deslocamento efetuado por esse cubo se dá sempre em uma das direções definidas pelos três eixos coordenados.
+Ao se movimentar a partir da posição inicial, esse cubo se aproximou 3 unidades do plano yz, se afastou 5 unidades do plano xz
+e se aproximou 4 unidades do plano xy.
+A figura que apresenta as projeções ortogonais desse cubo sobre os três planos coordenados, após efetuar as movimentações
+descritas, é
+A
+B
+C
+18                                                                                                                                                                                                                                        MATEMÁTICA
+D
+E
+
+## Questão 145
+
+- Área: Matemática
+- Gabarito: B
+
+A reportagem de uma revista abordou o uso de redes sociais pelos internautas brasileiros. Alguns dos dados apurados pela
+reportagem estão apresentados no infográfico.
+Perfil dos brasileiros nas redes sociais
+Disponível em:
+Segundo os dados do infográfico, ao se escolher aleatoriamente um internauta brasileiro no período ao qual se refere a reportagem,
+a probabilidade de ele ser um homem que acessa alguma rede social é
+A
+B
+C
+D
+E
+
+## Questão 146
+
+- Área: Matemática
+- Gabarito: C
+
+Uma pessoa pretende instalar um kit de gás natural veicular (GNV) em seu carro. Na loja que escolheu para realizar a compra
+e instalação desse kit, havia cinco modelos de cilindro para armazenamento do gás, cujas capacidades, em metro cúbico, eram,
+respectivamente: 10, 14, 17, 21 e 25. O preço do cilindro é proporcional à sua capacidade. Esse carro rodará 30 km diariamente,
+7 dias por semana, e o consumo do GNV é de 1 m3 a cada 13 km rodados. A pessoa escolherá o modelo de cilindro de menor
+preço e que garanta apenas um abastecimento semanal.
+Nessas condições, qual será a capacidade, em metro cúbico, do cilindro escolhido por essa pessoa?
+- A) 10
+- B) 14
+- C) 17
+- D) 21
+- E) 25
+http://revistagalileu.globo.com. Acesso em: 22 out. 2015 (adaptado).
+
+## Questão 147
+
+- Área: Matemática
+- Gabarito: A
+
+Em um jogo digital, há três personagens: um herói e dois
+vilões. A programação é feita de tal forma que o herói sempre
+será atacado pelo vilão que estiver mais próximo dele. Uma das
+maneiras de “confundir” os vilões é movimentar o herói por
+trajetórias que o mantenha equidistante dos vilões, gerando
+indefinição entre eles e, com isso, não sendo atacado.
+Para a programação de uma das etapas desse jogo,
+o programador considerou, no plano cartesiano, o quadrado
+STUV como a região de movimentação dos personagens, onde
+V e T representam as posições fixas dos vilões, e S, a posição
+inicial do herói, como apresentado na figura.
+Qual é a equação da trajetória em que o herói poderá se
+movimentar sem ser atacado?
+- A) y = −3x + 20
+- B) y = −3x + 16
+- C) y = −3x − 20
+- D) y = 3x + 16
+- E) y = 3x − 16
+20                                                                                                                                                                                                                                        MATEMÁTICA
+
+## Questão 148
+
+- Área: Matemática
+- Gabarito: C
+
+Uma livraria comercializa livros dos seguintes gêneros
+literários: ficção científica, autoajuda, romance e biografia.
+O gráfico apresenta o estoque dos livros que essa livraria tem,
+por gênero literário e por nacionalidade do autor, bem como a
+demanda por gênero literário, obtida por meio de uma enquete
+feita com seus clientes habituais.
+Estoque e demanda por livros
+O gerente da livraria fará a encomenda de novos exemplares
+somente do gênero cuja quantidade em estoque seja insuficiente
+para atender a demanda constatada pela enquete.
+O gênero de livro do qual o gerente deverá encomendar mais
+exemplares é
+- A) ficção, pois é o que apresenta maior demanda.
+- B) biografia, pois é o gênero que tem a menor demanda.
+- C) autoajuda, pois a quantidade em estoque é inferior à demanda.
+- D) biografia, pois é o gênero que tem a menor quantidade de
+livros em estoque.
+- E) romance, pois é o que apresenta o menor estoque de livros
+de autores brasileiros.
+
+## Questão 149
+
+- Área: Matemática
+- Gabarito: E
+
+Uma escola de idiomas oferece cursos de inglês, espanhol, francês e alemão. Os gráficos apresentam a distribuição percentual
+das matrículas, por idioma, em 2023, e a distribuição da quantidade de matrículas, por idioma, em 2024.
+Para planejar as atividades de 2025, o gerente da escola estimou que o total de matrículas será o mesmo de 2024, e a distribuição
+percentual das matrículas, por idioma, será igual à registrada em 2023.
+Segundo essa estimativa, o número de matrículas no curso de francês para o ano de 2025 será
+- A) 2.
+- B) 12.
+- C) 20.
+- D) 22.
+- E) 40.
+
+## Questão 150
+
+- Área: Matemática
+- Gabarito: C
+
+O controle remoto de um carrinho de brinquedo vem equipado com uma tela que ajusta automaticamente a escala empregada
+na exibição de cada deslocamento. A tela apresenta a imagem do deslocamento, a escala utilizada na geração dessa imagem e
+o comprimento desse deslocamento, em centímetro, em conformidade com a escala empregada. As figuras representam a tela
+do controle remoto exibindo os dados de cinco deslocamentos realizados por esse carrinho.
+A opção que indica o deslocamento de maior comprimento realizado pelo carrinho de brinquedo é
+- A) I.
+- B) II.
+- C) III.
+- D) IV.
+- E) V.
+
+## Questão 151
+
+- Área: Matemática
+- Gabarito: B
+
+A cúpula pentagonal giralongada é um poliedro de Johnson,
+cujas faces são polígonos regulares, mas que não é um poliedro
+de Platão, de Arquimedes, prisma ou antiprisma.
+As figuras apresentam esse poliedro em duas posições e
+uma de suas planificações.
+Quantos vértices tem esse poliedro?
+- A) 21
+- B) 25
+- C) 55
+- D) 80
+- E) 110
+
+## Questão 152
+
+- Área: Matemática
+- Gabarito: D
+
+Uma fábrica de tijolos ecológicos com 3 funcionários,
+cada um trabalhando 6 horas diárias, produz 720 unidades
+por dia. Para atender ao crescimento da demanda por esse
+tipo de tijolo, essa fábrica passou a ter 5 funcionários, cada um
+trabalhando 9 horas por dia, aumentando, assim, sua capacidade
+de produção. Todos os funcionários produzem igual quantidade
+de tijolos a cada hora, independentemente de trabalharem
+6 ou 9 horas diárias.
+O número de tijolos fabricados diariamente após o aumento da
+capacidade de produção é
+- A) 800.
+- B) 1 080.
+- C) 1 200.
+- D) 1 800.
+- E) 2 520.
+22                                                                                                                                                                                                                                        MATEMÁTICA
+
+## Questão 153
+
+- Área: Matemática
+- Gabarito: D
+
+Para acompanhar o fluxo de visitantes em seu prédio,
+uma empresa estabeleceu um código de identificação para a
+visitação. De acordo com a regra estabelecida, cada visitante será
+identificado com um código sequencial numérico com 7 dígitos,
+determinado, da esquerda para a direita, da seguinte forma:
+• o primeiro dígito indica o andar ao qual o visitante se
+dirige, que é um número de 1 a 4;
+• os dois próximos dígitos correspondem ao número do
+setor da empresa ao qual o visitante se destina. Esse
+número varia de 01 a 20;
+• os três dígitos seguintes correspondem ao número do
+funcionário da empresa com quem o visitante irá se reunir.
+Esse número varia de 001 a 135;
+• o último dígito indica se o visitante chegou à empresa
+pela manhã, dígito 0, ou à tarde, dígito 1.
+Um visitante chegou à empresa às 10 horas da manhã para
+se reunir com o funcionário identificado pelo número 109,
+que trabalha no setor 08 da empresa, localizado no 2º andar.
+O código de identificação desse visitante é
+- A) 0109082.
+- B) 0281090.
+- C) 1010982.
+- D) 2081090.
+- E) 2810910.
+
+## Questão 154
+
+- Área: Matemática
+- Gabarito: D
+
+Quatro candidatos se apresentaram para realizar a prova de
+um concurso. Antes de iniciar a prova, os celulares dos quatro
+candidatos foram recolhidos pelo aplicador, que os guardou,
+cada um, dentro de um envelope preto. Ao término da prova,
+o aplicador devolveu os quatro envelopes com os celulares aos
+quatro candidatos, de maneira aleatória, já que não havia feito
+a identificação dos envelopes.
+A probabilidade de que todos os candidatos tenham recebido
+de volta os envelopes com os seus respectivos celulares é
+A
+B
+C
+D
+E
+
+## Questão 155
+
+- Área: Matemática
+- Gabarito: B
+
+Em uma escola, todos os estudantes do ensino médio
+praticam uma das três modalidades esportivas oferecidas
+como atividade física, e cada um deles pratica somente uma
+dessas atividades. Os gráficos trazem alguns dados relativos aos
+quantitativos de estudantes que praticam essas modalidades
+esportivas nessa escola, apesar de algumas quantidades não
+terem sido informadas.
+Qual é a quantidade de estudantes no ensino médio dessa escola?
+- A) 720
+- B) 360
+- C) 320
+- D) 288
+- E) 240
+
+## Questão 156
+
+- Área: Matemática
+- Gabarito: A
+
+O dono de uma embarcação deve partir do ponto P e
+chegar ao ponto R por meio de dois deslocamentos lineares
+e navegando a uma velocidade constante. Essa viagem será
+feita durante a noite, e como ele dispõe somente de uma
+bússola e de um relógio, planejou sua rota da seguinte forma:
+1º – partir do ponto P na direção 110 e navegar por 4 horas,
+alcançando um ponto Q;
+2º – partir do ponto Q na direção 90 e navegar por 2 horas,
+alcançando o ponto de destino R.
+No entanto, ao direcionar o barco para o primeiro
+deslocamento, o fez na direção 340, em vez de 110. Com isso,
+realizou os seguintes deslocamentos:
+1º – partiu do ponto P na direção 340 e navegou por 4 horas,
+alcançando um ponto S;
+2º – partiu do ponto S na direção 90 e navegou por 2 horas,
+alcançando o ponto T.
+A figura apresenta a bússola, a rota planejada e a rota
+executada.
+O dono da embarcação só percebeu o equívoco ao chegar
+ao ponto T. Com isso, agora ele precisa definir a direção e o
+tempo de navegação que lhe permita, partindo do ponto T,
+chegar ao ponto de destino R por meio de uma rota retilínea.
+Considere 0,64 como aproximação para cos 50°°.
+A direção e o tempo aproximado de navegação que o dono da
+embarcação deve utilizar são, respectivamente,
+- A) 135 e 7 horas e 15 minutos.
+- B) 45 e 7 horas e 15 minutos.
+- C) 135 e 12 horas.
+- D) 135 e 6 horas.
+- E) 45 e 6 horas.
+
+## Questão 157
+
+- Área: Matemática
+- Gabarito: D
+
+Em um estudo clínico, 55 mulheres foram distribuídas, aleatoriamente, em 5 grupos de 11 pessoas. Para testar uma nova
+medicação, será escolhido um grupo no qual a maioria das mulheres tenham idades entre 20 e 30 anos. Os demais grupos
+tomarão placebo ou medicações já existentes no mercado. O quadro, parcialmente preenchido, informa alguns dados relativos
+às idades das mulheres desses grupos.
+Grupos                                                   Menor idade                                                          Maior idade                                                                     Média
+1                                                                                                                                                                                                         25
+4                                                                                                                                                                                                         25
+5                                                                 20                                                                  35
+Mesmo com o quadro incompleto, foi possível selecionar um desses grupos porque, apenas com os dados apresentados no
+quadro, foi identificado um grupo que, certamente, atendia ao critério de escolha.
+O grupo escolhido foi o
+- A) 1.
+- B) 2.
+- C) 3.
+- D) 4.
+- E) 5.
+
+## Questão 158
+
+- Área: Matemática
+- Gabarito: E
+
+Pace é um termo usado por um corredor para denominar o seu ritmo médio em uma corrida. Representa o tempo médio,
+em segundo, que esse corredor leva para percorrer 1 km.
+O esquema apresenta o tempo, em segundo, que um corredor levou para cruzar as marcas que definem os quatro primeiros
+trechos de 1 km, em uma corrida de 5 km, e o tempo gasto para percorrer cada trecho de 1 km.
+O melhor pace que esse corredor alcançou em corridas de 5 km foi 281 s/km.
+Para que consiga repetir nessa corrida seu melhor pace em corridas de 5 km, seu tempo, no 5º trecho, deve ser quantos segundos
+menor do que o que ele gastou para percorrer o 4º trecho?
+A1
+B2
+C8
+D9
+E 15
+24                                                                                                                                                                                                                                        MATEMÁTICA
+Mediana                                                                  Moda                                               Desvio padrão
+25                                                                                                                                        9
+
+## Questão 159
+
+- Área: Matemática
+- Gabarito: E
+
+Um recipiente tem um formato que faz com que, ao ser
+enchido de água com uma vazão constante, a distância D da
+lâmina de água ao tampo da mesa, em centímetro, aumente
+em relação ao tempo T, em minuto, de acordo com uma função
+do tipo
+D = k + tg[p(T + m)],
+sendo os parâmetros k, p e m números reais, para T variando
+entre 0 e 4 minutos, conforme ilustrado na figura, na qual estão
+apresentadas assíntotas verticais da função tangente utilizada
+na definição de D.
+A expressão algébrica que representa a relação entre D e T é
+
+2  
+- A) D  2, 5
+tg 30  T
+
+           2  
+
+5                                                                                                                                                                                                                                    e 80 tonelad
+- B) D  4
+tg 30  T
+                                                                                                                                                                                                                                    reciclar uma tonel
+
+2 
+
+2                                                                                                                                                                                                                            a partir de derivados de
+- C) D  4
+tg 2, 5  T
+
+
+2                                                                                                                                                                                                                             dessa empres
+1         
+- D) D  30
+tg 
+T
+5  
+2         
+1
+5                                                                                                                                                                                                                                     mínima de tone
+- E) D  30
+tg   T
+                                                                                                                                                                                                                                     partir de recicla
+2    2 
+
+## Questão 160
+
+- Área: Matemática
+- Gabarito: A
+
+Os quadrados em cinza na figura representam os quarteirões
+de uma parte do bairro onde moram João e seu amigo.
+O quadrado pequeno (A), pintado em preto e localizado no canto
+superior esquerdo de um quadrado maior, indica a casa do amigo
+de João. João também mora em uma casa de esquina, mas na
+extremidade nordeste de um quarteirão. Para chegar à casa de
+seu amigo, ao sair de casa, João deve caminhar pelo quarteirão
+onde mora na direção oeste, dobrar à direita, caminhar por três
+quarteirões na direção norte e dobrar à esquerda. A casa de
+seu amigo fica no segundo quarteirão a oeste.
+O quarteirão onde se encontra a casa de João é representado
+pelo quadrado com a letra
+- A) P.
+- B) Q.
+- C) R.
+- D) S.
+- E) T.
+
+## Questão 161
+
+- Área: Matemática
+- Gabarito: B
+
+Uma empresa produziu, em um determinado mês,
+110 toneladas de plástico a partir de derivados de petróleo
+as a partir de plásticos reciclados. O custo para
+ada de plástico é de R$ 500,00, que equivale
+a 5% do custo para produzir a mesma quantidade de plástico
+petróleo. Para o mês seguinte, a meta
+a é produzir a mesma quantidade de plástico que
+foi produzida nesse mês, mas com redução de, pelo menos,
+50% no custo de produção.
+Para que no mês seguinte a empresa atinja a meta, a quantidade
+ladas de plástico que devem ser produzidas a
+gem deverá ser
+- A) 135.
+- B) 140.
+- C) 155.
+- D) 160.
+- E) 175.
+
+## Questão 162
+
+- Área: Matemática
+- Gabarito: B
+
+Dez casais fundaram um grupo de dança e decidiram
+constituir uma diretoria com três cargos: presidente, secretário
+e tesoureiro. Para maior representatividade, decidiu-se que no
+máximo uma pessoa por casal poderá ocupar um cargo nessa
+diretoria.
+Quantas diretorias diferentes podem ser constituídas por esses
+10 casais?
+- A) 10 × 9 × 8
+- B) 20 × 18 × 16
+- C) 20 × 19 × 18
+- D) 10 × 9 × 8 × 2
+- E) 20 × 18 × 16 × 2
+
+## Questão 163
+
+- Área: Matemática
+- Gabarito: E
+
+Um artista, que costuma fazer desenhos com areia na
+praia, pediu a um banhista que fizesse um pequeno desenho,
+que serviria de esboço para uma grande obra de arte a ser
+feita na areia. Esse desenho está representado na figura.
+Após a conclusão, a obra de arte obtida manteve as mesmas
+proporções do desenho feito pelo banhista, sendo que as
+medidas indicadas na figura foram ampliadas para 30 m.
+Em qual escala esse desenho representa a obra de arte?
+- A) 1 : 1,5
+- B) 1 : 2,25
+- C) 1 : 10
+- D) 1 : 100
+- E) 1 : 150
+26                                                                                                                                                                                                                                        MATEMÁTICA
+
+## Questão 164
+
+- Área: Matemática
+- Gabarito: C
+
+O cortisol é um hormônio produzido pelas glândulas
+adrenais e pode ser considerado um importante marcador
+do estresse fisiológico. Em um estudo desenvolvido com
+enfermeiros, foi verificado que a concentração de cortisol
+salivar em um dia de trabalho, denotada por T, era, em média,
+1,59 vezes a concentração de cortisol salivar em um dia de
+folga, denotada por F.
+ROCHA, M. C. P. et al. Estresse em enfermeiros: o uso do cortisol salivar no
+dia de trabalho e de folga. Rev. Esc. Enferm. USP, n. 5, 2013 (adaptado).
+Nesse estudo, a relação obtida entre T e F foi
+- A) T = 1,59 + F
+- B) F = 1,59 + T
+T
+- C) = 1, 59
+F
+F
+- D) = 1, 59
+T
+- E) F ⋅ T = 1,59
+
+## Questão 165
+
+- Área: Matemática
+- Gabarito: C
+
+Um estacionamento possui 120 vagas para veículos,
+e todas essas vagas estão ocupadas. Cada cliente paga uma
+mensalidade para utilizar uma vaga, que é calculada com base
+nas despesas mensais do estacionamento e no lucro pretendido.
+As despesas mensais do estacionamento são: R$ 14 240,00 com
+manutenção mais R$ 36,00 de seguro por veículo. O lucro do
+estacionamento é determinado pela diferença do valor arrecadado
+com as mensalidades pelas despesas efetuadas. A partir do mês
+seguinte, o valor do seguro por veículo aumentará em 20%,
+e as despesas com manutenção permanecerão sem alterações.
+Com isso, o dono do estacionamento reajustará as mensalidades
+para obter um lucro mensal de R$ 10 000,00. Apesar desse
+reajuste, todas as vagas continuarão ocupadas.
+O valor, em real, da mensalidade reajustada será
+- A) 185,60.
+- B) 226,09.
+- C) 245,20.
+- D) 268,93.
+- E) 285,60.
+
+## Questão 166
+
+- Área: Matemática
+- Gabarito: D
+
+O dono de uma sorveteria armazena sorvete em potes de
+20 000 cm3. Ele serve o sorvete em taças, em porções de 250 mL.
+A quantidade de taças que ele consegue servir a partir de um
+pote cheio de sorvete é
+- A) 5.
+- B) 8.
+- C) 50.
+- D) 80.
+- E) 800.
+
+## Questão 167
+
+- Área: Matemática
+- Gabarito: A
+
+A produtividade de soja em uma área cultivada é a média da quantidade de sacas de 50 quilogramas que são produzidas
+por hectare. O quadro apresenta a área cultivada e a produtividade de soja em certa propriedade, ao longo de cinco safras,
+com períodos de um ano, de 2011 a 2016.
+Safra                                                                                                                                   11-12
+Área cultivada (hectare)                                                                                                                                                         200
+Produtividade (sacas de 50 kg por hectare)                                                                                                                                                                               40
+O gráfico de linhas que representa a produção de soja dessa propriedade, em tonelada, nessas cinco safras é
+A
+B
+C
+12-13                                                  13-14                                                  14-15                                                   15-16
+220                                                     250                                                    250                                                     200
+30                                                      45                                                     45                                                      50
+D
+E
+
+## Questão 168
+
+- Área: Matemática
+- Gabarito: B
+
+A figura ilustra o projeto visual para confecção de uma
+medalha comemorativa, com a forma de um cilindro circular
+reto, de diâmetro 6 cm e espessura 3 mm.
+A figura ABCD tem a forma de um quadrado e é a base de
+um prisma que atravessa toda a medalha. A região da medalha
+externa a esse prisma será cunhada em ouro. Pretende-se
+cunhar 100 dessas medalhas.
+Considere 3,1 como valor aproximado para p.
+Qual é o volume de ouro, em centímetro cúbico, necessário
+para a confecção dessas medalhas?
+- A) 288
+- B) 297
+- C) 567
+- D) 990
+- E) 1 134
+
+## Questão 169
+
+- Área: Matemática
+- Gabarito: E
+
+Três dados cúbicos, com faces numeradas de 1 a 6, foram
+utilizados em um jogo. Artur escolheu dois dados, e João
+ficou com o terceiro. O jogo consiste em ambos lançarem
+seus dados, observarem os números nas faces voltadas para
+cima e compararem o maior número obtido por Artur com
+o número obtido por João. Vence o jogador que obtiver o
+maior número. Em caso de empate, a vitória é de João.
+O jogador que tem a maior probabilidade de vitória é
+- A) Artur, com probabilidade de
+- B) João, com probabilidade de
+- C) Artur, com probabilidade de
+- D) João, com probabilidade de
+- E) Artur, com probabilidade de
+28                                                                                                                                                                                                                                        MATEMÁTICA
+
+## Questão 170
+
+- Área: Matemática
+- Gabarito: A
+
+A luminância de um objeto é a grandeza que descreve a
+quantidade de luz produzida ou refletida por sua superfície.
+Ela está definida como a razão entre a intensidade luminosa,
+medida em candela (cd), e o quadrado da distância do objeto
+até o foco de luz, medida em metro (m).
+A unidade de medida da luminância de um objeto é
+cd
+A
+m2
+m2
+B
+cd
+cd
+C
+m
+m
+D
+cd
+m
+E
+cd2
+
+## Questão 171
+
+- Área: Matemática
+- Gabarito: D
+
+Quatro amigos, cada um com 100 moedas, criaram um jogo,
+no qual cada um assume uma das quatro posições, 1, 2, 3 ou 4,
+indicadas na figura, e nela permanece até o final.
+O desenvolvimento do jogo se dá em rodadas e, em todas
+elas, cada jogador transfere e recebe uma quantidade de moedas,
+da seguinte maneira:
+• o jogador na posição 1 transfere 1 moeda para o jogador
+na posição 2;
+• o jogador na posição 2 transfere 2 moedas para o jogador
+na posição 3;
+• o jogador na posição 3 transfere 3 moedas para o jogador
+na posição 4;
+• o jogador na posição 4 transfere 4 moedas para o jogador
+na posição 1, completando a rodada.
+Ao final da rodada n, qual é a expressão algébrica que representa
+o número de moedas do jogador na posição 1?
+- A) 103 + 4n
+- B) 103 + 3n
+- C) 100 + 4n
+- D) 100 + 3n
+- E) 99 + 4n
+
+## Questão 172
+
+- Área: Matemática
+- Gabarito: D
+
+Uma pessoa tem um carro bicombustível, que funciona a gás natural veicular (GNV) e a gasolina. O rendimento do carro,
+medido em km/m³, no caso do gás, ou medido em km/L, no caso da gasolina, depende, entre outros fatores, da velocidade,
+em km/h, em que o carro trafega. Essa relação está em conformidade com estes gráficos.
+Durante um feriado, essa pessoa realizou uma viagem de 240 km. Para obter uma estimativa de gasto de combustível,
+assuma que em todo o trajeto se manteve uma velocidade constante de 60 km/h. Considere que, durante metade do caminho,
+foi utilizado apenas GNV e, na outra metade, apenas gasolina. O que foi pago pelo metro cúbico de GNV e pelo litro de gasolina
+correspondeu, respectivamente, a R$ 2,00 e a R$ 3,00.
+Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV?
+A4
+B8
+C 14
+D 21
+E 30
+
+## Questão 173
+
+- Área: Matemática
+- Gabarito: E
+
+Em um país, a primeira etapa para obtenção da carteira de motorista é a contratação de três produtos:
+• pacote com 20 aulas teóricas;
+• pacote com 10 aulas práticas;
+• aluguel do veículo para realização das aulas práticas.
+Uma pessoa que pretende obter a carteira de motorista pesquisou o valor do aluguel do veículo e os valores de cada aula
+teórica e de cada aula prática em três autoescolas. O quadro apresenta esses valores.
+Autoescola                                                Valor de cada aula teórica (R$)                                                                                                      Valor de cada au
+I                                                                                            10
+II                                                                                             30
+III                                                                                             20
+Ela contratará os três produtos numa mesma autoescola de modo que o custo total nessa primeira etapa seja o menor possível.
+A autoescola que será contratada é a
+- A) I, com o custo total de R$ 1 400,00.
+- B) II, com o custo total de R$ 280,00.
+- C) II, com o custo total de R$ 1 300,00.
+- D) III, com o custo total de R$ 460,00.
+- E) III, com o custo total de R$ 1 200,00.
+la prática (R$)                                                                                                       Aluguel do veículo (R$)
+80                                                                                                                  400
+50                                                                                                                  200
+40                                                                                                                  400
+
+## Questão 174
+
+- Área: Matemática
+- Gabarito: B
+
+Uma caixa de descarga, acoplada a um vaso sanitário, tem
+a forma de paralelepípedo reto retângulo cujas dimensões
+internas da base são 2,5 dm e 1,5 dm. Nessa caixa há uma boia
+que interrompe o abastecimento quando a altura da coluna de
+água atinge 2 dm, conforme a figura.
+A cada acionamento da descarga, todo o volume de
+água contida na caixa é despejado no vaso. Para reduzir o
+volume de água despejado a cada acionamento, uma pessoa
+colocará, no interior dessa caixa, garrafas de 300 mL, cheias
+de areia e tampadas, de modo a ficarem submersas quando
+o abastecimento for interrompido.
+Para garantir o funcionamento eficiente, o mínimo de água
+despejada a cada acionamento deve ser de 5 L.
+A quantidade máxima de garrafas que serão colocadas nessa
+caixa, garantindo um funcionamento eficiente, é igual a
+- A) 10.
+- B) 8.
+- C) 4.
+- D) 3.
+- E) 2.
+30                                                                                                                                                                                                                                        MATEMÁTICA
+P1_2_Dia_MTT_REG_5_Amarelo.indd 30
+
+## Questão 175
+
+- Área: Matemática
+- Gabarito: E
+
+Um confeiteiro passou a produzir tortas em formato de
+cilindro circular reto, com raio da base variando entre 12 cm e
+16 cm e altura de 6 cm. Essas tortas deverão ser embaladas em
+caixas com formato de prisma reto de base quadrada, de modo
+que seja possível acomodar a torta em seu interior e ainda restar
+pelo menos 1 cm de distância entre a torta e as superfícies internas
+da caixa, lateral e superior. Ele dispõe, originalmente, de caixas
+no formato pretendido, cujas dimensões internas são 14 cm de
+comprimento do lado da base e 7 cm de altura, que não atendem
+às suas necessidades. Portanto, ele comprará novas caixas, com
+o mesmo formato das caixas originais, mas com comprimento do
+lado da base maior, que sejam adequadas para embalar todos
+os tipos de torta que produz.
+- A) aresta da base das novas caixas deve ser, no mínimo, quantos
+centímetros maior do que a das caixas originais?
+A4
+- B) 12
+- C) 16
+- D) 18
+- E) 20
+
+## Questão 176
+
+- Área: Matemática
+- Gabarito: A
+
+Um empresário utiliza máquinas cuja pressão interna P,
+em atmosfera, depende do tempo contínuo de utilização t, em
+hora, e de um parâmetro positivo K, que define o modelo da
+máquina, segundo a expressão:
+P = 4 ⋅ log[−K ⋅ (t + 1) ⋅ (t − 19)]
+O fabricante dessas máquinas recomenda ao usuário
+que a pressão interna desse tipo de máquina não ultrapasse
+10 atmosferas durante seu funcionamento.
+O empresário pretende comprar novas máquinas desse
+tipo que deverão funcionar, diariamente, por um período
+contínuo de 10 horas. Para isso, precisa definir o modelo de
+máquina a ser adquirida escolhendo o maior valor possível
+do parâmetro K, atendendo à recomendação do fabricante.
+O maior valor a ser escolhido para K é
+A 100,5
+B 108
+102 ,5
+C
+102 ,5
+D
+E 25 × 10−2
+
+## Questão 177
+
+- Área: Matemática
+- Gabarito: A
+
+Em uma cidade, será construído um túnel que atravessa uma
+montanha para facilitar o trânsito de automóveis e bicicletas.
+Dois projetos foram elaborados e os esquemas com as vistas
+frontais desses projetos são apresentados na figura.
+O Projeto 1 conta com dois túneis, um exclusivo para
+bicicletas e o outro, para automóveis. O Projeto 2 conta com
+um único túnel, com espaços reservados para o trânsito exclusivo
+de bicicletas e automóveis. Nos dois projetos, os túneis têm o
+formato de semicilindro reto de mesma extensão, com vias de
+ida e volta para os dois tipos de veículos, separados por muretas.
+O projeto a ser aprovado será aquele que apresentar a
+menor área da seção transversal, pois implicará menor volume
+de material retirado da montanha.
+Considere 3 como aproximação para p e desconsidere as
+espessuras das muretas.
+O projeto a ser aprovado é
+- A) o 1, pois apresenta área de seção transversal medindo
+67,5 m2.
+- B) o 2, pois apresenta área de seção transversal medindo
+121,5 m2.
+- C) o 1, pois apresenta área de seção transversal medindo 135 m2.
+- D) o 2, pois apresenta área de seção transversal medindo 243 m2.
+- E) qualquer um dos dois, pois apresentam áreas de suas seções
+transversais com medidas iguais.
+
+## Questão 178
+
+- Área: Matemática
+- Gabarito: Anulado
+
+Um carro que custa 60 mil reais é comercializado por uma
+revendedora que oferece duas opções de pagamento, todas
+sem entrada e sem juros:
+• opção 1: pagamento em n parcelas iguais;
+• opção 2: pagamento em 6 parcelas a mais do que na
+opção 1 e, com isso, o valor de cada parcela se torna
+R$ 500,00 menor do que o valor da parcela na opção 1.
+Nas duas opções de pagamento, o valor total a ser pago
+pelo carro é o mesmo.
+Qual é a quantidade n de parcelas contidas na opção 1 de
+pagamento?
+- A) 18
+- B) 24
+- C) 30
+- D) 42
+- E) 48
+
+## Questão 179
+
+- Área: Matemática
+- Gabarito: C
+
+Um pai comprou oito presentes diferentes (dentre os
+quais, uma bicicleta e um celular) para dar a seus três filhos.
+Ele pretende distribuir os presentes de modo que o filho
+mais velho e o mais novo recebam três presentes cada um,
+e o do meio receba os dois presentes restantes. O mais velho
+ganhará, entre seus presentes, ou uma bicicleta ou um celular,
+mas não ambos.
+De quantas maneiras distintas a distribuição dos presentes
+pode ser feita?
+- A) 36
+- B) 53
+- C) 300
+- D) 360
+- E) 560
+
+## Questão 180
+
+- Área: Matemática
+- Gabarito: C
+
+A final de um campeonato de futebol foi disputada em 2 tempos
+regulamentares, de 45 minutos cada, sem acréscimos, com uma
+prorrogação de 30 minutos, também sem acréscimos. Um jogador
+entrou no início do segundo tempo, com um equipamento para
+medir a distância percorrida durante sua participação no jogo.
+Ao final do segundo tempo regulamentar, esse jogador havia
+percorrido 4,5 km. Ele manteve na prorrogação a mesma velocidade
+média que havia mantido no segundo tempo regulamentar.
+A distância percorrida por esse jogador durante sua participação
+na partida, em quilômetro, foi
+- A) 4,5.
+- B) 6,0.
+- C) 7,5.
+- D) 9,0.
+- E) 12,0.
+*020125AM32*   01
+dor 9                                                   9 Led
+ado 9                                                    9 Ate
+as 10                                                   10 Lib
+2º Dia                                                   2º Dia
+as 12                                                   12 Lib
+or 11                                                   11 Le
+do 11                                                    11 At
+rde 8                                                   8 Ver
+Azul 7                                                   7 Azu
+nza 6                                                   6 Cinz
+relo 5                                                   5 Am

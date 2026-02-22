@@ -1,0 +1,697 @@
+[
+  {
+    "numero": 1,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "B"
+    },
+    "preview": "Glory Ames, from the White Earth reservation, is frustrated that despite the presence of several indigenous reservations"
+  },
+  {
+    "numero": 2,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "A"
+    },
+    "preview": "My idea of philosophy is that if it is not relevant to human problems, if it does not tell us how we can go about eradicating"
+  },
+  {
+    "numero": 3,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "D"
+    },
+    "preview": "Remember the sky that you were born under,"
+  },
+  {
+    "numero": 4,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "E",
+      "espanhol": "D"
+    },
+    "preview": "It is true that all children are special, simply because they are children. But most adults are not special, and children end up as adults"
+  },
+  {
+    "numero": 5,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "C"
+    },
+    "preview": "Nesse texto, a pergunta “What is sleep?”, em uma das embalagens do produto, está relacionada ao(à)"
+  },
+  {
+    "numero": 1,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "B"
+    },
+    "preview": "¿Dónde está nuestro pan, patrón?"
+  },
+  {
+    "numero": 2,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "A"
+    },
+    "preview": "Guagua, las palabras también migran"
+  },
+  {
+    "numero": 3,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "D"
+    },
+    "preview": "Cuando yo era chiquito"
+  },
+  {
+    "numero": 4,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "E",
+      "espanhol": "D"
+    },
+    "preview": "MORGAN, J. Dispo"
+  },
+  {
+    "numero": 5,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "C"
+    },
+    "preview": "¿Qué es la generación Alfa?"
+  },
+  {
+    "numero": 6,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "No que diz respeito ao gênero bilhete, a autora dessa crônica"
+  },
+  {
+    "numero": 7,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "O elemento que caracteriza esse texto como uma crônica é a"
+  },
+  {
+    "numero": 8,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Nesse texto, o que caracteriza a escrita “de próprio punho” é a letra manuscrita, enquanto a escrita digital é ilustrada pelo(a)"
+  },
+  {
+    "numero": 9,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "A autora conclui que as novas tecnologias de escrita"
+  },
+  {
+    "numero": 10,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "O recurso linguístico usado para marcar a síntese da opinião da autora sobre a temática desenvolvida foi o(a)"
+  },
+  {
+    "numero": 11,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "— Vejo, disse ele com algum acanhamento, que o doutor não"
+  },
+  {
+    "numero": 12,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "O Ministério do Esporte no Brasil lançou o programa Maré"
+  },
+  {
+    "numero": 13,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Art. 26-A. Nos estabelecimentos de ensino fundamental"
+  },
+  {
+    "numero": 14,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Disponível em: www.publishnews.com.br. Acesso em: 19 set. 2024."
+  },
+  {
+    "numero": 15,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "O retrato como gênero da pintura ocidental ficou vinculado"
+  },
+  {
+    "numero": 16,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Símbolos"
+  },
+  {
+    "numero": 17,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Antes do inverno chegar."
+  },
+  {
+    "numero": 18,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Com 20 anos de experiência no futebol de alto rendimento,"
+  },
+  {
+    "numero": 19,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "No predomínio das mulheres pretas brasileiras nos Jogos"
+  },
+  {
+    "numero": 20,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "A característica fundamental no aprendizado das práticas"
+  },
+  {
+    "numero": 21,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "O meu medo é entrar na faculdade e tirar zero eu que nunca"
+  },
+  {
+    "numero": 22,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 23,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 24,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Nesse cartaz, a utilização de frases que projetam a vida profissional de duas crianças tem como objetivo"
+  },
+  {
+    "numero": 25,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Passando por aqui para lembrar algumas palavras, frases e expressões que nos infernizaram em 2023. Inclusive passando"
+  },
+  {
+    "numero": 26,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Revista Língua Portuguesa, n. 31, maio 2008 (adaptado)."
+  },
+  {
+    "numero": 27,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "A diferença entre briga e luta é a existência de juízes e medalhas?"
+  },
+  {
+    "numero": 28,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Pequenino morto"
+  },
+  {
+    "numero": 29,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Só entende os corações desse lugar quem mergulha nesse"
+  },
+  {
+    "numero": 30,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Uruku"
+  },
+  {
+    "numero": 31,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "MURRAY, R.; KLIGERMAN, E. Teias de afeto e poesia. Disponível em:"
+  },
+  {
+    "numero": 32,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Muitos pensam que narrativa curta é sinônimo de conto,"
+  },
+  {
+    "numero": 33,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Disponível em: www.tjdft.jus.br. Acesso em: 15 out. 2024 (adaptado)."
+  },
+  {
+    "numero": 34,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Disponível em: https://revistagalileu.globo.com."
+  },
+  {
+    "numero": 35,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Margot Robbie foi criticada por “não ser bonita o suficiente”"
+  },
+  {
+    "numero": 36,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "I: o nome do filme é roupa suja ... eu assisti na minha casa ..."
+  },
+  {
+    "numero": 37,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 38,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "1                O mais assustador do meteoro que cruzou o céu da Sibéria e explodiu no ar como"
+  },
+  {
+    "numero": 39,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Do rádio ao podcast"
+  },
+  {
+    "numero": 40,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Desenvolvendo-se nesse meio, é natural que Celina, filha mais velha de D. Adozinda, tivesse seus pequenos flirts com alguns"
+  },
+  {
+    "numero": 41,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 42,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "TRADUZINDO O JURIDIQUÊS"
+  },
+  {
+    "numero": 43,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Em 1995, os Jenipapo-Kanindé quebraram a tradição da"
+  },
+  {
+    "numero": 44,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Porque ler para crianças é um ato de amor"
+  },
+  {
+    "numero": 45,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "A artista Marija Tiurina criou uma série chamada Palavras"
+  },
+  {
+    "numero": 46,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Macedônia do Norte"
+  },
+  {
+    "numero": 47,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Concentração de CO2 por queimadas entre África e Brasil em 30 de agosto de 2019"
+  },
+  {
+    "numero": 48,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "A credulidade dos ouvintes aumenta o descaramento do narrador, e o descaramento deste conquista-lhes a credulidade."
+  },
+  {
+    "numero": 49,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 50,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "O direito não é a justiça. O direito é o elemento do cálculo,"
+  },
+  {
+    "numero": 51,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Sinal fechado"
+  },
+  {
+    "numero": 52,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Não há consenso em torno do nome dado à pandemia,"
+  },
+  {
+    "numero": 53,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 54,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "A ideia de êxodo urbano assume ares caricaturais. Pega a mais"
+  },
+  {
+    "numero": 55,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "A “invenção” dessa nova anatomia política não deve"
+  },
+  {
+    "numero": 56,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Por séculos, o Rio Reno tem sido uma rota de navegação"
+  },
+  {
+    "numero": 57,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Dos 10 aos 15 anos de idade, Virgínia adorava acompanhar"
+  },
+  {
+    "numero": 58,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Em 1872, havia mais de 1 milhão de votantes, correspondentes"
+  },
+  {
+    "numero": 59,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Pela falta de chuvas, a geração de energia eólica, solar e"
+  },
+  {
+    "numero": 60,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Adam Smith via o açougueiro e o padeiro não só como"
+  },
+  {
+    "numero": 61,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "O corpo de cidadãos é o poder supremo dos Estados."
+  },
+  {
+    "numero": 62,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Para que a utopia nasça, é preciso duas condições. A primeira é a forte sensação de que o mundo não está funcionando adequadamente"
+  },
+  {
+    "numero": 63,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Produção e exportações brasileiras no ranking mundial em 2019"
+  },
+  {
+    "numero": 64,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Em toda a sua carreira política, Getúlio Vargas sempre contara com o seu talento pessoal de persuasão e poder de manipulação."
+  },
+  {
+    "numero": 65,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "O que eu queria ter sido"
+  },
+  {
+    "numero": 66,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Independência de pensamento, autonomia e direito"
+  },
+  {
+    "numero": 67,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Do ponto de vista administrativo e judicial, a desapropriação"
+  },
+  {
+    "numero": 68,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Salvador, capital do estado da Bahia."
+  },
+  {
+    "numero": 69,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "A difusão pelos cônegos do ideal apostólico, bem como"
+  },
+  {
+    "numero": 70,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Nos Estados Unidos, um hotel perto de um parque foi engolido"
+  },
+  {
+    "numero": 71,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Moradores de Berlim protestaram contra a demolição de"
+  },
+  {
+    "numero": 72,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 73,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Entre esses preconceitos estava o canibalismo. A prática não"
+  },
+  {
+    "numero": 74,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Fragmentada em pequenos grupos, fragilizada pela ausência"
+  },
+  {
+    "numero": 75,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "A partir do século XIX e, principalmente, no século XX, iniciou-se"
+  },
+  {
+    "numero": 76,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Os direitos do homem constituem uma classe variável, como"
+  },
+  {
+    "numero": 77,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Carro elétrico, uma miragem ecológica"
+  },
+  {
+    "numero": 78,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "A Roda dos Expostos de Salvador (Bahia) data de 1726 e"
+  },
+  {
+    "numero": 79,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "A missão dos governantes consiste em promover a felicidade"
+  },
+  {
+    "numero": 80,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Cidade sustentável é o assentamento humano constituído"
+  },
+  {
+    "numero": 81,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Em decorrência da naturalização da inferioridade social"
+  },
+  {
+    "numero": 82,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "A cidade justa é governada pelos filósofos, administrada"
+  },
+  {
+    "numero": 83,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "A Impressão Régia do Rio de Janeiro foi criada pelo decreto de"
+  },
+  {
+    "numero": 84,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Com o objetivo de auxiliar a prevenção e o combate a"
+  },
+  {
+    "numero": 85,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 86,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Pesquisa pioneira no Brasil propõe o uso de"
+  },
+  {
+    "numero": 87,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Durante a realeza, e nos primeiros anos republicanos,"
+  },
+  {
+    "numero": 88,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Os povos indígenas têm o direito de manter, controlar, proteger"
+  },
+  {
+    "numero": 89,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 90,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Em 1914, uma expedição estudantil saiu da Rússia em direção"
+  }
+]

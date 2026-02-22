@@ -1,0 +1,632 @@
+[
+  {
+    "numero": 91,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 92,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Os sapinhos-ponta-de-flecha constituem um grupo de"
+  },
+  {
+    "numero": 93,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "A produção de vacinas exige uma sequência de procedimentos,"
+  },
+  {
+    "numero": 94,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "O bioma Cerrado é caracterizado por apresentar ampla e"
+  },
+  {
+    "numero": 95,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "O monstro de gila, um lagarto encontrado em um deserto dos"
+  },
+  {
+    "numero": 96,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Existe um processo de purificação de água em que são"
+  },
+  {
+    "numero": 97,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "Por que os olhos ficam vermelhos"
+  },
+  {
+    "numero": 98,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "O sashimi (filé de peixe cru) de baiacu é uma iguaria muito"
+  },
+  {
+    "numero": 99,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "A deficiência da enzima lipase ácida causa uma doença em"
+  },
+  {
+    "numero": 100,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "A quantidade de CO2 na atmosfera da Terra aumentou em"
+  },
+  {
+    "numero": 101,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "A icterícia é uma doença que acomete recém-nascidos e"
+  },
+  {
+    "numero": 102,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "A figura apresenta a herança genética de uma característica"
+  },
+  {
+    "numero": 103,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Para transportar uma caixa do primeiro para o segundo"
+  },
+  {
+    "numero": 104,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "A Figura 1 apresenta o esquema de um tubo de imagem em que"
+  },
+  {
+    "numero": 105,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "A tirinha ilustra um processo físico em que uma onda sonora,"
+  },
+  {
+    "numero": 106,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Em uma aula prática de química orgânica, um professor"
+  },
+  {
+    "numero": 107,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "As usinas termonucleares são aquelas que produzem energia elétrica a partir da geração de energia térmica proveniente das"
+  },
+  {
+    "numero": 108,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "No início do século XX, as fórmulas das substâncias eram representadas de modo diferente do atual. A figura apresenta uma"
+  },
+  {
+    "numero": 109,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "O fruto do cajueiro é um aquênio repleto de um líquido"
+  },
+  {
+    "numero": 110,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "A química nuclear é uma importante ferramenta"
+  },
+  {
+    "numero": 111,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "O esquema apresenta as etapas do processo de biodigestão,"
+  },
+  {
+    "numero": 112,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Golden Rice, ou arroz dourado, é uma variedade de arroz"
+  },
+  {
+    "numero": 113,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "Em sua maioria, os equipamentos eletrônicos domésticos"
+  },
+  {
+    "numero": 114,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "O Brasil é o maior produtor mundial de nióbio (massa"
+  },
+  {
+    "numero": 115,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "Anulado",
+    "preview": "O nível sonoro, em decibel (dB), é calculado pela expressão:"
+  },
+  {
+    "numero": 116,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "O despejo acidental de óleo nos oceanos tem ocasionado"
+  },
+  {
+    "numero": 117,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Alguns hormônios sexuais têm ganhado notável atenção nos"
+  },
+  {
+    "numero": 118,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "A figura ilustra as informações contidas no manual de um"
+  },
+  {
+    "numero": 119,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "A dimetilamina é uma substância de elevada toxidez que"
+  },
+  {
+    "numero": 120,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "O aquecimento em fogões por indução utiliza bobinas"
+  },
+  {
+    "numero": 121,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "Anulado",
+    "preview": "Plantas e algas realizam fotossíntese oxigênica para"
+  },
+  {
+    "numero": 122,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "As cangas são ambientes resultantes da atuação, ao longo"
+  },
+  {
+    "numero": 123,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Para a produção de titânio metálico ou dióxido de titânio"
+  },
+  {
+    "numero": 124,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "A laje de um depósito de bebidas tem 50 m2 de área útil de"
+  },
+  {
+    "numero": 125,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Em uma comunidade rural, os moradores utilizam uma"
+  },
+  {
+    "numero": 126,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Objetos de prata escurecem em contato com compostos"
+  },
+  {
+    "numero": 127,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Apaixonada por culinária e química, uma chefe de cozinha"
+  },
+  {
+    "numero": 128,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Segundo o princípio da independência dos movimentos, de"
+  },
+  {
+    "numero": 129,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Nos processos de transformação e reciclagem de recursos"
+  },
+  {
+    "numero": 130,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "A resistência de um fio de platina pode ser usada para"
+  },
+  {
+    "numero": 131,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "O ácido úsnico é retirado de liquens e foi testado contra"
+  },
+  {
+    "numero": 132,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "A filtração em carvão é uma das mais antigas formas de"
+  },
+  {
+    "numero": 133,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "A maioria dos seres vivos tem um relógio biológico"
+  },
+  {
+    "numero": 134,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Os funcionários de um zoológico observaram um aumento"
+  },
+  {
+    "numero": 135,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Réguas elétricas são dispositivos que permitem a ligação"
+  },
+  {
+    "numero": 136,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "No entorno de uma lagoa circular, cujo raio mede 1 km,"
+  },
+  {
+    "numero": 137,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Em um laboratório, um recipiente contém 10 litros de"
+  },
+  {
+    "numero": 138,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma distribuidora de combustível possui caminhões-tanque"
+  },
+  {
+    "numero": 139,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma empresa de tecnologia vai padronizar a velocidade de"
+  },
+  {
+    "numero": 140,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Na cantina de uma escola, há cinco alimentos vendidos em"
+  },
+  {
+    "numero": 141,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Uma fábrica utilizou uma impressora 3D para produzir o"
+  },
+  {
+    "numero": 142,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Pesquisas na área de neurobiologia confirmam que a prática"
+  },
+  {
+    "numero": 143,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "No atletismo, um grande desafio da prova de 100 metros"
+  },
+  {
+    "numero": 144,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Em um jogo de computador, um cubo se encontra inicialmente posicionado conforme indicado na figura."
+  },
+  {
+    "numero": 145,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "A reportagem de uma revista abordou o uso de redes sociais pelos internautas brasileiros. Alguns dos dados apurados pela"
+  },
+  {
+    "numero": 146,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma pessoa pretende instalar um kit de gás natural veicular (GNV) em seu carro. Na loja que escolheu para realizar a compra"
+  },
+  {
+    "numero": 147,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Em um jogo digital, há três personagens: um herói e dois"
+  },
+  {
+    "numero": 148,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma livraria comercializa livros dos seguintes gêneros"
+  },
+  {
+    "numero": 149,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Uma escola de idiomas oferece cursos de inglês, espanhol, francês e alemão. Os gráficos apresentam a distribuição percentual"
+  },
+  {
+    "numero": 150,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "O controle remoto de um carrinho de brinquedo vem equipado com uma tela que ajusta automaticamente a escala empregada"
+  },
+  {
+    "numero": 151,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "A cúpula pentagonal giralongada é um poliedro de Johnson,"
+  },
+  {
+    "numero": 152,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Uma fábrica de tijolos ecológicos com 3 funcionários,"
+  },
+  {
+    "numero": 153,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Para acompanhar o fluxo de visitantes em seu prédio,"
+  },
+  {
+    "numero": 154,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Quatro candidatos se apresentaram para realizar a prova de"
+  },
+  {
+    "numero": 155,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Em uma escola, todos os estudantes do ensino médio"
+  },
+  {
+    "numero": 156,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "O dono de uma embarcação deve partir do ponto P e"
+  },
+  {
+    "numero": 157,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Em um estudo clínico, 55 mulheres foram distribuídas, aleatoriamente, em 5 grupos de 11 pessoas. Para testar uma nova"
+  },
+  {
+    "numero": 158,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Pace é um termo usado por um corredor para denominar o seu ritmo médio em uma corrida. Representa o tempo médio,"
+  },
+  {
+    "numero": 159,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Um recipiente tem um formato que faz com que, ao ser"
+  },
+  {
+    "numero": 160,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Os quadrados em cinza na figura representam os quarteirões"
+  },
+  {
+    "numero": 161,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Uma empresa produziu, em um determinado mês,"
+  },
+  {
+    "numero": 162,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Dez casais fundaram um grupo de dança e decidiram"
+  },
+  {
+    "numero": 163,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Um artista, que costuma fazer desenhos com areia na"
+  },
+  {
+    "numero": 164,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "O cortisol é um hormônio produzido pelas glândulas"
+  },
+  {
+    "numero": 165,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Um estacionamento possui 120 vagas para veículos,"
+  },
+  {
+    "numero": 166,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "O dono de uma sorveteria armazena sorvete em potes de"
+  },
+  {
+    "numero": 167,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "A produtividade de soja em uma área cultivada é a média da quantidade de sacas de 50 quilogramas que são produzidas"
+  },
+  {
+    "numero": 168,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "A figura ilustra o projeto visual para confecção de uma"
+  },
+  {
+    "numero": 169,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Três dados cúbicos, com faces numeradas de 1 a 6, foram"
+  },
+  {
+    "numero": 170,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "A luminância de um objeto é a grandeza que descreve a"
+  },
+  {
+    "numero": 171,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Quatro amigos, cada um com 100 moedas, criaram um jogo,"
+  },
+  {
+    "numero": 172,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Uma pessoa tem um carro bicombustível, que funciona a gás natural veicular (GNV) e a gasolina. O rendimento do carro,"
+  },
+  {
+    "numero": 173,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Em um país, a primeira etapa para obtenção da carteira de motorista é a contratação de três produtos:"
+  },
+  {
+    "numero": 174,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Uma caixa de descarga, acoplada a um vaso sanitário, tem"
+  },
+  {
+    "numero": 175,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Um confeiteiro passou a produzir tortas em formato de"
+  },
+  {
+    "numero": 176,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Um empresário utiliza máquinas cuja pressão interna P,"
+  },
+  {
+    "numero": 177,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Em uma cidade, será construído um túnel que atravessa uma"
+  },
+  {
+    "numero": 178,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "Anulado",
+    "preview": "Um carro que custa 60 mil reais é comercializado por uma"
+  },
+  {
+    "numero": 179,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Um pai comprou oito presentes diferentes (dentre os"
+  },
+  {
+    "numero": 180,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "A final de um campeonato de futebol foi disputada em 2 tempos"
+  }
+]
