@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Painel de Erros Comuns H18</title>
+  <desc id="desc">Quadro de erros comuns na habilidade H18 e ações corretivas.</desc>
+  <defs>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .head { font: 700 26px 'Segoe UI', Arial, sans-serif; fill: #111827; }
+      .item { font: 500 21px 'Segoe UI', Arial, sans-serif; fill: #1f2937; }
+      .ok { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #166534; }
+      .warn { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #991b1b; }
+    </style>
+  </defs>
+
+  <rect x="28" y="28" width="1344" height="764" rx="24" fill="#fdfdfd" stroke="#d1d5db" stroke-width="3"/>
+  <text x="72" y="95" class="title">H18 - Erros comuns e correção prática</text>
+
+  <rect x="80" y="140" width="1240" height="90" rx="14" fill="#f3f4f6" stroke="#d1d5db"/>
+  <text x="120" y="195" class="head">Diagnóstico rápido: onde você perde mais pontos na interpretação?</text>
+
+  <rect x="80" y="270" width="590" height="460" rx="18" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="115" y="325" class="warn">Erros frequentes</text>
+  <text x="115" y="370" class="item">1. Ler só uma frase e ignorar o texto inteiro.</text>
+  <text x="115" y="410" class="item">2. Ignorar conectivos (porém, portanto, além disso).</text>
+  <text x="115" y="450" class="item">3. Confundir exemplo com tese principal.</text>
+  <text x="115" y="490" class="item">4. Marcar alternativa por \"parecer bonita\".</text>
+  <text x="115" y="530" class="item">5. Não comparar as cinco opções com calma.</text>
+  <text x="115" y="590" class="item">Resultado: erros de coerência e perda de pontos</text>
+  <text x="115" y="620" class="item">mesmo quando o conteúdo é conhecido.</text>
+
+  <rect x="730" y="270" width="590" height="460" rx="18" fill="#ecfdf5" stroke="#86efac" stroke-width="2"/>
+  <text x="765" y="325" class="ok">Plano de correção</text>
+  <text x="765" y="370" class="item">1. Resumir tema em uma frase antes de marcar.</text>
+  <text x="765" y="410" class="item">2. Circular conectivos e termos de retomada.</text>
+  <text x="765" y="450" class="item">3. Testar cada alternativa no sentido global.</text>
+  <text x="765" y="490" class="item">4. Eliminar exageros e distorções de contexto.</text>
+  <text x="765" y="530" class="item">5. Revisar erro em até 24h com novo treino.</text>
+  <text x="765" y="590" class="item">Resultado esperado: aumento de acertos em</text>
+  <text x="765" y="620" class="item">questões de leitura em todas as áreas.</text>
+</svg>

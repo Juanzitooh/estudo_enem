@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title desc">
+  <title id="title">Fluxo de Resolução H18</title>
+  <desc id="desc">Quadro visual com o passo a passo para resolver questões da habilidade H18.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fdfdfd"/>
+      <stop offset="100%" stop-color="#f4f6fb"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 44px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 24px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .box-title { font: 700 24px 'Segoe UI', Arial, sans-serif; fill: #0b1220; }
+      .box-text { font: 500 21px 'Segoe UI', Arial, sans-serif; fill: #1f2937; }
+      .step { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; }
+      .arrow { stroke: #475569; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect x="24" y="24" width="1352" height="812" rx="24" fill="url(#bg)" stroke="#cbd5e1" stroke-width="3"/>
+
+  <text x="70" y="100" class="title">H18 - Método de Resolução ENEM</text>
+  <text x="70" y="140" class="subtitle">Progressão temática e organização textual em 5 passos práticos</text>
+
+  <rect x="80" y="190" width="380" height="140" rx="18" class="step"/>
+  <text x="110" y="240" class="box-title">1) Comando da questão</text>
+  <text x="110" y="275" class="box-text">Identificar / inferir / relacionar</text>
+  <text x="110" y="305" class="box-text">o que a banca realmente pede.</text>
+
+  <rect x="520" y="190" width="380" height="140" rx="18" class="step"/>
+  <text x="550" y="240" class="box-title">2) Tema e recorte</text>
+  <text x="550" y="275" class="box-text">Resumir o texto em 1 frase</text>
+  <text x="550" y="305" class="box-text">e marcar o foco principal.</text>
+
+  <rect x="960" y="190" width="340" height="140" rx="18" class="step"/>
+  <text x="990" y="240" class="box-title">3) Evidências</text>
+  <text x="990" y="275" class="box-text">Conectivos, retomadas e</text>
+  <text x="990" y="305" class="box-text">função dos parágrafos.</text>
+
+  <rect x="220" y="410" width="430" height="160" rx="18" class="step"/>
+  <text x="250" y="465" class="box-title">4) Eliminação inteligente</text>
+  <text x="250" y="500" class="box-text">Remover alternativas que distorcem</text>
+  <text x="250" y="530" class="box-text">a lógica global do texto.</text>
+
+  <rect x="750" y="410" width="430" height="160" rx="18" class="step"/>
+  <text x="780" y="465" class="box-title">5) Checagem final</text>
+  <text x="780" y="500" class="box-text">Confirmar coerência do início</text>
+  <text x="780" y="530" class="box-text">ao fim do enunciado.</text>
+
+  <path d="M460 260 L520 260" class="arrow"/>
+  <path d="M900 260 L960 260" class="arrow"/>
+  <path d="M1130 330 C1130 380, 965 390, 965 410" class="arrow"/>
+  <path d="M390 330 C390 380, 435 390, 435 410" class="arrow"/>
+  <path d="M650 490 L750 490" class="arrow"/>
+
+  <rect x="110" y="650" width="1180" height="120" rx="16" fill="#ecfeff" stroke="#67e8f9" stroke-width="2"/>
+  <text x="145" y="705" class="box-title">Regra de ouro H18:</text>
+  <text x="370" y="705" class="box-text">a alternativa correta respeita o encadeamento das ideias do texto inteiro,</text>
+  <text x="145" y="740" class="box-text">não apenas uma frase isolada.</text>
+</svg>

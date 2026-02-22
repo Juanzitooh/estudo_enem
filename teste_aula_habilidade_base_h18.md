@@ -1,255 +1,257 @@
-# Teste de Aula Aprofundada - Habilidade Base
+# Aula ENEM — Habilidade H18 (Linguagens)
 
-## Habilidade escolhida (Matriz ENEM)
-
-**Área:** Linguagens  
-**Habilidade:** **H18**  
-**Texto oficial:** "Identificar os elementos que concorrem para a progressão temática e para a organização e estruturação de textos de diferentes gêneros e tipos."
-
-## Por que ela é base para as outras
-
-No ENEM, quase toda questão exige leitura ativa.  
-Se você domina progressão temática e organização textual, melhora:
-- interpretação de enunciado em Matemática;
-- leitura de textos em Natureza e Humanas;
-- análise argumentativa em Linguagens;
-- escrita na redação.
+**Fonte-base:** Matriz de Referência ENEM (INEP)  
+**Habilidade foco:** H18 — Identificar os elementos que concorrem para a progressão temática e para a organização e estruturação de textos de diferentes gêneros e tipos.  
+**Tempo estimado:** 60 a 90 minutos  
+**Pré-requisitos:** leitura básica de textos argumentativos e noção de conectivos
 
 ---
 
-## Objetivo da aula
-
-Ao final, você deve conseguir:
-1. identificar **tema** e **recorte** de um texto;
-2. reconhecer como as ideias avançam sem quebra de sentido;
-3. localizar mecanismos de coesão que organizam a leitura;
-4. resolver questões de interpretação com menos "achismo".
+## 1. Objetivo da aula
+Ao final, você será capaz de:
+- [ ] identificar tema, recorte e tese principal de um texto;
+- [ ] analisar como as ideias avançam de um parágrafo para outro;
+- [ ] eliminar alternativas incoerentes em questões de interpretação.
 
 ---
 
-## Fundamentos da H18
+## 2. Contexto ENEM (intercontextualização)
+**Cenário real:** em notícias, campanhas públicas e textos de opinião, ideias são organizadas para convencer o leitor. No ENEM, a banca cobra exatamente essa leitura estrutural: entender não só “o que foi dito”, mas “como foi organizado”.
 
-### 1) Progressão temática (como o texto avança)
+**Por que isso cai no ENEM:**
+- aparece em Linguagens, Humanas, Natureza e até em enunciados de Matemática;
+- diferencia leitura superficial de leitura estratégica;
+- reduz erro por interpretação apressada.
 
-É a forma como o texto desenvolve um tema ao longo das frases e parágrafos.
-
-Sinais comuns:
-- repetição estratégica de palavras-chave;
-- substituições por sinônimos, pronomes ou expressões equivalentes;
-- encadeamento de causa, contraste, conclusão;
-- mudança de foco controlada (sem romper o assunto principal).
-
-### 2) Organização textual (como o texto se monta)
-
-Todo texto tem um "projeto":
-- abertura do tema;
-- desenvolvimento (explicação, comparação, defesa, exemplificação);
-- fechamento (síntese, conclusão, encaminhamento).
-
-No ENEM, perguntas frequentes:
-- função de um parágrafo;
-- papel de conectivos;
-- efeito de repetição/retomada;
-- tese e argumentos.
-
-### 3) Coesão (cola entre as partes)
-
-### Coesão referencial
-- Retoma termos anteriores: "essa medida", "tal política", "isso".
-- Evita repetição excessiva, mas mantém clareza.
-
-### Coesão sequencial
-- Marca relação lógica entre ideias.
-- Adição: "além disso", "também".
-- Contraste: "porém", "entretanto".
-- Causa: "porque", "devido a".
-- Conclusão: "portanto", "assim".
-
-### 4) Coerência (sentido global)
-
-Mesmo com conectivos corretos, o texto pode ser incoerente se:
-- contradiz a própria tese;
-- muda de foco sem justificativa;
-- apresenta exemplo que não sustenta a ideia.
+![Fluxo de resolução da H18](assets/img/h18_fluxo_resolucao.svg)
 
 ---
 
-## Método prático para questões ENEM (passo a passo)
+## 3. Teoria essencial (sem enrolar)
+### 3.1 Conceitos-chave
+- **Progressão temática:** modo como o tema avança ao longo do texto.
+- **Organização textual:** forma como o texto distribui introdução, desenvolvimento e fechamento.
+- **Coesão:** elementos linguísticos que conectam partes do texto (conectivos, pronomes, retomadas).
+- **Coerência:** unidade de sentido global.
 
-1. Leia o enunciado e marque o comando: **identificar**, **inferir**, **relacionar**, **justificar**.
-2. Ache o **tema central** em 1 frase.
-3. Divida o texto em blocos (início, desenvolvimento, fechamento).
-4. Circule conectivos e retomadas ("isso", "tal", "essa prática").
-5. Verifique qual alternativa respeita o encadeamento lógico do texto inteiro.
-6. Elimine opções que exageram, trazem opinião externa ou usam parte do texto fora de contexto.
-
----
-
-## Exemplos resolvidos (curtos)
-
-### Exemplo 1
-
-Trecho: "O transporte público foi ampliado. Com isso, reduziu-se o tempo médio de deslocamento. Ainda assim, periferias distantes seguem com baixa cobertura."
-
-Leitura:
-- tema: mobilidade urbana;
-- progressão: ampliação -> efeito positivo -> limite persistente;
-- conectivo-chave: "Ainda assim" (contraste/ressalva).
-
-Conclusão:
-- o texto não nega avanços; mostra avanços parciais.
-
-### Exemplo 2
-
-Trecho: "A escola incorporou tecnologia. Entretanto, sem formação docente continuada, os resultados permaneceram modestos."
-
-Leitura:
-- tese implícita: tecnologia só não resolve;
-- "Entretanto" marca oposição entre expectativa e resultado.
-
-Conclusão:
-- foco do autor é condição de implementação, não rejeição da tecnologia.
-
-### Exemplo 3
-
-Trecho: "A campanha aumentou a adesão inicial. Nos meses seguintes, a queda no engajamento revelou a necessidade de acompanhamento permanente."
-
-Leitura:
-- progressão temporal: início positivo -> queda posterior -> necessidade de estratégia.
-
-Conclusão:
-- argumento central: continuidade importa mais que ação pontual.
+### 3.2 Como o ENEM “disfarça” isso
+- pergunta sobre “efeito de sentido” de um trecho, mas na prática cobra função do parágrafo;
+- traz alternativas com palavras do texto, porém com relação lógica alterada;
+- usa conectivos como pista principal para identificar contraste, causa, conclusão ou adição.
 
 ---
 
-## Treino guiado (10 questões originais)
+## 4. Método de resolução (passo a passo)
+> Use este procedimento em qualquer questão da H18.
 
-Marque a alternativa correta.
-
-### Questão 1
-Em um texto argumentativo, o 1º parágrafo apresenta a tese; o 2º traz dados; o 3º propõe solução. A organização predominante é:
-
-A) narrativa cronológica  
-B) dissertativo-argumentativa com encaminhamento  
-C) injuntiva com foco em comandos  
-D) descritiva com foco em cenários  
-E) lírica com foco em subjetividade
-
-### Questão 2
-No trecho "A leitura digital ampliou o acesso. Porém, a superficialidade aumentou em parte dos usuários", o conectivo "Porém" indica:
-
-A) adição  
-B) causa  
-C) oposição  
-D) conclusão  
-E) explicação
-
-### Questão 3
-No enunciado "A violência urbana cresceu em certos bairros. Esse fenômeno pressiona serviços públicos", a expressão "Esse fenômeno" retoma:
-
-A) bairros  
-B) serviços públicos  
-C) crescimento da violência urbana  
-D) políticas de segurança  
-E) desigualdade histórica
-
-### Questão 4
-Qual alternativa melhor preserva a progressão temática?
-
-Texto-base: "A reciclagem avançou na cidade. A coleta seletiva, porém, ainda não cobre toda a área urbana."
-
-A) O texto muda para turismo no segundo período.  
-B) O segundo período contradiz totalmente o primeiro.  
-C) O segundo período complementa o primeiro com limitação.  
-D) O texto abandona o tema ambiental.  
-E) O segundo período repete sem acrescentar.
-
-### Questão 5
-Em "A escola recebeu tablets. Portanto, os indicadores melhoraram imediatamente", o problema principal de coerência pode ser:
-
-A) uso correto de causa  
-B) conclusão precipitada sem mediação de fatores  
-C) ausência de sujeito  
-D) erro de concordância  
-E) excesso de adjetivos
-
-### Questão 6
-Em questões de H18, uma estratégia de eliminação eficiente é:
-
-A) escolher a alternativa mais longa  
-B) buscar opinião pessoal sobre o tema  
-C) ignorar conectivos  
-D) descartar opções que distorcem relação lógica do texto  
-E) marcar a primeira opção plausível
-
-### Questão 7
-No trecho "A política de vacinação reduziu internações. Além disso, diminuiu gastos hospitalares", "Além disso" expressa:
-
-A) oposição  
-B) condição  
-C) adição  
-D) finalidade  
-E) concessão
-
-### Questão 8
-Quando um parágrafo inicia com "Nesse contexto", ele geralmente:
-
-A) rompe totalmente com o tema anterior  
-B) retoma o que foi dito para avançar a argumentação  
-C) introduz diálogo teatral  
-D) marca descrição estática  
-E) indica citação literal obrigatória
-
-### Questão 9
-Qual leitura é mais adequada para o trecho: "O uso de bicicletas cresceu no centro. Já nos bairros periféricos, faltam ciclovias contínuas."?
-
-A) O texto afirma igualdade de infraestrutura.  
-B) O texto aponta contraste territorial dentro do mesmo tema.  
-C) O texto abandona mobilidade e discute saúde.  
-D) O texto conclui que bicicleta não funciona.  
-E) O texto não apresenta recorte espacial.
-
-### Questão 10
-Em textos do ENEM, progressão temática forte costuma ocorrer quando:
-
-A) há frases soltas sem relação  
-B) cada parágrafo introduz tema novo sem retomada  
-C) as ideias se encadeiam por retomadas e conectivos adequados  
-D) o autor evita qualquer referência ao que já disse  
-E) o texto depende apenas de opinião do leitor
+1. **Identifique o comando da questão:** inferir, relacionar, justificar, interpretar.
+2. **Localize o tema central:** resuma o texto em uma frase curta.
+3. **Marque conectivos e retomadas:** “porém”, “portanto”, “além disso”, “esse fenômeno”.
+4. **Teste cada alternativa no sentido global:** não aceite opção baseada em frase isolada.
+5. **Cheque armadilhas:** exageros, conclusões absolutas e mudança indevida de foco.
 
 ---
 
-## Gabarito comentado
+## 5. Interdisciplinaridade (2 conexões mínimas)
+### Conexão 1 — Matemática
+- **Relação:** melhora leitura de enunciados longos e identificação do que realmente deve ser calculado.
+- **Como pode cair:** problema com dados em excesso em que o erro vem da interpretação, não da conta.
 
-1. **B** - Estrutura típica de defesa de tese com proposta final.  
-2. **C** - "Porém" marca contraste.  
-3. **C** - Retomada anafórica do fato anterior.  
-4. **C** - Há continuidade com ressalva, não ruptura.  
-5. **B** - Relação causal simplificada demais (salto lógico).  
-6. **D** - H18 cobra encadeamento, não "chute por tamanho".  
-7. **C** - Conector aditivo.  
-8. **B** - Retoma contexto para avançar argumento.  
-9. **B** - Mesmo tema (mobilidade), com contraste espacial.  
-10. **C** - Coesão + coerência = progressão consistente.
+### Conexão 2 — Ciências Humanas
+- **Relação:** análise de tese, argumento e contra-argumento em textos históricos e sociológicos.
+- **Como pode cair:** questão pede posição do autor a partir da estrutura argumentativa.
+
+### Conexão 3 — Redação
+- **Relação:** coesão e coerência são base para um texto dissertativo forte.
+- **Como pode cair:** sua leitura da H18 melhora repertório e organização da própria escrita.
+
+![Mapa interdisciplinar da H18](assets/img/h18_mapa_interdisciplinar.svg)
 
 ---
 
-## Erros comuns nessa habilidade
+## 6. Exemplos resolvidos
+### Exemplo 1 (básico)
+**Enunciado:** “A mobilidade urbana avançou em algumas capitais. Porém, regiões periféricas ainda enfrentam baixa cobertura.”  
+**Resolução:**
+1. Tema: mobilidade urbana.
+2. Conectivo “porém” indica contraste.
+3. O texto reconhece avanço, mas ressalta limite.
+**Resposta:** leitura correta é “avanço parcial com desigualdade de acesso”.
 
-- focar em palavra isolada e perder o sentido global;
-- ignorar conectivos ("porém", "portanto", "além disso");
-- confundir retomada com mudança de assunto;
-- escolher alternativa "bonita", mas incoerente com o texto.
+### Exemplo 2 (ENEM-like)
+**Enunciado:** “A escola incorporou recursos digitais. Entretanto, sem formação docente contínua, os resultados permaneceram modestos.”  
+**Resolução:**
+1. Identificar comando (efeito de sentido).
+2. “Entretanto” opõe expectativa e resultado.
+3. Tese implícita: tecnologia isolada não garante melhoria.
+**Resposta:** foco está na condição de implementação, não na rejeição da tecnologia.
 
-## Plano de estudo curto (3 blocos de 25 min)
+---
 
-1. **Bloco 1:** teoria + marcação de conectivos em 2 textos curtos.  
-2. **Bloco 2:** resolver as 10 questões acima.  
-3. **Bloco 3:** revisar erros e resumir em 5 regras pessoais.
+## 7. Treino progressivo
+### 7.1 Questões conceituais (5)
+1. Defina progressão temática em uma frase.
+2. Diferencie coesão referencial e coesão sequencial.
+3. Explique o papel de conectivos adversativos.
+4. Diga quando há incoerência global em um texto.
+5. Identifique a função de um parágrafo de conclusão.
 
-## Registro sugerido no tracker
+### 7.2 Questões aplicadas (5)
+1. Marque o tema e recorte de um texto curto de opinião.
+2. Identifique duas retomadas e seu referente.
+3. Explique a função de “portanto” em um parágrafo final.
+4. Reescreva um trecho para melhorar coesão.
+5. Classifique a relação lógica de três conectivos.
 
-| Data | Área | Habilidade | Status | Acertos/Total | Observações |
-|---|---|---|---|---|---|
-| AAAA-MM-DD | Linguagens | H18 | [~] | __/10 | Erros em conectivos e função de parágrafo |
+### 7.3 Questões estilo ENEM (10)
+Distribuição: 5 fáceis, 3 médias e 2 difíceis.
+
+**Q1 [Fácil].** Em “A campanha elevou a adesão inicial. Ainda assim, houve queda no mês seguinte”, o conectivo indica:<br>
+A) adição<br>
+B) contraste<br>
+C) causa<br>
+D) explicação<br>
+E) conclusão
+
+**Q2 [Fácil].** A expressão “esse processo” em um parágrafo costuma:<br>
+A) iniciar tema novo<br>
+B) retomar ideia anterior<br>
+C) concluir texto sempre<br>
+D) eliminar ambiguidade por definição<br>
+E) anular argumento
+
+**Q3 [Fácil].** Uma alternativa incorreta em H18 geralmente:<br>
+A) preserva o sentido global<br>
+B) melhora a progressão<br>
+C) repete dados com mesma relação lógica<br>
+D) distorce a relação entre ideias<br>
+E) identifica função do trecho
+
+**Q4 [Fácil].** Em leitura crítica, “portanto” é pista de:<br>
+A) oposição<br>
+B) conclusão<br>
+C) dúvida<br>
+D) comparação<br>
+E) enumeração
+
+**Q5 [Fácil].** Quando a banca pede “posição do autor”, o foco principal é:<br>
+A) palavra mais técnica<br>
+B) opinião do leitor<br>
+C) encadeamento argumentativo<br>
+D) data de publicação<br>
+E) tamanho do texto
+
+**Q6 [Média].** Em “Embora o acesso à internet tenha ampliado repertórios, a desigualdade digital ainda limita oportunidades”, a relação principal entre as orações é de:<br>
+A) adição simples<br>
+B) conclusão<br>
+C) concessão com contraste<br>
+D) finalidade<br>
+E) exemplificação
+
+**Q7 [Média].** Em um texto em que o 1º parágrafo apresenta o problema, o 2º traz dados e o 3º propõe solução, a função principal do 2º parágrafo é:<br>
+A) mudar de assunto para tema secundário<br>
+B) repetir a introdução sem nova função<br>
+C) sustentar o problema com evidências<br>
+D) encerrar a discussão com opinião pessoal<br>
+E) desfazer a tese do autor
+
+**Q8 [Média].** Se um texto organiza as ideias como “definição do tema -> causas -> impactos -> proposta”, a progressão temática é melhor descrita como:<br>
+A) enumeração aleatória<br>
+B) contraste sem tese<br>
+C) descrição neutra sem conclusão<br>
+D) encadeamento explicativo até intervenção<br>
+E) narrativa pessoal cronológica
+
+**Q9 [Difícil].** No trecho “O autor reconhece ganhos da automação, mas alerta para regulação trabalhista”, qual alternativa preserva a coerência global?<br>
+A) A automação é totalmente prejudicial e deve ser proibida.<br>
+B) A regulação é desnecessária porque os ganhos econômicos bastam.<br>
+C) O texto rejeita qualquer avanço tecnológico por princípio.<br>
+D) O autor apenas lista fatos, sem posicionamento.<br>
+E) O texto articula benefícios e riscos, defendendo equilíbrio regulatório.
+
+**Q10 [Difícil].** Se o conectivo “portanto” for trocado por “no entanto” em um parágrafo conclusivo, o efeito mais provável será:<br>
+A) manter a mesma relação lógica de conclusão<br>
+B) intensificar a exemplificação anterior<br>
+C) transformar a relação em sequência temporal<br>
+D) quebrar a coerência, trocando conclusão por oposição<br>
+E) eliminar toda a progressão temática do texto
+
+---
+
+## 8. Gabarito comentado (com análise das erradas)
+- **Q1: B**  
+✅ “Ainda assim” marca contraste.  
+❌ A, C, D e E ignoram o valor adversativo.
+
+- **Q2: B**  
+✅ “Esse processo” retoma conteúdo prévio.  
+❌ A/C/D/E atribuem função que não é de retomada.
+
+- **Q3: D**  
+✅ Distratores costumam alterar a relação lógica do texto.  
+❌ A/B/C/E descrevem condutas de leitura correta.
+
+- **Q4: B**  
+✅ “Portanto” introduz conclusão.  
+❌ A/C/D/E não correspondem ao conectivo.
+
+- **Q5: C**  
+✅ A posição do autor aparece no percurso argumentativo.  
+❌ A/B/D/E não são critério central de interpretação.
+
+- **Q6: C**  
+✅ “Embora” indica concessão, com contraste entre avanço e limite.  
+❌ A/B/D/E não representam a relação concessiva do trecho.
+
+- **Q7: C**  
+✅ O parágrafo de dados funciona como evidência para sustentar a tese/problema.  
+❌ A/B/D/E descrevem funções que quebram a progressão argumentativa proposta.
+
+- **Q8: D**  
+✅ Há encadeamento lógico do conceito até a intervenção.  
+❌ A/B/C/E não refletem a organização temática apresentada.
+
+- **Q9: E**  
+✅ Preserva a tese de equilíbrio entre benefício tecnológico e regulação.  
+❌ A/B/C/D distorcem o posicionamento do autor.
+
+- **Q10: D**  
+✅ A troca altera a relação lógica e pode quebrar a coerência do fechamento.  
+❌ A/B/C/E não explicam corretamente o efeito principal da substituição.
+
+---
+
+## 9. Erros comuns e como corrigir
+- **Erro:** ler só uma frase e marcar resposta.  
+  **Correção:** resumir o texto em 1 frase antes de analisar alternativas.
+- **Erro:** ignorar conectivos.  
+  **Correção:** circular conectivos na primeira leitura.
+- **Erro:** confundir exemplo com tese.  
+  **Correção:** perguntar “qual ideia o exemplo está sustentando?”.
+- **Erro:** escolher alternativa “bonita”.  
+  **Correção:** testar cada opção contra o sentido global.
+
+![Painel de erros comuns da H18](assets/img/h18_painel_erros.svg)
+
+---
+
+## 10. Mini-plano de revisão (7 dias)
+- **D+1:** 10 questões fáceis de interpretação.
+- **D+3:** 10 questões mistas com textos de áreas diferentes.
+- **D+5:** revisão dos erros mais frequentes.
+- **D+7:** mini-simulado (15 questões) + correção comentada.
+
+---
+
+## 11. Tracker (cole no seu controle)
+- H18 — acertos: __/10 ENEM-like
+- Principais erros: conectivos / função de parágrafo / tese x exemplo
+- Próximo foco: H22 (relação entre opiniões e recursos linguísticos)
+
+---
+
+## 12. Competências e habilidades associadas (INEP)
+- **Eixos cognitivos:** Dominar linguagens, Compreender fenômenos, Construir argumentação.
+- **Competência da área:** Competência 6 (sistemas simbólicos das linguagens).
+- **Habilidade foco:** H18.
+- **Habilidades relacionadas:** H19, H22, H23, H24.
