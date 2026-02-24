@@ -1,0 +1,11 @@
+{
+  "version": "2026.02.24.1",
+  "generated_at": "2026-02-24T22:00:00Z",
+  "archive_file": "assets_2026.02.24.1.zip",
+  "bundle_file": "content_bundle.json",
+  "sha256": "4f6a9fb6f69f4a0f8bcf6f5f8799dc7f32c5d7f0c8b4d7a98a1f4fce4f7b3d1a",
+  "size": 123456,
+  "download_url": "https://SEU_HOST/releases/2026.02.24.1/assets_2026.02.24.1.zip",
+  "question_count": 5000,
+  "book_module_count": 570
+}

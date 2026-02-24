@@ -1,0 +1,27 @@
+name: enem_offline_client
+description: Cliente offline-first para estudo ENEM com update por manifest.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  crypto: ^3.0.3
+  archive: ^3.6.1
+  path_provider: ^2.1.4
+  path: ^1.9.0
+  sqflite: ^2.3.3+1
+  sqflite_common_ffi: ^2.3.3
+  sqlite3_flutter_libs: ^0.5.24
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
