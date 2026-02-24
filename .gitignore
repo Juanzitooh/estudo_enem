@@ -1,5 +1,11 @@
 # Dados pessoais de sessão (não versionar)
 prompts/contexto_sessao.md
+prompts/contexto_planejador.json
+plano/desempenho_habilidades.csv
 
 # Ambiente local usado pelo conversor MD -> PDF
 .venv_mdpdf/
+
+# Artefatos locais Python
+__pycache__/
+*.pyc
