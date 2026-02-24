@@ -1,0 +1,36 @@
+{
+  "data_alvo_enem": "2026-11-15",
+  "dias_estudo": [
+    "segunda",
+    "terca",
+    "quarta",
+    "quinta",
+    "sexta",
+    "sabado"
+  ],
+  "dias_sem_estudo": [
+    "domingo"
+  ],
+  "blocos_por_dia": 3,
+  "duracao_bloco_min": 50,
+  "meta_acerto_global": 0.9,
+  "meta_questoes_semana_por_habilidade": 20,
+  "janela_dias_acuracia": 60,
+  "prioridade_areas": {
+    "Matemática": 1.3,
+    "Ciências da Natureza": 1.2,
+    "Linguagens": 1.0,
+    "Ciências Humanas": 1.0,
+    "Redação": 1.1
+  },
+  "habilidades_fixas": [
+    {
+      "area": "Matemática",
+      "habilidade": "H16"
+    },
+    {
+      "area": "Ciências da Natureza",
+      "habilidade": "H21"
+    }
+  ]
+}
