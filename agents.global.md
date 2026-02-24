@@ -10,3 +10,4 @@ Também considerar:
 - `templates/aula_habilidade_enem.md` como base de geração de aulas.
 - `notes/` como insumo de pesquisa para contexto e exemplos.
 - `questoes/banco_reais/` como base de calibração de estilo ENEM (sem copiar literal).
+- `edital.pdf` para regras oficiais de estrutura e aplicação do exame.

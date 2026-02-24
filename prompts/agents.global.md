@@ -5,9 +5,13 @@ Gerar aulas no padrão ENEM focadas em uma habilidade da Matriz do INEP, usando 
 
 ## Fontes internas do repositório
 - `sources/inep_matriz_referencia.pdf` (fonte primária)
+- `edital.pdf` (regras oficiais de aplicação do ENEM)
 - `matriz/` (conteúdo convertido da matriz)
 - `notes/` (anotações de vídeos, artigos e pesquisas)
 - `questoes/banco_reais/` (questões reais extraídas de provas anteriores)
+- `questoes/mapeamento_habilidades/` (questões classificadas por disciplina/tema/habilidade estimada)
+- `prompts/contexto_planejador.json` (quando existir, contexto do motor offline sem IA)
+- `plano/desempenho_habilidades.csv` (feedback real por habilidade)
 - `templates/aula_habilidade_enem.md` (template obrigatório)
 - `README.md` (fluxo operacional)
 - `CHANGELOG.md` (histórico de mudanças)
@@ -20,10 +24,13 @@ Gerar aulas no padrão ENEM focadas em uma habilidade da Matriz do INEP, usando 
 5. Cada aula deve ter 10 questões estilo ENEM com distribuição: 5 fáceis, 3 médias e 2 difíceis.
 6. Em cada questão de múltipla escolha, formatar alternativas A, B, C, D e E em linhas separadas, com quebra explícita para evitar texto corrido no PDF.
 7. Se houver `questoes/banco_reais/` disponível, usar como base de estilo (comando, nível e distratores), sem copiar texto literal.
-8. Linguagem didática, objetiva e sem “textão”.
-9. Em conteúdo em português, usar ortografia e acentuação corretas (UTF-8).
-10. Não remover acentos para ASCII em materiais de estudo, resumos, questões e planos.
-11. Seguir as instruções globais do Codex (AGENTS) para qualidade e versionamento.
+8. Consultar `edital.pdf` para confirmar estrutura do exame (dias, áreas, duração e formato) quando necessário.
+9. Linguagem didática, objetiva e sem “textão”.
+10. Em conteúdo em português, usar ortografia e acentuação corretas (UTF-8).
+11. Não remover acentos para ASCII em materiais de estudo, resumos, questões e planos.
+12. Seguir as instruções globais do Codex (AGENTS) para qualidade e versionamento.
+13. Se o pedido for de planejamento determinístico sem IA, priorizar `scripts/gerar_plano_offline.py` e os arquivos do módulo `planner/`.
+14. Se o pedido for separação por matéria/tema, priorizar `scripts/mapear_habilidades_enem.py` e os artefatos em `questoes/mapeamento_habilidades/`.
 
 ## Estrutura de saída
 - Aula em `aulas/{area}/HXX_{tema}.md`

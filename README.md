@@ -13,6 +13,7 @@ Este repositório foi estruturado para você estudar com:
 ## Estrutura do projeto
 
 - `sources/inep_matriz_referencia.pdf`: PDF base oficial.
+- `edital.pdf`: edital oficial do ENEM 2025 (regras e estrutura da aplicação).
 - `matriz/matriz_referencia_enem.md`: matriz completa em Markdown.
 - `matriz/eixos_cognitivos.md`: eixos cognitivos resumidos.
 - `matriz/habilidades_por_area/`: habilidades por área.
@@ -27,6 +28,11 @@ Este repositório foi estruturado para você estudar com:
 - `prompts/agents.global.md`: regras globais de atuação do agente.
 - `prompts/contexto_sessao.md`: template para contexto da sessão.
 - `prompts/contexto_sessao.example.md`: exemplo preenchido.
+- `prompts/contexto_planejador.example.json`: exemplo de contexto para o motor offline.
+- `plano/desempenho_habilidades.example.csv`: exemplo de feedback por habilidade.
+- `plano/README_planejador_offline.md`: guia do planejador sem IA.
+- `plano/roadmap_geral.md`: planejamento macro do projeto e do app open source.
+- `planner/`: módulo Python de priorização e cronograma determinístico.
 - `CHANGELOG.md`: histórico de mudanças do projeto.
 
 ## Quick Start
@@ -35,6 +41,60 @@ Este repositório foi estruturado para você estudar com:
 2. Inicie uma sessão no Codex com o comando padrão abaixo.
 3. Estude por habilidade e registre no tracker.
 4. Feche a semana com revisão e replanejamento.
+
+## Planejador offline (sem IA)
+
+Use quando quiser um ciclo totalmente determinístico com base no seu feedback real de acertos por habilidade.
+
+### 1) Preparar arquivos locais
+
+```bash
+cp prompts/contexto_planejador.example.json prompts/contexto_planejador.json
+cp plano/desempenho_habilidades.example.csv plano/desempenho_habilidades.csv
+```
+
+### 2) Gerar plano automático
+
+```bash
+python3 scripts/gerar_plano_offline.py
+```
+
+Saídas:
+- `plano/plano_semanal_gerado.md`
+- `plano/prioridades_habilidades.csv`
+- `plano/sugestoes_questoes_por_bloco.md` (se houver mapeamento das questões reais)
+
+### 3) Interface desktop (PySide6)
+
+```bash
+pip install PySide6
+python3 scripts/app_planejador_pyside6.py
+```
+
+No app:
+- registre resultado por habilidade (acertos/total/tempo);
+- recalcule o plano;
+- repita o ciclo após cada estudo ou simulado offline.
+
+### 4) Editor visual do índice dos 6 volumes (CSV)
+
+Use para preencher o livro em ordem, sem editar CSV manualmente:
+
+```bash
+python3 scripts/editor_indice_livros_csv.py
+```
+
+Opcional (arquivo customizado):
+
+```bash
+python3 scripts/editor_indice_livros_csv.py --csv plano/indice_livros_6_volumes.csv
+```
+
+No app:
+- navegue em ordem (`Primeiro`, `Anterior`, `Próximo`, `Último`);
+- preencha `Título`, `Página` e `Habilidades`;
+- em `Habilidades`, pode usar vírgula ou `;` (o app salva em formato normalizado, ex.: `c1-h3; c2-h7`);
+- use `Salvar arquivo` para gravar no CSV.
 
 ## Como usar no dia a dia
 
@@ -155,29 +215,59 @@ Também gere questoes/linguagens/H18_coesao_e_coerencia.md com 20 questões orig
 
 Você pode transformar cadernos reais em `.md` e usar como base de padrão ENEM.
 
-Script:
+### Padrão de nomes dos PDFs
+
+Na pasta `questoes/provas_anteriores/`, use:
+
+- `{ano}_dia1_prova.pdf`
+- `{ano}_dia1_gabarito.pdf`
+- `{ano}_dia2_prova.pdf`
+- `{ano}_dia2_gabarito.pdf`
+
+### Extração por ano/dia (manual)
 
 ```bash
 python3 scripts/extrair_banco_enem_real.py \
   --ano 2025 \
   --dia 1 \
-  --prova 'questoes/provas anteriores/prova_dia_1_2025.pdf' \
-  --gabarito 'questoes/provas anteriores/prova_dia_1_2025_gabarito.pdf' \
+  --prova 'questoes/provas_anteriores/2025_dia1_prova.pdf' \
+  --gabarito 'questoes/provas_anteriores/2025_dia1_gabarito.pdf' \
   --outdir 'questoes/banco_reais/enem_2025'
 
 python3 scripts/extrair_banco_enem_real.py \
   --ano 2025 \
   --dia 2 \
-  --prova 'questoes/provas anteriores/prova_dia_2_2025.pdf' \
-  --gabarito 'questoes/provas anteriores/prova_dia_2_2025_gabarito.pdf' \
+  --prova 'questoes/provas_anteriores/2025_dia2_prova.pdf' \
+  --gabarito 'questoes/provas_anteriores/2025_dia2_gabarito.pdf' \
   --outdir 'questoes/banco_reais/enem_2025'
 ```
+
+### Extração em lote (2015–2025)
+
+Use quando a pasta `questoes/provas_anteriores/` já estiver completa:
+
+```bash
+python3 scripts/extrair_banco_enem_lote.py \
+  --provas-dir questoes/provas_anteriores \
+  --out-base questoes/banco_reais \
+  --year-from 2015 \
+  --year-to 2025 \
+  --status-file questoes/banco_reais/STATUS_EXTRACAO.md
+```
+
+Relatório gerado:
+- `questoes/banco_reais/STATUS_EXTRACAO.md`
+- `questoes/banco_reais/PANORAMA_TEMAS_REDACAO.md`
+- Planejamento de mapeamento questão -> habilidade:
+- `plano/plano_mapeamento_habilidades_em_lote.md`
 
 Arquivos principais gerados:
 - `questoes/banco_reais/enem_2025/dia1_questoes_reais.md`
 - `questoes/banco_reais/enem_2025/dia2_questoes_reais.md`
 - `questoes/banco_reais/enem_2025/dia1_gabarito.json`
 - `questoes/banco_reais/enem_2025/dia2_gabarito.json`
+- `questoes/banco_reais/enem_2025/dia1_redacao.md`
+- `questoes/banco_reais/enem_2025/dia1_redacao.json`
 
 Prompt recomendado para usar essa base sem copiar:
 
@@ -186,6 +276,30 @@ Leia questoes/banco_reais/enem_2025/dia1_questoes_reais.md e dia2_questoes_reais
 Extraia padrões de comando, dificuldade e distratores por habilidade.
 Depois gere 10 questões novas e originais da habilidade [AREA-Hx], mantendo estilo ENEM (5 fáceis, 3 médias, 2 difíceis), sem copiar enunciados reais.
 ```
+
+### Uso do edital como contexto
+
+Use `edital.pdf` para validar formato da aplicação (dias, duração, áreas e quantidade de questões) antes de montar plano/simulado.
+
+### Mapeamento por disciplina e tema (sem IA)
+
+Depois da extração, gere uma classificação automática por matéria:
+
+```bash
+python3 scripts/mapear_habilidades_enem.py \
+  --banco-dir questoes/banco_reais \
+  --out-dir questoes/mapeamento_habilidades \
+  --year-from 2015 \
+  --year-to 2025
+```
+
+Saídas principais:
+- `questoes/mapeamento_habilidades/questoes_mapeadas.csv`
+- `questoes/mapeamento_habilidades/questoes_mapeadas.jsonl`
+- `questoes/mapeamento_habilidades/resumo_materias_chave.md`
+- `questoes/mapeamento_habilidades/resumo_por_disciplina_tema.md`
+- `questoes/mapeamento_habilidades/revisao_pendente.md`
+- `questoes/mapeamento_habilidades/por_disciplina/*.md`
 
 ## Conversão MD para PDF (Prince)
 

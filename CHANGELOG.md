@@ -20,6 +20,10 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - Script `scripts/extrair_banco_enem_real.py` para extrair provas reais (PDF) para Markdown e JSON.
 - Banco real inicial em `questoes/banco_reais/enem_2025/` com Dia 1 e Dia 2 extraídos.
 - Documentação do banco real em `questoes/banco_reais/README.md` e `questoes/banco_reais/enem_2025/README.md`.
+- Script de lote `scripts/extrair_banco_enem_lote.py` para extrair 2015–2025 com mapeamento de nomenclaturas.
+- Bancos reais adicionais em `questoes/banco_reais/enem_2015` até `questoes/banco_reais/enem_2024`.
+- Relatório consolidado de extração em `questoes/banco_reais/STATUS_EXTRACAO.md`.
+- Resumo operacional do edital em `plano/resumo_edital_2025.md`.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.
@@ -31,6 +35,8 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `README.md` atualizado com orientação de uso do template definitivo e seção de conversão MD -> PDF com imagens.
 - `templates/aula_habilidade_enem.md`, `prompts/agents.global.md` e `README.md` padronizados com a regra de 10 questões por aula e alternativas em linhas separadas.
 - `README.md`, `agents.global.md` e `prompts/agents.global.md` atualizados para incluir uso de `questoes/banco_reais/` na calibração de questões.
+- `scripts/extrair_banco_enem_real.py` generalizado para diferentes anos (detecção de `QUESTÃO`, ordem de áreas e parsing de gabaritos antigos).
+- `README.md`, `agents.global.md` e `prompts/agents.global.md` atualizados para usar `questoes/provas_anteriores` e incluir `edital.pdf` como fonte complementar.
 
 ### Security
 - `prompts/contexto_sessao.md` configurado para não ser versionado via `.gitignore`.
