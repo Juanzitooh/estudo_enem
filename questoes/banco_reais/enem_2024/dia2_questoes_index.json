@@ -1,0 +1,632 @@
+[
+  {
+    "numero": 91,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "O esquema representa um experimento feito com"
+  },
+  {
+    "numero": 92,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "O magnésio metálico utilizado em ligas leves é"
+  },
+  {
+    "numero": 93,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "Moradores do Brooklin, bairro de São Paulo, perdem o"
+  },
+  {
+    "numero": 94,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "A hidroxiapatita, Ca 5 (PO 4 ) 3 OH, é um mineral"
+  },
+  {
+    "numero": 95,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "A tirinha ilustra esquimós dentro de um iglu, habitação"
+  },
+  {
+    "numero": 96,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "Os pesticidas naturais vêm sendo utilizados no controle"
+  },
+  {
+    "numero": 97,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Utilizando-se um mesmo meio nutritivo, três gêneros"
+  },
+  {
+    "numero": 98,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "As placas que indicam saída de emergência brilham no"
+  },
+  {
+    "numero": 99,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "Indústrias farmacêuticas e instituições científicas têm"
+  },
+  {
+    "numero": 100,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "Em um experimento de laboratório, duas barras"
+  },
+  {
+    "numero": 101,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "Placas solares comuns dependem de dias ensolarados"
+  },
+  {
+    "numero": 102,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "Um estudante comprou uma cafeteira elétrica de 700 W"
+  },
+  {
+    "numero": 103,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "O diagrama P-V a seguir representa o ciclo de Otto"
+  },
+  {
+    "numero": 104,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Para os circuitos de maratonas aquáticas realizadas em"
+  },
+  {
+    "numero": 105,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "O vírus linfotrópico de células T humanas tipo 1"
+  },
+  {
+    "numero": 106,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "Na tirinha, Calvin se divertia em um balanço antes de"
+  },
+  {
+    "numero": 107,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "A fitorremediação é uma técnica que utiliza plantas para a remediação de ambientes contaminados. A descontaminação"
+  },
+  {
+    "numero": 108,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Brasil fecha 2020 entre os maiores recicladores de latas de alumínio"
+  },
+  {
+    "numero": 109,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "O LED é um dispositivo eletrônico que conduz corrente"
+  },
+  {
+    "numero": 110,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Uma caixa decorativa utiliza duas pequenas lâmpadas,"
+  },
+  {
+    "numero": 111,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "O biogás é uma alternativa energética muito importante,"
+  },
+  {
+    "numero": 112,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "A nimesulida é um fármaco pouco solúvel em água,"
+  },
+  {
+    "numero": 113,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "O desenvolvimento da biotecnologia e da clonagem"
+  },
+  {
+    "numero": 114,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Nos automóveis, é importante garantir que o centro de"
+  },
+  {
+    "numero": 115,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "O soro caseiro serve para combater a desidratação por"
+  },
+  {
+    "numero": 116,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "Apesar de os animais representados no cladograma"
+  },
+  {
+    "numero": 117,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Uma ambulância em alta velocidade com a sirene ligada"
+  },
+  {
+    "numero": 118,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Mirascópio 3D: produtor de ilusão instantânea"
+  },
+  {
+    "numero": 119,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Muitas pessoas ainda se espantam com o fato de um"
+  },
+  {
+    "numero": 120,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Células a combustível microbianas (CCM) são capazes"
+  },
+  {
+    "numero": 121,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "No senso comum, considera-se, ainda hoje, que"
+  },
+  {
+    "numero": 122,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "Metabolismo de procariontes"
+  },
+  {
+    "numero": 123,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "C",
+    "preview": "Um dos agentes que mais contribui para a poluição"
+  },
+  {
+    "numero": 124,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "A saúde do professor: acústica arquitetônica"
+  },
+  {
+    "numero": 125,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "A",
+    "preview": "Uma agricultora, com a intenção de comercializar o"
+  },
+  {
+    "numero": 126,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "Aquecedores solares são equipamentos utilizados para"
+  },
+  {
+    "numero": 127,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "As autoridades sanitárias brasileiras têm se preocupado"
+  },
+  {
+    "numero": 128,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Impactos do microplástico"
+  },
+  {
+    "numero": 129,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "Em aeroportos, por razões de segurança, os"
+  },
+  {
+    "numero": 130,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "E",
+    "preview": "Com base em testes realizados em ratos, concluiu-se"
+  },
+  {
+    "numero": 131,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Sistemas agroflorestais (SAFs)"
+  },
+  {
+    "numero": 132,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "As fibras musculares esqueléticas não são todas"
+  },
+  {
+    "numero": 133,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "O Cerrado e a Amazônia abrigam grande número de"
+  },
+  {
+    "numero": 134,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "D",
+    "preview": "O exoesqueleto dos crustáceos é formado por quitina"
+  },
+  {
+    "numero": 135,
+    "variacao": 1,
+    "area": "Ciências da Natureza",
+    "gabarito": "B",
+    "preview": "Um dos exemplos mais conhecidos de herança"
+  },
+  {
+    "numero": 136,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma empresa produz mochilas escolares sob"
+  },
+  {
+    "numero": 137,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "A umidade relativa do ar é um dos indicadores utilizados"
+  },
+  {
+    "numero": 138,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma empresa de engenharia foi contratada para"
+  },
+  {
+    "numero": 139,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Um hospital tem 7 médicos cardiologistas e 6 médicos"
+  },
+  {
+    "numero": 140,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Para melhorar o fluxo de ônibus em uma avenida que"
+  },
+  {
+    "numero": 141,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "A densidade demográfica de uma região é definida"
+  },
+  {
+    "numero": 142,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Atualmente, há telefones celulares com telas de"
+  },
+  {
+    "numero": 143,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Uma imobiliária iniciou uma campanha de divulgação"
+  },
+  {
+    "numero": 144,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Um sistema de polias circulares e correias é um dos"
+  },
+  {
+    "numero": 145,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "A prefeitura de uma cidade planeja construir três postos"
+  },
+  {
+    "numero": 146,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Projetistas de uma fábrica de amortecedores realizaram uma série de experimentos que produziram oscilações"
+  },
+  {
+    "numero": 147,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Um jardineiro dispõe de k metros lineares de cerca baixa para fazer um jardim ornamental. O jardim, delimitado"
+  },
+  {
+    "numero": 148,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Um aeroporto disponibiliza o serviço de transporte gratuito entre seus dois terminais utilizando os ônibus A e B, que"
+  },
+  {
+    "numero": 149,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "A criptografia refere-se à construção e análise de protocolos que impedem terceiros de lerem mensagens privadas."
+  },
+  {
+    "numero": 150,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Em uma região com grande incidência de terremotos, observou-se que dois terremotos ocorridos apresentaram"
+  },
+  {
+    "numero": 151,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Uma indústria faz uma parceria com uma distribuidora"
+  },
+  {
+    "numero": 152,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "As receitas anuais obtidas por uma indústria no período"
+  },
+  {
+    "numero": 153,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Um tanque, em formato de paralelepípedo reto retângulo, tem em seu interior dois anteparos verticais, fixados na"
+  },
+  {
+    "numero": 154,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Contratos de vários serviços disponíveis na internet"
+  },
+  {
+    "numero": 155,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Um proprietário pretende instalar um sensor de"
+  },
+  {
+    "numero": 156,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "O uso de aplicativos de transporte tem sido uma"
+  },
+  {
+    "numero": 157,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Uma piscina tem capacidade de 2 500 000 litros."
+  },
+  {
+    "numero": 158,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma tubulação despeja sempre o mesmo volume de"
+  },
+  {
+    "numero": 159,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Em uma loja de defensivos agrícolas, os preços de"
+  },
+  {
+    "numero": 160,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma doceira vende e entrega, em seu bairro, porções"
+  },
+  {
+    "numero": 161,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Uma empresa tem 400 funcionários, distribuídos em"
+  },
+  {
+    "numero": 162,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Em um jogo virtual para celular, um personagem pode"
+  },
+  {
+    "numero": 163,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "O tamanho mínimo que a visão humana é capaz de"
+  },
+  {
+    "numero": 164,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Ao calcular a média de suas notas em 4 provas, um"
+  },
+  {
+    "numero": 165,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Para abrir a porta de uma empresa, cada funcionário"
+  },
+  {
+    "numero": 166,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Um artesão utiliza dois tipos de componentes, X e"
+  },
+  {
+    "numero": 167,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "João e Felipe participaram, na escola, de uma maratona"
+  },
+  {
+    "numero": 168,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Três grandezas (I, II e III) se relacionam entre si."
+  },
+  {
+    "numero": 169,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "Uma criança, utilizando um aplicativo, escreveu uma"
+  },
+  {
+    "numero": 170,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Uma casa de shows terá um evento cujo custo total"
+  },
+  {
+    "numero": 171,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Para obter um sólido de revolução (rotação de 360°°"
+  },
+  {
+    "numero": 172,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "O estádio do Maracanã passou por algumas"
+  },
+  {
+    "numero": 173,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma sala com piso no formato retangular, com lados"
+  },
+  {
+    "numero": 174,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "O arquiteto Renzo Piano exibiu a maquete da nova"
+  },
+  {
+    "numero": 175,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "A",
+    "preview": "O gráfico apresenta o valor total de exportações e o"
+  },
+  {
+    "numero": 176,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "D",
+    "preview": "Um instituto de pesquisa constatou que, nos últimos"
+  },
+  {
+    "numero": 177,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Um fazendeiro pretende construir um galinheiro"
+  },
+  {
+    "numero": 178,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "B",
+    "preview": "Uma professora de matemática utiliza em suas"
+  },
+  {
+    "numero": 179,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "C",
+    "preview": "Uma caneca com água fervendo é retirada de um"
+  },
+  {
+    "numero": 180,
+    "variacao": 1,
+    "area": "Matemática",
+    "gabarito": "E",
+    "preview": "Em uma empresa é comercializado um produto em"
+  }
+]

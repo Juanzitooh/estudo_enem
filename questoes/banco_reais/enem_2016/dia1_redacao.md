@@ -1,0 +1,11 @@
+# Redação ENEM 2016 — Dia 1
+
+Gerado automaticamente a partir do PDF oficial.
+
+## Tema
+
+[TEMA NÃO IDENTIFICADO]
+
+## Proposta e textos motivadores
+
+[SEÇÃO DE REDAÇÃO NÃO IDENTIFICADA NESTA EXTRAÇÃO]

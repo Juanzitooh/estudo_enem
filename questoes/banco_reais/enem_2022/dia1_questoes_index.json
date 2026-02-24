@@ -1,0 +1,697 @@
+[
+  {
+    "numero": 1,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "E"
+    },
+    "preview": "As my official bio reads, I was made in Cuba, assembled"
+  },
+  {
+    "numero": 2,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "C",
+      "espanhol": "D"
+    },
+    "preview": "Two hundred years ago, Jane Austen lived in a world"
+  },
+  {
+    "numero": 3,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "C"
+    },
+    "preview": "NEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 4,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "A"
+    },
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE"
+  },
+  {
+    "numero": 5,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "E",
+      "espanhol": "A"
+    },
+    "preview": "I tend the mobile now"
+  },
+  {
+    "numero": 1,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "E"
+    },
+    "preview": "Contigo"
+  },
+  {
+    "numero": 2,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "C",
+      "espanhol": "D"
+    },
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE"
+  },
+  {
+    "numero": 3,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "C"
+    },
+    "preview": "En los suburbios de La Habana, llaman al amigo mi"
+  },
+  {
+    "numero": 4,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "A"
+    },
+    "preview": "M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 5,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "E",
+      "espanhol": "A"
+    },
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM"
+  },
+  {
+    "numero": 6,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Urgência emocional"
+  },
+  {
+    "numero": 7,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM"
+  },
+  {
+    "numero": 8,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "É ruivo? Tem olhos azuis? É homem ou mulher?"
+  },
+  {
+    "numero": 9,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Causar um acidente"
+  },
+  {
+    "numero": 10,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE"
+  },
+  {
+    "numero": 11,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Ora, sempre que surge uma nova técnica, ela quer"
+  },
+  {
+    "numero": 12,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Papos"
+  },
+  {
+    "numero": 13,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 14,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 15,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "QUANTO CUSTOU?"
+  },
+  {
+    "numero": 16,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM"
+  },
+  {
+    "numero": 17,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "PALAVRA – As gramáticas classificam as palavras"
+  },
+  {
+    "numero": 18,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Morte lenta ao luso infame que inventou a calçada"
+  },
+  {
+    "numero": 19,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 EN"
+  },
+  {
+    "numero": 20,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "EM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 21,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE"
+  },
+  {
+    "numero": 22,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 23,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Mas seu olhar verde, inconfundível, impressionante,"
+  },
+  {
+    "numero": 24,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 E"
+  },
+  {
+    "numero": 25,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "NEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 26,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM"
+  },
+  {
+    "numero": 27,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Mulher ao volante,                      Os homens"
+  },
+  {
+    "numero": 28,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "As línguas silenciadas do Brasil"
+  },
+  {
+    "numero": 29,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE"
+  },
+  {
+    "numero": 30,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "A senhora manifestava-se por atos, por gestos,"
+  },
+  {
+    "numero": 31,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Era o êxodo da seca de 1898. Uma ressurreição de"
+  },
+  {
+    "numero": 32,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "MANUAL DE ORIENTAÇÃO"
+  },
+  {
+    "numero": 33,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Notas"
+  },
+  {
+    "numero": 34,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2"
+  },
+  {
+    "numero": 35,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Ser cronista"
+  },
+  {
+    "numero": 36,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Projeto na Câmara de BH quer a vacinação gratuita"
+  },
+  {
+    "numero": 37,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM"
+  },
+  {
+    "numero": 38,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 39,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 40,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 202"
+  },
+  {
+    "numero": 41,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "O bebê de tarlatana rosa"
+  },
+  {
+    "numero": 42,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "10 de maio"
+  },
+  {
+    "numero": 43,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 202"
+  },
+  {
+    "numero": 44,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 45,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "O Recife fervilhava no começo da década de 1990, e"
+  },
+  {
+    "numero": 46,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Espera, resignado, o dia 13 daquele mês porque,"
+  },
+  {
+    "numero": 47,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Sempre que a relevância do discurso entra em"
+  },
+  {
+    "numero": 48,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Eu estava pagando o sapateiro e conversando com"
+  },
+  {
+    "numero": 49,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 50,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 202"
+  },
+  {
+    "numero": 51,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Uma nova economia surgiu em escala global no"
+  },
+  {
+    "numero": 52,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "2 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 53,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "O número cada vez maior de mulheres letradas"
+  },
+  {
+    "numero": 54,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM"
+  },
+  {
+    "numero": 55,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Solos salinos ou alomórficos apresentam como"
+  },
+  {
+    "numero": 56,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 57,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM"
+  },
+  {
+    "numero": 58,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 59,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 60,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Um experimento denominado FunFit foi desenvolvido"
+  },
+  {
+    "numero": 61,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM"
+  },
+  {
+    "numero": 62,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Brasil e Argentina chegaram a um acordo para a"
+  },
+  {
+    "numero": 63,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Ainda que a fome ocorrida na Itália em 536 tenha"
+  },
+  {
+    "numero": 64,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "As forças tectônicas dentro da litosfera, controladas"
+  },
+  {
+    "numero": 65,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "TENSÃO           MORTE"
+  },
+  {
+    "numero": 66,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE"
+  },
+  {
+    "numero": 67,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Após sete anos da ocupação de um terreno"
+  },
+  {
+    "numero": 68,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 69,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Colegas, na mente e no coração do povo, a Crimeia"
+  },
+  {
+    "numero": 70,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 71,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "O princípio básico do Estado de direito é o da"
+  },
+  {
+    "numero": 72,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 73,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "A história do Primeiro de Maio de 1890 — na França e na"
+  },
+  {
+    "numero": 74,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 75,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "O povo Kambeba é o povo das águas. Os mais velhos"
+  },
+  {
+    "numero": 76,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 77,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Para os Impérios Coloniais, o problema das"
+  },
+  {
+    "numero": 78,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 E"
+  },
+  {
+    "numero": 79,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Hoje sou um ser inanimado, mas já tive vida pulsante"
+  },
+  {
+    "numero": 80,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "NEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 81,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Decreto-Lei n. 1 949, de 27/12/1937"
+  },
+  {
+    "numero": 82,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 83,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Nascidas no Líbano, as duas irmãs não puderam"
+  },
+  {
+    "numero": 84,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 85,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 86,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 E"
+  },
+  {
+    "numero": 87,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Macrocefalia urbana pode ser entendida como a"
+  },
+  {
+    "numero": 88,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Entretanto, nosso amigo Basso tem o ânimo alegre."
+  },
+  {
+    "numero": 89,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "NEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022"
+  },
+  {
+    "numero": 90,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Em Vitória (ES), no bairro Goiabeiras, encontramos"
+  }
+]

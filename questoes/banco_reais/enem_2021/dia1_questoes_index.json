@@ -1,0 +1,687 @@
+[
+  {
+    "numero": 2,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "A"
+    },
+    "preview": "Questões de 01 a 45                                                                   The British (serves 60 million)"
+  },
+  {
+    "numero": 1,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "C",
+      "espanhol": "C"
+    },
+    "preview": "]\u0011\u0005 \b \u0011\u0005 \u000f\u0003^\u0005 \b\u0005 \u000f\b\u0012 \u0003\u000f\u0005 \u0003&\u0006\u0011\u0006\u0006\u0011\u0010\u0005 ^ \u00128\u0005 \u00128\u0011\u0005 \u0002\u0007 \u0012\u0005 \u0003\u0014\u0005                    $8\u0011\u000f\u0005\u0003"
+  },
+  {
+    "numero": 3,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "E"
+    },
+    "preview": "Becoming                                               \u0002\b \u0012\u0007\u0004\u0005 \u0011"
+  },
+  {
+    "numero": 5,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "\b\u000f\u0010\u0005\u0014\b\u00128\u0011 \u0005 \u000f\u0005\u001a/w\u0019\u0006\u0005$\u0011W\b\u0006\u0005\u000f\b\u0004\u0011\u0010\u0005\u00128\u0011 \u0005\u000f\u0011^&\u0003 \u000f\u0005~ \u0006\u0006 \u0005\u0006\u0003\u0005                                    Exterior: Between The Museums — Day"
+  },
+  {
+    "numero": 4,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "\"\u0003\u000f\u0006 \u0010\u0011 \b\u000f\u0010\u0003K\u0006\u0011\u0005 \u0003\u0005 \u0003 8\b \u0005 \u0010\u0003\u0006\u0005 (\u0011 \u0006\u0003\u000f\b \u0011\u000f\u0006\u000e\u0005 \u0011\u0006\u0006\u0011\u0005 \u0012 \u0011\u00028\u0003\u0005"
+  },
+  {
+    "numero": 1,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "C",
+      "espanhol": "C"
+    },
+    "preview": "Se reunieron en un volumen todas las entrevistas"
+  },
+  {
+    "numero": 3,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "E"
+    },
+    "preview": ""
+  },
+  {
+    "numero": 4,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "3\u0003_\u000e\u0005 \u0011\u000f\u0005 \u0002\u0007\u0011\u0006\u0012 #\u000f\u0005 \u0010\u0011\u0005 \u0006\u0011 \u0007\u000f\u0010\u0003\u0006\u0005 \u0007\u000f\u0003\u0005 \u0011\u0006\u0005 \u0002\b(\bk\u0005 \u0010\u0011\u0005                                En el suelo, apoyado en el mostrador, se acurrucaba,"
+  },
+  {
+    "numero": 5,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "reciente, para que un inocente recupere su libertad tras"
+  },
+  {
+    "numero": 7,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Questões de 06 a 45                                                                                                       A draga"
+  },
+  {
+    "numero": 6,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": ";\u0005 \u0011\u000f\u0012\u0011\u0005\u000f+\u0003\u0005\u0006\b& \b\u0005\u0006\u0011\u0005\b\u0017\u0007\u0011 \b\u0005\u0010 \b \b\u0005\u0012 \u000f8\b\u0005\u000f\b\u0006\u0002 \u0010\u0003\u0005\b \u000e\u0005\u000f\u0003\u0005"
+  },
+  {
+    "numero": 8,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": ""
+  },
+  {
+    "numero": 9,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "?\u0005 \u0010\u0003\u0002\u0007\u0004\u0011\u000f\u0012\u001f \u0003\u0005 O menino que fez um museu,                                                 A volta do marido pródigo"
+  },
+  {
+    "numero": 10,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": ""
+  },
+  {
+    "numero": 11,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Intenso e original, Son of Saul retrata horror                                                         Sinhá"
+  },
+  {
+    "numero": 12,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "\u0011 &\b \u0006\u0005\u0011\u0005\u000f+\u0003\u0005"
+  },
+  {
+    "numero": 14,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "A crise dos refugiados imortalizada para sempre no"
+  },
+  {
+    "numero": 13,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "\u0003 8\b\u0005\u0006\u0011\u0004\u0005\u0011\u0006(\u0011 \b\u000f*\b\u0005\u0003\u00058\u0003 k\u0003\u000f\u0012\u00114\u0005;\u0005 \u0004\b \u0011\u0004\u0005I\u0005\u0012+\u0003\u0005\u0014\u0003 \u0012\u0011\u0005\u0017\u0007\u0011\u0005"
+  },
+  {
+    "numero": 15,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": ""
+  },
+  {
+    "numero": 16,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "TEXTO I                                                                                                         Devagar, devagarinho"
+  },
+  {
+    "numero": 17,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": ""
+  },
+  {
+    "numero": 18,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": ";\u0005 8 \u0006\u0012# \b\u0005 \u0010\u0003\u0005 \u0014\u0007\u0012\u0011&\u0003 \u0005 & \b\u0006 \u0011 \u0003\u0005 \u0002\u0003\u000f\u0012I\u0004\u000e\u0005 \b\u0003\u0005 \u0003\u000f \u0003\u0005"
+  },
+  {
+    "numero": 19,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "(\u0011 \b\u0005 \u0011\u0006\u0017\u0007\b\u0010 \b\u0005 \u0010\u0003\u0006\u0005 ( \u0011\u0012\u0003\u0006\u0005 \u0011\u0004\u0005 \u0012\u0003\u0010\b\u0006\u0005 \b\u0006\u0005 \u0011\u0006\u0014\u0011 \b\u0006\u0005 \u0010\b\u0005                                         \"\u0003 \u000f\u0002 \u0010 \u000f\u0010\u0003\u0005 \u0002\u0003\u0004\u0005 \u0003\u0005 < \b\u0005 b\u000f\u0012\u0011 \u000f\b\u0002 \u0003\u000f\b \u0005 \u0010\u0003\u0006\u0005 < \u0011 \u0012\u0003\u0006\u0005"
+  },
+  {
+    "numero": 20,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": ""
+  },
+  {
+    "numero": 21,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Que tal transformar a internet em palco para a dança?"
+  },
+  {
+    "numero": 22,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": ""
+  },
+  {
+    "numero": 24,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "?\u0006\u0005 \u000f \u0007 \u0006\u0012\b\u0006\u0005 \u00122\u0004\u0005 \u000f\u0003\u0012\b\u0010\u0003\u0005 \b\u0005 \u0011W(\b\u000f\u0006+\u0003\u0005 \u0010\u0003\u0005 \u0012 \b\u0012\b\u0004\u0011\u000f\u0012\u0003\u0005"
+  },
+  {
+    "numero": 25,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": ""
+  },
+  {
+    "numero": 23,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "O solo A morte do cisne\u000e\u0005\u0002 \b\u0010\u0003\u0005\u0011\u0004\u0005\u001a/\u0019"
+  },
+  {
+    "numero": 26,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "\u0019\u0005\b\u000f\u0003\u0006\u0005\u0010\u0011\u0005` \b\u00065 \b\u000e\u0005\u0010\u0011\u0005<I&\u0003 \b\u0005"
+  },
+  {
+    "numero": 28,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "\u0010 k\u0005 \u0003\u0005 \u0002\u0003\u0004\u0011*\u0003\u0005 \u0010\u0003\u0005 8 \u000f\u0003\u000e\u0005 \u0002\u0003\u0004(\u0003\u0006\u0012\u0003\u0005 \u0010\u0011\u0005 \u0006\u0011\u0012\u0011\u0005 \u0011\u0006\u0012 \u0003\u0014\u0011\u0006\u0005 \u0011\u0004\u0005"
+  },
+  {
+    "numero": 27,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "\b \u0005 \b\u000f8\b \u0005\u0004\b \u0006\u0005"
+  },
+  {
+    "numero": 29,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": ""
+  },
+  {
+    "numero": 30,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Reaprender a ler notícias                                     >+\u0003\u0005\u0017\u0007\u0011\u0005'\u0011 \u000f\u0003\u0005\u0014\u0003\u0006\u0006\u0011\u0005\u0017\u00075\u0004 \u0002\u0003\u000e\u0005 \u0003\u000f \u0011\u0005\u0010 \u0006\u0006\u0003%\u0005\u0004\b\u0006\u0005\u0011 \b\u0005"
+  },
+  {
+    "numero": 31,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "?\u0005 \u0006f\b\u0012\u0011\u0005 \b(\b \u0011\u0002\u0011\u0007\u0005 \u0002\u0003\u0004\u0003\u0005 \u0014\u0003 \u0004\b\u0005 \u0010\u0011\u0005"
+  },
+  {
+    "numero": 33,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Motriz\u000e\u0005H\u0007 4K\u0006\u0011\u00124\u0005x\u0019\u001a\u0019\u00057\b\u0010\b(\u0012\b\u0010\u0003\u00164"
+  },
+  {
+    "numero": 32,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Estojo escolar"
+  },
+  {
+    "numero": 34,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": ""
+  },
+  {
+    "numero": 35,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Singular ocorrência"
+  },
+  {
+    "numero": 36,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "\b \u0007\u0004\u0011\u000f\u0012\b\u0012"
+  },
+  {
+    "numero": 38,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "\u0010\u0003\u0006\u0005 \u0011\u0002 ( \u0011\u000f\u0012\u0011\u0006\u0005( \u001f\u0006\u0012 \u0002\u0003\u0006\u0005\u0010\u0011\u0006\u0002\b \u0012\b\u0010\u0003\u0006\u0005\u0011\u000e\u0005\b\u0003\u0005\u0004\u0011\u0006\u0004\u0003\u0005\u0012\u0011\u0004(\u0003\u000e\u0005"
+  },
+  {
+    "numero": 37,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "\u0011\u0006\u0012 \u0010\b\u0005\u0010\u0011\u0005 \u0007k\u0005\u0012\u0011\u0005"
+  },
+  {
+    "numero": 39,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": ""
+  },
+  {
+    "numero": 41,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Falso moralista                                                                     O pavão vermelho"
+  },
+  {
+    "numero": 42,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": ""
+  },
+  {
+    "numero": 40,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Introdução a Alda"
+  },
+  {
+    "numero": 43,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "\u0010\u0011\u0005 \u0010"
+  },
+  {
+    "numero": 45,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "NANA, SE A GENTE BEBER A                                                   >\u0003\u0005 \b\u000f\u0003\u0005 \u0011\u0004\u0005 \u0017\u0007\u0011\u0005 \u0003\u0005 \u0004\b \u0003 \u0005 \u0002 \b \u000f\u0011\u0012 \u0006\u0012\b\u0005 \u0017\u0007\u0011\u0005 \u0003\u0005 ` \b\u0006 \u0005"
+  },
+  {
+    "numero": 44,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "gravou Ingênuo\u0005 7\u001a/"
+  },
+  {
+    "numero": 46,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "\u0012 \u0002\u0007 \u0012\u0003 \u0011\u0006\u0005 \u000f\u0012\u0011 \u0011\u0006\u0006\b\u0010\u0003\u0006\u0005 \u0011\u0004\u0005 ( \u0003\u0010\u0007k \u0005 \u0006\u0007\u0002\u0003\u0006\u0005 \u0011\u0004\u0005 \u0011 \u0018\u0011\u0006\u0005"
+  },
+  {
+    "numero": 49,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "D \u0005 \u0010"
+  },
+  {
+    "numero": 47,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "( \u0011\u0006\u0011\u000f\u0012\u0011\u0005 \u0002\u0003\u0004\u0003\u0005 \u0003\u0005 \u0012\u0011\u0006\u0012\u0011\u0004\u0007\u000f8\u0003\u0005"
+  },
+  {
+    "numero": 48,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "\u0012\u0011W\u0012\u0003\u0006\u0005 \u0006\u0011\u0005 \u0010 \u0006\u0012\b\u000f\u0002 \b\u0004\u0005 \b\u0003\u0005 \b( \u0011\u0006\u0011\u000f\u0012\b \u0011\u0004\u0005 (\u0003\u000f\u0012\u0003\u0006\u0005 \u0010\u0011\u0005"
+  },
+  {
+    "numero": 50,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "TEXTO I                                                                                   interesse britânico em"
+  },
+  {
+    "numero": 53,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "\u000f\u0003\u0005\u0004\u0007\u000f\u0010\u0003\u0005 \u000f\u0010\u0007\u0006\u0012 \b k\b\u0010\u0003\u000e\u0005\u0003\u000f\u0010\u0011\u0005\b\u0012I\u0005\u0011W \u0006\u0012\u0011\u0004\u0005\u0003\u0006\u0005 \u0011\u0002\u0007 \u0006\u0003\u0006\u0005\u0011\u0005"
+  },
+  {
+    "numero": 51,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "D \u0005 >\b \b\u0012"
+  },
+  {
+    "numero": 54,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "\u0011\u0006\u0002\b \b\u000e\u0005 &\u0011\u0004\u0005 \u0002\u0003\u0004\u0003\u0005"
+  },
+  {
+    "numero": 52,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "\b4\u0005Scripta Nova\u000e\u0005\u000f4\u0005\u001aw\u0019\u000e\u0005\b \u00034\u0005x\u0019\u0019\u001b\u00057\b\u0010\b(\u0012\b\u0010\u0003\u00164"
+  },
+  {
+    "numero": 55,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": ""
+  },
+  {
+    "numero": 58,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": ";\u0005 \u0002\b\u0012\u0011 \u0003 \b\u0005 \u0010\u0011\u0005 \u0011\u0014\u0007 \b\u0010\u0003\u0005 \u0002\b \u0011 \b\u0005 \u0011\u0004\u0005 \u0006 \u0005 \b\u0006\u0005 \u000f\u0003*\u0018\u0011\u0006\u0005                                    ;\u0005"
+  },
+  {
+    "numero": 59,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "E \u0005 \u0010\u0011\u0006\u0011\u000f \b k\b\u0004\u0011\u000f\u0012\u0003\u0005\u0002\u0007 \u0012\u0007 \b \u0005\u0011\u0005 \u000f\u0006\u0011 \u0007 \b\u000f*\b\u0005 \u0011 \b 4                >\u0003\u0005\u0006\u0011\u0004 \u001f \u0010\u0003\u0005& \b\u0006 \u0011 \u0003\u000e\u0005\u0003\u0005\u0006\u0011 \u0012\b\u000f\u0011H\u0003\u0005\u0010\u0011\u0006\u0011\u000f"
+  },
+  {
+    "numero": 56,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "\b*+\u0003\u0005 \u0010\u0003\u0006\u0005 \u0014\u0011\u000f\u0004\u0011\u000f\u0003\u0006\u000e\u0005"
+  },
+  {
+    "numero": 57,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": ""
+  },
+  {
+    "numero": 60,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Nos setores mais altamente desenvolvidos da                                       6\u0003\u00022\u0006\u0005\u0017\u0007\u0011\u0005\u0014\bk\u0011\u0004\u0005(\b \u0012\u0011\u0005\u0010\u0011\u0006\u0006\b\u0005\u0004\b\u0006\u0006\b"
+  },
+  {
+    "numero": 61,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "<\u0011\u0006\u0010\u0011\u0005 x\u0019\u0019/\u000e\u0005 \b\u0005 \u001f \u0011\b\u0005 (\u0003 \u0012\u0007\u001f \b\u0005 \u0002\b \u0003\u0002\b\u0005"
+  },
+  {
+    "numero": 64,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "processo socioespacial que busca a"
+  },
+  {
+    "numero": 62,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "\"\u0003\u000f\u0006\u0012\b\u0012\u0003\u0007K\u0006\u0011\u0005 \u0007\u0004\b\u0005 5\u000f \u0004\b\u0005 \u000f\u0006\u0011 *+\u0003\u0005 \u0010\b\u0005 \u000f\u0010\u0013\u0006\u0012 \b\u0005                                      >\u0003\u0005 \u0012\u0011W\u0012\u0003\u000e\u0005 \b\u0005 \u0002\b \b\u0002\u0012\u0011 k\b*+\u0003\u0005 \u0010\u0011\u0005 \u0007\u0004\b\u0005 \u0004 \u000f\u0003 \b\u0005 \u0010\u0011\u0002\u0003 \u0011\u0005 \u0010\b\u0005"
+  },
+  {
+    "numero": 65,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": ";)=><\u000e\u0005~4\u0005A industrialização do Brasil ante a nova divisão internacional do trabalho4\u0005"
+  },
+  {
+    "numero": 63,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": ";\u0006\u0005 \b\u0012"
+  },
+  {
+    "numero": 66,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": ""
+  },
+  {
+    "numero": 68,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "3\u0003\u0007"
+  },
+  {
+    "numero": 67,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": ">\u0011\u0004\u0005 \u0007\u0011 \b\u0006\u000e\u0005 \u000f\u0011\u0004\u0005 \u0011"
+  },
+  {
+    "numero": 69,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "\u0007\u0004\u0005\u0017\u0007 \u000f\u0012\u0003\u0005\u0002\b"
+  },
+  {
+    "numero": 70,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "L\u0003 \b\u0004\u0005 \u0011\u0006\u0006\u0011\u0006\u0005 \u0002 \u0011\u000f\u0012 \u0006\u0012\b\u0006\u0005 \b"
+  },
+  {
+    "numero": 73,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "@\u0007\b\u000f\u0010\u0003\u0005 \u0011\u0012\u0013 \u0003\u0005 6\b \b\u0006\u0005 \u0006\u0011\u0005 \u0006\u0007 \u0002 \u0010\u0003\u0007\u000e\u0005 \u0011\u0004\u0005 \b \u0003\u0006\u0012\u0003\u0005 \u0010\u0011\u0005"
+  },
+  {
+    "numero": 71,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "<\u0011\u0006\u0010\u0011\u0005\u0003\u0006\u0005( \u0004# \u0010 \u0003\u0006\u0005\u0010\b\u0005\u0014\u0003 \u0004\b*+\u0003\u0005\u0010\b\u0005\u0002 \u0003\u0006\u0012\b\u0005\u0012\u0011 \u0011\u0006\u0012 \u0011\u0005"
+  },
+  {
+    "numero": 74,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": ";\u0006\u0005 \u0012 \b\u000f\u0006\u0014\u0003 \u0004\b*\u0018\u0011\u0006\u0005 \u000f\b\u0005 \u0006\u0007(\u0011 \u00145\u0002 \u0011\u0005 \u0012\u0011 \u0011\u0006\u0012 \u0011\u000e\u0005 \u0002\u0003\u000f\u0014\u0003 \u0004\u0011\u0005                                =\u0007\u000e\u0005<\u0003\u0004\u0005z\u0003+\u0003\u000e\u0005(\u0011 \b\u0005 \b*\b\u0005\u0010\u0011\u0005<\u0011\u0007\u0006\u000e\u0005\u0014\b*\u0003\u0005\u0006\b&\u0011 \u0005\b\u000564\u0005"
+  },
+  {
+    "numero": 72,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": ";\u0005 (\b \u0012 \u0002 (\b*+\u0003\u0005 \u0006\u0003\u0002 \b \u0005 \u000f\u0003\u0005 ( \b\u000f\u0011H\b\u0004\u0011\u000f\u0012\u0003\u0005 \u0011\u0005 \u000f\b\u0005 \u0011\u0006\u0012+\u0003\u0005 \u0003\u0005\u0006\u0011\u0007\u0005\u0007\u0006\u0003\u0005\u0010\u0011\u0006\b(\b \u0011*\b4"
+  },
+  {
+    "numero": 75,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "\u0006\u0012\b\u0005 \u0010\u0003\u0006\u0005 8 \u0006\u0012\u0003 \b\u0010\u0003 \u0011\u0006\u0005 \u0011\u0014\u0011 \u0010\u0003\u0006\u0005 \u000f\u0003\u0005 \u0012\u0011W\u0012\u0003\u0005"
+  },
+  {
+    "numero": 78,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "C \u0005 \u0006\u0007(\u0011 \b*+\u0003\u0005\u0010\b\u0005\u0012 \b\u0010 *+\u0003\u0005(\u0003(\u0007 \b 4                                                   TEXTO      I"
+  },
+  {
+    "numero": 76,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "\u0006 \u000f \u0002\u0003\u0007\u0005 \u0003\u0005 ( \u0004\u0011 \u0003\u0005 \u0002\u0003\u000f\u0014 \u0003\u000f\u0012\u0003\u0005 \u0011\u000f\u0012 \u0011\u0005 \b\u0005 &\u0011 \u0010\b\u0010\u0011\u0005 \u0011\u0005 \b\u0005"
+  },
+  {
+    "numero": 77,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Por que o Brasil continuou um só enquanto a"
+  },
+  {
+    "numero": 79,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "América espanhola se dividiu em vários países?                                         As       grandes         empresas            seriam,          certamente,"
+  },
+  {
+    "numero": 80,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": ""
+  },
+  {
+    "numero": 82,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": ">\u0007\u0004\b\u0005 \u0006\u0003\u0002 \u0011\u0010\b\u0010\u0011\u0005 \u0011\u0004\u0005 \u0012 \b\u000f\u0006 *+\u0003\u000e\u0005 \b\u0005 \u0004\b \u00028\b\u0005 \u0010\b\u0005                                     F#\u0002 \b\u0012\u0011\u0006\u0015\u0005@\u0007\u0011\u0004\u0005\u000f+\u0003\u0005\u0006\b&\u0011\u0005\u0003\u0005\u0017\u0007\u0011\u0005\u0007\u0004\b\u0005\u0002\u0003 \u0006\b\u0005I\u000e\u0005\u0002\u0003\u0004\u0003\u0005"
+  },
+  {
+    "numero": 83,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": ">\u0003\u0005\u0006\u0011 \u0003\u0005\u0010\u0011\u0005\u0010"
+  },
+  {
+    "numero": 81,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": ")?<)bB=F\u000e\u0005~4\u0005)4\u0005;4\u0005~4%\u0005$;6;)=F\u000e\u0005;4\u0005\"4\u0005'4\u0005F \u000f \u0007 \b \u0010\b\u0010\u0011\u0006\u0005\u0004\u0007\u0006\u0011\u0003 # \u0002\b\u0006\u0005\u0010\u0011\u0005\u0007\u0004\b\u0005\u0012\u001f&\u0007\b\u0005"
+  },
+  {
+    "numero": 84,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": ""
+  },
+  {
+    "numero": 86,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "?\u0005 \u0012\u0003 I\u0004\u0005 \u0010\u0011(\u0011\u000f\u0010 \b\u0005 \u0010\u0011\u0005 \u0003 \b\u000f k\b*+\u0003\u0005 \u0014\b\u0004 \b \u000e\u0005 \u0006\u0011\u000f\u0010\u0003\u0005                                     ;\u0005 \u0003\u0006\u0003 \b\u0005 I\u0005 \u0002\u0003\u0004\u0003\u0005 \u0007\u0004\b\u0005"
+  },
+  {
+    "numero": 85,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": ""
+  },
+  {
+    "numero": 87,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "~ \u000f8\b\u0005\u0014# \u0004\u0007 \b\u0005(\b \b\u0005\u0003\u0005\u0017\u0007\u0011\u00058\u001f\u0005\u0010\u0011\u0005 \b\u000f\u0010\u0011\u0005\u000f\u0003\u0005 \u000f\u0010"
+  },
+  {
+    "numero": 88,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Quem o aprehender e entregar ao seu se-"
+  },
+  {
+    "numero": 89,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Movimento de translação da Terra"
+  },
+  {
+    "numero": 90,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "TEXTO I"
+  }
+]

@@ -1,0 +1,697 @@
+[
+  {
+    "numero": 1,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "C",
+      "espanhol": "C"
+    },
+    "preview": "Disponível em: http://thumbpress.com. Acesso em: 28 out. 2013."
+  },
+  {
+    "numero": 2,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "D"
+    },
+    "preview": "Holy War"
+  },
+  {
+    "numero": 3,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "D"
+    },
+    "preview": "Disponível em: www.hongkiat.com. Acesso em: 18 ago. 2017 (adaptado)."
+  },
+  {
+    "numero": 4,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "D"
+    },
+    "preview": "I remember being caught speaking Spanish at recess"
+  },
+  {
+    "numero": 5,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "E",
+      "espanhol": "A"
+    },
+    "preview": "Disponível em: www.clickhole.com. Acesso em: 26 out. 2015."
+  },
+  {
+    "numero": 1,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "C",
+      "espanhol": "C"
+    },
+    "preview": "El vírus de la cancelación"
+  },
+  {
+    "numero": 2,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "D"
+    },
+    "preview": "“Y si llueve, que llueva” es un refrán gallego. Para mí cobró"
+  },
+  {
+    "numero": 3,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "D"
+    },
+    "preview": "Celerina Patricia Sánchez Santiago comentó que su"
+  },
+  {
+    "numero": 4,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "D"
+    },
+    "preview": "Morir muy vivos"
+  },
+  {
+    "numero": 5,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "E",
+      "espanhol": "A"
+    },
+    "preview": "Los últimos días del sitio de Tenochtitlán"
+  },
+  {
+    "numero": 6,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Expressões e termos utilizados no Amazonas"
+  },
+  {
+    "numero": 7,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Conheça histórias de atletas paralímpicas que"
+  },
+  {
+    "numero": 8,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "É fundamentalmente no Minho, norte de Portugal, que o"
+  },
+  {
+    "numero": 9,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Pressão, depressão, estresse e crise de ansiedade."
+  },
+  {
+    "numero": 10,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Já ouvi gente falando que o podcast é o renascimento"
+  },
+  {
+    "numero": 11,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Evanildo Bechara prepara a sua aposentadoria de pouco"
+  },
+  {
+    "numero": 12,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "A Língua da Tabatinga, falada na cidade de"
+  },
+  {
+    "numero": 13,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Diante do pouco dinheiro para produtos básicos de"
+  },
+  {
+    "numero": 14,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Maranhenses que moram longe matam a saudade da"
+  },
+  {
+    "numero": 15,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Telemedicina é para todos,"
+  },
+  {
+    "numero": 16,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Uma definição possível para o conceito de arte"
+  },
+  {
+    "numero": 17,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Influenciadores negros têm recorrentemente chamado"
+  },
+  {
+    "numero": 18,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Um estudo norte-americano analisou os efeitos"
+  },
+  {
+    "numero": 19,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Até ali que sabia das misérias do mundo? Nada."
+  },
+  {
+    "numero": 20,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Sempre passo nervoso quando leio minha crônica"
+  },
+  {
+    "numero": 21,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 22,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 23,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "As reações à sétima temporada foram o ápice do último"
+  },
+  {
+    "numero": 24,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "— Vá para o inferno, Gondim. Você acanalhou o troço."
+  },
+  {
+    "numero": 25,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "VISCONTI, E. Três meninas no jardim. Óleo sobre tela,"
+  },
+  {
+    "numero": 26,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Por trás do universo “masculino” das lutas, é cada"
+  },
+  {
+    "numero": 27,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Volta e meia recebo cartinhas de fãs, e alguns são bem"
+  },
+  {
+    "numero": 28,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Data venia"
+  },
+  {
+    "numero": 29,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Meu irmão é filho adotivo. Há uma tecnicidade no termo,"
+  },
+  {
+    "numero": 30,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 31,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Cap. XLVIII / Terpsícore"
+  },
+  {
+    "numero": 32,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Marília acorda"
+  },
+  {
+    "numero": 33,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Disponível em: https://defesacivil.rs.gov.br."
+  },
+  {
+    "numero": 34,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Teclado amazônico"
+  },
+  {
+    "numero": 35,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "— Eu lhe juro, Aurélia. Estes lábios nunca tocaram a face de outra mulher, que não fosse minha mãe. Meu primeiro"
+  },
+  {
+    "numero": 36,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 37,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Se você é feito de música, este texto é pra você"
+  },
+  {
+    "numero": 38,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "pessoas com suas malas"
+  },
+  {
+    "numero": 39,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Falar errado é uma arte, Arnesto!"
+  },
+  {
+    "numero": 40,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "O festival folclórico de Parintins, no Amazonas,"
+  },
+  {
+    "numero": 41,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "O Brasil somou cerca de 60 mil novos casos de câncer"
+  },
+  {
+    "numero": 42,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Feijoada à minha moda"
+  },
+  {
+    "numero": 43,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 44,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Os Jogos Olímpicos já não são mais os mesmos."
+  },
+  {
+    "numero": 45,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Memes e fake news: o impacto na"
+  },
+  {
+    "numero": 46,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 47,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Tal qual num exército, não se compreende um efetivo"
+  },
+  {
+    "numero": 48,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "O rompimento da barragem de Fundão levou muito"
+  },
+  {
+    "numero": 49,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Com a proximidade do final do século XIX, amplificam-se"
+  },
+  {
+    "numero": 50,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "O bispo Bartolomeu de Las Casas é o homem mais"
+  },
+  {
+    "numero": 51,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "A valsa vienense é a mais antiga das danças de salão"
+  },
+  {
+    "numero": 52,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "O Black Lives Matter vai para além do nacionalismo"
+  },
+  {
+    "numero": 53,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Diferenças entre inundação gradual e brusca"
+  },
+  {
+    "numero": 54,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Os grupos dominantes são beneficiados em termos de"
+  },
+  {
+    "numero": 55,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "A alma funciona no meu corpo de maneira maravilhosa."
+  },
+  {
+    "numero": 56,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "No primeiro dia, foi colocada uma panela de barro no"
+  },
+  {
+    "numero": 57,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Espaços públicos não são produtos dados e acabados,"
+  },
+  {
+    "numero": 58,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 59,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "As instituições que a Idade Média nos legou são de"
+  },
+  {
+    "numero": 60,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Há experiências de lutas sociais de reapropriação"
+  },
+  {
+    "numero": 61,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Eu sentia falta do futuro. É claro que eu sabia,"
+  },
+  {
+    "numero": 62,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 63,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Uma das principais atividades provocadas pela arte,"
+  },
+  {
+    "numero": 64,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 65,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Como conclusão provisória, parece então que a"
+  },
+  {
+    "numero": 66,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Em 1960, a primeira pílula anticoncepcional foi"
+  },
+  {
+    "numero": 67,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "A internet fortalece o engajamento e a visibilidade de"
+  },
+  {
+    "numero": 68,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 69,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Atribuo a causa desse florescimento estéril a um"
+  },
+  {
+    "numero": 70,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Cada objeto é, em si mesmo, um sistema funcionando"
+  },
+  {
+    "numero": 71,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "A 26ª Conferência do Clima das Nações Unidas foi realizada"
+  },
+  {
+    "numero": 72,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "A pessoa com deficiência de qualquer modalidade —"
+  },
+  {
+    "numero": 73,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "As capas dos folhetos de cordel, já então ilustradas"
+  },
+  {
+    "numero": 74,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "O Círio de Nazaré é uma festa que ocorre, anualmente,"
+  },
+  {
+    "numero": 75,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Os salões permitiam aos escritores da época do"
+  },
+  {
+    "numero": 76,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Resumamos os principais caracteres de um rizoma:"
+  },
+  {
+    "numero": 77,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "VIEIRA, A. P. L. O Departamento de Imprensa e Propaganda e a política editorial do Estado Novo (1937-1945)."
+  },
+  {
+    "numero": 78,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "A regra de ouro, popularmente conhecida pelo provérbio “Trate os outros como gostaria de ser tratado”, é um dos"
+  },
+  {
+    "numero": 79,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "O que alicerça, portanto, o acolhimento de refugiados pelos Estados gira em torno da fronteira erguida entre inclusão"
+  },
+  {
+    "numero": 80,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 81,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "No Brasil, os remanescentes de antigos quilombos,"
+  },
+  {
+    "numero": 82,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Bertrand Russell conta a história de um peru que"
+  },
+  {
+    "numero": 83,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "A finalidade mais marcante em toda a história dos"
+  },
+  {
+    "numero": 84,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 85,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Era uma vez um país, uma cidade, uma praça, algumas"
+  },
+  {
+    "numero": 86,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "TEXTO I"
+  },
+  {
+    "numero": 87,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "A democracia responde a esta pergunta: quem deve"
+  },
+  {
+    "numero": 88,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "A mudança do clima nas cidades brasileiras é um desafio"
+  },
+  {
+    "numero": 89,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "O Conselho de Segurança da Organização das"
+  },
+  {
+    "numero": 90,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Uma fábrica na qual os operários fossem, efetiva e"
+  }
+]

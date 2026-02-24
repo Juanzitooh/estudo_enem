@@ -1,0 +1,687 @@
+[
+  {
+    "numero": 3,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "E"
+    },
+    "preview": "Questões de 01 a 45"
+  },
+  {
+    "numero": 1,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "We carry soil in small bags: may home never fade in our"
+  },
+  {
+    "numero": 2,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "PING, W. Disponível em: https://poets.org. Acesso em: 1 jun. 2023 (fragmento)."
+  },
+  {
+    "numero": 4,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "B"
+    },
+    "preview": ""
+  },
+  {
+    "numero": 5,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "Spanglish"
+  },
+  {
+    "numero": 1,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "A negar mi voz,"
+  },
+  {
+    "numero": 3,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "D",
+      "espanhol": "E"
+    },
+    "preview": "manipulador"
+  },
+  {
+    "numero": 5,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "B",
+      "espanhol": "A"
+    },
+    "preview": "(Cual “sellos”, te grabas sus «Típicos Platos»;"
+  },
+  {
+    "numero": 4,
+    "variacao": 2,
+    "area": "Linguagens",
+    "gabarito": {
+      "ingles": "A",
+      "espanhol": "B"
+    },
+    "preview": "En aquel vagón viajaba un ángel de color diferente,"
+  },
+  {
+    "numero": 8,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Questões de 06 a 45"
+  },
+  {
+    "numero": 6,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "A sessão do Comitê Olímpico Internacional (COI)                                  lançar em Lisboa uma “antologia antirracista de poetas"
+  },
+  {
+    "numero": 7,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "em outros países."
+  },
+  {
+    "numero": 9,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "linguagem empregada por perfis automatizados contribui"
+  },
+  {
+    "numero": 11,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "Graças a tudo isso, a circulação de boatos era intensa                                  Maio foi colorido de amarelo, e o foi porque"
+  },
+  {
+    "numero": 10,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Reafirmar e praticar esses princípios e valores talvez seja"
+  },
+  {
+    "numero": 12,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": ""
+  },
+  {
+    "numero": 13,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Ainda daquela vez pude constatar a bizarrice dos                                                    Girassol da madrugada"
+  },
+  {
+    "numero": 14,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": ""
+  },
+  {
+    "numero": 15,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "Dão Lalalão                                                 As cinzas do Museu Nacional, no Rio de Janeiro,"
+  },
+  {
+    "numero": 16,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "atribui-lhes uma nova função e está correlacionado ao(à)"
+  },
+  {
+    "numero": 18,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "“Muitas pessoas pensam que a língua de sinais é universal,"
+  },
+  {
+    "numero": 17,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "E mais, e mais, e mais, e mais, e mais"
+  },
+  {
+    "numero": 19,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "“São tantas formas de matar um preto                                 e, com ela, a linguagem?"
+  },
+  {
+    "numero": 21,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "D",
+    "preview": "o objetivo de"
+  },
+  {
+    "numero": 20,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "Ao registrarem usos regionais de termos da área médica,"
+  },
+  {
+    "numero": 22,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "Alguém muito recentemente cortara o mato, que na                                         Masculino e feminino são campos escorregadios que"
+  },
+  {
+    "numero": 24,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "tradição oral."
+  },
+  {
+    "numero": 23,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "TEXTO I                                                                                                                             Em tempos de isolamento"
+  },
+  {
+    "numero": 25,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": ""
+  },
+  {
+    "numero": 27,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Passado muito tempo, resolvi tentar falar, porque                                 E assim as coisas continuaram acontecendo entre os"
+  },
+  {
+    "numero": 26,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "D contraposição de ideias marcada pela conjunção “mas”."
+  },
+  {
+    "numero": 28,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "dos troncos, dos vira-mundos e dos bacalhaus; e terão                                   A garganta é a gruta que guarda o som"
+  },
+  {
+    "numero": 29,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "oferecem um esboço do momento político vigente na"
+  },
+  {
+    "numero": 31,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "absortos na esperança da independência nacional! E"
+  },
+  {
+    "numero": 30,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Enquanto estivemos entretidos com os urubus outras                                      Nesse poema, a representação do sentimento amoroso"
+  },
+  {
+    "numero": 32,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "pelo regime totalitário alemão na primeira metade do"
+  },
+  {
+    "numero": 34,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "- A) inter-relação de referenciais estéticos aparentemente"
+  },
+  {
+    "numero": 33,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "TEXTO I                                                                               TEXTO II"
+  },
+  {
+    "numero": 35,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": ""
+  },
+  {
+    "numero": 37,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": "A indústria do esporte eletrônico é um mercado que                                      O uso das redes sociais como forma de ampliar"
+  },
+  {
+    "numero": 38,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "C impulsionamento de um processo de marketing.                                                O mais antigo grupo de rap indígena do país, Brô MCs,"
+  },
+  {
+    "numero": 36,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "O Marabaixo é uma expressão artístico-cultural                                       influenciar outros a fazerem rap e a lutarem pelas causas"
+  },
+  {
+    "numero": 39,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "C",
+    "preview": ""
+  },
+  {
+    "numero": 41,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "A petição on-line criada por um cidadão paulista                                           “Ganhei 25 medalhas em mundiais, sete em Jogos"
+  },
+  {
+    "numero": 40,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "B",
+    "preview": "E as federações esportivas."
+  },
+  {
+    "numero": 42,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "medalhas, a levantadora de peso deixou sua marca na                                            O acesso às Práticas Corporais/Atividades Físicas"
+  },
+  {
+    "numero": 43,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "Mestre e companheiro, disse eu que nos íamos despedir.                        A divulgar um conjunto de benefícios proporcionados"
+  },
+  {
+    "numero": 45,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "E",
+    "preview": "e da tua glorificação, com a sócia sem nódoa dos teus anos"
+  },
+  {
+    "numero": 44,
+    "variacao": 1,
+    "area": "Linguagens",
+    "gabarito": "A",
+    "preview": "de investir na saúde e na qualidade de vida associada ao"
+  },
+  {
+    "numero": 48,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Questões de 46 a 90                                                                     No Cerrado, o conhecimento local está sendo cada"
+  },
+  {
+    "numero": 46,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "lado, o capital impõe os conhecimentos biotecnológicos,"
+  },
+  {
+    "numero": 49,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "A definição de Sertão descrita no bordado associa esse                              TEXTO I"
+  },
+  {
+    "numero": 47,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Felizes tempos eram esses! As moças iam à missa de                                  Dentre as províncias da Região Oeste, Xinjiang se"
+  },
+  {
+    "numero": 50,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Superar a história da escravidão como principal marca                                Paulo Freire construiu uma pedagogia da esperança."
+  },
+  {
+    "numero": 53,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "B estímulo ao antropocentrismo.                                                            A Cordilheira do Himalaia tem mais de 50 milhões de"
+  },
+  {
+    "numero": 51,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "maiores que 7 000 m. O Everest, considerado o ponto mais"
+  },
+  {
+    "numero": 54,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "A análise do resultado do processo em questão revela que"
+  },
+  {
+    "numero": 52,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "TEXTO I                                                                               No que se refere ao problema do corpo, a filosofia cartesiana"
+  },
+  {
+    "numero": 55,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "A diversão é o prolongamento do trabalho sob o capitalismo tardio. Ela é procurada por quem quer escapar"
+  },
+  {
+    "numero": 56,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "EU QUERIA                                    FORÇA? VISÃO DE                               PODER"
+  },
+  {
+    "numero": 57,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "Quem se mete pelo caminho do pedido de perdão deve estar pronto a escutar uma palavra de recusa. Entrar na"
+  },
+  {
+    "numero": 58,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "etiqueta que tem como princípio a"
+  },
+  {
+    "numero": 60,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Caicó no período da Festa de Sant’Ana, esses agricultores"
+  },
+  {
+    "numero": 61,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "C fundamentos estéticos e etnográficos em função de                                  Por trás da “mágica” do Google Assistant de sua"
+  },
+  {
+    "numero": 59,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "de trabalhadores que treinam algoritmos incansavelmente"
+  },
+  {
+    "numero": 62,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": ""
+  },
+  {
+    "numero": 64,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Enormes alto-falantes sul-coreanos instalados na                                          Txai Suruí, liderança da Juventude Indígena,"
+  },
+  {
+    "numero": 65,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Os atos de competição citados têm suas origens"
+  },
+  {
+    "numero": 63,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Seda, madeiras aromáticas e têxteis, obras de arte,"
+  },
+  {
+    "numero": 66,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": ""
+  },
+  {
+    "numero": 68,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "TEXTO I                                                                                      O masseiro, a mulher, e quatro filhos, dormindo numa"
+  },
+  {
+    "numero": 69,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "aproximam ao apresentarem uma reflexão sobre o(a)"
+  },
+  {
+    "numero": 67,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "e milhares de criminosos condenados foram libertados"
+  },
+  {
+    "numero": 70,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": ""
+  },
+  {
+    "numero": 72,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "No cemitério, a sociedade religiosa encarregada do                             TEXTO I"
+  },
+  {
+    "numero": 71,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Alternativas logísticas estão servindo de instrumentos                         A Dependência e progresso."
+  },
+  {
+    "numero": 73,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": ""
+  },
+  {
+    "numero": 75,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "Os séculos XV e XVI, quando se vão desmoronando                                       A torcida do Fluminense inicia um movimento para"
+  },
+  {
+    "numero": 76,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "D O movimento de reformas religiosas.                                                                                  Taxa de fecundidade no Brasil"
+  },
+  {
+    "numero": 74,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Tahuantinsuyu — nome do Império Inca em quéchua —                                                                 6,3 para 1,5"
+  },
+  {
+    "numero": 77,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": ""
+  },
+  {
+    "numero": 79,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Havia já muito tempo que a Europa desfrutava os                                            TEXTO I"
+  },
+  {
+    "numero": 78,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "Petrópolis: Vozes, 1997 (adaptado)."
+  },
+  {
+    "numero": 80,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "de consumidores, pois ambos se confundem nas"
+  },
+  {
+    "numero": 81,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": ""
+  },
+  {
+    "numero": 83,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "C",
+    "preview": "A economia das ilegalidades se reestruturou com o                                           Diversos são os fatores causadores da degradação"
+  },
+  {
+    "numero": 84,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": ""
+  },
+  {
+    "numero": 82,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "A partir da década de 1930, começam a ser discutidos"
+  },
+  {
+    "numero": 85,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": ""
+  },
+  {
+    "numero": 87,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Produtores rurais europeus são antigos opositores                                 TEXTO I"
+  },
+  {
+    "numero": 86,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "E",
+    "preview": "C regulamentações territoriais e alfandegárias."
+  },
+  {
+    "numero": 88,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "A",
+    "preview": "nada modificou essa educação masculina dada a uma"
+  },
+  {
+    "numero": 89,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "D",
+    "preview": "Simulação de mudança da temperatura média anual em relação ao período pré-industrial em três cenários de aquecimento global"
+  },
+  {
+    "numero": 90,
+    "variacao": 1,
+    "area": "Ciências Humanas",
+    "gabarito": "B",
+    "preview": "Não tinha outra filosofia. Nem eu. Não digo que a Universidade me não tivesse ensinado alguma; mas eu decorei-lhe"
+  }
+]

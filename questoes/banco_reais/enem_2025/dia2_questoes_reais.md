@@ -552,7 +552,7 @@ A massa de alumínio, em quilograma, estimada pela engenheira
 ## Questão 115
 
 - Área: Ciências da Natureza
-- Gabarito: Anulado
+- Gabarito: A
 
 O nível sonoro, em decibel (dB), é calculado pela expressão:
 n  10 log10
@@ -705,7 +705,7 @@ a região da bobina e o vidro cerâmico.
 ## Questão 121
 
 - Área: Ciências da Natureza
-- Gabarito: Anulado
+- Gabarito: A
 
 Plantas e algas realizam fotossíntese oxigênica para
 síntese de matéria orgânica e, para isso, utilizam trifosfato de
@@ -2053,7 +2053,7 @@ transversais com medidas iguais.
 ## Questão 178
 
 - Área: Matemática
-- Gabarito: Anulado
+- Gabarito: A
 
 Um carro que custa 60 mil reais é comercializado por uma
 revendedora que oferece duas opções de pagamento, todas

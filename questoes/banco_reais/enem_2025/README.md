@@ -25,15 +25,15 @@ Este diretório contém a extração estruturada dos cadernos reais de 2025 (Dia
 python3 scripts/extrair_banco_enem_real.py \
   --ano 2025 \
   --dia 1 \
-  --prova 'questoes/provas anteriores/prova_dia_1_2025.pdf' \
-  --gabarito 'questoes/provas anteriores/prova_dia_1_2025_gabarito.pdf' \
+  --prova 'questoes/provas_anteriores/2025_PV_impresso_D1_CD1.pdf' \
+  --gabarito 'questoes/provas_anteriores/2025_GB_impresso_D1_CD1.pdf' \
   --outdir 'questoes/banco_reais/enem_2025'
 
 python3 scripts/extrair_banco_enem_real.py \
   --ano 2025 \
   --dia 2 \
-  --prova 'questoes/provas anteriores/prova_dia_2_2025.pdf' \
-  --gabarito 'questoes/provas anteriores/prova_dia_2_2025_gabarito.pdf' \
+  --prova 'questoes/provas_anteriores/2025_PV_impresso_D2_CD5.pdf' \
+  --gabarito 'questoes/provas_anteriores/2025_GB_impresso_D2_CD5.pdf' \
   --outdir 'questoes/banco_reais/enem_2025'
 ```
 
