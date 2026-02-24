@@ -24,6 +24,11 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - Bancos reais adicionais em `questoes/banco_reais/enem_2015` até `questoes/banco_reais/enem_2024`.
 - Relatório consolidado de extração em `questoes/banco_reais/STATUS_EXTRACAO.md`.
 - Resumo operacional do edital em `plano/resumo_edital_2025.md`.
+- Scaffold do cliente Flutter offline em `app_flutter/enem_offline_client/` com app mínimo e SQLite.
+- Script `scripts/build_assets_release.py` para gerar `assets.zip` + `manifest.json` com SHA256.
+- Script raiz `dist.sh` para pipeline idempotente de release (conteúdo + build Linux + execução final).
+- Guia dedicado de cliente offline em `app_flutter/README.md`.
+- Suporte no bundle para `questions` + `book_modules` (índice dos livros) com update offline.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.
@@ -37,6 +42,8 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `README.md`, `agents.global.md` e `prompts/agents.global.md` atualizados para incluir uso de `questoes/banco_reais/` na calibração de questões.
 - `scripts/extrair_banco_enem_real.py` generalizado para diferentes anos (detecção de `QUESTÃO`, ordem de áreas e parsing de gabaritos antigos).
 - `README.md`, `agents.global.md` e `prompts/agents.global.md` atualizados para usar `questoes/provas_anteriores` e incluir `edital.pdf` como fonte complementar.
+- `README.md` e `plano/roadmap_geral.md` atualizados para estratégia de distribuição multiplataforma via cliente local e atualização de conteúdo por manifest.
+- Cliente Flutter MVP ajustado para cruzar histórico de acertos (`progress`) com habilidades fracas e sugerir módulos de livro.
 
 ### Security
 - `prompts/contexto_sessao.md` configurado para não ser versionado via `.gitignore`.

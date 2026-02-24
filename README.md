@@ -32,6 +32,7 @@ Este repositório foi estruturado para você estudar com:
 - `plano/desempenho_habilidades.example.csv`: exemplo de feedback por habilidade.
 - `plano/README_planejador_offline.md`: guia do planejador sem IA.
 - `plano/roadmap_geral.md`: planejamento macro do projeto e do app open source.
+- `app_flutter/`: cliente Flutter offline (desktop + Android) e guia de setup.
 - `planner/`: módulo Python de priorização e cronograma determinístico.
 - `CHANGELOG.md`: histórico de mudanças do projeto.
 
@@ -95,6 +96,45 @@ No app:
 - preencha `Título`, `Página` e `Habilidades`;
 - em `Habilidades`, pode usar vírgula ou `;` (o app salva em formato normalizado, ex.: `c1-h3; c2-h7`);
 - use `Salvar arquivo` para gravar no CSV.
+
+## Cliente Flutter Offline (desktop + Android)
+
+Se você quer um cliente local distribuível, use o scaffold em `app_flutter/`.
+
+Guia completo:
+- `app_flutter/README.md`
+
+Comandos rápidos:
+
+```bash
+cd app_flutter/enem_offline_client
+flutter pub get
+flutter run -d linux
+```
+
+Gerar pacote de conteúdo para update (`manifest + SHA256`):
+
+```bash
+python3 scripts/build_assets_release.py \
+  --questions-csv questoes/mapeamento_habilidades/questoes_mapeadas.csv \
+  --modules-csv plano/indice_livros_6_volumes.csv \
+  --out-dir app_flutter/releases \
+  --version 2026.02.24.1 \
+  --base-url https://SEU_HOST/releases/2026.02.24.1
+```
+
+No cliente, esse pacote alimenta:
+- questões mapeadas para treino;
+- módulos dos livros por habilidade;
+- recomendação offline de módulos com base no histórico de acertos/erros.
+
+Build/release em um comando (Linux):
+
+```bash
+./dist.sh --version 2026.02.24.1 --base-url https://SEU_HOST/releases
+```
+
+Esse script gera conteúdo versionado, build Linux e executa o app no final para teste manual.
 
 ## Como usar no dia a dia
 

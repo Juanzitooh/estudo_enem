@@ -7,12 +7,16 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - gera plano de estudo com base em desempenho real;
 - oferece um app gratuito e open source para praticar simulados offline.
 
+## Próximo Passo Imediato
+- [ ] Rodar `./dist.sh --version <versao> --base-url <url_base>` no Linux para validar pipeline end-to-end (conteúdo + build + execução local).
+
 ## Estado Atual (base já pronta)
 - Matriz convertida para Markdown em `matriz/`.
 - Banco de provas anteriores em `questoes/banco_reais/`.
 - Mapeamento automático por disciplina/tema/habilidade em `questoes/mapeamento_habilidades/`.
 - Planejador offline determinístico em `planner/` e `scripts/gerar_plano_offline.py`.
 - App desktop inicial de planejamento em `scripts/app_planejador_pyside6.py`.
+- Scaffold de cliente Flutter offline em `app_flutter/enem_offline_client/`.
 - Índice dos livros com campo de habilidades em `plano/indice_livros_6_volumes.csv`.
 
 ## Fase 1 — Consolidação de Dados
@@ -30,9 +34,9 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 ## Fase 3 — Seção dedicada: App Open Source Gratuito
 
 ### Escopo do App
-- [ ] App desktop em Python (PySide6) com funcionamento offline.
+- [ ] App Flutter offline-first (Windows, Linux, macOS e Android/APK).
 - [ ] Banco local em SQLite para desempenho, histórico e preferências.
-- [ ] Importação de questões reais já processadas pelo projeto.
+- [ ] Importação de dados por pacote versionado (CSV -> `assets.zip` -> SQLite local).
 - [ ] Interface simples para resolver questões, corrigir e evoluir no plano.
 
 ### Funcionalidades do MVP
@@ -40,6 +44,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Modo treino: resolver questões por habilidade com correção imediata.
 - [ ] Modo simulado: montar prova com tempo e quantidade configuráveis.
 - [ ] Histórico de tentativas com análise por habilidade.
+- [ ] Recomendação de módulos do livro com base nas habilidades de maior erro.
 - [ ] Sugestão automática de próximos blocos de estudo.
 
 ### “Dá para criar provas?”
@@ -59,6 +64,7 @@ Sim. Neste roadmap, “criar provas” significa montar simulados a partir do ba
 - [ ] Publicar o código sob licença permissiva (ex.: MIT).
 - [ ] Manter créditos e origem dos dados oficiais (INEP/ENEM).
 - [ ] Documentar no README que o app organiza estudo e não substitui fonte oficial.
+- [ ] Separar release do app e release de conteúdo (`manifest.json` + `assets.zip`).
 
 ## Fase 4 — Qualidade de Produto
 - [ ] Testes unitários para parser, seleção de questões e cálculo de métricas.
