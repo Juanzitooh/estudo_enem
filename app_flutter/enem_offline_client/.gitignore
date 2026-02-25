@@ -10,3 +10,5 @@ build/
 # IDE
 .idea/
 .vscode/
+*.iml
+.metadata
