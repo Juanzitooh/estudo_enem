@@ -7,9 +7,12 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Revisar manualmente amostra de 20 questões do Dia 1 e 20 do Dia 2.
 - [ ] Identificar ruídos em enunciados com imagem/tabela/fórmula.
 - [ ] Definir critérios de limpeza mínima para manter fidelidade sem perder contexto.
+- [x] Publicar flag `tem_imagem` por questão (lotes concluídos, sem recorte de asset).
+- [x] Quebrar pendências de baixa confiança em lotes operacionais (`lotes_revisao/lote_*.md`).
+- [x] Aplicar revisão manual em lotes até zerar pendências de `confianca=baixa`.
 
 ## Bloco 2 — Indexação por habilidade (curto prazo)
-- [ ] Criar esquema de metadados por questão (`ano`, `dia`, `numero`, `area`, `habilidade`, `dificuldade`).
+- [ ] Criar esquema de metadados por questão (`ano`, `dia`, `numero`, `area`, `disciplina`, `competencia`, `habilidade`, `dificuldade`, `tem_imagem`).
 - [ ] Mapear questões reais para habilidades da matriz (`Hxx`).
 - [ ] Gerar arquivo consolidado para consulta rápida do agente.
 
@@ -23,7 +26,13 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Atualizar `plano/tracker.md` com campo de erro por habilidade (`Hxx`).
 - [ ] Definir rotina de atualização quando novos cadernos forem adicionados ao repositório.
 
+## Backlog futuro (pós-lotes `tem_imagem`)
+- [ ] Validar precisão da flag `tem_imagem` em amostra manual por área.
+- [ ] Adicionar campo `depende_contexto_visual` para priorizar revisão manual de itens com imagem.
+- [ ] Planejar extração de recortes de imagem por questão (`asset_path` + coordenadas).
+- [ ] Integrar filtros no app por `matéria`, `competência`, `habilidade` e `tem_imagem`.
+
 ## Próxima sessão sugerida
-1. Validar extração e corrigir regras de parsing.
-2. Implementar indexação por habilidade em lote.
+1. Rodar auditoria amostral das revisões manuais aplicadas em `revisao_manual/overrides.csv`.
+2. Implementar indexação por habilidade/competência em lote.
 3. Gerar primeiro simulado de treino totalmente ancorado no banco real.
