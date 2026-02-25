@@ -1,0 +1,219 @@
+ano,dia,numero,variacao,preview_match,disciplina,tema_estimado,habilidade_estimada,confianca,motivo_curto,lote
+2015,1,1,1,,Sociologia,Cidadania e Trabalho,H24,média,revisao_manual_lote_01,lote_01
+2015,1,3,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_01,lote_01
+2015,1,6,1,,História,História do Brasil,H14,média,revisao_manual_lote_01,lote_01
+2015,1,12,1,,Geografia,Geografia Humana,H27,média,revisao_manual_lote_01,lote_01
+2015,1,16,1,,Filosofia,Teoria do Conhecimento,H23,média,revisao_manual_lote_01,lote_01
+2015,1,26,1,,História,História do Brasil,H14,média,revisao_manual_lote_01,lote_01
+2015,1,31,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_01,lote_01
+2015,1,33,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_01,lote_01
+2015,1,36,1,,História,História do Brasil,H14,média,revisao_manual_lote_01,lote_01
+2015,1,45,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_01,lote_01
+2015,1,47,1,,Química,Química Ambiental,H25,média,revisao_manual_lote_01,lote_01
+2015,1,83,1,,Biologia,Fisiologia e Saúde,H30,média,revisao_manual_lote_01,lote_01
+2015,2,92,1,,Língua Estrangeira,Interpretação em Língua Estrangeira,H6,média,revisao_manual_lote_01,lote_01
+2015,2,94,1,,Língua Estrangeira,Interpretação em Língua Estrangeira,H6,média,revisao_manual_lote_01,lote_01
+2015,2,94,2,,Língua Estrangeira,Interpretação em Língua Estrangeira,H6,média,revisao_manual_lote_01,lote_01
+2015,2,95,2,,Língua Estrangeira,Interpretação em Língua Estrangeira,H6,média,revisao_manual_lote_01,lote_01
+2015,2,104,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2015,2,118,1,,Artes e Comunicação,Arte e Mídia,H13,média,revisao_manual_lote_01,lote_01
+2015,2,132,1,,Literatura,Leitura Literária,H16,média,revisao_manual_lote_01,lote_01
+2016,1,3,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_01,lote_01
+2016,1,4,1,,Geografia,Geografia Humana,H27,média,revisao_manual_lote_01,lote_01
+2016,1,48,1,,Química,Química Ambiental,H25,média,revisao_manual_lote_01,lote_01
+2016,1,68,1,,Química,Química Ambiental,H25,média,revisao_manual_lote_01,lote_01
+2016,1,84,1,,Física,Termologia,H21,média,revisao_manual_lote_01,lote_01
+2016,1,90,1,,Biologia,Citologia e Bioquímica,H30,média,revisao_manual_lote_01,lote_01
+2016,2,92,2,,Língua Estrangeira,Interpretação em Língua Estrangeira,H6,média,revisao_manual_lote_01,lote_01
+2016,2,93,1,,Língua Estrangeira,Interpretação em Língua Estrangeira,H6,média,revisao_manual_lote_01,lote_01
+2016,2,97,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2016,2,98,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2016,2,111,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2016,2,118,1,,Literatura,Leitura Literária,H16,média,revisao_manual_lote_01,lote_01
+2016,2,125,1,,Artes e Comunicação,Arte e Mídia,H13,média,revisao_manual_lote_01,lote_01
+2016,2,128,1,,Literatura,Leitura Literária,H16,média,revisao_manual_lote_01,lote_01
+2016,2,132,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2017,1,8,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2017,1,13,1,,Literatura,Leitura Literária,H16,média,revisao_manual_lote_01,lote_01
+2017,1,19,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2017,1,30,1,,Literatura,Leitura Literária,H16,média,revisao_manual_lote_01,lote_01
+2017,1,33,1,,Artes e Comunicação,Arte e Mídia,H13,média,revisao_manual_lote_01,lote_01
+2017,1,38,1,,Literatura,Leitura Literária,H16,média,revisao_manual_lote_01,lote_01
+2017,1,55,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_01,lote_01
+2017,2,102,1,,Química,Físico-Química,H25,média,revisao_manual_lote_01,lote_01
+2018,1,6,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2018,1,9,1,,Língua Portuguesa,Linguagem e Argumentação,H23,média,revisao_manual_lote_01,lote_01
+2018,1,19,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2018,1,20,1,,Literatura,Leitura Literária,H16,média,revisao_manual_lote_01,lote_01
+2018,1,27,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2018,1,28,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_01,lote_01
+2018,1,48,1,,Sociologia,Estrutura Social,H24,média,revisao_manual_lote_01,lote_01
+2018,1,50,1,,Filosofia,Teoria do Conhecimento,H23,média,revisao_manual_lote_01,lote_01
+2018,1,51,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2018,1,60,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2018,1,72,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2018,1,74,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2018,1,78,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2018,1,82,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2018,1,87,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2018,2,105,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2018,2,123,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2019,1,7,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2019,1,10,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2019,1,17,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2019,1,18,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2019,1,20,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2019,1,33,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2019,1,39,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2019,1,40,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2019,1,46,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,49,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,53,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,54,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,59,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,64,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,72,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,78,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,84,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,1,89,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2019,2,100,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2019,2,105,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2019,2,120,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2019,2,134,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2020,1,7,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2020,1,21,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2020,1,22,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2020,1,24,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2020,1,26,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2020,1,32,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lote_02,lote_02
+2020,1,48,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2020,1,55,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2020,1,66,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2020,1,67,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2020,1,73,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2020,1,86,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2020,1,88,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2020,1,90,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lote_02,lote_02
+2020,2,94,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2020,2,105,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2020,2,113,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2020,2,122,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2020,2,126,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lote_02,lote_02
+2021,1,6,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,7,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,9,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,12,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,13,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,18,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,19,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,26,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,27,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,28,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,30,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,31,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,32,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,35,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,37,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,40,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,45,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2021,1,48,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,49,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,50,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,51,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,53,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,54,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,56,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,58,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,59,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,61,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,62,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,63,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,64,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,67,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,68,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,70,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,71,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,73,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,74,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,75,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,77,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,78,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,79,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,81,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,82,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,83,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,86,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,88,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,1,89,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2021,2,93,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,97,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,99,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,102,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,103,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,107,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,110,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,122,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,124,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,126,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,127,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2021,2,132,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2022,1,9,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,13,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,15,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,20,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,25,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,28,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,34,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,36,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,42,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2022,1,52,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,1,60,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,1,62,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,1,67,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,1,76,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,1,82,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,1,83,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,1,87,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,1,88,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2022,2,97,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2022,2,123,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2023,1,8,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2023,1,9,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2023,1,26,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2023,1,29,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2023,1,38,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2023,1,40,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2023,1,43,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2023,1,53,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2023,1,61,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2023,1,69,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2023,1,76,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2023,2,125,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2024,1,6,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2024,1,7,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2024,1,12,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2024,1,24,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2024,1,41,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2024,1,68,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2024,1,82,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2024,1,87,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2024,1,89,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2024,2,100,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2024,2,108,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2024,2,124,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2024,2,129,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2024,2,132,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2025,1,6,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2025,1,11,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2025,1,24,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2025,1,30,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2025,1,43,1,,Língua Portuguesa,Tema geral,H18,média,revisao_manual_lotes_restantes,lote_03
+2025,1,51,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2025,1,55,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2025,1,62,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2025,1,70,1,,Ciências Humanas (geral),Tema geral,H15,média,revisao_manual_lotes_restantes,lote_03
+2025,2,95,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2025,2,97,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2025,2,98,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2025,2,111,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03
+2025,2,132,1,,Ciências da Natureza (geral),Tema geral,H19,média,revisao_manual_lotes_restantes,lote_03

@@ -4,7 +4,7 @@ Separação das questões nas disciplinas pedidas para estudo por matéria.
 
 | Disciplina | Quantidade | Arquivo |
 |---|---:|---|
-| Língua Portuguesa | 190 | `por_disciplina/lingua_portuguesa.md` |
+| Língua Portuguesa | 243 | `por_disciplina/lingua_portuguesa.md` |
 | Literatura | 94 | `por_disciplina/literatura.md` |
 | Inglês | 28 | `por_disciplina/ingles.md` |
 | Espanhol | 40 | `por_disciplina/espanhol.md` |
@@ -15,7 +15,7 @@ Separação das questões nas disciplinas pedidas para estudo por matéria.
 | Física | 143 | `por_disciplina/fisica.md` |
 | Química | 142 | `por_disciplina/quimica.md` |
 | Biologia | 112 | `por_disciplina/biologia.md` |
-| Matemática | 432 | `por_disciplina/matematica.md` |
+| Matemática | 495 | `por_disciplina/matematica.md` |
 
 ## Observações
 
