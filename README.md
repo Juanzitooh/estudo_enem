@@ -104,6 +104,12 @@ Se você quer um cliente local distribuível, use o scaffold em `app_flutter/`.
 Guia completo:
 - `app_flutter/README.md`
 
+Setup automático do Flutter (Linux):
+
+```bash
+./scripts/setup_flutter_linux.sh
+```
+
 Comandos rápidos:
 
 ```bash
@@ -131,10 +137,53 @@ No cliente, esse pacote alimenta:
 Build/release em um comando (Linux):
 
 ```bash
+./dist.sh --version 2026.02.24.1
+```
+
+Esse script gera conteúdo versionado, build Linux, tenta bootstrap automático do Flutter (se faltar no PATH) e executa o app no final para teste manual.
+
+Comando único recomendado para desenvolvimento local (setup + build + servidor HTTP local):
+
+```bash
+./run_local.sh
+```
+
+Esse comando:
+- roda setup do Flutter/dependências;
+- gera release local;
+- sobe servidor em `http://127.0.0.1:8787/manifest.json`.
+
+No app Flutter, use essa URL do manifest para atualizar conteúdo.
+
+Publicação remota (opcional):
+
+```bash
 ./dist.sh --version 2026.02.24.1 --base-url https://SEU_HOST/releases
 ```
 
-Esse script gera conteúdo versionado, build Linux e executa o app no final para teste manual.
+Teste local sem servidor externo:
+
+```bash
+cd app_flutter/releases/2026.02.24.1
+python3 -m http.server 8787
+```
+
+No app Flutter, informe:
+
+```text
+http://127.0.0.1:8787/manifest.json
+```
+
+Se você receber erro de linker no build Linux, por exemplo:
+- `Failed to find any of [ld.lld, ld] in LocalDirectory: '/usr/lib/llvm-18/bin'`
+
+Rode:
+
+```bash
+./scripts/setup_flutter_linux.sh
+```
+
+Isso instala/ajusta dependências de build, incluindo `lld`.
 
 ## Como usar no dia a dia
 

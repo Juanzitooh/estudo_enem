@@ -8,21 +8,33 @@ Este diretório contém o ponto de partida para um cliente local (desktop + Andr
 
 ## 1) Instalar Flutter no Linux
 
-### Dependências de sistema (Ubuntu)
+### Opção recomendada (automática e idempotente)
+
+```bash
+./scripts/setup_flutter_linux.sh
+```
+
+O script:
+- instala dependências de sistema (Ubuntu/Debian) quando possível;
+- baixa Flutter stable oficial;
+- adiciona `~/tools/flutter/bin` no `PATH` (`~/.bashrc`);
+- habilita Linux desktop e roda `flutter doctor`.
+
+### Dependências de sistema (manual, Ubuntu)
 
 ```bash
 sudo apt update
 sudo apt install -y curl git unzip xz-utils zip libglu1-mesa clang cmake ninja-build pkg-config libgtk-3-dev
 ```
 
-### Opção A: Snap (mais simples)
+### Opção A: Snap (manual)
 
 ```bash
 sudo snap install flutter --classic
 flutter doctor
 ```
 
-### Opção B: Manual (mais controlada)
+### Opção B: Manual (controlada)
 
 ```bash
 mkdir -p "$HOME/tools"
@@ -140,14 +152,53 @@ flutter build macos --release
 Se quiser fazer tudo com um comando (conteúdo + build Linux + abrir app no final):
 
 ```bash
-./dist.sh --version 2026.02.24.1 --base-url https://SEU_HOST/releases
+./dist.sh --version 2026.02.24.1
 ```
 
 O script:
 - gera `assets_<version>.zip` + `manifest.json` com SHA256;
+- tenta instalar/configurar Flutter automaticamente se não estiver no `PATH`;
 - roda `flutter pub get` + `flutter build linux --release`;
 - empacota o bundle Linux em `.tar.gz` dentro da pasta versionada;
 - executa o app Linux no final para teste manual.
+
+Se você quiser publicar update remoto, use `--base-url`:
+
+```bash
+./dist.sh --version 2026.02.24.1 --base-url https://SEU_HOST/releases
+```
+
+Se quiser setup + build + servidor local em um único comando (na raiz do repositório):
+
+```bash
+./run_local.sh
+```
+
+### Teste local sem servidor remoto (somente localhost)
+
+Sem `--base-url`, o manifest aponta o ZIP relativo ao próprio `manifest.json`.
+
+Depois do `dist.sh`, sirva a pasta da versão local:
+
+```bash
+cd app_flutter/releases/2026.02.24.1
+python3 -m http.server 8787
+```
+
+No app, use:
+
+```text
+http://127.0.0.1:8787/manifest.json
+```
+
+Se aparecer erro de linker Linux como:
+- `Failed to find any of [ld.lld, ld] in LocalDirectory: '/usr/lib/llvm-18/bin'`
+
+Rode novamente:
+
+```bash
+./scripts/setup_flutter_linux.sh
+```
 
 Opções úteis:
 
@@ -157,4 +208,7 @@ Opções úteis:
 
 # não abre o app ao final
 ./dist.sh --version 2026.02.24.1 --no-run
+
+# desativa bootstrap automático do Flutter
+./dist.sh --version 2026.02.24.1 --no-bootstrap-flutter
 ```
