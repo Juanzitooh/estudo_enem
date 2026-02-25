@@ -10,6 +10,8 @@ OUT_DIR="app_flutter/releases"
 LIMIT="0"
 RUN_LINUX="1"
 SKIP_FLUTTER="0"
+BOOTSTRAP_FLUTTER="1"
+FLUTTER_DIR="${HOME}/tools/flutter"
 
 usage() {
   cat <<'USAGE'
@@ -22,6 +24,9 @@ Opcoes:
   --out-dir <dir>     Diretorio de saida dos artefatos (padrao: app_flutter/releases)
   --limit <n>         Limite de questoes no bundle (0 = todas)
   --skip-flutter      Nao roda flutter pub/build (gera so conteudo)
+  --no-bootstrap-flutter
+                      Nao tenta instalar/configurar Flutter automaticamente
+  --flutter-dir <dir> Diretorio alvo do Flutter no bootstrap (padrao: ~/tools/flutter)
   --no-run            Nao executa o app linux no final
   -h, --help          Mostra esta ajuda
 
@@ -74,6 +79,15 @@ while [[ $# -gt 0 ]]; do
       SKIP_FLUTTER="1"
       shift
       ;;
+    --no-bootstrap-flutter)
+      BOOTSTRAP_FLUTTER="0"
+      shift
+      ;;
+    --flutter-dir)
+      [[ $# -ge 2 ]] || die "faltou valor para --flutter-dir"
+      FLUTTER_DIR="$2"
+      shift 2
+      ;;
     --no-run)
       RUN_LINUX="0"
       shift
@@ -100,6 +114,7 @@ ASSET_BUILDER="$REPO_ROOT/scripts/build_assets_release.py"
 APP_DIR="$REPO_ROOT/app_flutter/enem_offline_client"
 OUT_DIR_ABS="$(resolve_path "$OUT_DIR")"
 RELEASE_DIR="$OUT_DIR_ABS/$VERSION"
+FLUTTER_SETUP_SCRIPT="$REPO_ROOT/scripts/setup_flutter_linux.sh"
 
 [[ -f "$QUESTIONS_CSV" ]] || die "CSV de questoes nao encontrado: $QUESTIONS_CSV"
 [[ -f "$MODULES_CSV" ]] || die "CSV de modulos nao encontrado: $MODULES_CSV"
@@ -142,11 +157,62 @@ LINUX_ARCHIVE=""
 BUNDLE_DIR="$APP_DIR/build/linux/x64/release/bundle"
 
 if [[ "$SKIP_FLUTTER" -eq 0 ]]; then
-  command -v flutter >/dev/null 2>&1 || die "flutter nao encontrado no PATH"
+  if ! command -v flutter >/dev/null 2>&1; then
+    if [[ -x "$FLUTTER_DIR/bin/flutter" ]]; then
+      log "flutter encontrado em $FLUTTER_DIR/bin/flutter. ajustando PATH..."
+      export PATH="$FLUTTER_DIR/bin:$PATH"
+    elif [[ "$BOOTSTRAP_FLUTTER" -eq 1 ]]; then
+      [[ -x "$FLUTTER_SETUP_SCRIPT" ]] || die "script de setup do Flutter nao encontrado/executavel: $FLUTTER_SETUP_SCRIPT"
+      log "flutter nao encontrado. executando bootstrap automatico..."
+      "$FLUTTER_SETUP_SCRIPT" --method auto --flutter-dir "$FLUTTER_DIR"
+      export PATH="$FLUTTER_DIR/bin:$PATH"
+    fi
+  fi
+
+  command -v flutter >/dev/null 2>&1 || die "flutter nao encontrado no PATH (use scripts/setup_flutter_linux.sh ou ajuste --flutter-dir)"
+
+  MISSING_LINUX_TOOLS=()
+  for tool in clang++ cmake ninja; do
+    if ! command -v "$tool" >/dev/null 2>&1; then
+      MISSING_LINUX_TOOLS+=("$tool")
+    fi
+  done
+  if [[ ! -x "/usr/lib/llvm-18/bin/ld.lld" && ! -x "/usr/lib/llvm-18/bin/ld" ]]; then
+    if ! command -v ld.lld >/dev/null 2>&1; then
+      MISSING_LINUX_TOOLS+=("ld.lld")
+    fi
+  fi
+
+  if [[ "${#MISSING_LINUX_TOOLS[@]}" -gt 0 && "$BOOTSTRAP_FLUTTER" -eq 1 ]]; then
+    [[ -x "$FLUTTER_SETUP_SCRIPT" ]] || die "script de setup do Flutter nao encontrado/executavel: $FLUTTER_SETUP_SCRIPT"
+    log "dependencias Linux ausentes (${MISSING_LINUX_TOOLS[*]}). tentando bootstrap..."
+    "$FLUTTER_SETUP_SCRIPT" --method auto --flutter-dir "$FLUTTER_DIR"
+    export PATH="$FLUTTER_DIR/bin:$PATH"
+
+    MISSING_LINUX_TOOLS=()
+    for tool in clang++ cmake ninja; do
+      if ! command -v "$tool" >/dev/null 2>&1; then
+        MISSING_LINUX_TOOLS+=("$tool")
+      fi
+    done
+    if [[ ! -x "/usr/lib/llvm-18/bin/ld.lld" && ! -x "/usr/lib/llvm-18/bin/ld" ]]; then
+      if ! command -v ld.lld >/dev/null 2>&1; then
+        MISSING_LINUX_TOOLS+=("ld.lld")
+      fi
+    fi
+  fi
+
+  if [[ "${#MISSING_LINUX_TOOLS[@]}" -gt 0 ]]; then
+    die "dependencias Linux ausentes (${MISSING_LINUX_TOOLS[*]}). Rode scripts/setup_flutter_linux.sh (sem --skip-deps) ou sudo apt install -y lld clang cmake ninja-build."
+  fi
 
   log "preparando build linux do app..."
   pushd "$APP_DIR" >/dev/null
   flutter config --enable-linux-desktop >/dev/null
+  if [[ ! -f "$APP_DIR/linux/CMakeLists.txt" ]]; then
+    log "projeto sem plataforma Linux. executando flutter create --platforms=linux ..."
+    flutter create --platforms=linux .
+  fi
   flutter pub get
   flutter build linux --release
   popd >/dev/null
@@ -177,6 +243,11 @@ SUMMARY_PATH="$RELEASE_DIR/dist_summary.txt"
 
 log "resumo: $SUMMARY_PATH"
 log "release pronto em: $RELEASE_DIR"
+if [[ -z "$BASE_URL" ]]; then
+  log "base-url nao informada: use manifest local via HTTP."
+  log "exemplo: (cd \"$RELEASE_DIR\" && python3 -m http.server 8787)"
+  log "manifest local: http://127.0.0.1:8787/manifest.json"
+fi
 
 if [[ "$RUN_LINUX" -eq 1 && "$SKIP_FLUTTER" -eq 0 ]]; then
   log "executando app linux para teste manual... (feche a janela para encerrar o script)"
