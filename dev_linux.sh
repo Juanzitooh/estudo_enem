@@ -13,32 +13,31 @@ LINUX_PACKAGES="none"
 usage() {
   cat <<'USAGE'
 Uso:
-  ./run_local.sh [opcoes]
+  ./dev_linux.sh [opcoes]
 
 Opcoes:
-  --version <v>   Versao a usar no dist (padrao: local.YYYYMMDDHHMMSS)
-  --port <n>      Porta do servidor local (padrao: 8787)
-  --skip-setup    Nao roda setup do Flutter/dependencias
-  --skip-build    Nao roda dist.sh (serve versao ja existente)
+  --version <v>       Versao a usar no dist (padrao: local.YYYYMMDDHHMMSS)
+  --port <n>          Porta do servidor local de manifest (padrao: 8787)
+  --skip-setup        Nao roda setup do Flutter/dependencias
+  --skip-build        Nao roda dist.sh (usa release existente)
   --linux-packages <m>
-                  Pacotes Linux no dist: all, deb, appimage, none (padrao: none)
-  -h, --help      Mostra esta ajuda
+                      Pacotes Linux no dist: all, deb, appimage, none (padrao: none)
+  -h, --help          Mostra esta ajuda
 
 Exemplos:
-  ./run_local.sh
-  ./run_local.sh --version local.0.1
-  ./run_local.sh --version local.0.1 --port 9999 --skip-setup
-  ./run_local.sh --linux-packages all
+  ./dev_linux.sh
+  ./dev_linux.sh --version local.0.1
+  ./dev_linux.sh --version local.0.1 --skip-setup --skip-build
 USAGE
 }
 
-die() {
-  printf '[run-local][erro] %s\n' "$*" >&2
-  exit 1
+log() {
+  printf '[dev-linux] %s\n' "$*"
 }
 
-log() {
-  printf '[run-local] %s\n' "$*"
+die() {
+  printf '[dev-linux][erro] %s\n' "$*" >&2
+  exit 1
 }
 
 while [[ $# -gt 0 ]]; do
@@ -103,7 +102,37 @@ fi
 RELEASE_DIR="$SCRIPT_DIR/app_flutter/releases/$VERSION"
 [[ -f "$RELEASE_DIR/manifest.json" ]] || die "manifest nao encontrado em $RELEASE_DIR"
 
-log "manifest local: http://127.0.0.1:${PORT}/manifest.json"
-log "subindo servidor local apenas (este script nao abre o app). Ctrl+C para encerrar..."
-cd "$RELEASE_DIR"
-python3 -m http.server "$PORT"
+APP_BIN="$SCRIPT_DIR/app_flutter/enem_offline_client/build/linux/x64/release/bundle/enem_offline_client"
+[[ -x "$APP_BIN" ]] || die "binario do app nao encontrado: $APP_BIN"
+
+SERVER_LOG="$RELEASE_DIR/dev_http_server.log"
+MANIFEST_URL="http://127.0.0.1:${PORT}/manifest.json"
+
+cleanup() {
+  if [[ -n "${SERVER_PID:-}" ]] && kill -0 "$SERVER_PID" >/dev/null 2>&1; then
+    kill "$SERVER_PID" >/dev/null 2>&1 || true
+    wait "$SERVER_PID" 2>/dev/null || true
+  fi
+}
+trap cleanup EXIT INT TERM
+
+log "subindo servidor local em background..."
+(
+  cd "$RELEASE_DIR"
+  python3 -m http.server "$PORT" >"$SERVER_LOG" 2>&1
+) &
+SERVER_PID=$!
+
+sleep 0.6
+if ! kill -0 "$SERVER_PID" >/dev/null 2>&1; then
+  tail -n 40 "$SERVER_LOG" >&2 || true
+  die "falha ao subir servidor HTTP na porta $PORT"
+fi
+
+log "manifest para update: $MANIFEST_URL"
+log "dica: no app, cole a URL e clique em 'Atualizar por manifest'"
+log "abrindo app Linux..."
+
+XCURSOR_THEME="${XCURSOR_THEME:-Adwaita}" \
+XCURSOR_SIZE="${XCURSOR_SIZE:-24}" \
+"$APP_BIN"

@@ -93,8 +93,9 @@ python3 scripts/editor_indice_livros_csv.py --csv plano/indice_livros_6_volumes.
 
 No app:
 - navegue em ordem (`Primeiro`, `Anterior`, `Próximo`, `Último`);
-- preencha `Título`, `Página` e `Habilidades`;
-- em `Habilidades`, pode usar vírgula ou `;` (o app salva em formato normalizado, ex.: `c1-h3; c2-h7`);
+- preencha `Título`, `Página`, `Habilidades` e `Expectativas de Aprendizagem`;
+- em `Habilidades`, pode usar vírgula ou `;` (o app salva em formato normalizado, ex.: `c2; c6; c2-h19`);
+- em `Expectativas de Aprendizagem`, liste 2-4 itens curtos (uma por linha ou separados por `;`);
 - use `Salvar arquivo` para gravar no CSV.
 
 ## Cliente Flutter Offline (desktop + Android)
@@ -103,6 +104,131 @@ Se você quer um cliente local distribuível, use o scaffold em `app_flutter/`.
 
 Guia completo:
 - `app_flutter/README.md`
+
+## App Flutter: uso rápido e release
+
+### Fluxo 1: teste rápido de desenvolvimento (Linux)
+
+Um comando para setup + build local + servidor de update + abrir app:
+
+```bash
+./dev_linux.sh
+```
+
+Esse fluxo:
+- compila o app Linux;
+- sobe o servidor local de update;
+- abre a janela do app.
+
+No app:
+1. Cole `http://127.0.0.1:8787/manifest.json`.
+2. Clique em `Atualizar por manifest`.
+3. Verifique se contadores saíram de `0` (questões/módulos carregados).
+
+Defaults atuais do app:
+- URL inicial do manifest: `http://127.0.0.1:8787/manifest.json`
+- Banco Linux unificado: `~/.local/share/estudo_enem_offline_client/enem_offline.db`
+
+Arquivo para alterar defaults:
+- `app_flutter/enem_offline_client/lib/src/config/app_config.dart`
+
+Também pode sobrescrever no build:
+
+```bash
+cd app_flutter/enem_offline_client
+flutter build linux --release \
+  --dart-define=ENEM_MANIFEST_URL=http://127.0.0.1:8787/manifest.json \
+  --dart-define=ENEM_DB_DIR=/home/jp/.local/share/estudo_enem_offline_client
+```
+
+No `dist.sh`, os mesmos overrides podem ser passados assim:
+
+```bash
+./dist.sh --version "$V" --manifest-url http://127.0.0.1:8787/manifest.json --db-dir /home/jp/.local/share/estudo_enem_offline_client
+```
+
+Se você quiser apenas o servidor (sem abrir app), use:
+
+```bash
+./run_local.sh
+```
+
+### Fluxo 2: simular release completo Linux (distribuição)
+
+Gerar release com conteúdo + binários Linux + pacotes `.deb` e `.AppImage`:
+
+```bash
+V=2026.02.25.1
+./dist.sh --version "$V" --no-run --linux-packages all
+```
+
+Artefatos ficam em:
+- `app_flutter/releases/$V/`
+
+Instalar no Linux a partir da pasta da release:
+
+```bash
+# instala .deb (via apt)
+./install_linux.sh --type deb --version "$V" --release-dir "app_flutter/releases/$V"
+
+# instala AppImage em ~/.local/bin + atalho desktop
+./install_linux.sh --type appimage --version "$V" --release-dir "app_flutter/releases/$V"
+```
+
+Gerar e instalar no mesmo comando:
+
+```bash
+./dist.sh --version "$V" --linux-packages all --install-linux --install-type deb --no-run
+```
+
+Opcional: se quiser copiar artefatos também para a raiz do repo:
+
+```bash
+./dist.sh --version "$V" --linux-packages all --root-export --no-run
+```
+
+### Como rodar update manualmente
+
+1. Gere ou escolha uma release em `app_flutter/releases/<versao>/`.
+2. Suba servidor local nessa pasta:
+
+```bash
+cd app_flutter/releases/<versao>
+python3 -m http.server 8787
+```
+
+3. Abra o app e use `http://127.0.0.1:8787/manifest.json`.
+4. Clique em `Atualizar por manifest`.
+
+### Builds de outros alvos (máximo de distribuição)
+
+No Linux atual, você consegue compilar:
+- Linux desktop
+- Android APK / AAB
+- Web
+
+Exemplos:
+
+```bash
+cd app_flutter/enem_offline_client
+
+# Linux
+flutter build linux --release
+
+# Android APK release
+flutter build apk --release
+
+# Android App Bundle (Play Store)
+flutter build appbundle --release
+
+# Web
+flutter build web --release
+```
+
+Observações:
+- Windows e macOS: build oficial deve ser feito no próprio sistema operacional.
+- iOS: build/assinatura exige macOS + Xcode.
+- Para Android release real, configure keystore/assinatura antes de distribuir.
 
 Setup automático do Flutter (Linux):
 
@@ -141,19 +267,6 @@ Build/release em um comando (Linux):
 ```
 
 Esse script gera conteúdo versionado, build Linux, tenta bootstrap automático do Flutter (se faltar no PATH) e executa o app no final para teste manual.
-
-Comando único recomendado para desenvolvimento local (setup + build + servidor HTTP local):
-
-```bash
-./run_local.sh
-```
-
-Esse comando:
-- roda setup do Flutter/dependências;
-- gera release local;
-- sobe servidor em `http://127.0.0.1:8787/manifest.json`.
-
-No app Flutter, use essa URL do manifest para atualizar conteúdo.
 
 Publicação remota (opcional):
 

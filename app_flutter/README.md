@@ -65,6 +65,31 @@ Para Android (APK debug):
 flutter run -d android
 ```
 
+### Defaults de configuração do app
+
+Por padrão, o campo de manifest já vem com:
+- `http://127.0.0.1:8787/manifest.json`
+
+No Linux, o banco local é unificado em:
+- `~/.local/share/estudo_enem_offline_client/enem_offline.db`
+
+Você pode mudar no rebuild com `--dart-define`:
+
+```bash
+cd app_flutter/enem_offline_client
+flutter build linux --release \
+  --dart-define=ENEM_MANIFEST_URL=http://127.0.0.1:8787/manifest.json \
+  --dart-define=ENEM_DB_DIR=/home/jp/.local/share/estudo_enem_offline_client
+```
+
+No fluxo de release com `dist.sh`, use:
+
+```bash
+./dist.sh --version 2026.02.24.1 \
+  --manifest-url http://127.0.0.1:8787/manifest.json \
+  --db-dir /home/jp/.local/share/estudo_enem_offline_client
+```
+
 ## 3) SQLite no app
 
 Arquivos principais:
@@ -75,7 +100,7 @@ O app cria localmente:
 - `app_meta` (versão de conteúdo)
 - `questions` (questões para treino)
 - `progress` (histórico de resposta)
-- `book_modules` (módulos do livro com habilidades)
+- `book_modules` (módulos do livro com habilidades/competências + expectativas)
 
 No desktop usa `sqflite_common_ffi`; no mobile usa `sqflite`.
 
@@ -96,7 +121,8 @@ Fluxo:
 
 Com isso, o app consegue:
 - detectar habilidades fracas pelo histórico (`progress`);
-- recomendar módulos de livro que tenham as habilidades correspondentes.
+- recomendar módulos de livro que tenham as habilidades correspondentes;
+- aceitar módulos marcados por competência (`c2`, `c6`) e expandir para habilidades da matriz por área.
 
 ### Gerar pacote de conteúdo
 
@@ -160,7 +186,11 @@ O script:
 - tenta instalar/configurar Flutter automaticamente se não estiver no `PATH`;
 - roda `flutter pub get` + `flutter build linux --release`;
 - empacota o bundle Linux em `.tar.gz` dentro da pasta versionada;
+- gera também pacotes `.deb` e `.AppImage` (por padrão);
 - executa o app Linux no final para teste manual.
+
+Por padrão, os artefatos ficam em `app_flutter/releases/<versao>/`.
+Se quiser copiar também para a raiz do repositório, use `--root-export`.
 
 Se você quiser publicar update remoto, use `--base-url`:
 
@@ -172,6 +202,31 @@ Se quiser setup + build + servidor local em um único comando (na raiz do reposi
 
 ```bash
 ./run_local.sh
+```
+
+`run_local.sh` usa `--linux-packages none` por padrão (mais rápido para dev local).
+Ele sobe servidor local, mas não abre a janela do app.
+
+Se quiser ciclo completo de dev (servidor + abrir app), use:
+
+```bash
+./dev_linux.sh
+```
+
+Instalar app Linux após gerar release:
+
+```bash
+# .deb
+./install_linux.sh --type deb --version 2026.02.24.1 --release-dir app_flutter/releases/2026.02.24.1
+
+# AppImage
+./install_linux.sh --type appimage --version 2026.02.24.1 --release-dir app_flutter/releases/2026.02.24.1
+```
+
+Gerar e instalar no mesmo comando:
+
+```bash
+./dist.sh --version 2026.02.24.1 --linux-packages all --install-linux --install-type deb
 ```
 
 ### Teste local sem servidor remoto (somente localhost)
@@ -211,4 +266,33 @@ Opções úteis:
 
 # desativa bootstrap automático do Flutter
 ./dist.sh --version 2026.02.24.1 --no-bootstrap-flutter
+
+# desativa geração de .deb/.AppImage
+./dist.sh --version 2026.02.24.1 --linux-packages none
+
+# copia artefatos Linux também para a raiz do repo
+./dist.sh --version 2026.02.24.1 --root-export
 ```
+
+## 8) Builds para outras plataformas
+
+No Linux, você pode compilar:
+
+```bash
+cd app_flutter/enem_offline_client
+
+# Linux
+flutter build linux --release
+
+# Android APK
+flutter build apk --release
+
+# Android App Bundle
+flutter build appbundle --release
+
+# Web
+flutter build web --release
+```
+
+Build oficial de Windows/macOS deve ser feito no próprio sistema operacional.
+Build de iOS exige macOS + Xcode.

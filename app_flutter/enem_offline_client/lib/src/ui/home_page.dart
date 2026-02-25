@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../config/app_config.dart';
 import '../data/local_database.dart';
 import '../update/content_updater.dart';
 
@@ -13,7 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final LocalDatabase _localDatabase = LocalDatabase();
   final TextEditingController _manifestController = TextEditingController(
-    text: 'https://example.com/releases/manifest.json',
+    text: AppConfig.defaultManifestUrl,
   );
 
   bool _busy = false;
@@ -23,6 +24,7 @@ class _HomePageState extends State<HomePage> {
   int _bookModuleCount = 0;
   int _attemptCount = 0;
   double _globalAccuracy = 0;
+  String _databasePath = '-';
   List<WeakSkillStat> _weakSkills = const [];
   List<ModuleSuggestion> _moduleSuggestions = const [];
 
@@ -48,6 +50,7 @@ class _HomePageState extends State<HomePage> {
     final bookModuleCount = await _localDatabase.countBookModules(db);
     final attemptCount = await _localDatabase.countAttempts(db);
     final accuracy = await _localDatabase.globalAccuracy(db);
+    final databasePath = await _localDatabase.databasePath();
     final weakSkills = await _localDatabase.loadWeakSkills(db, limit: 5);
     final moduleSuggestions = await _localDatabase.recommendModulesByWeakSkills(
       db,
@@ -65,6 +68,7 @@ class _HomePageState extends State<HomePage> {
       _bookModuleCount = bookModuleCount;
       _attemptCount = attemptCount;
       _globalAccuracy = accuracy;
+      _databasePath = databasePath;
       _weakSkills = weakSkills;
       _moduleSuggestions = moduleSuggestions;
       _contentVersion = version;
@@ -200,7 +204,8 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 8),
             if (_weakSkills.isEmpty)
-              const Text('Sem dados ainda. Resolva questões para gerar diagnóstico.')
+              const Text(
+                  'Sem dados ainda. Resolva questões para gerar diagnóstico.')
             else
               ..._weakSkills.map(
                 (item) => Text(
@@ -227,7 +232,8 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 8),
             if (_moduleSuggestions.isEmpty)
-              const Text('Sem recomendações ainda. Registre tentativas e habilidades no conteúdo.')
+              const Text(
+                  'Sem recomendações ainda. Registre tentativas e habilidades no conteúdo.')
             else
               ..._moduleSuggestions.map(
                 (item) => Text(
@@ -264,6 +270,7 @@ class _HomePageState extends State<HomePage> {
                     Text('Módulos de livro no banco local: $_bookModuleCount'),
                     Text('Tentativas registradas: $_attemptCount'),
                     Text('Acurácia global: ${_percent(_globalAccuracy)}%'),
+                    Text('Banco local: $_databasePath'),
                   ],
                 ),
               ),
@@ -274,7 +281,8 @@ class _HomePageState extends State<HomePage> {
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'URL do manifest.json',
-                helperText: 'Ex.: release no GitHub Pages, S3 ou servidor próprio.',
+                helperText:
+                    'Ex.: release no GitHub Pages, S3 ou servidor próprio.',
               ),
             ),
             const SizedBox(height: 16),

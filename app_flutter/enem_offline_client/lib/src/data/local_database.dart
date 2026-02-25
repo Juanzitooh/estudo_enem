@@ -5,6 +5,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
+import '../config/app_config.dart';
+
 class WeakSkillStat {
   const WeakSkillStat({
     required this.skill,
@@ -47,40 +49,157 @@ class LocalDatabase {
   LocalDatabase();
 
   bool _ffiInitialized = false;
+  String? _databasePath;
 
   Future<Database> open() async {
     _ensureDesktopDriver();
-    final supportDir = await getApplicationSupportDirectory();
-    final dbPath = path.join(supportDir.path, 'enem_offline.db');
+    final dbPath = await databasePath();
 
     return openDatabase(
       dbPath,
-      version: 2,
+      version: 5,
       onCreate: (db, _) async {
-        await _createSchemaV2(db);
+        await _createSchemaV5(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
-          await db.execute('''
-            CREATE TABLE IF NOT EXISTS book_modules (
-              id TEXT PRIMARY KEY,
-              volume INTEGER NOT NULL,
-              area TEXT,
-              materia TEXT,
-              modulo INTEGER,
-              title TEXT,
-              page TEXT,
-              skills TEXT,
-              skills_raw TEXT,
-              source TEXT
-            )
-          ''');
+          await _createBookModulesTable(db);
+        }
+        if (oldVersion < 4) {
+          await _ensureBookModulesSchemaV4(db);
+        }
+        if (oldVersion < 5) {
+          await _ensureQuestionsSchemaV5(db);
         }
       },
     );
   }
 
-  Future<void> _createSchemaV2(Database db) async {
+  Future<String> databasePath() async {
+    if (_databasePath != null && _databasePath!.trim().isNotEmpty) {
+      return _databasePath!;
+    }
+    _databasePath = await _resolveDatabasePath();
+    return _databasePath!;
+  }
+
+  Future<String> _resolveDatabasePath() async {
+    if (Platform.isLinux) {
+      return _resolveLinuxDatabasePath();
+    }
+    final supportDir = await getApplicationSupportDirectory();
+    return path.join(supportDir.path, AppConfig.linuxDbFileName);
+  }
+
+  Future<String> _resolveLinuxDatabasePath() async {
+    final customDir = AppConfig.linuxDbDir.trim();
+    if (customDir.isNotEmpty) {
+      await Directory(customDir).create(recursive: true);
+      return path.join(customDir, AppConfig.linuxDbFileName);
+    }
+
+    final stableHome = _resolveStableHome(Platform.environment);
+    final stableDir = path.join(
+      stableHome,
+      '.local',
+      'share',
+      AppConfig.linuxStableDataDirName,
+    );
+    await Directory(stableDir).create(recursive: true);
+
+    final stableDbPath = path.join(stableDir, AppConfig.linuxDbFileName);
+    await _migrateLegacyLinuxDbIfNeeded(stableDbPath);
+    return stableDbPath;
+  }
+
+  String _resolveStableHome(Map<String, String> environment) {
+    final snapRealHome = (environment['SNAP_REAL_HOME'] ?? '').trim();
+    if (snapRealHome.isNotEmpty) {
+      return snapRealHome;
+    }
+
+    final home = (environment['HOME'] ?? '').trim();
+    if (home.isEmpty) {
+      return Directory.current.path;
+    }
+
+    // HOME dentro de Snap costuma vir como /home/<user>/snap/<app>/<rev>.
+    final snapHomeMatch = RegExp(
+      r'^(/home/[^/]+)/snap/[^/]+/[0-9]+$',
+    ).firstMatch(home);
+    if (snapHomeMatch != null) {
+      return snapHomeMatch.group(1) ?? home;
+    }
+
+    return home;
+  }
+
+  Future<void> _migrateLegacyLinuxDbIfNeeded(String stableDbPath) async {
+    final target = File(stableDbPath);
+    if (await target.exists()) {
+      return;
+    }
+
+    final candidates = <String>[];
+    final env = Platform.environment;
+
+    final snapRealHome = (env['SNAP_REAL_HOME'] ?? '').trim();
+    if (snapRealHome.isNotEmpty) {
+      candidates.add(
+        path.join(
+          snapRealHome,
+          '.local',
+          'share',
+          'com.example.enem_offline_client',
+          AppConfig.linuxDbFileName,
+        ),
+      );
+    }
+
+    final home = (env['HOME'] ?? '').trim();
+    if (home.isNotEmpty) {
+      candidates.add(
+        path.join(
+          home,
+          '.local',
+          'share',
+          'com.example.enem_offline_client',
+          AppConfig.linuxDbFileName,
+        ),
+      );
+    }
+
+    try {
+      final supportDir = await getApplicationSupportDirectory();
+      candidates.add(path.join(supportDir.path, AppConfig.linuxDbFileName));
+    } catch (_) {
+      // Sem ação: fallback por variáveis de ambiente acima.
+    }
+
+    final seen = <String>{};
+    for (final candidatePath in candidates) {
+      if (!seen.add(candidatePath)) {
+        continue;
+      }
+      if (candidatePath == stableDbPath) {
+        continue;
+      }
+
+      final source = File(candidatePath);
+      if (!await source.exists()) {
+        continue;
+      }
+
+      try {
+        await source.copy(stableDbPath);
+        return;
+      } catch (_) {
+        // Tenta próximo candidato.
+      }
+    }
+  }
+
+  Future<void> _createSchemaV5(Database db) async {
     await db.execute('''
       CREATE TABLE app_meta (
         key TEXT PRIMARY KEY,
@@ -98,6 +217,7 @@ class LocalDatabase {
         discipline TEXT,
         skill TEXT,
         statement TEXT NOT NULL,
+        fallback_images TEXT,
         answer TEXT,
         source TEXT
       )
@@ -113,8 +233,18 @@ class LocalDatabase {
       )
     ''');
 
+    await _createBookModulesTable(db);
+
+    await db.insert(
+      'app_meta',
+      {'key': 'content_version', 'value': '0'},
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  Future<void> _createBookModulesTable(DatabaseExecutor db) async {
     await db.execute('''
-      CREATE TABLE book_modules (
+      CREATE TABLE IF NOT EXISTS book_modules (
         id TEXT PRIMARY KEY,
         volume INTEGER NOT NULL,
         area TEXT,
@@ -124,15 +254,56 @@ class LocalDatabase {
         page TEXT,
         skills TEXT,
         skills_raw TEXT,
+        competencies TEXT,
+        competencies_raw TEXT,
+        learning_expectations TEXT,
+        learning_expectations_raw TEXT,
+        description TEXT,
         source TEXT
       )
     ''');
+  }
 
-    await db.insert(
-      'app_meta',
-      {'key': 'content_version', 'value': '0'},
-      conflictAlgorithm: ConflictAlgorithm.replace,
-    );
+  Future<void> _ensureBookModulesSchemaV4(Database db) async {
+    final columns = await db.rawQuery("PRAGMA table_info('book_modules')");
+    final names = columns
+        .map((row) => (row['name'] ?? '').toString())
+        .where((name) => name.isNotEmpty)
+        .toSet();
+
+    if (!names.contains('competencies')) {
+      await db.execute('ALTER TABLE book_modules ADD COLUMN competencies TEXT');
+    }
+    if (!names.contains('competencies_raw')) {
+      await db.execute(
+        'ALTER TABLE book_modules ADD COLUMN competencies_raw TEXT',
+      );
+    }
+    if (!names.contains('learning_expectations')) {
+      await db.execute(
+        'ALTER TABLE book_modules ADD COLUMN learning_expectations TEXT',
+      );
+    }
+    if (!names.contains('learning_expectations_raw')) {
+      await db.execute(
+        'ALTER TABLE book_modules ADD COLUMN learning_expectations_raw TEXT',
+      );
+    }
+    if (!names.contains('description')) {
+      await db.execute('ALTER TABLE book_modules ADD COLUMN description TEXT');
+    }
+  }
+
+  Future<void> _ensureQuestionsSchemaV5(Database db) async {
+    final columns = await db.rawQuery("PRAGMA table_info('questions')");
+    final names = columns
+        .map((row) => (row['name'] ?? '').toString())
+        .where((name) => name.isNotEmpty)
+        .toSet();
+
+    if (!names.contains('fallback_images')) {
+      await db.execute('ALTER TABLE questions ADD COLUMN fallback_images TEXT');
+    }
   }
 
   void _ensureDesktopDriver() {
@@ -162,6 +333,10 @@ class LocalDatabase {
     if (token.isEmpty) {
       return '';
     }
+    final composite = RegExp(r'^C(\d+)-H(\d+)$').firstMatch(token);
+    if (composite != null) {
+      return 'H${int.parse(composite.group(2)!)}';
+    }
     if (token.startsWith('H') && int.tryParse(token.substring(1)) != null) {
       return 'H${int.parse(token.substring(1))}';
     }
@@ -175,7 +350,28 @@ class LocalDatabase {
       }
     }
 
-    return token;
+    return '';
+  }
+
+  String _normalizeCompetencyToken(String rawValue) {
+    final token = rawValue.trim().toUpperCase().replaceAll(' ', '');
+    if (token.isEmpty) {
+      return '';
+    }
+
+    final composite = RegExp(r'^C(\d+)-H(\d+)$').firstMatch(token);
+    if (composite != null) {
+      return 'C${int.parse(composite.group(1)!)}';
+    }
+    if (token.startsWith('C') && int.tryParse(token.substring(1)) != null) {
+      return 'C${int.parse(token.substring(1))}';
+    }
+
+    final prefixed = RegExp(r'^C(\d+)(?:[-:.].*)?$').firstMatch(token);
+    if (prefixed != null) {
+      return 'C${int.parse(prefixed.group(1)!)}';
+    }
+    return '';
   }
 
   List<String> _extractSkills(Object? rawSkills, String rawSkillsText) {
@@ -212,6 +408,151 @@ class LocalDatabase {
       return ';';
     }
     return ';${skills.join(';')};';
+  }
+
+  List<String> _extractCompetencies(
+    Object? rawCompetencies,
+    String rawCompetenciesText,
+    String rawSkillsText,
+  ) {
+    final competencies = <String>[];
+    final seen = <String>{};
+
+    void addToken(String token) {
+      final normalized = _normalizeCompetencyToken(token);
+      if (normalized.isEmpty || seen.contains(normalized)) {
+        return;
+      }
+      seen.add(normalized);
+      competencies.add(normalized);
+    }
+
+    if (rawCompetencies is List) {
+      for (final item in rawCompetencies) {
+        addToken('$item');
+      }
+    }
+
+    if (competencies.isEmpty && rawCompetenciesText.trim().isNotEmpty) {
+      final unified = rawCompetenciesText.replaceAll(';', ',');
+      for (final chunk in unified.split(',')) {
+        addToken(chunk);
+      }
+    }
+
+    if (competencies.isEmpty && rawSkillsText.trim().isNotEmpty) {
+      final unified = rawSkillsText.replaceAll(';', ',');
+      for (final chunk in unified.split(',')) {
+        addToken(chunk);
+      }
+    }
+
+    return competencies;
+  }
+
+  String _buildCompetenciesBlob(List<String> competencies) {
+    if (competencies.isEmpty) {
+      return ';';
+    }
+    return ';${competencies.join(';')};';
+  }
+
+  List<String> _extractLearningExpectations(
+    Object? rawLearningExpectations,
+    String rawLearningExpectationsText,
+    String fallbackDescription,
+  ) {
+    final expectations = <String>[];
+    final seen = <String>{};
+
+    void addToken(String token) {
+      final normalized = token.trim();
+      if (normalized.isEmpty) {
+        return;
+      }
+      final dedupeKey = normalized.toLowerCase();
+      if (seen.contains(dedupeKey)) {
+        return;
+      }
+      seen.add(dedupeKey);
+      expectations.add(normalized);
+    }
+
+    void parseAndAdd(String text) {
+      final unified = text
+          .replaceAll('\\n', '\n')
+          .replaceAll('\r', '\n')
+          .replaceAll(';', '\n');
+      for (final chunk in unified.split('\n')) {
+        final cleaned = chunk
+            .replaceFirst(RegExp(r'^\s*(?:[-*•]+|\d+[.)])\s*'), '')
+            .trim();
+        if (cleaned.isEmpty) {
+          continue;
+        }
+        addToken(cleaned);
+      }
+    }
+
+    if (rawLearningExpectations is List) {
+      for (final item in rawLearningExpectations) {
+        addToken('$item');
+      }
+    }
+
+    if (expectations.isEmpty && rawLearningExpectationsText.trim().isNotEmpty) {
+      parseAndAdd(rawLearningExpectationsText);
+    }
+
+    if (expectations.isEmpty && fallbackDescription.trim().isNotEmpty) {
+      parseAndAdd(fallbackDescription);
+    }
+
+    return expectations;
+  }
+
+  List<String> _extractFallbackImagePaths(Object? rawPaths) {
+    final result = <String>[];
+    final seen = <String>{};
+
+    void addToken(String token) {
+      final cleaned = token.trim().replaceAll('\\', '/');
+      if (cleaned.isEmpty || seen.contains(cleaned)) {
+        return;
+      }
+      seen.add(cleaned);
+      result.add(cleaned);
+    }
+
+    if (rawPaths is List) {
+      for (final item in rawPaths) {
+        addToken('$item');
+      }
+      return result;
+    }
+
+    final text = '${rawPaths ?? ''}'.trim();
+    if (text.isEmpty) {
+      return result;
+    }
+    for (final chunk in text.split(';')) {
+      addToken(chunk);
+    }
+    return result;
+  }
+
+  String _buildFallbackImagesBlob(List<String> paths) {
+    if (paths.isEmpty) {
+      return '';
+    }
+    return ';${paths.join(';')};';
+  }
+
+  String _buildLearningExpectationsBlob(List<String> expectations) {
+    if (expectations.isEmpty) {
+      return ';';
+    }
+    return ';${expectations.join(';')};';
   }
 
   Future<int> countQuestions(Database db) async {
@@ -287,7 +628,13 @@ class LocalDatabase {
         }
 
         final questionId = (item['id'] ?? '').toString().trim();
-        final statement = (item['statement'] ?? '').toString().trim();
+        final fallbackImagePaths = _extractFallbackImagePaths(
+          item['fallback_image_paths'],
+        );
+        var statement = (item['statement'] ?? '').toString().trim();
+        if (statement.isEmpty && fallbackImagePaths.isNotEmpty) {
+          statement = 'Texto OCR indisponível (usar imagem fallback).';
+        }
         if (questionId.isEmpty || statement.isEmpty) {
           continue;
         }
@@ -303,6 +650,7 @@ class LocalDatabase {
             'discipline': (item['discipline'] ?? '').toString(),
             'skill': _normalizeSkillToken((item['skill'] ?? '').toString()),
             'statement': statement,
+            'fallback_images': _buildFallbackImagesBlob(fallbackImagePaths),
             'answer': (item['answer'] ?? '').toString(),
             'source': (item['source'] ?? '').toString(),
           },
@@ -332,6 +680,36 @@ class LocalDatabase {
         final rawSkillsText = (item['skills_raw'] ?? '').toString();
         final skills = _extractSkills(item['skills'], rawSkillsText);
         final skillsBlob = _buildSkillsBlob(skills);
+        final rawCompetenciesText = (item['competencies_raw'] ?? '').toString();
+        final competencies = _extractCompetencies(
+          item['competencies'],
+          rawCompetenciesText,
+          rawSkillsText,
+        );
+        final competenciesBlob = _buildCompetenciesBlob(competencies);
+        final normalizedCompetenciesRaw = rawCompetenciesText.trim().isNotEmpty
+            ? rawCompetenciesText
+            : competencies.join('; ');
+        final moduleDescription = (item['description'] ?? '').toString();
+        final rawLearningExpectationsText =
+            (item['learning_expectations_raw'] ??
+                    item['expectativas_aprendizagem'] ??
+                    '')
+                .toString();
+        final learningExpectations = _extractLearningExpectations(
+          item['learning_expectations'],
+          rawLearningExpectationsText,
+          moduleDescription,
+        );
+        final learningExpectationsBlob =
+            _buildLearningExpectationsBlob(learningExpectations);
+        final normalizedLearningExpectationsRaw =
+            rawLearningExpectationsText.trim().isNotEmpty
+                ? rawLearningExpectationsText
+                : learningExpectations.join('; ');
+        final normalizedDescription = moduleDescription.trim().isNotEmpty
+            ? moduleDescription
+            : normalizedLearningExpectationsRaw;
 
         await txn.insert(
           'book_modules',
@@ -345,6 +723,11 @@ class LocalDatabase {
             'page': (item['page'] ?? '').toString(),
             'skills': skillsBlob,
             'skills_raw': rawSkillsText,
+            'competencies': competenciesBlob,
+            'competencies_raw': normalizedCompetenciesRaw,
+            'learning_expectations': learningExpectationsBlob,
+            'learning_expectations_raw': normalizedLearningExpectationsRaw,
+            'description': normalizedDescription,
             'source': (item['source'] ?? '').toString(),
           },
           conflictAlgorithm: ConflictAlgorithm.replace,
@@ -390,7 +773,8 @@ class LocalDatabase {
     await recordAnswer(db, questionId: questionId, isCorrect: isCorrect);
   }
 
-  Future<List<WeakSkillStat>> loadWeakSkills(Database db, {int limit = 5}) async {
+  Future<List<WeakSkillStat>> loadWeakSkills(Database db,
+      {int limit = 5}) async {
     final rows = await db.rawQuery(
       '''
       SELECT
@@ -486,7 +870,8 @@ class LocalDatabase {
             'area': 'Linguagens',
             'discipline': 'Língua Portuguesa',
             'skill': 'H18',
-            'statement': 'Texto curto de demonstração para validar fluxo offline.',
+            'statement':
+                'Texto curto de demonstração para validar fluxo offline.',
             'answer': 'B',
             'source': 'demo_local'
           },
@@ -514,6 +899,16 @@ class LocalDatabase {
             'page': '12',
             'skills': ['H18'],
             'skills_raw': 'H18',
+            'competencies': ['C8'],
+            'competencies_raw': 'C8',
+            'learning_expectations': [
+              'Compreender mecanismos de coesão textual.',
+              'Aplicar estratégias de coerência em produção de texto.'
+            ],
+            'learning_expectations_raw':
+                'Compreender mecanismos de coesão textual.; Aplicar estratégias de coerência em produção de texto.',
+            'description':
+                'Compreender e aplicar coesão e coerência em textos do cotidiano.',
             'source': 'demo_local'
           },
           {
@@ -526,6 +921,16 @@ class LocalDatabase {
             'page': '45',
             'skills': ['H16'],
             'skills_raw': 'H16',
+            'competencies': ['C4'],
+            'competencies_raw': 'C4',
+            'learning_expectations': [
+              'Identificar relações de proporcionalidade direta e inversa.',
+              'Resolver problemas cotidianos com razão e proporção.'
+            ],
+            'learning_expectations_raw':
+                'Identificar relações de proporcionalidade direta e inversa.; Resolver problemas cotidianos com razão e proporção.',
+            'description':
+                'Resolver situações-problema com proporcionalidade direta e inversa.',
             'source': 'demo_local'
           },
         ]
