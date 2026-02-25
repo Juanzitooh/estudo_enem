@@ -9,3 +9,7 @@ plano/desempenho_habilidades.csv
 # Artefatos locais Python
 __pycache__/
 *.pyc
+
+# Artefatos locais de release Flutter (gerados por dist/run_local)
+app_flutter/releases/local.*/
+app_flutter/releases/manifest.json
