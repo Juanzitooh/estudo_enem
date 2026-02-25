@@ -23,6 +23,8 @@ from typing import Any
 
 QUESTION_PATTERN = re.compile(r"(?i)\bQUEST[ÃA]O\s+(\d{1,3})\b")
 DATE_TIME_PATTERN = re.compile(r"\d{2}/\d{2}/\d{4}\s+\d{2}:\d{2}:\d{2}")
+CONTROL_CHAR_PATTERN = re.compile(r"[\x00-\x08\x0B-\x1F\x7F]")
+REPEATED_ENEM_BANNER_PATTERN = re.compile(r"(?:\bENEM\s*\d{4}\b[\s|]*){2,}", re.IGNORECASE)
 REDACAO_PATTERN = re.compile(r"(?im)^PROPOSTA DE REDA[ÇC][AÃ]O\b")
 REDACAO_END_HINT_PATTERN = re.compile(
     r"(?im)^QUEST[ÕO]ES DE\s+\d{1,3}\s+A\s+\d{1,3}\b|"
@@ -134,6 +136,8 @@ def should_drop_line(line: str) -> bool:
         return True
     if re.fullmatch(r"ENEM\d*|ENEN\d*", stripped):
         return True
+    if REPEATED_ENEM_BANNER_PATTERN.search(stripped):
+        return True
 
     header_snippets = (
         "| 1º DIA | CADERNO",
@@ -161,12 +165,20 @@ def should_drop_line(line: str) -> bool:
     return False
 
 
+def sanitize_ocr_line(raw_line: str) -> str:
+    line = raw_line.rstrip().replace("\uFFFD", "")
+    line = CONTROL_CHAR_PATTERN.sub(" ", line)
+    line = REPEATED_ENEM_BANNER_PATTERN.sub(" ", line)
+    line = re.sub(r"\s{2,}", " ", line)
+    return line.strip()
+
+
 def clean_text(raw_text: str) -> str:
     normalized = raw_text.replace("\f", "\n")
     cleaned_lines: list[str] = []
 
     for raw_line in normalized.splitlines():
-        line = raw_line.rstrip().replace("\uFFFD", "")
+        line = sanitize_ocr_line(raw_line)
         if should_drop_line(line):
             continue
 
