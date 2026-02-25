@@ -1,12 +1,14 @@
 # Índice dos 6 Volumes (Template)
 
-Preencha `Título`, `Habilidades` e `Página` de cada módulo.
+Preencha `Título`, `Habilidades`, `Página` e `Expectativas de Aprendizagem` de cada módulo.
 
 Estrutura usada:
 - 6 volumes
 - Cada matéria com 5 módulos por volume
 - Numeração de módulo sequencial por matéria (não reinicia por volume; vai de 1 a 30 em cada matéria)
-- Em `Habilidades`, use lista no formato `c1-h3; c2-h7` (1 ou mais pares competência-habilidade)
+- Em `Habilidades`, use lista com `;` no formato `c2`, `h19` ou `c2-h19` (1 ou mais itens)
+- Em `Expectativas de Aprendizagem`, registre 2-4 itens curtos do que o aluno deve dominar
+- O campo no CSV é `expectativas_aprendizagem` e aparece no editor visual.
 
 ## Volume 1
 
@@ -1207,4 +1209,3 @@ Estrutura usada:
 | 28 |  |  |  |
 | 29 |  |  |  |
 | 30 |  |  |  |
-

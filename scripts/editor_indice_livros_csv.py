@@ -13,7 +13,7 @@ from tkinter import messagebox, ttk
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CSV_PATH = REPO_ROOT / "plano/indice_livros_6_volumes.csv"
-FIELDNAMES = (
+REQUIRED_FIELDNAMES = (
     "volume",
     "area",
     "materia",
@@ -22,6 +22,8 @@ FIELDNAMES = (
     "pagina",
     "habilidades",
 )
+EXPECTATIONS_FIELDNAME = "expectativas_aprendizagem"
+OUTPUT_FIELDNAMES = REQUIRED_FIELDNAMES + (EXPECTATIONS_FIELDNAME,)
 
 
 @dataclass
@@ -35,6 +37,7 @@ class ModuleRow:
     titulo: str
     pagina: str
     habilidades: str
+    expectativas_aprendizagem: str
 
     @classmethod
     def from_dict(cls, row: dict[str, str]) -> ModuleRow:
@@ -46,6 +49,13 @@ class ModuleRow:
             titulo=row.get("titulo", "").strip(),
             pagina=row.get("pagina", "").strip(),
             habilidades=row.get("habilidades", "").strip(),
+            expectativas_aprendizagem=(
+                row.get(EXPECTATIONS_FIELDNAME)
+                or row.get("expectativas")
+                or row.get("descricao")
+                or row.get("descrição")
+                or ""
+            ).strip(),
         )
 
     def as_dict(self) -> dict[str, str]:
@@ -57,6 +67,7 @@ class ModuleRow:
             "titulo": self.titulo,
             "pagina": self.pagina,
             "habilidades": self.habilidades,
+            EXPECTATIONS_FIELDNAME: self.expectativas_aprendizagem,
         }
 
 
@@ -66,13 +77,23 @@ def normalize_habilidades(text: str) -> str:
     return "; ".join(parts)
 
 
+def normalize_expectativas_aprendizagem(text: str) -> str:
+    """Normaliza expectativas aceitando uma por linha ou separadas por ';'."""
+    parts: list[str] = []
+    for chunk in re.split(r"[;\n\r]+", text):
+        cleaned = re.sub(r"^\s*(?:[-*•]+|\d+[.)])\s*", "", chunk.strip())
+        if cleaned:
+            parts.append(cleaned)
+    return "; ".join(parts)
+
+
 def load_rows(csv_path: Path) -> list[ModuleRow]:
     """Carrega linhas do CSV preservando a ordem existente."""
     with csv_path.open("r", encoding="utf-8", newline="") as file_obj:
         reader = csv.DictReader(file_obj)
         if reader.fieldnames is None:
             raise ValueError("CSV sem cabeçalho.")
-        missing = [field for field in FIELDNAMES if field not in reader.fieldnames]
+        missing = [field for field in REQUIRED_FIELDNAMES if field not in reader.fieldnames]
         if missing:
             raise ValueError(f"CSV sem colunas obrigatórias: {', '.join(missing)}")
         return [ModuleRow.from_dict(row) for row in reader]
@@ -83,7 +104,7 @@ def save_rows(csv_path: Path, rows: list[ModuleRow]) -> None:
     with csv_path.open("w", encoding="utf-8", newline="") as file_obj:
         writer = csv.DictWriter(
             file_obj,
-            fieldnames=list(FIELDNAMES),
+            fieldnames=list(OUTPUT_FIELDNAMES),
             quoting=csv.QUOTE_ALL,
         )
         writer.writeheader()
@@ -92,7 +113,7 @@ def save_rows(csv_path: Path, rows: list[ModuleRow]) -> None:
 
 
 class IndiceLivrosEditor:
-    """Aplicação GUI para editar título/página/habilidades por módulo."""
+    """Aplicação GUI para editar título/página/habilidades/expectativas por módulo."""
 
     def __init__(self, root: tk.Tk, csv_path: Path) -> None:
         self.root = root
@@ -113,14 +134,15 @@ class IndiceLivrosEditor:
         self.var_habilidades = tk.StringVar()
         self.var_status = tk.StringVar(value="Pronto.")
         self.var_progress = tk.StringVar()
+        self.expectativas_text: tk.Text | None = None
 
         self._build_ui()
         self._show_row(0)
 
     def _build_ui(self) -> None:
         self.root.title("Editor CSV - Índice dos 6 Volumes")
-        self.root.geometry("980x420")
-        self.root.minsize(920, 380)
+        self.root.geometry("980x540")
+        self.root.minsize(920, 500)
 
         main_frame = ttk.Frame(self.root, padding=12)
         main_frame.pack(fill="both", expand=True)
@@ -153,15 +175,32 @@ class IndiceLivrosEditor:
             row=5, column=1, sticky="w", pady=4
         )
 
-        ttk.Label(form_frame, text="Habilidades").grid(row=6, column=0, sticky="w", pady=4)
+        ttk.Label(form_frame, text="Habilidades/Competências").grid(
+            row=6, column=0, sticky="w", pady=4
+        )
         ttk.Entry(form_frame, textvariable=self.var_habilidades, width=94).grid(
             row=6, column=1, sticky="we", pady=4
         )
 
         ttk.Label(
             form_frame,
-            text="Use vírgula ou ';' para múltiplas habilidades. Ex.: c1-h3, c2-h7",
+            text=(
+                "Use vírgula ou ';' para múltiplos itens. "
+                "Aceita c2, h19 ou c2-h19."
+            ),
         ).grid(row=7, column=1, sticky="w", pady=(2, 0))
+
+        ttk.Label(form_frame, text="Expectativas de aprendizagem").grid(
+            row=8, column=0, sticky="nw", pady=(8, 4)
+        )
+        self.expectativas_text = tk.Text(form_frame, width=94, height=4, wrap="word")
+        self.expectativas_text.grid(row=8, column=1, sticky="we", pady=(8, 4))
+        ttk.Label(
+            form_frame,
+            text=(
+                "Liste 2-4 expectativas curtas (uma por linha ou separadas por ';')."
+            ),
+        ).grid(row=9, column=1, sticky="w", pady=(2, 0))
 
         form_frame.columnconfigure(1, weight=1)
 
@@ -210,6 +249,9 @@ class IndiceLivrosEditor:
         self.var_titulo.set(row.titulo)
         self.var_pagina.set(row.pagina)
         self.var_habilidades.set(row.habilidades)
+        if self.expectativas_text is not None:
+            self.expectativas_text.delete("1.0", tk.END)
+            self.expectativas_text.insert("1.0", row.expectativas_aprendizagem)
 
         self.var_progress.set(
             f"Registro {index + 1}/{len(self.rows)} "
@@ -221,17 +263,27 @@ class IndiceLivrosEditor:
         new_titulo = self.var_titulo.get().strip()
         new_pagina = self.var_pagina.get().strip()
         new_habilidades = normalize_habilidades(self.var_habilidades.get().strip())
+        new_expectativas = ""
+        if self.expectativas_text is not None:
+            new_expectativas = normalize_expectativas_aprendizagem(
+                self.expectativas_text.get("1.0", tk.END).strip()
+            )
 
         changed = (
             row.titulo != new_titulo
             or row.pagina != new_pagina
             or row.habilidades != new_habilidades
+            or row.expectativas_aprendizagem != new_expectativas
         )
         if changed:
             row.titulo = new_titulo
             row.pagina = new_pagina
             row.habilidades = new_habilidades
+            row.expectativas_aprendizagem = new_expectativas
             self.var_habilidades.set(new_habilidades)
+            if self.expectativas_text is not None:
+                self.expectativas_text.delete("1.0", tk.END)
+                self.expectativas_text.insert("1.0", new_expectativas)
             self.dirty = True
             self.var_status.set("Alterações pendentes. Clique em 'Salvar arquivo' para gravar.")
 
