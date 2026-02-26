@@ -38,6 +38,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 ### Conteúdo didático por módulo (geração assistida)
 - [ ] Definir schema mínimo de aula por módulo: `area`, `materia`, `volume`, `modulo`, `titulo`, `expectativas_aprendizagem`, `competencias/habilidades`.
 - [ ] Criar pipeline para gerar rascunho de aula para cada módulo de conteúdo (excluir `tipo_modulo=exercicios`), usando template padronizado.
+- [ ] Registrar metadados editoriais em cada aula: `ia_updated_at` (data/hora), `manual_reviewed_at` (data/hora) e `manual_reviewed_by` (nome).
 - [ ] Incluir seção obrigatória de “o que deve ser aprendido” alinhada às expectativas de aprendizagem do módulo.
 - [ ] Incluir seção obrigatória de “checagem de entendimento” com 5-10 perguntas de recuperação ativa (curtas e retóricas) no fim de cada aula.
 - [ ] Incluir seção obrigatória “erros comuns” e “como revisar” para consolidar retenção.
@@ -46,6 +47,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Implementar validações automáticas mínimas do texto gerado (estrutura obrigatória, tamanho por seção, presença de perguntas finais, termos proibidos).
 - [ ] Implementar workflow de revisão humana em lote (`rascunho` -> `revisado` -> `publicado`) antes de expor conteúdo no app.
 - [ ] Salvar versão de conteúdo por módulo para permitir melhoria incremental e histórico de qualidade.
+- [ ] Exibir no app o selo editorial da aula (`atualizado por IA em ...`, `revisado manualmente por ...`) para transparência.
 - [ ] Integrar no app exibição de aula por módulo com bloco final “revise seu entendimento” e CTA para treino relacionado.
 
 ### Intercorrelação Matriz + Livro + Questões

@@ -5,6 +5,11 @@
 **Tempo estimado:** {45–90 min}  
 **Pré-requisitos:** {lista curta}
 
+**Status editorial:** {rascunho | revisado | publicado}  
+**Atualizado por IA em:** {AAAA-MM-DD HH:MM TZ}  
+**Revisado manualmente em:** {AAAA-MM-DD HH:MM TZ | pendente}  
+**Revisado por:** {nome | pendente}
+
 ---
 
 ## 1. Objetivo da aula
