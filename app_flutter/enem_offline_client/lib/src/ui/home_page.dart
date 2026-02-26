@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../config/app_config.dart';
 import '../data/local_database.dart';
+import '../essay/essay_prompt_builder.dart';
 import '../update/content_updater.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,9 +23,13 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _matchScoreController = TextEditingController(
     text: '0.50',
   );
+  final TextEditingController _essayThemeController = TextEditingController();
+  final TextEditingController _essayFocusController = TextEditingController();
+  final TextEditingController _essayContextController = TextEditingController();
 
   bool _busy = false;
   String _status = 'Pronto.';
+  String _essayPromptPreview = '';
   String _contentVersion = '0';
   int _questionCount = 0;
   int _bookModuleCount = 0;
@@ -48,6 +54,9 @@ class _HomePageState extends State<HomePage> {
     _matchMateriaController.dispose();
     _matchAssuntoController.dispose();
     _matchScoreController.dispose();
+    _essayThemeController.dispose();
+    _essayFocusController.dispose();
+    _essayContextController.dispose();
     super.dispose();
   }
 
@@ -272,6 +281,49 @@ class _HomePageState extends State<HomePage> {
     await _applyMatchFilters();
   }
 
+  Future<void> _copyPrompt({
+    required String prompt,
+    required String successMessage,
+  }) async {
+    await Clipboard.setData(ClipboardData(text: prompt));
+    if (!mounted) {
+      return;
+    }
+    setState(() {
+      _essayPromptPreview = prompt;
+      _status = successMessage;
+    });
+  }
+
+  Future<void> _copyEssayThemePrompt() async {
+    final prompt = EssayPromptBuilder.buildThemeGenerationPrompt(
+      focusHint: _essayFocusController.text.trim(),
+    );
+    await _copyPrompt(
+      prompt: prompt,
+      successMessage: 'Prompt de geração de tema copiado.',
+    );
+  }
+
+  Future<void> _copyEssayCorrectionPrompt() async {
+    final theme = _essayThemeController.text.trim();
+    if (theme.isEmpty) {
+      setState(() {
+        _status = 'Informe o tema da redação para gerar o prompt de correção.';
+      });
+      return;
+    }
+
+    final prompt = EssayPromptBuilder.buildCorrectionPrompt(
+      themeTitle: theme,
+      studentContext: _essayContextController.text.trim(),
+    );
+    await _copyPrompt(
+      prompt: prompt,
+      successMessage: 'Prompt de correção de redação copiado.',
+    );
+  }
+
   Widget _buildWeakSkillsCard() {
     return Card(
       child: Padding(
@@ -431,6 +483,74 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Widget _buildEssayPromptBuilderCard() {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Prompt Builder de Redação (IA externa)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _essayFocusController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Preferência para novo tema (opcional)',
+                helperText:
+                    'Ex.: cidadania digital, saúde pública, mobilidade urbana.',
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _essayThemeController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Tema para correção da redação',
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _essayContextController,
+              maxLines: 2,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Contexto do aluno (opcional)',
+                helperText:
+                    'Ex.: dificuldades em proposta de intervenção e coesão.',
+              ),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                OutlinedButton(
+                  onPressed: _busy ? null : _copyEssayThemePrompt,
+                  child: const Text('Copiar prompt: gerar tema'),
+                ),
+                OutlinedButton(
+                  onPressed: _busy ? null : _copyEssayCorrectionPrompt,
+                  child: const Text('Copiar prompt: corrigir redação'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            if (_essayPromptPreview.isEmpty)
+              const Text(
+                'Ainda sem prompt gerado nesta sessão. Clique em um botão para copiar.',
+              )
+            else
+              SelectableText(_essayPromptPreview),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -506,6 +626,8 @@ class _HomePageState extends State<HomePage> {
             _buildModuleSuggestionsCard(),
             const SizedBox(height: 12),
             _buildIntercorrelationFiltersCard(),
+            const SizedBox(height: 12),
+            _buildEssayPromptBuilderCard(),
             const SizedBox(height: 12),
             SelectableText(_status),
           ],
