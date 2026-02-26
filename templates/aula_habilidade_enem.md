@@ -18,6 +18,11 @@ Ao final, você será capaz de:
 - [ ] {competência prática 2}
 - [ ] {competência prática 3}
 
+## 1.1 Objetivo pedagógico do módulo
+- **Saber:** {conceitos essenciais}
+- **Aplicar:** {situações-problema que o aluno resolve}
+- **Revisar:** {pontos que mais causam erro}
+
 ---
 
 ## 2. Contexto ENEM (intercontextualização)
@@ -26,6 +31,12 @@ Ao final, você será capaz de:
 - {ponto 1}
 - {ponto 2}
 - {ponto 3}
+
+### 2.1 Contexto atual (últimos 12 meses)
+- **Recorte temporal usado:** {AAAA-MM-DD a AAAA-MM-DD}
+- **Fato(s) atual(is):** {fato 1 com data}, {fato 2 com data}
+- **Conexão com o conteúdo:** {como o fato atual ajuda a entender o tema}
+- **Contexto Brasil/regionalidade:** {exemplo brasileiro, preferencialmente local/regional}
 
 ---
 
@@ -77,6 +88,18 @@ Ao final, você será capaz de:
 2. …
 **Resposta:** …
 
+### 6.1 Problema real aplicado (Brasil)
+**Situação-problema:** {caso real brasileiro/regional}
+**Perguntas-guia:**
+1. {pergunta de análise}
+2. {pergunta de aplicação}
+3. {pergunta de decisão/justificativa}
+
+### 6.2 Recurso visual didático (obrigatório em exatas/natureza)
+- **Tipo:** {gráfico | diagrama | esquema | desenho}
+- **Objetivo do visual:** {o que ajuda a entender}
+- **Referência de arquivo (se houver):** `{assets/img/...}`
+
 ---
 
 ## 7. Treino progressivo
@@ -126,6 +149,13 @@ Para cada questão estilo ENEM:
 - **D+1:** 10 questões fáceis
 - **D+3:** 10 questões mistas
 - **D+7:** 1 mini-simulado (15 questões) + revisão de erros
+
+---
+
+## 10.1 Aprofundamento opcional (vídeos)
+- **Buscar por:** {palavras-chave curtas}
+- **Trechos recomendados:** {video_id + minuto inicial, quando disponível}
+- **Objetivo do aprofundamento:** {o que consolidar após a aula}
 
 ---
 

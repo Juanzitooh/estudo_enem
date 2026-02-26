@@ -39,7 +39,12 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Definir schema mínimo de aula por módulo: `area`, `materia`, `volume`, `modulo`, `titulo`, `expectativas_aprendizagem`, `competencias/habilidades`.
 - [ ] Criar pipeline para gerar rascunho de aula para cada módulo de conteúdo (excluir `tipo_modulo=exercicios`), usando template padronizado.
 - [ ] Registrar metadados editoriais em cada aula: `ia_updated_at` (data/hora), `manual_reviewed_at` (data/hora) e `manual_reviewed_by` (nome).
+- [ ] Definir objetivo pedagógico explícito por aula (o que o aluno deve saber, aplicar e revisar ao final do módulo).
 - [ ] Incluir seção obrigatória de “o que deve ser aprendido” alinhada às expectativas de aprendizagem do módulo.
+- [ ] Incluir seção obrigatória de “contexto atual” com fatos dos últimos 12 meses (com datas absolutas) e linguagem adequada ao ENEM.
+- [ ] Priorizar exemplos brasileiros e regionalidades do Brasil; usar exemplos externos apenas quando forem essenciais ao conceito.
+- [ ] Incluir seção de “problema real” (estudo de caso) para aprofundamento aplicado do conteúdo.
+- [ ] Em Física/Química/Biologia/Matemática, incluir ao menos um recurso visual didático mínimo (gráfico, diagrama, esquema ou desenho explicativo).
 - [ ] Incluir seção obrigatória de “checagem de entendimento” com 5-10 perguntas de recuperação ativa (curtas e retóricas) no fim de cada aula.
 - [ ] Incluir seção obrigatória “erros comuns” e “como revisar” para consolidar retenção.
 - [ ] Incluir seção “aprofundamento” com recomendações de vídeo por tema (usando índice de videoaulas por minutagem quando disponível).
