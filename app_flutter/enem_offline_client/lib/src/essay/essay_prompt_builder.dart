@@ -87,4 +87,42 @@ ERROS_GRAMATICAIS:
 '''
         .trim();
   }
+
+  static String buildRewritePrompt({
+    required String themeTitle,
+    required String iaFeedback,
+    String studentText = '',
+    String studentContext = '',
+  }) {
+    final normalizedTheme = themeTitle.trim();
+    final normalizedFeedback = iaFeedback.trim();
+    final normalizedStudentText = studentText.trim();
+    final normalizedContext = studentContext.trim();
+
+    return '''
+Reescreva a redação abaixo no estilo ENEM, corrigindo os problemas apontados no feedback.
+
+Regras:
+- Mantenha as ideias centrais e a estrutura original do aluno (introdução, desenvolvimento e conclusão).
+- Preserve o posicionamento argumentativo do aluno.
+- Melhore coesão, coerência, repertório e proposta de intervenção.
+- Não inventar dados específicos sem indicar que são exemplificativos.
+- Após a reescrita, explique objetivamente o que foi melhorado.
+
+Tema:
+$normalizedTheme
+
+${normalizedContext.isEmpty ? '' : 'Contexto do aluno:\n$normalizedContext\n'}
+Redação original do aluno:
+${normalizedStudentText.isEmpty ? '[cole aqui o texto original da redação]' : normalizedStudentText}
+
+Feedback de correção:
+${normalizedFeedback.isEmpty ? '[cole aqui o feedback da correção]' : normalizedFeedback}
+
+Formato de saída:
+1) Redação reescrita (texto completo)
+2) Melhorias aplicadas (lista objetiva)
+'''
+        .trim();
+  }
 }

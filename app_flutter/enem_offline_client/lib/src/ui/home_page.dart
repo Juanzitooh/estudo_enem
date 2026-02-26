@@ -27,6 +27,8 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _essayThemeController = TextEditingController();
   final TextEditingController _essayFocusController = TextEditingController();
   final TextEditingController _essayContextController = TextEditingController();
+  final TextEditingController _essayStudentTextController =
+      TextEditingController();
   final TextEditingController _essayFeedbackController =
       TextEditingController();
 
@@ -68,6 +70,7 @@ class _HomePageState extends State<HomePage> {
     _essayThemeController.dispose();
     _essayFocusController.dispose();
     _essayContextController.dispose();
+    _essayStudentTextController.dispose();
     _essayFeedbackController.dispose();
     super.dispose();
   }
@@ -345,6 +348,34 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Future<void> _copyEssayRewritePrompt() async {
+    final theme = _essayThemeController.text.trim();
+    if (theme.isEmpty) {
+      setState(() {
+        _status = 'Informe o tema da redação para gerar o prompt de reescrita.';
+      });
+      return;
+    }
+    final rawFeedback = _essayFeedbackController.text.trim();
+    if (rawFeedback.isEmpty) {
+      setState(() {
+        _status = 'Cole o feedback da IA para gerar o prompt de reescrita.';
+      });
+      return;
+    }
+
+    final prompt = EssayPromptBuilder.buildRewritePrompt(
+      themeTitle: theme,
+      studentText: _essayStudentTextController.text.trim(),
+      iaFeedback: rawFeedback,
+      studentContext: _essayContextController.text.trim(),
+    );
+    await _copyPrompt(
+      prompt: prompt,
+      successMessage: 'Prompt de reescrita pós-correção copiado.',
+    );
+  }
+
   String _formatScore(int? score) {
     if (score == null) {
       return '-';
@@ -419,7 +450,7 @@ class _HomePageState extends State<HomePage> {
           themeSource: _essayThemeSourceSelecionado,
           generatedPrompt: generatedPrompt,
           correctionPrompt: correctionPrompt,
-          submittedText: '',
+          submittedText: _essayStudentTextController.text.trim(),
           submittedPhotoPath: '',
           iaFeedbackRaw: _essayFeedbackController.text,
           parserMode: parserMode.value,
@@ -668,6 +699,17 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             const SizedBox(height: 8),
+            TextField(
+              controller: _essayStudentTextController,
+              maxLines: 5,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Texto da redação do aluno (opcional)',
+                helperText:
+                    'Se preencher, o prompt de reescrita preserva sua estrutura original.',
+              ),
+            ),
+            const SizedBox(height: 8),
             Row(
               children: [
                 Expanded(
@@ -735,6 +777,10 @@ class _HomePageState extends State<HomePage> {
                 OutlinedButton(
                   onPressed: _busy ? null : _copyEssayCorrectionPrompt,
                   child: const Text('Copiar prompt: corrigir redação'),
+                ),
+                OutlinedButton(
+                  onPressed: _busy ? null : _copyEssayRewritePrompt,
+                  child: const Text('Copiar prompt: reescrita'),
                 ),
               ],
             ),
