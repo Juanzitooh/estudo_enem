@@ -26,6 +26,12 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Atualizar `plano/tracker.md` com campo de erro por habilidade (`Hxx`).
 - [ ] Definir rotina de atualização quando novos cadernos forem adicionados ao repositório.
 
+## Bloco 7 — Aulas por módulo (curto/médio prazo)
+- [ ] Definir template final de “aula por módulo de conteúdo” com objetivos + explicação + perguntas finais de retenção.
+- [ ] Gerar primeiro lote piloto (ex.: 20 módulos) e medir qualidade com rubrica objetiva.
+- [ ] Ajustar prompt/template até reduzir retrabalho humano para nível operacional.
+- [ ] Planejar integração com índice de videoaulas por minutagem para aprofundamento opcional no fim da aula.
+
 ## Bloco 5 — Redação com IA externa (curto/médio prazo)
 - [x] Definir schema local `essay_sessions` para histórico de redações (tema, prompts, texto/foto, retorno IA e notas C1..C5).
 - [x] Implementar fluxo de cópia de prompt no app (sem chamada HTTP): gerar tema e corrigir redação.

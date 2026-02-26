@@ -35,6 +35,19 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Integrar índice dos livros ao motor para sugerir módulo exato do material.
 - [ ] Gerar plano semanal automático com base em disponibilidade de tempo.
 
+### Conteúdo didático por módulo (geração assistida)
+- [ ] Definir schema mínimo de aula por módulo: `area`, `materia`, `volume`, `modulo`, `titulo`, `expectativas_aprendizagem`, `competencias/habilidades`.
+- [ ] Criar pipeline para gerar rascunho de aula para cada módulo de conteúdo (excluir `tipo_modulo=exercicios`), usando template padronizado.
+- [ ] Incluir seção obrigatória de “o que deve ser aprendido” alinhada às expectativas de aprendizagem do módulo.
+- [ ] Incluir seção obrigatória de “checagem de entendimento” com 5-10 perguntas de recuperação ativa (curtas e retóricas) no fim de cada aula.
+- [ ] Incluir seção obrigatória “erros comuns” e “como revisar” para consolidar retenção.
+- [ ] Incluir seção “aprofundamento” com recomendações de vídeo por tema (usando índice de videoaulas por minutagem quando disponível).
+- [ ] Definir rubrica de qualidade para aula gerada: correção conceitual, clareza, progressão didática, aderência ENEM e ausência de alucinação factual.
+- [ ] Implementar validações automáticas mínimas do texto gerado (estrutura obrigatória, tamanho por seção, presença de perguntas finais, termos proibidos).
+- [ ] Implementar workflow de revisão humana em lote (`rascunho` -> `revisado` -> `publicado`) antes de expor conteúdo no app.
+- [ ] Salvar versão de conteúdo por módulo para permitir melhoria incremental e histórico de qualidade.
+- [ ] Integrar no app exibição de aula por módulo com bloco final “revise seu entendimento” e CTA para treino relacionado.
+
 ### Intercorrelação Matriz + Livro + Questões
 - [x] Criar CSV de intercorrelação `modulo_questao_matches.csv` para ligar módulo do livro a questões reais.
 - [x] Definir esquema do CSV com: `ano`, `dia`, `numero`, `variacao`, `area`, `disciplina`, `materia`, `modulo`, `competencias`, `habilidades`, `assuntos_match`, `score_match`, `tipo_match`, `confianca`, `revisado_manual`.
