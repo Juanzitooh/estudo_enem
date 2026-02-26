@@ -342,6 +342,72 @@ class EssayScoreSummary {
   final int? latestScore;
 }
 
+class StudentProfileInput {
+  const StudentProfileInput({
+    this.id = '',
+    required this.displayName,
+    this.targetYear,
+    this.studyDaysCsv = '',
+    this.hoursPerDay,
+    this.focusArea = '',
+    this.examDate = '',
+    this.plannerContext = '',
+  });
+
+  final String id;
+  final String displayName;
+  final int? targetYear;
+  final String studyDaysCsv;
+  final double? hoursPerDay;
+  final String focusArea;
+  final String examDate;
+  final String plannerContext;
+}
+
+class StudentProfileRecord {
+  const StudentProfileRecord({
+    required this.id,
+    required this.displayName,
+    required this.targetYear,
+    required this.studyDaysCsv,
+    required this.hoursPerDay,
+    required this.focusArea,
+    required this.examDate,
+    required this.plannerContext,
+    required this.isActive,
+    required this.createdAt,
+    required this.updatedAt,
+  });
+
+  final String id;
+  final String displayName;
+  final int? targetYear;
+  final String studyDaysCsv;
+  final double? hoursPerDay;
+  final String focusArea;
+  final String examDate;
+  final String plannerContext;
+  final bool isActive;
+  final String createdAt;
+  final String updatedAt;
+
+  Map<String, Object?> toMap() {
+    return {
+      'id': id,
+      'display_name': displayName,
+      'target_year': targetYear,
+      'study_days_csv': studyDaysCsv,
+      'hours_per_day': hoursPerDay,
+      'focus_area': focusArea,
+      'exam_date': examDate,
+      'planner_context': plannerContext,
+      'is_active': isActive ? 1 : 0,
+      'created_at': createdAt,
+      'updated_at': updatedAt,
+    };
+  }
+}
+
 class LocalDatabase {
   LocalDatabase();
 
@@ -354,9 +420,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 9,
+      version: 10,
       onCreate: (db, _) async {
-        await _createSchemaV9(db);
+        await _createSchemaV10(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -379,6 +445,9 @@ class LocalDatabase {
         }
         if (oldVersion < 9) {
           await _ensureQuestionsSchemaV9(db);
+        }
+        if (oldVersion < 10) {
+          await _createStudentProfilesTable(db);
         }
       },
     );
@@ -506,6 +575,11 @@ class LocalDatabase {
         // Tenta próximo candidato.
       }
     }
+  }
+
+  Future<void> _createSchemaV10(Database db) async {
+    await _createSchemaV9(db);
+    await _createStudentProfilesTable(db);
   }
 
   Future<void> _createSchemaV9(Database db) async {
@@ -672,6 +746,29 @@ class LocalDatabase {
     ''');
   }
 
+  Future<void> _createStudentProfilesTable(DatabaseExecutor db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS student_profiles (
+        id TEXT PRIMARY KEY,
+        display_name TEXT NOT NULL,
+        target_year INTEGER,
+        study_days_csv TEXT,
+        hours_per_day REAL,
+        focus_area TEXT,
+        exam_date TEXT,
+        planner_context TEXT,
+        is_active INTEGER NOT NULL DEFAULT 0,
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+      )
+    ''');
+
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_student_profiles_active
+      ON student_profiles (is_active DESC, updated_at DESC)
+    ''');
+  }
+
   Future<void> _ensureBookModulesSchemaV4(Database db) async {
     final columns = await db.rawQuery("PRAGMA table_info('book_modules')");
     final names = columns
@@ -835,6 +932,20 @@ class LocalDatabase {
     }
     final parsed = int.tryParse('$value'.trim());
     return parsed;
+  }
+
+  double? _toOptionalDouble(Object? value) {
+    if (value == null) {
+      return null;
+    }
+    if (value is double) {
+      return value;
+    }
+    if (value is num) {
+      return value.toDouble();
+    }
+    final normalized = '$value'.trim().replaceAll(',', '.');
+    return double.tryParse(normalized);
   }
 
   String _normalizeSkillToken(String rawValue) {
@@ -1144,6 +1255,235 @@ class LocalDatabase {
   Future<int> countAttempts(Database db) async {
     final result = await db.rawQuery('SELECT COUNT(*) AS c FROM progress');
     return Sqflite.firstIntValue(result) ?? 0;
+  }
+
+  Future<int> countStudentProfiles(Database db) async {
+    final result =
+        await db.rawQuery('SELECT COUNT(*) AS c FROM student_profiles');
+    return Sqflite.firstIntValue(result) ?? 0;
+  }
+
+  String _buildProfileId(String displayName) {
+    final seed = displayName.trim().toLowerCase();
+    final slug = seed.replaceAll(RegExp(r'[^a-z0-9]+'), '_').replaceAll(
+          RegExp(r'^_+|_+$'),
+          '',
+        );
+    final prefix = slug.isEmpty ? 'perfil' : slug;
+    return '${prefix}_${DateTime.now().millisecondsSinceEpoch}';
+  }
+
+  StudentProfileRecord _profileFromRow(Map<String, Object?> row) {
+    return StudentProfileRecord(
+      id: (row['id'] ?? '').toString(),
+      displayName: (row['display_name'] ?? '').toString(),
+      targetYear: _toOptionalInt(row['target_year']),
+      studyDaysCsv: (row['study_days_csv'] ?? '').toString(),
+      hoursPerDay: _toOptionalDouble(row['hours_per_day']),
+      focusArea: (row['focus_area'] ?? '').toString(),
+      examDate: (row['exam_date'] ?? '').toString(),
+      plannerContext: (row['planner_context'] ?? '').toString(),
+      isActive: _toBool(row['is_active']),
+      createdAt: (row['created_at'] ?? '').toString(),
+      updatedAt: (row['updated_at'] ?? '').toString(),
+    );
+  }
+
+  Future<List<StudentProfileRecord>> loadStudentProfiles(Database db) async {
+    final rows = await db.query(
+      'student_profiles',
+      orderBy:
+          'is_active DESC, updated_at DESC, display_name COLLATE NOCASE ASC',
+    );
+    return rows
+        .map(_profileFromRow)
+        .where((profile) => profile.id.isNotEmpty)
+        .toList();
+  }
+
+  Future<StudentProfileRecord?> loadActiveStudentProfile(Database db) async {
+    final rows = await db.query(
+      'student_profiles',
+      where: 'is_active = 1',
+      orderBy: 'updated_at DESC',
+      limit: 1,
+    );
+    if (rows.isEmpty) {
+      return null;
+    }
+    return _profileFromRow(rows.first);
+  }
+
+  Future<StudentProfileRecord> ensureDefaultStudentProfile(
+    Database db, {
+    String defaultName = 'Perfil principal',
+  }) async {
+    final active = await loadActiveStudentProfile(db);
+    if (active != null) {
+      return active;
+    }
+
+    final profiles = await loadStudentProfiles(db);
+    if (profiles.isNotEmpty) {
+      final first = profiles.first;
+      await setActiveStudentProfile(db, first.id);
+      return first;
+    }
+
+    final profile = StudentProfileInput(
+      id: _buildProfileId(defaultName),
+      displayName: defaultName,
+    );
+    await upsertStudentProfile(db, profile, makeActive: true);
+    return (await loadActiveStudentProfile(db))!;
+  }
+
+  Future<void> upsertStudentProfile(
+    Database db,
+    StudentProfileInput input, {
+    bool makeActive = true,
+  }) async {
+    final displayName = input.displayName.trim();
+    if (displayName.isEmpty) {
+      return;
+    }
+    final profileId = input.id.trim().isEmpty
+        ? _buildProfileId(displayName)
+        : input.id.trim();
+    final now = DateTime.now().toIso8601String();
+
+    await db.transaction((txn) async {
+      if (makeActive) {
+        await txn.update('student_profiles', {'is_active': 0});
+      }
+
+      final existing = await txn.query(
+        'student_profiles',
+        columns: ['created_at'],
+        where: 'id = ?',
+        whereArgs: [profileId],
+        limit: 1,
+      );
+      final createdAt = existing.isEmpty
+          ? now
+          : (existing.first['created_at'] ?? '').toString().trim().isEmpty
+              ? now
+              : (existing.first['created_at'] ?? '').toString();
+
+      await txn.insert(
+        'student_profiles',
+        {
+          'id': profileId,
+          'display_name': displayName,
+          'target_year': input.targetYear,
+          'study_days_csv': input.studyDaysCsv.trim(),
+          'hours_per_day': input.hoursPerDay,
+          'focus_area': input.focusArea.trim(),
+          'exam_date': input.examDate.trim(),
+          'planner_context': input.plannerContext.trim(),
+          'is_active': makeActive ? 1 : 0,
+          'created_at': createdAt,
+          'updated_at': now,
+        },
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+    });
+  }
+
+  Future<void> setActiveStudentProfile(Database db, String profileId) async {
+    final normalizedId = profileId.trim();
+    if (normalizedId.isEmpty) {
+      return;
+    }
+    await db.transaction((txn) async {
+      await txn.update('student_profiles', {'is_active': 0});
+      await txn.update(
+        'student_profiles',
+        {
+          'is_active': 1,
+          'updated_at': DateTime.now().toIso8601String(),
+        },
+        where: 'id = ?',
+        whereArgs: [normalizedId],
+      );
+    });
+  }
+
+  Future<Map<String, dynamic>> exportStudentProfileBundle(
+    Database db, {
+    required String profileId,
+  }) async {
+    final normalizedId = profileId.trim();
+    if (normalizedId.isEmpty) {
+      return const {};
+    }
+    final rows = await db.query(
+      'student_profiles',
+      where: 'id = ?',
+      whereArgs: [normalizedId],
+      limit: 1,
+    );
+    if (rows.isEmpty) {
+      return const {};
+    }
+    final profile = _profileFromRow(rows.first);
+    final attempts = await countAttempts(db);
+    final essays = await countEssaySessions(db);
+    final accuracy = await globalAccuracy(db);
+    final contentVersion = await getContentVersion(db);
+
+    return {
+      'schema_version': 1,
+      'exported_at': DateTime.now().toIso8601String(),
+      'profile': profile.toMap(),
+      'snapshot': {
+        'content_version': contentVersion,
+        'attempt_count': attempts,
+        'essay_session_count': essays,
+        'global_accuracy': accuracy,
+      },
+    };
+  }
+
+  Future<StudentProfileRecord?> importStudentProfileBundle(
+    Database db, {
+    required Map<String, dynamic> payload,
+    bool makeActive = true,
+  }) async {
+    final rawProfile = payload['profile'];
+    if (rawProfile is! Map<String, dynamic>) {
+      return null;
+    }
+
+    final displayName = (rawProfile['display_name'] ?? '').toString().trim();
+    if (displayName.isEmpty) {
+      return null;
+    }
+
+    final rawId = (rawProfile['id'] ?? '').toString().trim();
+    final input = StudentProfileInput(
+      id: rawId.isEmpty ? _buildProfileId(displayName) : rawId,
+      displayName: displayName,
+      targetYear: _toOptionalInt(rawProfile['target_year']),
+      studyDaysCsv: (rawProfile['study_days_csv'] ?? '').toString(),
+      hoursPerDay: _toOptionalDouble(rawProfile['hours_per_day']),
+      focusArea: (rawProfile['focus_area'] ?? '').toString(),
+      examDate: (rawProfile['exam_date'] ?? '').toString(),
+      plannerContext: (rawProfile['planner_context'] ?? '').toString(),
+    );
+
+    await upsertStudentProfile(db, input, makeActive: makeActive);
+
+    final rows = await db.query(
+      'student_profiles',
+      where: 'id = ?',
+      whereArgs: [input.id],
+      limit: 1,
+    );
+    if (rows.isEmpty) {
+      return null;
+    }
+    return _profileFromRow(rows.first);
   }
 
   Future<List<AttemptRecord>> loadRecentAttempts(

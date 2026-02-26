@@ -1,7 +1,10 @@
+import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:path/path.dart' as path;
 
 import '../config/app_config.dart';
 import '../data/local_database.dart';
@@ -59,6 +62,25 @@ class _HomePageState extends State<HomePage> {
       TextEditingController();
   final TextEditingController _essayFeedbackController =
       TextEditingController();
+  final TextEditingController _profileNameController = TextEditingController(
+    text: 'Perfil principal',
+  );
+  final TextEditingController _profileTargetYearController =
+      TextEditingController();
+  final TextEditingController _profileStudyDaysController =
+      TextEditingController(text: 'seg,ter,qua,qui,sex');
+  final TextEditingController _profileHoursPerDayController =
+      TextEditingController(text: '2');
+  final TextEditingController _profileFocusAreaController =
+      TextEditingController();
+  final TextEditingController _profileExamDateController =
+      TextEditingController();
+  final TextEditingController _profilePlannerContextController =
+      TextEditingController();
+  final TextEditingController _profileExportPathController =
+      TextEditingController();
+  final TextEditingController _profileImportPathController =
+      TextEditingController();
 
   bool _busy = false;
   String _status = 'Pronto.';
@@ -70,6 +92,7 @@ class _HomePageState extends State<HomePage> {
   int _moduleQuestionMatchCount = 0;
   int _essaySessionCount = 0;
   int _attemptCount = 0;
+  int _studentProfileCount = 0;
   double _globalAccuracy = 0;
   String _databasePath = '-';
   QuestionFilterOptions _questionFilterOptions = const QuestionFilterOptions();
@@ -93,6 +116,8 @@ class _HomePageState extends State<HomePage> {
   List<ModuleSuggestion> _moduleSuggestions = const [];
   List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
   List<EssaySessionRecord> _recentEssaySessions = const [];
+  List<StudentProfileRecord> _studentProfiles = const [];
+  StudentProfileRecord? _activeStudentProfile;
   EssayScoreSummary _essayScoreSummary = const EssayScoreSummary(
     scoredSessionCount: 0,
     averageScore: 0,
@@ -109,6 +134,7 @@ class _HomePageState extends State<HomePage> {
   String _questionHasImageSelecionado = '';
   String _essayThemeSourceSelecionado = 'ia';
   String _essayParserModeSelecionado = EssayParserMode.livre.value;
+  String _selectedStudentProfileId = '';
 
   @override
   void initState() {
@@ -132,6 +158,15 @@ class _HomePageState extends State<HomePage> {
     _essayContextController.dispose();
     _essayStudentTextController.dispose();
     _essayFeedbackController.dispose();
+    _profileNameController.dispose();
+    _profileTargetYearController.dispose();
+    _profileStudyDaysController.dispose();
+    _profileHoursPerDayController.dispose();
+    _profileFocusAreaController.dispose();
+    _profileExamDateController.dispose();
+    _profilePlannerContextController.dispose();
+    _profileExportPathController.dispose();
+    _profileImportPathController.dispose();
     super.dispose();
   }
 
@@ -290,8 +325,59 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  int? _readProfileTargetYear() {
+    final text = _profileTargetYearController.text.trim();
+    if (text.isEmpty) {
+      return null;
+    }
+    final parsed = int.tryParse(text);
+    if (parsed == null || parsed <= 0) {
+      return null;
+    }
+    return parsed;
+  }
+
+  double? _readProfileHoursPerDay() {
+    final text = _profileHoursPerDayController.text.trim();
+    if (text.isEmpty) {
+      return null;
+    }
+    final parsed = double.tryParse(text.replaceAll(',', '.'));
+    if (parsed == null || parsed <= 0) {
+      return null;
+    }
+    return parsed;
+  }
+
+  void _syncProfileFields(StudentProfileRecord profile) {
+    _profileNameController.text = profile.displayName;
+    _profileTargetYearController.text =
+        profile.targetYear == null ? '' : '${profile.targetYear}';
+    _profileStudyDaysController.text = profile.studyDaysCsv;
+    _profileHoursPerDayController.text = profile.hoursPerDay == null
+        ? ''
+        : profile.hoursPerDay!.toStringAsFixed(1);
+    _profileFocusAreaController.text = profile.focusArea;
+    _profileExamDateController.text = profile.examDate;
+    _profilePlannerContextController.text = profile.plannerContext;
+    _selectedStudentProfileId = profile.id;
+  }
+
+  Future<String> _defaultProfileExportPath(String profileId) async {
+    final dbPath = await _localDatabase.databasePath();
+    final dir = path.dirname(dbPath);
+    final timestamp = DateTime.now().toIso8601String().replaceAll(':', '-');
+    final safeProfileId = profileId.trim().isEmpty ? 'perfil' : profileId;
+    return path.join(dir, 'profile_export_${safeProfileId}_$timestamp.json');
+  }
+
   Future<void> _refreshStats() async {
     final db = await _localDatabase.open();
+    final ensuredProfile = await _localDatabase.ensureDefaultStudentProfile(db);
+    final studentProfiles = await _localDatabase.loadStudentProfiles(db);
+    final activeStudentProfile =
+        await _localDatabase.loadActiveStudentProfile(db) ?? ensuredProfile;
+    final studentProfileCount = studentProfiles.length;
     final questionCount = await _localDatabase.countQuestions(db);
     final bookModuleCount = await _localDatabase.countBookModules(db);
     final moduleQuestionMatchCount =
@@ -337,6 +423,10 @@ class _HomePageState extends State<HomePage> {
       return;
     }
     setState(() {
+      _studentProfiles = studentProfiles;
+      _activeStudentProfile = activeStudentProfile;
+      _studentProfileCount = studentProfileCount;
+      _selectedStudentProfileId = activeStudentProfile.id;
       _questionCount = questionCount;
       _bookModuleCount = bookModuleCount;
       _moduleQuestionMatchCount = moduleQuestionMatchCount;
@@ -356,6 +446,7 @@ class _HomePageState extends State<HomePage> {
       _essayScoreSummary = essayScoreSummary;
       _contentVersion = version;
     });
+    _syncProfileFields(activeStudentProfile);
   }
 
   Future<void> _seedDemo() async {
@@ -380,6 +471,228 @@ class _HomePageState extends State<HomePage> {
       }
       setState(() {
         _status = 'Falha ao carregar demo: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _saveStudentProfile({bool makeActive = true}) async {
+    final displayName = _profileNameController.text.trim();
+    if (displayName.isEmpty) {
+      setState(() {
+        _status = 'Informe o nome do perfil antes de salvar.';
+      });
+      return;
+    }
+
+    setState(() {
+      _busy = true;
+      _status = 'Salvando perfil local...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      final selectedId = _selectedStudentProfileId.trim();
+      final input = StudentProfileInput(
+        id: selectedId,
+        displayName: displayName,
+        targetYear: _readProfileTargetYear(),
+        studyDaysCsv: _profileStudyDaysController.text.trim(),
+        hoursPerDay: _readProfileHoursPerDay(),
+        focusArea: _profileFocusAreaController.text.trim(),
+        examDate: _profileExamDateController.text.trim(),
+        plannerContext: _profilePlannerContextController.text.trim(),
+      );
+      await _localDatabase.upsertStudentProfile(
+        db,
+        input,
+        makeActive: makeActive,
+      );
+      await _refreshStats();
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Perfil salvo com sucesso.';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao salvar perfil: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _switchStudentProfile(String? profileId) async {
+    final normalizedId = (profileId ?? '').trim();
+    if (normalizedId.isEmpty) {
+      return;
+    }
+    setState(() {
+      _busy = true;
+      _status = 'Trocando perfil ativo...';
+    });
+    try {
+      final db = await _localDatabase.open();
+      await _localDatabase.setActiveStudentProfile(db, normalizedId);
+      await _refreshStats();
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Perfil ativo atualizado.';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao trocar perfil: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _exportActiveProfile() async {
+    final active = _activeStudentProfile;
+    if (active == null) {
+      setState(() {
+        _status = 'Nenhum perfil ativo para exportar.';
+      });
+      return;
+    }
+
+    setState(() {
+      _busy = true;
+      _status = 'Exportando perfil...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      final payload = await _localDatabase.exportStudentProfileBundle(
+        db,
+        profileId: active.id,
+      );
+      if (payload.isEmpty) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {
+          _status = 'Falha ao montar pacote de exportação do perfil.';
+        });
+        return;
+      }
+
+      var exportPath = _profileExportPathController.text.trim();
+      if (exportPath.isEmpty) {
+        exportPath = await _defaultProfileExportPath(active.id);
+      }
+      final exportFile = File(exportPath);
+      await exportFile.parent.create(recursive: true);
+      await exportFile.writeAsString(
+        const JsonEncoder.withIndent('  ').convert(payload),
+      );
+
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _profileExportPathController.text = exportPath;
+        _status = 'Perfil exportado em: $exportPath';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao exportar perfil: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _importProfileFromFile() async {
+    final importPath = _profileImportPathController.text.trim();
+    if (importPath.isEmpty) {
+      setState(() {
+        _status = 'Informe o caminho do arquivo de importação.';
+      });
+      return;
+    }
+
+    setState(() {
+      _busy = true;
+      _status = 'Importando perfil...';
+    });
+
+    try {
+      final sourceFile = File(importPath);
+      if (!await sourceFile.exists()) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {
+          _status = 'Arquivo de importação não encontrado: $importPath';
+        });
+        return;
+      }
+
+      final rawJson = await sourceFile.readAsString();
+      final decoded = jsonDecode(rawJson);
+      if (decoded is! Map<String, dynamic>) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {
+          _status = 'Arquivo inválido: formato JSON inesperado.';
+        });
+        return;
+      }
+
+      final db = await _localDatabase.open();
+      final imported = await _localDatabase.importStudentProfileBundle(
+        db,
+        payload: decoded,
+        makeActive: true,
+      );
+      await _refreshStats();
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = imported == null
+            ? 'Importação concluída sem perfil válido.'
+            : 'Perfil importado e ativado: ${imported.displayName}';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao importar perfil: $error';
       });
     } finally {
       if (mounted) {
@@ -1235,6 +1548,190 @@ class _HomePageState extends State<HomePage> {
       return 'Bronze';
     }
     return 'Base';
+  }
+
+  Widget _buildStudentProfileCard() {
+    final profileItems = _studentProfiles;
+    final hasSelected = profileItems.any(
+      (item) => item.id == _selectedStudentProfileId,
+    );
+    final selectedValue = hasSelected
+        ? _selectedStudentProfileId
+        : (profileItems.isEmpty ? null : profileItems.first.id);
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Perfil offline + ficha de planejamento',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Text('Perfis cadastrados: $_studentProfileCount'),
+            Text(
+              'Ativo: ${_activeStudentProfile == null ? '-' : _activeStudentProfile!.displayName}',
+            ),
+            const SizedBox(height: 8),
+            if (profileItems.isEmpty)
+              const Text('Nenhum perfil local ainda.')
+            else
+              DropdownButtonFormField<String>(
+                key: ValueKey(selectedValue ?? 'no_profile'),
+                initialValue: selectedValue,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Perfil ativo',
+                ),
+                items: profileItems
+                    .map(
+                      (item) => DropdownMenuItem<String>(
+                        value: item.id,
+                        child: Text(
+                          '${item.displayName}${item.isActive ? ' (ativo)' : ''}',
+                        ),
+                      ),
+                    )
+                    .toList(),
+                onChanged: _busy ? null : _switchStudentProfile,
+              ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _profileNameController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Nome do perfil',
+              ),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                SizedBox(
+                  width: 180,
+                  child: TextField(
+                    controller: _profileTargetYearController,
+                    keyboardType: TextInputType.number,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Ano alvo',
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 220,
+                  child: TextField(
+                    controller: _profileHoursPerDayController,
+                    keyboardType: const TextInputType.numberWithOptions(
+                      decimal: true,
+                    ),
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Horas por dia',
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _profileStudyDaysController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Dias de estudo (csv)',
+                helperText: 'Ex.: seg,ter,qua,qui,sex',
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _profileFocusAreaController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Área de foco',
+                helperText: 'Ex.: Natureza, Matemática, Linguagens...',
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _profileExamDateController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Data da prova (YYYY-MM-DD)',
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _profilePlannerContextController,
+              minLines: 2,
+              maxLines: 4,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Contexto/planner do estudante',
+              ),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                ElevatedButton(
+                  onPressed: _busy
+                      ? null
+                      : () {
+                          setState(() {
+                            _selectedStudentProfileId = '';
+                            _profileNameController.text = 'Novo perfil';
+                            _profileTargetYearController.clear();
+                            _profileStudyDaysController.text =
+                                'seg,ter,qua,qui,sex';
+                            _profileHoursPerDayController.text = '2';
+                            _profileFocusAreaController.clear();
+                            _profileExamDateController.clear();
+                            _profilePlannerContextController.clear();
+                            _status =
+                                'Novo perfil em edição. Salve para criar.';
+                          });
+                        },
+                  child: const Text('Novo perfil'),
+                ),
+                ElevatedButton(
+                  onPressed: _busy ? null : () => _saveStudentProfile(),
+                  child: const Text('Salvar perfil'),
+                ),
+                OutlinedButton(
+                  onPressed: _busy ? null : _exportActiveProfile,
+                  child: const Text('Exportar perfil'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _profileExportPathController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Caminho de exportação (.json)',
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _profileImportPathController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Caminho para importar perfil (.json)',
+              ),
+            ),
+            const SizedBox(height: 8),
+            OutlinedButton(
+              onPressed: _busy ? null : _importProfileFromFile,
+              child: const Text('Importar e ativar perfil'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   Future<void> _analyzeAndSaveEssaySession() async {
@@ -2650,11 +3147,17 @@ class _HomePageState extends State<HomePage> {
                     Text('Sessões de redação: $_essaySessionCount'),
                     Text('Tentativas registradas: $_attemptCount'),
                     Text('Acurácia global: ${_percent(_globalAccuracy)}%'),
+                    Text('Perfis locais: $_studentProfileCount'),
+                    Text(
+                      'Perfil ativo: ${_activeStudentProfile == null ? '-' : _activeStudentProfile!.displayName}',
+                    ),
                     Text('Banco local: $_databasePath'),
                   ],
                 ),
               ),
             ),
+            const SizedBox(height: 12),
+            _buildStudentProfileCard(),
             const SizedBox(height: 16),
             TextField(
               controller: _manifestController,
