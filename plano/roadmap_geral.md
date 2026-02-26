@@ -87,8 +87,8 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Implementar dois modos de redação:
 - [ ] `Modo 1` offline puro: tema oficial, estrutura fixa ENEM, checklist, foto da redação e progresso local.
 - [ ] `Modo 2` IA assistida externa: gerar prompt no app, copiar/colar na IA externa e registrar resposta no app.
-- [ ] Criar `PromptBuilder` de redação para geração de tema inédito no estilo ENEM (evitando repetição 2015–2025).
-- [ ] Criar `PromptBuilder` de correção (transcrição, C1..C5, justificativas, melhorias, erros, reescrita e nota 0–1000).
+- [x] Criar `PromptBuilder` de redação para geração de tema inédito no estilo ENEM (evitando repetição 2015–2025).
+- [x] Criar `PromptBuilder` de correção (transcrição, C1..C5, justificativas, melhorias, erros, reescrita e nota 0–1000).
 - [ ] Persistir sessões em tabela local `essay_sessions` com prompts, texto/foto, feedback bruto e notas por competência.
 - [ ] Implementar parser opcional da resposta da IA:
 - [ ] modo livre (usuário cola qualquer formato);

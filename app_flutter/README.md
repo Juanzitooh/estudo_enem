@@ -95,6 +95,7 @@ No fluxo de release com `dist.sh`, use:
 Arquivos principais:
 - `app_flutter/enem_offline_client/lib/src/data/local_database.dart`
 - `app_flutter/enem_offline_client/lib/src/ui/home_page.dart`
+- `app_flutter/enem_offline_client/lib/src/essay/essay_prompt_builder.dart`
 
 O app cria localmente:
 - `app_meta` (versão de conteúdo)
@@ -125,6 +126,7 @@ Com isso, o app consegue:
 - recomendar módulos de livro que tenham as habilidades correspondentes;
 - aceitar módulos marcados por competência (`c2`, `c6`) e expandir para habilidades da matriz por área.
 - filtrar vínculos de intercorrelação por matéria, assunto/tag, tipo e score mínimo.
+- gerar prompts de redação para uso em IA externa (tema inédito e correção estruturada).
 
 ### Gerar pacote de conteúdo
 

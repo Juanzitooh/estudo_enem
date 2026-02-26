@@ -51,3 +51,4 @@ O app mostra:
 - habilidades com maior erro pelo histórico;
 - sugestão de módulos do livro para revisar (incluindo módulos marcados por competência).
 - filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).
+- prompt builder de redação para IA externa (gerar tema e prompt de correção com cópia rápida).
