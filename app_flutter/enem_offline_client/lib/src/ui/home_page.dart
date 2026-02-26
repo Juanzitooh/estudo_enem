@@ -16,17 +16,25 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _manifestController = TextEditingController(
     text: AppConfig.defaultManifestUrl,
   );
+  final TextEditingController _matchMateriaController = TextEditingController();
+  final TextEditingController _matchAssuntoController = TextEditingController();
+  final TextEditingController _matchScoreController = TextEditingController(
+    text: '0.50',
+  );
 
   bool _busy = false;
   String _status = 'Pronto.';
   String _contentVersion = '0';
   int _questionCount = 0;
   int _bookModuleCount = 0;
+  int _moduleQuestionMatchCount = 0;
   int _attemptCount = 0;
   double _globalAccuracy = 0;
   String _databasePath = '-';
   List<WeakSkillStat> _weakSkills = const [];
   List<ModuleSuggestion> _moduleSuggestions = const [];
+  List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
+  String _matchTipoSelecionado = '';
 
   @override
   void initState() {
@@ -37,6 +45,9 @@ class _HomePageState extends State<HomePage> {
   @override
   void dispose() {
     _manifestController.dispose();
+    _matchMateriaController.dispose();
+    _matchAssuntoController.dispose();
+    _matchScoreController.dispose();
     super.dispose();
   }
 
@@ -44,10 +55,35 @@ class _HomePageState extends State<HomePage> {
     return (value * 100).toStringAsFixed(1);
   }
 
+  double _readMinScore() {
+    final parsed = double.tryParse(
+      _matchScoreController.text.trim().replaceAll(',', '.'),
+    );
+    if (parsed == null || parsed <= 0) {
+      return 0;
+    }
+    if (parsed > 1) {
+      return 1;
+    }
+    return parsed;
+  }
+
+  ModuleQuestionMatchFilter _buildMatchFilter() {
+    return ModuleQuestionMatchFilter(
+      materia: _matchMateriaController.text.trim(),
+      assunto: _matchAssuntoController.text.trim(),
+      tipoMatch: _matchTipoSelecionado,
+      minScore: _readMinScore(),
+      limit: 20,
+    );
+  }
+
   Future<void> _refreshStats() async {
     final db = await _localDatabase.open();
     final questionCount = await _localDatabase.countQuestions(db);
     final bookModuleCount = await _localDatabase.countBookModules(db);
+    final moduleQuestionMatchCount =
+        await _localDatabase.countModuleQuestionMatches(db);
     final attemptCount = await _localDatabase.countAttempts(db);
     final accuracy = await _localDatabase.globalAccuracy(db);
     final databasePath = await _localDatabase.databasePath();
@@ -58,6 +94,11 @@ class _HomePageState extends State<HomePage> {
       modulePerSkill: 2,
       maxTotal: 8,
     );
+    final moduleQuestionMatches =
+        await _localDatabase.searchModuleQuestionMatches(
+      db,
+      filter: _buildMatchFilter(),
+    );
     final version = await _localDatabase.getContentVersion(db);
 
     if (!mounted) {
@@ -66,11 +107,13 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _questionCount = questionCount;
       _bookModuleCount = bookModuleCount;
+      _moduleQuestionMatchCount = moduleQuestionMatchCount;
       _attemptCount = attemptCount;
       _globalAccuracy = accuracy;
       _databasePath = databasePath;
       _weakSkills = weakSkills;
       _moduleSuggestions = moduleSuggestions;
+      _moduleQuestionMatches = moduleQuestionMatches;
       _contentVersion = version;
     });
   }
@@ -99,12 +142,11 @@ class _HomePageState extends State<HomePage> {
         _status = 'Falha ao carregar demo: $error';
       });
     } finally {
-      if (!mounted) {
-        return;
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
       }
-      setState(() {
-        _busy = false;
-      });
     }
   }
 
@@ -137,12 +179,11 @@ class _HomePageState extends State<HomePage> {
         _status = 'Falha ao registrar tentativa demo: $error';
       });
     } finally {
-      if (!mounted) {
-        return;
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
       }
-      setState(() {
-        _busy = false;
-      });
     }
   }
 
@@ -182,13 +223,53 @@ class _HomePageState extends State<HomePage> {
         _status = 'Falha no update: $error';
       });
     } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _applyMatchFilters() async {
+    setState(() {
+      _busy = true;
+      _status = 'Aplicando filtros de intercorrelação...';
+    });
+
+    try {
+      await _refreshStats();
       if (!mounted) {
         return;
       }
       setState(() {
-        _busy = false;
+        _status =
+            'Filtro aplicado. ${_moduleQuestionMatches.length} vínculo(s) exibidos.';
       });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao aplicar filtro: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
     }
+  }
+
+  Future<void> _clearMatchFilters() async {
+    _matchMateriaController.clear();
+    _matchAssuntoController.clear();
+    _matchScoreController.text = '0.50';
+    setState(() {
+      _matchTipoSelecionado = '';
+    });
+    await _applyMatchFilters();
   }
 
   Widget _buildWeakSkillsCard() {
@@ -248,6 +329,108 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Widget _buildIntercorrelationFiltersCard() {
+    const matchTypes = ['', 'direto', 'relacionado', 'interdisciplinar'];
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Filtro local de módulo x questão',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _matchMateriaController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Matéria (ex.: Biologia 1)',
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _matchAssuntoController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Tag/assunto (ex.: termodinamica)',
+              ),
+            ),
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _matchScoreController,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Score mínimo (0..1)',
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey(_matchTipoSelecionado),
+                    initialValue: _matchTipoSelecionado,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Tipo de match',
+                    ),
+                    items: matchTypes
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value.isEmpty ? 'Todos' : value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _matchTipoSelecionado = value ?? '';
+                            });
+                          },
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                OutlinedButton(
+                  onPressed: _busy ? null : _applyMatchFilters,
+                  child: const Text('Aplicar filtro'),
+                ),
+                OutlinedButton(
+                  onPressed: _busy ? null : _clearMatchFilters,
+                  child: const Text('Limpar filtro'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            if (_moduleQuestionMatches.isEmpty)
+              const Text('Sem vínculos para os filtros atuais.')
+            else
+              ..._moduleQuestionMatches.map(
+                (item) => Text(
+                  'Q ${item.year}/${item.day}/${item.number} | ${item.materia} '
+                  '| V${item.volume} M${item.modulo} | ${item.tipoMatch} '
+                  '(${_percent(item.scoreMatch)}%)'
+                  '${item.assuntosMatch.isEmpty ? '' : ' | ${item.assuntosMatch}'}',
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -268,6 +451,9 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(height: 8),
                     Text('Questões no banco local: $_questionCount'),
                     Text('Módulos de livro no banco local: $_bookModuleCount'),
+                    Text(
+                      'Vínculos módulo x questão: $_moduleQuestionMatchCount',
+                    ),
                     Text('Tentativas registradas: $_attemptCount'),
                     Text('Acurácia global: ${_percent(_globalAccuracy)}%'),
                     Text('Banco local: $_databasePath'),
@@ -318,6 +504,8 @@ class _HomePageState extends State<HomePage> {
             _buildWeakSkillsCard(),
             const SizedBox(height: 12),
             _buildModuleSuggestionsCard(),
+            const SizedBox(height: 12),
+            _buildIntercorrelationFiltersCard(),
             const SizedBox(height: 12),
             SelectableText(_status),
           ],

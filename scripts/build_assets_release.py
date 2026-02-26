@@ -18,6 +18,9 @@ import zipfile
 
 DEFAULT_QUESTIONS_CSV = Path("questoes/mapeamento_habilidades/questoes_mapeadas.csv")
 DEFAULT_MODULES_CSV = Path("plano/indice_livros_6_volumes.csv")
+DEFAULT_MODULE_QUESTION_MATCHES_CSV = Path(
+    "questoes/mapeamento_habilidades/intercorrelacao/modulo_questao_matches.csv"
+)
 DEFAULT_OUTPUT_DIR = Path("app_flutter/releases")
 BUNDLE_FILE_NAME = "content_bundle.json"
 COMPETENCE_HEADER_RE = re.compile(r"^###\s+Competência de área\s+(\d+)\b", re.IGNORECASE)
@@ -51,6 +54,12 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_MODULES_CSV,
         help="CSV de módulos/livros com habilidades/competências e expectativas.",
+    )
+    parser.add_argument(
+        "--module-question-matches-csv",
+        type=Path,
+        default=DEFAULT_MODULE_QUESTION_MATCHES_CSV,
+        help="CSV de intercorrelação módulo x questão (opcional).",
     )
     parser.add_argument(
         "--out-dir",
@@ -261,6 +270,26 @@ def parse_fallback_image_paths(raw_value: str) -> list[str]:
     return cleaned
 
 
+def parse_bool_flag(raw_value: str) -> bool:
+    normalized = raw_value.strip().casefold()
+    return normalized in {"1", "true", "sim", "yes", "y", "s"}
+
+
+def parse_score(raw_value: str) -> float:
+    normalized = raw_value.strip().replace(",", ".")
+    if not normalized:
+        return 0.0
+    try:
+        score = float(normalized)
+    except ValueError:
+        return 0.0
+    if score < 0:
+        return 0.0
+    if score > 1:
+        return 1.0
+    return score
+
+
 def collect_fallback_assets(
     questions: list[dict[str, object]],
     project_root: Path,
@@ -421,6 +450,76 @@ def read_book_modules(modules_csv: Path) -> list[dict[str, object]]:
     return rows
 
 
+def read_module_question_matches(matches_csv: Path) -> list[dict[str, object]]:
+    if not matches_csv.exists():
+        print(f"[warn] sem intercorrelação no bundle: {matches_csv}")
+        return []
+
+    rows: list[dict[str, object]] = []
+    seen: set[tuple[object, ...]] = set()
+    with matches_csv.open("r", encoding="utf-8", newline="") as file_obj:
+        reader = csv.DictReader(file_obj)
+        for row in reader:
+            try:
+                year = int(str(row.get("ano", "0") or "0"))
+                day = int(str(row.get("dia", "0") or "0"))
+                number = int(str(row.get("numero", "0") or "0"))
+                variation = int(str(row.get("variacao", "1") or "1"))
+                volume = int(str(row.get("volume", "0") or "0"))
+                modulo = int(str(row.get("modulo", "0") or "0"))
+            except ValueError:
+                continue
+
+            if year <= 0 or day <= 0 or number <= 0 or volume <= 0 or modulo <= 0:
+                continue
+
+            question_id = f"{year}_{day}_{number}_{variation}"
+            score_match = parse_score((row.get("score_match") or "").strip())
+            assunto_match = (row.get("assuntos_match") or "").strip()
+            tipo_match = (row.get("tipo_match") or "").strip()
+            materia = (row.get("materia") or "").strip()
+
+            dedupe_key = (
+                question_id,
+                materia.casefold(),
+                volume,
+                modulo,
+                assunto_match.casefold(),
+                tipo_match.casefold(),
+                score_match,
+            )
+            if dedupe_key in seen:
+                continue
+            seen.add(dedupe_key)
+
+            rows.append(
+                {
+                    "question_id": question_id,
+                    "year": year,
+                    "day": day,
+                    "number": number,
+                    "variation": variation,
+                    "area": (row.get("area") or "").strip(),
+                    "discipline": (row.get("disciplina") or "").strip(),
+                    "materia": materia,
+                    "volume": volume,
+                    "modulo": modulo,
+                    "competencias": (row.get("competencias") or "").strip(),
+                    "habilidades": (row.get("habilidades") or "").strip(),
+                    "assuntos_match": assunto_match,
+                    "score_match": score_match,
+                    "tipo_match": tipo_match,
+                    "confianca": (row.get("confianca") or "").strip(),
+                    "revisado_manual": parse_bool_flag(
+                        (row.get("revisado_manual") or "").strip()
+                    ),
+                    "source": str(matches_csv),
+                }
+            )
+
+    return rows
+
+
 def sha256_file(path: Path) -> str:
     hasher = hashlib.sha256()
     with path.open("rb") as file_obj:
@@ -452,6 +551,9 @@ def main() -> int:
     book_modules = read_book_modules(modules_csv=args.modules_csv)
     if not book_modules:
         print(f"[warn] sem módulos/livros no bundle: {args.modules_csv}")
+    module_question_matches = read_module_question_matches(
+        matches_csv=args.module_question_matches_csv
+    )
 
     out_root = args.out_dir / version
     out_root.mkdir(parents=True, exist_ok=True)
@@ -462,9 +564,11 @@ def main() -> int:
         "generated_at": generated_at,
         "question_count": len(questions),
         "book_module_count": len(book_modules),
+        "module_question_match_count": len(module_question_matches),
         "fallback_asset_count": len(fallback_assets),
         "questions": questions,
         "book_modules": book_modules,
+        "module_question_matches": module_question_matches,
     }
 
     with tempfile.TemporaryDirectory(prefix="enem_bundle_") as temp_dir:
@@ -496,6 +600,7 @@ def main() -> int:
         "download_url": join_url(args.base_url, archive_name),
         "question_count": len(questions),
         "book_module_count": len(book_modules),
+        "module_question_match_count": len(module_question_matches),
         "fallback_asset_count": len(fallback_assets),
     }
 
@@ -512,6 +617,7 @@ def main() -> int:
     print(f"[ok] versão: {version}")
     print(f"[ok] questões: {len(questions)}")
     print(f"[ok] módulos/livro: {len(book_modules)}")
+    print(f"[ok] vínculos módulo-questão: {len(module_question_matches)}")
     print(f"[ok] assets fallback: {len(fallback_assets)}")
     print(f"[ok] zip: {archive_path}")
     print(f"[ok] manifest: {manifest_path}")

@@ -8,6 +8,7 @@ class ContentManifest {
     required this.generatedAt,
     required this.questionCount,
     required this.bookModuleCount,
+    required this.moduleQuestionMatchCount,
     this.downloadUrl,
   });
 
@@ -19,6 +20,7 @@ class ContentManifest {
   final String generatedAt;
   final int questionCount;
   final int bookModuleCount;
+  final int moduleQuestionMatchCount;
   final String? downloadUrl;
 
   factory ContentManifest.fromJson(Map<String, dynamic> json) {
@@ -32,6 +34,8 @@ class ContentManifest {
       generatedAt: (json['generated_at'] ?? '').toString(),
       questionCount: int.tryParse('${json['question_count']}') ?? 0,
       bookModuleCount: int.tryParse('${json['book_module_count']}') ?? 0,
+      moduleQuestionMatchCount:
+          int.tryParse('${json['module_question_match_count']}') ?? 0,
       downloadUrl: (json['download_url'] ?? '').toString().isEmpty
           ? null
           : (json['download_url'] ?? '').toString(),

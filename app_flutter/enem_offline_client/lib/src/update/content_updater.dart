@@ -52,7 +52,7 @@ class ContentUpdater {
       updated: true,
       currentVersion: manifest.version,
       message:
-          'Update aplicado (${manifest.version}) | questões: ${manifest.questionCount} | módulos: ${manifest.bookModuleCount}.',
+          'Update aplicado (${manifest.version}) | questões: ${manifest.questionCount} | módulos: ${manifest.bookModuleCount} | vínculos: ${manifest.moduleQuestionMatchCount}.',
     );
   }
 
@@ -105,7 +105,8 @@ class ContentUpdater {
     }
   }
 
-  Map<String, dynamic> _extractBundleFromZip(Uint8List zipBytes, String expectedFile) {
+  Map<String, dynamic> _extractBundleFromZip(
+      Uint8List zipBytes, String expectedFile) {
     final archive = ZipDecoder().decodeBytes(zipBytes, verify: true);
 
     ArchiveFile? bundleFile;

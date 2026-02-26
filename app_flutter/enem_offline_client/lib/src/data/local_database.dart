@@ -45,6 +45,62 @@ class ModuleSuggestion {
   final String matchedSkill;
 }
 
+class ModuleQuestionMatch {
+  const ModuleQuestionMatch({
+    required this.questionId,
+    required this.year,
+    required this.day,
+    required this.number,
+    required this.variation,
+    required this.area,
+    required this.discipline,
+    required this.materia,
+    required this.volume,
+    required this.modulo,
+    required this.competencias,
+    required this.habilidades,
+    required this.assuntosMatch,
+    required this.scoreMatch,
+    required this.tipoMatch,
+    required this.confianca,
+    required this.revisadoManual,
+  });
+
+  final String questionId;
+  final int year;
+  final int day;
+  final int number;
+  final int variation;
+  final String area;
+  final String discipline;
+  final String materia;
+  final int volume;
+  final int modulo;
+  final String competencias;
+  final String habilidades;
+  final String assuntosMatch;
+  final double scoreMatch;
+  final String tipoMatch;
+  final String confianca;
+  final bool revisadoManual;
+}
+
+class ModuleQuestionMatchFilter {
+  const ModuleQuestionMatchFilter({
+    this.materia = '',
+    this.assunto = '',
+    this.tipoMatch = '',
+    this.minScore = 0,
+    this.limit = 20,
+  });
+
+  final String materia;
+  final String assunto;
+  final String tipoMatch;
+  final double minScore;
+  final int limit;
+}
+
 class LocalDatabase {
   LocalDatabase();
 
@@ -57,9 +113,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 5,
+      version: 6,
       onCreate: (db, _) async {
-        await _createSchemaV5(db);
+        await _createSchemaV6(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -70,6 +126,9 @@ class LocalDatabase {
         }
         if (oldVersion < 5) {
           await _ensureQuestionsSchemaV5(db);
+        }
+        if (oldVersion < 6) {
+          await _createModuleQuestionMatchesTable(db);
         }
       },
     );
@@ -199,6 +258,11 @@ class LocalDatabase {
     }
   }
 
+  Future<void> _createSchemaV6(Database db) async {
+    await _createSchemaV5(db);
+    await _createModuleQuestionMatchesTable(db);
+  }
+
   Future<void> _createSchemaV5(Database db) async {
     await db.execute('''
       CREATE TABLE app_meta (
@@ -261,6 +325,45 @@ class LocalDatabase {
         description TEXT,
         source TEXT
       )
+    ''');
+  }
+
+  Future<void> _createModuleQuestionMatchesTable(DatabaseExecutor db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS module_question_matches (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        question_id TEXT NOT NULL,
+        year INTEGER NOT NULL,
+        day INTEGER NOT NULL,
+        number INTEGER NOT NULL,
+        variation INTEGER NOT NULL,
+        area TEXT,
+        discipline TEXT,
+        materia TEXT,
+        volume INTEGER,
+        modulo INTEGER,
+        competencias TEXT,
+        habilidades TEXT,
+        assuntos_match TEXT,
+        score_match REAL,
+        tipo_match TEXT,
+        confianca TEXT,
+        revisado_manual INTEGER NOT NULL DEFAULT 0,
+        source TEXT
+      )
+    ''');
+
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_module_question_matches_question
+      ON module_question_matches (question_id)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_module_question_matches_module
+      ON module_question_matches (materia, volume, modulo)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_module_question_matches_score
+      ON module_question_matches (tipo_match, score_match DESC)
     ''');
   }
 
@@ -328,6 +431,26 @@ class LocalDatabase {
     return int.tryParse('${value ?? ''}') ?? 0;
   }
 
+  double _toDouble(Object? value) {
+    if (value is double) {
+      return value;
+    }
+    if (value is num) {
+      return value.toDouble();
+    }
+    final normalized = '${value ?? ''}'.trim().replaceAll(',', '.');
+    return double.tryParse(normalized) ?? 0;
+  }
+
+  bool _toBool(Object? value) {
+    final normalized = '${value ?? ''}'.trim().toLowerCase();
+    return normalized == '1' ||
+        normalized == 'true' ||
+        normalized == 'sim' ||
+        normalized == 'yes' ||
+        normalized == 'y';
+  }
+
   String _normalizeSkillToken(String rawValue) {
     final token = rawValue.trim().toUpperCase().replaceAll(' ', '');
     if (token.isEmpty) {
@@ -341,7 +464,7 @@ class LocalDatabase {
       return 'H${int.parse(token.substring(1))}';
     }
 
-    final marker = '-H';
+    const marker = '-H';
     if (token.contains(marker)) {
       final tail = token.split(marker).last;
       final digits = tail.replaceAll(RegExp(r'[^0-9]'), '');
@@ -484,9 +607,8 @@ class LocalDatabase {
           .replaceAll('\r', '\n')
           .replaceAll(';', '\n');
       for (final chunk in unified.split('\n')) {
-        final cleaned = chunk
-            .replaceFirst(RegExp(r'^\s*(?:[-*•]+|\d+[.)])\s*'), '')
-            .trim();
+        final cleaned =
+            chunk.replaceFirst(RegExp(r'^\s*(?:[-*•]+|\d+[.)])\s*'), '').trim();
         if (cleaned.isEmpty) {
           continue;
         }
@@ -565,6 +687,13 @@ class LocalDatabase {
     return Sqflite.firstIntValue(result) ?? 0;
   }
 
+  Future<int> countModuleQuestionMatches(Database db) async {
+    final result = await db.rawQuery(
+      'SELECT COUNT(*) AS c FROM module_question_matches',
+    );
+    return Sqflite.firstIntValue(result) ?? 0;
+  }
+
   Future<int> countAttempts(Database db) async {
     final result = await db.rawQuery('SELECT COUNT(*) AS c FROM progress');
     return Sqflite.firstIntValue(result) ?? 0;
@@ -613,6 +742,7 @@ class LocalDatabase {
   Future<void> upsertBundle(Database db, Map<String, dynamic> bundle) async {
     await upsertQuestionsFromBundle(db, bundle);
     await upsertBookModulesFromBundle(db, bundle);
+    await upsertModuleQuestionMatchesFromBundle(db, bundle);
   }
 
   Future<void> upsertQuestionsFromBundle(
@@ -731,6 +861,56 @@ class LocalDatabase {
             'source': (item['source'] ?? '').toString(),
           },
           conflictAlgorithm: ConflictAlgorithm.replace,
+        );
+      }
+    });
+  }
+
+  Future<void> upsertModuleQuestionMatchesFromBundle(
+    Database db,
+    Map<String, dynamic> bundle,
+  ) async {
+    final rawMatches =
+        (bundle['module_question_matches'] as List<dynamic>? ?? const []);
+
+    await db.transaction((txn) async {
+      await txn.delete('module_question_matches');
+      for (final item in rawMatches) {
+        if (item is! Map<String, dynamic>) {
+          continue;
+        }
+
+        final questionId = (item['question_id'] ?? '').toString().trim();
+        final year = int.tryParse('${item['year']}') ?? 0;
+        final day = int.tryParse('${item['day']}') ?? 0;
+        final number = int.tryParse('${item['number']}') ?? 0;
+        final variation = int.tryParse('${item['variation']}') ?? 1;
+        if (questionId.isEmpty || year <= 0 || day <= 0 || number <= 0) {
+          continue;
+        }
+
+        await txn.insert(
+          'module_question_matches',
+          {
+            'question_id': questionId,
+            'year': year,
+            'day': day,
+            'number': number,
+            'variation': variation,
+            'area': (item['area'] ?? '').toString(),
+            'discipline': (item['discipline'] ?? '').toString(),
+            'materia': (item['materia'] ?? '').toString(),
+            'volume': int.tryParse('${item['volume']}') ?? 0,
+            'modulo': int.tryParse('${item['modulo']}') ?? 0,
+            'competencias': (item['competencias'] ?? '').toString(),
+            'habilidades': (item['habilidades'] ?? '').toString(),
+            'assuntos_match': (item['assuntos_match'] ?? '').toString(),
+            'score_match': _toDouble(item['score_match']),
+            'tipo_match': (item['tipo_match'] ?? '').toString(),
+            'confianca': (item['confianca'] ?? '').toString(),
+            'revisado_manual': _toBool(item['revisado_manual']) ? 1 : 0,
+            'source': (item['source'] ?? '').toString(),
+          },
         );
       }
     });
@@ -858,6 +1038,95 @@ class LocalDatabase {
     return suggestions;
   }
 
+  Future<List<ModuleQuestionMatch>> searchModuleQuestionMatches(
+    Database db, {
+    required ModuleQuestionMatchFilter filter,
+  }) async {
+    final whereClauses = <String>[];
+    final args = <Object>[];
+
+    final materia = filter.materia.trim();
+    if (materia.isNotEmpty) {
+      whereClauses.add('LOWER(m.materia) = LOWER(?)');
+      args.add(materia);
+    }
+
+    final assunto = filter.assunto.trim().toLowerCase();
+    if (assunto.isNotEmpty) {
+      whereClauses.add('LOWER(m.assuntos_match) LIKE ?');
+      args.add('%$assunto%');
+    }
+
+    final tipoMatch = filter.tipoMatch.trim();
+    if (tipoMatch.isNotEmpty) {
+      whereClauses.add('LOWER(m.tipo_match) = LOWER(?)');
+      args.add(tipoMatch);
+    }
+
+    if (filter.minScore > 0) {
+      whereClauses.add('m.score_match >= ?');
+      args.add(filter.minScore);
+    }
+
+    final sqlBuffer = StringBuffer()
+      ..writeln('SELECT')
+      ..writeln('  m.question_id AS question_id,')
+      ..writeln('  COALESCE(q.year, m.year) AS year,')
+      ..writeln('  COALESCE(q.day, m.day) AS day,')
+      ..writeln('  COALESCE(q.number, m.number) AS number,')
+      ..writeln('  m.variation AS variation,')
+      ..writeln("  COALESCE(q.area, m.area, '') AS area,")
+      ..writeln("  COALESCE(q.discipline, m.discipline, '') AS discipline,")
+      ..writeln("  COALESCE(m.materia, '') AS materia,")
+      ..writeln('  COALESCE(m.volume, 0) AS volume,')
+      ..writeln('  COALESCE(m.modulo, 0) AS modulo,')
+      ..writeln("  COALESCE(m.competencias, '') AS competencias,")
+      ..writeln("  COALESCE(m.habilidades, '') AS habilidades,")
+      ..writeln("  COALESCE(m.assuntos_match, '') AS assuntos_match,")
+      ..writeln('  COALESCE(m.score_match, 0) AS score_match,')
+      ..writeln("  COALESCE(m.tipo_match, '') AS tipo_match,")
+      ..writeln("  COALESCE(m.confianca, '') AS confianca,")
+      ..writeln('  COALESCE(m.revisado_manual, 0) AS revisado_manual')
+      ..writeln('FROM module_question_matches m')
+      ..writeln('LEFT JOIN questions q ON q.id = m.question_id');
+
+    if (whereClauses.isNotEmpty) {
+      sqlBuffer.writeln('WHERE ${whereClauses.join(' AND ')}');
+    }
+
+    sqlBuffer.writeln(
+      'ORDER BY m.score_match DESC, m.year DESC, m.day DESC, m.number ASC',
+    );
+    sqlBuffer.writeln('LIMIT ?');
+    args.add(filter.limit <= 0 ? 20 : filter.limit);
+
+    final rows = await db.rawQuery(sqlBuffer.toString(), args);
+    return rows
+        .map(
+          (row) => ModuleQuestionMatch(
+            questionId: (row['question_id'] ?? '').toString(),
+            year: _toInt(row['year']),
+            day: _toInt(row['day']),
+            number: _toInt(row['number']),
+            variation: _toInt(row['variation']),
+            area: (row['area'] ?? '').toString(),
+            discipline: (row['discipline'] ?? '').toString(),
+            materia: (row['materia'] ?? '').toString(),
+            volume: _toInt(row['volume']),
+            modulo: _toInt(row['modulo']),
+            competencias: (row['competencias'] ?? '').toString(),
+            habilidades: (row['habilidades'] ?? '').toString(),
+            assuntosMatch: (row['assuntos_match'] ?? '').toString(),
+            scoreMatch: _toDouble(row['score_match']),
+            tipoMatch: (row['tipo_match'] ?? '').toString(),
+            confianca: (row['confianca'] ?? '').toString(),
+            revisadoManual: _toBool(row['revisado_manual']),
+          ),
+        )
+        .where((item) => item.questionId.isNotEmpty)
+        .toList();
+  }
+
   Future<void> seedLocalDemoIfEmpty(Database db) async {
     if (await countQuestions(db) == 0) {
       const demoBundle = {
@@ -933,7 +1202,49 @@ class LocalDatabase {
                 'Resolver situações-problema com proporcionalidade direta e inversa.',
             'source': 'demo_local'
           },
-        ]
+        ],
+        'module_question_matches': [
+          {
+            'question_id': 'demo_2025_1_001',
+            'year': 2025,
+            'day': 1,
+            'number': 1,
+            'variation': 1,
+            'area': 'Linguagens',
+            'discipline': 'Língua Portuguesa',
+            'materia': 'Língua Portuguesa',
+            'volume': 1,
+            'modulo': 1,
+            'competencias': 'C8',
+            'habilidades': 'H18',
+            'assuntos_match': 'coesao; coerencia',
+            'score_match': 0.82,
+            'tipo_match': 'direto',
+            'confianca': 'alta',
+            'revisado_manual': true,
+            'source': 'demo_local'
+          },
+          {
+            'question_id': 'demo_2025_2_120',
+            'year': 2025,
+            'day': 2,
+            'number': 120,
+            'variation': 1,
+            'area': 'Matemática',
+            'discipline': 'Matemática',
+            'materia': 'Matemática 1',
+            'volume': 1,
+            'modulo': 2,
+            'competencias': 'C4',
+            'habilidades': 'H16',
+            'assuntos_match': 'razao; proporcao',
+            'score_match': 0.79,
+            'tipo_match': 'direto',
+            'confianca': 'alta',
+            'revisado_manual': true,
+            'source': 'demo_local'
+          },
+        ],
       };
 
       await upsertBundle(db, demoBundle);
