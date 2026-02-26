@@ -94,6 +94,7 @@ python3 scripts/editor_indice_livros_csv.py --csv plano/indice_livros_6_volumes.
 No app:
 - navegue em ordem (`Primeiro`, `Anterior`, `Próximo`, `Último`);
 - preencha `Título`, `Página`, `Habilidades` e `Expectativas de Aprendizagem`;
+- em Linguagens, o índice contempla `Língua Portuguesa`, `Literatura`, `Redação` e `Inglês` (5 módulos por volume);
 - em `Habilidades`, pode usar vírgula ou `;` (o app salva em formato normalizado, ex.: `c2; c6; c2-h19`);
 - em `Expectativas de Aprendizagem`, liste 2-4 itens curtos (uma por linha ou separados por `;`);
 - use `Salvar arquivo` para gravar no CSV.
