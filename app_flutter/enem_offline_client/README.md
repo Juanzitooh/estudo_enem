@@ -54,5 +54,6 @@ O app mostra:
 - sugestão de módulos do livro para revisar (incluindo módulos marcados por competência).
 - filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).
 - prompt builder de redação para IA externa (gerar tema e prompt de correção com cópia rápida).
+- prompt automático de reescrita pós-correção (baseado no feedback da IA e no texto do aluno).
 - salvamento local de sessões de redação (`essay_sessions`) com notas C1..C5/final e alerta de `[ILEGÍVEL]`.
 - ranking de redação por faixa de nota (Base/Bronze/Prata/Ouro/Elite) e visão de evolução local.

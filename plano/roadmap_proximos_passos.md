@@ -31,6 +31,7 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Implementar fluxo de cópia de prompt no app (sem chamada HTTP): gerar tema e corrigir redação.
 - [x] Criar prompt de geração de tema ENEM com bloqueio de repetição de temas oficiais.
 - [x] Criar prompt de correção ENEM com saída estruturada por competência.
+- [x] Incluir prompt automático de reescrita pós-correção mantendo estrutura original do aluno.
 - [x] Implementar parser opcional da resposta IA (`modo livre` + `modo validado` por regex).
 - [x] Exibir feedback de legibilidade quando houver muitos marcadores `[ILEGÍVEL]`.
 - [x] Persistir evolução e ranking de redação (faixas de nota e progresso no tempo).

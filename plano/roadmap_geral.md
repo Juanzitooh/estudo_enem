@@ -95,7 +95,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] modo validado (espera estrutura mínima, ex.: `C1: ...` até `C5: ...`).
 - [x] Adicionar modo de legibilidade com alerta quando houver muitos trechos `[ILEGÍVEL]`.
 - [x] Adicionar gamificação de redação por faixas de nota (Bronze/Prata/Ouro/Elite).
-- [ ] Incluir prompt automático de reescrita pós-correção mantendo estrutura original do aluno.
+- [x] Incluir prompt automático de reescrita pós-correção mantendo estrutura original do aluno.
 
 ### Priorização automática por lacuna
 - [ ] Implementar prioridade dinâmica por habilidade com fórmula base: `priority = deficit + recency + (1 - confidence)`.
