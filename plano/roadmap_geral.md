@@ -51,6 +51,15 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Itens bloqueados até catálogo completo dos 6 volumes: validação final de cobertura módulo->habilidade, curadoria final de aulas por módulo e calibração fina das recomendações.
 - [x] Criar marcador de status por tarefa (`independe_catalogo` | `depende_catalogo`) para priorização operacional.
 
+### Pós-catálogo: trilha transversal + atualização editorial (2019 -> 2026)
+- [ ] (depende_catalogo) Classificar todos os módulos por nível pedagógico (`fundacao`, `intermediario`, `aplicado_enem`) e registrar pré-requisitos.
+- [ ] (depende_catalogo) Montar grafo de dependências entre módulos independente de matéria para gerar ordem de estudo transversal.
+- [ ] (depende_catalogo) Publicar sequência recomendada "do básico ao aplicado" com trilhas por perfil e carga horária.
+- [ ] (depende_catalogo) Definir campo de maturidade por módulo (`basico_essencial`, `nucleo_enem`, `aprofundamento`) para evitar pular base necessária.
+- [ ] (depende_catalogo) Rodar revisão de atualidade do acervo 2019 com delta 2020-2026 antes de gerar aulas finais.
+- [ ] (depende_catalogo) Criar checklist de atualização por módulo: dados/contextos recentes, fatos brasileiros, exemplos atuais e fontes.
+- [ ] (depende_catalogo) Adicionar metadados de atualização (`needs_update_2026`, `updated_2026_at`, `updated_2026_by`) e bloquear publicação final sem revisão.
+
 ## Fase 2 — Motor de Prática e Planejamento
 - [ ] Calcular métricas por habilidade: acurácia, volume, tempo médio, reincidência de erro.
 - [ ] Definir algoritmo de priorização por lacuna (sem IA, determinístico).

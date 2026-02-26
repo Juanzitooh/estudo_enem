@@ -52,6 +52,14 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Implementar motor determinístico de planejamento por horas/dias disponíveis e data-alvo.
 - [x] Exibir previsão de estudo para os próximos dias com base no perfil + desempenho atual.
 
+## Bloco 12 — Pós-catálogo (após concluir 100% dos 6 volumes)
+- [ ] Classificar módulos por nível (`fundacao`, `intermediario`, `aplicado_enem`) e pré-requisitos.
+- [ ] Construir ordem transversal de módulos independente de matéria (grafo de progressão).
+- [ ] Publicar trilhas recomendadas por perfil/carga horária com caminho "base -> aplicação".
+- [ ] Rodar revisão de atualização do acervo 2019 para 2026 antes de gerar aulas finais.
+- [ ] Criar checklist editorial por módulo com foco em contexto brasileiro recente e fontes.
+- [ ] Marcar e controlar metadados de atualização (`needs_update_2026`, `updated_2026_at`, `updated_2026_by`).
+
 ## Bloco 4 — Operação semanal (médio prazo)
 - [ ] Integrar banco real ao fluxo de revisão semanal.
 - [ ] Atualizar `plano/tracker.md` com campo de erro por habilidade (`Hxx`).
