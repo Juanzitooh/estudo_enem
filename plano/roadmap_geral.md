@@ -65,8 +65,8 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 ### Fluxo adaptativo de aprofundamento por erros
 - [ ] Implementar simulado diagnóstico por matéria com distribuição 3 fáceis + 3 médias + 3 difíceis.
 - [ ] Exibir resultado do diagnóstico com score por matéria, Top 5 habilidades em déficit e erro dominante.
-- [ ] Criar tela "Habilidades em foco" com domínio (%), causa provável da queda e ações rápidas.
-- [ ] Disponibilizar ações por habilidade: Treinar agora (10 questões), Revisar teoria e Copiar prompt de estudo.
+- [x] Criar tela "Habilidades em foco" com domínio (%), causa provável da queda e ações rápidas.
+- [x] Disponibilizar ações por habilidade: Treinar agora (10 questões), Revisar teoria e Copiar prompt de estudo.
 - [x] Classificar habilidades por faixa de domínio: foco (<55%), manutenção (55% a 75%) e forte (>75%).
 - [x] Montar sessões adaptativas com distribuição 60% foco, 30% manutenção e 10% forte.
 - [x] Recalcular foco automaticamente após cada sessão para substituir habilidades que melhorarem.
@@ -77,10 +77,10 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Armazenar "evidência do erro" via tags/tipo de questão sem expor texto de enunciado.
 
 ### Construtor de prompt para aprofundamento
-- [ ] Implementar `PromptBuilder` offline para gerar prompt copiável (uso externo em ChatGPT/YouTube).
-- [ ] Criar modo de prompt "Aula completa" com explicação, erros comuns, heurística, exemplos e plano de revisão.
-- [ ] Criar modo de prompt "Só vídeos" com palavras-chave e títulos sugeridos (sem inventar links).
-- [ ] Criar modo de prompt "Só treino" com exercícios progressivos sem entregar gabarito de questão real.
+- [x] Implementar `PromptBuilder` offline para gerar prompt copiável (uso externo em ChatGPT/YouTube).
+- [x] Criar modo de prompt "Aula completa" com explicação, erros comuns, heurística, exemplos e plano de revisão.
+- [x] Criar modo de prompt "Só vídeos" com palavras-chave e títulos sugeridos (sem inventar links).
+- [x] Criar modo de prompt "Só treino" com exercícios progressivos sem entregar gabarito de questão real.
 - [ ] Incluir no prompt: `skill_code`, `skill_description`, `area`, `module_title`, métricas e `error_profile`.
 
 ### Indexação de videoaulas YouTube por minutagem (futuro)
