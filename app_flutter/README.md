@@ -101,6 +101,7 @@ O app cria localmente:
 - `questions` (questões para treino)
 - `progress` (histórico de resposta)
 - `book_modules` (módulos do livro com habilidades/competências + expectativas)
+- `module_question_matches` (intercorrelação entre questão e módulo com score)
 
 No desktop usa `sqflite_common_ffi`; no mobile usa `sqflite`.
 
@@ -116,13 +117,14 @@ Fluxo:
 2. App baixa `assets_<version>.zip`.
 3. Valida `SHA256` e tamanho.
 4. Extrai `content_bundle.json`.
-5. Upsert no SQLite local (`questions` + `book_modules`).
+5. Upsert no SQLite local (`questions` + `book_modules` + `module_question_matches`).
 6. Salva `content_version`.
 
 Com isso, o app consegue:
 - detectar habilidades fracas pelo histórico (`progress`);
 - recomendar módulos de livro que tenham as habilidades correspondentes;
 - aceitar módulos marcados por competência (`c2`, `c6`) e expandir para habilidades da matriz por área.
+- filtrar vínculos de intercorrelação por matéria, assunto/tag, tipo e score mínimo.
 
 ### Gerar pacote de conteúdo
 
@@ -130,6 +132,7 @@ Com isso, o app consegue:
 python3 scripts/build_assets_release.py \
   --questions-csv questoes/mapeamento_habilidades/questoes_mapeadas.csv \
   --modules-csv plano/indice_livros_6_volumes.csv \
+  --module-question-matches-csv questoes/mapeamento_habilidades/intercorrelacao/modulo_questao_matches.csv \
   --out-dir app_flutter/releases \
   --version 2026.02.24.1 \
   --base-url https://SEU_HOST/releases/2026.02.24.1

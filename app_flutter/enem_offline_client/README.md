@@ -50,3 +50,4 @@ O app mostra:
 - status do conteúdo local;
 - habilidades com maior erro pelo histórico;
 - sugestão de módulos do livro para revisar (incluindo módulos marcados por competência).
+- filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).

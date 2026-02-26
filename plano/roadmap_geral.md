@@ -36,12 +36,12 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Gerar plano semanal automático com base em disponibilidade de tempo.
 
 ### Intercorrelação Matriz + Livro + Questões
-- [ ] Criar CSV de intercorrelação `modulo_questao_matches.csv` para ligar módulo do livro a questões reais.
-- [ ] Definir esquema do CSV com: `ano`, `dia`, `numero`, `variacao`, `area`, `disciplina`, `materia`, `modulo`, `competencias`, `habilidades`, `assuntos_match`, `score_match`, `tipo_match`, `confianca`, `revisado_manual`.
-- [ ] Criar taxonomia canônica de assuntos (`tags`) com sinônimos para reduzir ruído de keyword.
-- [ ] Implementar matching por múltiplos sinais: keyword, competência/habilidade, disciplina e expectativa de aprendizagem.
-- [ ] Incluir score de interrelação (não binário) para priorizar aprofundamento por aderência.
-- [ ] Registrar vínculos interdisciplinares explícitos (questão conectada a mais de uma matéria/eixo).
+- [x] Criar CSV de intercorrelação `modulo_questao_matches.csv` para ligar módulo do livro a questões reais.
+- [x] Definir esquema do CSV com: `ano`, `dia`, `numero`, `variacao`, `area`, `disciplina`, `materia`, `modulo`, `competencias`, `habilidades`, `assuntos_match`, `score_match`, `tipo_match`, `confianca`, `revisado_manual`.
+- [x] Criar taxonomia canônica de assuntos (`tags`) com sinônimos para reduzir ruído de keyword.
+- [x] Implementar matching por múltiplos sinais: keyword, competência/habilidade, disciplina e expectativa de aprendizagem.
+- [x] Incluir score de interrelação (não binário) para priorizar aprofundamento por aderência.
+- [x] Registrar vínculos interdisciplinares explícitos (questão conectada a mais de uma matéria/eixo).
 - [ ] Mapear pré-requisitos entre módulos para trilha de aprofundamento progressivo.
 - [ ] Versionar o mapeamento para rastrear mudanças de regra ao longo do tempo.
 
