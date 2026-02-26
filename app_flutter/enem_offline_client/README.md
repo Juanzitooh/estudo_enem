@@ -53,6 +53,7 @@ O app mostra:
 - habilidades com maior erro pelo histórico;
 - sugestão de módulos do livro para revisar (incluindo módulos marcados por competência).
 - filtro local de questões em cards (ano, dia, área, disciplina, matéria, competência, habilidade, `tem_imagem` e limite).
+- montador de simulado rápido com base nos filtros atuais (quantidade, minutos por questão e distribuição por área).
 - filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).
 - prompt builder de redação para IA externa (gerar tema e prompt de correção com cópia rápida).
 - prompt automático de reescrita pós-correção (baseado no feedback da IA e no texto do aluno).

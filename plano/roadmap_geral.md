@@ -57,7 +57,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Tela de filtros: ano, dia, área, disciplina/matéria, competência, habilidade e `tem_imagem`.
 - [ ] Incluir filtro de dificuldade quando a classificação de dificuldade estiver estabilizada no banco.
 - [ ] Modo treino: resolver questões por habilidade com correção imediata.
-- [ ] Modo simulado: montar prova com tempo e quantidade configuráveis.
+- [x] Modo simulado: montar prova com tempo e quantidade configuráveis.
 - [ ] Histórico de tentativas com análise por habilidade.
 - [ ] Recomendação de módulos do livro com base nas habilidades de maior erro.
 - [ ] Sugestão automática de próximos blocos de estudo.
