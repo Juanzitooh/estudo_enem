@@ -101,6 +101,82 @@ class ModuleQuestionMatchFilter {
   final int limit;
 }
 
+class QuestionFilter {
+  const QuestionFilter({
+    this.year,
+    this.day,
+    this.area = '',
+    this.discipline = '',
+    this.materia = '',
+    this.competency = '',
+    this.skill = '',
+    this.hasImage,
+    this.limit = 20,
+  });
+
+  final int? year;
+  final int? day;
+  final String area;
+  final String discipline;
+  final String materia;
+  final String competency;
+  final String skill;
+  final bool? hasImage;
+  final int limit;
+}
+
+class QuestionFilterOptions {
+  const QuestionFilterOptions({
+    this.years = const [],
+    this.days = const [],
+    this.areas = const [],
+    this.disciplines = const [],
+    this.materias = const [],
+    this.competencies = const [],
+    this.skills = const [],
+  });
+
+  final List<int> years;
+  final List<int> days;
+  final List<String> areas;
+  final List<String> disciplines;
+  final List<String> materias;
+  final List<String> competencies;
+  final List<String> skills;
+}
+
+class QuestionCardItem {
+  const QuestionCardItem({
+    required this.id,
+    required this.year,
+    required this.day,
+    required this.number,
+    required this.variation,
+    required this.area,
+    required this.discipline,
+    required this.materia,
+    required this.competency,
+    required this.skill,
+    required this.hasImage,
+    required this.statement,
+    required this.answer,
+  });
+
+  final String id;
+  final int year;
+  final int day;
+  final int number;
+  final int variation;
+  final String area;
+  final String discipline;
+  final String materia;
+  final String competency;
+  final String skill;
+  final bool hasImage;
+  final String statement;
+  final String answer;
+}
+
 class EssaySessionInput {
   const EssaySessionInput({
     required this.themeTitle,
@@ -193,9 +269,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 7,
+      version: 8,
       onCreate: (db, _) async {
-        await _createSchemaV7(db);
+        await _createSchemaV8(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -212,6 +288,9 @@ class LocalDatabase {
         }
         if (oldVersion < 7) {
           await _createEssaySessionsTable(db);
+        }
+        if (oldVersion < 8) {
+          await _ensureQuestionsSchemaV8(db);
         }
       },
     );
@@ -341,6 +420,11 @@ class LocalDatabase {
     }
   }
 
+  Future<void> _createSchemaV8(Database db) async {
+    await _createSchemaV7(db);
+    await _ensureQuestionsSchemaV8(db);
+  }
+
   Future<void> _createSchemaV7(Database db) async {
     await _createSchemaV6(db);
     await _createEssaySessionsTable(db);
@@ -365,9 +449,14 @@ class LocalDatabase {
         year INTEGER NOT NULL,
         day INTEGER NOT NULL,
         number INTEGER NOT NULL,
+        variation INTEGER NOT NULL DEFAULT 1,
         area TEXT NOT NULL,
         discipline TEXT,
+        materia TEXT,
+        competency TEXT,
         skill TEXT,
+        has_image INTEGER NOT NULL DEFAULT 0,
+        text_empty INTEGER NOT NULL DEFAULT 0,
         statement TEXT NOT NULL,
         fallback_images TEXT,
         answer TEXT,
@@ -529,6 +618,56 @@ class LocalDatabase {
     if (!names.contains('fallback_images')) {
       await db.execute('ALTER TABLE questions ADD COLUMN fallback_images TEXT');
     }
+  }
+
+  Future<void> _ensureQuestionsSchemaV8(Database db) async {
+    final columns = await db.rawQuery("PRAGMA table_info('questions')");
+    final names = columns
+        .map((row) => (row['name'] ?? '').toString())
+        .where((name) => name.isNotEmpty)
+        .toSet();
+
+    if (!names.contains('variation')) {
+      await db.execute(
+        'ALTER TABLE questions ADD COLUMN variation INTEGER NOT NULL DEFAULT 1',
+      );
+    }
+    if (!names.contains('materia')) {
+      await db.execute('ALTER TABLE questions ADD COLUMN materia TEXT');
+    }
+    if (!names.contains('competency')) {
+      await db.execute('ALTER TABLE questions ADD COLUMN competency TEXT');
+    }
+    if (!names.contains('has_image')) {
+      await db.execute(
+        'ALTER TABLE questions ADD COLUMN has_image INTEGER NOT NULL DEFAULT 0',
+      );
+    }
+    if (!names.contains('text_empty')) {
+      await db.execute(
+        'ALTER TABLE questions ADD COLUMN text_empty INTEGER NOT NULL DEFAULT 0',
+      );
+    }
+    if (!names.contains('fallback_images')) {
+      await db.execute('ALTER TABLE questions ADD COLUMN fallback_images TEXT');
+    }
+
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_questions_base
+      ON questions (year, day, number, variation)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_questions_area
+      ON questions (area, discipline, materia)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_questions_skill_competency
+      ON questions (skill, competency)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_questions_has_image
+      ON questions (has_image)
+    ''');
   }
 
   void _ensureDesktopDriver() {
@@ -841,6 +980,253 @@ class LocalDatabase {
     return Sqflite.firstIntValue(result) ?? 0;
   }
 
+  Future<QuestionFilterOptions> loadQuestionFilterOptions(Database db) async {
+    final yearRows = await db.rawQuery('''
+      SELECT DISTINCT year AS value
+      FROM questions
+      WHERE year > 0
+      ORDER BY year DESC
+    ''');
+    final dayRows = await db.rawQuery('''
+      SELECT DISTINCT day AS value
+      FROM questions
+      WHERE day > 0
+      ORDER BY day ASC
+    ''');
+    final areaRows = await db.rawQuery('''
+      SELECT DISTINCT TRIM(area) AS value
+      FROM questions
+      WHERE TRIM(COALESCE(area, '')) <> ''
+      ORDER BY value COLLATE NOCASE
+    ''');
+    final disciplineRows = await db.rawQuery('''
+      SELECT DISTINCT TRIM(discipline) AS value
+      FROM questions
+      WHERE TRIM(COALESCE(discipline, '')) <> ''
+      ORDER BY value COLLATE NOCASE
+    ''');
+    final materiaRows = await db.rawQuery('''
+      SELECT value
+      FROM (
+        SELECT DISTINCT TRIM(materia) AS value
+        FROM questions
+        WHERE TRIM(COALESCE(materia, '')) <> ''
+        UNION
+        SELECT DISTINCT TRIM(materia) AS value
+        FROM module_question_matches
+        WHERE TRIM(COALESCE(materia, '')) <> ''
+      )
+      ORDER BY value COLLATE NOCASE
+    ''');
+    final competencyRows = await db.rawQuery('''
+      SELECT DISTINCT TRIM(competency) AS value
+      FROM questions
+      WHERE TRIM(COALESCE(competency, '')) <> ''
+      ORDER BY value COLLATE NOCASE
+    ''');
+    final skillRows = await db.rawQuery('''
+      SELECT DISTINCT TRIM(skill) AS value
+      FROM questions
+      WHERE TRIM(COALESCE(skill, '')) <> ''
+      ORDER BY value COLLATE NOCASE
+    ''');
+
+    List<String> toStringList(List<Map<String, Object?>> rows) {
+      final seen = <String>{};
+      final values = <String>[];
+      for (final row in rows) {
+        final value = (row['value'] ?? '').toString().trim();
+        if (value.isEmpty || !seen.add(value)) {
+          continue;
+        }
+        values.add(value);
+      }
+      return values;
+    }
+
+    List<int> toIntList(List<Map<String, Object?>> rows) {
+      final seen = <int>{};
+      final values = <int>[];
+      for (final row in rows) {
+        final value = _toInt(row['value']);
+        if (value <= 0 || !seen.add(value)) {
+          continue;
+        }
+        values.add(value);
+      }
+      return values;
+    }
+
+    return QuestionFilterOptions(
+      years: toIntList(yearRows),
+      days: toIntList(dayRows),
+      areas: toStringList(areaRows),
+      disciplines: toStringList(disciplineRows),
+      materias: toStringList(materiaRows),
+      competencies: toStringList(competencyRows),
+      skills: toStringList(skillRows),
+    );
+  }
+
+  Future<List<QuestionCardItem>> searchQuestions(
+    Database db, {
+    required QuestionFilter filter,
+  }) async {
+    final whereClauses = <String>[];
+    final args = <Object>[];
+
+    if (filter.year != null && filter.year! > 0) {
+      whereClauses.add('q.year = ?');
+      args.add(filter.year!);
+    }
+    if (filter.day != null && filter.day! > 0) {
+      whereClauses.add('q.day = ?');
+      args.add(filter.day!);
+    }
+
+    final area = filter.area.trim();
+    if (area.isNotEmpty) {
+      whereClauses.add('LOWER(COALESCE(q.area, \'\')) = LOWER(?)');
+      args.add(area);
+    }
+
+    final discipline = filter.discipline.trim();
+    if (discipline.isNotEmpty) {
+      whereClauses.add('LOWER(COALESCE(q.discipline, \'\')) = LOWER(?)');
+      args.add(discipline);
+    }
+
+    final materia = filter.materia.trim();
+    if (materia.isNotEmpty) {
+      whereClauses.add('''
+        (
+          LOWER(COALESCE(q.materia, q.discipline, '')) = LOWER(?)
+          OR EXISTS (
+            SELECT 1
+            FROM module_question_matches mm
+            WHERE mm.question_id = q.id
+              AND LOWER(COALESCE(mm.materia, '')) = LOWER(?)
+          )
+        )
+      ''');
+      args.add(materia);
+      args.add(materia);
+    }
+
+    final competency = _normalizeCompetencyToken(filter.competency);
+    if (competency.isNotEmpty) {
+      whereClauses.add('''
+        (
+          LOWER(COALESCE(q.competency, '')) = LOWER(?)
+          OR EXISTS (
+            SELECT 1
+            FROM module_question_matches mm
+            WHERE mm.question_id = q.id
+              AND LOWER(COALESCE(mm.competencias, '')) LIKE ?
+          )
+        )
+      ''');
+      args.add(competency);
+      args.add('%${competency.toLowerCase()}%');
+    }
+
+    final skill = _normalizeSkillToken(filter.skill);
+    if (skill.isNotEmpty) {
+      whereClauses.add('''
+        (
+          LOWER(COALESCE(q.skill, '')) = LOWER(?)
+          OR EXISTS (
+            SELECT 1
+            FROM module_question_matches mm
+            WHERE mm.question_id = q.id
+              AND LOWER(COALESCE(mm.habilidades, '')) LIKE ?
+          )
+        )
+      ''');
+      args.add(skill);
+      args.add('%${skill.toLowerCase()}%');
+    }
+
+    if (filter.hasImage != null) {
+      if (filter.hasImage == true) {
+        whereClauses.add(
+            '(COALESCE(q.has_image, 0) = 1 OR COALESCE(q.fallback_images, \'\') <> \'\')');
+      } else {
+        whereClauses.add(
+            '(COALESCE(q.has_image, 0) = 0 AND COALESCE(q.fallback_images, \'\') = \'\')');
+      }
+    }
+
+    final sqlBuffer = StringBuffer()
+      ..writeln('SELECT')
+      ..writeln('  q.id AS id,')
+      ..writeln('  q.year AS year,')
+      ..writeln('  q.day AS day,')
+      ..writeln('  q.number AS number,')
+      ..writeln('  COALESCE(q.variation, 1) AS variation,')
+      ..writeln("  COALESCE(q.area, '') AS area,")
+      ..writeln("  COALESCE(q.discipline, '') AS discipline,")
+      ..writeln(
+        "  COALESCE(NULLIF(q.materia, ''), NULLIF(mq.materias, ''), COALESCE(q.discipline, '')) AS materia,",
+      )
+      ..writeln("  COALESCE(q.competency, '') AS competency,")
+      ..writeln("  COALESCE(q.skill, '') AS skill,")
+      ..writeln(
+        "  CASE WHEN COALESCE(q.has_image, 0) = 1 OR COALESCE(q.fallback_images, '') <> '' THEN 1 ELSE 0 END AS has_image,",
+      )
+      ..writeln("  COALESCE(q.statement, '') AS statement,")
+      ..writeln("  COALESCE(q.answer, '') AS answer")
+      ..writeln('FROM questions q')
+      ..writeln('LEFT JOIN (')
+      ..writeln('  SELECT')
+      ..writeln('    question_id,')
+      ..writeln('    GROUP_CONCAT(DISTINCT TRIM(materia)) AS materias')
+      ..writeln('  FROM module_question_matches')
+      ..writeln("  WHERE TRIM(COALESCE(materia, '')) <> ''")
+      ..writeln('  GROUP BY question_id')
+      ..writeln(') mq ON mq.question_id = q.id');
+
+    if (whereClauses.isNotEmpty) {
+      sqlBuffer.writeln('WHERE ${whereClauses.join(' AND ')}');
+    }
+
+    sqlBuffer
+        .writeln('ORDER BY q.year DESC, q.day ASC, q.number ASC, q.id ASC');
+    sqlBuffer.writeln('LIMIT ?');
+
+    final safeLimit = filter.limit <= 0 ? 20 : filter.limit.clamp(1, 200);
+    args.add(safeLimit);
+
+    final rows = await db.rawQuery(sqlBuffer.toString(), args);
+    return rows
+        .map(
+          (row) => QuestionCardItem(
+            id: (row['id'] ?? '').toString(),
+            year: _toInt(row['year']),
+            day: _toInt(row['day']),
+            number: _toInt(row['number']),
+            variation:
+                _toInt(row['variation']) <= 0 ? 1 : _toInt(row['variation']),
+            area: (row['area'] ?? '').toString(),
+            discipline: (row['discipline'] ?? '').toString(),
+            materia: (row['materia'] ?? '').toString(),
+            competency: (row['competency'] ?? '').toString(),
+            skill: (row['skill'] ?? '').toString(),
+            hasImage: _toBool(row['has_image']),
+            statement: (row['statement'] ?? '').toString(),
+            answer: (row['answer'] ?? '').toString(),
+          ),
+        )
+        .where(
+          (item) =>
+              item.id.isNotEmpty &&
+              item.year > 0 &&
+              item.day > 0 &&
+              item.number > 0,
+        )
+        .toList();
+  }
+
   Future<void> insertEssaySession(
     Database db, {
     required EssaySessionInput input,
@@ -1012,16 +1398,33 @@ class LocalDatabase {
         }
 
         final questionId = (item['id'] ?? '').toString().trim();
+        final rawSkill = (item['skill'] ?? '').toString();
+        final normalizedSkill = _normalizeSkillToken(rawSkill);
+        var normalizedCompetency = _normalizeCompetencyToken(
+          (item['competency'] ?? item['competencia'] ?? '').toString(),
+        );
+        if (normalizedCompetency.isEmpty) {
+          normalizedCompetency = _normalizeCompetencyToken(rawSkill);
+        }
+        final normalizedDiscipline =
+            (item['discipline'] ?? '').toString().trim();
+        final normalizedMateria =
+            (item['materia'] ?? normalizedDiscipline).toString().trim();
         final fallbackImagePaths = _extractFallbackImagePaths(
           item['fallback_image_paths'],
         );
         var statement = (item['statement'] ?? '').toString().trim();
+        var textEmpty = _toBool(item['text_empty']);
         if (statement.isEmpty && fallbackImagePaths.isNotEmpty) {
           statement = 'Texto OCR indisponível (usar imagem fallback).';
+          textEmpty = true;
         }
         if (questionId.isEmpty || statement.isEmpty) {
           continue;
         }
+
+        final hasImage =
+            _toBool(item['has_image']) || fallbackImagePaths.isNotEmpty;
 
         await txn.insert(
           'questions',
@@ -1030,9 +1433,14 @@ class LocalDatabase {
             'year': int.tryParse('${item['year']}') ?? 0,
             'day': int.tryParse('${item['day']}') ?? 0,
             'number': int.tryParse('${item['number']}') ?? 0,
+            'variation': int.tryParse('${item['variation']}') ?? 1,
             'area': (item['area'] ?? '').toString(),
-            'discipline': (item['discipline'] ?? '').toString(),
-            'skill': _normalizeSkillToken((item['skill'] ?? '').toString()),
+            'discipline': normalizedDiscipline,
+            'materia': normalizedMateria,
+            'competency': normalizedCompetency,
+            'skill': normalizedSkill,
+            'has_image': hasImage ? 1 : 0,
+            'text_empty': textEmpty ? 1 : 0,
             'statement': statement,
             'fallback_images': _buildFallbackImagesBlob(fallbackImagePaths),
             'answer': (item['answer'] ?? '').toString(),
@@ -1390,9 +1798,14 @@ class LocalDatabase {
             'year': 2025,
             'day': 1,
             'number': 1,
+            'variation': 1,
             'area': 'Linguagens',
             'discipline': 'Língua Portuguesa',
+            'materia': 'Língua Portuguesa',
+            'competency': 'C8',
             'skill': 'H18',
+            'has_image': false,
+            'text_empty': false,
             'statement':
                 'Texto curto de demonstração para validar fluxo offline.',
             'answer': 'B',
@@ -1403,9 +1816,14 @@ class LocalDatabase {
             'year': 2025,
             'day': 2,
             'number': 120,
+            'variation': 1,
             'area': 'Matemática',
             'discipline': 'Matemática',
+            'materia': 'Matemática 1',
+            'competency': 'C4',
             'skill': 'H16',
+            'has_image': false,
+            'text_empty': false,
             'statement': 'Questão de demonstração para treino de matemática.',
             'answer': 'D',
             'source': 'demo_local'

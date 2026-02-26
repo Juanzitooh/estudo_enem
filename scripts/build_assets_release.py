@@ -363,6 +363,13 @@ def read_questions(questions_csv: Path, limit: int = 0) -> list[dict[str, object
             if year <= 0 or day <= 0 or number <= 0:
                 continue
 
+            fallback_image_paths = parse_fallback_image_paths(
+                (row.get("fallback_image_paths") or "").strip()
+            )
+            has_image = parse_bool_flag((row.get("tem_imagem") or "").strip())
+            if fallback_image_paths:
+                has_image = True
+
             question = {
                 "id": f"{year}_{day}_{number}_{variation}",
                 "year": year,
@@ -371,14 +378,18 @@ def read_questions(questions_csv: Path, limit: int = 0) -> list[dict[str, object
                 "variation": variation,
                 "area": (row.get("area") or "").strip(),
                 "discipline": (row.get("disciplina") or "").strip(),
+                "materia": (row.get("materia") or row.get("disciplina") or "").strip(),
                 "theme": (row.get("tema_estimado") or "").strip(),
+                "competency": normalize_competency_token(
+                    (row.get("competencia_estimada") or "").strip()
+                ),
                 "skill": normalize_skill_token((row.get("habilidade_estimada") or "").strip()),
                 "confidence": (row.get("confianca") or "").strip(),
+                "has_image": has_image,
+                "text_empty": parse_bool_flag((row.get("texto_vazio") or "").strip()),
                 "statement": (row.get("preview") or "").strip(),
                 "answer": (row.get("gabarito") or "").strip(),
-                "fallback_image_paths": parse_fallback_image_paths(
-                    (row.get("fallback_image_paths") or "").strip()
-                ),
+                "fallback_image_paths": fallback_image_paths,
                 "source": str(questions_csv),
             }
             if not question["statement"] and question["fallback_image_paths"]:

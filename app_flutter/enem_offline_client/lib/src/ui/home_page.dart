@@ -19,6 +19,9 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _manifestController = TextEditingController(
     text: AppConfig.defaultManifestUrl,
   );
+  final TextEditingController _questionLimitController = TextEditingController(
+    text: '20',
+  );
   final TextEditingController _matchMateriaController = TextEditingController();
   final TextEditingController _matchAssuntoController = TextEditingController();
   final TextEditingController _matchScoreController = TextEditingController(
@@ -43,6 +46,8 @@ class _HomePageState extends State<HomePage> {
   int _attemptCount = 0;
   double _globalAccuracy = 0;
   String _databasePath = '-';
+  QuestionFilterOptions _questionFilterOptions = const QuestionFilterOptions();
+  List<QuestionCardItem> _filteredQuestions = const [];
   List<WeakSkillStat> _weakSkills = const [];
   List<ModuleSuggestion> _moduleSuggestions = const [];
   List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
@@ -52,6 +57,14 @@ class _HomePageState extends State<HomePage> {
     averageScore: 0,
   );
   String _matchTipoSelecionado = '';
+  int? _questionYearSelecionado;
+  int? _questionDaySelecionado;
+  String _questionAreaSelecionada = '';
+  String _questionDisciplineSelecionada = '';
+  String _questionMateriaSelecionada = '';
+  String _questionCompetencySelecionada = '';
+  String _questionSkillSelecionada = '';
+  String _questionHasImageSelecionado = '';
   String _essayThemeSourceSelecionado = 'ia';
   String _essayParserModeSelecionado = EssayParserMode.livre.value;
 
@@ -64,6 +77,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void dispose() {
     _manifestController.dispose();
+    _questionLimitController.dispose();
     _matchMateriaController.dispose();
     _matchAssuntoController.dispose();
     _matchScoreController.dispose();
@@ -77,6 +91,41 @@ class _HomePageState extends State<HomePage> {
 
   String _percent(double value) {
     return (value * 100).toStringAsFixed(1);
+  }
+
+  int _readQuestionLimit() {
+    final parsed = int.tryParse(_questionLimitController.text.trim());
+    if (parsed == null || parsed <= 0) {
+      return 20;
+    }
+    if (parsed > 200) {
+      return 200;
+    }
+    return parsed;
+  }
+
+  bool? _readHasImageFilter() {
+    if (_questionHasImageSelecionado == 'sim') {
+      return true;
+    }
+    if (_questionHasImageSelecionado == 'nao') {
+      return false;
+    }
+    return null;
+  }
+
+  QuestionFilter _buildQuestionFilter() {
+    return QuestionFilter(
+      year: _questionYearSelecionado,
+      day: _questionDaySelecionado,
+      area: _questionAreaSelecionada,
+      discipline: _questionDisciplineSelecionada,
+      materia: _questionMateriaSelecionada,
+      competency: _questionCompetencySelecionada,
+      skill: _questionSkillSelecionada,
+      hasImage: _readHasImageFilter(),
+      limit: _readQuestionLimit(),
+    );
   }
 
   double _readMinScore() {
@@ -113,6 +162,12 @@ class _HomePageState extends State<HomePage> {
     final accuracy = await _localDatabase.globalAccuracy(db);
     final databasePath = await _localDatabase.databasePath();
     final weakSkills = await _localDatabase.loadWeakSkills(db, limit: 5);
+    final questionFilterOptions =
+        await _localDatabase.loadQuestionFilterOptions(db);
+    final filteredQuestions = await _localDatabase.searchQuestions(
+      db,
+      filter: _buildQuestionFilter(),
+    );
     final moduleSuggestions = await _localDatabase.recommendModulesByWeakSkills(
       db,
       weakSkillLimit: 3,
@@ -142,6 +197,8 @@ class _HomePageState extends State<HomePage> {
       _attemptCount = attemptCount;
       _globalAccuracy = accuracy;
       _databasePath = databasePath;
+      _questionFilterOptions = questionFilterOptions;
+      _filteredQuestions = filteredQuestions;
       _weakSkills = weakSkills;
       _moduleSuggestions = moduleSuggestions;
       _moduleQuestionMatches = moduleQuestionMatches;
@@ -293,6 +350,52 @@ class _HomePageState extends State<HomePage> {
         });
       }
     }
+  }
+
+  Future<void> _applyQuestionFilters() async {
+    setState(() {
+      _busy = true;
+      _status = 'Aplicando filtros de questões...';
+    });
+
+    try {
+      await _refreshStats();
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status =
+            'Filtro de questões aplicado. ${_filteredQuestions.length} item(ns) exibido(s).';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao aplicar filtro de questões: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _clearQuestionFilters() async {
+    _questionLimitController.text = '20';
+    setState(() {
+      _questionYearSelecionado = null;
+      _questionDaySelecionado = null;
+      _questionAreaSelecionada = '';
+      _questionDisciplineSelecionada = '';
+      _questionMateriaSelecionada = '';
+      _questionCompetencySelecionada = '';
+      _questionSkillSelecionada = '';
+      _questionHasImageSelecionado = '';
+    });
+    await _applyQuestionFilters();
   }
 
   Future<void> _clearMatchFilters() async {
@@ -545,6 +648,336 @@ class _HomePageState extends State<HomePage> {
                   'Skill ${item.matchedSkill} -> Vol ${item.volume} | ${item.materia} '
                   '| Módulo ${item.modulo} | pág. ${item.page.isEmpty ? '-' : item.page} '
                   '${item.title.isEmpty ? '' : '| ${item.title}'}',
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildQuestionFiltersCard() {
+    final years = <int?>[null, ..._questionFilterOptions.years];
+    final days = <int?>[null, ..._questionFilterOptions.days];
+    final areas = <String>['', ..._questionFilterOptions.areas];
+    final disciplines = <String>['', ..._questionFilterOptions.disciplines];
+    final materias = <String>['', ..._questionFilterOptions.materias];
+    final competencies = <String>['', ..._questionFilterOptions.competencies];
+    final skills = <String>['', ..._questionFilterOptions.skills];
+    const hasImageOptions = ['', 'sim', 'nao'];
+
+    String previewText(String value) {
+      final normalized = value.trim().replaceAll('\n', ' ');
+      if (normalized.length <= 240) {
+        return normalized;
+      }
+      return '${normalized.substring(0, 240)}...';
+    }
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Filtro de questões (cards)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                SizedBox(
+                  width: 180,
+                  child: DropdownButtonFormField<int?>(
+                    key: ValueKey('question_year_$_questionYearSelecionado'),
+                    initialValue: _questionYearSelecionado,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Ano',
+                    ),
+                    items: years
+                        .map(
+                          (value) => DropdownMenuItem<int?>(
+                            value: value,
+                            child: Text(value == null ? 'Todos' : '$value'),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionYearSelecionado = value;
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 140,
+                  child: DropdownButtonFormField<int?>(
+                    key: ValueKey('question_day_$_questionDaySelecionado'),
+                    initialValue: _questionDaySelecionado,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Dia',
+                    ),
+                    items: days
+                        .map(
+                          (value) => DropdownMenuItem<int?>(
+                            value: value,
+                            child: Text(value == null ? 'Todos' : '$value'),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionDaySelecionado = value;
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 280,
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey('question_area_$_questionAreaSelecionada'),
+                    initialValue: _questionAreaSelecionada,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Área',
+                    ),
+                    items: areas
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value.isEmpty ? 'Todas' : value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionAreaSelecionada = value ?? '';
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 280,
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey(
+                      'question_discipline_$_questionDisciplineSelecionada',
+                    ),
+                    initialValue: _questionDisciplineSelecionada,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Disciplina',
+                    ),
+                    items: disciplines
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value.isEmpty ? 'Todas' : value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionDisciplineSelecionada = value ?? '';
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 280,
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey(
+                        'question_materia_$_questionMateriaSelecionada'),
+                    initialValue: _questionMateriaSelecionada,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Matéria',
+                    ),
+                    items: materias
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value.isEmpty ? 'Todas' : value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionMateriaSelecionada = value ?? '';
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 180,
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey(
+                      'question_competency_$_questionCompetencySelecionada',
+                    ),
+                    initialValue: _questionCompetencySelecionada,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Competência',
+                    ),
+                    items: competencies
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value.isEmpty ? 'Todas' : value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionCompetencySelecionada = value ?? '';
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 180,
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey('question_skill_$_questionSkillSelecionada'),
+                    initialValue: _questionSkillSelecionada,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Habilidade',
+                    ),
+                    items: skills
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value.isEmpty ? 'Todas' : value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionSkillSelecionada = value ?? '';
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 170,
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey(
+                      'question_has_image_$_questionHasImageSelecionado',
+                    ),
+                    initialValue: _questionHasImageSelecionado,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Tem imagem',
+                    ),
+                    items: hasImageOptions
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(
+                              value.isEmpty
+                                  ? 'Todos'
+                                  : value == 'sim'
+                                      ? 'Com imagem'
+                                      : 'Sem imagem',
+                            ),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionHasImageSelecionado = value ?? '';
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 140,
+                  child: TextField(
+                    controller: _questionLimitController,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Limite',
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                OutlinedButton(
+                  onPressed: _busy ? null : _applyQuestionFilters,
+                  child: const Text('Aplicar filtro'),
+                ),
+                OutlinedButton(
+                  onPressed: _busy ? null : _clearQuestionFilters,
+                  child: const Text('Limpar filtro'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text('Resultados: ${_filteredQuestions.length}'),
+            const SizedBox(height: 4),
+            if (_filteredQuestions.isEmpty)
+              const Text('Sem questões para os filtros atuais.')
+            else
+              ..._filteredQuestions.map(
+                (item) => Padding(
+                  padding: const EdgeInsets.only(bottom: 10),
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey.shade400),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: const EdgeInsets.all(10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Q ${item.year}/${item.day}/${item.number} '
+                          '${item.variation > 1 ? '(v${item.variation})' : ''}',
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          '${item.area} | ${item.discipline}'
+                          '${item.materia.isEmpty ? '' : ' | ${item.materia}'}',
+                        ),
+                        Text(
+                          'Competência: ${item.competency.isEmpty ? '-' : item.competency} '
+                          '| Habilidade: ${item.skill.isEmpty ? '-' : item.skill} '
+                          '| Imagem: ${item.hasImage ? 'sim' : 'nao'}',
+                        ),
+                        const SizedBox(height: 4),
+                        Text(previewText(item.statement)),
+                        if (item.answer.trim().isNotEmpty)
+                          Text('Gabarito: ${item.answer.trim()}'),
+                      ],
+                    ),
+                  ),
                 ),
               ),
           ],
@@ -914,6 +1347,8 @@ class _HomePageState extends State<HomePage> {
             _buildWeakSkillsCard(),
             const SizedBox(height: 12),
             _buildModuleSuggestionsCard(),
+            const SizedBox(height: 12),
+            _buildQuestionFiltersCard(),
             const SizedBox(height: 12),
             _buildIntercorrelationFiltersCard(),
             const SizedBox(height: 12),
