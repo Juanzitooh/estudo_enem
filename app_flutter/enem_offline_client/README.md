@@ -43,6 +43,8 @@ Observação:
 - `lib/main.dart`: entrada do app.
 - `lib/src/ui/home_page.dart`: interface mínima.
 - `lib/src/data/local_database.dart`: banco SQLite local.
+- `lib/src/essay/essay_prompt_builder.dart`: gera prompts de tema/correção de redação.
+- `lib/src/essay/essay_feedback_parser.dart`: parser de feedback IA (`livre`/`validado`) + legibilidade.
 - `lib/src/update/content_manifest.dart`: modelo de manifest.
 - `lib/src/update/content_updater.dart`: fluxo de update com SHA256.
 
@@ -52,3 +54,4 @@ O app mostra:
 - sugestão de módulos do livro para revisar (incluindo módulos marcados por competência).
 - filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).
 - prompt builder de redação para IA externa (gerar tema e prompt de correção com cópia rápida).
+- salvamento local de sessões de redação (`essay_sessions`) com notas C1..C5/final e alerta de `[ILEGÍVEL]`.

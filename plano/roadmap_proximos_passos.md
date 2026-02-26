@@ -27,12 +27,12 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir rotina de atualização quando novos cadernos forem adicionados ao repositório.
 
 ## Bloco 5 — Redação com IA externa (curto/médio prazo)
-- [ ] Definir schema local `essay_sessions` para histórico de redações (tema, prompts, texto/foto, retorno IA e notas C1..C5).
+- [x] Definir schema local `essay_sessions` para histórico de redações (tema, prompts, texto/foto, retorno IA e notas C1..C5).
 - [x] Implementar fluxo de cópia de prompt no app (sem chamada HTTP): gerar tema e corrigir redação.
 - [x] Criar prompt de geração de tema ENEM com bloqueio de repetição de temas oficiais.
 - [x] Criar prompt de correção ENEM com saída estruturada por competência.
-- [ ] Implementar parser opcional da resposta IA (`modo livre` + `modo validado` por regex).
-- [ ] Exibir feedback de legibilidade quando houver muitos marcadores `[ILEGÍVEL]`.
+- [x] Implementar parser opcional da resposta IA (`modo livre` + `modo validado` por regex).
+- [x] Exibir feedback de legibilidade quando houver muitos marcadores `[ILEGÍVEL]`.
 - [ ] Persistir evolução e ranking de redação (faixas de nota e progresso no tempo).
 
 ## Bloco 6 — Intercorrelação Módulo x Questão (curto/médio prazo)

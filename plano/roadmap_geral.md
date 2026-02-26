@@ -89,11 +89,11 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] `Modo 2` IA assistida externa: gerar prompt no app, copiar/colar na IA externa e registrar resposta no app.
 - [x] Criar `PromptBuilder` de redação para geração de tema inédito no estilo ENEM (evitando repetição 2015–2025).
 - [x] Criar `PromptBuilder` de correção (transcrição, C1..C5, justificativas, melhorias, erros, reescrita e nota 0–1000).
-- [ ] Persistir sessões em tabela local `essay_sessions` com prompts, texto/foto, feedback bruto e notas por competência.
+- [x] Persistir sessões em tabela local `essay_sessions` com prompts, texto/foto, feedback bruto e notas por competência.
 - [ ] Implementar parser opcional da resposta da IA:
-- [ ] modo livre (usuário cola qualquer formato);
-- [ ] modo validado (espera estrutura mínima, ex.: `C1: ...` até `C5: ...`).
-- [ ] Adicionar modo de legibilidade com alerta quando houver muitos trechos `[ILEGÍVEL]`.
+- [x] modo livre (usuário cola qualquer formato);
+- [x] modo validado (espera estrutura mínima, ex.: `C1: ...` até `C5: ...`).
+- [x] Adicionar modo de legibilidade com alerta quando houver muitos trechos `[ILEGÍVEL]`.
 - [ ] Adicionar gamificação de redação por faixas de nota (Bronze/Prata/Ouro/Elite).
 - [ ] Incluir prompt automático de reescrita pós-correção mantendo estrutura original do aluno.
 

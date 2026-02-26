@@ -96,6 +96,7 @@ Arquivos principais:
 - `app_flutter/enem_offline_client/lib/src/data/local_database.dart`
 - `app_flutter/enem_offline_client/lib/src/ui/home_page.dart`
 - `app_flutter/enem_offline_client/lib/src/essay/essay_prompt_builder.dart`
+- `app_flutter/enem_offline_client/lib/src/essay/essay_feedback_parser.dart`
 
 O app cria localmente:
 - `app_meta` (versão de conteúdo)
@@ -103,6 +104,7 @@ O app cria localmente:
 - `progress` (histórico de resposta)
 - `book_modules` (módulos do livro com habilidades/competências + expectativas)
 - `module_question_matches` (intercorrelação entre questão e módulo com score)
+- `essay_sessions` (histórico de redações com parser livre/validado e alerta de legibilidade)
 
 No desktop usa `sqflite_common_ffi`; no mobile usa `sqflite`.
 
