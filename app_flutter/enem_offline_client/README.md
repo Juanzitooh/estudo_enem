@@ -52,6 +52,7 @@ O app mostra:
 - status do conteúdo local;
 - habilidades com maior erro pelo histórico;
 - sugestão de módulos do livro para revisar (incluindo módulos marcados por competência).
+- filtro local de questões em cards (ano, dia, área, disciplina, matéria, competência, habilidade, `tem_imagem` e limite).
 - filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).
 - prompt builder de redação para IA externa (gerar tema e prompt de correção com cópia rápida).
 - prompt automático de reescrita pós-correção (baseado no feedback da IA e no texto do aluno).

@@ -48,7 +48,7 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Validar precisão da flag `tem_imagem` em amostra manual por área.
 - [ ] Adicionar campo `depende_contexto_visual` para priorizar revisão manual de itens com imagem.
 - [ ] Planejar extração de recortes de imagem por questão (`asset_path` + coordenadas).
-- [ ] Integrar filtros no app por `matéria`, `competência`, `habilidade` e `tem_imagem`.
+- [x] Integrar filtros no app por `matéria`, `competência`, `habilidade` e `tem_imagem`.
 
 ## Próxima sessão sugerida
 1. Rodar auditoria amostral das revisões manuais aplicadas em `revisao_manual/overrides.csv`.
