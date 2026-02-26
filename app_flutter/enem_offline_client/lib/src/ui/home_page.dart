@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
+import 'package:archive/archive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:path/path.dart' as path;
@@ -10,6 +11,7 @@ import '../config/app_config.dart';
 import '../data/local_database.dart';
 import '../essay/essay_feedback_parser.dart';
 import '../essay/essay_prompt_builder.dart';
+import '../study/offline_planner.dart';
 import '../study/study_prompt_builder.dart';
 import '../update/content_updater.dart';
 
@@ -118,6 +120,7 @@ class _HomePageState extends State<HomePage> {
   List<EssaySessionRecord> _recentEssaySessions = const [];
   List<StudentProfileRecord> _studentProfiles = const [];
   StudentProfileRecord? _activeStudentProfile;
+  OfflinePlanForecast _offlinePlanForecast = OfflinePlanForecast.empty;
   EssayScoreSummary _essayScoreSummary = const EssayScoreSummary(
     scoredSessionCount: 0,
     averageScore: 0,
@@ -368,7 +371,46 @@ class _HomePageState extends State<HomePage> {
     final dir = path.dirname(dbPath);
     final timestamp = DateTime.now().toIso8601String().replaceAll(':', '-');
     final safeProfileId = profileId.trim().isEmpty ? 'perfil' : profileId;
-    return path.join(dir, 'profile_export_${safeProfileId}_$timestamp.json');
+    return path.join(dir, 'profile_export_${safeProfileId}_$timestamp.zip');
+  }
+
+  OfflinePlanForecast _buildLiveForecast(StudentProfileRecord? profile) {
+    return OfflinePlannerEngine.build(
+      now: DateTime.now(),
+      profile: profile,
+      priorities: _skillPriorities,
+      horizonDays: 7,
+    );
+  }
+
+  OfflinePlanForecast _readSnapshotOrFallback({
+    required StudentProfileRecord? profile,
+    required OfflinePlanForecast fallback,
+  }) {
+    if (profile == null) {
+      return fallback;
+    }
+    final rawSnapshot = profile.plannerSnapshotJson.trim();
+    if (rawSnapshot.isEmpty) {
+      return fallback;
+    }
+    try {
+      final decoded = jsonDecode(rawSnapshot);
+      if (decoded is Map<String, dynamic>) {
+        return OfflinePlanForecast.fromMap(decoded);
+      }
+    } catch (_) {
+      return fallback;
+    }
+    return fallback;
+  }
+
+  String _archiveFileText(ArchiveFile file) {
+    final rawContent = file.content;
+    if (rawContent is List<int>) {
+      return utf8.decode(rawContent);
+    }
+    return rawContent.toString();
   }
 
   Future<void> _refreshStats() async {
@@ -418,6 +460,16 @@ class _HomePageState extends State<HomePage> {
     );
     final essayScoreSummary = await _localDatabase.loadEssayScoreSummary(db);
     final version = await _localDatabase.getContentVersion(db);
+    final livePlanForecast = OfflinePlannerEngine.build(
+      now: DateTime.now(),
+      profile: activeStudentProfile,
+      priorities: skillPriorities,
+      horizonDays: 7,
+    );
+    final planForecast = _readSnapshotOrFallback(
+      profile: activeStudentProfile,
+      fallback: livePlanForecast,
+    );
 
     if (!mounted) {
       return;
@@ -425,6 +477,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _studentProfiles = studentProfiles;
       _activeStudentProfile = activeStudentProfile;
+      _offlinePlanForecast = planForecast;
       _studentProfileCount = studentProfileCount;
       _selectedStudentProfileId = activeStudentProfile.id;
       _questionCount = questionCount;
@@ -498,15 +551,37 @@ class _HomePageState extends State<HomePage> {
     try {
       final db = await _localDatabase.open();
       final selectedId = _selectedStudentProfileId.trim();
+      final targetYear = _readProfileTargetYear();
+      final hoursPerDay = _readProfileHoursPerDay();
+      final studyDaysCsv = _profileStudyDaysController.text.trim();
+      final focusArea = _profileFocusAreaController.text.trim();
+      final examDate = _profileExamDateController.text.trim();
+      final plannerContext = _profilePlannerContextController.text.trim();
+      final snapshotSeedProfile = StudentProfileRecord(
+        id: selectedId.isEmpty ? 'draft_profile' : selectedId,
+        displayName: displayName,
+        targetYear: targetYear,
+        studyDaysCsv: studyDaysCsv,
+        hoursPerDay: hoursPerDay,
+        focusArea: focusArea,
+        examDate: examDate,
+        plannerContext: plannerContext,
+        plannerSnapshotJson: '',
+        isActive: true,
+        createdAt: '',
+        updatedAt: '',
+      );
+      final planSnapshot = _buildLiveForecast(snapshotSeedProfile);
       final input = StudentProfileInput(
         id: selectedId,
         displayName: displayName,
-        targetYear: _readProfileTargetYear(),
-        studyDaysCsv: _profileStudyDaysController.text.trim(),
-        hoursPerDay: _readProfileHoursPerDay(),
-        focusArea: _profileFocusAreaController.text.trim(),
-        examDate: _profileExamDateController.text.trim(),
-        plannerContext: _profilePlannerContextController.text.trim(),
+        targetYear: targetYear,
+        studyDaysCsv: studyDaysCsv,
+        hoursPerDay: hoursPerDay,
+        focusArea: focusArea,
+        examDate: examDate,
+        plannerContext: plannerContext,
+        plannerSnapshotJson: jsonEncode(planSnapshot.toMap()),
       );
       await _localDatabase.upsertStudentProfile(
         db,
@@ -605,18 +680,46 @@ class _HomePageState extends State<HomePage> {
       if (exportPath.isEmpty) {
         exportPath = await _defaultProfileExportPath(active.id);
       }
+      if (!exportPath.toLowerCase().endsWith('.zip')) {
+        exportPath = '$exportPath.zip';
+      }
+
+      final planningPayload = _offlinePlanForecast.toMap();
+      final archive = Archive();
+      archive.addFile(
+        ArchiveFile.string(
+          'profile_export.json',
+          const JsonEncoder.withIndent('  ').convert(payload),
+        ),
+      );
+      archive.addFile(
+        ArchiveFile.string(
+          'planning_profile.json',
+          const JsonEncoder.withIndent('  ').convert(planningPayload),
+        ),
+      );
+
+      final zipBytes = ZipEncoder().encode(archive);
+      if (zipBytes == null) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {
+          _status = 'Falha ao gerar pacote ZIP do perfil.';
+        });
+        return;
+      }
+
       final exportFile = File(exportPath);
       await exportFile.parent.create(recursive: true);
-      await exportFile.writeAsString(
-        const JsonEncoder.withIndent('  ').convert(payload),
-      );
+      await exportFile.writeAsBytes(zipBytes, flush: true);
 
       if (!mounted) {
         return;
       }
       setState(() {
         _profileExportPathController.text = exportPath;
-        _status = 'Perfil exportado em: $exportPath';
+        _status = 'Perfil exportado em pacote ZIP: $exportPath';
       });
     } catch (error) {
       if (!mounted) {
@@ -660,9 +763,63 @@ class _HomePageState extends State<HomePage> {
         return;
       }
 
-      final rawJson = await sourceFile.readAsString();
-      final decoded = jsonDecode(rawJson);
-      if (decoded is! Map<String, dynamic>) {
+      Map<String, dynamic>? profilePayload;
+      Map<String, dynamic>? planningPayload;
+
+      if (importPath.toLowerCase().endsWith('.zip')) {
+        final zipBytes = await sourceFile.readAsBytes();
+        final archive = ZipDecoder().decodeBytes(zipBytes, verify: true);
+        ArchiveFile? profileFile;
+        ArchiveFile? planningFile;
+        for (final file in archive.files) {
+          final name = file.name.toLowerCase();
+          if (name.endsWith('profile_export.json')) {
+            profileFile = file;
+          }
+          if (name.endsWith('planning_profile.json')) {
+            planningFile = file;
+          }
+        }
+        if (profileFile == null) {
+          for (final file in archive.files) {
+            if (file.name.toLowerCase().endsWith('.json')) {
+              profileFile = file;
+              break;
+            }
+          }
+        }
+        if (profileFile == null) {
+          if (!mounted) {
+            return;
+          }
+          setState(() {
+            _status = 'ZIP inválido: profile_export.json não encontrado.';
+          });
+          return;
+        }
+
+        final profileRaw = _archiveFileText(profileFile);
+        final profileDecoded = jsonDecode(profileRaw);
+        if (profileDecoded is Map<String, dynamic>) {
+          profilePayload = profileDecoded;
+        }
+
+        if (planningFile != null) {
+          final planningRaw = _archiveFileText(planningFile);
+          final planningDecoded = jsonDecode(planningRaw);
+          if (planningDecoded is Map<String, dynamic>) {
+            planningPayload = planningDecoded;
+          }
+        }
+      } else {
+        final rawJson = await sourceFile.readAsString();
+        final decoded = jsonDecode(rawJson);
+        if (decoded is Map<String, dynamic>) {
+          profilePayload = decoded;
+        }
+      }
+
+      if (profilePayload == null) {
         if (!mounted) {
           return;
         }
@@ -673,9 +830,23 @@ class _HomePageState extends State<HomePage> {
       }
 
       final db = await _localDatabase.open();
+      if (planningPayload != null) {
+        final currentProfile =
+            (profilePayload['profile'] is Map<String, dynamic>)
+                ? Map<String, dynamic>.from(
+                    profilePayload['profile'] as Map<String, dynamic>,
+                  )
+                : <String, dynamic>{};
+        currentProfile['planner_snapshot_json'] = jsonEncode(planningPayload);
+        profilePayload = {
+          ...profilePayload,
+          'profile': currentProfile,
+        };
+      }
+
       final imported = await _localDatabase.importStudentProfileBundle(
         db,
-        payload: decoded,
+        payload: profilePayload,
         makeActive: true,
       );
       await _refreshStats();
@@ -683,9 +854,15 @@ class _HomePageState extends State<HomePage> {
         return;
       }
       setState(() {
-        _status = imported == null
-            ? 'Importação concluída sem perfil válido.'
-            : 'Perfil importado e ativado: ${imported.displayName}';
+        if (imported.profile == null) {
+          _status = 'Importação concluída sem perfil válido.';
+          return;
+        }
+        final migrationNote = imported.migrated
+            ? ' (migração v${imported.sourceSchemaVersion}->v${imported.targetSchemaVersion})'
+            : '';
+        _status =
+            'Perfil importado e ativado: ${imported.profile!.displayName}$migrationNote';
       });
     } catch (error) {
       if (!mounted) {
@@ -1712,7 +1889,7 @@ class _HomePageState extends State<HomePage> {
               controller: _profileExportPathController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'Caminho de exportação (.json)',
+                labelText: 'Caminho de exportação (.zip)',
               ),
             ),
             const SizedBox(height: 8),
@@ -1720,7 +1897,7 @@ class _HomePageState extends State<HomePage> {
               controller: _profileImportPathController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'Caminho para importar perfil (.json)',
+                labelText: 'Caminho para importar perfil (.zip ou .json)',
               ),
             ),
             const SizedBox(height: 8),
@@ -1728,6 +1905,57 @@ class _HomePageState extends State<HomePage> {
               onPressed: _busy ? null : _importProfileFromFile,
               child: const Text('Importar e ativar perfil'),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildPlannerForecastCard() {
+    final plan = _offlinePlanForecast;
+    final days = plan.days;
+    final riskLabel = plan.riskLabel.trim().toLowerCase();
+    final riskText = riskLabel == 'alto'
+        ? 'Alto'
+        : riskLabel == 'medio'
+            ? 'Médio'
+            : riskLabel == 'baixo'
+                ? 'Baixo'
+                : '-';
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Planejamento inteligente (offline)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Capacidade semanal: ${plan.weeklyCapacityHours.toStringAsFixed(1)}h | '
+              'Carga estimada: ${plan.weeklyRequiredHours.toStringAsFixed(1)}h | '
+              'Risco: $riskText',
+            ),
+            const SizedBox(height: 4),
+            Text(plan.note.isEmpty ? '-' : plan.note),
+            const SizedBox(height: 8),
+            if (days.isEmpty)
+              const Text(
+                'Sem previsão de agenda. Preencha o perfil e salve para gerar.',
+              )
+            else
+              ...days.map(
+                (day) => Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Text(
+                    '${day.dateLabel} | ${day.totalMinutes} min | '
+                    '${day.slots.map((slot) => '${slot.skill} (${slot.minutes}m)').join(' ; ')}',
+                  ),
+                ),
+              ),
           ],
         ),
       ),
@@ -3158,6 +3386,8 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 12),
             _buildStudentProfileCard(),
+            const SizedBox(height: 12),
+            _buildPlannerForecastCard(),
             const SizedBox(height: 16),
             TextField(
               controller: _manifestController,

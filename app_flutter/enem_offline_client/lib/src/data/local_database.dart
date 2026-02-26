@@ -352,6 +352,7 @@ class StudentProfileInput {
     this.focusArea = '',
     this.examDate = '',
     this.plannerContext = '',
+    this.plannerSnapshotJson = '',
   });
 
   final String id;
@@ -362,6 +363,7 @@ class StudentProfileInput {
   final String focusArea;
   final String examDate;
   final String plannerContext;
+  final String plannerSnapshotJson;
 }
 
 class StudentProfileRecord {
@@ -374,6 +376,7 @@ class StudentProfileRecord {
     required this.focusArea,
     required this.examDate,
     required this.plannerContext,
+    required this.plannerSnapshotJson,
     required this.isActive,
     required this.createdAt,
     required this.updatedAt,
@@ -387,6 +390,7 @@ class StudentProfileRecord {
   final String focusArea;
   final String examDate;
   final String plannerContext;
+  final String plannerSnapshotJson;
   final bool isActive;
   final String createdAt;
   final String updatedAt;
@@ -401,6 +405,7 @@ class StudentProfileRecord {
       'focus_area': focusArea,
       'exam_date': examDate,
       'planner_context': plannerContext,
+      'planner_snapshot_json': plannerSnapshotJson,
       'is_active': isActive ? 1 : 0,
       'created_at': createdAt,
       'updated_at': updatedAt,
@@ -408,8 +413,24 @@ class StudentProfileRecord {
   }
 }
 
+class ProfileImportResult {
+  const ProfileImportResult({
+    required this.profile,
+    required this.sourceSchemaVersion,
+    required this.targetSchemaVersion,
+    required this.migrated,
+  });
+
+  final StudentProfileRecord? profile;
+  final int sourceSchemaVersion;
+  final int targetSchemaVersion;
+  final bool migrated;
+}
+
 class LocalDatabase {
   LocalDatabase();
+
+  static const int profileBundleSchemaVersion = 2;
 
   bool _ffiInitialized = false;
   String? _databasePath;
@@ -420,9 +441,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 10,
+      version: 11,
       onCreate: (db, _) async {
-        await _createSchemaV10(db);
+        await _createSchemaV11(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -448,6 +469,9 @@ class LocalDatabase {
         }
         if (oldVersion < 10) {
           await _createStudentProfilesTable(db);
+        }
+        if (oldVersion < 11) {
+          await _ensureStudentProfilesSchemaV11(db);
         }
       },
     );
@@ -575,6 +599,11 @@ class LocalDatabase {
         // Tenta próximo candidato.
       }
     }
+  }
+
+  Future<void> _createSchemaV11(Database db) async {
+    await _createSchemaV10(db);
+    await _ensureStudentProfilesSchemaV11(db);
   }
 
   Future<void> _createSchemaV10(Database db) async {
@@ -757,6 +786,7 @@ class LocalDatabase {
         focus_area TEXT,
         exam_date TEXT,
         planner_context TEXT,
+        planner_snapshot_json TEXT,
         is_active INTEGER NOT NULL DEFAULT 0,
         created_at TEXT NOT NULL,
         updated_at TEXT NOT NULL
@@ -767,6 +797,20 @@ class LocalDatabase {
       CREATE INDEX IF NOT EXISTS idx_student_profiles_active
       ON student_profiles (is_active DESC, updated_at DESC)
     ''');
+  }
+
+  Future<void> _ensureStudentProfilesSchemaV11(Database db) async {
+    final columns = await db.rawQuery("PRAGMA table_info('student_profiles')");
+    final names = columns
+        .map((row) => (row['name'] ?? '').toString())
+        .where((name) => name.isNotEmpty)
+        .toSet();
+
+    if (!names.contains('planner_snapshot_json')) {
+      await db.execute(
+        'ALTER TABLE student_profiles ADD COLUMN planner_snapshot_json TEXT',
+      );
+    }
   }
 
   Future<void> _ensureBookModulesSchemaV4(Database db) async {
@@ -1283,6 +1327,7 @@ class LocalDatabase {
       focusArea: (row['focus_area'] ?? '').toString(),
       examDate: (row['exam_date'] ?? '').toString(),
       plannerContext: (row['planner_context'] ?? '').toString(),
+      plannerSnapshotJson: (row['planner_snapshot_json'] ?? '').toString(),
       isActive: _toBool(row['is_active']),
       createdAt: (row['created_at'] ?? '').toString(),
       updatedAt: (row['updated_at'] ?? '').toString(),
@@ -1381,6 +1426,7 @@ class LocalDatabase {
           'focus_area': input.focusArea.trim(),
           'exam_date': input.examDate.trim(),
           'planner_context': input.plannerContext.trim(),
+          'planner_snapshot_json': input.plannerSnapshotJson.trim(),
           'is_active': makeActive ? 1 : 0,
           'created_at': createdAt,
           'updated_at': now,
@@ -1433,7 +1479,8 @@ class LocalDatabase {
     final contentVersion = await getContentVersion(db);
 
     return {
-      'schema_version': 1,
+      'schema_version': profileBundleSchemaVersion,
+      'bundle_type': 'student_profile',
       'exported_at': DateTime.now().toIso8601String(),
       'profile': profile.toMap(),
       'snapshot': {
@@ -1445,19 +1492,55 @@ class LocalDatabase {
     };
   }
 
-  Future<StudentProfileRecord?> importStudentProfileBundle(
+  Future<ProfileImportResult> importStudentProfileBundle(
     Database db, {
     required Map<String, dynamic> payload,
     bool makeActive = true,
   }) async {
-    final rawProfile = payload['profile'];
+    final sourceVersion = _toInt(payload['schema_version']);
+    if (sourceVersion <= 0) {
+      throw const FormatException(
+          'Arquivo de perfil sem schema_version válido.');
+    }
+    if (sourceVersion > profileBundleSchemaVersion) {
+      throw FormatException(
+        'schema_version $sourceVersion não suportado nesta versão do app.',
+      );
+    }
+
+    final normalizedPayload = sourceVersion == 1
+        ? <String, dynamic>{
+            ...payload,
+            'schema_version': profileBundleSchemaVersion,
+            'bundle_type': 'student_profile',
+          }
+        : payload;
+    final migrated = sourceVersion < profileBundleSchemaVersion;
+
+    final bundleType =
+        (normalizedPayload['bundle_type'] ?? 'student_profile').toString();
+    if (bundleType != 'student_profile') {
+      throw FormatException('bundle_type inválido: $bundleType');
+    }
+
+    final rawProfile = normalizedPayload['profile'];
     if (rawProfile is! Map<String, dynamic>) {
-      return null;
+      return ProfileImportResult(
+        profile: null,
+        sourceSchemaVersion: sourceVersion,
+        targetSchemaVersion: profileBundleSchemaVersion,
+        migrated: migrated,
+      );
     }
 
     final displayName = (rawProfile['display_name'] ?? '').toString().trim();
     if (displayName.isEmpty) {
-      return null;
+      return ProfileImportResult(
+        profile: null,
+        sourceSchemaVersion: sourceVersion,
+        targetSchemaVersion: profileBundleSchemaVersion,
+        migrated: migrated,
+      );
     }
 
     final rawId = (rawProfile['id'] ?? '').toString().trim();
@@ -1470,6 +1553,8 @@ class LocalDatabase {
       focusArea: (rawProfile['focus_area'] ?? '').toString(),
       examDate: (rawProfile['exam_date'] ?? '').toString(),
       plannerContext: (rawProfile['planner_context'] ?? '').toString(),
+      plannerSnapshotJson:
+          (rawProfile['planner_snapshot_json'] ?? '').toString(),
     );
 
     await upsertStudentProfile(db, input, makeActive: makeActive);
@@ -1481,9 +1566,19 @@ class LocalDatabase {
       limit: 1,
     );
     if (rows.isEmpty) {
-      return null;
+      return ProfileImportResult(
+        profile: null,
+        sourceSchemaVersion: sourceVersion,
+        targetSchemaVersion: profileBundleSchemaVersion,
+        migrated: migrated,
+      );
     }
-    return _profileFromRow(rows.first);
+    return ProfileImportResult(
+      profile: _profileFromRow(rows.first),
+      sourceSchemaVersion: sourceVersion,
+      targetSchemaVersion: profileBundleSchemaVersion,
+      migrated: migrated,
+    );
   }
 
   Future<List<AttemptRecord>> loadRecentAttempts(
