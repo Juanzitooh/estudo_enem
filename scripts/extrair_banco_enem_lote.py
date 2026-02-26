@@ -27,6 +27,11 @@ class ExtractionResult:
     blocks: int = 0
     unique_questions: int = 0
     answer_count: int = 0
+    expected_range: str = ""
+    missing_count: int = 0
+    out_of_range_count: int = 0
+    duplicate_non_language_count: int = 0
+    language_slots_count: int = 0
     note: str = ""
 
 
@@ -73,6 +78,18 @@ def read_counts(year_dir: Path, day: int) -> tuple[int, int, int]:
     unique = len({item["numero"] for item in idx})
     answers = len(gab)
     return blocks, unique, answers
+
+
+def read_diagnostics(year_dir: Path, day: int) -> dict[str, object]:
+    diagnostics_path = year_dir / f"dia{day}_extracao_diagnostico.json"
+    if not diagnostics_path.exists():
+        return {}
+
+    payload = json.loads(diagnostics_path.read_text(encoding="utf-8"))
+    diagnostics = payload.get("diagnostics")
+    if isinstance(diagnostics, dict):
+        return diagnostics
+    return {}
 
 
 def run_single(
@@ -133,6 +150,13 @@ def run_single(
         )
 
     blocks, unique, answers = read_counts(out_year, day)
+    diagnostics = read_diagnostics(out_year, day)
+    expected_start = int(diagnostics.get("expected_start", 0) or 0)
+    expected_end = int(diagnostics.get("expected_end", 0) or 0)
+    missing_questions = diagnostics.get("missing_questions", [])
+    out_of_range_questions = diagnostics.get("out_of_range_questions", [])
+    duplicate_non_language = diagnostics.get("duplicate_non_language", {})
+    language_slots = diagnostics.get("language_slots", [])
     return ExtractionResult(
         year=year,
         day=day,
@@ -142,6 +166,19 @@ def run_single(
         blocks=blocks,
         unique_questions=unique,
         answer_count=answers,
+        expected_range=(
+            f"{expected_start}-{expected_end}"
+            if expected_start > 0 and expected_end > 0
+            else ""
+        ),
+        missing_count=len(missing_questions) if isinstance(missing_questions, list) else 0,
+        out_of_range_count=(
+            len(out_of_range_questions) if isinstance(out_of_range_questions, list) else 0
+        ),
+        duplicate_non_language_count=(
+            len(duplicate_non_language) if isinstance(duplicate_non_language, dict) else 0
+        ),
+        language_slots_count=len(language_slots) if isinstance(language_slots, list) else 0,
     )
 
 
@@ -162,19 +199,28 @@ def write_status_report(results: list[ExtractionResult], output_path: Path) -> N
 
     lines.append("## Detalhe por ano/dia")
     lines.append("")
-    lines.append("| Ano | Dia | Status | Blocos | Únicas | Gabaritos | Prova | Gabarito | Obs |")
-    lines.append("|---|---:|---|---:|---:|---:|---|---|---|")
+    lines.append(
+        "| Ano | Dia | Status | Faixa | Blocos | Únicas | Gabaritos | Faltantes | Fora faixa | Dup não idioma | Slots idioma | Prova | Gabarito | Obs |"
+    )
+    lines.append(
+        "|---|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---|---|---|"
+    )
 
     for result in sorted(results, key=lambda item: (item.year, item.day)):
         obs = result.note or ""
         lines.append(
-            "| {year} | {day} | {status} | {blocks} | {unique} | {answers} | `{prova}` | `{gabarito}` | {obs} |".format(
+            "| {year} | {day} | {status} | {expected_range} | {blocks} | {unique} | {answers} | {missing} | {out_of_range} | {dup_non_lang} | {lang_slots} | `{prova}` | `{gabarito}` | {obs} |".format(
                 year=result.year,
                 day=result.day,
                 status=result.status,
+                expected_range=result.expected_range or "-",
                 blocks=result.blocks,
                 unique=result.unique_questions,
                 answers=result.answer_count,
+                missing=result.missing_count,
+                out_of_range=result.out_of_range_count,
+                dup_non_lang=result.duplicate_non_language_count,
+                lang_slots=result.language_slots_count,
                 prova=result.prova_file,
                 gabarito=result.gabarito_file,
                 obs=obs,
@@ -273,7 +319,9 @@ def main() -> int:
             results.append(result)
             print(
                 f"[{result.status}] {result.year} dia {result.day} | "
-                f"blocos={result.blocks} únicas={result.unique_questions} gabaritos={result.answer_count}"
+                f"blocos={result.blocks} únicas={result.unique_questions} gabaritos={result.answer_count} "
+                f"faltantes={result.missing_count} fora_faixa={result.out_of_range_count} "
+                f"dup_nao_idioma={result.duplicate_non_language_count}"
             )
 
     write_status_report(results, args.status_file)

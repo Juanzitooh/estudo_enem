@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Any
 
 QUESTION_PATTERN = re.compile(r"(?i)\bQUEST[ÃA]O\s+(\d{1,3})\b")
+QUESTIONS_RANGE_PATTERN = re.compile(r"(?i)\bQUEST[ÕO]ES?\s+DE\s+(\d{1,3})\s+A\s+(\d{1,3})\b")
 DATE_TIME_PATTERN = re.compile(r"\d{2}/\d{2}/\d{4}\s+\d{2}:\d{2}:\d{2}")
 CONTROL_CHAR_PATTERN = re.compile(r"[\x00-\x08\x0B-\x1F\x7F]")
 REPEATED_ENEM_BANNER_PATTERN = re.compile(r"(?:\bENEM\s*\d{4}\b[\s|]*){2,}", re.IGNORECASE)
@@ -50,6 +51,21 @@ class QuestionRecord:
 class RedacaoRecord:
     tema: str | None
     texto_markdown: str
+
+
+@dataclass
+class ExtractionDiagnostics:
+    expected_start: int
+    expected_end: int
+    total_blocks_raw: int
+    total_blocks_valid: int
+    unique_questions: int
+    missing_questions: list[int]
+    out_of_range_questions: list[int]
+    language_slots: list[int]
+    language_slot_variations: dict[int, int]
+    duplicate_non_language: dict[int, int]
+    duplicate_all: dict[int, int]
 
 
 def normalize_answer(raw_value: str) -> str | None:
@@ -293,6 +309,106 @@ def normalize_area_name(raw_name: str) -> str | None:
     return None
 
 
+def extract_area_candidates(raw_text: str) -> list[str]:
+    candidates: list[str] = []
+    text_upper = raw_text.upper()
+    checks = (
+        ("Linguagens", ("LINGUAGENS",)),
+        ("Ciências Humanas", ("CIÊNCIAS HUMANAS", "CIENCIAS HUMANAS")),
+        ("Ciências da Natureza", ("CIÊNCIAS DA NATUREZA", "CIENCIAS DA NATUREZA")),
+        ("Matemática", ("MATEMÁTICA", "MATEMATICA")),
+    )
+
+    for canonical, variants in checks:
+        if any(variant in text_upper for variant in variants):
+            candidates.append(canonical)
+
+    return candidates
+
+
+def choose_area_near_line(lines: list[str], index: int, max_distance: int = 4) -> str | None:
+    same_line = extract_area_candidates(lines[index])
+    if len(same_line) == 1:
+        return same_line[0]
+
+    for distance in range(1, max_distance + 1):
+        prev_index = index - distance
+        if prev_index >= 0:
+            prev_candidates = extract_area_candidates(lines[prev_index])
+            if len(prev_candidates) == 1:
+                return prev_candidates[0]
+
+        next_index = index + distance
+        if next_index < len(lines):
+            next_candidates = extract_area_candidates(lines[next_index])
+            if len(next_candidates) == 1:
+                return next_candidates[0]
+
+    return None
+
+
+def range_span(start: int, end: int) -> int:
+    return end - start + 1
+
+
+def ranges_overlap(
+    left_start: int,
+    left_end: int,
+    right_start: int,
+    right_end: int,
+) -> bool:
+    return max(left_start, right_start) <= min(left_end, right_end)
+
+
+def select_primary_area_ranges(
+    ranges: list[tuple[int, int, str]],
+) -> list[tuple[int, int, str]]:
+    # Faixas principais do ENEM costumam ter ~45 questões.
+    major_candidates = [
+        area_range
+        for area_range in ranges
+        if 40 <= range_span(area_range[0], area_range[1]) <= 50
+    ]
+    if len(major_candidates) < 2:
+        return ranges
+
+    selected: list[tuple[int, int, str]] = []
+    for start, end, area in sorted(
+        major_candidates,
+        key=lambda item: (-range_span(item[0], item[1]), item[0], item[1]),
+    ):
+        if any(ranges_overlap(start, end, current_start, current_end) for current_start, current_end, _ in selected):
+            continue
+        selected.append((start, end, area))
+
+    if len(selected) >= 2:
+        return sorted(selected, key=lambda item: (item[0], item[1], item[2]))
+    return ranges
+
+
+def detect_area_ranges(exam_text: str) -> list[tuple[int, int, str]]:
+    lines = [sanitize_ocr_line(line) for line in exam_text.replace("\f", "\n").splitlines()]
+    range_map: dict[tuple[int, int], str] = {}
+
+    for index, line in enumerate(lines):
+        for match in QUESTIONS_RANGE_PATTERN.finditer(line):
+            start = int(match.group(1))
+            end = int(match.group(2))
+            if start >= end:
+                continue
+
+            area = choose_area_near_line(lines, index=index)
+            if area is None:
+                continue
+
+            key = (start, end)
+            # Mantém primeira associação estável quando OCR trouxer ruído conflitante.
+            range_map.setdefault(key, area)
+
+    detected_ranges = [(start, end, area) for (start, end), area in sorted(range_map.items())]
+    return select_primary_area_ranges(detected_ranges)
+
+
 def detect_area_order(exam_text: str) -> tuple[str, str] | None:
     order: list[str] = []
     for line in exam_text.splitlines()[:500]:
@@ -307,6 +423,10 @@ def detect_area_order(exam_text: str) -> tuple[str, str] | None:
 
     if len(order) >= 2:
         return (order[0], order[1])
+
+    ranges = detect_area_ranges(exam_text)
+    if len(ranges) >= 2:
+        return (ranges[0][2], ranges[1][2])
     return None
 
 
@@ -393,7 +513,17 @@ def parse_day2_gabarito(gabarito_text: str) -> dict[int, Any]:
     return answers
 
 
-def infer_area(day: int, question_number: int, area_order: tuple[str, str] | None = None) -> str:
+def infer_area(
+    day: int,
+    question_number: int,
+    area_order: tuple[str, str] | None = None,
+    area_ranges: list[tuple[int, int, str]] | None = None,
+) -> str:
+    if area_ranges:
+        for start, end, area_name in area_ranges:
+            if start <= question_number <= end:
+                return area_name
+
     if area_order:
         if 1 <= question_number <= 45 or 91 <= question_number <= 135:
             return area_order[0]
@@ -501,6 +631,7 @@ def build_records(
     blocks: list[tuple[int, str]],
     answers: dict[int, Any],
     area_order: tuple[str, str] | None = None,
+    area_ranges: list[tuple[int, int, str]] | None = None,
 ) -> list[QuestionRecord]:
     counter: defaultdict[int, int] = defaultdict(int)
     records: list[QuestionRecord] = []
@@ -509,7 +640,7 @@ def build_records(
         counter[number] += 1
         variation = counter[number]
 
-        area = infer_area(day, number, area_order=area_order)
+        area = infer_area(day, number, area_order=area_order, area_ranges=area_ranges)
         answer = answers.get(number)
         content = format_question_block(block)
 
@@ -569,6 +700,97 @@ def records_to_index_json(records: list[QuestionRecord]) -> list[dict[str, Any]]
     return result
 
 
+def expected_question_range(day: int) -> tuple[int, int]:
+    if day == 1:
+        return (1, 90)
+    return (91, 180)
+
+
+def filter_blocks_by_day_range(
+    day: int,
+    blocks: list[tuple[int, str]],
+) -> tuple[list[tuple[int, str]], list[int]]:
+    expected_start, expected_end = expected_question_range(day)
+    kept: list[tuple[int, str]] = []
+    out_of_range: list[int] = []
+
+    for number, block in blocks:
+        if expected_start <= number <= expected_end:
+            kept.append((number, block))
+        else:
+            out_of_range.append(number)
+
+    return kept, sorted(set(out_of_range))
+
+
+def detect_language_slots(answers: dict[int, Any]) -> set[int]:
+    return {
+        question
+        for question, answer in answers.items()
+        if isinstance(answer, dict) and "ingles" in answer and "espanhol" in answer
+    }
+
+
+def build_extraction_diagnostics(
+    day: int,
+    raw_blocks: list[tuple[int, str]],
+    filtered_blocks: list[tuple[int, str]],
+    out_of_range_questions: list[int],
+    answers: dict[int, Any],
+) -> ExtractionDiagnostics:
+    expected_start, expected_end = expected_question_range(day)
+    expected_numbers = set(range(expected_start, expected_end + 1))
+    language_slots = detect_language_slots(answers)
+
+    counter_all: defaultdict[int, int] = defaultdict(int)
+    for number, _ in filtered_blocks:
+        counter_all[number] += 1
+
+    unique_numbers = set(counter_all)
+    missing_questions = sorted(expected_numbers - unique_numbers)
+    duplicate_all = {number: count for number, count in counter_all.items() if count > 1}
+    duplicate_non_language = {
+        number: count
+        for number, count in duplicate_all.items()
+        if number not in language_slots
+    }
+    language_slot_variations = {
+        slot: counter_all.get(slot, 0)
+        for slot in sorted(language_slots)
+        if counter_all.get(slot, 0) > 0
+    }
+
+    return ExtractionDiagnostics(
+        expected_start=expected_start,
+        expected_end=expected_end,
+        total_blocks_raw=len(raw_blocks),
+        total_blocks_valid=len(filtered_blocks),
+        unique_questions=len(unique_numbers),
+        missing_questions=missing_questions,
+        out_of_range_questions=out_of_range_questions,
+        language_slots=sorted(language_slots),
+        language_slot_variations=language_slot_variations,
+        duplicate_non_language=duplicate_non_language,
+        duplicate_all=duplicate_all,
+    )
+
+
+def diagnostics_to_payload(diagnostics: ExtractionDiagnostics) -> dict[str, Any]:
+    return {
+        "expected_start": diagnostics.expected_start,
+        "expected_end": diagnostics.expected_end,
+        "total_blocks_raw": diagnostics.total_blocks_raw,
+        "total_blocks_valid": diagnostics.total_blocks_valid,
+        "unique_questions": diagnostics.unique_questions,
+        "missing_questions": diagnostics.missing_questions,
+        "out_of_range_questions": diagnostics.out_of_range_questions,
+        "language_slots": diagnostics.language_slots,
+        "language_slot_variations": diagnostics.language_slot_variations,
+        "duplicate_non_language": diagnostics.duplicate_non_language,
+        "duplicate_all": diagnostics.duplicate_all,
+    }
+
+
 def redacao_to_markdown(year: int, record: RedacaoRecord | None) -> str:
     lines: list[str] = []
     lines.append(f"# Redação ENEM {year} — Dia 1")
@@ -605,18 +827,36 @@ def write_output_files(
     records: list[QuestionRecord],
     markdown_content: str,
     redacao_record: RedacaoRecord | None,
+    diagnostics: ExtractionDiagnostics,
+    area_order: tuple[str, str] | None,
+    area_ranges: list[tuple[int, int, str]],
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     cleaned_path = output_dir / f"dia{day}_texto_limpo.txt"
     answers_path = output_dir / f"dia{day}_gabarito.json"
     index_path = output_dir / f"dia{day}_questoes_index.json"
+    diagnostics_path = output_dir / f"dia{day}_extracao_diagnostico.json"
     markdown_path = output_dir / f"dia{day}_questoes_reais.md"
 
     cleaned_path.write_text(cleaned_text, encoding="utf-8")
     answers_path.write_text(json.dumps(answers, ensure_ascii=False, indent=2), encoding="utf-8")
     index_path.write_text(
         json.dumps(records_to_index_json(records), ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    diagnostics_payload = {
+        "ano": year,
+        "dia": day,
+        "area_order": list(area_order) if area_order else [],
+        "area_ranges": [
+            {"inicio": start, "fim": end, "area": area}
+            for start, end, area in area_ranges
+        ],
+        "diagnostics": diagnostics_to_payload(diagnostics),
+    }
+    diagnostics_path.write_text(
+        json.dumps(diagnostics_payload, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
     markdown_path.write_text(markdown_content, encoding="utf-8")
@@ -651,15 +891,33 @@ def main() -> int:
     gabarito_raw_text = read_pdf_text(args.gabarito, layout=True)
 
     cleaned_text = clean_text(prova_raw_text)
-    question_blocks = split_question_blocks(cleaned_text)
+    raw_question_blocks = split_question_blocks(cleaned_text)
+    question_blocks, out_of_range_questions = filter_blocks_by_day_range(
+        args.dia,
+        raw_question_blocks,
+    )
     area_order = detect_area_order(prova_raw_text)
+    area_ranges = detect_area_ranges(prova_raw_text)
 
     if args.dia == 1:
         answers = parse_day1_gabarito(gabarito_raw_text)
     else:
         answers = parse_day2_gabarito(gabarito_raw_text)
 
-    records = build_records(args.dia, question_blocks, answers, area_order=area_order)
+    records = build_records(
+        args.dia,
+        question_blocks,
+        answers,
+        area_order=area_order,
+        area_ranges=area_ranges,
+    )
+    diagnostics = build_extraction_diagnostics(
+        day=args.dia,
+        raw_blocks=raw_question_blocks,
+        filtered_blocks=question_blocks,
+        out_of_range_questions=out_of_range_questions,
+        answers=answers,
+    )
     markdown_content = records_to_markdown(args.ano, args.dia, records)
     redacao_record = extract_redacao_record(cleaned_text, args.dia)
 
@@ -672,9 +930,18 @@ def main() -> int:
         records,
         markdown_content,
         redacao_record,
+        diagnostics,
+        area_order,
+        area_ranges,
     )
 
     print(f"[ok] Dia {args.dia}: {len(records)} blocos extraídos")
+    print(
+        f"[diag] faixa esperada: {diagnostics.expected_start}-{diagnostics.expected_end} | "
+        f"únicas={diagnostics.unique_questions} | faltantes={len(diagnostics.missing_questions)} | "
+        f"fora_faixa={len(diagnostics.out_of_range_questions)} | "
+        f"dup_nao_idioma={len(diagnostics.duplicate_non_language)}"
+    )
     print(f"[ok] Saída: {args.outdir}")
     return 0
 
