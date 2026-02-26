@@ -37,6 +37,9 @@ REDACAO_END_HINT_PATTERN = re.compile(
     r"^PROVA DE CI[ÊE]NCIAS HUMANAS E SUAS TECNOLOGIAS\b"
 )
 REDACAO_INSTRUCTIONS_PATTERN = re.compile(r"(?i)^INSTRU[ÇC][ÕO]ES PARA A REDA[ÇC][AÃ]O")
+KNOWN_REDACAO_THEMES: dict[tuple[int, int], str] = {
+    (2021, 1): "Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil",
+}
 
 
 @dataclass
@@ -357,6 +360,22 @@ def extract_redacao_record(cleaned_text: str) -> RedacaoRecord | None:
     theme = extract_redacao_theme(normalized_section)
 
     return RedacaoRecord(tema=theme, texto_markdown=normalized_section)
+
+
+def apply_known_redacao_theme(
+    year: int,
+    day: int,
+    record: RedacaoRecord | None,
+) -> RedacaoRecord | None:
+    if record is None:
+        return None
+    if record.tema:
+        return record
+
+    known_theme = KNOWN_REDACAO_THEMES.get((year, day))
+    if known_theme:
+        record.tema = known_theme
+    return record
 
 
 def normalize_area_name(raw_name: str) -> str | None:
@@ -1029,6 +1048,7 @@ def main() -> int:
     )
     markdown_content = records_to_markdown(args.ano, args.dia, records)
     redacao_record = extract_redacao_record(cleaned_text)
+    redacao_record = apply_known_redacao_theme(args.ano, args.dia, redacao_record)
     redacao_page_numbers = detect_redacao_page_numbers(prova_layout_text)
 
     write_output_files(
