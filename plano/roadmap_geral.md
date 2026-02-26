@@ -67,9 +67,9 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Exibir resultado do diagnóstico com score por matéria, Top 5 habilidades em déficit e erro dominante.
 - [ ] Criar tela "Habilidades em foco" com domínio (%), causa provável da queda e ações rápidas.
 - [ ] Disponibilizar ações por habilidade: Treinar agora (10 questões), Revisar teoria e Copiar prompt de estudo.
-- [ ] Classificar habilidades por faixa de domínio: foco (<55%), manutenção (55% a 75%) e forte (>75%).
-- [ ] Montar sessões adaptativas com distribuição 60% foco, 30% manutenção e 10% forte.
-- [ ] Recalcular foco automaticamente após cada sessão para substituir habilidades que melhorarem.
+- [x] Classificar habilidades por faixa de domínio: foco (<55%), manutenção (55% a 75%) e forte (>75%).
+- [x] Montar sessões adaptativas com distribuição 60% foco, 30% manutenção e 10% forte.
+- [x] Recalcular foco automaticamente após cada sessão para substituir habilidades que melhorarem.
 
 ### Perfil de erro local (sem IA embarcada)
 - [ ] Implementar `error_profile` por habilidade com: `pacing`, `level_break`, `topic_tags` e `pattern`.

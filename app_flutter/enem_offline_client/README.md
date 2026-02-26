@@ -56,6 +56,7 @@ O app mostra:
 - histórico recente de tentativas com status (acerto/erro), skill/competência e timestamp.
 - sugestão automática de próximos blocos de estudo por skill (prioridade por acurácia + volume de tentativas).
 - priorização dinâmica por skill com score `deficit + recency + (1-confidence)` e faixas `foco/manutenção/forte`.
+- sugestão de sessão adaptativa com distribuição 60/30/10 (foco/manutenção/forte) e atalho para iniciar cada slot.
 - filtro local de questões em cards (ano, dia, área, disciplina, matéria, competência, habilidade, dificuldade, `tem_imagem` e limite).
 - montador de simulado rápido com base nos filtros atuais (quantidade, minutos por questão e distribuição por área).
 - filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).
