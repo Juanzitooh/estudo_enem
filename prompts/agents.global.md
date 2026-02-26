@@ -32,6 +32,10 @@ Gerar aulas no padrão ENEM focadas em uma habilidade da Matriz do INEP, usando 
 13. Se o pedido for de planejamento determinístico sem IA, priorizar `scripts/gerar_plano_offline.py` e os arquivos do módulo `planner/`.
 14. Se o pedido for separação por matéria/tema, priorizar `scripts/mapear_habilidades_enem.py` e os artefatos em `questoes/mapeamento_habilidades/`.
 15. Em aulas geradas, sempre preencher metadados editoriais no topo: `Status editorial`, `Atualizado por IA em`, `Revisado manualmente em` e `Revisado por`.
+16. Incluir bloco de contexto atual com fatos dos últimos 12 meses, citando datas absolutas.
+17. Priorizar exemplos do Brasil e regionalidades brasileiras; usar contexto internacional apenas quando for essencial para explicar o conceito.
+18. Para Física, Química, Biologia e Matemática, incluir pelo menos um recurso visual didático (gráfico, esquema, diagrama ou desenho) quando o tema exigir apoio visual.
+19. Incluir um problema real aplicado ao contexto brasileiro com perguntas de reflexão no fim da aula.
 
 ## Estrutura de saída
 - Aula em `aulas/{area}/HXX_{tema}.md`
