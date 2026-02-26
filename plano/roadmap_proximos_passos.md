@@ -33,7 +33,7 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Criar prompt de correção ENEM com saída estruturada por competência.
 - [x] Implementar parser opcional da resposta IA (`modo livre` + `modo validado` por regex).
 - [x] Exibir feedback de legibilidade quando houver muitos marcadores `[ILEGÍVEL]`.
-- [ ] Persistir evolução e ranking de redação (faixas de nota e progresso no tempo).
+- [x] Persistir evolução e ranking de redação (faixas de nota e progresso no tempo).
 
 ## Bloco 6 — Intercorrelação Módulo x Questão (curto/médio prazo)
 - [x] Criar `questoes/mapeamento_habilidades/intercorrelacao/modulo_questao_matches.csv` com score e confiança por vínculo.

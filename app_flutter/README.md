@@ -129,6 +129,7 @@ Com isso, o app consegue:
 - aceitar módulos marcados por competência (`c2`, `c6`) e expandir para habilidades da matriz por área.
 - filtrar vínculos de intercorrelação por matéria, assunto/tag, tipo e score mínimo.
 - gerar prompts de redação para uso em IA externa (tema inédito e correção estruturada).
+- salvar sessões de redação, parsear feedback em modo livre/validado e acompanhar ranking por nota.
 
 ### Gerar pacote de conteúdo
 

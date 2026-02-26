@@ -94,7 +94,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] modo livre (usuário cola qualquer formato);
 - [x] modo validado (espera estrutura mínima, ex.: `C1: ...` até `C5: ...`).
 - [x] Adicionar modo de legibilidade com alerta quando houver muitos trechos `[ILEGÍVEL]`.
-- [ ] Adicionar gamificação de redação por faixas de nota (Bronze/Prata/Ouro/Elite).
+- [x] Adicionar gamificação de redação por faixas de nota (Bronze/Prata/Ouro/Elite).
 - [ ] Incluir prompt automático de reescrita pós-correção mantendo estrutura original do aluno.
 
 ### Priorização automática por lacuna
