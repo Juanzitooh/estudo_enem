@@ -45,6 +45,10 @@ class _HomePageState extends State<HomePage> {
   List<ModuleSuggestion> _moduleSuggestions = const [];
   List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
   List<EssaySessionRecord> _recentEssaySessions = const [];
+  EssayScoreSummary _essayScoreSummary = const EssayScoreSummary(
+    scoredSessionCount: 0,
+    averageScore: 0,
+  );
   String _matchTipoSelecionado = '';
   String _essayThemeSourceSelecionado = 'ia';
   String _essayParserModeSelecionado = EssayParserMode.livre.value;
@@ -121,6 +125,7 @@ class _HomePageState extends State<HomePage> {
       db,
       limit: 5,
     );
+    final essayScoreSummary = await _localDatabase.loadEssayScoreSummary(db);
     final version = await _localDatabase.getContentVersion(db);
 
     if (!mounted) {
@@ -138,6 +143,7 @@ class _HomePageState extends State<HomePage> {
       _moduleSuggestions = moduleSuggestions;
       _moduleQuestionMatches = moduleQuestionMatches;
       _recentEssaySessions = recentEssaySessions;
+      _essayScoreSummary = essayScoreSummary;
       _contentVersion = version;
     });
   }
@@ -346,6 +352,25 @@ class _HomePageState extends State<HomePage> {
     return '$score';
   }
 
+  String _essayRankLabel(int? score) {
+    if (score == null) {
+      return 'Sem rank';
+    }
+    if (score >= 960) {
+      return 'Elite';
+    }
+    if (score >= 900) {
+      return 'Ouro';
+    }
+    if (score >= 800) {
+      return 'Prata';
+    }
+    if (score >= 700) {
+      return 'Bronze';
+    }
+    return 'Base';
+  }
+
   Future<void> _analyzeAndSaveEssaySession() async {
     final rawFeedback = _essayFeedbackController.text.trim();
     if (rawFeedback.isEmpty) {
@@ -416,12 +441,13 @@ class _HomePageState extends State<HomePage> {
       final legibilityNote = parsed.hasLegibilityWarning
           ? ' | alerta de legibilidade: ${parsed.illegibleCount} [ILEGÍVEL]'
           : '';
+      final rankNote = ' | rank ${_essayRankLabel(parsed.finalScore)}';
       setState(() {
         _status =
             'Sessão salva | C1 ${_formatScore(parsed.c1)} C2 ${_formatScore(parsed.c2)} '
             'C3 ${_formatScore(parsed.c3)} C4 ${_formatScore(parsed.c4)} '
             'C5 ${_formatScore(parsed.c5)} | Final ${_formatScore(parsed.finalScore)}'
-            '$legibilityNote';
+            '$rankNote$legibilityNote';
       });
     } catch (error) {
       if (!mounted) {
@@ -743,6 +769,13 @@ class _HomePageState extends State<HomePage> {
               SelectableText(_essayPromptPreview),
             const SizedBox(height: 8),
             Text('Sessões de redação salvas: $_essaySessionCount'),
+            Text(
+              'Com nota: ${_essayScoreSummary.scoredSessionCount} | '
+              'Melhor: ${_formatScore(_essayScoreSummary.bestScore)} | '
+              'Média: ${_essayScoreSummary.averageScore.toStringAsFixed(1)} | '
+              'Última: ${_formatScore(_essayScoreSummary.latestScore)} '
+              '(${_essayRankLabel(_essayScoreSummary.latestScore)})',
+            ),
             const SizedBox(height: 8),
             if (_recentEssaySessions.isEmpty)
               const Text('Sem sessões de redação salvas ainda.')
@@ -750,7 +783,8 @@ class _HomePageState extends State<HomePage> {
               ..._recentEssaySessions.map(
                 (session) => Text(
                   '#${session.id} | ${session.themeTitle} | ${session.parserMode} '
-                  '| Final ${_formatScore(session.finalScore)}'
+                  '| Final ${_formatScore(session.finalScore)} '
+                  '(${_essayRankLabel(session.finalScore)})'
                   '${session.legibilityWarning ? ' | alerta legibilidade' : ''}',
                 ),
               ),

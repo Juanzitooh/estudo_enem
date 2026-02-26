@@ -167,6 +167,20 @@ class EssaySessionRecord {
   final int? finalScore;
 }
 
+class EssayScoreSummary {
+  const EssayScoreSummary({
+    required this.scoredSessionCount,
+    required this.averageScore,
+    this.bestScore,
+    this.latestScore,
+  });
+
+  final int scoredSessionCount;
+  final double averageScore;
+  final int? bestScore;
+  final int? latestScore;
+}
+
 class LocalDatabase {
   LocalDatabase();
 
@@ -907,6 +921,36 @@ class LocalDatabase {
         )
         .where((item) => item.id > 0)
         .toList();
+  }
+
+  Future<EssayScoreSummary> loadEssayScoreSummary(Database db) async {
+    final aggregateRows = await db.rawQuery('''
+      SELECT
+        COUNT(final_score) AS scored_count,
+        MAX(final_score) AS best_score,
+        AVG(final_score) AS avg_score
+      FROM essay_sessions
+      WHERE final_score IS NOT NULL
+    ''');
+
+    final aggregate =
+        aggregateRows.isEmpty ? const <String, Object?>{} : aggregateRows.first;
+    final latestRows = await db.query(
+      'essay_sessions',
+      columns: ['final_score'],
+      where: 'final_score IS NOT NULL',
+      orderBy: 'created_at DESC',
+      limit: 1,
+    );
+    final latest =
+        latestRows.isEmpty ? const <String, Object?>{} : latestRows.first;
+
+    return EssayScoreSummary(
+      scoredSessionCount: _toInt(aggregate['scored_count']),
+      averageScore: _toDouble(aggregate['avg_score']),
+      bestScore: _toOptionalInt(aggregate['best_score']),
+      latestScore: _toOptionalInt(latest['final_score']),
+    );
   }
 
   Future<double> globalAccuracy(Database db) async {
