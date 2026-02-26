@@ -13,7 +13,9 @@ Cada ano deve conter:
 - questões em Markdown por dia;
 - gabaritos em JSON;
 - índice em JSON;
-- proposta de redação do dia 1 em `dia1_redacao.md` e `dia1_redacao.json`;
+- proposta de redação no dia em que Linguagens aparece (`dia1` ou `dia2`) em:
+  - `diaX_redacao.md` e `diaX_redacao.json`;
+  - `diaX_redacao_imagens/pagina_YY.png` (imagem de página completa da proposta);
 - `README.md` com origem dos PDFs e comando de geração.
 
 ## Extração em lote recomendada
