@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -22,6 +24,10 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _questionLimitController = TextEditingController(
     text: '20',
   );
+  final TextEditingController _simuladoQuantidadeController =
+      TextEditingController(text: '20');
+  final TextEditingController _simuladoTempoPorQuestaoController =
+      TextEditingController(text: '3');
   final TextEditingController _matchMateriaController = TextEditingController();
   final TextEditingController _matchAssuntoController = TextEditingController();
   final TextEditingController _matchScoreController = TextEditingController(
@@ -48,6 +54,9 @@ class _HomePageState extends State<HomePage> {
   String _databasePath = '-';
   QuestionFilterOptions _questionFilterOptions = const QuestionFilterOptions();
   List<QuestionCardItem> _filteredQuestions = const [];
+  List<QuestionCardItem> _simuladoQuestions = const [];
+  int _simuladoTempoTotalMinutos = 0;
+  bool _simuladoEmbaralhar = true;
   List<WeakSkillStat> _weakSkills = const [];
   List<ModuleSuggestion> _moduleSuggestions = const [];
   List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
@@ -78,6 +87,8 @@ class _HomePageState extends State<HomePage> {
   void dispose() {
     _manifestController.dispose();
     _questionLimitController.dispose();
+    _simuladoQuantidadeController.dispose();
+    _simuladoTempoPorQuestaoController.dispose();
     _matchMateriaController.dispose();
     _matchAssuntoController.dispose();
     _matchScoreController.dispose();
@@ -125,6 +136,42 @@ class _HomePageState extends State<HomePage> {
       skill: _questionSkillSelecionada,
       hasImage: _readHasImageFilter(),
       limit: _readQuestionLimit(),
+    );
+  }
+
+  int _readSimuladoQuantidade() {
+    final parsed = int.tryParse(_simuladoQuantidadeController.text.trim());
+    if (parsed == null || parsed <= 0) {
+      return 20;
+    }
+    if (parsed > 90) {
+      return 90;
+    }
+    return parsed;
+  }
+
+  int _readSimuladoTempoPorQuestao() {
+    final parsed = int.tryParse(_simuladoTempoPorQuestaoController.text.trim());
+    if (parsed == null || parsed <= 0) {
+      return 3;
+    }
+    if (parsed > 10) {
+      return 10;
+    }
+    return parsed;
+  }
+
+  QuestionFilter _buildSimuladoPoolFilter() {
+    return QuestionFilter(
+      year: _questionYearSelecionado,
+      day: _questionDaySelecionado,
+      area: _questionAreaSelecionada,
+      discipline: _questionDisciplineSelecionada,
+      materia: _questionMateriaSelecionada,
+      competency: _questionCompetencySelecionada,
+      skill: _questionSkillSelecionada,
+      hasImage: _readHasImageFilter(),
+      limit: 200,
     );
   }
 
@@ -396,6 +443,86 @@ class _HomePageState extends State<HomePage> {
       _questionHasImageSelecionado = '';
     });
     await _applyQuestionFilters();
+  }
+
+  String _buildSimuladoDistribuicaoResumo(List<QuestionCardItem> items) {
+    if (items.isEmpty) {
+      return '-';
+    }
+    final counters = <String, int>{};
+    for (final item in items) {
+      final key = item.area.trim().isEmpty ? 'Sem área' : item.area.trim();
+      counters[key] = (counters[key] ?? 0) + 1;
+    }
+    final entries = counters.entries.toList()
+      ..sort((a, b) => a.key.compareTo(b.key));
+    return entries.map((entry) => '${entry.key}: ${entry.value}').join(' | ');
+  }
+
+  Future<void> _montarSimulado() async {
+    setState(() {
+      _busy = true;
+      _status = 'Montando simulado...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      final pool = await _localDatabase.searchQuestions(
+        db,
+        filter: _buildSimuladoPoolFilter(),
+      );
+      if (pool.isEmpty) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {
+          _simuladoQuestions = const [];
+          _simuladoTempoTotalMinutos = 0;
+          _status = 'Sem questões para montar simulado com os filtros atuais.';
+        });
+        return;
+      }
+
+      final quantidade = _readSimuladoQuantidade();
+      final tempoPorQuestao = _readSimuladoTempoPorQuestao();
+      final ordered = List<QuestionCardItem>.from(pool);
+      if (_simuladoEmbaralhar) {
+        ordered.shuffle(Random());
+      }
+      final selecionadas = ordered.take(quantidade).toList();
+      final tempoTotal = selecionadas.length * tempoPorQuestao;
+
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _simuladoQuestions = selecionadas;
+        _simuladoTempoTotalMinutos = tempoTotal;
+        _status =
+            'Simulado pronto: ${selecionadas.length} questão(ões), tempo sugerido $tempoTotal min.';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao montar simulado: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  void _limparSimulado() {
+    setState(() {
+      _simuladoQuestions = const [];
+      _simuladoTempoTotalMinutos = 0;
+      _status = 'Simulado limpo.';
+    });
   }
 
   Future<void> _clearMatchFilters() async {
@@ -986,6 +1113,102 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Widget _buildSimuladoCard() {
+    String previewText(String value) {
+      final normalized = value.trim().replaceAll('\n', ' ');
+      if (normalized.length <= 180) {
+        return normalized;
+      }
+      return '${normalized.substring(0, 180)}...';
+    }
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Simulado rápido (com filtros atuais)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                SizedBox(
+                  width: 160,
+                  child: TextField(
+                    controller: _simuladoQuantidadeController,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Qtde questões',
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 170,
+                  child: TextField(
+                    controller: _simuladoTempoPorQuestaoController,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Min/questão',
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 220,
+                  child: CheckboxListTile(
+                    value: _simuladoEmbaralhar,
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _simuladoEmbaralhar = value ?? true;
+                            });
+                          },
+                    title: const Text('Embaralhar'),
+                    controlAffinity: ListTileControlAffinity.leading,
+                    dense: true,
+                    contentPadding: EdgeInsets.zero,
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: _busy ? null : _montarSimulado,
+                  child: const Text('Montar simulado'),
+                ),
+                OutlinedButton(
+                  onPressed: _busy ? null : _limparSimulado,
+                  child: const Text('Limpar'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text('Questões no simulado: ${_simuladoQuestions.length}'),
+            Text('Tempo sugerido: $_simuladoTempoTotalMinutos minutos'),
+            Text(
+              'Distribuição por área: '
+              '${_buildSimuladoDistribuicaoResumo(_simuladoQuestions)}',
+            ),
+            const SizedBox(height: 8),
+            if (_simuladoQuestions.isEmpty)
+              const Text('Nenhum simulado montado ainda.')
+            else
+              ..._simuladoQuestions.map(
+                (item) => Text(
+                  'Q ${item.year}/${item.day}/${item.number} '
+                  '${item.area} | ${item.skill.isEmpty ? '-' : item.skill}'
+                  ' | ${previewText(item.statement)}',
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _buildIntercorrelationFiltersCard() {
     const matchTypes = ['', 'direto', 'relacionado', 'interdisciplinar'];
 
@@ -1349,6 +1572,8 @@ class _HomePageState extends State<HomePage> {
             _buildModuleSuggestionsCard(),
             const SizedBox(height: 12),
             _buildQuestionFiltersCard(),
+            const SizedBox(height: 12),
+            _buildSimuladoCard(),
             const SizedBox(height: 12),
             _buildIntercorrelationFiltersCard(),
             const SizedBox(height: 12),
