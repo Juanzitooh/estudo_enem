@@ -379,11 +379,25 @@ def to_int(raw_value: str) -> int:
         return 0
 
 
+def is_exercise_module(row: dict[str, str]) -> bool:
+    raw_type = (
+        row.get("tipo_modulo")
+        or row.get("tipo")
+        or row.get("modulo_exercicios")
+        or ""
+    ).strip()
+    normalized = normalize_text(raw_type).replace(" ", "")
+    return normalized in {"exercicios", "exercicio", "listaexercicios", "sim", "true", "1"}
+
+
 def load_modules(modules_csv: Path, tag_rules: list[TagRule]) -> list[ModuleItem]:
     modules: list[ModuleItem] = []
     with modules_csv.open("r", encoding="utf-8", newline="") as file_obj:
         reader = csv.DictReader(file_obj)
         for row in reader:
+            if is_exercise_module(row):
+                continue
+
             volume = to_int((row.get("volume") or "").strip())
             modulo = to_int((row.get("modulo") or "").strip())
             area = (row.get("area") or "").strip()

@@ -24,7 +24,13 @@ REQUIRED_FIELDNAMES = (
     "habilidades",
 )
 EXPECTATIONS_FIELDNAME = "expectativas_aprendizagem"
-OUTPUT_FIELDNAMES = REQUIRED_FIELDNAMES + (EXPECTATIONS_FIELDNAME,)
+MODULE_TYPE_FIELDNAME = "tipo_modulo"
+MODULE_REFERENCE_FIELDNAME = "referencia_modulos"
+OUTPUT_FIELDNAMES = REQUIRED_FIELDNAMES + (
+    EXPECTATIONS_FIELDNAME,
+    MODULE_TYPE_FIELDNAME,
+    MODULE_REFERENCE_FIELDNAME,
+)
 
 
 @dataclass
@@ -39,6 +45,8 @@ class ModuleRow:
     pagina: str
     habilidades: str
     expectativas_aprendizagem: str
+    tipo_modulo: str
+    referencia_modulos: str
 
     @classmethod
     def from_dict(cls, row: dict[str, str]) -> ModuleRow:
@@ -57,6 +65,17 @@ class ModuleRow:
                 or row.get("descrição")
                 or ""
             ).strip(),
+            tipo_modulo=normalize_tipo_modulo(
+                (
+                    row.get(MODULE_TYPE_FIELDNAME)
+                    or row.get("tipo")
+                    or row.get("modulo_exercicios")
+                    or ""
+                ).strip()
+            ),
+            referencia_modulos=(
+                row.get(MODULE_REFERENCE_FIELDNAME) or row.get("referencia") or ""
+            ).strip(),
         )
 
     def as_dict(self) -> dict[str, str]:
@@ -69,6 +88,8 @@ class ModuleRow:
             "pagina": self.pagina,
             "habilidades": self.habilidades,
             EXPECTATIONS_FIELDNAME: self.expectativas_aprendizagem,
+            MODULE_TYPE_FIELDNAME: self.tipo_modulo,
+            MODULE_REFERENCE_FIELDNAME: self.referencia_modulos,
         }
 
 
@@ -95,6 +116,38 @@ def normalize_habilidades(text: str) -> str:
     """Normaliza lista de habilidades aceitando vírgula ou ponto e vírgula."""
     parts = [item.strip() for item in re.split(r"[;,]+", text) if item.strip()]
     return "; ".join(parts)
+
+
+def normalize_tipo_modulo(text: str) -> str:
+    """Normaliza tipo de módulo para 'conteudo' ou 'exercicios'."""
+    normalized = normalize_for_compare(text)
+    if normalized in {"exercicios", "exercicio", "lista_exercicios", "sim", "true", "1"}:
+        return "exercicios"
+    return "conteudo"
+
+
+def normalize_referencia_modulos(text: str) -> str:
+    """Normaliza referências de módulos (ex.: '3,4' -> 'm3; m4')."""
+    result: list[str] = []
+    seen: set[str] = set()
+    for chunk in re.split(r"[;,\n\r]+", text):
+        cleaned = chunk.strip()
+        if not cleaned:
+            continue
+
+        digits_match = re.search(r"\d+", cleaned)
+        if digits_match:
+            token = f"m{int(digits_match.group(0))}"
+        else:
+            token = cleaned
+
+        dedupe_key = token.casefold()
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
+        result.append(token)
+
+    return "; ".join(result)
 
 
 def normalize_expectativas_aprendizagem(text: str) -> str:
@@ -152,6 +205,8 @@ class IndiceLivrosEditor:
         self.var_titulo = tk.StringVar()
         self.var_pagina = tk.StringVar()
         self.var_habilidades = tk.StringVar()
+        self.var_tipo_modulo = tk.StringVar(value="conteudo")
+        self.var_referencia_modulos = tk.StringVar()
         self.var_status = tk.StringVar(value="Pronto.")
         self.var_progress = tk.StringVar()
         self.var_nav_volume = tk.StringVar()
@@ -275,17 +330,41 @@ class IndiceLivrosEditor:
             ),
         ).grid(row=7, column=1, sticky="w", pady=(2, 0))
 
+        ttk.Label(form_frame, text="Tipo do módulo").grid(
+            row=8, column=0, sticky="w", pady=(8, 4)
+        )
+        tipo_frame = ttk.Frame(form_frame)
+        tipo_frame.grid(row=8, column=1, sticky="we", pady=(8, 4))
+        ttk.Combobox(
+            tipo_frame,
+            textvariable=self.var_tipo_modulo,
+            state="readonly",
+            values=("conteudo", "exercicios"),
+            width=18,
+        ).pack(side="left")
+        ttk.Label(tipo_frame, text="Referência (módulos)").pack(side="left", padx=(12, 6))
+        ttk.Entry(tipo_frame, textvariable=self.var_referencia_modulos, width=34).pack(
+            side="left", fill="x", expand=True
+        )
+        ttk.Label(
+            form_frame,
+            text=(
+                "Se for 'exercicios', habilidades/expectativas podem ficar vazias. "
+                "Ex.: referência m3; m4."
+            ),
+        ).grid(row=9, column=1, sticky="w", pady=(2, 0))
+
         ttk.Label(form_frame, text="Expectativas de aprendizagem").grid(
-            row=8, column=0, sticky="nw", pady=(8, 4)
+            row=10, column=0, sticky="nw", pady=(8, 4)
         )
         self.expectativas_text = tk.Text(form_frame, width=94, height=4, wrap="word")
-        self.expectativas_text.grid(row=8, column=1, sticky="we", pady=(8, 4))
+        self.expectativas_text.grid(row=10, column=1, sticky="we", pady=(8, 4))
         ttk.Label(
             form_frame,
             text=(
                 "Liste 2-4 expectativas curtas (uma por linha ou separadas por ';')."
             ),
-        ).grid(row=9, column=1, sticky="w", pady=(2, 0))
+        ).grid(row=11, column=1, sticky="w", pady=(2, 0))
 
         form_frame.columnconfigure(1, weight=1)
 
@@ -337,6 +416,8 @@ class IndiceLivrosEditor:
         self.var_titulo.set(row.titulo)
         self.var_pagina.set(row.pagina)
         self.var_habilidades.set(row.habilidades)
+        self.var_tipo_modulo.set(normalize_tipo_modulo(row.tipo_modulo))
+        self.var_referencia_modulos.set(row.referencia_modulos)
         if self.expectativas_text is not None:
             self.expectativas_text.delete("1.0", tk.END)
             self.expectativas_text.insert("1.0", row.expectativas_aprendizagem)
@@ -375,6 +456,10 @@ class IndiceLivrosEditor:
         new_titulo = self.var_titulo.get().strip()
         new_pagina = self.var_pagina.get().strip()
         new_habilidades = normalize_habilidades(self.var_habilidades.get().strip())
+        new_tipo_modulo = normalize_tipo_modulo(self.var_tipo_modulo.get())
+        new_referencia_modulos = normalize_referencia_modulos(
+            self.var_referencia_modulos.get().strip()
+        )
         new_expectativas = ""
         if self.expectativas_text is not None:
             new_expectativas = normalize_expectativas_aprendizagem(
@@ -386,13 +471,19 @@ class IndiceLivrosEditor:
             or row.pagina != new_pagina
             or row.habilidades != new_habilidades
             or row.expectativas_aprendizagem != new_expectativas
+            or row.tipo_modulo != new_tipo_modulo
+            or row.referencia_modulos != new_referencia_modulos
         )
         if changed:
             row.titulo = new_titulo
             row.pagina = new_pagina
             row.habilidades = new_habilidades
             row.expectativas_aprendizagem = new_expectativas
+            row.tipo_modulo = new_tipo_modulo
+            row.referencia_modulos = new_referencia_modulos
             self.var_habilidades.set(new_habilidades)
+            self.var_tipo_modulo.set(new_tipo_modulo)
+            self.var_referencia_modulos.set(new_referencia_modulos)
             if self.expectativas_text is not None:
                 self.expectativas_text.delete("1.0", tk.END)
                 self.expectativas_text.insert("1.0", new_expectativas)
@@ -538,6 +629,16 @@ class IndiceLivrosEditor:
         self.var_status.set("Combinação selecionada não encontrada no CSV.")
 
     def _is_row_unfilled(self, row: ModuleRow) -> bool:
+        tipo_modulo = normalize_tipo_modulo(row.tipo_modulo)
+        if tipo_modulo == "exercicios":
+            return any(
+                not value.strip()
+                for value in (
+                    row.titulo,
+                    row.pagina,
+                )
+            )
+
         return any(
             not value.strip()
             for value in (
