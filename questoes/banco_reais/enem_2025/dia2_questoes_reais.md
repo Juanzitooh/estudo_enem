@@ -516,9 +516,8 @@ A configuração adequada do circuito e o valor do resistor de
 proteção, em relação ao valor da resistência do equipamento, são:
 A
 B
-I 
-
-I0 
+I
+I0
 C
 D
 E
@@ -555,7 +554,7 @@ A massa de alumínio, em quilograma, estimada pela engenheira
 - Gabarito: A
 
 O nível sonoro, em decibel (dB), é calculado pela expressão:
-n  10 log10
+n 10 log10
 Uma conversa normal entre duas pessoas gera sons de
 níveis sonoros entre 50 e 60 dB, enquanto pessoas gritando
 podem gerar sons de níveis superiores a 100 dB. Supondo que,
@@ -757,7 +756,7 @@ puros, é necessário fazer a cloração do minério que contém
 dióxido de titânio, com o objetivo de separar esse óxido de
 outras substâncias presentes no minério. A principal reação
 química de cloração é representada por:
-TiO2 (s) + 2 Cl2 (g)                                                                    TiCl4 (g) + O2 (g) ΔH = +175 kJ/mol
+TiO2 (s) + 2 Cl2 (g) TiCl4 (g) + O2 (g) ΔH = +175 kJ/mol
 Depois da cloração, o tetracloreto de titânio é condensado
 e convertido, novamente, a dióxido de titânio.
 Após o sistema atingir o equilíbrio químico, como a formação
@@ -828,10 +827,10 @@ enfim, mergulhar o objeto de prata enegrecido. Em cerca de
 três minutos, a prata volta à coloração original. As seguintes
 semirreações e os respectivos potenciais-padrão de redução
 são úteis para a compreensão dos fenômenos ocorridos.
-Ag2S (s) + 2 e− → 2 Ag (s) + S2− (aq)                                                                                                                                  −0,69 V
-O2 (g) + 4 H+ (aq) + 4 e− → 2 H2O (l)                                                                                                                                   +1,23 V
+Ag2S (s) + 2 e− → 2 Ag (s) + S2− (aq) −0,69 V
+O2 (g) + 4 H+ (aq) + 4 e− → 2 H2O (l) +1,23 V
 Al (aq) + 3 e → Al (s)
-3+                                            −
+3+ −
 −1,68 V
 SARTORI, E. R.; BATISTA, E. F.; FATIBELLO-FILHO, O. Escurecimento e limpeza
 de objetos de prata: um experimento simples e de fácil execução envolvendo
@@ -920,7 +919,7 @@ A
 B
 C
 D
-E                                                                                                                                                 ￼
+E ￼
 
 ## Questão 130
 
@@ -949,12 +948,12 @@ Os sensores que apresentam maior sensibilidade são
 
 O ácido úsnico é retirado de liquens e foi testado contra
 diversas espécies, conforme o quadro.
-Teste                                                                                                        Resultado
-Aedes aegypti (larvas)                                                                                                             Baixa eficiência
-Bacilo de Koch                                                                                                     Média eficiência
-Moluscos aquáticos (adultos)                                                                                                                       Alta eficiência
-Pernilongo (larvas)                                                                                                        Média eficiência
-Vermes platelmintos                                                                                                                       Ineficiente
+Teste Resultado
+Aedes aegypti (larvas) Baixa eficiência
+Bacilo de Koch Média eficiência
+Moluscos aquáticos (adultos) Alta eficiência
+Pernilongo (larvas) Média eficiência
+Vermes platelmintos Ineficiente
 O ácido úsnico mostrou-se mais indicado para o controle da
 - A) esquistossomose.
 - B) febre amarela.
@@ -1042,12 +1041,12 @@ máxima de corrente elétrica igual a 20 A. Acima desse valor, o
 fusível de segurança da régua se rompe, inutilizando-a até que
 um novo fusível seja instalado. Considere as potências nominais
 de alguns aparelhos eletroeletrônicos apresentadas no quadro.
-Aparelho                                                              Potência (watt)
-Luminária de LED                                                                                                 5
-Computador                                                                                         250
-Impressora a laser                                                                                            660
-Secador de cabelos                                                                                              750
-Cafeteira                                                                                  900
+Aparelho Potência (watt)
+Luminária de LED 5
+Computador 250
+Impressora a laser 660
+Secador de cabelos 750
+Cafeteira 900
 Condicionador
 1 100
 de ar portátil
@@ -1112,7 +1111,7 @@ Qual é a quantidade de S1, em litro, que será retirada?
 - C) 0,5000
 - D) 4,9775
 - E) 5,0000
-16                                                                                                                                                                                                                                        MATEMÁTICA
+16 MATEMÁTICA
 
 ## Questão 138
 
@@ -1151,17 +1150,17 @@ A direção da empresa decide que seu novo padrão de velocidade de
 referência será a mediana dos valores das velocidades de referência
 de conexões nessas dez cidades. Esses valores, em megabyte
 por segundo (MB/s), são apresentados no quadro.
-Cidades                                                                Velocidade de referência (MB/s)
-C1                                                                                                                   390
-C2                                                                                                                  380
-C3                                                                                                                   320
-C4                                                                                                                   390
-C5                                                                                                                  340
-C6                                                                                                                  380
-C7                                                                                                                   390
-C8                                                                                                                  400
-C9                                                                                                                   350
-C10                                                                                                                     360
+Cidades Velocidade de referência (MB/s)
+C1 390
+C2 380
+C3 320
+C4 390
+C5 340
+C6 380
+C7 390
+C8 400
+C9 350
+C10 360
 A velocidade de referência, em megabyte por segundo, a ser
 adotada por essa empresa é
 - A) 360.
@@ -1271,7 +1270,7 @@ descritas, é
 A
 B
 C
-18                                                                                                                                                                                                                                        MATEMÁTICA
+18 MATEMÁTICA
 D
 E
 
@@ -1333,7 +1332,7 @@ movimentar sem ser atacado?
 - C) y = −3x − 20
 - D) y = 3x + 16
 - E) y = 3x − 16
-20                                                                                                                                                                                                                                        MATEMÁTICA
+20 MATEMÁTICA
 
 ## Questão 148
 
@@ -1429,7 +1428,7 @@ capacidade de produção é
 - C) 1 200.
 - D) 1 800.
 - E) 2 520.
-22                                                                                                                                                                                                                                        MATEMÁTICA
+22 MATEMÁTICA
 
 ## Questão 153
 
@@ -1545,10 +1544,10 @@ Em um estudo clínico, 55 mulheres foram distribuídas, aleatoriamente, em 5 gru
 medicação, será escolhido um grupo no qual a maioria das mulheres tenham idades entre 20 e 30 anos. Os demais grupos
 tomarão placebo ou medicações já existentes no mercado. O quadro, parcialmente preenchido, informa alguns dados relativos
 às idades das mulheres desses grupos.
-Grupos                                                   Menor idade                                                          Maior idade                                                                     Média
-1                                                                                                                                                                                                         25
-4                                                                                                                                                                                                         25
-5                                                                 20                                                                  35
+Grupos Menor idade Maior idade Média
+1 25
+4 25
+5 20 35
 Mesmo com o quadro incompleto, foi possível selecionar um desses grupos porque, apenas com os dados apresentados no
 quadro, foi identificado um grupo que, certamente, atendia ao critério de escolha.
 O grupo escolhido foi o
@@ -1575,9 +1574,9 @@ B2
 C8
 D9
 E 15
-24                                                                                                                                                                                                                                        MATEMÁTICA
-Mediana                                                                  Moda                                               Desvio padrão
-25                                                                                                                                        9
+24 MATEMÁTICA
+Mediana Moda Desvio padrão
+25 9
 
 ## Questão 159
 
@@ -1595,38 +1594,24 @@ entre 0 e 4 minutos, conforme ilustrado na figura, na qual estão
 apresentadas assíntotas verticais da função tangente utilizada
 na definição de D.
 A expressão algébrica que representa a relação entre D e T é
-
-2  
-- A) D  2, 5
-tg 30  T
-
-           2  
-
-5                                                                                                                                                                                                                                    e 80 tonelad
-- B) D  4
-tg 30  T
-                                                                                                                                                                                                                                    reciclar uma tonel
-
-2 
-
-2                                                                                                                                                                                                                            a partir de derivados de
-- C) D  4
-tg 2, 5  T
-
-
-2                                                                                                                                                                                                                             dessa empres
-1         
-- D) D  30
-tg 
+- A) D 2, 5
+tg 30 T
+5 e 80 tonelad
+- B) D 4
+tg 30 T
+reciclar uma tonel
+2 a partir de derivados de
+- C) D 4
+tg 2, 5 T
+2 dessa empres
+- D) D 30
+tg
 T
-5  
-2         
-1
-5                                                                                                                                                                                                                                     mínima de tone
-- E) D  30
-tg   T
-                                                                                                                                                                                                                                     partir de recicla
-2    2 
+5 mínima de tone
+- E) D 30
+tg T
+partir de recicla
+2 2
 
 ## Questão 160
 
@@ -1710,7 +1695,7 @@ Em qual escala esse desenho representa a obra de arte?
 - C) 1 : 10
 - D) 1 : 100
 - E) 1 : 150
-26                                                                                                                                                                                                                                        MATEMÁTICA
+26 MATEMÁTICA
 
 ## Questão 164
 
@@ -1785,16 +1770,16 @@ pote cheio de sorvete é
 A produtividade de soja em uma área cultivada é a média da quantidade de sacas de 50 quilogramas que são produzidas
 por hectare. O quadro apresenta a área cultivada e a produtividade de soja em certa propriedade, ao longo de cinco safras,
 com períodos de um ano, de 2011 a 2016.
-Safra                                                                                                                                   11-12
-Área cultivada (hectare)                                                                                                                                                         200
-Produtividade (sacas de 50 kg por hectare)                                                                                                                                                                               40
+Safra 11-12
+Área cultivada (hectare) 200
+Produtividade (sacas de 50 kg por hectare) 40
 O gráfico de linhas que representa a produção de soja dessa propriedade, em tonelada, nessas cinco safras é
 A
 B
 C
-12-13                                                  13-14                                                  14-15                                                   15-16
-220                                                     250                                                    250                                                     200
-30                                                      45                                                     45                                                      50
+12-13 13-14 14-15 15-16
+220 250 250 200
+30 45 45 50
 D
 E
 
@@ -1837,7 +1822,7 @@ O jogador que tem a maior probabilidade de vitória é
 - C) Artur, com probabilidade de
 - D) João, com probabilidade de
 - E) Artur, com probabilidade de
-28                                                                                                                                                                                                                                        MATEMÁTICA
+28 MATEMÁTICA
 
 ## Questão 170
 
@@ -1923,10 +1908,10 @@ Em um país, a primeira etapa para obtenção da carteira de motorista é a cont
 • aluguel do veículo para realização das aulas práticas.
 Uma pessoa que pretende obter a carteira de motorista pesquisou o valor do aluguel do veículo e os valores de cada aula
 teórica e de cada aula prática em três autoescolas. O quadro apresenta esses valores.
-Autoescola                                                Valor de cada aula teórica (R$)                                                                                                      Valor de cada au
-I                                                                                            10
-II                                                                                             30
-III                                                                                             20
+Autoescola Valor de cada aula teórica (R$) Valor de cada au
+I 10
+II 30
+III 20
 Ela contratará os três produtos numa mesma autoescola de modo que o custo total nessa primeira etapa seja o menor possível.
 A autoescola que será contratada é a
 - A) I, com o custo total de R$ 1 400,00.
@@ -1934,10 +1919,10 @@ A autoescola que será contratada é a
 - C) II, com o custo total de R$ 1 300,00.
 - D) III, com o custo total de R$ 460,00.
 - E) III, com o custo total de R$ 1 200,00.
-la prática (R$)                                                                                                       Aluguel do veículo (R$)
-80                                                                                                                  400
-50                                                                                                                  200
-40                                                                                                                  400
+la prática (R$) Aluguel do veículo (R$)
+80 400
+50 200
+40 400
 
 ## Questão 174
 
@@ -1964,7 +1949,7 @@ caixa, garantindo um funcionamento eficiente, é igual a
 - C) 4.
 - D) 3.
 - E) 2.
-30                                                                                                                                                                                                                                        MATEMÁTICA
+30 MATEMÁTICA
 P1_2_Dia_MTT_REG_5_Amarelo.indd 30
 
 ## Questão 175
@@ -2112,15 +2097,15 @@ na partida, em quilômetro, foi
 - C) 7,5.
 - D) 9,0.
 - E) 12,0.
-*020125AM32*   01
-dor 9                                                   9 Led
-ado 9                                                    9 Ate
-as 10                                                   10 Lib
-2º Dia                                                   2º Dia
-as 12                                                   12 Lib
-or 11                                                   11 Le
-do 11                                                    11 At
-rde 8                                                   8 Ver
-Azul 7                                                   7 Azu
-nza 6                                                   6 Cinz
-relo 5                                                   5 Am
+*020125AM32* 01
+dor 9 9 Led
+ado 9 9 Ate
+as 10 10 Lib
+2º Dia 2º Dia
+as 12 12 Lib
+or 11 11 Le
+do 11 11 At
+rde 8 8 Ver
+Azul 7 7 Azu
+nza 6 6 Cinz
+relo 5 5 Am

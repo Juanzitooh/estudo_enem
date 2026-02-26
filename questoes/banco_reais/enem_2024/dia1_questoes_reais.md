@@ -18,7 +18,7 @@ e ao cantor e compositor Bob Marley reside na crença de que
 - C) tirar proveito de situações que podem ser adversas.
 - D) evitar dificuldades que parecem ser intransponíveis.
 - E) contestar circunstâncias que parecem ser harmônicas.
-2                                                                                   LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+2 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 002
 
@@ -210,7 +210,7 @@ Patricia Sánchez Santiago assume o desafio de
 - C) promover reflexões acerca de conceitos abstratos.
 - D) representar a pluralidade linguística de seu país.
 - E) narrar uma trajetória de autoconhecimento.
-4                                                                                   LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+4 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 004 (variação 2)
 
@@ -459,7 +459,7 @@ Segundo a argumentação construída nesse texto, o podcast
 sociais.
 - E) constitui uma evolução na transmissão de informações
 via rádio.
-6                                                                                   LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+6 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 011
 
@@ -678,7 +678,7 @@ de exames.
 médicas.
 - E) garantir infraestrutura para o trabalho remoto de
 médicos.
-8                                                                                   LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+8 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 016
 
@@ -893,7 +893,7 @@ acerca do universo.
 e de identidade cultural.
 - E) indissociabilidade entre objetos ritualísticos e os papéis
 dos indivíduos na comunidade.
-10                                                                                  LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+10 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 P1_1_Dia_LCT_REG_1_Azul.indd 10
 
 ## Questão 022
@@ -1102,7 +1102,7 @@ bem jovens”.
 - D) “Queria dar beijinhos e carinhos sem ter fim nessa moçada”.
 - E) “Diria que não é sinal de saúde estar bem-adaptado a
 uma sociedade doente”.
-12                                                                                  LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+12 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 028
 
@@ -1329,7 +1329,7 @@ tem a finalidade de
 - C) garantir a conservação de roupas de inverno.
 - D) relacionar o gesto de doação à ideia de desapego.
 - E) comparar a peça de roupa ao sentimento de despedida.
-14                                                                                  LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+14 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 034
 
@@ -1493,7 +1493,7 @@ a tentativa de pessoas
 - C) procurarem lugares inexplorados.
 - D) partirem em experiências inusitadas.
 - E) desaparecerem da vida em sociedade.
-16                                                                                  LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+16 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 039
 
@@ -1583,15 +1583,15 @@ lembrar que um dos grandes mitos da medicina é o de que
 o câncer de mama não afeta o sexo masculino.
 Fatores importantes para detectar o câncer de mama
 masculino:
-1.	   Genética: se houver casos na família, as chances são
+1. Genética: se houver casos na família, as chances são
 um pouco mais elevadas.
-2.	  Hormônios: homens podem desenvolver tecido real das
+2. Hormônios: homens podem desenvolver tecido real das
 glândulas mamárias por tomarem certos medicamentos
 ou apresentarem níveis hormonais anormais.
-3.	  Caroços: é necessário que os médicos se atentem a
+3. Caroços: é necessário que os médicos se atentem a
 alguns sintomas suspeitos, como um caroço na área
 do tórax.
-4.	  Retração na pele: em situações mais graves do câncer
+4. Retração na pele: em situações mais graves do câncer
 de mama masculino, é possível também ocorrer uma
 retração do mamilo.
 Disponível em: https://pebmed.com.br.
@@ -1713,7 +1713,7 @@ Internacional, a decisão faz parte de uma estratégia de
 se comunicar com jovens urbanos que se exercitam e se
 entretêm de uma maneira muito diferente da dos seus avós.
 Disponível em: www.uol.com.br. Acesso em: 19 nov. 2021 (adaptado).
-18                                                                                  LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
+18 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS E REDAÇÃO • 1 º DIA • CADERNO 1 • AZUL •
 A mudança no programa olímpico mencionada no texto
 mostra que o esporte está se
 - A) aproximando da aventura.
@@ -1772,7 +1772,7 @@ INSTRUÇÕES PARA A REDAÇÃO
 1. O rascunho da redação deve ser feito no espaço apropriado.
 2. O texto definitivo deve ser escrito à tinta preta, na folha própria, em até 30 (trinta) linhas.
 3. A
- redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
+redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
 copiadas desconsiderado para a contagem de linhas.
 4. Receberá nota zero, em qualquer das situações expressas a seguir, a redação que:
 4.1. tiver até 7 (sete) linhas escritas, sendo considerada “texto insuficiente”;
@@ -1923,7 +1923,7 @@ O texto dos sanitaristas atuantes nas décadas de 1920 e
 - C) assimilação cultural.
 - D) hegemonização identitária.
 - E) hierarquização profissional.
-20                                                                                                                                         CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
+20 CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
 P1_1_Dia_CHT_REG_1_Azul.indd 20
 
 ## Questão 048
@@ -2122,7 +2122,7 @@ remete a um(a)
 - C) contemplação da natureza.
 - D) raciocínio argumentativo.
 - E) crítica à individualidade.
-22                                                                                                                                         CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
+22 CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 056
 
@@ -2344,7 +2344,7 @@ texto, as autoras destacam a importância do conceito como:
 - C) Instituição de interesse público.
 - D) Organização da iniciativa privada.
 - E) Instrumento de manipulação estatal.
-24                                                                                                                                         CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
+24 CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 064
 
@@ -2541,7 +2541,7 @@ dotado de objetos com a finalidade de intensificar a
 - C) concentração da produção.
 - D) distribuição de renda.
 - E) dinamização dos fluxos.
-26                                                                                                                                         CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
+26 CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
 P1_1_Dia_CHT_REG_1_Azul.indd 26
 
 ## Questão 071
@@ -2759,7 +2759,7 @@ A eliminação, para os refugiados, do tipo de fronteira descrita no texto neces
 - C) homogeneização cultural.
 - D) diferenciação étnico-racial.
 - E) integração socioeconômica.
-28                                                                                                                                         CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
+28 CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
 P1_1_Dia_CHT_REG_1_Azul.indd 28
 ade. São Paulo: Planeta do Brasil, 2016.
 MOREIRA, J. B. Refugiados no Brasil. REMHU, n. 43, jul.-dez. 2014.
@@ -2934,7 +2934,7 @@ social mencionado expôs ao mundo?
 - C) Naturalização da violência doméstica.
 - D) Ampliação das desigualdades sociais.
 - E) Relativização dos princípios democráticos.
-30                                                                                                                                         CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
+30 CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS • 1 º DIA • CADERNO 1 • AZUL •
 
 ## Questão 086
 
@@ -3049,33 +3049,33 @@ caracterizada pela
 - C) alienação decorrente da organização do trabalho.
 - D) isonomia remanescente da geração de riquezas.
 - E) produtividade vinculada ao fortalecimento da autonomia.
-a                                                                                                             1 Di
-apa                                                                                                           4°Ca
-ul 1                          Transcreva a sua Redação para a Folha de Redação.                              1 Az
-elo 2                                                                                                         2 Am
-co 3             1                                                                                           3 Br
-sa 4             2                                                                                           4 Ro
-dor 9                                                                                                         9 Le
-s 10             4
+a 1 Di
+apa 4°Ca
+ul 1 Transcreva a sua Redação para a Folha de Redação. 1 Az
+elo 2 2 Am
+co 3 1 3 Br
+sa 4 2 4 Ro
+dor 9 9 Le
+s 10 4
 10 L
 O
 H
-N      O
-U      Ã
+N O
+U Ã
 - C) Ç
-S      A
+S A
 - A) D
 R RE
 A
 D
-a                                                                                                              2D
-apa               25                                                                                           4°C
-s 12             26                                                                                          12 L
-or 11                                                                                                         11 L
-sa 8                                                                                                          8 Ro
-zul 7             29                                                                                          7 Az
-za 6              30
+a 2D
+apa 25 4°C
+s 12 26 12 L
+or 11 11 L
+sa 8 8 Ro
+zul 7 29 7 Az
+za 6 30
 6 Cin
-elo 5                                                                                                         5 Am
+elo 5 5 Am
 igurrilhos.indd 32
 Bigurrilhos.indd

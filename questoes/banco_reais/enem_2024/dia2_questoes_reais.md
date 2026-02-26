@@ -45,7 +45,7 @@ mistura é a
 - C) destilação.
 - D) dissolução.
 - E) evaporação.
-2                                                                                                            CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+2 CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 093
 
@@ -82,20 +82,20 @@ da hidroxiapatita em meio aquoso, ilustradas a seguir.
 A desmineralização está associada à fragilização do esmalte
 do dente e à formação de cáries.
 5 Ca2+ (aq)
-Ca5(PO4)3OH (s)                                     +
+Ca5(PO4)3OH (s) +
 Desmineralização
-+                                       3 PO43− (aq)
-H+ (aq)            Mineralização                +
++ 3 PO43− (aq)
+H+ (aq) Mineralização +
 H2O (l)
 O uso de creme dental pode minimizar a perda da
 hidroxiapatita. O quadro apresenta o agente de polimento
 e o pH de alguns cremes dentais comerciais.
-Creme dental        Agente de polimento              pH
-I             Bicarbonato de sódio            9,5
-II             Carbonato de cálcio           11,0
-III             Citrato de potássio            7,7
-IV               Dióxido de silício            6,9
-V                Fosfato de cálcio             7,3
+Creme dental Agente de polimento pH
+I Bicarbonato de sódio 9,5
+II Carbonato de cálcio 11,0
+III Citrato de potássio 7,7
+IV Dióxido de silício 6,9
+V Fosfato de cálcio 7,3
 STORGATTO, G. A.; BRAIBANTE, M. E. F.; BRAIBANTE, H. T. S.
 A química na odontologia. Química Nova na Escola,
 v. 39, fev. 2017 (adaptado).
@@ -225,7 +225,7 @@ imunológica.
 sanguínea.
 - E) modificação dos receptores de membrana específicos
 para o vírus.
-4                                                                                                            CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+4 CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 100
 
@@ -243,8 +243,8 @@ módulo 4. Rio de Janeiro: Fundação CECIERJ, 2007 (adaptado).
 Ao repetir o experimento colocando um cilindro metálico
 oco entre as placas, o esquema que representa o formato
 das linhas de campo assumido pelo farelo é:
-A                                   D
-B                                   E
+A D
+B E
 C
 
 ## Questão 101
@@ -304,20 +304,20 @@ para um motor de combustão interna, como os motores a
 gasolina ou a etanol, utilizados nos automóveis.
 As etapas representadas no diagrama estão descritas
 no quadro.
-Etapa Processo                 Descrição
+Etapa Processo Descrição
 Admissão isobárica da mistura
-I      0a1
+I 0a1
 ar-combustível no cilindro do motor.
-II      1a2      Compressão adiabática da mistura.
+II 1a2 Compressão adiabática da mistura.
 Introdução de energia na forma
-III     2a3
+III 2a3
 de calor da combustão.
-IV      3a4             Expansão adiabática.
+IV 3a4 Expansão adiabática.
 Liberação de energia
-V       4a1
+V 4a1
 na forma de calor.
 Liberação dos gases
-VI      1a0
+VI 1a0
 resultantes da combustão.
 Disponível em: www.mspc.eng.br.
 Acesso em: 24 fev. 2013 (adaptado).
@@ -382,7 +382,7 @@ desenvolvimento de
 - C) diabetes.
 - D) hepatite B.
 - E) hemorragia.
-6                                                                                                            CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+6 CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 106
 
@@ -470,7 +470,7 @@ B
 C
 D
 E
-8                                                                                                            CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+8 CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 P1_2_Dia_CNT_REG_5_Amarelo.indd 8
 
 ## Questão 110
@@ -667,7 +667,7 @@ medidas pelo radar?
 - C) Mais agudo do que o som emitido e fr = f0.
 - D) Mais agudo do que o som emitido e fr > f0.
 - E) Mais grave do que o som emitido e fr > f0.
-10                                                                                                           CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+10 CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 118
 
@@ -791,7 +791,7 @@ ciclo do nitrogênio e no ciclo do carbono. Os números
 correspondem a algumas etapas dos dois ciclos distintos.
 Disponível em: https://pt.khanacademy.org.
 Acesso em: 27 jun. 2024 (adaptado).
-12                                                                                                           CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+12 CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 Em qual etapa numerada ocorre uma transformação redox
 como a que ocorre nos procariontes nitrificantes?
 A1
@@ -978,7 +978,7 @@ que estão à frente ou atrás deles.
 - E) Os raios X ionizam os materiais metálicos normalmente
 encontrados em bagagens de mão, quando difratados
 pelos componentes do computador.
-14                                                                                                           CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+14 CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 130
 
@@ -1149,9 +1149,9 @@ ao número de mochilas produzidas. O custo total cresce
 de forma linear, e a tabela apresenta esse custo para três
 quantidades de mochilas produzidas.
 Quantidade de
-30                                    50                                   100
+30 50 100
 mochilas
-Custo total (R$)                                                                1 050,00 1 650,00 3 150,00
+Custo total (R$) 1 050,00 1 650,00 3 150,00
 O custo total, em real, para a produção de 80 mochilas será
 - A) 2 400,00.
 - B) 2 520,00.
@@ -1169,36 +1169,30 @@ na meteorologia para fazer previsões sobre o clima.
 O quadro apresenta as médias mensais, em porcentagem,
 da umidade relativa do ar em um período de seis meses
 consecutivos em uma cidade.
-Meses                                             Maio Jun. Jul. Ago. Set. Out.
+Meses Maio Jun. Jul. Ago. Set. Out.
 Média mensal da
-umidade relativa                                                           66                      64                    54                     46                     60                    64
+umidade relativa 66 64 54 46 60 64
 do ar (%)
 Nessa cidade, a mediana desses dados, em porcentagem,
 da umidade relativa do ar no período considerado foi
 - A) 56.
 - B) 58.
 - C) 59.
-7!              6! 
-7!                6! 
-7!                 6! 
+7! 6!
+7! 6!
+7! 6!
 - D) 60.
-
-
-
-3 !  4 !   2 !  4 ! 
-4 !  3 !   1!  5 ! 
-5 !  2 !   0 !  6! 
+3 ! 4 ! 2 ! 4 !
+4 ! 3 ! 1! 5 !
+5 ! 2 ! 0 ! 6!
 - E) 62.
-7!              6! 
-7!                6! 
-7!                 6! 
-
-
-
-3 !  4 !   2 !  4 ! 
-4 !  3 !   1!  5 ! 
-5 !  2 !   0 !  6! 
-16                                                                                                                                                 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+7! 6!
+7! 6!
+7! 6!
+3 ! 4 ! 2 ! 4 !
+4 ! 3 ! 1! 5 !
+5 ! 2 ! 0 ! 6!
+16 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 138
 
@@ -1239,15 +1233,15 @@ formará uma equipe com 5 médicos, sendo, pelo menos,
 A expressão numérica que representa o número máximo
 de maneiras distintas de formar essa equipe é
 7! 6!
-A       ×
+A ×
 4! 4!
-7!       6!
-B              ×
+7! 6!
+B ×
 3 ! × 4 ! 2! × 4 !
-7!       6!        5!
+7! 6! 5!
 C
-3 !  4 ! 2!  4 ! 1!  4 !
-D 
+3 ! 4 ! 2! 4 ! 1! 4 !
+D
 E
 
 ## Questão 140
@@ -1262,11 +1256,11 @@ segundos a cada 60 segundos. Admita que o instante de
 chegada de um ônibus a cada semáforo é aleatório.
 O engenheiro de tráfego da prefeitura calculou a
 probabilidade de um ônibus encontrar cada um deles
-vermelho, obtendo       . A partir daí, estabeleceu uma
+vermelho, obtendo . A partir daí, estabeleceu uma
 mesma redução na quantidade do tempo, em segundo,
 em que cada sinal ficará vermelho, de maneira que
 a probabilidade de um ônibus encontrar ambos os
-sinais vermelhos numa mesma viagem seja igual a        ,
+sinais vermelhos numa mesma viagem seja igual a ,
 considerando os eventos independentes.
 Para isso, a redução do tempo em que o sinal ficará
 vermelho, em segundo, estabelecida pelo engenheiro foi de
@@ -1292,16 +1286,16 @@ do número de habitantes de R. As densidades demográficas
 correspondentes a essas regiões são denotadas por d(Q)
 e d(R).
 A expressão que relaciona d(Q) e d(R) é
-- A) d Q
-d R
-- B) d Q
-d R
-- C) d Q
-d R
-- D) d Q
-d R
-- E) d Q
-d R
+- A) d Q
+d R
+- B) d Q
+d R
+- C) d Q
+d R
+- D) d Q
+d R
+- E) d Q
+d R
 • MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO
 
 ## Questão 142
@@ -1316,7 +1310,7 @@ determinadas especificações técnicas. Além disso, em
 muitos modelos, com a inclusão de novas funções no
 celular, suas telas ficaram maiores, sendo muito comum
 encontrarmos atualmente telas medindo 4 polegadas,
-conforme a figura.                         6
+conforme a figura. 6
 Disponível em: www.tecmundo.com.br.
 Acesso em: 5 nov. 2014 (adaptado).
 A diferença de tamanho, em valor absoluto, entre as
@@ -1378,7 +1372,7 @@ A medida do comprimento dessa correia, em centímetro, é
 - C) 66.
 - D) 68.
 - E) 72.
-18                                                                                                                                                 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+18 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 145
 
@@ -1435,7 +1429,7 @@ O jardineiro escolherá a forma de
 - A) hexágono regular, pois a área do jardim, em metro quadrado, será k
 - B) hexágono regular, pois a área do jardim, em metro quadrado, será 3k
 k2
-- C) quadrado, pois a área do jardim, em metro quadrado, será    .
+- C) quadrado, pois a área do jardim, em metro quadrado, será .
 - D) triângulo equilátero, pois a área do jardim, em metro quadrado, será k
 - E) triângulo equilátero, pois a área do jardim, em metro quadrado, será k
 
@@ -1449,11 +1443,11 @@ partem simultaneamente, de hora em hora, de terminais diferentes. A distância e
 e o percurso total dos ônibus, de um terminal ao outro, é monitorado por um sistema de cinco câmeras que cobrem
 diferentes partes do trecho, conforme o esquema.
 O alcance de cada uma das cinco câmeras é:
-• câmera I:     do percurso;
-• câmera II:     do percurso;
-• câmera III:   do percurso;
-• câmera IV:    do percurso;
-• câmera V:                                         do percurso.
+• câmera I: do percurso;
+• câmera II: do percurso;
+• câmera III: do percurso;
+• câmera IV: do percurso;
+• câmera V: do percurso.
 Em determinado horário, o ônibus A parte do terminal 1 e realiza o percurso total com velocidade constante de
 250 m/min; enquanto o ônibus B, que parte do terminal 2, realiza o percurso total com velocidade constante de 150 m/min.
 Qual câmera registra o momento em que os ônibus A e B se encontram?
@@ -1462,7 +1456,7 @@ B II
 C III
 D IV
 EV
-20                                                                                                                                                 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+20 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 3.
 3.
 3.
@@ -1478,8 +1472,8 @@ Júlio César, imperador romano, utilizava um código para proteger as mensagens
 se a mensagem caísse em mãos inimigas, a informação não poderia ser compreendida. Nesse código, cada letra do
 alfabeto era substituída pela letra três posições à frente, ou seja, o “A” era substituído pelo “D”, o “B” pelo “E”, o “C”
 pelo “F”, e assim sucessivamente.
-A B C D E F G H I                                                                                        J K L M N O P Q R S T U V W X Y Z A B C Letra do texto codificado
-A B C D E F G H I                                                                                        J K L M N O P Q R S T U V W X Y Z Letra do texto original
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A B C Letra do texto codificado
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Letra do texto original
 Qualquer código que tenha um padrão de substituição de letras como o descrito é considerado uma Cifra de César
 ou um Código de César. Note que, para decifrar uma Cifra de César, basta descobrir por qual letra o “A” foi substituído,
 pois isso define todas as demais substituições a serem feitas.
@@ -1487,20 +1481,20 @@ Uma mensagem, em um alfabeto de 26 letras, foi codificada usando uma Cifra de C�
 de se descobrir, aleatoriamente, o padrão utilizado nessa codificação, e que uma tentativa frustrada deverá ser eliminada
 nas tentativas seguintes.
 A probabilidade de se descobrir o padrão dessa Cifra de César apenas na terceira tentativa é dada por
-1   1   1
-- A) +   +
+1 1 1
+- A) + +
 25 25 25
 24 23 1
-- B) +  +
+- B) + +
 25 24 23
-1   1   1
-- C) ×   ×
+1 1 1
+- C) × ×
 25 24 23
 24 23 1
-- D) ×  ×
+- D) × ×
 25 25 25
 24 23 1
-- E) ×  ×
+- E) × ×
 25 24 23
 
 ## Questão 150
@@ -1511,10 +1505,10 @@ A probabilidade de se descobrir o padrão dessa Cifra de César apenas na tercei
 Em uma região com grande incidência de terremotos, observou-se que dois terremotos ocorridos apresentaram
 magnitudes M1 e M2, medidos segundo a escala Richter, e liberaram energias iguais a E1 e E2, respectivamente. Entre
 os estudiosos do assunto, é conhecida uma expressão algébrica relacionando esses valores dada por
-E 
-M2  M1
-log  2 
-E1 
+E
+M2 M1
+log 2
+E1
 Estudos mais abrangentes observaram que o primeiro terremoto apresentou a magnitude M1 = 6,9 e a energia
 liberada foi um décimo da observada no segundo terremoto.
 O valor aproximado da magnitude M2 do segundo terremoto, expresso com uma casa decimal, é igual a
@@ -1553,7 +1547,7 @@ D
 π
 E
 π
-22                                                                                                                                                 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+22 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 152
 
@@ -1607,14 +1601,14 @@ contratos possa ser longo.
 O quadro apresenta uma amostra do tempo considerado
 necessário para a leitura completa do contrato de alguns
 serviços digitais.
-Tipo de                                           Tempo necessário para a leitura
-serviço                                          completa do contrato (em minuto)
+Tipo de Tempo necessário para a leitura
+serviço completa do contrato (em minuto)
 - A) 36
 - B) 17
 - C) 27
 - D) 13
 - E) 13
-F                                                                                                   13
+F 13
 ROMERO, L. Não li e concordo. Superinteressante,
 n. 307, ago. 2012 (adaptado).
 O tempo médio, em minuto, necessário para a leitura
@@ -1641,7 +1635,7 @@ colocado no ponto S. Essa área depende da medida do
 Ao aumentar o ângulo α ou o raio R aumenta-se a
 área de cobertura do sensor. Entretanto, quanto maior
 essa área, maior o preço do sensor.
-24                                                                                                                                                 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+24 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 Para esse fim, há cinco tipos de sensores disponíveis
 no mercado, cada um com as seguintes características:
 • tipo I: α = 15°° e R = 20 m;
@@ -1727,7 +1721,7 @@ A unidade de medida adequada para descrever o fluxo
 (φ) de água que atravessa a superfície da membrana é
 A mL ⋅ s ⋅ cm2
 mL
-B                  ⋅ cm2
+B ⋅ cm2
 s
 mL
 C
@@ -1812,7 +1806,7 @@ dessa empresa.
 associadas a essa faixa etária é 110%, que é maior do
 que as respectivas somas associadas às outras faixas
 etárias, que são 105% e 85%.
-26                                                                                                                                                 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+26 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 162
 
@@ -1828,8 +1822,8 @@ esses dois planos ortogonais ao plano da base que contém
 o ponto F, conforme a figura.
 A projeção ortogonal, sobre o plano da base, da trajetória
 ABCDEF descrita pelo personagem é
-A                             D
-B                             E
+A D
+B E
 C
 
 ## Questão 163
@@ -1922,9 +1916,9 @@ componentes em uma mesma loja. O quadro apresenta
 os preços dos dois tipos de componentes nas lojas I e II.
 Preços dos componentes (R$)
 Lojas
-X                                                                                  Y
-I                                                    3,00                                                                                1,00
-II                                                    2,00                                                                                4,00
+X Y
+I 3,00 1,00
+II 2,00 4,00
 Ele confeccionará enfeites formados por duas unidades
 do componente X e uma unidade do componente Y e
 efetuará a compra na loja que oferecer o menor valor total
@@ -1960,7 +1954,7 @@ Os conceitos de João e Felipe foram, respectivamente,
 - C) muito bom e insatisfatório.
 - D) bom e regular.
 - E) bom e insatisfatório.
-28                                                                                                                                                 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+28 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 
 ## Questão 168
 
@@ -1987,9 +1981,9 @@ grandeza I varia de 1 a 3, é
 Uma criança, utilizando um aplicativo, escreveu uma
 mensagem para enviar a um amigo. Essa mensagem foi
 escrita seguindo estas etapas:
-Etapas                                                                                 Visor de escrita
+Etapas Visor de escrita
 1ª etapa: inseriu três figuras
-do tipo       no visor de
+do tipo no visor de
 escrita da mensagem;
 2ª etapa: copiou o que havia
 inserido anteriormente e
@@ -2099,13 +2093,13 @@ coluna e a parede não poderão ser superiores a 15 cm.
 Para efetuar a compra dessas colunas, foram feitos
 orçamentos com base em dados fornecidos por cinco lojas.
 Preço por
-Loja                                                      Raio (cm)
+Loja Raio (cm)
 unidade (R$)
-I                                                                 5                                                   60
-II                                                                10                                                   70
-III                                                                12                                                   75
-IV                                                                 15                                                   90
-V                                                                 20                                                  120
+I 5 60
+II 10 70
+III 12 75
+IV 15 90
+V 20 120
 A compra será realizada na loja cujo orçamento resulte
 no menor valor total possível.
 A compra será realizada na loja
@@ -2133,7 +2127,7 @@ centímetro quadrado, é
 - C) 41,80.
 - D) 83,60.
 - E) 418,00.
-30                                                                                                                                                 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
+30 MATEMÁTICA E SUAS TECNOLOGIAS • 2 º DIA • CADERNO 5 • AMARELO •
 P1_2_Dia_MT_REG_5_Amarelo.indd 30
 
 ## Questão 175
@@ -2269,21 +2263,21 @@ A6
 - C) 6 6
 - D) 63 6
 - E) 3 3 12
-a                                                         1 Di
-apa                                                       4°Ca
-ul 1                                                     1 Az
-elo 2                                                     2 Am
-co 3                                                     3 Br
-sa 4                                                     4 Ro
-dor 9                                                     9 Le
-s 10                                                     10 L
-a                                                          2D
-apa                                                        4°C
-s 12                                                     12 L
-or 11                                                     11 L
-sa 8                                                     8 Ro
-zul 7                                                     7 Az
-za 6                                                     6 Cin
-elo 5                                                     5 Am
+a 1 Di
+apa 4°Ca
+ul 1 1 Az
+elo 2 2 Am
+co 3 3 Br
+sa 4 4 Ro
+dor 9 9 Le
+s 10 10 L
+a 2D
+apa 4°C
+s 12 12 L
+or 11 11 L
+sa 8 8 Ro
+zul 7 7 Az
+za 6 6 Cin
+elo 5 5 Am
 igurrilhos.indd 32
 Bigurrilhos.indd

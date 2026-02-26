@@ -4,14 +4,14 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "C",
-    "preview": "Questões de 91 a 135                                                                            \u0017\u0002\b2"
+    "preview": "Questões de 91 a 135 2"
   },
   {
     "numero": 91,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "A",
-    "preview": "\u0012\u0002\u000f \u0006"
+    "preview": ">"
   },
   {
     "numero": 92,
@@ -39,7 +39,7 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "\u0014 \u000f\u0004\u0002\b%\u0004\u0005 \b\u0002       \u0002\b\u0002 @ \u000e\u0005'"
+    "preview": "% @ '"
   },
   {
     "numero": 96,
@@ -53,7 +53,7 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "\u000e2\u000e\b\u000f\b\u0002\u0005     \u0002% \u0007"
+    "preview": "2  %"
   },
   {
     "numero": 97,
@@ -74,28 +74,28 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "C",
-    "preview": "\u0012\u0002\u000e\u0010\bJ \u0010\u0002\b%\u0007             \u0005 \b\u0002\b \u0002 \b%\b \u0002\u000f\u0004\u0002P \u0005"
+    "preview": "J % % P"
   },
   {
     "numero": 102,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "D",
-    "preview": "\u0017\u0002%2\b\u0005 \u000e\u0004\u0002%\u0004\u0007\u0002 \b \u000e\b\u0002Z\u0002 \u0010\u0002\u0010Z \u0004\u000f\u0004\u0002\u000f \u0002%\u0007\u0004%\bJ\b'"
+    "preview": "%2 % Z Z % % J '"
   },
   {
     "numero": 103,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "C",
-    "preview": "\u0012\u0002\u000e"
+    "preview": "G"
   },
   {
     "numero": 104,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "C",
-    "preview": "\u0012\u0005\b2\u000e \b\u0005\u000f\u0004\u0002 \b\u0002 \u0006\u0002"
+    "preview": "+ Z"
   },
   {
     "numero": 105,
@@ -116,7 +116,7 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "\u0003\u0004\u0005 \u000e\u000f \u0007 \u0002\b\u0002 \u000e\u0007\u000e\u0005+\b$\u0002\u0005\b\u0002 \u000e \b'"
+    "preview": "+ $ '"
   },
   {
     "numero": 108,
@@ -130,28 +130,28 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "\u0003\u0004\u0010\u0002 \u0004\u0002 \b \u0010 \u0005 \u0004\u0002 \u000f\b\u0002 %\u0004% 2\b'"
+    "preview": "% % 2 '"
   },
   {
     "numero": 110,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "D",
-    "preview": "\u0012\u0002"
+    "preview": "$ ! "
   },
   {
     "numero": 111,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "A",
-    "preview": "\u0016\b\u0002"
+    "preview": "2 $ 2+"
   },
   {
     "numero": 113,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "C",
-    "preview": "\u0012\u0002 \u0004! \u0005'"
+    "preview": "! '"
   },
   {
     "numero": 112,
@@ -165,7 +165,7 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "A",
-    "preview": "\u0003\u0004\u0010\u0002\u0004\u0002\u0004!\" \u000e#\u0004\u0002\u000f \u0002\u000e\u000f \u0005 \u000e\u0006"
+    "preview": "!\" #"
   },
   {
     "numero": 115,
@@ -193,7 +193,7 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "*Urano                         19                              1,2                       Organismos autótrofos e heterótrofos realizam"
+    "preview": "*Urano 19 1,2 Organismos autótrofos e heterótrofos realizam"
   },
   {
     "numero": 119,
@@ -207,21 +207,21 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "A",
-    "preview": "Um técnico analisou um lote de analgésicos                                           Duas esferas carregadas com cargas iguais em"
+    "preview": "Um técnico analisou um lote de analgésicos Duas esferas carregadas com cargas iguais em"
   },
   {
     "numero": 120,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "\u0017\u0002\u0007\u0004\u0010%\u000e\u0010 \u0005 \u0004\u0002\u000f\b\u0002!\b\u0007\u0007\bJ \u0010\u0002\u000f \u0002\u0007 \" \u000e \u0004 \u0002\u000f \u0002\u0010\u000e\u0005 \u0007\b'"
+    "preview": "% ! J \" '"
   },
   {
     "numero": 122,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "\u0004\u0002\u000f \u0002\u0007 \u000f '"
+    "preview": "'"
   },
   {
     "numero": 125,
@@ -242,21 +242,21 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "E",
-    "preview": "\u0017 \u0002 !KP\b2\u0004 \u0002"
+    "preview": "!KP 2"
   },
   {
     "numero": 124,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "E",
-    "preview": "O ciclo do cobre é um experimento didático em que                                      espessura em aço, todas com a mesma espessura total e"
+    "preview": "O ciclo do cobre é um experimento didático em que espessura em aço, todas com a mesma espessura total e"
   },
   {
     "numero": 127,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "\u0002 %\u0004 G# 2\u0002 2\u000eJ\b\u0007\u0002 \b%\b\u0007 2+\u0004 \u0002 2Z \u0007\u000e"
+    "preview": " % G# 2 2 J % 2+ 2Z"
   },
   {
     "numero": 128,
@@ -270,14 +270,14 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "B",
-    "preview": "\u0012\u0002 \u0006J \u0007\b\u0002 P\u0004\u000e\u0002 @ \u0007\bG\u000f\b\u0002 \u000f \u0002 \u0010\u0002 \b\u0005 \u000eJ\u0004\u0002 \"\u0004J\u0004\u0002 %\b\u0007\b\u0002    A sequência de nucleotídeos do RNA mensageiro"
+    "preview": "J P @ G J \" J % A sequência de nucleotídeos do RNA mensageiro"
   },
   {
     "numero": 131,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "E",
-    "preview": "valores estimados para o módulo da velocidade inicial de           \u0012\u0002 \u000e\u0010%2 \u0002 \b \u000e \u000f \u0002 \u000f \u0002 \u0005"
+    "preview": "valores estimados para o módulo da velocidade inicial de %2"
   },
   {
     "numero": 132,
@@ -291,21 +291,21 @@
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "A",
-    "preview": "Os pesticidas organoclorados foram amplamente \u0014 \b\u0002"
+    "preview": "Os pesticidas organoclorados foram amplamente"
   },
   {
     "numero": 133,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "E",
-    "preview": "\u0016\u0004\u0002"
+    "preview": "2 # % + % $"
   },
   {
     "numero": 135,
     "variacao": 1,
     "area": "Ciências da Natureza",
     "gabarito": "E",
-    "preview": "Concentração, mmol/L                              O polvo mimético apresenta padrões cromáticos e"
+    "preview": "Concentração, mmol/L O polvo mimético apresenta padrões cromáticos e"
   },
   {
     "numero": 134,
@@ -319,56 +319,56 @@
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "Questões de 136 a 180                                             Uma unidade de medida comum usada para expressar"
+    "preview": "Questões de 136 a 180 Uma unidade de medida comum usada para expressar"
   },
   {
     "numero": 136,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "\u0017\u0002 \u000e \u0010\b\u0002\u000f \u0002\u0005 \u0010 \u0007\b'"
+    "preview": "'"
   },
   {
     "numero": 139,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "A",
-    "preview": "Em uma cidade europeia há uma placa indicando o              Uma pessoa produzirá uma fantasia utilizando"
+    "preview": "Em uma cidade europeia há uma placa indicando o Uma pessoa produzirá uma fantasia utilizando"
   },
   {
     "numero": 137,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "___      15!"
+    "preview": "___ 15!"
   },
   {
     "numero": 140,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "B",
-    "preview": "a      b          a\u000eb                           Os diretores de uma escola precisam construir um"
+    "preview": "a b a b Os diretores de uma escola precisam construir um"
   },
   {
     "numero": 141,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "Um ciclista amador de 61 anos de idade utilizou                     • na compra dos medicamentos X e Y na"
+    "preview": "Um ciclista amador de 61 anos de idade utilizou • na compra dos medicamentos X e Y na"
   },
   {
     "numero": 144,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "A",
-    "preview": "Os trechos do percurso nos quais esse ciclista se mantém                \u000e \u0004 \u0002 !\u0007\u000e\u0005   \u000f\u0004 \u0002      \u0002 P\u0007     \u0005 \u0010 \u0005 \u0002"
+    "preview": "Os trechos do percurso nos quais esse ciclista se mantém  ! P"
   },
   {
     "numero": 142,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "\u0019\u0010\u0002 2\b#\b/\u0007?%\u000e\u000f\u0004\u0002 \u0004P \u0007"
+    "preview": "2 # / ?% P"
   },
   {
     "numero": 143,
@@ -389,21 +389,21 @@
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "\u0016 \u0010\u0002\u0004"
+    "preview": "J 2 $ P"
   },
   {
     "numero": 146,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "\u0017\u0002\u000e\u0005 \u0007 \u0010 \u0005 \u0004\u0002\u000f \u0002% \u0007"
+    "preview": "%"
   },
   {
     "numero": 148,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "E",
-    "preview": "h = 8 cm            O dono de uma loja pretende usar cartões imantados"
+    "preview": "h = 8 cm O dono de uma loja pretende usar cartões imantados"
   },
   {
     "numero": 149,
@@ -417,7 +417,7 @@
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "B",
-    "preview": "\u0012\u0002\u0007 2\b'"
+    "preview": "2 '"
   },
   {
     "numero": 150,
@@ -431,28 +431,28 @@
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "D 33                                                          Um povoado com 100 habitantes está passando por"
+    "preview": "D 33 Um povoado com 100 habitantes está passando por"
   },
   {
     "numero": 151,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "\u0004\u0005 \u0007 '"
+    "preview": "'"
   },
   {
     "numero": 154,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "A",
-    "preview": "\u0017\u0002 \b\u000f\u0007\u0004\u0002\u0007 %\u0007        \u0005 \b\u0002\b\u0002\u0007 2\b'"
+    "preview": "% 2 '"
   },
   {
     "numero": 155,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "E",
-    "preview": "\u0017\u0002\b\u000f\u0010\u000e\u0005\u000e \u0007\b\u000f\u0004\u0007\u0002\u000f \u0002 \u0010\u0002 \b \u0007\u0004\u0002% \u0007"
+    "preview": "%"
   },
   {
     "numero": 156,
@@ -473,77 +473,77 @@
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "A   ¨2   2   0 3     0 ¸"
+    "preview": "A ¨2 2 0 3 0 ¸"
   },
   {
     "numero": 157,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "B",
-    "preview": "Para realizar um voo entre duas cidades que distam                \u000f\u0004\u0002\u0010\u000e\u0005 \u0007\b2\u0002¦\u0002 \u0002~}}\u0002\u0010J\u0002\u000f\u0004\u0002\u0010\u000e\u0005 \u0007\b2\u0002\u0003\u0002 \u0002"
+    "preview": "Para realizar um voo entre duas cidades que distam 2 ¦ ~}} J 2"
   },
   {
     "numero": 160,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "\u0019\u0010\u0002\b 2 \b\u0002%\u0007\u0004\u000f \u0002 \b\u0002%\u0007B%\u0007\u000e\b\u0002\u0007 P \u000e'"
+    "preview": "2 %  % B% P '"
   },
   {
     "numero": 161,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "A",
-    "preview": "\u0019\u0010\b\u0002\u0010\u00042\b\u0002Z\u0002 \u00042 \b\u0002\u000f\b\u0002%\u0004 \u000e'"
+    "preview": "2 Z 2 % '"
   },
   {
     "numero": 162,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "E",
-    "preview": "\b\u0007\b\u0002 \b\u0002"
+    "preview": "'"
   },
   {
     "numero": 164,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "Dessa forma, o valor recebido pelo navio receptor será             \u0012\u0002 \u000f \u0010\u0004J\u0007\b\u0006\b\u0002 \u0010Z\u000f\u000e"
+    "preview": "Dessa forma, o valor recebido pelo navio receptor será J Z"
   },
   {
     "numero": 163,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "Um parque temático brasileiro construiu uma réplica em         2000        292 000                            170 000"
+    "preview": "Um parque temático brasileiro construiu uma réplica em 2000 292 000 170 000"
   },
   {
     "numero": 165,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "B",
-    "preview": "A receita R\u0002\u000f \u0002 \u0010\b\u0002 \u0010%\u0007 \b\u0002\b\u0004\u0002\u0006\u0005\b2\u0002\u000f \u0002 \u0010\u0002\u0010> \u0002Z\u0002\u0004\u0002                                            volume de vendas foi de"
+    "preview": "A receita R % 2 > Z volume de vendas foi de"
   },
   {
     "numero": 167,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "28                                                                   Um casal está planejando comprar um apartamento"
+    "preview": "28 Um casal está planejando comprar um apartamento"
   },
   {
     "numero": 166,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "\u0012\u0002 \u000f %\u0007"
+    "preview": "%"
   },
   {
     "numero": 168,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "\u0012\u0002 \u0003\u000eP\u0007\b\u0002 \u000f \u0002 \u0003Z \b\u0007\u0002 Z\u0002 \u0010\u0002 @ \u0010%2\u0004\u0002 \u000f \u0002 \u0010\u0002 \u0010Z \u0004\u000f\u0004\u0002 \u000f \u0002"
+    "preview": "P Z Z @ %2 Z"
   },
   {
     "numero": 169,
@@ -564,35 +564,35 @@
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "C",
-    "preview": "\u0017\u0002J\u0007?\u0006"
+    "preview": "J ?"
   },
   {
     "numero": 173,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "E",
-    "preview": "- A) I.                                                                                         \u0019\u0010\u0002 \u0004\u0004"
+    "preview": "- A) I. "
   },
   {
     "numero": 171,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "D",
-    "preview": "\u0004 \u0002\b2\u000e\u0010 \u0005 \u0004 \u0002"
+    "preview": "# '"
   },
   {
     "numero": 174,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "E",
-    "preview": "Uma rede de hamburgueria tem três franquias em                % \u0007\u0010 \u0007"
+    "preview": "Uma rede de hamburgueria tem três franquias em %"
   },
   {
     "numero": 176,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "A",
-    "preview": "período de experiência, a gerência recebeu um relatório               Aplicativos que gerenciam serviços de hospedagem"
+    "preview": "período de experiência, a gerência recebeu um relatório Aplicativos que gerenciam serviços de hospedagem"
   },
   {
     "numero": 175,
@@ -606,14 +606,14 @@
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "B",
-    "preview": "\u000e \u0010\b\u0002 \u000f \u0002 \b#\b2\u000e\b'"
+    "preview": "# 2 '"
   },
   {
     "numero": 178,
     "variacao": 1,
     "area": "Matemática",
     "gabarito": "Anulado",
-    "preview": "\u0012\u0002 \u0003\u0004%\b\u0002 \u000f\u0004\u0002 ¦\u0007\b \u000e2\u0002 # $\u0002 \b Z\u0002 \b\u0002 \u000f\u000e'"
+    "preview": "% ¦ 2 # $ Z '"
   },
   {
     "numero": 179,

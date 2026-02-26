@@ -30,7 +30,7 @@ se mostra indissociavelmente ligada à
 - B) administração da independência interior.
 - C) fugacidade do conhecimento empírico.
 - D) liberdade de expressão religiosa.
-- E) busca de prazeres efêmeros.                                                                  Os moradores de Andalsnes, na Noruega, poderiam
+- E) busca de prazeres efêmeros. Os moradores de Andalsnes, na Noruega, poderiam
 
 ## Questão 002
 
@@ -38,19 +38,19 @@ se mostra indissociavelmente ligada à
 - Gabarito: C
 
 de se refugiar na calmaria do bosque aos fins de semana.
-Batizado por Tancredo Neves de “Nova República”,                                         E sem sair da mesma casa. Bastaria achar uma vaga
-o período que marca o reencontro do Brasil com os                                             para estacionar o imóvel antes de curtir o novo endereço.
-governos civis e a democracia ainda não completou                                                     Disponível em: http://casavogue.globo.com. Acesso em: 3 out. 2015 (adaptado).
+Batizado por Tancredo Neves de “Nova República”, E sem sair da mesma casa. Bastaria achar uma vaga
+o período que marca o reencontro do Brasil com os para estacionar o imóvel antes de curtir o novo endereço.
+governos civis e a democracia ainda não completou Disponível em: http://casavogue.globo.com. Acesso em: 3 out. 2015 (adaptado).
 seu quinto ano e já viveu dias de grande comoção.
-Começou com a tragédia de Tancredo, seguiu pela                                               Uma vez implementada, essa proposta afetaria a
-euforia do Plano Cruzado, conheceu as depressões da                                           dinâmica do espaço urbano por reduzir a intensidade do
-inflação e das ameaças da hiperinflação e desembocou                                          seguinte processo:
+Começou com a tragédia de Tancredo, seguiu pela Uma vez implementada, essa proposta afetaria a
+euforia do Plano Cruzado, conheceu as depressões da dinâmica do espaço urbano por reduzir a intensidade do
+inflação e das ameaças da hiperinflação e desembocou seguinte processo:
 na movimentação que antecede as primeiras eleições
-diretas para presidente em 29 anos.                                                           A Êxodo rural.
-O álbum dos presidentes: a história vista pelo JB. Jornal do Brasil, 15 nov. 1989.   B Movimento pendular.
-O período descrito apresenta continuidades e rupturas                                         C Migração de retorno.
-em relação à conjuntura histórica anterior. Uma dessas                                        D Deslocamento sazonal.
-continuidades consistiu na                                                                    E Ocupação de áreas centrais.
+diretas para presidente em 29 anos. A Êxodo rural.
+O álbum dos presidentes: a história vista pelo JB. Jornal do Brasil, 15 nov. 1989. B Movimento pendular.
+O período descrito apresenta continuidades e rupturas C Migração de retorno.
+em relação à conjuntura histórica anterior. Uma dessas D Deslocamento sazonal.
+continuidades consistiu na E Ocupação de áreas centrais.
 A representação do legislativo com a fórmula do
 bipartidarismo.
 
@@ -59,14 +59,14 @@ bipartidarismo.
 - Área: Ciências Humanas
 - Gabarito: C
 
-B detenção de lideranças populares por crimes de                                                  O Rio de Janeiro tem projeção imediata no próprio
-subversão.                                                                                  estado e no Espírito Santo, em parcela do sul do estado
-C presença de políticos com trajetórias no regime                                             da Bahia, e na Zona da Mata, em Minas Gerais, onde
-autoritário.                                                                                tem influência dividida com Belo Horizonte. Compõem
-D prorrogação das restrições advindas dos atos                                                a rede urbana do Rio de Janeiro, entre outras cidades:
-institucionais.                                                                             Vitória, Juiz de Fora, Cachoeiro de Itapemirim, Campos
-E estabilidade da economia com o congelamento anual                                           dos Goytacazes, Volta Redonda - Barra Mansa, Teixeira
-de preços.                                                                                  de Freitas, Angra dos Reis e Teresópolis.
+B detenção de lideranças populares por crimes de O Rio de Janeiro tem projeção imediata no próprio
+subversão. estado e no Espírito Santo, em parcela do sul do estado
+C presença de políticos com trajetórias no regime da Bahia, e na Zona da Mata, em Minas Gerais, onde
+autoritário. tem influência dividida com Belo Horizonte. Compõem
+D prorrogação das restrições advindas dos atos a rede urbana do Rio de Janeiro, entre outras cidades:
+institucionais. Vitória, Juiz de Fora, Cachoeiro de Itapemirim, Campos
+E estabilidade da economia com o congelamento anual dos Goytacazes, Volta Redonda - Barra Mansa, Teixeira
+de preços. de Freitas, Angra dos Reis e Teresópolis.
 Disponível em: http://ibge.gov.br. Acesso em: 9 jul. 2015 (adaptado).
 O conceito que expressa a relação entre o espaço
 apresentado e a cidade do Rio de Janeiro é:
@@ -89,7 +89,7 @@ CH - 1º dia | Caderno 1 - AZUL - Página 2
 - Área: Ciências Humanas
 - Gabarito: D
 
-TEXTO I                                                                                     TEXTO I
+TEXTO I TEXTO I
 Documentos do século XVI algumas vezes se
 referem aos habitantes indígenas como “os brasis”,
 ou “gente brasília” e, ocasionalmente no século
@@ -114,13 +114,13 @@ Ao comparar os textos, as formas de designação dos
 grupos nativos pelos europeus, durante o período
 analisado, são reveladoras da
 - A) concepção idealizada do território, entendido como
-geograficamente indiferenciado.                                                                Tradução: “As mulheres do futuro farão da Lua um
-- B) percepção corrente de uma ancestralidade comum às                                                     lugar mais limpo para se viver”.
-populações ameríndias.                                                                               Disponível em: www.propagandashistoricas.com.br. Acesso em: 16 out. 2015.
-- C) compreensão etnocêntrica acerca das populações                                            TEXTO II
+geograficamente indiferenciado. Tradução: “As mulheres do futuro farão da Lua um
+- B) percepção corrente de uma ancestralidade comum às lugar mais limpo para se viver”.
+populações ameríndias. Disponível em: www.propagandashistoricas.com.br. Acesso em: 16 out. 2015.
+- C) compreensão etnocêntrica acerca das populações TEXTO II
 dos territórios conquistados.
 Metade da nova equipe da Nasa
-- D) transposição direta das categorias originadas no                                                          é composta por mulheres
+- D) transposição direta das categorias originadas no é composta por mulheres
 imaginário medieval.
 Até hoje, cerca de 350 astronautas americanos
 - E) visão utópica configurada a partir de fantasias de
@@ -134,18 +134,18 @@ chegam a ser um terço desse número. Após o anúncio
 - Gabarito: A
 
 escreveram comentários machistas e desrespeitosos
-Ser ou não ser — eis a questão.                                                             sobre a escolha nas redes sociais.
+Ser ou não ser — eis a questão. sobre a escolha nas redes sociais.
 Disponível em: https://catracalivre.com.br. Acesso em: 10 mar. 2016.
 Morrer — dormir — Dormir! Talvez sonhar. Aí está o obstáculo!
 A comparação entre o anúncio publicitário de 1968 e a
 Os sonhos que hão de vir no sono da morte
 repercussão da notícia de 2016 mostra a
 Quando tivermos escapado ao tumulto vital
-A   elitização da carreira científica.
-Nos obrigam a hesitar: e é essa a reflexão                                                  B   qualificação da atividade doméstica.
-Que dá à desventura uma vida tão longa.                                                     C   ambição de indústrias patrocinadoras.
-SHAKESPEARE, W. Hamlet. Porto Alegre: L&PM, 2007.         D   manutenção de estereótipos de gênero.
-Este solilóquio pode ser considerado um precursor do                                        E   equiparação de papéis nas relações familiares.
+A elitização da carreira científica.
+Nos obrigam a hesitar: e é essa a reflexão B qualificação da atividade doméstica.
+Que dá à desventura uma vida tão longa. C ambição de indústrias patrocinadoras.
+SHAKESPEARE, W. Hamlet. Porto Alegre: L&PM, 2007. D manutenção de estereótipos de gênero.
+Este solilóquio pode ser considerado um precursor do E equiparação de papéis nas relações familiares.
 existencialismo ao enfatizar a tensão entre
 - A) consciência de si e angústia humana.
 - B) inevitabilidade do destino e incerteza moral.
@@ -166,24 +166,24 @@ CH - 1º dia | Caderno 1 - AZUL - Página 3
 - Área: Ciências Humanas
 - Gabarito: C
 
-A África Ocidental é conhecida pela dinâmica das                                            Quanto mais complicada se tornou a produção
-suas mulheres comerciantes, caracterizadas pela perícia,                                     industrial, mais numerosos passaram a ser os elementos
-autonomia e mobilidade. A sua presença, que fora                                             da indústria que exigiam garantia de fornecimento.
-atestada por viajantes e por missionários portugueses que                                    Três deles eram de importância fundamental: o trabalho,
-visitaram a costa a partir do século XV, consta também na                                    a terra e o dinheiro. Numa sociedade comercial, esse
-ampla documentação sobre a região. A literatura é rica                                       fornecimento só poderia ser organizado de uma forma:
-em referências às grandes mulheres como as vendedoras                                        tornando-os disponíveis à compra. Agora eles tinham que
-ambulantes, cujo jeito para o negócio, bem como a                                            ser organizados para a venda no mercado. Isso estava
-autonomia e mobilidade, é tão típico da região.                                              de acordo com a exigência de um sistema de mercado.
-HAVIK, P. Dinâmicas e assimetrias afro-atlânticas: a agência feminina e representações em   Sabemos que em um sistema como esse, os lucros só
-mudança na Guiné (séculos XIX e XX). In: PANTOJA, S. (Org.). Identidades, memórias e        podem ser assegurados se se garante a autorregulação
+A África Ocidental é conhecida pela dinâmica das Quanto mais complicada se tornou a produção
+suas mulheres comerciantes, caracterizadas pela perícia, industrial, mais numerosos passaram a ser os elementos
+autonomia e mobilidade. A sua presença, que fora da indústria que exigiam garantia de fornecimento.
+atestada por viajantes e por missionários portugueses que Três deles eram de importância fundamental: o trabalho,
+visitaram a costa a partir do século XV, consta também na a terra e o dinheiro. Numa sociedade comercial, esse
+ampla documentação sobre a região. A literatura é rica fornecimento só poderia ser organizado de uma forma:
+em referências às grandes mulheres como as vendedoras tornando-os disponíveis à compra. Agora eles tinham que
+ambulantes, cujo jeito para o negócio, bem como a ser organizados para a venda no mercado. Isso estava
+autonomia e mobilidade, é tão típico da região. de acordo com a exigência de um sistema de mercado.
+HAVIK, P. Dinâmicas e assimetrias afro-atlânticas: a agência feminina e representações em Sabemos que em um sistema como esse, os lucros só
+mudança na Guiné (séculos XIX e XX). In: PANTOJA, S. (Org.). Identidades, memórias e podem ser assegurados se se garante a autorregulação
 histórias em terras africanas. Brasília: LGE; Luanda: Nzila, 2006.
 por meio de mercados competitivos interdependentes.
-A abordagem realizada pelo autor sobre a vida social da                                                             POLANYI, K. A grande transformação: as origens de nossa época.
-África Ocidental pode ser relacionada a uma característica                                                                                   Rio de Janeiro: Campus, 2000 (adaptado).
-marcante das cidades no Brasil escravista nos séculos                                        A consequência do processo de                                      transformação
-XVIII e XIX, que se observa pela                                                             socioeconômica abordado no texto é a
-A restrição à realização do comércio ambulante por                                           A expansão das terras comunais.
+A abordagem realizada pelo autor sobre a vida social da POLANYI, K. A grande transformação: as origens de nossa época.
+África Ocidental pode ser relacionada a uma característica Rio de Janeiro: Campus, 2000 (adaptado).
+marcante das cidades no Brasil escravista nos séculos A consequência do processo de transformação
+XVIII e XIX, que se observa pela socioeconômica abordado no texto é a
+A restrição à realização do comércio ambulante por A expansão das terras comunais.
 africanos escravizados e seus descendentes.
 B limitação do mercado como meio de especulação.
 B convivência entre homens e mulheres livres, de
@@ -191,7 +191,7 @@ C consolidação da força de trabalho como mercadoria.
 diversas origens, no pequeno comércio.
 D diminuição do comércio como efeito da industrialização.
 C presença de mulheres negras no comércio de rua de
-diversos produtos e alimentos.                                                             E adequação do dinheiro como elemento padrão
+diversos produtos e alimentos. E adequação do dinheiro como elemento padrão
 das transações.
 D dissolução dos hábitos culturais trazidos do continente
 de origem dos escravizados.
@@ -202,7 +202,7 @@ de origem dos escravizados.
 - Gabarito: B
 
 E entrada de imigrantes portugueses nas atividades
-ligadas ao pequeno comércio urbano.                                                            O que ocorreu na Bahia de 1798, ao contrário das
+ligadas ao pequeno comércio urbano. O que ocorreu na Bahia de 1798, ao contrário das
 outras situações de contestação política na América
 portuguesa, é que o projeto que lhe era subjacente
 não tocou somente na condição, ou no instrumento, da
@@ -232,7 +232,7 @@ CH - 1º dia | Caderno 1 - AZUL - Página 4
 - Área: Ciências Humanas
 - Gabarito: D
 
-TEXTO I                                                                                              A Operação Condor está diretamente vinculada
+TEXTO I A Operação Condor está diretamente vinculada
 às experiências históricas das ditaduras civil-militares
 que se disseminaram pelo Cone Sul entre as décadas
 de 1960 e 1980. Depois do Brasil (e do Paraguai de
@@ -249,14 +249,14 @@ PADRÓS, E. S. et al. Ditadura de Segurança Nacional no Rio Grande do Sul (1964
 história e memória. Porto Alegre: Corag, 2009 (adaptado).
 Disponível em: http://portal.iphan.gov.br. Acesso em: 6 abr. 2016.
 Levando-se em conta o contexto em que foi criada, a
-TEXTO II                                                                                         referida operação tinha como objetivo coordenar a
-A eleição dos novos bens, ou melhor, de novas                                               A    modificação de limites territoriais.
-formas de se conceber a condição do patrimônio cultural                                          B    sobrevivência de oficiais exilados.
-nacional, também permite que diferentes grupos sociais,                                          C    interferência de potências mundiais.
+TEXTO II referida operação tinha como objetivo coordenar a
+A eleição dos novos bens, ou melhor, de novas A modificação de limites territoriais.
+formas de se conceber a condição do patrimônio cultural B sobrevivência de oficiais exilados.
+nacional, também permite que diferentes grupos sociais, C interferência de potências mundiais.
 utilizando as leis do Estado e o apoio de especialistas,
-D    repressão de ativistas oposicionistas.
+D repressão de ativistas oposicionistas.
 revejam as imagens e alegorias do seu passado, do que
-querem guardar e definir como próprio e identitário.                                             E    implantação de governos nacionalistas.
+querem guardar e definir como próprio e identitário. E implantação de governos nacionalistas.
 ABREU, M.; SOIHET, R.; GONTIJO, R. (Org.). Cultura política e leituras do passado:
 
 ## Questão 014
@@ -268,13 +268,13 @@ historiografia e ensino de história. Rio de Janeiro: Civilização Brasileira, 
 A regulação das relações de trabalho compõe uma
 O texto chama a atenção para a importância da proteção
 estrutura complexa, em que cada elemento se ajusta aos
-de bens que, como aquele apresentado na imagem, se                                               demais. A Justiça do Trabalho é apenas uma das peças
-identificam como:                                                                                dessa vasta engrenagem. A presença de representantes
-- A) Artefatos sagrados.                                                                            classistas na composição dos órgãos da Justiça do
+de bens que, como aquele apresentado na imagem, se demais. A Justiça do Trabalho é apenas uma das peças
+identificam como: dessa vasta engrenagem. A presença de representantes
+- A) Artefatos sagrados. classistas na composição dos órgãos da Justiça do
 Trabalho é também resultante da montagem dessa
-- B) Heranças materiais.                                                                            regulação. O poder normativo também reflete essa
-- C) Objetos arqueológicos.                                                                         característica. Instituída pela Constituição de 1934, a
-- D) Peças comercializáveis.                                                                        Justiça do Trabalho só vicejou no ambiente político do
+- B) Heranças materiais. regulação. O poder normativo também reflete essa
+- C) Objetos arqueológicos. característica. Instituída pela Constituição de 1934, a
+- D) Peças comercializáveis. Justiça do Trabalho só vicejou no ambiente político do
 Estado Novo instaurado em 1937.
 - E) Conhecimentos tradicionais.
 ROMITA, A. S. Justiça do Trabalho: produto do Estado Novo. In: PANDOLFI, D. (Org.).
@@ -286,13 +286,13 @@ Repensando o Estado Novo. Rio de Janeiro: Editora FGV, 1999.
 - Gabarito: D
 
 A criação da referida instituição estatal na conjuntura
-No início de maio de 2014, a instalação da                                                   histórica abordada teve por objetivo
+No início de maio de 2014, a instalação da histórica abordada teve por objetivo
 plataforma petrolífera de perfuração HYSY-981 nas
-águas contestadas do Mar da China Meridional                                                     A    legitimar os protestos fabris.
-suscitou especulações sobre as motivações chinesas.                                              B    ordenar os conflitos laborais.
-Na avaliação de diversos observadores ocidentais,                                                C    oficializar os sindicatos plurais.
-Pequim pretendeu, com esse gesto, demonstrar que                                                 D    assegurar os princípios liberais.
-pode impor seu controle e dissuadir outros países de                                             E    unificar os salários profissionais.
+águas contestadas do Mar da China Meridional A legitimar os protestos fabris.
+suscitou especulações sobre as motivações chinesas. B ordenar os conflitos laborais.
+Na avaliação de diversos observadores ocidentais, C oficializar os sindicatos plurais.
+Pequim pretendeu, com esse gesto, demonstrar que D assegurar os princípios liberais.
+pode impor seu controle e dissuadir outros países de E unificar os salários profissionais.
 seguir com suas reivindicações de direito de exploração
 dessas águas, como é o caso do Vietnã e das Filipinas.
 KLARE, M.T. A guerra pelo petróleo se joga no mar. Le Monde Diplomatique Brasil, abr. 2015.
@@ -334,7 +334,7 @@ Estados Unidos
 Japão
 México
 Vietnã
-Cingapura              Brunei Darussalam
+Cingapura Brunei Darussalam
 Malásia
 Peru
 Austrália
@@ -373,14 +373,14 @@ estabelecidos e adotem tecnologias energéticas limpas.
 A comercialização internacional de créditos de sequestro
 ou de redução de gases causadores do efeito estufa
 foi a solução encontrada para reduzir o custo global do
-Disponível em: www.unric.org. Acesso em: 9 ago. 2013.   processo. Países ou empresas que conseguirem reduzir
-A ONU faz referência a uma projeção cartográfica em seu                       as emissões abaixo de suas metas poderão vender este
-logotipo. A figura que ilustra o modelo dessa projeção é:                     crédito para outro país ou empresa que não consiga.
+Disponível em: www.unric.org. Acesso em: 9 ago. 2013. processo. Países ou empresas que conseguirem reduzir
+A ONU faz referência a uma projeção cartográfica em seu as emissões abaixo de suas metas poderão vender este
+logotipo. A figura que ilustra o modelo dessa projeção é: crédito para outro país ou empresa que não consiga.
 BECKER, B. Amazônia: geopolítica na virada do II milênio. Rio de Janeiro: Garamond, 2009.
 As posições contrárias à estratégia de compensação
 presente no texto relacionam-se à ideia de que
 ela promove
-- A) A    retração nos atuais níveis de consumo.
+- A) A retração nos atuais níveis de consumo.
 - B) surgimento de conflitos de caráter diplomático.
 - C) diminuição dos lucros na produção de energia.
 - D) desigualdade na distribuição do impacto ecológico.
@@ -392,7 +392,7 @@ econômico.
 - Área: Ciências Humanas
 - Gabarito: B
 
-B                                                                                 Dados recentes mostram que muitos são os
+B Dados recentes mostram que muitos são os
 países periféricos que dependem dos recursos
 enviados pelos imigrantes que estão nos países
 centrais. Grande parte dos países da América Latina,
@@ -401,7 +401,7 @@ imigrantes. Para se ter uma ideia mais concreta,
 recentes dados divulgados pela ONU revelaram
 que somente os indianos recebem 10 bilhões de
 dólares de seus compatriotas no exterior. No México,
-C                                                                             segundo maior volume de divisas, esse valor chega
+C segundo maior volume de divisas, esse valor chega
 a 9,9 bilhões de dólares e nas Filipinas, o terceiro, a
 8,4 bilhões.
 HAESBAERT, R.; PORTO-GONÇALVES, C. W. A nova des-ordem mundial.
@@ -454,15 +454,15 @@ conhecimento, de modo crítico, como resultado da
 
 SATRAPI, M. Persépolis. São Paulo: Cia. das Letras, 2007 (adaptado).
 Pois quem seria tão inútil ou indolente a ponto
-de não desejar saber como e sob que espécie de                                             A memória recuperada pela autora apresenta a
-constituição os romanos conseguiram em menos de                                            relação entre
+de não desejar saber como e sob que espécie de A memória recuperada pela autora apresenta a
+constituição os romanos conseguiram em menos de relação entre
 cinquenta e três anos submeter quase todo o mundo
-habitado ao seu governo exclusivo — fato nunca antes                                       A conflito trabalhista e engajamento sindical.
-ocorrido? Ou, em outras palavras, quem seria tão                                           B organização familiar e proteção à infância.
+habitado ao seu governo exclusivo — fato nunca antes A conflito trabalhista e engajamento sindical.
+ocorrido? Ou, em outras palavras, quem seria tão B organização familiar e proteção à infância.
 apaixonadamente devotado a outros espetáculos ou
-estudos a ponto de considerar qualquer outro objetivo                                      C centralização econômica e pregação religiosa.
-mais importante que a aquisição desse conhecimento?                                        D estrutura educacional e desigualdade de renda.
-POLÍBIO. História. Brasília: Editora UnB, 1985.   E transformação política e modificação de costumes.
+estudos a ponto de considerar qualquer outro objetivo C centralização econômica e pregação religiosa.
+mais importante que a aquisição desse conhecimento? D estrutura educacional e desigualdade de renda.
+POLÍBIO. História. Brasília: Editora UnB, 1985. E transformação política e modificação de costumes.
 A experiência a que se refere o historiador Políbio, nesse
 
 ## Questão 023
@@ -471,13 +471,13 @@ A experiência a que se refere o historiador Políbio, nesse
 - Gabarito: C
 
 texto escrito no século II a.C., é a
-- A) ampliação do contingente de camponeses livres.                                        TEXTO I
-- B) consolidação do poder das falanges hoplitas.                                             Fragmento B91: Não se pode banhar duas vezes no
+- A) ampliação do contingente de camponeses livres. TEXTO I
+- B) consolidação do poder das falanges hoplitas. Fragmento B91: Não se pode banhar duas vezes no
 mesmo rio, nem substância mortal alcançar duas vezes
 - C) concretização do desígnio imperialista.
 a mesma condição; mas pela intensidade e rapidez da
-- D) adoção do monoteísmo cristão.                                                         mudança, dispersa e de novo reúne.
-- E) libertação do domínio etrusco.                                                        HERÁCLITO. Fragmentos (Sobre a natureza). São Paulo: Abril Cultural, 1996 (adaptado).
+- D) adoção do monoteísmo cristão. mudança, dispersa e de novo reúne.
+- E) libertação do domínio etrusco. HERÁCLITO. Fragmentos (Sobre a natureza). São Paulo: Abril Cultural, 1996 (adaptado).
 TEXTO II
 Fragmento B8: São muitos os sinais de que o ser
 é ingênito e indestrutível, pois é compacto, inabalável
@@ -506,7 +506,7 @@ CH - 1º dia | Caderno 1 - AZUL - Página 8
 - Área: Ciências Humanas
 - Gabarito: B
 
-A democracia deliberativa afirma que as partes                                   TEXTO I
+A democracia deliberativa afirma que as partes TEXTO I
 do conflito político devem deliberar entre si e, por
 meio de argumentação razoável, tentar chegar a um
 acordo sobre as políticas que seja satisfatório para
@@ -528,10 +528,10 @@ democracia ativista apresentadas no texto tratam como
 imprescindíveis, respectivamente,
 - A) a decisão da maioria e a uniformização de direitos.
 - B) a organização de eleições e o movimento anarquista.
-- C) a obtenção do consenso e a mobilização das minorias.                                              Imagem de São Benedito. Disponível em: http://acervo.bndigital.bn.br.
-- D) a fragmentação da participação e a desobediência civil.                                                                          Acesso em: 6 jan. 2016 (adaptado).
-- E) a imposição de resistência e o monitoramento da                                  TEXTO II
-liberdade.                                                                           Os santos tornaram-se grandes aliados da Igreja para
+- C) a obtenção do consenso e a mobilização das minorias. Imagem de São Benedito. Disponível em: http://acervo.bndigital.bn.br.
+- D) a fragmentação da participação e a desobediência civil. Acesso em: 6 jan. 2016 (adaptado).
+- E) a imposição de resistência e o monitoramento da TEXTO II
+liberdade. Os santos tornaram-se grandes aliados da Igreja para
 
 ## Questão 025
 
@@ -539,13 +539,13 @@ liberdade.                                                                      
 - Gabarito: B
 
 poder clerical. Contando e estimulando o conhecimento
-A promessa da tecnologia moderna se converteu                                   sobre a vida dos santos, a Igreja transmitia aos fiéis os
-em uma ameaça, ou esta se associou àquela de forma                                   ensinamentos que julgava corretos e que deviam ser
-indissolúvel. Ela vai além da constatação da ameaça                                  imitados por escravos que, em geral, traziam outras
-física. Concebida para a felicidade humana, a submissão                              crenças de suas terras de origem, muito diferentes das
-da natureza, na sobremedida de seu sucesso, que agora                                que preconizava a fé católica.
-se estende à própria natureza do homem, conduziu                                               OLIVEIRA, A. J. Negra devoção. Revista de História da Biblioteca Nacional,
-ao maior desafio já posto ao ser humano pela sua                                                                                             n. 20, maio 2007 (adaptado).
+A promessa da tecnologia moderna se converteu sobre a vida dos santos, a Igreja transmitia aos fiéis os
+em uma ameaça, ou esta se associou àquela de forma ensinamentos que julgava corretos e que deviam ser
+indissolúvel. Ela vai além da constatação da ameaça imitados por escravos que, em geral, traziam outras
+física. Concebida para a felicidade humana, a submissão crenças de suas terras de origem, muito diferentes das
+da natureza, na sobremedida de seu sucesso, que agora que preconizava a fé católica.
+se estende à própria natureza do homem, conduziu OLIVEIRA, A. J. Negra devoção. Revista de História da Biblioteca Nacional,
+ao maior desafio já posto ao ser humano pela sua n. 20, maio 2007 (adaptado).
 própria ação. O novo continente da práxis coletiva que
 Posteriormente ressignificados no interior de certas
 adentramos com a alta tecnologia ainda constitui, para a
@@ -557,11 +557,11 @@ Contraponto; Editora PUC-Rio, 2011 (adaptado).
 o século XVII relacionados a um esforço da Igreja
 Católica para
 As implicações éticas da articulação apresentada no texto
-impulsionam a necessidade de construção de um novo                                   A   reduzir o poder das confrarias.
-padrão de comportamento, cujo objetivo consiste em                                   B   cristianizar a população afro-brasileira.
-garantir o(a)                                                                        C   espoliar recursos materiais dos cativos.
-- A) pragmatismo da escolha individual.                                               D   recrutar libertos para seu corpo eclesiástico.
-- B) sobrevivência de gerações futuras.                                               E   atender a demanda popular por padroeiros locais.
+impulsionam a necessidade de construção de um novo A reduzir o poder das confrarias.
+padrão de comportamento, cujo objetivo consiste em B cristianizar a população afro-brasileira.
+garantir o(a) C espoliar recursos materiais dos cativos.
+- A) pragmatismo da escolha individual. D recrutar libertos para seu corpo eclesiástico.
+- B) sobrevivência de gerações futuras. E atender a demanda popular por padroeiros locais.
 - C) fortalecimento de políticas liberais.
 - D) valorização de múltiplas etnias.
 - E) promoção da inclusão social.
@@ -579,35 +579,35 @@ CH - 1º dia | Caderno 1 - AZUL - Página 9
 - Área: Ciências Humanas
 - Gabarito: A
 
-Em 1935, o governo brasileiro começou a negar vistos                                        O conceito de função social da cidade incorpora a
-a judeus. Posteriormente, durante o Estado Novo, uma                                         organização do espaço físico como fruto da regulação
-circular secreta proibiu a concessão de vistos a “pessoas                                    social, isto é, a cidade deve contemplar todos os seus
-de origem semita”, inclusive turistas e negociantes, o que                                   moradores e não somente aqueles que estão no mercado
-causou uma queda de 75% da imigração judaica ao longo                                        formal da produção capitalista da cidade. A tradição dos
-daquele ano. Entretanto, mesmo com as imposições da                                          códigos de edificação, uso e ocupação do solo no Brasil
-lei, muitos judeus continuaram entrando ilegalmente no                                       sempre partiram do pressuposto de que a cidade não tem
-país durante a guerra e as ameaças de deportação em                                          divisões entre os incluídos e os excluídos socialmente.
-massa nunca foram concretizadas, apesar da extradição                                                             QUINTO JR., L. P. Nova legislação urbana e os velhos fantasmas.
-de alguns indivíduos por sua militância política.                                                                            Estudos Avançados (USP), n. 47, 2003 (adaptado).
+Em 1935, o governo brasileiro começou a negar vistos O conceito de função social da cidade incorpora a
+a judeus. Posteriormente, durante o Estado Novo, uma organização do espaço físico como fruto da regulação
+circular secreta proibiu a concessão de vistos a “pessoas social, isto é, a cidade deve contemplar todos os seus
+de origem semita”, inclusive turistas e negociantes, o que moradores e não somente aqueles que estão no mercado
+causou uma queda de 75% da imigração judaica ao longo formal da produção capitalista da cidade. A tradição dos
+daquele ano. Entretanto, mesmo com as imposições da códigos de edificação, uso e ocupação do solo no Brasil
+lei, muitos judeus continuaram entrando ilegalmente no sempre partiram do pressuposto de que a cidade não tem
+país durante a guerra e as ameaças de deportação em divisões entre os incluídos e os excluídos socialmente.
+massa nunca foram concretizadas, apesar da extradição QUINTO JR., L. P. Nova legislação urbana e os velhos fantasmas.
+de alguns indivíduos por sua militância política. Estudos Avançados (USP), n. 47, 2003 (adaptado).
 GRIMBERG, K. Nova língua interior: 500 anos de história dos judeus no Brasil. In: IBGE.
 Brasil: 500 anos de povoamento. Rio de Janeiro: IBGE, 2000 (adaptado).
 Uma política governamental que contribui para viabilizar a
 função social da cidade, nos moldes indicados no texto, é a
 Uma razão para a adoção da política de imigração
-mencionada no texto foi o(a)                                                                 A qualificação de serviços públicos em bairros
+mencionada no texto foi o(a) A qualificação de serviços públicos em bairros
 periféricos.
 - A) receio do controle sionista sobre a economia nacional.
 - B) implantação de centros comerciais em eixos
-- B) reserva de postos de trabalho para a mão de obra                                             rodoviários.
+- B) reserva de postos de trabalho para a mão de obra rodoviários.
 local.
 - C) proibição de construções residenciais em regiões
-- C) oposição do clero católico à expansão de novas                                               íngremes.
+- C) oposição do clero católico à expansão de novas íngremes.
 religiões.
 - D) disseminação de equipamentos culturais em locais
-- D) apoio da diplomacia varguista às opiniões dos                                                turísticos.
+- D) apoio da diplomacia varguista às opiniões dos turísticos.
 líderes árabes.
 - E) desregulamentação do setor imobiliário em áreas
-- E) simpatia de membros da burocracia pelo projeto                                               favelizadas.
+- E) simpatia de membros da burocracia pelo projeto favelizadas.
 totalitário alemão.
 
 ## Questão 030
@@ -641,18 +641,18 @@ precipícios, cães, nada deixando ao arbítrio dos sentidos.
 maior necessidade de direcionamento de esforços,
 LAÉRCIO, D. Vidas e sentenças dos filósofos ilustres. Brasília: Editora UnB, 1988.
 buscando evitar a extinção de muitas espécies que
-O ceticismo, conforme sugerido no texto, caracteriza-se por:                                 estão altamente ameaçadas por ações antrópicas.
+O ceticismo, conforme sugerido no texto, caracteriza-se por: estão altamente ameaçadas por ações antrópicas.
 PINTO, P. P.; DINIZ-FILHO, J. A. F. In: ALMEIDA, M. G. (Org.). Tantos cerrados:
-- A) Desprezar quaisquer convenções e obrigações                                                              múltiplas abordagens sobre a biogeodiversidade e singularidade cultural.
-da sociedade.                                                                                                                                    Goiânia: Vieira, 2005 (adaptado).
-- B) Atingir o verdadeiro prazer como o princípio e o                                           A necessidade desse tipo de ação na área mencionada
-fim da vida feliz.                                                                         tem como causa a
+- A) Desprezar quaisquer convenções e obrigações múltiplas abordagens sobre a biogeodiversidade e singularidade cultural.
+da sociedade. Goiânia: Vieira, 2005 (adaptado).
+- B) Atingir o verdadeiro prazer como o princípio e o A necessidade desse tipo de ação na área mencionada
+fim da vida feliz. tem como causa a
 - C) Defender a indiferença e a impossibilidade de
-obter alguma certeza.                                                                      A   intensificação da atividade turística.
-- D) Aceitar o determinismo e ocupar-se com a                                                   B   implantação de parques ecológicos.
-esperança transcendente.                                                                   C   exploração dos recursos minerais.
-- E) Agir de forma virtuosa e sábia a fim de enaltecer o                                        D   elevação do extrativismo vegetal.
-homem bom e belo.                                                                          E   expansão da fronteira agrícola.
+obter alguma certeza. A intensificação da atividade turística.
+- D) Aceitar o determinismo e ocupar-se com a B implantação de parques ecológicos.
+esperança transcendente. C exploração dos recursos minerais.
+- E) Agir de forma virtuosa e sábia a fim de enaltecer o D elevação do extrativismo vegetal.
+homem bom e belo. E expansão da fronteira agrícola.
 CH - 1º dia | Caderno 1 - AZUL - Página 10
 
 ## Questão 031
@@ -683,21 +683,21 @@ O Alto Comissariado das Nações Unidas para
 Refugiados (ACNUR) critica as manifestações de
 xenofobia adotadas pelo governo da Hungria. O país foi
 invadido por cartazes nos quais o chefe do executivo insta
-os imigrantes a respeitarem as leis e a não “roubarem”                                                  Disponível em: www.imageforum-diffusion.afp.com. Acesso em: 6 jan. 2016.
+os imigrantes a respeitarem as leis e a não “roubarem” Disponível em: www.imageforum-diffusion.afp.com. Acesso em: 6 jan. 2016.
 os empregos dos húngaros. Para o ACNUR, a medida é
-surpreendente, pois a xenofobia costuma ser instigada                                    O regime do Apartheid adotado de 1948 a 1994 na
-por pequenos grupos radicais e não pelo próprio governo                                  África do Sul fundamentava-se em ações estatais de
-do país.                                                                                 segregacionismo racial. Na imagem, fuzileiros navais
+surpreendente, pois a xenofobia costuma ser instigada O regime do Apartheid adotado de 1948 a 1994 na
+por pequenos grupos radicais e não pelo próprio governo África do Sul fundamentava-se em ações estatais de
+do país. segregacionismo racial. Na imagem, fuzileiros navais
 Disponível em: http://pt.euronews.com. Acesso em: 19 jun. 2015 (adaptado).
 fazem valer a “lei do passe” que regulamentava o(a)
-O posicionamento governamental citado nos textos é                                       A concentração fundiária, impedindo os negros de
-criticado pelo ACNUR por ser considerado um caminho                                        tomar posse legítima do uso da terra.
-para o(a)                                                                                B boicote econômico, proibindo os negros de consumir
-- A) alteração do regime político.                                                          produtos ingleses sem resistência armada.
-- B) fragilização da supremacia nacional.                                                 C sincretismo religioso, vetando os ritos sagrados dos
-- C) expansão dos domínios geográficos.                                                     negros nas cerimônias oficiais do Estado.
-- D) cerceamento da liberdade de expressão.                                               D controle sobre a movimentação, desautorizando
-- E) fortalecimento das práticas de discriminação.                                          os negros a transitar em determinadas áreas das
+O posicionamento governamental citado nos textos é A concentração fundiária, impedindo os negros de
+criticado pelo ACNUR por ser considerado um caminho tomar posse legítima do uso da terra.
+para o(a) B boicote econômico, proibindo os negros de consumir
+- A) alteração do regime político. produtos ingleses sem resistência armada.
+- B) fragilização da supremacia nacional. C sincretismo religioso, vetando os ritos sagrados dos
+- C) expansão dos domínios geográficos. negros nas cerimônias oficiais do Estado.
+- D) cerceamento da liberdade de expressão. D controle sobre a movimentação, desautorizando
+- E) fortalecimento das práticas de discriminação. os negros a transitar em determinadas áreas das
 cidades.
 
 ## Questão 032
@@ -706,7 +706,7 @@ cidades.
 - Gabarito: D
 
 E exclusão do mercado de trabalho, negando à
-A sociologia ainda não ultrapassou a era das                                           população negra o acesso aos bens de consumo.
+A sociologia ainda não ultrapassou a era das população negra o acesso aos bens de consumo.
 construções e das sínteses filosóficas. Em vez de
 assumir a tarefa de lançar luz sobre uma parcela restrita
 
@@ -716,26 +716,26 @@ assumir a tarefa de lançar luz sobre uma parcela restrita
 - Gabarito: A
 
 do campo social, ela prefere buscar as brilhantes
-generalidades em que todas as questões são levantadas                                        A linhagem dos primeiros críticos ambientais
-sem que nenhuma seja expressamente tratada.                                              brasileiros não praticou o elogio laudatório da beleza e
-Não é com exames sumários e por meio de intuições                                        da grandeza do meio natural brasileiro. O meio natural foi
-rápidas que se pode chegar a descobrir as leis de uma                                    elogiado por sua riqueza e potencial econômico, sendo
-realidade tão complexa. Sobretudo, generalizações às                                     sua destruição interpretada como um signo de atraso,
-vezes tão amplas e tão apressadas não são suscetíveis                                    ignorância e falta de cuidado.
+generalidades em que todas as questões são levantadas A linhagem dos primeiros críticos ambientais
+sem que nenhuma seja expressamente tratada. brasileiros não praticou o elogio laudatório da beleza e
+Não é com exames sumários e por meio de intuições da grandeza do meio natural brasileiro. O meio natural foi
+rápidas que se pode chegar a descobrir as leis de uma elogiado por sua riqueza e potencial econômico, sendo
+realidade tão complexa. Sobretudo, generalizações às sua destruição interpretada como um signo de atraso,
+vezes tão amplas e tão apressadas não são suscetíveis ignorância e falta de cuidado.
 de nenhum tipo de prova.
 PÁDUA, J. A. Um sopro de destruição: pensamento político e crítica ambiental no Brasil
-DURKHEIM, E. O suicídio: estudo de sociologia. São Paulo: Martins Fontes, 2000.                               escravista (1786-1888). Rio de Janeiro: Zahar, 2002 (adaptado).
-O texto expressa o esforço de Émile Durkheim em                                          Descrevendo a posição dos críticos ambientais brasileiros
-construir uma sociologia com base na                                                     dos séculos XVIII e XIX, o autor demonstra que, via de
-- A) vinculação com a filosofia como saber unificado.                                       regra, eles viam o meio natural como
-- B) reunião de percepções intuitivas para demonstração.                                    A ferramenta essencial para o avanço da nação.
-- C) formulação de hipóteses subjetivas sobre a vida                                        B dádiva divina para o desenvolvimento industrial.
+DURKHEIM, E. O suicídio: estudo de sociologia. São Paulo: Martins Fontes, 2000. escravista (1786-1888). Rio de Janeiro: Zahar, 2002 (adaptado).
+O texto expressa o esforço de Émile Durkheim em Descrevendo a posição dos críticos ambientais brasileiros
+construir uma sociologia com base na dos séculos XVIII e XIX, o autor demonstra que, via de
+- A) vinculação com a filosofia como saber unificado. regra, eles viam o meio natural como
+- B) reunião de percepções intuitivas para demonstração. A ferramenta essencial para o avanço da nação.
+- C) formulação de hipóteses subjetivas sobre a vida B dádiva divina para o desenvolvimento industrial.
 social.
 - C) paisagem privilegiada para a valorização fundiária.
 - D) adesão aos padrões de investigação típicos das
-ciências naturais.                                                                     D limitação topográfica para a promoção da urbanização.
-- E) incorporação de um conhecimento alimentado pelo                                        E obstáculo climático para o estabelecimento da
-engajamento político.                                                                    civilização.
+ciências naturais. D limitação topográfica para a promoção da urbanização.
+- E) incorporação de um conhecimento alimentado pelo E obstáculo climático para o estabelecimento da
+engajamento político. civilização.
 CH - 1º dia | Caderno 1 - AZUL - Página 11
 
 ## Questão 035
@@ -763,7 +763,7 @@ No contexto da Primeira República no Brasil, as relações políticas descritas
 
 Dessalinização das águas
 Japão
-Espanha                                                                              1 054 274
+Espanha 1 054 274
 2 588 658
 Estados Unidos
 5 653 941
@@ -773,7 +773,7 @@ Arábia Saudita
 6 879 869
 Kuwait
 2 111 558
-500 001 a 1 000 000                    acima de 1 000 000
+500 001 a 1 000 000 acima de 1 000 000
 EUA. Relatório da Academia Nacional de Ciências, 2008 (adaptado).
 Conforme a análise do documento cartográfico, a área de concentração das usinas de dessalinização é
 explicada pelo(a)
@@ -796,24 +796,24 @@ CH - 1º dia | Caderno 1 - AZUL - Página 12
 - Área: Ciências Humanas
 - Gabarito: A
 
-Vi os homens sumirem-se numa grande tristeza.                                      Pesca industrial provoca destruição na África
+Vi os homens sumirem-se numa grande tristeza. Pesca industrial provoca destruição na África
 Os melhores cansaram-se das suas obras. Proclamou-se
-uma doutrina e com ela circulou uma crença: Tudo é                                     O súbito desaparecimento do bacalhau dos
-oco, tudo é igual, tudo passou! O nosso trabalho foi                               grandes cardumes da Terra Nova, no final do século XX
-inútil; o nosso vinho tornou-se veneno; o mau olhado                               — o que ninguém havia previsto —, teve o efeito de
-amareleceu-nos os campos e os corações. Secamos                                    um eletrochoque planetário. Lançada pelos bascos
-de todo, e se caísse fogo em cima de nós, as nossas                                no século XV, a pesca e depois a sobrepesca desse
-cinzas voariam em pó. Sim; cansamos o próprio fogo.                                grande peixe de água fria levaram ao impensável.
-Todas as fontes secaram para nós, e o mar retirou-se.                              Ao Canadá o bacalhau nunca mais voltou. E o que
-Todos os solos se querem abrir, mas os abismos não                                 ocorreu no Atlântico Norte está acontecendo em outros
-nos querem tragar!                                                                 mares. Os maiores navios do mundo seguem agora
+uma doutrina e com ela circulou uma crença: Tudo é O súbito desaparecimento do bacalhau dos
+oco, tudo é igual, tudo passou! O nosso trabalho foi grandes cardumes da Terra Nova, no final do século XX
+inútil; o nosso vinho tornou-se veneno; o mau olhado — o que ninguém havia previsto —, teve o efeito de
+amareleceu-nos os campos e os corações. Secamos um eletrochoque planetário. Lançada pelos bascos
+de todo, e se caísse fogo em cima de nós, as nossas no século XV, a pesca e depois a sobrepesca desse
+cinzas voariam em pó. Sim; cansamos o próprio fogo. grande peixe de água fria levaram ao impensável.
+Todas as fontes secaram para nós, e o mar retirou-se. Ao Canadá o bacalhau nunca mais voltou. E o que
+Todos os solos se querem abrir, mas os abismos não ocorreu no Atlântico Norte está acontecendo em outros
+nos querem tragar! mares. Os maiores navios do mundo seguem agora
 em direção ao sul, até os limites da Antártida, para
 NIETZSCHE, F. Assim falou Zaratustra. Rio de Janeiro: Ediouro, 1977.
 competir pelos estoques remanescentes.
-O texto exprime uma construção alegórica, que traduz um                                    MORA, J. S. Disponível em: www.diplomatique.com.br. Acesso em: 14 jan. 2014.
+O texto exprime uma construção alegórica, que traduz um MORA, J. S. Disponível em: www.diplomatique.com.br. Acesso em: 14 jan. 2014.
 entendimento da doutrina niilista, uma vez que
 O problema exposto no texto jornalístico relaciona-se à
-A   reforça a liberdade do cidadão.
+A reforça a liberdade do cidadão.
 - A) insustentabilidade do modelo de produção e consumo.
 - B) desvela os valores do cotidiano.
 - B) fragilidade ecológica de ecossistemas costeiros.
@@ -857,11 +857,11 @@ essas transformações pelo(a)
 formal.
 - C) impacto da tecnologia e as modificações na
 estrutura produtiva.
-O Cruzeiro, década de 1960. Disponível em: www.memoriaviva.com.br.     D emergência da globalização e a expansão do
+O Cruzeiro, década de 1960. Disponível em: www.memoriaviva.com.br. D emergência da globalização e a expansão do
 Acesso em: 28 fev. 2012 (adaptado).
 setor secundário.
-No anúncio, há referências a algumas das transformações                            E diminuição do tempo de trabalho e a necessidade de
-ocorridas no Brasil nos anos 1950 e 1960. No entanto,                                diploma superior.
+No anúncio, há referências a algumas das transformações E diminuição do tempo de trabalho e a necessidade de
+ocorridas no Brasil nos anos 1950 e 1960. No entanto, diploma superior.
 tais referências omitem transformações que impactaram
 segmentos da população, como a
 - A) exaltação da tradição colonial.
@@ -914,32 +914,32 @@ lendo. Mergulhar num livro, ou num longo artigo,
 costumava ser fácil. Isso raramente ocorre atualmente.
 Agora minha atenção começa a divagar depois de duas
 ou três páginas. Creio que sei o que está acontecendo.
-Por mais de uma década venho passando mais tempo                                       Uma scena franco-brazileira: “franco” — pelo local e os
-on-line, procurando e surfando e algumas vezes                                         personagens, o local que é Paris e os personagens que
-acrescentando informação à grande biblioteca da                                        são pessôas do povo da grande capital; “brazileira” pelo
-internet. A internet tem sido uma dádiva para um escritor                              que ahi se está bebendo: café do Brazil. O Lettreiro diz
-como eu. Pesquisas que antes exigiam dias de procura                                   a verdade apregoando que esse é o melhor de todos os
-em jornais ou na biblioteca agora podem ser feitas em                                  cafés. (Essa página foi desenhada especialmente para
-minutos. Como disse o teórico da comunicação Marshall                                  A Illustração Brazileira pelo Sr. Tofani, desenhista do
-McLuhan nos anos 60, a mídia não é apenas um canal                                     Je Sais Tout.)
-passivo para o tráfego de informação. Ela fornece a                                                          A Illustração Brazileira, n. 2, 15 jun. 1909 (adaptado).
+Por mais de uma década venho passando mais tempo Uma scena franco-brazileira: “franco” — pelo local e os
+on-line, procurando e surfando e algumas vezes personagens, o local que é Paris e os personagens que
+acrescentando informação à grande biblioteca da são pessôas do povo da grande capital; “brazileira” pelo
+internet. A internet tem sido uma dádiva para um escritor que ahi se está bebendo: café do Brazil. O Lettreiro diz
+como eu. Pesquisas que antes exigiam dias de procura a verdade apregoando que esse é o melhor de todos os
+em jornais ou na biblioteca agora podem ser feitas em cafés. (Essa página foi desenhada especialmente para
+minutos. Como disse o teórico da comunicação Marshall A Illustração Brazileira pelo Sr. Tofani, desenhista do
+McLuhan nos anos 60, a mídia não é apenas um canal Je Sais Tout.)
+passivo para o tráfego de informação. Ela fornece a A Illustração Brazileira, n. 2, 15 jun. 1909 (adaptado).
 matéria, mas também molda o processo de pensamento.
 A página do periódico do início do século XX documenta
 E o que a net parece fazer é pulverizar minha capacidade
 um importante elemento da cultura francesa, que é
 de concentração e contemplação.
 revelador do papel do Brasil na economia mundial,
-CARR, N. Is Google making us stupid? Disponível em: www.theatlantic.com.    indicado no seguinte aspecto:
+CARR, N. Is Google making us stupid? Disponível em: www.theatlantic.com. indicado no seguinte aspecto:
 Acesso em: 17 fev. 2013 (adaptado).
 - A) Prestador de serviços gerais.
 Em relação à internet, a perspectiva defendida pelo autor
 - B) Exportador de bens industriais.
 ressalta um paradoxo que se caracteriza por
 - C) Importador de padrões estéticos.
-- A) associar uma experiência superficial à abundância                                   D   Fornecedor de produtos agrícolas.
+- A) associar uma experiência superficial à abundância D Fornecedor de produtos agrícolas.
 de informações.
 - E) Formador de padrões de consumo.
-- B) condicionar   uma    capacidade                            individual          à
+- B) condicionar uma capacidade individual à
 desorganização da rede.
 - C) agregar uma tendência contemporânea à aceleração
 do tempo.
@@ -977,19 +977,19 @@ A questão cultural indicada no texto ressalta o seguinte aspecto socioeconômic
 O número de ﬁlhos por casal diminui rapidamente. Para a maioria
 dos economistas, isso representa um alerta para o futuro.
 Taxa de fecundidade total
-5,8                                                                                 6,0
+5,8 6,0
 BRASIL
 5,0
 China
 4,4
-Coreia do Sul                                                                                        4,0
+Coreia do Sul 4,0
 Portugal
-2,9                                                        3,0
+2,9 3,0
 EUA
 2,4
-Japão                                                                      1,9                       2,0
+Japão 1,9 2,0
 1,0
-1970      1980           1990            2000            2010
+1970 1980 1990 2000 2010
 Fontes: IBGE e OCDE
 Disponível em: http://epoca.globo.com. Acesso em: 20 out. 2015 (adaptado).
 Uma consequência socioeconômica para os países que vivenciam o fenômeno demográﬁco ilustrado é a
@@ -1007,8 +1007,8 @@ CIÊNCIAS DA NATUREZA E SUAS
 - Área: Ciências da Natureza
 - Gabarito: A
 
-TECNOLOGIAS                                                                                 A coleta das fezes dos animais domésticos em sacolas
-Questões de 46 a 90                                                                     plásticas e o seu descarte em lixeiras convencionais
+TECNOLOGIAS A coleta das fezes dos animais domésticos em sacolas
+Questões de 46 a 90 plásticas e o seu descarte em lixeiras convencionais
 podem criar condições de degradação que geram
 produtos prejudiciais ao meio ambiente (Figura 1).
 
@@ -1029,14 +1029,14 @@ dor e ardor, levando à cegueira temporária. O processo
 terminações nervosas.
 A Figura 2 ilustra o Projeto Park Spark, desenvolvido
 Como funciona o gás de pimenta. Disponível em: http://pessoas.hsw.uol.com.br.
-Acesso em: 1 mar. 2012 (adaptado).       em Cambridge, MA (EUA), em que as fezes dos animais
+Acesso em: 1 mar. 2012 (adaptado). em Cambridge, MA (EUA), em que as fezes dos animais
 domésticos são recolhidas em sacolas biodegradáveis
-Quando uma pessoa é atingida com o spray de pimenta                                     e jogadas em um biodigestor instalado em parques
-nos olhos ou na pele, a lavagem da região atingida com                                  públicos; e os produtos são utilizados em equipamentos
+Quando uma pessoa é atingida com o spray de pimenta e jogadas em um biodigestor instalado em parques
+nos olhos ou na pele, a lavagem da região atingida com públicos; e os produtos são utilizados em equipamentos
 água é ineﬁcaz porque a
 no próprio parque.
 - A) reação entre etanol e água libera calor, intensiﬁcando
-o ardor.                                                                                                                Figura 2
+o ardor. Figura 2
 - B) solubilidade do princípio ativo em água é muito baixa,
 diﬁcultando a sua remoção.
 - C) permeabilidade da água na pele é muito alta, não
@@ -1051,16 +1051,16 @@ permitindo que haja contato entre o óleo e o solvente.
 - Área: Ciências da Natureza
 - Gabarito: C
 
-A usina de Itaipu é uma das maiores hidrelétricas                                          Disponível em: http://parksparkproject.com. Acesso em: 30 ago. 2013 (adaptado).
-do mundo em geração de energia. Com 20 unidades                                         Uma inovação desse projeto é possibilitar o(a)
+A usina de Itaipu é uma das maiores hidrelétricas Disponível em: http://parksparkproject.com. Acesso em: 30 ago. 2013 (adaptado).
+do mundo em geração de energia. Com 20 unidades Uma inovação desse projeto é possibilitar o(a)
 geradoras e 14 000 MW de potência total instalada,
-apresenta uma queda de 118,4 m e vazão nominal de                                       A   queima de gás metano.
-690 m3/s por unidade geradora. O cálculo da potência                                    B   armazenamento de gás carbônico.
-teórica leva em conta a altura da massa de água represada                               C   decomposição aeróbica das fezes.
+apresenta uma queda de 118,4 m e vazão nominal de A queima de gás metano.
+690 m3/s por unidade geradora. O cálculo da potência B armazenamento de gás carbônico.
+teórica leva em conta a altura da massa de água represada C decomposição aeróbica das fezes.
 pela barragem, a gravidade local (10 m/s2) e a densidade
-D   uso mais eﬁciente de combustíveis fósseis.
+D uso mais eﬁciente de combustíveis fósseis.
 da água (1 000 kg/m3). A diferença entre a potência teórica
-e a instalada é a potência não aproveitada.                                             E   ﬁxação de carbono em moléculas orgânicas.
+e a instalada é a potência não aproveitada. E ﬁxação de carbono em moléculas orgânicas.
 Disponível em: www.itaipu.gov.br. Acesso em: 11 maio 2013 (adaptado).
 Qual é a potência, em MW, não aproveitada em cada
 unidade geradora de Itaipu?
@@ -1083,17 +1083,17 @@ detectada em função do tempo fO(t), antes e depois da passagem da ambulância 
 A
 O
 Qual esboço gráfico representa a frequência fO(t) detectada pelo observador?
-fo(t)                                                                fo(t)
-fA                                                                   fA
-A                                                                     D
-t                                                                   t
-fo(t)                                                                fo(t)
+fo(t) fo(t)
+fA fA
+A D
+t t
+fo(t) fo(t)
 fA
-B                                                                     E
+B E
 fA
-t                                                                   t
+t t
 fo(t)
-C      fA
+C fA
 t
 
 ## Questão 050
@@ -1107,8 +1107,8 @@ temperaturas, conforme a equação química:
 3 C2H2 (g) → C6H6 (l)
 A energia envolvida nesse processo pode ser calculada indiretamente pela variação de entalpia das reações de
 combustão das substâncias participantes, nas mesmas condições experimentais:
-I.       C2H2 (g) +        O2 (g) → 2 CO2 (g) + H2O (l)                   ∆Hc° = −310 kcal/mol
-II. C6H6 (l) +             O2 (g) → 6 CO2 (g) + 3 H2O (l)                 ∆Hc° = −780 kcal/mol
+I. C2H2 (g) + O2 (g) → 2 CO2 (g) + H2O (l) ∆Hc° = −310 kcal/mol
+II. C6H6 (l) + O2 (g) → 6 CO2 (g) + 3 H2O (l) ∆Hc° = −780 kcal/mol
 A variação de entalpia do processo de trimerização, em kcal, para a formação de um mol de benzeno é mais próxima de
 - A) −1 090.
 - B) −150.
@@ -1149,14 +1149,14 @@ Bombicol
 O uso de feromônios em ações de controle de insetos-praga está de acordo com o modelo preconizado para a
 agricultura do futuro. São agentes altamente específicos e seus compostos químicos podem ser empregados em
 determinados cultivos, conforme ilustrado no quadro.
-Substância                                                   Inseto                         Cultivo
+Substância Inseto Cultivo
 OH O
-Sitophilus spp                        Milho
+Sitophilus spp Milho
 O
-NH                                            Migdolus fryanus                 Cana-de-açúcar
-OH                                   Anthonomus rubi                       Morango
-OH               Grapholita molesta                      Frutas
-OCOCH3              Scrobipalpuloides                      Tomate
+NH Migdolus fryanus Cana-de-açúcar
+OH Anthonomus rubi Morango
+OH Grapholita molesta Frutas
+OCOCH3 Scrobipalpuloides Tomate
 absoluta
 FERREIRA, J. T. B.; ZARBIN, P. H. G. Amor ao primeiro odor: a comunicação química entre os insetos. Química Nova na Escola, n. 7, maio 1998 (adaptado).
 Considerando essas estruturas químicas, o tipo de estereoisomeria apresentada pelo bombicol é também apresentada
@@ -1180,35 +1180,35 @@ CN - 1º dia | Caderno 1 - AZUL - Página 18
 - Área: Ciências da Natureza
 - Gabarito: C
 
-O esquema representa, de maneira simplificada, o            A Figura 1 apresenta o gráfico da intensidade,
-processo de produção de etanol utilizando milho como        em decibéis (dB), da onda sonora emitida por um
-matéria-prima.                                              alto-falante, que está em repouso, e medida por um
-Levedura                      microfone em função da frequência da onda para
+O esquema representa, de maneira simplificada, o A Figura 1 apresenta o gráfico da intensidade,
+processo de produção de etanol utilizando milho como em decibéis (dB), da onda sonora emitida por um
+matéria-prima. alto-falante, que está em repouso, e medida por um
+Levedura microfone em função da frequência da onda para
 diferentes distâncias: 3 mm, 25 mm, 51 mm e 60 mm.
 A Figura 2 apresenta um diagrama com a indicação das
 diversas faixas do espectro de frequência sonora para o
-CO2            modelo de alto-falante utilizado neste experimento.
+CO2 modelo de alto-falante utilizado neste experimento.
 Figura 1
-Milho                                    Etanol
+Milho Etanol
 Resposta de Frequência
 +20
-Água                        3 mm
-Hidrólise       Fermentação                        +10     25 mm
+Água 3 mm
+Hidrólise Fermentação +10 25 mm
 51 mm
-A etapa de hidrólise na produção de etanol a partir do              0
+A etapa de hidrólise na produção de etanol a partir do 0
 dB
 60 mm
 milho é fundamental para que
 −10
 - A) a glicose seja convertida em sacarose.
-- B) as enzimas dessa planta sejam ativadas.                       −20
-2   3 4 5 6 789                 2    3 4 5 6 789
+- B) as enzimas dessa planta sejam ativadas. −20
+2 3 4 5 6 789 2 3 4 5 6 789
 - C) a maceração favoreça a solubilização em água.
-20            50       100                       1 000                        10 000 20 000
-- D) o amido seja transformado em substratos utilizáveis                                                                   Hz
-pela levedura.                                                                                       Disponível em: www.batera.com.br. Acesso em: 8 fev. 2015.
+20 50 100 1 000 10 000 20 000
+- D) o amido seja transformado em substratos utilizáveis Hz
+pela levedura. Disponível em: www.batera.com.br. Acesso em: 8 fev. 2015.
 - E) os grãos com diferentes composições químicas
-sejam padronizados.                                                                                         Figura 2
+sejam padronizados. Figura 2
 Faixas do espectro de frequência sonora
 
 ## Questão 054
@@ -1216,9 +1216,9 @@ Faixas do espectro de frequência sonora
 - Área: Ciências da Natureza
 - Gabarito: C
 
-Média                                   Média
-Subgrave             Grave                              Média                                  Aguda
-baixa                                    alta
+Média Média
+Subgrave Grave Média Aguda
+baixa alta
 Durante a primeira fase do projeto de uma usina de
 20 Hz
 63 Hz
@@ -1229,17 +1229,17 @@ Durante a primeira fase do projeto de uma usina de
 20 kHz
 geração de energia elétrica, os engenheiros da equipe
 de avaliação de impactos ambientais procuram saber se
-esse projeto está de acordo com as normas ambientais.                                                  Disponível em: www.somsc.com.br. Acesso em: 2 abr. 2015.
+esse projeto está de acordo com as normas ambientais. Disponível em: www.somsc.com.br. Acesso em: 2 abr. 2015.
 A nova planta estará localizada à beira de um rio, cuja
 Relacionando as informações presentes nas figuras 1 e 2,
-temperatura média da água é de 25 °C, e usará a sua         como a intensidade sonora percebida é afetada pelo
-água somente para refrigeração. O projeto pretende que      aumento da distância do microfone ao alto-falante?
+temperatura média da água é de 25 °C, e usará a sua como a intensidade sonora percebida é afetada pelo
+água somente para refrigeração. O projeto pretende que aumento da distância do microfone ao alto-falante?
 a usina opere com 1,0 MW de potência elétrica e, em
-razão de restrições técnicas, o dobro dessa potência será   A       Aumenta na faixa das frequências médias.
-dissipada por seu sistema de arrefecimento, na forma de     B       Diminui na faixa das frequências agudas.
-calor. Para atender a resolução número 430, de 13 de        C       Diminui na faixa das frequências graves.
-maio de 2011, do Conselho Nacional do Meio Ambiente,        D       Aumenta na faixa das frequências médias altas.
-com uma ampla margem de segurança, os engenheiros           E       Aumenta na faixa das frequências médias baixas.
+razão de restrições técnicas, o dobro dessa potência será A Aumenta na faixa das frequências médias.
+dissipada por seu sistema de arrefecimento, na forma de B Diminui na faixa das frequências agudas.
+calor. Para atender a resolução número 430, de 13 de C Diminui na faixa das frequências graves.
+maio de 2011, do Conselho Nacional do Meio Ambiente, D Aumenta na faixa das frequências médias altas.
+com uma ampla margem de segurança, os engenheiros E Aumenta na faixa das frequências médias baixas.
 determinaram que a água só poderá ser devolvida ao rio
 com um aumento de temperatura de, no máximo, 3 °C
 em relação à temperatura da água do rio captada pelo
@@ -1267,27 +1267,27 @@ CN - 1º dia | Caderno 1 - AZUL - Página 19
 - Área: Ciências da Natureza
 - Gabarito: D
 
-As proteínas de uma célula eucariótica possuem               A minimização do tempo e custo de uma reação
-peptídeos sinais, que são sequências de aminoácidos           química, bem como o aumento na sua taxa de conversão,
-responsáveis pelo seu endereçamento para as diferentes        caracterizam a eficiência de um processo químico. Como
-organelas, de acordo com suas funções. Um pesquisador         consequência, produtos podem chegar ao consumidor
-desenvolveu uma nanopartícula capaz de carregar               mais baratos. Um dos parâmetros que mede a eficiência
-proteínas para dentro de tipos celulares específicos.         de uma reação química é o seu rendimento molar (R, em %),
-Agora ele quer saber se uma nanopartícula carregada           definido como
-com uma proteína bloqueadora do ciclo de Krebs                                         nproduto
-in vitro é capaz de exercer sua atividade em uma célula                       R=                         × 100
+As proteínas de uma célula eucariótica possuem A minimização do tempo e custo de uma reação
+peptídeos sinais, que são sequências de aminoácidos química, bem como o aumento na sua taxa de conversão,
+responsáveis pelo seu endereçamento para as diferentes caracterizam a eficiência de um processo químico. Como
+organelas, de acordo com suas funções. Um pesquisador consequência, produtos podem chegar ao consumidor
+desenvolveu uma nanopartícula capaz de carregar mais baratos. Um dos parâmetros que mede a eficiência
+proteínas para dentro de tipos celulares específicos. de uma reação química é o seu rendimento molar (R, em %),
+Agora ele quer saber se uma nanopartícula carregada definido como
+com uma proteína bloqueadora do ciclo de Krebs nproduto
+in vitro é capaz de exercer sua atividade em uma célula R= × 100
 nreagente limitante
 cancerosa, podendo cortar o aporte energético e destruir
-essas células.                                                em que n corresponde ao número de mols. O metanol
+essas células. em que n corresponde ao número de mols. O metanol
 pode ser obtido pela reação entre brometo de metila e
 Ao escolher essa proteína bloqueadora para carregar as
 hidróxido de sódio, conforme a equação química:
 nanopartículas, o pesquisador deve levar em conta um
-peptídeo sinal de endereçamento para qual organela?                        CH3Br + NaOH → CH3OH + NaBr
-- A) Núcleo.                                                        As massas molares (em g/mol) desses elementos
-- B) Mitocôndria.                                                são: H = 1; C = 12; O = 16; Na = 23; Br = 80.
-- C) Peroxissomo.                                                O rendimento molar da reação, em que 32 g de metanol
-- D) Complexo golgiense.                                         foram obtidos a partir de 142,5 g de brometo de metila e
+peptídeo sinal de endereçamento para qual organela? CH3Br + NaOH → CH3OH + NaBr
+- A) Núcleo. As massas molares (em g/mol) desses elementos
+- B) Mitocôndria. são: H = 1; C = 12; O = 16; Na = 23; Br = 80.
+- C) Peroxissomo. O rendimento molar da reação, em que 32 g de metanol
+- D) Complexo golgiense. foram obtidos a partir de 142,5 g de brometo de metila e
 80 g de hidróxido de sódio, é mais próximo de
 - E) Retículo endoplasmático.
 - A) 22%.
@@ -1298,8 +1298,8 @@ peptídeo sinal de endereçamento para qual organela?                        CH3
 - Gabarito: A
 
 B 40%.
-O morcego emite pulsos de curta duração de ondas         C 50%.
-ultrassônicas, os quais voltam na forma de ecos após          D 67%.
+O morcego emite pulsos de curta duração de ondas C 50%.
+ultrassônicas, os quais voltam na forma de ecos após D 67%.
 atingirem objetos no ambiente, trazendo informações a
 E 75%.
 respeito das suas dimensões, suas localizações e dos
@@ -1339,23 +1339,23 @@ CN - 1º dia | Caderno 1 - AZUL - Página 20
 - Área: Ciências da Natureza
 - Gabarito: D
 
-Por apresentar significativa resistividade elétrica, o          O carvão ativado é um material que possui elevado
-grafite pode ser utilizado para simular resistores elétricos     teor de carbono, sendo muito utilizado para a remoção de
-em circuitos desenhados no papel, com o uso de lápis e           compostos orgânicos voláteis do meio, como o benzeno.
-lapiseiras. Dependendo da espessura e do comprimento             Para a remoção desses compostos, utiliza-se a adsorção.
-das linhas desenhadas, é possível determinar a resistência       Esse fenômeno ocorre por meio de interações do tipo
-elétrica de cada traçado produzido. No esquema foram             intermoleculares entre a superfície do carvão (adsorvente)
-utilizados três tipos de lápis diferentes (2H, HB e 6B) para     e o benzeno (adsorvato, substância adsorvida).
+Por apresentar significativa resistividade elétrica, o O carvão ativado é um material que possui elevado
+grafite pode ser utilizado para simular resistores elétricos teor de carbono, sendo muito utilizado para a remoção de
+em circuitos desenhados no papel, com o uso de lápis e compostos orgânicos voláteis do meio, como o benzeno.
+lapiseiras. Dependendo da espessura e do comprimento Para a remoção desses compostos, utiliza-se a adsorção.
+das linhas desenhadas, é possível determinar a resistência Esse fenômeno ocorre por meio de interações do tipo
+elétrica de cada traçado produzido. No esquema foram intermoleculares entre a superfície do carvão (adsorvente)
+utilizados três tipos de lápis diferentes (2H, HB e 6B) para e o benzeno (adsorvato, substância adsorvida).
 efetuar três traçados distintos.
 No caso apresentado, entre o adsorvente e a substância
 2H
 adsorvida ocorre a formação de:
-HB                       A Ligações dissulfeto.
+HB A Ligações dissulfeto.
 6B
 B Ligações covalentes.
 C Ligações de hidrogênio.
 D Interações dipolo induzido – dipolo induzido.
-Munido dessas informações, um estudante pegou                E Interações dipolo permanente – dipolo permanente.
+Munido dessas informações, um estudante pegou E Interações dipolo permanente – dipolo permanente.
 uma folha de papel e fez o desenho de um sorvete de
 casquinha utilizando-se desses traçados. Os valores
 encontrados nesse experimento, para as resistências
@@ -1364,15 +1364,15 @@ ligado nas extremidades das resistências, são mostrados
 na figura. Verificou-se que os resistores obedeciam à
 Lei de Ohm.
 5 kΩ
-A                  B
+A B
 20 kΩ
-10 kΩ           10 kΩ
+10 kΩ 10 kΩ
 C
 Na sequência, conectou o ohmímetro nos terminais
 A e B do desenho e, em seguida, conectou-o nos terminais
 B e C, anotando as leituras RAB e R­BC, respectivamente.
 R AB
-Ao estabelecer a razão            , qual resultado o estudante
+Ao estabelecer a razão , qual resultado o estudante
 R BC
 obteve?
 A 1
@@ -1394,46 +1394,46 @@ CN - 1º dia | Caderno 1 - AZUL - Página 21
 - Área: Ciências da Natureza
 - Gabarito: D
 
-Um pesquisador investigou o papel da predação                        Dois veículos que trafegam com velocidade
-por peixes na densidade e tamanho das presas, como                   constante em uma estrada, na mesma direção e
+Um pesquisador investigou o papel da predação Dois veículos que trafegam com velocidade
+por peixes na densidade e tamanho das presas, como constante em uma estrada, na mesma direção e
 sentido, devem manter entre si uma distância mínima.
-possível controle de populações de espécies exóticas                 Isso porque o movimento de um veículo, até que ele
-em costões rochosos. No experimento colocou uma tela                 pare totalmente, ocorre em duas etapas, a partir do
-sobre uma área da comunidade, impedindo o acesso dos                 momento em que o motorista detecta um problema que
-peixes ao alimento, e comparou o resultado com uma                   exige uma freada brusca. A primeira etapa é associada
+possível controle de populações de espécies exóticas Isso porque o movimento de um veículo, até que ele
+em costões rochosos. No experimento colocou uma tela pare totalmente, ocorre em duas etapas, a partir do
+sobre uma área da comunidade, impedindo o acesso dos momento em que o motorista detecta um problema que
+peixes ao alimento, e comparou o resultado com uma exige uma freada brusca. A primeira etapa é associada
 à distância que o veículo percorre entre o intervalo de
-área adjacente na qual os peixes tinham acesso livre.                tempo da detecção do problema e o acionamento dos
-O quadro apresenta os resultados encontrados após                    freios. Já a segunda se relaciona com a distância que
-15 dias de experimento.                                              o automóvel percorre enquanto os freios agem com
+área adjacente na qual os peixes tinham acesso livre. tempo da detecção do problema e o acionamento dos
+O quadro apresenta os resultados encontrados após freios. Já a segunda se relaciona com a distância que
+15 dias de experimento. o automóvel percorre enquanto os freios agem com
 desaceleração constante.
-Área com tela              Área sem tela           Considerando a situação descrita, qual esboço gráfico
+Área com tela Área sem tela Considerando a situação descrita, qual esboço gráfico
 representa a velocidade do automóvel em relação à
 distância percorrida até parar totalmente?
-Espécie                     Tamanho                     Tamanho
-exótica     Densidade                   Densidade
-médio dos                   médio dos
-(indivíduos/                (indivíduos/
+Espécie Tamanho Tamanho
+exótica Densidade Densidade
+médio dos médio dos
+(indivíduos/ (indivíduos/
 Velocidade (m/s)
-indivíduos                  indivíduos
-m²)                         m²)
-(cm)                        (cm)
+indivíduos indivíduos
+m²) m²)
+(cm) (cm)
 A
-Alga            100            15           110           18
-Craca           300            2            150           1,5
+Alga 100 15 110 18
+Craca 300 2 150 1,5
 Distância (m)
-Mexilhão        380            3            200            6
+Mexilhão 380 3 200 6
 Velocidade (m/s)
-Ascídia          55            4            58            3,8
-O pesquisador concluiu corretamente que os peixes                    B
+Ascídia 55 4 58 3,8
+O pesquisador concluiu corretamente que os peixes B
 controlam a densidade dos(as)
 - A) algas, estimulando seu crescimento.
 Distância (m)
 - B) cracas, predando especialmente animais pequenos.
 - C) mexilhões, predando especialmente animais pequenos.
 Velocidade (m/s)
-- D) quatro espécies           testadas,    predando       indivíduos
+- D) quatro espécies testadas, predando indivíduos
 pequenos.
-- E) ascídias, apesar de não representarem os menores                   C
+- E) ascídias, apesar de não representarem os menores C
 organismos.
 
 ## Questão 062
@@ -1445,7 +1445,7 @@ Ao percorrer o trajeto de uma cadeia alimentar, o
 Velocidade (m/s)
 carbono, elemento essencial e majoritário da matéria
 orgânica que compõe os indivíduos, ora se encontra
-em sua forma inorgânica, ora se encontra em sua                      D
+em sua forma inorgânica, ora se encontra em sua D
 forma orgânica. Em uma cadeia alimentar composta por
 fitoplâncton, zooplâncton, moluscos, crustáceos e peixes
 ocorre a transição desse elemento da forma inorgânica
@@ -1454,7 +1454,7 @@ para a orgânica.
 Em qual grupo de organismos ocorre essa transição?
 Velocidade (m/s)
 - A) Fitoplâncton.
-- B) Zooplâncton.                                                       E
+- B) Zooplâncton. E
 - C) Moluscos.
 - D) Crustáceos.
 Distância (m)
@@ -1473,26 +1473,26 @@ CN - 1º dia | Caderno 1 - AZUL - Página 22
 - Área: Ciências da Natureza
 - Gabarito: B
 
-TEXTO I                                                                                           A invenção e o acoplamento entre engrenagens
-Biocélulas combustíveis são uma alternativa                                              revolucionaram a ciência na época e propiciaram a
-tecnológica para substituição das baterias convencionais.                                     invenção de várias tecnologias, como os relógios.
-Em uma biocélula microbiológica, bactérias catalisam                                          Ao construir um pequeno cronômetro, um relojoeiro
-reações de oxidação de substratos orgânicos. Liberam                                          usa o sistema de engrenagens mostrado. De acordo
-elétrons produzidos na respiração celular para um                                             com a figura, um motor é ligado ao eixo e movimenta
-eletrodo, onde fluem por um circuito externo até o cátodo                                     as engrenagens fazendo o ponteiro girar. A frequência
-do sistema, produzindo corrente elétrica. Uma reação                                          do motor é de 18 RPM, e o número de dentes das
-típica que ocorre em biocélulas microbiológicas utiliza o                                     engrenagens está apresentado no quadro.
+TEXTO I A invenção e o acoplamento entre engrenagens
+Biocélulas combustíveis são uma alternativa revolucionaram a ciência na época e propiciaram a
+tecnológica para substituição das baterias convencionais. invenção de várias tecnologias, como os relógios.
+Em uma biocélula microbiológica, bactérias catalisam Ao construir um pequeno cronômetro, um relojoeiro
+reações de oxidação de substratos orgânicos. Liberam usa o sistema de engrenagens mostrado. De acordo
+elétrons produzidos na respiração celular para um com a figura, um motor é ligado ao eixo e movimenta
+eletrodo, onde fluem por um circuito externo até o cátodo as engrenagens fazendo o ponteiro girar. A frequência
+do sistema, produzindo corrente elétrica. Uma reação do motor é de 18 RPM, e o número de dentes das
+típica que ocorre em biocélulas microbiológicas utiliza o engrenagens está apresentado no quadro.
 acetato como substrato.
-Engrenagem             Dentes
+Engrenagem Dentes
 AQUINO NETO, S. Preparação e caracterização de bioanodos para biocélula a combustível
-etanol/O2. Disponível em: www.teses.usp.br. Acesso em: 23 jun. 2015 (adaptado).                       A                   24
-TEXTO II                                                                                                         B                   72
-Em sistemas bioeletroquímicos, os potenciais                                                                 C                    36
-padrão (E°’) apresentam valores característicos.                                                                D                   108
+etanol/O2. Disponível em: www.teses.usp.br. Acesso em: 23 jun. 2015 (adaptado). A 24
+TEXTO II B 72
+Em sistemas bioeletroquímicos, os potenciais C 36
+padrão (E°’) apresentam valores característicos. D 108
 Para as biocélulas de acetato, considere as seguintes
 semirreações de redução e seus respectivos potenciais:
-2 CO2 + 7 H+ + 8 e− → CH3COO − + 2 H2O                                E°’ = -0,3 V
-O2 + 4 H+ + 4 e− → 2 H2O                                                E°’ = 0,8 V
+2 CO2 + 7 H+ + 8 e− → CH3COO − + 2 H2O E°’ = -0,3 V
+O2 + 4 H+ + 4 e− → 2 H2O E°’ = 0,8 V
 SCOTT, K.; YU, E. H. Microbial electrochemical and fuel cells: fundamentals and
 applications. Woodhead Publishing Series in Energy, n. 88, 2016 (adaptado).
 Nessas condições, qual é o número mínimo de biocélulas
@@ -1501,9 +1501,9 @@ uma diferença de potencial de 4,4 V?
 A 3
 - A) frequência de giro do ponteiro, em RPM, é
 - B) 4
-- C) 6                                                                                           A 1.
-- D) 9                                                                                           B 2.
-- E) 15                                                                                          C 4.
+- C) 6 A 1.
+- D) 9 B 2.
+- E) 15 C 4.
 - D) 81.
 
 ## Questão 065
@@ -1541,27 +1541,27 @@ CN - 1º dia | Caderno 1 - AZUL - Página 23
 - Área: Ciências da Natureza
 - Gabarito: E
 
-Primeiro, em relação àquilo a que chamamos água,                                           Recentemente um estudo feito em campos de trigo
-quando congela, parece-nos estar a olhar para algo                                         mostrou que níveis elevados de dióxido de carbono na
-que se tornou pedra ou terra, mas quando derrete e se                                      atmosfera prejudicam a absorção de nitrato pelas plantas.
-dispersa, esta torna-se bafo e ar; o ar, quando é queimado,                                Consequentemente, a qualidade nutricional desses
+Primeiro, em relação àquilo a que chamamos água, Recentemente um estudo feito em campos de trigo
+quando congela, parece-nos estar a olhar para algo mostrou que níveis elevados de dióxido de carbono na
+que se tornou pedra ou terra, mas quando derrete e se atmosfera prejudicam a absorção de nitrato pelas plantas.
+dispersa, esta torna-se bafo e ar; o ar, quando é queimado, Consequentemente, a qualidade nutricional desses
 alimentos pode diminuir à medida que os níveis de dióxido
 torna-se fogo; e, inversamente, o fogo, quando se contrai
 de carbono na atmosfera atingirem as estimativas para as
-e se extingue, regressa à forma do ar; o ar, novamente                                     próximas décadas.
+e se extingue, regressa à forma do ar; o ar, novamente próximas décadas.
 concentrado e contraído, torna-se nuvem e nevoeiro, mas,
 BLOOM, A. J. et al. Nitrate assimilation is inhibited by elevated CO2 in field-grown wheat.
-a partir destes estados, se for ainda mais comprimido,                                                                              Nature Climate Change, n. 4, abr. 2014 (adaptado).
+a partir destes estados, se for ainda mais comprimido, Nature Climate Change, n. 4, abr. 2014 (adaptado).
 torna-se água corrente, e de água torna-se novamente
 Nesse contexto, a qualidade nutricional do grão de trigo
-terra e pedras; e deste modo, como nos parece, dão                                         será modificada primariamente pela redução de
+terra e pedras; e deste modo, como nos parece, dão será modificada primariamente pela redução de
 geração uns aos outros de forma cíclica.
-A    amido.
+A amido.
 PLATÃO. Timeu-Crítias. Coimbra: CECH, 2011.
-B    frutose.
-Do ponto de vista da ciência moderna, os “quatro                                       C    lipídeos.
-elementos” descritos por Platão correspondem, na                                           D    celulose.
-verdade, às fases sólida, líquida, gasosa e plasma da                                      E    proteínas.
+B frutose.
+Do ponto de vista da ciência moderna, os “quatro C lipídeos.
+elementos” descritos por Platão correspondem, na D celulose.
+verdade, às fases sólida, líquida, gasosa e plasma da E proteínas.
 matéria. As transições entre elas são hoje entendidas
 como consequências macroscópicas de transformações
 
@@ -1574,18 +1574,18 @@ sofridas pela matéria em escala microscópica.
 Pesquisadores recuperaram DNA de ossos de
 Excetuando-se a fase de plasma, essas transformações
 mamute (Mammuthus primigenius) encontrados na
-sofridas pela matéria, em nível microscópico, estão                                        Sibéria, que tiveram sua idade de cerca de 28 mil anos
-associadas a uma                                                                           confirmada pela técnica do carbono-14.
-- A) troca de átomos entre as diferentes moléculas do                                                     FAPESP. DNA de mamute é revelado. Disponível em: http://agencia.fapesp.br.
-material.                                                                                                                               Acesso em: 13 ago. 2012 (adaptado).
-- B) transmutação nuclear dos elementos químicos do                                           A técnica de datação apresentada no texto só é possível
-material.                                                                                devido à
-- C) redistribuição de prótons entre os diferentes átomos                                     A proporção conhecida entre carbono-14 e carbono-12
-do material.                                                                               na atmosfera ao longo dos anos.
-- D) mudança na estrutura espacial formada pelos                                              B decomposição de todo o carbono-12 presente no
-diferentes constituintes do material.                                                      organismo após a morte.
-- E) alteração nas proporções dos diferentes isótopos de                                      C fixação maior do carbono-14 nos tecidos de
-cada elemento presente no material.                                                        organismos após a morte.
+sofridas pela matéria, em nível microscópico, estão Sibéria, que tiveram sua idade de cerca de 28 mil anos
+associadas a uma confirmada pela técnica do carbono-14.
+- A) troca de átomos entre as diferentes moléculas do FAPESP. DNA de mamute é revelado. Disponível em: http://agencia.fapesp.br.
+material. Acesso em: 13 ago. 2012 (adaptado).
+- B) transmutação nuclear dos elementos químicos do A técnica de datação apresentada no texto só é possível
+material. devido à
+- C) redistribuição de prótons entre os diferentes átomos A proporção conhecida entre carbono-14 e carbono-12
+do material. na atmosfera ao longo dos anos.
+- D) mudança na estrutura espacial formada pelos B decomposição de todo o carbono-12 presente no
+diferentes constituintes do material. organismo após a morte.
+- E) alteração nas proporções dos diferentes isótopos de C fixação maior do carbono-14 nos tecidos de
+cada elemento presente no material. organismos após a morte.
 - D) emissão de carbono-12 pelos tecidos de organismos
 
 ## Questão 068
@@ -1594,8 +1594,8 @@ cada elemento presente no material.                                             
 - Gabarito: B
 
 após a morte.
-Para cada litro de etanol produzido em uma                                            E transformação do carbono-12 em carbono-14 ao
-indústria de cana-de-açúcar são gerados cerca de 18 L                                        longo dos anos.
+Para cada litro de etanol produzido em uma E transformação do carbono-12 em carbono-14 ao
+indústria de cana-de-açúcar são gerados cerca de 18 L longo dos anos.
 de vinhaça que é utilizada na irrigação das plantações
 de cana-de-açúcar, já que contém teores médios de
 nutrientes N, P e K iguais a 357 mg/L, 60 mg/L e 2 034 mg/L,
@@ -1625,21 +1625,21 @@ CN - 1º dia | Caderno 1 - AZUL - Página 24
 - Área: Ciências da Natureza
 - Gabarito: C
 
-A vegetação apresenta adaptações ao ambiente,                   Os ecossistemas degradados por intensa atividade
-como plantas arbóreas e arbustivas com raízes que se           agrícola apresentam, geralmente, diminuição de sua
-expandem horizontalmente, permitindo forte ancoragem           diversidade e perda de sua estabilidade. Nesse contexto,
-no substrato lamacento; raízes que se expandem                 o uso integrado de árvores aos sistemas agrícolas
-verticalmente, por causa da baixa oxigenação do                (sistemas agroflorestais) pode cumprir um papel inovador
-substrato; folhas que têm glândulas para eliminar o            ao buscar a aceleração do processo sucessional e, ao
-excesso de sais; folhas que podem apresentar cutícula          mesmo tempo, uma produção escalonada e diversificada.
-espessa para reduzir a perda de água por evaporação.                       Disponível em: saf.cnpgc.embrapa.br. Acesso em: 21 jan. 2012 (adaptado).
-As características descritas       referem-se    a   plantas   Essa é uma estratégia de conciliação entre recuperação
-adaptadas ao bioma:                                            ambiental e produção agrícola, pois
-- A) Cerrado.                                                   A substitui gradativamente as espécies cultiváveis por
-- B) Pampas.                                                      espécies arbóreas.
-- C) Pantanal.                                                  B intensifica a fertilização do solo com o uso de técnicas
-- D) Manguezal.                                                   apropriadas e biocidas.
-- E) Mata de Cocais.                                            C promove maior diversidade de vida no solo com o
+A vegetação apresenta adaptações ao ambiente, Os ecossistemas degradados por intensa atividade
+como plantas arbóreas e arbustivas com raízes que se agrícola apresentam, geralmente, diminuição de sua
+expandem horizontalmente, permitindo forte ancoragem diversidade e perda de sua estabilidade. Nesse contexto,
+no substrato lamacento; raízes que se expandem o uso integrado de árvores aos sistemas agrícolas
+verticalmente, por causa da baixa oxigenação do (sistemas agroflorestais) pode cumprir um papel inovador
+substrato; folhas que têm glândulas para eliminar o ao buscar a aceleração do processo sucessional e, ao
+excesso de sais; folhas que podem apresentar cutícula mesmo tempo, uma produção escalonada e diversificada.
+espessa para reduzir a perda de água por evaporação. Disponível em: saf.cnpgc.embrapa.br. Acesso em: 21 jan. 2012 (adaptado).
+As características descritas referem-se a plantas Essa é uma estratégia de conciliação entre recuperação
+adaptadas ao bioma: ambiental e produção agrícola, pois
+- A) Cerrado. A substitui gradativamente as espécies cultiváveis por
+- B) Pampas. espécies arbóreas.
+- C) Pantanal. B intensifica a fertilização do solo com o uso de técnicas
+- D) Manguezal. apropriadas e biocidas.
+- E) Mata de Cocais. C promove maior diversidade de vida no solo com o
 aumento da matéria orgânica.
 
 ## Questão 072
@@ -1648,8 +1648,8 @@ aumento da matéria orgânica.
 - Gabarito: C
 
 fauna residente nas áreas florestais.
-Uma pessoa é responsável pela manutenção de uma            E cria condições para o estabelecimento de espécies
-sauna úmida. Todos os dias cumpre o mesmo ritual: colhe          pioneiras com a diminuição da insolação sobre o solo.
+Uma pessoa é responsável pela manutenção de uma E cria condições para o estabelecimento de espécies
+sauna úmida. Todos os dias cumpre o mesmo ritual: colhe pioneiras com a diminuição da insolação sobre o solo.
 folhas de capim-cidreira e algumas folhas de eucalipto.
 Em seguida, coloca as folhas na saída do vapor da sauna,
 
@@ -1663,24 +1663,24 @@ Parede
 Três lâmpadas idênticas foram ligadas no circuito
 esquematizado. A bateria apresenta resistência interna
 desprezível, e os fios possuem resistência nula.
-Sauna úmida                                        Um técnico fez uma análise do circuito para prever a
+Sauna úmida Um técnico fez uma análise do circuito para prever a
 corrente elétrica nos pontos: A, B, C, D e E; e rotulou
 essas correntes de IA, IB, IC, ID e IE, respectivamente.
 Gerador de vapor
 L1
-Folhas                                                                            C
+Folhas C
 L2
 D
 Saída do vapor
-B         L3
+B L3
 Qual processo de separação é responsável pela
 aromatização promovida?
 - A) Filtração simples.
-- B) Destilação simples.                                                           A
+- B) Destilação simples. A
 E
 - C) Extração por arraste.
 - D) Sublimação fracionada.
-- E) Decantação sólido-líquido.                                                                        V
+- E) Decantação sólido-líquido. V
 O técnico concluiu que as correntes que apresentam o
 mesmo valor são
 - A) IA = IE e IC = ID.
@@ -1713,7 +1713,7 @@ O que garante o transporte dessa seiva é a
 
 Nucleófilos (Nu−) são bases de Lewis que reagem com haletos de alquila, por meio de uma reação chamada
 substituição nucleofílica (SN), como mostrado no esquema:
-R–X + Nu− → R–Nu + X−                                   (R = grupo alquila e X = halogênio)
+R–X + Nu− → R–Nu + X− (R = grupo alquila e X = halogênio)
 A reação de SN entre metóxido de sódio (Nu− = CH3O−) e brometo de metila fornece um composto orgânico pertencente
 à função
 - A) éter.
@@ -1735,14 +1735,14 @@ passa a se mover com velocidade escalar constante, o carrinho 2 está em repouso
 se choca com o carrinho 2, ambos passam a se movimentar juntos com velocidade escalar constante. Os sensores
 eletrônicos distribuídos ao longo do trilho determinam as posições e registram os instantes associados à passagem de
 cada carrinho, gerando os dados do quadro.
-sensor 1          sensor 2                               sensor 3             sensor 4
-carrinho 1                                        carrinho 2
-Carrinho 1                           Carrinho 2
-Posição (cm)         Instante (s)   Posição (cm)          Instante (s)
-15,0                  0,0            45,0                  0,0
-30,0                  1,0            45,0                  1,0
-75,0                  8,0            75,0                  8,0
-90,0                  11,0           90,0                  11,0
+sensor 1 sensor 2 sensor 3 sensor 4
+carrinho 1 carrinho 2
+Carrinho 1 Carrinho 2
+Posição (cm) Instante (s) Posição (cm) Instante (s)
+15,0 0,0 45,0 0,0
+30,0 1,0 45,0 1,0
+75,0 8,0 75,0 8,0
+90,0 11,0 90,0 11,0
 Com base nos dados experimentais, o valor da massa do carrinho 2 é igual a
 - A) 50,0 g.
 - B) 250,0 g.
@@ -1759,18 +1759,18 @@ Após seu desgaste completo, os pneus podem ser queimados para a geração de en
 na combustão completa da borracha vulcanizada, alguns são poluentes e provocam a chuva ácida. Para evitar que
 escapem para a atmosfera, esses gases podem ser borbulhados em uma solução aquosa contendo uma substância
 adequada. Considere as informações das substâncias listadas no quadro.
-Substância                     Equilíbrio em solução aquosa         Valor da constante de equilíbrio
-Fenol                                      C6H5OH + H2O →
+Substância Equilíbrio em solução aquosa Valor da constante de equilíbrio
+Fenol C6H5OH + H2O →
 ← C6H5O + H3O
-−     +                         1,3 × 10−10
-Piridina                                   C5H5N + H2O →
-← C5H5NH+ + OH−                         1,7 × 10−9
-Metilamina                                CH3NH2 + H2O →
-← CH3NH3+ + OH−                         4,4 × 10−4
-Hidrogenofosfato de potássio               HPO42− + H2O →
-← H2PO4− + OH−                         2,8 × 10−2
-Hidrogenosulfato de potássio                HSO4− + H2O →
-← SO42− + H3O+                         3,1 × 10−2
+− + 1,3 × 10−10
+Piridina C5H5N + H2O →
+← C5H5NH+ + OH− 1,7 × 10−9
+Metilamina CH3NH2 + H2O →
+← CH3NH3+ + OH− 4,4 × 10−4
+Hidrogenofosfato de potássio HPO42− + H2O →
+← H2PO4− + OH− 2,8 × 10−2
+Hidrogenosulfato de potássio HSO4− + H2O →
+← SO42− + H3O+ 3,1 × 10−2
 Dentre as substâncias listadas no quadro, aquela capaz de remover com maior eficiência os gases poluentes é o(a)
 - A) fenol.
 - B) piridina.
@@ -1827,38 +1827,38 @@ CN - 1º dia | Caderno 1 - AZUL - Página 28
 - Área: Ciências da Natureza
 - Gabarito: C
 
-A lipofilia é um dos fatores fundamentais para o                                                     O Brasil possui um grande número de espécies
-planejamento de um fármaco. Ela mede o grau de                                                       distintas entre animais, vegetais e microrganismos
-afinidade que a substância tem com ambientes apolares,                                               envoltos em uma imensa complexidade e distribuídas em
-podendo ser avaliada por seu coeficiente de partição.                                                uma grande variedade de ecossistemas.
+A lipofilia é um dos fatores fundamentais para o O Brasil possui um grande número de espécies
+planejamento de um fármaco. Ela mede o grau de distintas entre animais, vegetais e microrganismos
+afinidade que a substância tem com ambientes apolares, envoltos em uma imensa complexidade e distribuídas em
+podendo ser avaliada por seu coeficiente de partição. uma grande variedade de ecossistemas.
 SANDES, A. R. R.; BLASI, G. Biodiversidade e diversidade química e genética.
-CH3          X                                                     Disponível em: http://novastecnologias.com.br. Acesso em: 22 set. 2015 (adaptado).
+CH3 X Disponível em: http://novastecnologias.com.br. Acesso em: 22 set. 2015 (adaptado).
 CH3
 O incremento da variabilidade ocorre em razão da
 H
 permuta genética, a qual propicia a troca de segmentos
-X = OH (Testosterona)                        entre cromátides não irmãs na meiose.
-H           H                X=H     (Composto 1)
-X = CH3 (Composto 2)                         Essa troca de segmentos é determinante na
-O                                                                                                A   produção de indivíduos mais férteis.
-NOGUEIRA, L. J.; MONTANARI, C. A.; DONNICI, C. L. Histórico da evolução da química medicinal         B   transmissão de novas características adquiridas.
+X = OH (Testosterona) entre cromátides não irmãs na meiose.
+H H X=H (Composto 1)
+X = CH3 (Composto 2) Essa troca de segmentos é determinante na
+O A produção de indivíduos mais férteis.
+NOGUEIRA, L. J.; MONTANARI, C. A.; DONNICI, C. L. Histórico da evolução da química medicinal B transmissão de novas características adquiridas.
 e a importância da lipofilia: de Hipócrates e Galeno a Paracelsus e as contribuições de Overton e
-de Hansch. Revista Virtual de Química, n. 3, 2009 (adaptado).   C   recombinação genética na formação dos gametas.
-Em relação ao coeficiente de partição da testosterona, as                                            D   ocorrência de mutações somáticas nos descendentes.
-lipofilias dos compostos 1 e 2 são, respectivamente,                                                 E   variação do número de cromossomos característico
+de Hansch. Revista Virtual de Química, n. 3, 2009 (adaptado). C recombinação genética na formação dos gametas.
+Em relação ao coeficiente de partição da testosterona, as D ocorrência de mutações somáticas nos descendentes.
+lipofilias dos compostos 1 e 2 são, respectivamente, E variação do número de cromossomos característico
 da espécie.
-A       menor e menor que a lipofilia da testosterona.
-B       menor e maior que a lipofilia da testosterona.
+A menor e menor que a lipofilia da testosterona.
+B menor e maior que a lipofilia da testosterona.
 
 ## Questão 084
 
 - Área: Ciências da Natureza
 - Gabarito: A
 
-C       maior e menor que a lipofilia da testosterona.
-D       maior e maior que a lipofilia da testosterona.                                                   Num experimento, um professor deixa duas bandejas
+C maior e menor que a lipofilia da testosterona.
+D maior e maior que a lipofilia da testosterona. Num experimento, um professor deixa duas bandejas
 de mesma massa, uma de plástico e outra de alumínio,
-E       menor e igual à lipofilia da testosterona.
+E menor e igual à lipofilia da testosterona.
 sobre a mesa do laboratório. Após algumas horas, ele
 pede aos alunos que avaliem a temperatura das duas
 
@@ -1867,24 +1867,24 @@ pede aos alunos que avaliem a temperatura das duas
 - Área: Ciências da Natureza
 - Gabarito: B
 
-Uma invenção que significou um grande avanço                                                    categoricamente, que a bandeja de alumínio encontra-se
-tecnológico na Antiguidade, a polia composta ou a associação                                         numa temperatura mais baixa. Intrigado, ele propõe uma
-de polias, é atribuída a Arquimedes (287 a.C. a 212 a.C.).                                           segunda atividade, em que coloca um cubo de gelo sobre
-O aparato consiste em associar uma série de polias                                                   cada uma das bandejas, que estão em equilíbrio térmico
-móveis a uma polia fixa. A figura exemplifica um arranjo                                             com o ambiente, e os questiona em qual delas a taxa de
-possível para esse aparato. É relatado que Arquimedes                                                derretimento do gelo será maior.
-teria demonstrado para o rei Hierão um outro arranjo                                                 O aluno que responder corretamente ao questionamento
-desse aparato, movendo sozinho, sobre a areia da praia,                                              do professor dirá que o derretimento ocorrerá
+Uma invenção que significou um grande avanço categoricamente, que a bandeja de alumínio encontra-se
+tecnológico na Antiguidade, a polia composta ou a associação numa temperatura mais baixa. Intrigado, ele propõe uma
+de polias, é atribuída a Arquimedes (287 a.C. a 212 a.C.). segunda atividade, em que coloca um cubo de gelo sobre
+O aparato consiste em associar uma série de polias cada uma das bandejas, que estão em equilíbrio térmico
+móveis a uma polia fixa. A figura exemplifica um arranjo com o ambiente, e os questiona em qual delas a taxa de
+possível para esse aparato. É relatado que Arquimedes derretimento do gelo será maior.
+teria demonstrado para o rei Hierão um outro arranjo O aluno que responder corretamente ao questionamento
+desse aparato, movendo sozinho, sobre a areia da praia, do professor dirá que o derretimento ocorrerá
 um navio repleto de passageiros e cargas, algo que
-seria impossível sem a participação de muitos homens.                                                A mais rapidamente na bandeja de alumínio, pois
-Suponha que a massa do navio era de 3 000 kg, que o                                                    ela tem uma maior condutividade térmica que a
-coeficiente de atrito estático entre o navio e a areia era                                             de plástico.
-de 0,8 e que Arquimedes tenha puxado o navio com uma                                                 B mais rapidamente na bandeja de plástico, pois ela
+seria impossível sem a participação de muitos homens. A mais rapidamente na bandeja de alumínio, pois
+Suponha que a massa do navio era de 3 000 kg, que o ela tem uma maior condutividade térmica que a
+coeficiente de atrito estático entre o navio e a areia era de plástico.
+de 0,8 e que Arquimedes tenha puxado o navio com uma B mais rapidamente na bandeja de plástico, pois ela
 →
-força F , paralela à direção do movimento e de módulo                                                  tem inicialmente uma temperatura mais alta que a
-igual a 400 N. Considere os fios e as polias ideais, a                                                 de alumínio.
-aceleração da gravidade igual a 10 m/s2 e que a superfície                                           C mais rapidamente na bandeja de plástico, pois ela tem
-da praia é perfeitamente horizontal.                                                                   uma maior capacidade térmica que a de alumínio.
+força F , paralela à direção do movimento e de módulo tem inicialmente uma temperatura mais alta que a
+igual a 400 N. Considere os fios e as polias ideais, a de alumínio.
+aceleração da gravidade igual a 10 m/s2 e que a superfície C mais rapidamente na bandeja de plástico, pois ela tem
+da praia é perfeitamente horizontal. uma maior capacidade térmica que a de alumínio.
 D mais rapidamente na bandeja de alumínio, pois ela
 tem um calor específico menor que a de plástico.
 E com a mesma rapidez nas duas bandejas, pois
@@ -1909,17 +1909,17 @@ Os tensoativos são compostos capazes de interagir com substâncias polares e ap
 tensoativos interage com substâncias polares, e a parte lipofílica interage com as apolares. A estrutura orgânica de um
 tensoativo pode ser representada por:
 O
-CH2          CH2          CH2            CH2            CH2          CH2                CH2         CH2           C -
+CH2 CH2 CH2 CH2 CH2 CH2 CH2 CH2 C -
 Fórmula estrutural
-H 3C                                                                                                                          O   do tensoativo
-CH2          CH2         CH2               CH2         CH2             CH2             CH2         CH2
+H 3C O do tensoativo
+CH2 CH2 CH2 CH2 CH2 CH2 CH2 CH2
 Representação
 esquemática
 Ao adicionar um tensoativo sobre a água, suas moléculas formam um arranjo ordenado.
 Esse arranjo é representado esquematicamente por:
-A                  Nível    B                     Nível    C                       Nível        D                 Nível       E              Nível
-da                             da                               da                             da                         da
-água                           água                             água                           água                       água
+A Nível B Nível C Nível D Nível E Nível
+da da da da da
+água água água água água
 
 ## Questão 086
 
@@ -1932,7 +1932,7 @@ giratória. No seu lugar, colocou-se uma travessa refratária com uma camada gro
 forno foi ligado por alguns segundos. Ao se retirar a travessa refratária do forno, observou-se que havia três pontos
 de manteiga derretida alinhados sobre toda a travessa. Parte da onda estacionária gerada no interior do forno é
 ilustrada na figura.
-I              II         III                 IV          V
+I II III IV V
 De acordo com a figura, que posições correspondem a dois pontos consecutivos da manteiga derretida?
 - A) I e III
 - B) IeV
@@ -1953,54 +1953,54 @@ CN - 1º dia | Caderno 1 - AZUL - Página 30
 - Área: Ciências da Natureza
 - Gabarito: E
 
-Portadores de diabetes insipidus reclamam da               O aquecimento de um material por irradiação com
-confusão feita pelos profissionais da saúde quanto aos     micro-ondas ocorre por causa da interação da onda
+Portadores de diabetes insipidus reclamam da O aquecimento de um material por irradiação com
+confusão feita pelos profissionais da saúde quanto aos micro-ondas ocorre por causa da interação da onda
 dois tipos de diabetes: mellitus e insipidus. Enquanto
 eletromagnética com o dipolo elétrico da molécula.
 o primeiro tipo está associado aos níveis ou à ação da
-insulina, o segundo não está ligado à deficiência desse    Um importante atributo do aquecimento por micro-ondas
-hormônio. O diabetes insipidus é caracterizado por um      é a absorção direta da energia pelo material a ser
-distúrbio na produção ou no funcionamento do hormônio      aquecido. Assim, esse aquecimento é seletivo e
-antidiurético (na sigla em inglês, ADH), secretado pela    dependerá, principalmente, da constante dielétrica e da
-neuro-hipófise para controlar a reabsorção de água pelos   frequência de relaxação do material. O gráfico mostra a
-túbulos renais.                                            taxa de aquecimento de cinco solventes sob irradiação
-Tendo em vista o papel funcional do ADH, qual é            de micro-ondas.
+insulina, o segundo não está ligado à deficiência desse Um importante atributo do aquecimento por micro-ondas
+hormônio. O diabetes insipidus é caracterizado por um é a absorção direta da energia pelo material a ser
+distúrbio na produção ou no funcionamento do hormônio aquecido. Assim, esse aquecimento é seletivo e
+antidiurético (na sigla em inglês, ADH), secretado pela dependerá, principalmente, da constante dielétrica e da
+neuro-hipófise para controlar a reabsorção de água pelos frequência de relaxação do material. O gráfico mostra a
+túbulos renais. taxa de aquecimento de cinco solventes sob irradiação
+Tendo em vista o papel funcional do ADH, qual é de micro-ondas.
 um sintoma clássico de um paciente acometido por
-diabetes insipidus?                                                           100
+diabetes insipidus? 100
 Água
 Metanol
-A   Alta taxa de glicose no sangue.                                                          Etanol
-B   Aumento da pressão arterial.                                                             Propanol
-80            n-Hexano
+A Alta taxa de glicose no sangue. Etanol
+B Aumento da pressão arterial. Propanol
+80 n-Hexano
 Ganho de massa corporal.
 Temperatura (°C)
 C
-D   Anemia crônica.
-E   Desidratação.                                                              60
+D Anemia crônica.
+E Desidratação. 60
 
 ## Questão 088
 
 - Área: Ciências da Natureza
 - Gabarito: B
 
-A magnetohipertermia é um procedimento terapêutico                         40
+A magnetohipertermia é um procedimento terapêutico 40
 que se baseia na elevação da temperatura das células
 de uma região específica do corpo que estejam afetadas
-por um tumor. Nesse tipo de tratamento, nanopartículas                         20
-magnéticas são fagocitadas pelas células tumorais, e                                0   10      20      30      40       50       60       70       80
-um campo magnético alternado externo é utilizado para                                                     Tempo (s)
-promover a agitação das nanopartículas e consequente                  BARBOZA, A. C. R. N. et al. Aquecimento em forno de micro-ondas. Desenvolvimento de
-aquecimento da célula.                                                                alguns conceitos fundamentais. Química Nova, n. 6, 2001 (adaptado).
-A elevação de temperatura descrita ocorre porque           No gráfico, qual solvente apresenta taxa média de
-- A) o campo magnético gerado pela oscilação das              aquecimento mais próxima de zero, no intervalo de
-nanopartículas é absorvido pelo tumor.                   0 s a 40 s?
+por um tumor. Nesse tipo de tratamento, nanopartículas 20
+magnéticas são fagocitadas pelas células tumorais, e 0 10 20 30 40 50 60 70 80
+um campo magnético alternado externo é utilizado para Tempo (s)
+promover a agitação das nanopartículas e consequente BARBOZA, A. C. R. N. et al. Aquecimento em forno de micro-ondas. Desenvolvimento de
+aquecimento da célula. alguns conceitos fundamentais. Química Nova, n. 6, 2001 (adaptado).
+A elevação de temperatura descrita ocorre porque No gráfico, qual solvente apresenta taxa média de
+- A) o campo magnético gerado pela oscilação das aquecimento mais próxima de zero, no intervalo de
+nanopartículas é absorvido pelo tumor. 0 s a 40 s?
 - B) o campo magnético alternado faz as nanopartículas
-girarem, transferindo calor por atrito.                  A H 2O
-- C) as nanopartículas interagem magneticamente com as        B CH3OH
-células do corpo, transferindo calor.                    C CH3CH2OH
+girarem, transferindo calor por atrito. A H 2O
+- C) as nanopartículas interagem magneticamente com as B CH3OH
+células do corpo, transferindo calor. C CH3CH2OH
 - D) o campo magnético alternado fornece calor para as
-nanopartículas que o transfere às células do corpo.      D CH3CH2CH2OH
-- E) as nanopartículas são aceleradas em um único sentido     E CH3CH2CH2CH2CH2CH3
+nanopartículas que o transfere às células do corpo. D CH3CH2CH2OH
+- E) as nanopartículas são aceleradas em um único sentido E CH3CH2CH2CH2CH2CH3
 em razão da interação com o campo magnético,
 fazendo-as colidir com as células e transferir calor.
 

@@ -240,51 +240,51 @@ Texto para as Questões de 06 a 10.
 De próprio punho
 - A) escrita e suas tecnologias sofrem interessantes metamorfoses, numa ciranda
 que vai do simples bilhete aos originais de um livro
-1                     Estranhei muito na primeira vez que escutei a expressão “de próprio punho”. Parecia
-2                que eu ia bater em alguém. Não era bem o caso. Foi numa situação bancária, dessas bem
-3                burocráticas, e eu devia escrever algo bem breve, mas com minhas mãos. Na verdade,
-4                o que importava era a autenticidade da minha caligrafia, que à época ainda era mais
-5                fluente e firme. Depois dos teclados de computador, ela rateia bastante. Minha letra,
-6                hoje, tem uma espécie de alternância: dia sim, dia não, trêmula e firme, forte e fraca,
-7                mais rotunda e mais cheia de arestas.
-8                     É claro que já escrevi muito mais de próprio punho ou, numa palavra mais bonita,
-9                manuscrevi (prefiro a mão ao punho, embora ele também seja usado na tarefa). Mas isso
-10                não é um feito individual. Em larga medida, é social. Muita gente sente o mesmo que
-11                eu, isto é, escreve bem menos usando as mãos, ou melhor, empregando algum tipo de
-12                tecnologia (lápis, caneta etc.) para escrever com grafite ou tinta ou giz ou carvão ou
-13                sangue e o que mais. É importante lembrar que ainda há gente que não sabe escrever
-14                neste país, neste planeta, mas muita gente sabe e tem um combo de tecnologias mais
-15                ou menos à disposição para isso. Sou dessas pessoas privilegiadas que têm várias
-16                possibilidades, e uma delas nunca deixou de ser o uso das minhas mãos. Ainda hoje,
-17                são elas que batucam meu teclado de computador ou que tocam suavemente duas ou
-18                três telas sensíveis. Mas não expressam mais a minha letra. No lugar, aparecem Times
-19                New Roman, Arial, Calibri e mais uma centena de “letras” à minha escolha. Eu e Deus
-20                e o mundo.
-21                     A despeito desse rol de chances e ferramentas para escrever, o manuscrito nunca
-22                deixou de pintar aqui e ali, muitas vezes como obrigação. Na escola, por exemplo, até
-23                hoje ele é soberano. No Enem também. Curioso, não? Fico pensando em que espaços
-24                e ocasiões ainda uso minha letra. Olhando ao redor, na minha casa, minha letra está
-25                em espaços muito delimitados e específicos: bilhetes. Eles estão principalmente na
-26                cozinha, em especial na porta da geladeira, a fim de manter a comunicação com meus
-27                coabitantes, sempre muito esquecidos ou relapsos. Mas também há bilhetes em post its
-28                na minha mesa do escritório, textinhos em garranchos por meio dos quais me comunico
-29                comigo mesma, a evitar um comportamento esquecido e relapso.
-30                     No escritório, costumo ser mais suave comigo mesma, mas também muito mais
-31                lacônica, a ponto de nem eu me entender, se passar o tempo. Em todos os casos vai
-32                minha letra, menos e mais redonda, a lápis e a tinta azul, em post its rosa-choque, colados
-33                precariamente, e todos com destino à lixeira, em breve. Justo porque eles funcionam
-34                como lembretes de tarefas e coisas que devem ser vencidas e, claro, substituídas por
-35                outras, num fluxo infinito, às vezes ansiogênico, com que a maioria dos adultos (e mais
-36                ainda as adultas) precisa conviver.
-37                     As formas de escrever mudam, as necessidades também, e o resultado é um elenco
-38                complexo, em que nada dispensa nada, a depender da tarefa ou da importância das coisas
-39                ou de suas funções, claro. A escrita e suas tecnologias incríveis vão se reposicionando,
-40                mudando de status, numa ciranda interessante e importante que pode ser vista à luz de
-41                certa diversidade que encontra suas oportunidades e seus efeitos, aqui e ali. Não adianta
-42                muito pensar sempre como se tudo fosse excludente. Estão aí minha farta comunicação
-43                por bilhetes, minha gaveta alegre de post its de toda cor, esperando para serem usados,
-44                e o cheque do cartório, em que quase tudo já é digital. “Do punho ao pixel” não é uma
-45                frase filosoficamente correta. O negócio é mais “o punho e o pixel”.
+1 Estranhei muito na primeira vez que escutei a expressão “de próprio punho”. Parecia
+2 que eu ia bater em alguém. Não era bem o caso. Foi numa situação bancária, dessas bem
+3 burocráticas, e eu devia escrever algo bem breve, mas com minhas mãos. Na verdade,
+4 o que importava era a autenticidade da minha caligrafia, que à época ainda era mais
+5 fluente e firme. Depois dos teclados de computador, ela rateia bastante. Minha letra,
+6 hoje, tem uma espécie de alternância: dia sim, dia não, trêmula e firme, forte e fraca,
+7 mais rotunda e mais cheia de arestas.
+8 É claro que já escrevi muito mais de próprio punho ou, numa palavra mais bonita,
+9 manuscrevi (prefiro a mão ao punho, embora ele também seja usado na tarefa). Mas isso
+10 não é um feito individual. Em larga medida, é social. Muita gente sente o mesmo que
+11 eu, isto é, escreve bem menos usando as mãos, ou melhor, empregando algum tipo de
+12 tecnologia (lápis, caneta etc.) para escrever com grafite ou tinta ou giz ou carvão ou
+13 sangue e o que mais. É importante lembrar que ainda há gente que não sabe escrever
+14 neste país, neste planeta, mas muita gente sabe e tem um combo de tecnologias mais
+15 ou menos à disposição para isso. Sou dessas pessoas privilegiadas que têm várias
+16 possibilidades, e uma delas nunca deixou de ser o uso das minhas mãos. Ainda hoje,
+17 são elas que batucam meu teclado de computador ou que tocam suavemente duas ou
+18 três telas sensíveis. Mas não expressam mais a minha letra. No lugar, aparecem Times
+19 New Roman, Arial, Calibri e mais uma centena de “letras” à minha escolha. Eu e Deus
+20 e o mundo.
+21 A despeito desse rol de chances e ferramentas para escrever, o manuscrito nunca
+22 deixou de pintar aqui e ali, muitas vezes como obrigação. Na escola, por exemplo, até
+23 hoje ele é soberano. No Enem também. Curioso, não? Fico pensando em que espaços
+24 e ocasiões ainda uso minha letra. Olhando ao redor, na minha casa, minha letra está
+25 em espaços muito delimitados e específicos: bilhetes. Eles estão principalmente na
+26 cozinha, em especial na porta da geladeira, a fim de manter a comunicação com meus
+27 coabitantes, sempre muito esquecidos ou relapsos. Mas também há bilhetes em post its
+28 na minha mesa do escritório, textinhos em garranchos por meio dos quais me comunico
+29 comigo mesma, a evitar um comportamento esquecido e relapso.
+30 No escritório, costumo ser mais suave comigo mesma, mas também muito mais
+31 lacônica, a ponto de nem eu me entender, se passar o tempo. Em todos os casos vai
+32 minha letra, menos e mais redonda, a lápis e a tinta azul, em post its rosa-choque, colados
+33 precariamente, e todos com destino à lixeira, em breve. Justo porque eles funcionam
+34 como lembretes de tarefas e coisas que devem ser vencidas e, claro, substituídas por
+35 outras, num fluxo infinito, às vezes ansiogênico, com que a maioria dos adultos (e mais
+36 ainda as adultas) precisa conviver.
+37 As formas de escrever mudam, as necessidades também, e o resultado é um elenco
+38 complexo, em que nada dispensa nada, a depender da tarefa ou da importância das coisas
+39 ou de suas funções, claro. A escrita e suas tecnologias incríveis vão se reposicionando,
+40 mudando de status, numa ciranda interessante e importante que pode ser vista à luz de
+41 certa diversidade que encontra suas oportunidades e seus efeitos, aqui e ali. Não adianta
+42 muito pensar sempre como se tudo fosse excludente. Estão aí minha farta comunicação
+43 por bilhetes, minha gaveta alegre de post its de toda cor, esperando para serem usados,
+44 e o cheque do cartório, em que quase tudo já é digital. “Do punho ao pixel” não é uma
+45 frase filosoficamente correta. O negócio é mais “o punho e o pixel”.
 RIBEIRO, A. E. Disponível em: https://rascunho.com.br.
 Acesso em: 16 jan. 2024 (adaptado).
 L
@@ -1065,15 +1065,15 @@ A comparação entre os textos I e II indica que o(a)
 - Área: Linguagens
 - Gabarito: B
 
-1                O mais assustador do meteoro que cruzou o céu da Sibéria e explodiu no ar como
-2            várias bombas atômicas é que ele chegou sem ser anunciado. Com todas as atenções
-3            voltadas para o outro asteroide, o que passou de raspão, o asteroide da Sibéria entrou pela
-4            porta dos fundos sem ser detectado. A desculpa é que era pequeno demais para chamar a
-5            atenção e por isso os alarmes não funcionaram. Nossa ilusão, até agora, era que qualquer
-6            detrito espacial que se aproximasse de nós seria identificado e rotulado, e sua trajetória
-7            calculada até o último milímetro com grande antecedência, o que nos daria tempo para
-8            preparar o espírito — ou usar nossos cartões de crédito até o limite — no caso da colisão
-9            com a Terra ser inevitável.
+1 O mais assustador do meteoro que cruzou o céu da Sibéria e explodiu no ar como
+2 várias bombas atômicas é que ele chegou sem ser anunciado. Com todas as atenções
+3 voltadas para o outro asteroide, o que passou de raspão, o asteroide da Sibéria entrou pela
+4 porta dos fundos sem ser detectado. A desculpa é que era pequeno demais para chamar a
+5 atenção e por isso os alarmes não funcionaram. Nossa ilusão, até agora, era que qualquer
+6 detrito espacial que se aproximasse de nós seria identificado e rotulado, e sua trajetória
+7 calculada até o último milímetro com grande antecedência, o que nos daria tempo para
+8 preparar o espírito — ou usar nossos cartões de crédito até o limite — no caso da colisão
+9 com a Terra ser inevitável.
 Com base na organização coesiva desse texto, o(a)
 - A) oração “que passou de raspão” (l. 3) refere-se ao “meteoro que cruzou o céu da Sibéria” (l. 1).
 - B) expressão “sua trajetória” (l. 6) refere-se ao elemento textual “qualquer detrito espacial” (l. 5-6).
@@ -1174,16 +1174,16 @@ perceptível por meio da
 - Gabarito: A
 
 TRADUZINDO O JURIDIQUÊS
-“Denego a liminar pleiteada na exordial, inobstante         Proposta de emenda à Constituição 269 de 2013. Aplica-se
-após a oitiva da parte adversa e da dilação probatória      aos Governadores e Prefeitos o Regime Geral de Previdência
-possa lograr alcançar um outro epílogo para o deslinde      Social, vedada a concessão graciosa, após o término do
-da quaestio sub examine.”                                   mandato, de vantagem pecuniária, verba de representação,
+“Denego a liminar pleiteada na exordial, inobstante Proposta de emenda à Constituição 269 de 2013. Aplica-se
+após a oitiva da parte adversa e da dilação probatória aos Governadores e Prefeitos o Regime Geral de Previdência
+possa lograr alcançar um outro epílogo para o deslinde Social, vedada a concessão graciosa, após o término do
+da quaestio sub examine.” mandato, de vantagem pecuniária, verba de representação,
 pensão ou subsídio.
 TRADUÇãO
 TRADUÇãO
 Não atendo, por ora, a liminar requerida na petição
-inicial, ainda que possa chegar a uma outra conclusão       Torna-se proibido pagar benefícios vitalícios para
-após ouvir a outra parte e avaliar as provas produzidas.    ex-prefeitos e ex-governadores.
+inicial, ainda que possa chegar a uma outra conclusão Torna-se proibido pagar benefícios vitalícios para
+após ouvir a outra parte e avaliar as provas produzidas. ex-prefeitos e ex-governadores.
 Nesse texto, contribui para a construção da ironia a tradução das passagens escritas em “juridiquês” para uma variedade
 - A) padrão, que alcança o público em geral.
 - B) histórica, que registra a evolução das leis.
@@ -1363,7 +1363,7 @@ L
 INSTRUÇÕES PARA A REDAÇÃO
 1. O rascunho da redação deve ser feito no espaço apropriado.
 2. O texto definitivo deve ser escrito à tinta preta, na folha própria, em até 30 (trinta) linhas.
-3. A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
+3. A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
 copiadas desconsiderado para a contagem de linhas.
 4. Receberá nota zero, em qualquer das situações expressas a seguir, a redação que:
 4.1. tiver até 7 (sete) linhas escritas, sendo considerada “texto insuficiente”;
@@ -1374,8 +1374,8 @@ O
 H
 N
 O
-- C) U      Ã
-S        Ç
+- C) U Ã
+S Ç
 - A) A
 R RED
 A
@@ -1430,7 +1430,7 @@ No contexto do século XVIII, o autor propõe uma reflexão radical acerca da ar
 - C) domínio da lógica, consoante a compreensão aristotélica nos Analíticos.
 - D) paradigma da racionalidade, alinhado ao modelo cartesiano de método.
 - E) âmbito da persuasão, análogo às críticas platônicas aos sofistas.
-22                                                                                                                                                                                                                                CIÊNCIAS HUMANAS E
+22 CIÊNCIAS HUMANAS E
 P1_1_Dia_CHT_REG_1_Azul.indd 22
 Disponível em: https://g1.globo.com. Acesso em: 7 nov. 2021 (adaptado).
 Disponível em: https://noticias.uol.com.br. Acesso em: 10 out. 2019 (adaptado).
@@ -1578,7 +1578,7 @@ aspectos relacionados, respectivamente, a
 - C) transe individual e progresso intelectual.
 - D) penitência pessoal e juramento coletivo.
 - E) dogmatismo religioso e adesão de fiéis.
-24                                                                                                                                                                                                                                CIÊNCIAS HUMANAS E
+24 CIÊNCIAS HUMANAS E
 
 ## Questão 054
 
@@ -1808,7 +1808,7 @@ Nesse contexto, a ação dos aliados de Getúlio Vargas teve como consequência 
 - C) mobilização da sociedade na defesa do governo.
 - D) abandono da censura aos meios de comunicação.
 - E) apoio dos parlamentares aos candidatos oposicionistas.
-26                                                                                                                                                                                                                                CIÊNCIAS HUMANAS E
+26 CIÊNCIAS HUMANAS E
 Disponível em: www.cnabrasil.org.br. Acesso em: 15 out. 2021.
 de Getúlio a Castelo. Rio de Janeiro: Paz e Terra, 2003 (adaptado).
 
@@ -1990,7 +1990,7 @@ nos fragmentos mencionados, é a ênfase na
 - C) imobilidade imanente do universo.
 - D) distribuição dicotômica do cosmos.
 - E) desordem incontornável das coisas.
-28                                                                                                                                                                                                                                CIÊNCIAS HUMANAS E
+28 CIÊNCIAS HUMANAS E
 
 ## Questão 073
 
@@ -2235,7 +2235,7 @@ a nova sede do Império português por
 - C) divulgar as conquistas às metrópoles europeias.
 - D) integrar as regiões territoriais ao poder central.
 - E) difundir as publicações às elites lusitanas.
-30                                                                                                                                                                                                                                CIÊNCIAS HUMANAS E
+30 CIÊNCIAS HUMANAS E
 
 ## Questão 084
 
@@ -2412,15 +2412,15 @@ a um projeto nacionalista de caráter
 - C) lúdico e filantrópico.
 - D) mercantil e predatório.
 - E) religioso e humanitário.
-*010175AZ32*   01
-dor 9                                                    9 Led
-ado 9                                                     9 Ate
-as 10                                                    10 Lib
-2º Dia                                                    2º Dia
-as 12                                                    12 Lib
-or 11                                                    11 Le
-do 11                                                     11 At
-rde 8                                                    8 Ver
-Azul 7                                                    7 Azu
-nza 6                                                    6 Cinz
-relo 5                                                    5 Am
+*010175AZ32* 01
+dor 9 9 Led
+ado 9 9 Ate
+as 10 10 Lib
+2º Dia 2º Dia
+as 12 12 Lib
+or 11 11 Le
+do 11 11 At
+rde 8 8 Ver
+Azul 7 7 Azu
+nza 6 6 Cinz
+relo 5 5 Am

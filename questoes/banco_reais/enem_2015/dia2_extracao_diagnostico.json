@@ -1,0 +1,51 @@
+{
+  "ano": 2015,
+  "dia": 2,
+  "area_order": [
+    "Linguagens",
+    "Matemática"
+  ],
+  "area_ranges": [
+    {
+      "inicio": 91,
+      "fim": 135,
+      "area": "Linguagens"
+    },
+    {
+      "inicio": 136,
+      "fim": 180,
+      "area": "Matemática"
+    }
+  ],
+  "diagnostics": {
+    "expected_start": 91,
+    "expected_end": 180,
+    "total_blocks_raw": 95,
+    "total_blocks_valid": 95,
+    "unique_questions": 90,
+    "missing_questions": [],
+    "out_of_range_questions": [],
+    "language_slots": [
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "language_slot_variations": {
+      "91": 2,
+      "92": 2,
+      "93": 2,
+      "94": 2,
+      "95": 2
+    },
+    "duplicate_non_language": {},
+    "duplicate_all": {
+      "92": 2,
+      "91": 2,
+      "93": 2,
+      "94": 2,
+      "95": 2
+    }
+  }
+}

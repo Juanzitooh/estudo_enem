@@ -14,4 +14,4 @@ redija um texto dissertativo-argumentativo em modalidade escrita formal da líng
 “Desafios para a valorização de comunidades e povos tradicionais no Brasil”, apresentando proposta de
 intervenção que respeite os direitos humanos. Selecione, organize e relacione, de forma coerente e coesa,
 argumentos e fatos para a defesa de seu ponto de vista.
-20                                                              LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+20 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação

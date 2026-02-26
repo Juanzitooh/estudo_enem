@@ -19,14 +19,14 @@ Questões de 01 a 45
 Disponível em: https://sites.psu.edu. Acesso em: 12 jun. 2018.
 Disponível em: www.csuchico.edu. Acesso em: 11 dez. 2017.
 Os recursos usados nesse pôster de divulgação de uma
-campanha levam o leitor a refletir sobre a necessidade de                              Nesse pôster de divulgação de uma campanha que
+campanha levam o leitor a refletir sobre a necessidade de Nesse pôster de divulgação de uma campanha que
 aborda a diversidade e a inclusão, a interação dos
 - A) criticar o tipo de tratamento dado à mulher.
 elementos verbais e não verbais faz referência ao ato de
 - B) rever o desempenho da mulher no trabalho.
-- C) questionar a sobrecarga de atribuições da mulher.                                  A   estereotipar povos de certas culturas.
-- D) analisar as pesquisas acerca dos direitos da mulher.                               B   discriminar hábitos de grupos minoritários.
-- E) censurar a mulher pelo uso de determinadas palavras.                               C   banir imigrantes de determinadas origens.
+- C) questionar a sobrecarga de atribuições da mulher. A estereotipar povos de certas culturas.
+- D) analisar as pesquisas acerca dos direitos da mulher. B discriminar hábitos de grupos minoritários.
+- E) censurar a mulher pelo uso de determinadas palavras. C banir imigrantes de determinadas origens.
 - D) julgar padrões de beleza de diversas etnias.
 - E) desvalorizar costumes de algumas sociedades.
 LC - 1° dia | Caderno 1 - AZUL - Página 2
@@ -38,8 +38,8 @@ LC - 1° dia | Caderno 1 - AZUL - Página 2
 
 revelam por parte do eu lírico uma
 A Mother in a Refugee Camp
-No Madonna and Child could touch                                              A culpa por não poder cuidar do pássaro.
-Her tenderness for a son                                                      B atitude errada por querer matar o pássaro.
+No Madonna and Child could touch A culpa por não poder cuidar do pássaro.
+Her tenderness for a son B atitude errada por querer matar o pássaro.
 She soon would have to forget...
 C necessidade de entender o silêncio do pássaro.
 The air was heavy with odors of diarrhea,
@@ -58,31 +58,31 @@ Finally, Aisha finished with her customer and asked
 Had long ceased to care, but not this one:
 what colour Ifemelu wanted for her hair attachments.
 She held a ghost-smile between her teeth,
-and in her eyes the memory                                                        “Colour four.”
+and in her eyes the memory “Colour four.”
 Of a mother’s pride... She had bathed him
 “Not good colour,” Aisha said promptly.
 And rubbed him down with bare palms.
-She took from their bundle of possessions                                         “That’s what I use.”
-A broken comb and combed                                                          “It look dirty. You don’t want colour one?”
+She took from their bundle of possessions “That’s what I use.”
+A broken comb and combed “It look dirty. You don’t want colour one?”
 The rust-colored hair left on his skull
 “Colour one is too black, it looks fake,” Ifemelu said,
 And then — humming in her eyes — began carefully
-[to part it.                                                                  loosening her headwrap. “Sometimes I use colour two,
-In their former life this was perhaps                                         but colour four is closest to my natural colour.”
-A little daily act of no consequence                                              [...]
+[to part it. loosening her headwrap. “Sometimes I use colour two,
+In their former life this was perhaps but colour four is closest to my natural colour.”
+A little daily act of no consequence [...]
 Before his breakfast and school; now she did it
-Like putting flowers on a tiny grave.                                             She touched Ifemelu’s hair. “Why you don’t have
+Like putting flowers on a tiny grave. She touched Ifemelu’s hair. “Why you don’t have
 relaxer?”
 ACHEBE, C. Collected Poems. New York: Anchor Books, 2004.
-O escritor nigeriano Chinua Achebe traz uma reflexão                                 “I like my hair the way God made it.”
-sobre a situação dos refugiados em um cenário pós-guerra                             “But how you comb it? Hard to comb,” Aisha said.
+O escritor nigeriano Chinua Achebe traz uma reflexão “I like my hair the way God made it.”
+sobre a situação dos refugiados em um cenário pós-guerra “But how you comb it? Hard to comb,” Aisha said.
 civil em seu país. Essa reflexão é construída no poema
-por meio da representação de uma mãe, explorando a(s)                                Ifemelu had brought her own comb. She gently combed
-- A) demonstração de orgulho por não precisar pedir                                 her hair, dense, soft and tightly coiled, until it framed her
-doações.                                                                       head like a halo. “It’s not hard to comb if you moisturize
-- B) descrições artísticas detalhadas de uma obra                                   it properly,” she said, slipping into the coaxing tone of the
-conhecida.                                                                     proselytizer that she used whenever she was trying to
-- C) aceitação de um diagnóstico de doença terminal do                              convince other black women about the merits of wearing
+por meio da representação de uma mãe, explorando a(s) Ifemelu had brought her own comb. She gently combed
+- A) demonstração de orgulho por não precisar pedir her hair, dense, soft and tightly coiled, until it framed her
+doações. head like a halo. “It’s not hard to comb if you moisturize
+- B) descrições artísticas detalhadas de uma obra it properly,” she said, slipping into the coaxing tone of the
+conhecida. proselytizer that she used whenever she was trying to
+- C) aceitação de um diagnóstico de doença terminal do convince other black women about the merits of wearing
 filho.
 their hair natural. Aisha snorted; she clearly could not
 - D) consternação ao visitar o túmulo do filho recém-falecido.
@@ -98,18 +98,18 @@ combing natural hair, instead of simply relaxing it. She
 sectioned out Ifemelu’s hair, plucked a little attachment
 A Minor Bird
 from the pile on the table and began deftly to twist.
-I have wished a bird would fly away,                                                         ADICHIE, C. Americanah: A novel. New York: Anchor Books, 2013.
-And not sing by my house all day;                                            A passagem do romance da escritora nigeriana traz
+I have wished a bird would fly away, ADICHIE, C. Americanah: A novel. New York: Anchor Books, 2013.
+And not sing by my house all day; A passagem do romance da escritora nigeriana traz
 um diálogo entre duas mulheres negras: a cabeleireira,
-Have clapped my hands at him from the door                                   Aisha, e a cliente, Ifemelu. O posicionamento da cliente é
-When it seemed as if I could bear no more.                                   sustentado por argumentos que
+Have clapped my hands at him from the door Aisha, e a cliente, Ifemelu. O posicionamento da cliente é
+When it seemed as if I could bear no more. sustentado por argumentos que
 The fault must partly have been in me.
-A   reforçam um padrão de beleza.
+A reforçam um padrão de beleza.
 The bird was not to blame for his key.
-B   retratam um conflito de gerações.
-And of course there must be something wrong                                  C   revelam uma atitude de resistência.
-In wanting to silence any song.                                              D   demonstram uma postura de imaturidade.
-FROST, R. West-running Brook. New York: Henry Holt and Company, 1928.   E   evidenciam uma mudança de comportamento.
+B retratam um conflito de gerações.
+And of course there must be something wrong C revelam uma atitude de resistência.
+In wanting to silence any song. D demonstram uma postura de imaturidade.
+FROST, R. West-running Brook. New York: Henry Holt and Company, 1928. E evidenciam uma mudança de comportamento.
 LC - 1° dia | Caderno 1 - AZUL - Página 3
 
 ## Questão 001 (variação 2)
@@ -117,30 +117,30 @@ LC - 1° dia | Caderno 1 - AZUL - Página 3
 - Área: Linguagens
 - Gabarito: Inglês: A | Espanhol: A
 
-Pablo Pueblo                                                   Las palabras cumplen ciclos; las actitudes también. Sin
-Regresa un hombre en silencio                                                     embargo, cuando las palabras designan actitudes, los ciclos
-De su trabajo cansado                                                             se vuelven más complejos. Cuando el hoy tan denostado
-Su paso no lleva prisa                                                            Sartre puso la palabra compromiso sobre el tapete y
-Su sombra nunca lo alcanza                                                        hasta Mac Leish publicó un libro sobre la responsabilidad
+Pablo Pueblo Las palabras cumplen ciclos; las actitudes también. Sin
+Regresa un hombre en silencio embargo, cuando las palabras designan actitudes, los ciclos
+De su trabajo cansado se vuelven más complejos. Cuando el hoy tan denostado
+Su paso no lleva prisa Sartre puso la palabra compromiso sobre el tapete y
+Su sombra nunca lo alcanza hasta Mac Leish publicó un libro sobre la responsabilidad
 de los intelectuales, estas dos palabras, compromiso y
-Lo espera el barrio de siempre                                                    responsabilidad, designaban actitudes que, sin ser gemelas,
-Con el farol en la esquina                                                        eran bastante afines. Salvo contadas excepciones, los
-Con la basura allá en frente                                                      intelectuales de entonces las hicieron suyas y, equivocados
-Y el ruido de la cantina                                                          o no, dijeron sin eufemismos por qué empeño se la jugaban.
-Pablo Pueblo                                                                          Los     intelectuales        latinoamericanos              también
-llega hasta el zaguán oscuro                                                      comprendieron dónde estaba esta vez el enemigo. Sólo
-Y vuelve a ver las paredes                                                        entonces empezó la mala prensa. Los grandes pontífices
-Con las viejas papeletas                                                          de la propaganda subrayaron una y otra vez la palabra
-Que prometían futuros                                                             libertad y denostaron el compromiso. Libertad no era
-en lides politiqueras                                                             librarse de Batista o de Somoza, sino mantener la prensa
-Y en su cara se dibuja                                                            libre. Libertad es la emocionada comprobación de que la
-la decepción de la espera.                                                        gran prensa norteamericana es capaz de descubrir que
+Lo espera el barrio de siempre responsabilidad, designaban actitudes que, sin ser gemelas,
+Con el farol en la esquina eran bastante afines. Salvo contadas excepciones, los
+Con la basura allá en frente intelectuales de entonces las hicieron suyas y, equivocados
+Y el ruido de la cantina o no, dijeron sin eufemismos por qué empeño se la jugaban.
+Pablo Pueblo Los intelectuales latinoamericanos también
+llega hasta el zaguán oscuro comprendieron dónde estaba esta vez el enemigo. Sólo
+Y vuelve a ver las paredes entonces empezó la mala prensa. Los grandes pontífices
+Con las viejas papeletas de la propaganda subrayaron una y otra vez la palabra
+Que prometían futuros libertad y denostaron el compromiso. Libertad no era
+en lides politiqueras librarse de Batista o de Somoza, sino mantener la prensa
+Y en su cara se dibuja libre. Libertad es la emocionada comprobación de que la
+la decepción de la espera. gran prensa norteamericana es capaz de descubrir que
 BLADES, R. Disponível em: http://rubenblades.com. Acesso em: 26 jun. 2012 (fragmento).
 Lumumba o Allende fueron liquidados por la CIA, sin
 poner el acento en que eso no sirve para resucitarlos.
 Rubén Blades é um compositor panamenho de canções
-socialmente engajadas. O título Pablo Pueblo, associado ao                                    ¿Y    compromiso?       Es     la    actitud      que      adoptan
-conteúdo da letra da canção, revela uma crítica social ao                                 ciertos intelectuales, cuya carga ideológica perjudica
+socialmente engajadas. O título Pablo Pueblo, associado ao ¿Y compromiso? Es la actitud que adoptan
+conteúdo da letra da canção, revela uma crítica social ao ciertos intelectuales, cuya carga ideológica perjudica
 notoriamente su arte. Después de todo, ¿cómo se atreven
 - A) contrapor a individualidade de um sujeito a uma
 a frecuentar las provincias del espíritu, si es público y
@@ -148,24 +148,24 @@ estrutura social marcada pela decepção na atuação
 notorio que tales ámbitos son patrimonio exclusivo de los
 política.
 propietarios de la libertad?
-- B) demonstrar que o problema sofrido pelo indivíduo                                                                    BENEDETTI, M. Perplejidades de fin de siglo.
+- B) demonstrar que o problema sofrido pelo indivíduo BENEDETTI, M. Perplejidades de fin de siglo.
 Buenos Aires: Sudamericana, 1993 (adaptado).
 atinge toda a comunidade.
 Transformar palavras em atitudes tem sido um dos
 - C) relativizar a importância que se dá ao sofrimento
 grandes dilemas dos intelectuais. Ao ponderar sobre
-individual em uma estrutura social baseada na                                         essa temática, o autor, um dos grandes críticos e literatos
-exploração.                                                                           latino-americanos da atualidade, leva o leitor a perceber
+individual em uma estrutura social baseada na essa temática, o autor, um dos grandes críticos e literatos
+exploração. latino-americanos da atualidade, leva o leitor a perceber
 que
 - D) descrever a vida de um sujeito que nunca resolve
-suas inquietações e, por isso, mantém-se silencioso.                                  A o compromisso político afasta o artista da criação.
-- E) usar um apelido jocoso para designar a atuação de                                       B os costumes sociais governam a linguagem e as
-um indivíduo em seu próprio bairro.                                                     atitudes das pessoas.
+suas inquietações e, por isso, mantém-se silencioso. A o compromisso político afasta o artista da criação.
+- E) usar um apelido jocoso para designar a atuação de B os costumes sociais governam a linguagem e as
+um indivíduo em seu próprio bairro. atitudes das pessoas.
 - C) o compromisso ideológico de alguns intelectuais está
 refletido em suas obras.
 - D) a complexidade relacionada ao conceito de liberdade
 impede o compromisso.
-- E) os    intelectuais  latino-americanos    têm                         um
+- E) os intelectuais latino-americanos têm um
 posicionamento acrítico perante o poder.
 LC - 1° dia | Caderno 1 - AZUL - Página 4
 
@@ -174,36 +174,36 @@ LC - 1° dia | Caderno 1 - AZUL - Página 4
 - Área: Linguagens
 - Gabarito: Inglês: E | Espanhol: E
 
-La violencia como bella arte                                                         de mis antepasados...
+La violencia como bella arte de mis antepasados...
 era entonces hombre,
 Pues bien, ‘Relatos Salvajes’, de Damián Szifrón,
 maduro y sencillo
-es sobre todo un brillante esfuerzo por poner rostro, por                                             como los cerros y los peñascos,
-fotografiar, a la parte de la violencia que tanto cuesta                                              y mi cultura era el atole,
-ver en el cine. De repente, el director argentino coloca                                              el chaquehue, y los buenos días;
-al espectador ante el espectáculo, digamos putrefacto,                                                mi idioma cantaba
-de una sociedad enferma de su propia indolencia,                                                      versículos
-anestesiada por su ira, incapaz de entender el origen                                                 por los cañones
-de la insatisfacción que la habita. ¿Cómo se quedan?                                                  de tierra roja
-Sí, estamos delante de la una película vocacionalmente                                                y tierra amarilla...
-violenta, obligadamente salvaje, pero, y sobre todo,                                                  Hoy sí, hoy ya no soy
-deslumbrante en su claridad.                                                                          mejicano ni hispano
-Más allá del esplendor sabio de una producción                                                    ni tampoco americano,
-perfecta, lo que más duele, lo que más divierte, lo que                                               pero soy — y bien lo siento ser —
-más conmueve es la sensación de reconocimiento. Cada                                                  una sombra del pasado
-uno de los damnificados, pese a su acento marcadamente                                                y un esfuerzo
-argentino, somos nosotros. O, mejor, cada insulto                                                     hacia el futuro...
+es sobre todo un brillante esfuerzo por poner rostro, por como los cerros y los peñascos,
+fotografiar, a la parte de la violencia que tanto cuesta y mi cultura era el atole,
+ver en el cine. De repente, el director argentino coloca el chaquehue, y los buenos días;
+al espectador ante el espectáculo, digamos putrefacto, mi idioma cantaba
+de una sociedad enferma de su propia indolencia, versículos
+anestesiada por su ira, incapaz de entender el origen por los cañones
+de la insatisfacción que la habita. ¿Cómo se quedan? de tierra roja
+Sí, estamos delante de la una película vocacionalmente y tierra amarilla...
+violenta, obligadamente salvaje, pero, y sobre todo, Hoy sí, hoy ya no soy
+deslumbrante en su claridad. mejicano ni hispano
+Más allá del esplendor sabio de una producción ni tampoco americano,
+perfecta, lo que más duele, lo que más divierte, lo que pero soy — y bien lo siento ser —
+más conmueve es la sensación de reconocimiento. Cada una sombra del pasado
+uno de los damnificados, pese a su acento marcadamente y un esfuerzo
+argentino, somos nosotros. O, mejor, cada insulto hacia el futuro...
 SÁNCHEZ, R. Disponível em: www.materialdelectura.unam.mx. Acesso em: 4 dez. 2017.
 proferido, y no siempre entendido, es nuestro, en algún
-momento ha salido de nuestra boca. O saldrá.                                          Ao abordar a expropriação de territórios mexicanos pelos
-La violencia no es sólo eso que tanto desagrada a                                 Estados Unidos, o eu lírico do poema revela um(a)
+momento ha salido de nuestra boca. O saldrá. Ao abordar a expropriação de territórios mexicanos pelos
+La violencia no es sólo eso que tanto desagrada a Estados Unidos, o eu lírico do poema revela um(a)
 los profesionales del buen gusto, a los programadores de
 ópera o a los filósofos de la nada; la violencia, la realmente
 A rejeição da língua utilizada por seus antepassados.
-insoportable, es también una cuestión de actitud, un                                  B desejo de pertencimento ao espaço estadunidense.
-simple gesto. Y esa violencia está por todas partes, está                             C certeza de manutenção de suas tradições.
-dentro. Y Szifrón acierta a retratarla tan fielmente que no                           D reivindicação de um mundo unificado.
-queda otra cosa que romper a reír. Aunque sólo sea de                                 E sentimento de conflito de identidades.
+insoportable, es también una cuestión de actitud, un B desejo de pertencimento ao espaço estadunidense.
+simple gesto. Y esa violencia está por todas partes, está C certeza de manutenção de suas tradições.
+dentro. Y Szifrón acierta a retratarla tan fielmente que no D reivindicação de um mundo unificado.
+queda otra cosa que romper a reír. Aunque sólo sea de E sentimento de conflito de identidades.
 simple desesperación. Brillante, magistral incluso.
 
 ## Questão 005 (variação 2)
@@ -213,38 +213,38 @@ simple desesperación. Brillante, magistral incluso.
 
 MARTÍNEZ, L. Disponível em: www.elmundo.es. Acesso em: 13 abr. 2015 (adaptado).
 Poco después apareció en casa de Elisenda Morales,
-Nessa resenha crítica acerca do filme Relatos Salvajes,                               arrastrando su cansancio y las contrariedades de un largo
-o autor evidencia o                                                                   día que había dejado su ánimo en ruinas. A pesar de
+Nessa resenha crítica acerca do filme Relatos Salvajes, arrastrando su cansancio y las contrariedades de un largo
+o autor evidencia o día que había dejado su ánimo en ruinas. A pesar de
 todo, supo resistirlo, y cuando ella le ofreció una copa de
-- A) cômico como fuga da sociedade diante de situações                                   mistela, abandonó su asiento para ir hasta la tienda en
-violentas.                                                                          busca de algo más estimulante.
+- A) cômico como fuga da sociedade diante de situações mistela, abandonó su asiento para ir hasta la tienda en
+violentas. busca de algo más estimulante.
 Allí, en el corredor de la casa, en taburetes separados,
-- B) estado de apatia da sociedade perante a violência                                   recibieron los primeros cálidos soplos de la noche. Con su
-rotineira do mundo atual.                                                           habitual entereza, Elisenda entró a conectar la luz de la
+- B) estado de apatia da sociedade perante a violência recibieron los primeros cálidos soplos de la noche. Con su
+rotineira do mundo atual. habitual entereza, Elisenda entró a conectar la luz de la
 sala, sofocando parte de su reflejo, mientras comentaba
-- C) empecilho para o espectador vivenciar a violência                                   que así estarían mejor. Al menos, pensó el tío Camarillo,
-bruta na realidade e na ficção.                                                     no había sacado la lámpara como otras veces, ni le había
+- C) empecilho para o espectador vivenciar a violência que así estarían mejor. Al menos, pensó el tío Camarillo,
+bruta na realidade e na ficção. no había sacado la lámpara como otras veces, ni le había
 entregado alguno de sus álbumes, y parecía en cambio
-- D) sotaque reforçado dos personagens a fim de marcar                                   decidida a mantener en ascuas al vecindario. Aquélla fue
-o espaço do cinema argentino.                                                       la primera vez que en mucho tiempo dejaron de lado el
+- D) sotaque reforçado dos personagens a fim de marcar decidida a mantener en ascuas al vecindario. Aquélla fue
+o espaço do cinema argentino. la primera vez que en mucho tiempo dejaron de lado el
 tema de las rentas, para entrar con pies de plomo en el
-- E) autorreconhecimento diante dos diversos tipos de                                    espinoso terreno de las confidencias.
-comportamento humano frente à violência.                                                                 SÁNCHEZ, H. El héroe de la família. Bogotá: Tercer Mundo, 1988.
+- E) autorreconhecimento diante dos diversos tipos de espinoso terreno de las confidencias.
+comportamento humano frente à violência. SÁNCHEZ, H. El héroe de la família. Bogotá: Tercer Mundo, 1988.
 
 ## Questão 004 (variação 2)
 
 - Área: Linguagens
 - Gabarito: Inglês: D | Espanhol: E
 
-Oye, Pito, ésta es: la vida bruta de un boy                                       personagem, a expressão “entrar con pies de plomo” é
+Oye, Pito, ésta es: la vida bruta de un boy personagem, a expressão “entrar con pies de plomo” é
 utilizada para se referir ao(à)
 mis tierras eran
-nuevo méxico, colorado,                                                     A   determinação para conduzir discussões pessoais.
-california, arizona, tejas,                                                 B   insensibilidade para lidar com temas do passado.
-y muchos otros senderos,                                                    C   discrição para administrar questões financeiras.
-aún cuando la luz existía                                                   D   disposição para resolver problemas familiares.
+nuevo méxico, colorado, A determinação para conduzir discussões pessoais.
+california, arizona, tejas, B insensibilidade para lidar com temas do passado.
+y muchos otros senderos, C discrição para administrar questões financeiras.
+aún cuando la luz existía D disposição para resolver problemas familiares.
 sonrientemente
-E   cuidado para tratar de assuntos íntimos.
+E cuidado para tratar de assuntos íntimos.
 LC - 1° dia | Caderno 1 - AZUL - Página 5
 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS
 
@@ -280,18 +280,18 @@ circunstâncias de desalento e tédio, me ocorreu o
 mesmo desabafo de evasão da “vida besta”. Desta vez
 o poema saiu sem esforço como se já estivesse pronto
 dentro de mim. Gosto desse poema porque vejo nele,
-em escorço, toda a minha vida; [...] Não sou arquiteto,                                              Disponível em: www.globofilmes.globo.com. Acesso em: 13 dez. 2017 (adaptado).
+em escorço, toda a minha vida; [...] Não sou arquiteto, Disponível em: www.globofilmes.globo.com. Acesso em: 13 dez. 2017 (adaptado).
 como meu pai desejava, não fiz nenhuma casa, mas
 A frase, título do filme, reproduz uma variedade
-reconstruí e “não de uma forma imperfeita neste mundo                                          linguística recorrente na fala de muitos brasileiros.
-de aparências”, uma cidade ilustre, que hoje não é mais                                        Essa estrutura caracteriza-se pelo(a)
+reconstruí e “não de uma forma imperfeita neste mundo linguística recorrente na fala de muitos brasileiros.
+de aparências”, uma cidade ilustre, que hoje não é mais Essa estrutura caracteriza-se pelo(a)
 a Pasárgada de Ciro, e sim a “minha” Pasárgada.
 - A) uso de uma marcação temporal.
 BANDEIRA, M. Itinerário de Pasárgada. Rio de Janeiro: Nova Fronteira; Brasília: INL, 1984.
 - B) imprecisão do referente de pessoa.
-Os processos de interação comunicativa preveem a                                               C   organização interrogativa da frase.
-presença ativa de múltiplos elementos da comunicação,                                          D   utilização de um verbo de ação.
-entre os quais se destacam as funções da linguagem.                                            E   apagamento de uma preposição.
+Os processos de interação comunicativa preveem a C organização interrogativa da frase.
+presença ativa de múltiplos elementos da comunicação, D utilização de um verbo de ação.
+entre os quais se destacam as funções da linguagem. E apagamento de uma preposição.
 Nesse fragmento, a função da linguagem predominante é a
 - A) emotiva, porque o poeta expõe os sentimentos de
 angústia que o levaram à criação poética.
@@ -318,33 +318,33 @@ LC - 1° dia | Caderno 1 - AZUL - Página 6
 - Área: Linguagens
 - Gabarito: C
 
-Slam do Corpo é um encontro pensado para surdos                                                            O ouro do século 21
-e ouvintes, existente desde 2014, em São Paulo. Uma                                              Cério, gadolínio, lutécio, promécio e érbio; sumário,
-iniciativa pioneira do grupo Corposinalizante, criado em                                    térbio e disprósio; hólmio, túlio e itérbio. Essa lista de nomes
-2008. (Antes de seguirmos, vale a explicação: o termo                                       esquisitos e pouco conhecidos pode parecer a escalação
-slam vem do inglês e significa — numa nova acepção                                          de um time de futebol, que ainda teria no banco de reservas
-para o verbo geralmente utilizado para dizer “bater com                                     lantânio, neodímio, praseodímio, európio, escândio e ítrio.
-força” — a “poesia falada nos ritmos das palavras e da                                      Mas esses 17 metais, chamados de terras-raras, fazem
-cidade”). Nos saraus, o primeiro objetivo foi o de botar                                    parte da vida de quase todos os humanos do planeta.
-os poemas em Libras na roda, colocar os surdos para                                         Chamados por muitos de “ouro do século 21”, “elementos do
-circular e entender esse encontro entre a poesia e a língua                                 futuro” ou “vitaminas da indústria”, eles estão nos materiais
-de sinais, compreender o encontro dessas duas línguas.                                      usados na fabricação de lâmpadas, telas de computadores,
-Poemas de autoria própria, três minutos, um microfone.                                      tablets e celulares, motores de carros elétricos, baterias e
-Sem figurino, nem adereços, nem acompanhamento                                              até turbinas eólicas. Apesar de tantas aplicações, o Brasil,
-musical. O que vale é modular a voz e o corpo, um                                           dono da segunda maior reserva do mundo desses metais,
-trabalho artesanal de tornar a palavra “visível”, numa                                      parou de extraí-los e usá-los em 2002. Agora, volta a pensar
-arena cujo objetivo maior é o de emocionar a plateia, tirar                                 em retomar sua exploração.
-o público da passividade, seja pelo humor, horror, caos,                                                            SILVEIRA, E. Disponível em: www.revistaplaneta.com.br.
-doçura e outras tantas sensações.                                                                                                   Acesso em: 6 dez. 2017 (adaptado).
-NOVELLI, G. Poesia incorporada. Revista Continente, n. 189, set. 2016 (adaptado).       As aspas sinalizam expressões metafóricas empregadas
-Na prática artística mencionada no texto, o corpo assume                                    intencionalmente pelo autor do texto para
-papel de destaque ao articular diferentes linguagens com                                    A imprimir um tom irônico à reportagem.
-o intuito de                                                                                B incorporar citações de especialistas à reportagem.
-- A) imprimir ritmo e visibilidade à expressão poética.                                      C atribuir maior valor aos metais, objeto da reportagem.
-- B) redefinir o espaço de circulação da poesia urbana.                                      D esclarecer termos científicos empregados na
-- C) estimular produções autorais de usuários de Libras.                                       reportagem.
-- D) traduzir expressões verbais para a língua de sinais.                                    E marcar a apropriação de termos de outra ciência pela
-- E) proporcionar performances estéticas de pessoas                                            reportagem.
+Slam do Corpo é um encontro pensado para surdos O ouro do século 21
+e ouvintes, existente desde 2014, em São Paulo. Uma Cério, gadolínio, lutécio, promécio e érbio; sumário,
+iniciativa pioneira do grupo Corposinalizante, criado em térbio e disprósio; hólmio, túlio e itérbio. Essa lista de nomes
+2008. (Antes de seguirmos, vale a explicação: o termo esquisitos e pouco conhecidos pode parecer a escalação
+slam vem do inglês e significa — numa nova acepção de um time de futebol, que ainda teria no banco de reservas
+para o verbo geralmente utilizado para dizer “bater com lantânio, neodímio, praseodímio, európio, escândio e ítrio.
+força” — a “poesia falada nos ritmos das palavras e da Mas esses 17 metais, chamados de terras-raras, fazem
+cidade”). Nos saraus, o primeiro objetivo foi o de botar parte da vida de quase todos os humanos do planeta.
+os poemas em Libras na roda, colocar os surdos para Chamados por muitos de “ouro do século 21”, “elementos do
+circular e entender esse encontro entre a poesia e a língua futuro” ou “vitaminas da indústria”, eles estão nos materiais
+de sinais, compreender o encontro dessas duas línguas. usados na fabricação de lâmpadas, telas de computadores,
+Poemas de autoria própria, três minutos, um microfone. tablets e celulares, motores de carros elétricos, baterias e
+Sem figurino, nem adereços, nem acompanhamento até turbinas eólicas. Apesar de tantas aplicações, o Brasil,
+musical. O que vale é modular a voz e o corpo, um dono da segunda maior reserva do mundo desses metais,
+trabalho artesanal de tornar a palavra “visível”, numa parou de extraí-los e usá-los em 2002. Agora, volta a pensar
+arena cujo objetivo maior é o de emocionar a plateia, tirar em retomar sua exploração.
+o público da passividade, seja pelo humor, horror, caos, SILVEIRA, E. Disponível em: www.revistaplaneta.com.br.
+doçura e outras tantas sensações. Acesso em: 6 dez. 2017 (adaptado).
+NOVELLI, G. Poesia incorporada. Revista Continente, n. 189, set. 2016 (adaptado). As aspas sinalizam expressões metafóricas empregadas
+Na prática artística mencionada no texto, o corpo assume intencionalmente pelo autor do texto para
+papel de destaque ao articular diferentes linguagens com A imprimir um tom irônico à reportagem.
+o intuito de B incorporar citações de especialistas à reportagem.
+- A) imprimir ritmo e visibilidade à expressão poética. C atribuir maior valor aos metais, objeto da reportagem.
+- B) redefinir o espaço de circulação da poesia urbana. D esclarecer termos científicos empregados na
+- C) estimular produções autorais de usuários de Libras. reportagem.
+- D) traduzir expressões verbais para a língua de sinais. E marcar a apropriação de termos de outra ciência pela
+- E) proporcionar performances estéticas de pessoas reportagem.
 surdas.
 
 ## Questão 011
@@ -359,12 +359,12 @@ surdas.
 - Área: Linguagens
 - Gabarito: A
 
-É possível afirmar que muitas expressões idiomáticas                                   agitando-se para sufocá-la. Aumentavam as sombras. No
-transmitidas pela cultura regional possuem autores                                          céu, nuvens colossais e túmidas rolavam para o abismo do
-anônimos, no entanto, algumas delas surgiram em                                             horizonte... Na várzea, ao clarão indeciso do crepúsculo,
-consequência de contextos históricos bem curiosos.                                          os seres tomavam ares de monstros... As montanhas,
-“Aquele é um cabra da peste” é um bom exemplo dessas                                        subindo ameaçadoras da terra, perfilavam-se tenebrosas...
-construções.                                                                                Os caminhos, espreguiçando-se sobre os campos,
+É possível afirmar que muitas expressões idiomáticas agitando-se para sufocá-la. Aumentavam as sombras. No
+transmitidas pela cultura regional possuem autores céu, nuvens colossais e túmidas rolavam para o abismo do
+anônimos, no entanto, algumas delas surgiram em horizonte... Na várzea, ao clarão indeciso do crepúsculo,
+consequência de contextos históricos bem curiosos. os seres tomavam ares de monstros... As montanhas,
+“Aquele é um cabra da peste” é um bom exemplo dessas subindo ameaçadoras da terra, perfilavam-se tenebrosas...
+construções. Os caminhos, espreguiçando-se sobre os campos,
 animavam-se quais serpentes infinitas... As árvores soltas
 Para compreender essa expressão tão repetida no
 choravam ao vento, como carpideiras fantásticas da
@@ -376,22 +376,22 @@ portugueses chamavam os índios. Já “peste” estaria ligada
 membros cansados não acudiam aos ímpetos do medo
 à questão da superação e resistência, ou mesmo uma
 e deixavam-na prostrada em uma angústia desesperada.
-associação com o diabo. Assim, com o passar dos anos,                                                                     ARANHA, J. P. G. Canaã. São Paulo: Ática, 1997.
+associação com o diabo. Assim, com o passar dos anos, ARANHA, J. P. G. Canaã. São Paulo: Ática, 1997.
 passou-se a utilizar tal expressão para denominar qualquer
-indivíduo que se mostre corajoso, ou mesmo insolente, já                                    No trecho, o narrador mobiliza recursos de linguagem que
-que a expressão pode ter caráter positivo ou negativo. Aliás,                               geram uma expressividade centrada na percepção da
-quem já não ficou de “nhe-nhe-nhém” por aí? O termo, que                                    A relação entre a natureza opressiva e o desejo de
-normalmente tem significado de conversa interminável,                                         libertação da personagem.
+indivíduo que se mostre corajoso, ou mesmo insolente, já No trecho, o narrador mobiliza recursos de linguagem que
+que a expressão pode ter caráter positivo ou negativo. Aliás, geram uma expressividade centrada na percepção da
+quem já não ficou de “nhe-nhe-nhém” por aí? O termo, que A relação entre a natureza opressiva e o desejo de
+normalmente tem significado de conversa interminável, libertação da personagem.
 monótona ou resmungo, tem origem no tupi-guarani e
 “nhém” significa “falar”.
 B confluência entre o estado emocional da personagem
-Disponível em: http://leiturasdahistoria.uol.com.br. Acesso em: 13 dez. 2017.     e a configuração da paisagem.
-A leitura do texto permite ao leitor entrar em contato com                                  C prevalência do mundo natural em relação à fragilidade
-- A) registros do inventário do português brasileiro.                                          humana.
-- B) justificativas da variedade linguística do país.                                        D depreciação do sentido da vida diante da consciência
-- C) influências da fala do nordestino no uso da língua.                                       da morte iminente.
-- D) explorações do falar de um grupo social específico.                                     E instabilidade psicológica da personagem face à
-- E) representações da mudança linguística do português.                                       realidade hostil.
+Disponível em: http://leiturasdahistoria.uol.com.br. Acesso em: 13 dez. 2017. e a configuração da paisagem.
+A leitura do texto permite ao leitor entrar em contato com C prevalência do mundo natural em relação à fragilidade
+- A) registros do inventário do português brasileiro. humana.
+- B) justificativas da variedade linguística do país. D depreciação do sentido da vida diante da consciência
+- C) influências da fala do nordestino no uso da língua. da morte iminente.
+- D) explorações do falar de um grupo social específico. E instabilidade psicológica da personagem face à
+- E) representações da mudança linguística do português. realidade hostil.
 LC - 1° dia | Caderno 1 - AZUL - Página 7
 
 ## Questão 012
@@ -399,16 +399,16 @@ LC - 1° dia | Caderno 1 - AZUL - Página 7
 - Área: Linguagens
 - Gabarito: A
 
-TEXTO I                                                                                estimulado a criação de aplicativos. Nesse texto, isso é
-É pau, é pedra, é o fim do caminho                                                percebido pelo desenvolvimento de aplicativos para
-É um resto de toco, é um pouco sozinho                                            A organização de eventos de competições esportivas.
-É um caco de vidro, é a vida, é o sol                                             B agendamento de viagens para eventos de esporte
-É a noite, é a morte, é o laço, é o anzol                                             amador.
-É peroba-do-campo, é o nó da madeira                                              C mapeamento dos interesses dos praticantes acerca
-Caingá, candeia, é o matita-pereira                                                   dos esportes.
-TOM JOBIM. Águas de março. O Tom de Jobim e o tal de João Bosco (disco de bolso).    D identificação da escassez de espaços para a vivência
-Salvador: Zen Produtora, 1972 (fragmento).        dos esportes.
-TEXTO II                                                                               E formação de grupos em comunidades virtuais para a
+TEXTO I estimulado a criação de aplicativos. Nesse texto, isso é
+É pau, é pedra, é o fim do caminho percebido pelo desenvolvimento de aplicativos para
+É um resto de toco, é um pouco sozinho A organização de eventos de competições esportivas.
+É um caco de vidro, é a vida, é o sol B agendamento de viagens para eventos de esporte
+É a noite, é a morte, é o laço, é o anzol amador.
+É peroba-do-campo, é o nó da madeira C mapeamento dos interesses dos praticantes acerca
+Caingá, candeia, é o matita-pereira dos esportes.
+TOM JOBIM. Águas de março. O Tom de Jobim e o tal de João Bosco (disco de bolso). D identificação da escassez de espaços para a vivência
+Salvador: Zen Produtora, 1972 (fragmento). dos esportes.
+TEXTO II E formação de grupos em comunidades virtuais para a
 prática esportiva.
 A inspiração súbita e certeira do compositor serve
 ainda de exemplo do lema antigo: nada vem do nada.
@@ -418,7 +418,7 @@ ainda de exemplo do lema antigo: nada vem do nada.
 - Área: Linguagens
 - Gabarito: B
 
-Para ninguém, nem mesmo para Tom Jobim. Duas                                           TEXTO I
+Para ninguém, nem mesmo para Tom Jobim. Duas TEXTO I
 fontes são razoavelmente conhecidas. A primeira é o
 poema O caçador de esmeraldas, do mestre parnasiano
 Olavo Bilac: “Foi em março, ao findar da chuva,
@@ -435,43 +435,43 @@ NESTROVSKI, A. O samba mais bonito do mundo. In: Três canções de Tom Jobim.
 São Paulo: Cosac Naify, 2004.
 Ao situar a composição no panorama cultural brasileiro, o
 Texto II destaca o(a)
-- A) diálogo que a letra da canção estabelece com                                          HIRST, D. Mother and Child. Bezerro dividido em duas partes: 1029 x
+- A) diálogo que a letra da canção estabelece com HIRST, D. Mother and Child. Bezerro dividido em duas partes: 1029 x
 1689 x 625mm, 1993 (detalhe). Vidro, aço pintado, silicone, acrílico,
 diferentes tradições da cultura nacional.
 monofilamento, aço inoxidável, bezerro e solução de formaldeído.
 - B) singularidade com que o compositor converte
-referências eruditas em populares.                                                TEXTO II
-- C) caráter inovador com que o compositor concebe o                                          O grupo Jovens Artistas Britânicos (YABs), que surgiu
-processo de criação artística.                                                    no final da década de 1980, possui obras diversificadas
-- D) relativização que a letra da canção promove na                                       que incluem fotografias, instalações, pinturas e carcaças
-concepção tradicional de originalidade.                                           desmembradas. O trabalho desses artistas chamou
-- E) resgate que a letra da canção promove de obras                                       a atenção no final do período da recessão, por utilizar
-pouco conhecidas pelo público no país.                                            materiais incomuns, como esterco de elefantes, sangue
+referências eruditas em populares. TEXTO II
+- C) caráter inovador com que o compositor concebe o O grupo Jovens Artistas Britânicos (YABs), que surgiu
+processo de criação artística. no final da década de 1980, possui obras diversificadas
+- D) relativização que a letra da canção promove na que incluem fotografias, instalações, pinturas e carcaças
+concepção tradicional de originalidade. desmembradas. O trabalho desses artistas chamou
+- E) resgate que a letra da canção promove de obras a atenção no final do período da recessão, por utilizar
+pouco conhecidas pelo público no país. materiais incomuns, como esterco de elefantes, sangue
 
 ## Questão 013
 
 - Área: Linguagens
 - Gabarito: E
 
-Deu vontade de jogar, mas não sabe como reunir                                       atmosfera de niilismo, temperada por um humor mordaz.
-os amigos...                                                                         Disponível em: http://damienhirst.com. Acesso em: 15 jul. 2015.
+Deu vontade de jogar, mas não sabe como reunir atmosfera de niilismo, temperada por um humor mordaz.
+os amigos... Disponível em: http://damienhirst.com. Acesso em: 15 jul. 2015.
 FARTHING, S. Tudo sobre arte. Rio de Janeiro: Sextante, 2011 (adaptado).
 Muitas vezes é difícil encontrar grupos para bater
 A provocação desse grupo gera um debate em torno da
 uma bola. Em função disso, estão sendo disponibilizados
 obra de arte pelo(a)
 aplicativos que reúnem times e reservam espaços para
-os adeptos da paixão nacional. Num exemplo dessas                                      A recusa a crenças, convicções, valores morais,
-iniciativas, é possível organizar uma partida de futebol,                                estéticos e políticos na história moderna.
-se inscrever para participar de um jogo, alugar campos e                               B frutífero arsenal de materiais e formas que se
-quadras, convidar jogadores. O aplicativo tem dois tipos                                 relacionam com os objetos construídos.
-de usuários: um que o usa como ferramenta de gestão                                    C economia e problemas financeiros gerados pela
-do grupo, convidando amigos para jogar, vendo quem                                       recessão que tiveram grande impacto no mercado.
-confirmou e avaliando os jogos. Outro usuário é o que                                  D influência desse grupo junto aos estilos pós-modernos
-busca partidas perto de onde ele está, caso de pessoas                                   que surgiram nos anos 1990.
-que estão de passagem numa cidade.                                                     E interesse em produtos indesejáveis que revela uma
+os adeptos da paixão nacional. Num exemplo dessas A recusa a crenças, convicções, valores morais,
+iniciativas, é possível organizar uma partida de futebol, estéticos e políticos na história moderna.
+se inscrever para participar de um jogo, alugar campos e B frutífero arsenal de materiais e formas que se
+quadras, convidar jogadores. O aplicativo tem dois tipos relacionam com os objetos construídos.
+de usuários: um que o usa como ferramenta de gestão C economia e problemas financeiros gerados pela
+do grupo, convidando amigos para jogar, vendo quem recessão que tiveram grande impacto no mercado.
+confirmou e avaliando os jogos. Outro usuário é o que D influência desse grupo junto aos estilos pós-modernos
+busca partidas perto de onde ele está, caso de pessoas que surgiram nos anos 1990.
+que estão de passagem numa cidade. E interesse em produtos indesejáveis que revela uma
 BENEDICTO, M.; MARLI, M. Bola na rede. Retratos:
-a revista do IBGE, n. 2, 2017 (adaptado).     consciência sustentável no mercado.
+a revista do IBGE, n. 2, 2017 (adaptado). consciência sustentável no mercado.
 LC - 1° dia | Caderno 1 - AZUL - Página 8
 
 ## Questão 015
@@ -489,18 +489,18 @@ LC - 1° dia | Caderno 1 - AZUL - Página 8
 O suor para estar em competições nacionais e
 Fomos falar com o tal encarregado, depois com um
 internacionais de alto nível é o mesmo para homens e
-mulheres, mas não raramente as remunerações são                                       engenheiro, depois com um supervisor que mandou
-menores para elas. Se no tênis, um dos esportes mais                                  chamar um engenheiro da nossa companhia. Esses
-equânimes em termos de gênero, todos os principais                                    homens são da sua companhia, engenheiro, ele falou,
-torneios oferecem prêmios idênticos nas disputas                                      estão pedindo a conta. A companhia está empenhada
-femininas e masculinas, no futebol a desigualdade atinge                              nessa ponte, gente, falou o engenheiro, vocês não
+mulheres, mas não raramente as remunerações são engenheiro, depois com um supervisor que mandou
+menores para elas. Se no tênis, um dos esportes mais chamar um engenheiro da nossa companhia. Esses
+equânimes em termos de gênero, todos os principais homens são da sua companhia, engenheiro, ele falou,
+torneios oferecem prêmios idênticos nas disputas estão pedindo a conta. A companhia está empenhada
+femininas e masculinas, no futebol a desigualdade atinge nessa ponte, gente, falou o engenheiro, vocês não
 seu ápice. Neymar e Marta são dois expoentes dessa
 podem sair assim sem mais nem menos. Tinha uma
 paixão nacional. Ela já foi eleita cinco vezes a melhor
 serra circular cortando uns caibros ali perto, então
 jogadora do mundo pela Fifa. Ele conquistou o terceiro
-lugar na última votação para melhor do mundo. Mas é na                                só dava pra falar quando a serra parava, e aquilo foi
-conta bancária que a diferença entre os dois se sobressai.                            dando nos nervos.
+lugar na última votação para melhor do mundo. Mas é na só dava pra falar quando a serra parava, e aquilo foi
+conta bancária que a diferença entre os dois se sobressai. dando nos nervos.
 Falei que a gente tinha o direito de sair quando a
 gente quisesse, e pronto. Nisso encostou um sujeito
 de paletó mas sem gravata, o engenheiro continuou
@@ -516,27 +516,27 @@ nunca ia esquecer nosso trabalho ali naquela ponte,
 um orgulho nacional.
 PELLEGRINI, D. A maior ponte do mundo. In:
 Melhores contos. São Paulo: Global, 2005.
-Disponível em: http://apublica.org. Acesso em: 9 ago. 2017 (adaptado).   As reivindicações dos operários, quanto às condições
+Disponível em: http://apublica.org. Acesso em: 9 ago. 2017 (adaptado). As reivindicações dos operários, quanto às condições
 aviltantes de trabalho a que são submetidos, recebem
 O esporte é uma manifestação cultural na qual se
-estabelecem relações sociais. Considerando o texto, o                                 algumas tentativas de neutralização dos representantes
-futebol é uma modalidade que                                                          do empregador, das quais a mais forte é o(a)
-- A) apresenta proximidades com o tênis, no que tange às                                 A sequência de atribuição de responsabilidades e de
-relações de gênero entre homens e mulheres.                                            poder decisório a terceiros.
+estabelecem relações sociais. Considerando o texto, o algumas tentativas de neutralização dos representantes
+futebol é uma modalidade que do empregador, das quais a mais forte é o(a)
+- A) apresenta proximidades com o tênis, no que tange às A sequência de atribuição de responsabilidades e de
+relações de gênero entre homens e mulheres. poder decisório a terceiros.
 - B) se caracteriza por uma identidade masculina no
 - B) solicitação em nome dos prejuízos e compromissos
 Brasil, conferindo maior remuneração aos jogadores.
-- C) traz remunerações, aos jogadores e jogadoras,                                          para entrega da obra.
-proporcionais aos seus esforços no treinamento                                      C intimidação pela discreta presença de um agente de
+- C) traz remunerações, aos jogadores e jogadoras, para entrega da obra.
+proporcionais aos seus esforços no treinamento C intimidação pela discreta presença de um agente de
 esportivo.
 segurança na cena.
 - D) resulta em melhor eficiência para as mulheres e,
-consequentemente, em remuneração mais alta às                                       D promessa de imediato atendimento da carência
-jogadoras.                                                                             sexual dos operários.
+consequentemente, em remuneração mais alta às D promessa de imediato atendimento da carência
+jogadoras. sexual dos operários.
 - E) possui jogadores e jogadoras com a mesma
 - E) apelo pela identificação com a empresa extensiva ao
 visibilidade, apesar de haver expoentes femininas de
-destaque, como Marta.                                                                  amor patriótico.
+destaque, como Marta. amor patriótico.
 LC - 1° dia | Caderno 1 - AZUL - Página 9
 
 ## Questão 017
@@ -544,20 +544,20 @@ LC - 1° dia | Caderno 1 - AZUL - Página 9
 - Área: Linguagens
 - Gabarito: D
 
-Uma das mais contundentes críticas ao discurso                                         orientada por um olhar que
+Uma das mais contundentes críticas ao discurso orientada por um olhar que
 da aptidão física relacionada à saúde está no caráter
-eminentemente individual de suas propostas, o que                                          A desvela sentimentos de vazio e angústia sob a
-serve para obscurecer outros determinantes da saúde.                                          aparente austeridade.
-Ou seja, costuma-se apresentar o indivíduo como o                                          B expressa desilusão ante a possibilidade de superação
-problema e a mudança do estilo de vida como a solução.                                        do sofrimento.
-Argumenta-se ainda que o movimento da aptidão física                                       C contrapõe a fragilidade emocional ao uso desmedido
+eminentemente individual de suas propostas, o que A desvela sentimentos de vazio e angústia sob a
+serve para obscurecer outros determinantes da saúde. aparente austeridade.
+Ou seja, costuma-se apresentar o indivíduo como o B expressa desilusão ante a possibilidade de superação
+problema e a mudança do estilo de vida como a solução. do sofrimento.
+Argumenta-se ainda que o movimento da aptidão física C contrapõe a fragilidade emocional ao uso desmedido
 relacionada à saúde considera a existência de uma
 da força física.
 cultura homogênea na qual todos seriam livres para
-escolher seus estilos de vida, o que não condiz com a                                      D associa a incomunicabilidade emocional às
-realidade. O fato é que vivemos numa sociedade dividida                                       determinações culturais.
-em classes sociais, na qual nem todas as pessoas têm                                       E privilegia imagens relacionadas à exposição do
-condições econômicas para adotar um estilo de vida ativo                                      dinamismo urbano.
+escolher seus estilos de vida, o que não condiz com a D associa a incomunicabilidade emocional às
+realidade. O fato é que vivemos numa sociedade dividida determinações culturais.
+em classes sociais, na qual nem todas as pessoas têm E privilegia imagens relacionadas à exposição do
+condições econômicas para adotar um estilo de vida ativo dinamismo urbano.
 e saudável. Há desigualdades estruturais com raízes
 
 ## Questão 019
@@ -566,22 +566,22 @@ e saudável. Há desigualdades estruturais com raízes
 - Gabarito: C
 
 políticas, econômicas e sociais que dificultam a adoção
-desses estilos de vida.                                                                          Senhor Juiz
+desses estilos de vida. Senhor Juiz
 FERREIRA, M. S. Aptidão física e saúde na educação física escolar: ampliando o enfoque.
-RBCE, n. 2, jan. 2001 (adaptado).         O instrumento do “crime” que se arrola
-Com base no texto, a relação entre saúde e estilos de vida                                       Nesse processo de contravenção
-- A) constrói a ideia de que a mudança individual de                                                Não é faca, revólver ou pistola,
+RBCE, n. 2, jan. 2001 (adaptado). O instrumento do “crime” que se arrola
+Com base no texto, a relação entre saúde e estilos de vida Nesse processo de contravenção
+- A) constrói a ideia de que a mudança individual de Não é faca, revólver ou pistola,
 hábitos promove a saúde.
-- B) considera a homogeneidade da escolha de hábitos                                                Simplesmente, doutor, é um violão.
+- B) considera a homogeneidade da escolha de hábitos Simplesmente, doutor, é um violão.
 saudáveis pelos indivíduos.
 Será crime, afinal, será pecado,
 - C) reforça a necessidade de solucionar os problemas de
-saúde da sociedade com a prática de exercícios.                                               Será delito de tão vis horrores,
-- D) problematiza a organização social e seu impacto na                                             Perambular na rua um desgraçado
+saúde da sociedade com a prática de exercícios. Será delito de tão vis horrores,
+- D) problematiza a organização social e seu impacto na Perambular na rua um desgraçado
 mudança de hábitos dos indivíduos.
 Derramando nas praças suas dores?
 - E) reproduz a noção de que a melhoria da aptidão física
-pela prática de exercícios promove a saúde.                                                   Mande, pois, libertá-lo da agonia
+pela prática de exercícios promove a saúde. Mande, pois, libertá-lo da agonia
 
 ## Questão 018
 
@@ -590,35 +590,35 @@ pela prática de exercícios promove a saúde.                                  
 
 (a consciência assim nos insinua)
 Retrato de homem
-A paisagem estrita                                                                          Não sufoque o cantar que vem da rua,
-ao apuro do muro                                                                            Que vem da noite para saudar o dia.
+A paisagem estrita Não sufoque o cantar que vem da rua,
+ao apuro do muro Que vem da noite para saudar o dia.
 feito vértebra a vértebra
-e escuro.                                                                                   É o apelo que aqui lhe dirigimos,
-A geração dos pelos                                                                         Na certeza do seu acolhimento
+e escuro. É o apelo que aqui lhe dirigimos,
+A geração dos pelos Na certeza do seu acolhimento
 sobre a casca e os rostos
-em seus diques de sombra                                                                    Juntada desta aos autos nós pedimos
+em seus diques de sombra Juntada desta aos autos nós pedimos
 repostos.
 E pedimos, enfim, deferimento.
-Os poços com seu lodo                                                                                                   Disponível em: www.migalhas.com.br.
-de ira e de tensão:                                                                                                      Acesso em: 23 set. 2020 (adaptado).
+Os poços com seu lodo Disponível em: www.migalhas.com.br.
+de ira e de tensão: Acesso em: 23 set. 2020 (adaptado).
 entre cimento e fronte
-— um vão.                                                                             Essa petição de habeas corpus, ao transgredir o rigor da
-As setas se atiram                                                                    linguagem jurídica,
+— um vão. Essa petição de habeas corpus, ao transgredir o rigor da
+As setas se atiram linguagem jurídica,
 às margens de ninguém,
 A permite que a narrativa seja objetiva e repleta de
 ilesas a si mesmas
-retêm.                                                                                  sentidos denotativos.
-Compassos de evasão                                                                   B mostra que o cordel explora termos próprios da esfera
-entre falange e rua                                                                     do direito.
-sondando a solitude                                                                   C demonstra que o jogo de linguagem proposto atenua
+retêm. sentidos denotativos.
+Compassos de evasão B mostra que o cordel explora termos próprios da esfera
+entre falange e rua do direito.
+sondando a solitude C demonstra que o jogo de linguagem proposto atenua
 nua.
 a gravidade do delito.
 E na armadura de coisa
-salobra, um só segredo:                                                               D exemplifica como o texto em forma de cordel
-a polpa toda é fruição                                                                  compromete a solicitação pretendida.
-de medo.                                                                              E esclarece que os termos “crime” e “processo de
+salobra, um só segredo: D exemplifica como o texto em forma de cordel
+a polpa toda é fruição compromete a solicitação pretendida.
+de medo. E esclarece que os termos “crime” e “processo de
 ARAÚJO, L. C. Cantochão. Belo Horizonte: Imprensa Publicações — Governo do Estado
-de Minas Gerais, 1967.        contravenção” são sinônimos.
+de Minas Gerais, 1967. contravenção” são sinônimos.
 LC - 1° dia | Caderno 1 - AZUL - Página 10
 
 ## Questão 020
@@ -626,33 +626,33 @@ LC - 1° dia | Caderno 1 - AZUL - Página 10
 - Área: Linguagens
 - Gabarito: D
 
-Por que a indústria do empreendedorismo de palco                                     e celebra a cultura popular nordestina. Nele, o artista
-irá destruir você                                                exalta as diferentes manifestações culturais pela
-Se, antigamente, os livros, enormes e com suas                                   A valorização do teatro, música, artesanato, literatura,
-setecentas páginas, cuspiam fórmulas, equações e                                        dança, personagens históricos e artistas populares,
-cálculos que te ensinavam a lidar com o fluxo de caixa                                  compondo um tecido diversificado e enriquecedor da
-da sua empresa, hoje eles dizem: “Você irá chegar lá!                                   cultura popular como patrimônio regional e nacional.
-Acredite, você irá vencer!”.                                                         B identificação      dos     lugares      pernambucanos,
-Mindset, empoderamento, millennials, networking,                                    manifestações culturais, como o bumba meu boi, as
-coworking, deal, business, deadline, salesman com                                       cirandas, os bonecos mamulengos e heróis locais,
-perfil hunter… tudo isso faz parte do seu vocabulário.                                  fazendo com que essa canção se apresente como
-O pacote de livros é sempre idêntico e as experiências                                  uma referência à cultura popular nordestina.
-são passadas da mesma forma: você está a um único                                    C exaltação das raízes populares, como a poesia, a
+Por que a indústria do empreendedorismo de palco e celebra a cultura popular nordestina. Nele, o artista
+irá destruir você exalta as diferentes manifestações culturais pela
+Se, antigamente, os livros, enormes e com suas A valorização do teatro, música, artesanato, literatura,
+setecentas páginas, cuspiam fórmulas, equações e dança, personagens históricos e artistas populares,
+cálculos que te ensinavam a lidar com o fluxo de caixa compondo um tecido diversificado e enriquecedor da
+da sua empresa, hoje eles dizem: “Você irá chegar lá! cultura popular como patrimônio regional e nacional.
+Acredite, você irá vencer!”. B identificação dos lugares pernambucanos,
+Mindset, empoderamento, millennials, networking, manifestações culturais, como o bumba meu boi, as
+coworking, deal, business, deadline, salesman com cirandas, os bonecos mamulengos e heróis locais,
+perfil hunter… tudo isso faz parte do seu vocabulário. fazendo com que essa canção se apresente como
+O pacote de livros é sempre idêntico e as experiências uma referência à cultura popular nordestina.
+são passadas da mesma forma: você está a um único C exaltação das raízes populares, como a poesia, a
 centímetro da vitória. Não pare!
 literatura de cordel e o frevo, misturadas ao erudito,
-Se desistir agora, será para sempre. Tome, leia a                                 como a Orquestra Armorial, compondo um rico tecido
-estratégia do oceano azul. Faça mais uma mentoria,                                      cultural, que transforma o popular em erudito.
+Se desistir agora, será para sempre. Tome, leia a como a Orquestra Armorial, compondo um rico tecido
+estratégia do oceano azul. Faça mais uma mentoria, cultural, que transforma o popular em erudito.
 participe de mais uma sessão de coaching. O problema
 D caracterização das festas populares como identidade
 é que o seu mindset não está ajustado. Você precisa
 cultural localizada e como representantes de uma
 ser mais proativo. Vamos fazer mais um powermind ? Eu
-consigo um precinho bacana para você…                                                   cultura que reflete valores históricos e sociais próprios
+consigo um precinho bacana para você… cultura que reflete valores históricos e sociais próprios
 CARVALHO, Í. C. Disponível em: https://medium.com.
 da população local.
-Acesso em: 17 ago. 2017 (adaptado).     E apresentação do Pastoril do Faceta, do maracatu, do
-De acordo com o texto, é possível identificar o                                         bumba meu boi e dos autos como representação da
-“empreendedor de palco” por                                                             musicalidade e do teatro popular religioso, bastante
+Acesso em: 17 ago. 2017 (adaptado). E apresentação do Pastoril do Faceta, do maracatu, do
+De acordo com o texto, é possível identificar o bumba meu boi e dos autos como representação da
+“empreendedor de palco” por musicalidade e do teatro popular religioso, bastante
 comum ao folclore brasileiro.
 A livros por ele indicados.
 
@@ -682,19 +682,19 @@ Sou Capibaribe
 Num livro de João Cabral
 Sou mamulengo de São Bento do Una
 Disponível em: www.facebook.com/ministeriodoesporte. Acesso em: 7 dez. 2017.
-Vindo no baque solto de maracatu                                               Esse anúncio publicitário propõe soluções para um
-Eu sou um auto de Ariano Suassuna                                              problema social recorrente, ao
-No meio da Feira de Caruaru                                                    A promover ações de conscientização para reduzir a
-Sou Frei Caneca do Pastoril do Faceta                                              violência de gênero em eventos esportivos.
-Levando a flor da lira                                                         B estimular o compartilhamento de políticas públicas
-Pra Nova Jerusalém                                                                 sobre a igualdade de gênero no esporte.
-Sou Luiz Gonzaga                                                               C divulgar para a população as novas regras
-E sou do mangue também                                                             complementares para as torcidas de futebol.
-Eu sou mameluco, sou de Casa Forte                                             D informar ao público masculino as consequências de
-Sou de Pernambuco, sou o Leão do Norte                                             condutas ofensivas.
+Vindo no baque solto de maracatu Esse anúncio publicitário propõe soluções para um
+Eu sou um auto de Ariano Suassuna problema social recorrente, ao
+No meio da Feira de Caruaru A promover ações de conscientização para reduzir a
+Sou Frei Caneca do Pastoril do Faceta violência de gênero em eventos esportivos.
+Levando a flor da lira B estimular o compartilhamento de políticas públicas
+Pra Nova Jerusalém sobre a igualdade de gênero no esporte.
+Sou Luiz Gonzaga C divulgar para a população as novas regras
+E sou do mangue também complementares para as torcidas de futebol.
+Eu sou mameluco, sou de Casa Forte D informar ao público masculino as consequências de
+Sou de Pernambuco, sou o Leão do Norte condutas ofensivas.
 E regulamentar normas de boa convivência nos
 LENINE; PINHEIRO, P.C. Leão do Norte. In: LENINE; SUZANO, M. Olho de peixe.
-São Paulo: Velas, 1993 (fragmento).        estádios.
+São Paulo: Velas, 1993 (fragmento). estádios.
 LC - 1° dia | Caderno 1 - AZUL - Página 11
 
 ## Questão 023
@@ -723,7 +723,7 @@ há carros nacionais trafegando pela via onde trafega o
 meu carro vermelho, importado da Alemanha. Ao chegar
 em Nova York, tomarei providências.
 SANT’ANNA, A. O importado vermelho de Noé. In: MORICONI, I. (Org.).
-Os cem melhores contos. Rio de Janeiro: Objetiva, 2001.           KOSUTH, J. One and Three Chairs. Museu Reina Sofia, Espanha, 1965.
+Os cem melhores contos. Rio de Janeiro: Objetiva, 2001. KOSUTH, J. One and Three Chairs. Museu Reina Sofia, Espanha, 1965.
 Disponível em: www.museoreinasofia.es. Acesso em: 4 jun. 2018 (adaptado).
 As repetições e as frases curtas constituem procedimentos
 A obra de Joseph Kosuth data de 1965 e se constitui por
@@ -731,16 +731,16 @@ linguísticos importantes para a compreensão da temática
 uma fotografia de cadeira, uma cadeira exposta e um
 do texto, pois
 quadro com o verbete “Cadeira”. Trata-se de um exemplo
-- A) expressam a futilidade do discurso de poder e de                                   de arte conceitual que revela o paradoxo entre verdade e
-distinção do narrador.                                                          imitação, já que a arte
-- B) disfarçam a falta de densidade das angústias                                       A não é a realidade, mas uma representação dela.
-existenciais narradas.                                                          B fundamenta-se na repetição, construindo variações.
+- A) expressam a futilidade do discurso de poder e de de arte conceitual que revela o paradoxo entre verdade e
+distinção do narrador. imitação, já que a arte
+- B) disfarçam a falta de densidade das angústias A não é a realidade, mas uma representação dela.
+existenciais narradas. B fundamenta-se na repetição, construindo variações.
 - C) não se define, pois depende da interpretação do fruidor.
 - C) ironizam a valorização da cultura norte-americana
 - D) resiste ao tempo, beneficiada por múltiplas formas
-pelos brasileiros.                                                                  de registro.
-- D) explicitam a ganância financeira do capitalismo                                    E redesenha a verdade, aproximando-se das
-contemporâneo.                                                                      definições lexicais.
+pelos brasileiros. de registro.
+- D) explicitam a ganância financeira do capitalismo E redesenha a verdade, aproximando-se das
+contemporâneo. definições lexicais.
 - E) criticam os estereótipos sociais das visões de mundo
 
 ## Questão 026
@@ -762,25 +762,25 @@ O GOVERNADOR DO DISTRITO FEDERAL, no uso
 das atribuições que lhe confere o artigo 100, incisos VII
 e XXVI, da Lei Orgânica do Distrito Federal, DECRETA:
 Disponível em: www.iotforall.com. Acesso em: 22 jun. 2018.
-Art. 1° Fica demitido o Gerúndio de todos os órgãos do                               A realidade virtual é uma tecnologia de informação que,
-Governo do Distrito Federal.                                                         conforme sugere a imagem, tem como uma de suas
-Art. 2° Fica proibido, a partir desta data, o uso do gerúndio                        principais funções
-para desculpa de INEFICIÊNCIA.                                                       A promover a manipulação eficiente de conhecimentos
-Art. 3° Este Decreto entra em vigor na data de sua                                       e informações de difícil compreensão no mundo
-publicação.                                                                              físico.
-Art. 4º Revogam-se as disposições em contrário.                                      B conduzir escolhas profissionais da área de ciência
-Brasília, 28 de setembro de 2007.                              da computação, oferecendo um leque de opções de
-119º da República e 48º de Brasília                              atuação.
-Disponível em: www.dodf.gov.br. Acesso em: 11 dez. 2017.   C transferir conhecimento da inteligência artificial para
-Esse decreto pauta-se na ideia de que o uso do gerúndio,                                 as áreas tradicionais, como as das ciências exatas e
-como “desculpa de ineficiência”, indica                                                  naturais.
-- A) conclusão de uma ação.                                                             D levar o ser humano a experimentar mentalmente
+Art. 1° Fica demitido o Gerúndio de todos os órgãos do A realidade virtual é uma tecnologia de informação que,
+Governo do Distrito Federal. conforme sugere a imagem, tem como uma de suas
+Art. 2° Fica proibido, a partir desta data, o uso do gerúndio principais funções
+para desculpa de INEFICIÊNCIA. A promover a manipulação eficiente de conhecimentos
+Art. 3° Este Decreto entra em vigor na data de sua e informações de difícil compreensão no mundo
+publicação. físico.
+Art. 4º Revogam-se as disposições em contrário. B conduzir escolhas profissionais da área de ciência
+Brasília, 28 de setembro de 2007. da computação, oferecendo um leque de opções de
+119º da República e 48º de Brasília atuação.
+Disponível em: www.dodf.gov.br. Acesso em: 11 dez. 2017. C transferir conhecimento da inteligência artificial para
+Esse decreto pauta-se na ideia de que o uso do gerúndio, as áreas tradicionais, como as das ciências exatas e
+como “desculpa de ineficiência”, indica naturais.
+- A) conclusão de uma ação. D levar o ser humano a experimentar mentalmente
 outras realidades, para as quais é transportado sem
 - B) realização de um evento.
 sair de seu próprio lugar.
-- C) repetição de uma prática.                                                          E delimitar tecnologias exclusivas de jogos virtuais, a
-- D) continuidade de um processo.                                                           fim de oferecer maior emoção ao jogador por meio de
-- E) transferência de responsabilidade.                                                     outras realidades.
+- C) repetição de uma prática. E delimitar tecnologias exclusivas de jogos virtuais, a
+- D) continuidade de um processo. fim de oferecer maior emoção ao jogador por meio de
+- E) transferência de responsabilidade. outras realidades.
 LC - 1° dia | Caderno 1 - AZUL - Página 12
 
 ## Questão 027
@@ -789,21 +789,21 @@ LC - 1° dia | Caderno 1 - AZUL - Página 12
 - Gabarito: D
 
 em Lá menor, escrita pelo alemão Johann Sebastian
-Caminhando contra o vento,                                              Bach por volta de 1723.
-Sem lenço e sem documento                                                           Disponível em: https://g1.globo.com. Acesso em: 6 jun. 2018 (adaptado).
+Caminhando contra o vento, Bach por volta de 1723.
+Sem lenço e sem documento Disponível em: https://g1.globo.com. Acesso em: 6 jun. 2018 (adaptado).
 No sol de quase dezembro
-Eu vou                                                                  A incorporação de um trecho da obra para flauta solo de
+Eu vou A incorporação de um trecho da obra para flauta solo de
 Johann Sebastian Bach na música de MC Fioti demonstra a
 O sol se reparte em crimes
 A influência permanente da cultura eurocêntrica nas
 Espaçonaves, guerrilhas
-Em cardinales bonitas                                                     produções musicais brasileiras.
-Eu vou                                                                  B homenagem aos referenciais estéticos que deram
+Em cardinales bonitas produções musicais brasileiras.
+Eu vou B homenagem aos referenciais estéticos que deram
 origem às produções da música popular.
-Em caras de presidentes                                                 C necessidade de divulgar a música de concerto nos
-Em grandes beijos de amor                                                 meios populares nas periferias das grandes cidades.
+Em caras de presidentes C necessidade de divulgar a música de concerto nos
+Em grandes beijos de amor meios populares nas periferias das grandes cidades.
 Em dentes, pernas, bandeiras
-D utilização    desintencional   de    uma     música
+D utilização desintencional de uma música
 Bombas e Brigitte Bardot
 excessivamente distante da realidade cultural dos
 O sol nas bancas de revista
@@ -823,27 +823,27 @@ São Paulo: Phillips, 1967 (fragmento).
 - Gabarito: B
 
 É comum coexistirem sequências tipológicas em um
-mesmo gênero textual. Nesse fragmento, os tipos textuais                                                Seu delegado
+mesmo gênero textual. Nesse fragmento, os tipos textuais Seu delegado
 que se destacam na organização temática são
 Eu sou viúvo e tenho um filho homem
-A descritivo e argumentativo, pois o enunciador detalha                            Arrumei uma viúva e fui me casar
+A descritivo e argumentativo, pois o enunciador detalha Arrumei uma viúva e fui me casar
 cada lugar por onde passa, argumentando contra a
 - A) minha sogra era muito teimosa
 violência urbana.
-- B) dissertativo e argumentativo, pois o enunciador                                  Com o meu filho foi se matrimoniar
-apresenta seu ponto de vista sobre as notícias                                   Desse matrimônio nasceu um garoto
-relativas à cidade.                                                              Desde esse dia que eu ando é louco
+- B) dissertativo e argumentativo, pois o enunciador Com o meu filho foi se matrimoniar
+apresenta seu ponto de vista sobre as notícias Desse matrimônio nasceu um garoto
+relativas à cidade. Desde esse dia que eu ando é louco
 - C) expositivo e injuntivo, pois o enunciador fala de
 Esse garoto é filho do meu filho
 seus estados físicos e psicológicos e interage com a
-mulher amada.                                                                    E o filho da minha sogra é irmão da minha mulher
-- D) narrativo e descritivo, pois o enunciador conta sobre                            Ele é meu neto e eu sou cunhado dele
-suas andanças pelas ruas da cidade ao mesmo                                      A minha nora é minha sogra
+mulher amada. E o filho da minha sogra é irmão da minha mulher
+- D) narrativo e descritivo, pois o enunciador conta sobre Ele é meu neto e eu sou cunhado dele
+suas andanças pelas ruas da cidade ao mesmo A minha nora é minha sogra
 tempo que a descreve.
 Meu filho meu sogro é
 - E) narrativo e injuntivo, pois o enunciador ensina
-o interlocutor como andar pelas ruas da cidade                                   Nessa confusão já nem sei quem sou
-contando sobre sua própria experiência.                                          Acaba esse garoto sendo meu avô.
+o interlocutor como andar pelas ruas da cidade Nessa confusão já nem sei quem sou
+contando sobre sua própria experiência. Acaba esse garoto sendo meu avô.
 
 ## Questão 028
 
@@ -852,16 +852,16 @@ contando sobre sua própria experiência.                                       
 
 Rio de Janeiro: Natasha Records, 2009.
 Leandro Aparecido Ferreira, o MC Fioti, compôs em
-2017 a música Bum bum tam tam, que gerou, em nove                              Nessa letra da canção, a suposição do último verso
-meses, 480 milhões de visualizações no YouTube. É o                            sinaliza a intenção do autor de
+2017 a música Bum bum tam tam, que gerou, em nove Nessa letra da canção, a suposição do último verso
+meses, 480 milhões de visualizações no YouTube. É o sinaliza a intenção do autor de
 funk brasileiro mais ouvido na história do site.
-A partir de uma gravação da flauta que achou na                            A ironizar as relações familiares modernas.
-internet, MC Fioti fez tudo sozinho: compôs, cantou e                          B reforçar o humor da situação representada.
+A partir de uma gravação da flauta que achou na A ironizar as relações familiares modernas.
+internet, MC Fioti fez tudo sozinho: compôs, cantou e B reforçar o humor da situação representada.
 produziu em uma noite só. “Comecei a pesquisar alguns
-tipos de flauta, coisas antigas. E nisso eu achei a ‘flautinha                 C expressar perplexidade em relação ao parente.
-do Sebastian Bach’”, conta. A descoberta foi por acaso:                        D atribuir à criança a causa da dúvida existencial.
+tipos de flauta, coisas antigas. E nisso eu achei a ‘flautinha C expressar perplexidade em relação ao parente.
+do Sebastian Bach’”, conta. A descoberta foi por acaso: D atribuir à criança a causa da dúvida existencial.
 Fioti não sabia quem era o músico alemão e não sabe
-tocar o instrumento.                                                           E questionar os lugares predeterminados da família.
+tocar o instrumento. E questionar os lugares predeterminados da família.
 LC - 1° dia | Caderno 1 - AZUL - Página 13
 
 ## Questão 030
@@ -888,9 +888,9 @@ C reportagem, pois discute cientificamente a
 Disponível em: www.bhaz.com.br. Acesso em: 14 jun. 2018.
 cardiomiopatia.
 D relato, pois narra um fato estressante vivido pela
-Essa campanha de conscientização sobre o assédio                                      paciente.
-sofrido pelas mulheres nas ruas constrói-se pela                                   E notícia, pois divulga fatos sobre a síndrome do
-combinação da linguagem verbal e não verbal. A imagem                                 coração partido.
+Essa campanha de conscientização sobre o assédio paciente.
+sofrido pelas mulheres nas ruas constrói-se pela E notícia, pois divulga fatos sobre a síndrome do
+combinação da linguagem verbal e não verbal. A imagem coração partido.
 da mulher com o nariz e a boca cobertos por um lenço é
 
 ## Questão 032
@@ -900,14 +900,14 @@ da mulher com o nariz e a boca cobertos por um lenço é
 
 a representação não verbal do(a)
 Chiquito tinha quase trinta quando conheceu Mariana
-- A) silêncio imposto às mulheres, que não podem                                      num baile de casamento na Forquilha, onde moravam
-denunciar o assédio sofrido.                                                     uns parentes dele. Por lá foi ficando, remanchando. Fez
-- B) metáfora de que as mulheres precisam defender-se                                 mal à moça, como costumavam dizer, tiveram de casar às
-do assédio masculino.                                                            pressas. Morou uns tempos com o sogro, descombinaram.
-- C) constrangimento pelo qual passam as mulheres e                                   Foi só conta de colher o milho e vender. Mudou pra casa
-sua tentativa de esconderem-se.                                                  do velho Chico Lourenço [seu pai]. Fumaça própria só viu
-- D) necessidade que as mulheres têm de passarem                                      subir um par de anos depois, quando o pai repartiu as
-despercebidas para evitar o assédio.                                             terras. De tão parecidos, pai e filho nunca combinaram
+- A) silêncio imposto às mulheres, que não podem num baile de casamento na Forquilha, onde moravam
+denunciar o assédio sofrido. uns parentes dele. Por lá foi ficando, remanchando. Fez
+- B) metáfora de que as mulheres precisam defender-se mal à moça, como costumavam dizer, tiveram de casar às
+do assédio masculino. pressas. Morou uns tempos com o sogro, descombinaram.
+- C) constrangimento pelo qual passam as mulheres e Foi só conta de colher o milho e vender. Mudou pra casa
+sua tentativa de esconderem-se. do velho Chico Lourenço [seu pai]. Fumaça própria só viu
+- D) necessidade que as mulheres têm de passarem subir um par de anos depois, quando o pai repartiu as
+despercebidas para evitar o assédio. terras. De tão parecidos, pai e filho nunca combinaram
 direito. Cada qual mais topetudo, muitas vezes dona
 - E) incapacidade de as mulheres protegerem-se da
 Aparecida ouvia o marido reclamar da natureza forte do
@@ -919,23 +919,23 @@ filho. Ela escutava com paciência e respondia dum jeito
 - Área: Linguagens
 - Gabarito: E
 
-Mulher tem coração clinicamente partido após morte                                      — “Quem herda, não rouba”.
+Mulher tem coração clinicamente partido após morte — “Quem herda, não rouba”.
 de cachorro
 Vinha um brilho nos olhos, o velho se acalmava.
-Como explica o The New England Journal of                                                      ROMANO, O. Casos de Minas. Rio de Janeiro: Paz e Terra, 1982.
+Como explica o The New England Journal of ROMANO, O. Casos de Minas. Rio de Janeiro: Paz e Terra, 1982.
 Medicine, a paciente, chamada Joanie Simpson, tinha
-sinais de infarto, como dores no peito e pressão alta,                             Os ditados populares são frases de sabedoria criadas
-e apresentava problemas nas artérias coronárias. Ao                                pelo povo, utilizadas em várias situações da vida. Nesse
-fazerem um ecocardiograma, os médicos encontraram o                                texto, a personagem emprega um ditado popular com a
-problema: cardiomiopatia de Takotsubo, conhecida como                              intenção de
+sinais de infarto, como dores no peito e pressão alta, Os ditados populares são frases de sabedoria criadas
+e apresentava problemas nas artérias coronárias. Ao pelo povo, utilizadas em várias situações da vida. Nesse
+fazerem um ecocardiograma, os médicos encontraram o texto, a personagem emprega um ditado popular com a
+problema: cardiomiopatia de Takotsubo, conhecida como intenção de
 síndrome do coração partido.
 A criticar a natureza forte do filho.
 Essa condição médica tipicamente acontece com
-mulheres em fase pós-menstrual e pode ser precedida                                B justificar o gênio difícil de Chiquito.
-por um evento muito estressante ou emotivo. Nesses                                 C legitimar o direito do filho à herança.
+mulheres em fase pós-menstrual e pode ser precedida B justificar o gênio difícil de Chiquito.
+por um evento muito estressante ou emotivo. Nesses C legitimar o direito do filho à herança.
 casos, o coração apresenta um movimento discinético
-transitório da parede anterior do ventrículo esquerdo, com                         D conter o ânimo violento de Chico Lourenço.
-acentuação da cinética da base ventricular, de acordo                              E condenar a agressividade do marido contra o filho.
+transitório da parede anterior do ventrículo esquerdo, com D conter o ânimo violento de Chico Lourenço.
+acentuação da cinética da base ventricular, de acordo E condenar a agressividade do marido contra o filho.
 com um artigo médico brasileiro que relata um caso
 LC - 1° dia | Caderno 1 - AZUL - Página 14
 
@@ -951,24 +951,24 @@ LC - 1° dia | Caderno 1 - AZUL - Página 14
 - Área: Linguagens
 - Gabarito: A
 
-TEXTO I                                                                                    A vida às vezes é como um jogo brincado na rua:
-Poesia em cartaz                                              estamos no último minuto de uma brincadeira bem quente
+TEXTO I A vida às vezes é como um jogo brincado na rua:
+Poesia em cartaz estamos no último minuto de uma brincadeira bem quente
 e não sabemos que a qualquer momento pode chegar um
-O caminho habitual para o trabalho, aquele em que                                  mais velho a avisar que a brincadeira já acabou e está na
-a gente já nem repara direito, pode ficar mais belo com                                hora de jantar. A vida afinal acontece muito de repente
-um poema. O projeto #UmLambePorDia nasceu desta                                        — nunca ninguém nos avisou que aquele era mesmo o
-intenção: trazer mais cor e alegria para a cidade por meio                             último Carnaval da Vitória. O Carnaval também chegava
-de cartazes coloridos ao estilo lambe-lambe. Quem teve                                 sempre de repente. Nós, as crianças, vivíamos num tempo
-a ideia foi o escritor Leonardo Beltrão, em Belo Horizonte.                            fora do tempo, sem nunca sabermos dos calendários de
-“Em meio a olhares cada vez mais viciados, acabamos                                    verdade. [...] O “dia da véspera do Carnaval”, como dizia
+O caminho habitual para o trabalho, aquele em que mais velho a avisar que a brincadeira já acabou e está na
+a gente já nem repara direito, pode ficar mais belo com hora de jantar. A vida afinal acontece muito de repente
+um poema. O projeto #UmLambePorDia nasceu desta — nunca ninguém nos avisou que aquele era mesmo o
+intenção: trazer mais cor e alegria para a cidade por meio último Carnaval da Vitória. O Carnaval também chegava
+de cartazes coloridos ao estilo lambe-lambe. Quem teve sempre de repente. Nós, as crianças, vivíamos num tempo
+a ideia foi o escritor Leonardo Beltrão, em Belo Horizonte. fora do tempo, sem nunca sabermos dos calendários de
+“Em meio a olhares cada vez mais viciados, acabamos verdade. [...] O “dia da véspera do Carnaval”, como dizia
 a avó Nhé, era dia de confusão com roupas e pinturas a
 nos esquecendo da beleza envolvida em cada esquina
 serem preparadas, sonhadas e inventadas. Mas quando
 e no próprio poder transformador da palavra”. Assim, a
 acontecia era um dia rápido, porque os dias mágicos
-cada dia um cartaz é colocado por aí, para nos lembrar de                              passam depressa deixando marcas fundas na nossa
-reparar na cidade, na vida que corre ao redor e também                                 memória, que alguns chamam também de coração.
-em nós mesmos.                                                                                           ONDJAKI. Os da minha rua. Rio de Janeiro: Língua Geral, 2007.
+cada dia um cartaz é colocado por aí, para nos lembrar de passam depressa deixando marcas fundas na nossa
+reparar na cidade, na vida que corre ao redor e também memória, que alguns chamam também de coração.
+em nós mesmos. ONDJAKI. Os da minha rua. Rio de Janeiro: Língua Geral, 2007.
 As significações afetivas engendradas no fragmento
 TEXTO II
 pressupõem o reconhecimento da
@@ -997,26 +997,26 @@ que mais de 40% dos praticantes de futebol nos EUA são
 meninas. Para elas, ver o futebol feminino representado
 em um jogo de videogame é extremamente importante.
 Ter o futebol feminino no Fifa 16 é um grande passo para
-Disponível em: www.vidasimples.uol.com.br. Acesso em: 6 dez. 2017 (adaptado).   a sua popularização na luta pela igualdade de gênero,
+Disponível em: www.vidasimples.uol.com.br. Acesso em: 6 dez. 2017 (adaptado). a sua popularização na luta pela igualdade de gênero,
 num contexto machista, sexista, misógino e homofóbico.
 Considerando-se a função que os cartazes colados em
 Disponível em: www.ludopedio.com.br. Acesso em: 5 jun. 2018 (adaptado).
 postes normalmente exercem nas ruas das cidades
-grandes, esse texto evidencia a                                                        Os jogos eletrônicos presentes na cultura juvenil podem
+grandes, esse texto evidencia a Os jogos eletrônicos presentes na cultura juvenil podem
 desempenhar uma relevante função na abordagem do
-- A) disseminação da arte poética em um veículo não                                       futebol ao
-convencional.                                                                        A disseminarem uma modalidade, promovendo a
-- B) manutenção da expectativa das pessoas ao andarem                                         igualdade de gênero.
-pelas ruas.                                                                          B superarem jogos malsucedidos no mercado, lançados
+- A) disseminação da arte poética em um veículo não futebol ao
+convencional. A disseminarem uma modalidade, promovendo a
+- B) manutenção da expectativa das pessoas ao andarem igualdade de gênero.
+pelas ruas. B superarem jogos malsucedidos no mercado, lançados
 anteriormente.
 - C) necessidade de exposição de poemas pequenos em
 - C) inovarem a modalidade com novas ofertas de jogos
 diferentes suportes.
 ao mercado.
-- D) característica corriqueira do suporte lambe-lambe,                                   D explorarem nichos de mercado antes ignorados,
-muito comum nas ruas.                                                                    produzindo mais lucro.
-- E) exposição da beleza escondida das esquinas da                                        E reforçarem estereótipos de gênero masculino ou
-cidade de Belo Horizonte.                                                                feminino nos esportes.
+- D) característica corriqueira do suporte lambe-lambe, D explorarem nichos de mercado antes ignorados,
+muito comum nas ruas. produzindo mais lucro.
+- E) exposição da beleza escondida das esquinas da E reforçarem estereótipos de gênero masculino ou
+cidade de Belo Horizonte. feminino nos esportes.
 LC - 1° dia | Caderno 1 - AZUL - Página 15
 
 ## Questão 036
@@ -1032,75 +1032,75 @@ LC - 1° dia | Caderno 1 - AZUL - Página 15
 - Gabarito: A
 
 LUTA: prática corporal imprevisível, caracterizada por
-determinado estado de contato proposital, que possibilita                                          Relatos de viagem: nas curvas da Nacional 222,
-a duas ou mais pessoas se enfrentarem numa constante                                                                          em Portugal
+determinado estado de contato proposital, que possibilita Relatos de viagem: nas curvas da Nacional 222,
+a duas ou mais pessoas se enfrentarem numa constante em Portugal
 troca de ações ofensivas e/ou defensivas, regida por
-regras, com o objetivo mútuo sobre um alvo móvel                                                     Em abril deste ano, fomos a Portugal para uma
-personificado no oponente.                                                                        viagem de um mês que esperávamos há um ano. Pois
+regras, com o objetivo mútuo sobre um alvo móvel Em abril deste ano, fomos a Portugal para uma
+personificado no oponente. viagem de um mês que esperávamos há um ano. Pois
 GOMES, M. S. P. et al. Ensino das lutas: dos princípios condicionais aos grupos situacionais.
-Movimento, n. 2, abr.-jun. 2010 (adaptado).       no dia 4 de maio, chegávamos ao Aeroporto Francisco
-De acordo com o texto, podemos identificar uma                                                    Sá Carneiro, no Porto. Que linda a “antiga, muy nobre,
-abordagem das lutas nas aulas de educação física                                                  sempre leal e invicta” cidade do Porto! “Encantei-me”,
-quando o professor realiza uma proposta envolvendo                                                diriam eles... pelas belas paisagens, construções
-- A) contato corporal intenso entre o aluno e seu oponente.                                          históricas com lindas fachadas, parques e praças muito
-- B) contenda entre os alunos que se agridem fisicamente.                                            bem cuidados.
+Movimento, n. 2, abr.-jun. 2010 (adaptado). no dia 4 de maio, chegávamos ao Aeroporto Francisco
+De acordo com o texto, podemos identificar uma Sá Carneiro, no Porto. Que linda a “antiga, muy nobre,
+abordagem das lutas nas aulas de educação física sempre leal e invicta” cidade do Porto! “Encantei-me”,
+quando o professor realiza uma proposta envolvendo diriam eles... pelas belas paisagens, construções
+- A) contato corporal intenso entre o aluno e seu oponente. históricas com lindas fachadas, parques e praças muito
+- B) contenda entre os alunos que se agridem fisicamente. bem cuidados.
 - C) confronto corporal em que os vencedores são
-previamente identificados.                                                                       Os    tripeiros,        sinônimo           de      portuenses,            têm
-- D) combate       corporal    intencional    com    ações                                           orgulho de sua cidade, apelidada de Invicta — nunca
-regulamentadas entre os oponentes.                                                            foi invadida. E valorizam tudo o que há de bom ali,
-- E) conflito resolvido pelos alunos por meio de regras                                              como “a melhor estrada para se dirigir do mundo”, a
-previamente estabelecidas.                                                                    Nacional 222.
+previamente identificados. Os tripeiros, sinônimo de portuenses, têm
+- D) combate corporal intencional com ações orgulho de sua cidade, apelidada de Invicta — nunca
+regulamentadas entre os oponentes. foi invadida. E valorizam tudo o que há de bom ali,
+- E) conflito resolvido pelos alunos por meio de regras como “a melhor estrada para se dirigir do mundo”, a
+previamente estabelecidas. Nacional 222.
 
 ## Questão 037
 
 - Área: Linguagens
 - Gabarito: E
 
-O conceito de saúde formulado na histórica VIII                                                  Pois na manhã do 25 de abril, dia da Revolução
-Conferência Nacional de Saúde, no ano de 1986, ficou                                              dos Cravos, resolvemos conhecer a tal maravilha.
+O conceito de saúde formulado na histórica VIII Pois na manhã do 25 de abril, dia da Revolução
+Conferência Nacional de Saúde, no ano de 1986, ficou dos Cravos, resolvemos conhecer a tal maravilha.
 conhecido como um “conceito ampliado” de saúde,
 A cada 10 km tínhamos que encostar: corríamos,
 conforme ilustrado na figura. Esse conceito foi fruto de
-intensa mobilização em diversos países da América                                                 dançávamos, tomávamos chocolate quente, sopa, tudo
-Latina nas décadas de 1970 e 1980, como resposta à                                                que fosse quentinho. E lá íamos para mais uma etapa.
+intensa mobilização em diversos países da América dançávamos, tomávamos chocolate quente, sopa, tudo
+Latina nas décadas de 1970 e 1980, como resposta à que fosse quentinho. E lá íamos para mais uma etapa.
 crise dos sistemas públicos de saúde.
 Uma aventura deliciosa. Depois de três horas — mais
 ou menos o dobro do tempo necessário, não fossem
 micas, Culturais
-conô                    eA                                              as paradas para aquecimento —, chegamos a casa!
-cioe                          mb
+conô eA as paradas para aquecimento —, chegamos a casa!
+cioe mb
 ie
-So        Con diçõe s de vida                                                 Congelados, mas maravilhados e invictos!
+So Con diçõe s de vida Congelados, mas maravilhados e invictos!
 e de trabalho
 nt
-A                                                      o
+A o
 es
-de m                                                  eg
+de m eg
 ai
 Disponível em: https://oglobo.globo.com. Acesso em: 6 dez. 2017 (adaptado).
-tr bie                                            pr
+tr bie pr
 içõ
 sG
 ab nt
 sem
 al e
-IS E COM                 De
+IS E COM De
 nd
-ho                                                 e
+ho e
 era
-CIA        UN                          ua
-Ág oto                  Nesse texto, busca-se seduzir o leitor por meio da
+CIA UN ua
+Ág oto Nesse texto, busca-se seduzir o leitor por meio da
 SO
 Co
-Edu                                 I
+Edu I
 esg
 is
-caç                     A DOSVID   IND
+caç A DOSVID IND
 TÁ
 ão
 exploração de uma voz externa sobre a identidade
 S
-DE          I
+DE I
 DE
 Serviços
 RIA
@@ -1108,16 +1108,16 @@ VÍ
 ILO
 DU
 RE
-Idade,                             sociais
+Idade, sociais
 EST
 histórica do povo português. O trecho que evidencia
 OS
 Produção
 S
-sexo e fatores                        de saúde
-agrícola e de                 hereditários
-alimentos                                                         Ha
-bita             esse procedimento argumentativo é
+sexo e fatores de saúde
+agrícola e de hereditários
+alimentos Ha
+bita esse procedimento argumentativo é
 ção
 - A) “Que linda a ‘antiga, muy nobre, sempre leal e invicta’
 cidade do Porto!”.
@@ -1125,15 +1125,15 @@ BATISTELLA, C. Abordagens contemporâneas do conceito de saúde.
 - B) “‘Encantei-me’, diriam eles... pelas belas paisagens,
 Disponível em: www.dihs.ensp.fiocruz.br. Acesso em: 23 set. 2020.
 construções históricas com lindas fachadas [...]”.
-Com base no conceito apresentado no texto, a saúde é                                              C “Os tripeiros, sinônimo de portuenses, têm orgulho de
+Com base no conceito apresentado no texto, a saúde é C “Os tripeiros, sinônimo de portuenses, têm orgulho de
 consequência direta do(a)
 sua cidade [...]”.
 - A) adoção de um estilo de vida ativo por parte dos
-indivíduos.                                                                                     D “E valorizam tudo o que há de bom ali, como ‘a melhor
-- B) disponibilidade de emprego no mercado de trabalho.                                                estrada para se dirigir do mundo’ [...]”.
+indivíduos. D “E valorizam tudo o que há de bom ali, como ‘a melhor
+- B) disponibilidade de emprego no mercado de trabalho. estrada para se dirigir do mundo’ [...]”.
 - C) condição habitacional presente nas cidades.
-- D) acesso ao sistema educacional.                                                                  E “Pois na manhã do 25 de abril, dia da Revolução dos
-- E) forma de organização social.                                                                      Cravos, resolvemos conhecer a tal maravilha”.
+- D) acesso ao sistema educacional. E “Pois na manhã do 25 de abril, dia da Revolução dos
+- E) forma de organização social. Cravos, resolvemos conhecer a tal maravilha”.
 LC - 1° dia | Caderno 1 - AZUL - Página 16
 
 ## Questão 039
@@ -1148,31 +1148,31 @@ LC - 1° dia | Caderno 1 - AZUL - Página 16
 - Área: Linguagens
 - Gabarito: A
 
-Hino à Bandeira                                                      Policarpo Quaresma, cidadão brasileiro, funcionário
+Hino à Bandeira Policarpo Quaresma, cidadão brasileiro, funcionário
 público, certo de que a língua portuguesa é emprestada
 Em teu seio formoso retratas
 ao Brasil; certo também de que, por esse fato, o
 Este céu de puríssimo azul,
-A verdura sem par destas matas,                                              falar e o escrever em geral, sobretudo no campo das
-E o esplendor do Cruzeiro do Sul.                                            letras, se veem na humilhante contingência de sofrer
+A verdura sem par destas matas, falar e o escrever em geral, sobretudo no campo das
+E o esplendor do Cruzeiro do Sul. letras, se veem na humilhante contingência de sofrer
 continuamente censuras ásperas dos proprietários da
 Contemplando o teu vulto sagrado,
 língua; sabendo, além, que, dentro do nosso país, os
 Compreendemos o nosso dever,
-E o Brasil por seus filhos amado,                                            autores e os escritores, com especialidade os gramáticos,
-Poderoso e feliz há de ser!                                                  não se entendem no tocante à correção gramatical,
+E o Brasil por seus filhos amado, autores e os escritores, com especialidade os gramáticos,
+Poderoso e feliz há de ser! não se entendem no tocante à correção gramatical,
 vendo-se, diariamente, surgir azedas polêmicas entre os
 Sobre a imensa Nação Brasileira,
 mais profundos estudiosos do nosso idioma — usando
 Nos momentos de festa ou de dor,
-Paira sempre sagrada bandeira                                                do direito que lhe confere a Constituição, vem pedir que
-Pavilhão da justiça e do amor!                                               o Congresso Nacional decrete o tupi-guarani como língua
+Paira sempre sagrada bandeira do direito que lhe confere a Constituição, vem pedir que
+Pavilhão da justiça e do amor! o Congresso Nacional decrete o tupi-guarani como língua
 BILAC, O.; BRAGA, F. Disponível em: www2.planalto.gov.br.
 oficial e nacional do povo brasileiro.
-Acesso em: 10 dez. 2017 (fragmento).                                               BARRETO, L. Triste fim de Policarpo Quaresma.
+Acesso em: 10 dez. 2017 (fragmento). BARRETO, L. Triste fim de Policarpo Quaresma.
 Disponível em: www.dominiopublico.gov.br. Acesso em: 26 jun. 2012.
 No Hino à Bandeira, a descrição é um recurso utilizado
-para exaltar o símbolo nacional na medida em que                                   Nessa petição da pitoresca personagem do romance de
+para exaltar o símbolo nacional na medida em que Nessa petição da pitoresca personagem do romance de
 Lima Barreto, o uso da norma-padrão justifica-se pela
 A remete a um momento futuro.
 - A) situação social de enunciação representada.
@@ -1181,7 +1181,7 @@ A remete a um momento futuro.
 - C) valoriza os seus elementos.
 - C) pouca representatividade das línguas indígenas.
 - D) emprega termos religiosos.
-- E) recorre à sua história.                                                          D atitude irônica diante da língua dos colonizadores.
+- E) recorre à sua história. D atitude irônica diante da língua dos colonizadores.
 
 ## Questão 040
 
@@ -1196,37 +1196,37 @@ A remete a um momento futuro.
 - Gabarito: A
 
 — O senhor pensa que eu tenho alguma fábrica de
-dinheiro? (O diretor diz essas coisas a ele, mas olha                                  Atualmente os jovens estão imersos numa sociedade
-para todos como quem quer dar uma explicação a todos.                              permeada pela tecnologia. Nesse contexto, os jogos
-Todas as caras sorriem.) Quando seu filho esteve doente,                           digitais são artefatos muito empregados. Videogames
+dinheiro? (O diretor diz essas coisas a ele, mas olha Atualmente os jovens estão imersos numa sociedade
+para todos como quem quer dar uma explicação a todos. permeada pela tecnologia. Nesse contexto, os jogos
+Todas as caras sorriem.) Quando seu filho esteve doente, digitais são artefatos muito empregados. Videogames
 ativos ou exergames foram introduzidos como forma
 eu o ajudei como pude. Não me peça mais nada. Não me
 de permitir que o corpo controlasse tais jogos. Como
 encarregue de pagar as suas contas: já tenho as minhas,
 resultado, passaram a ser vistos como uma ferramenta
-e é o que me basta... (Risos.)                                                     auxiliar na adoção de um estilo de vida menos sedentário,
-O diretor tem o rosto escanhoado, a camisa limpa. A                            com efeitos positivos sobre a saúde. Tem-se defendido
-palavra possui um tom educado, de pessoa que convive                               que os exergames podem contribuir para a prática regular
-com gente inteligente, causeuse. O rosto do Dr. Rist                               de atividade física moderada, bem como promover a
-resplandece, vermelho e glabro. Um que outro tem os                                interação entre jogadores, reduzindo o sentimento de
+e é o que me basta... (Risos.) auxiliar na adoção de um estilo de vida menos sedentário,
+O diretor tem o rosto escanhoado, a camisa limpa. A com efeitos positivos sobre a saúde. Tem-se defendido
+palavra possui um tom educado, de pessoa que convive que os exergames podem contribuir para a prática regular
+com gente inteligente, causeuse. O rosto do Dr. Rist de atividade física moderada, bem como promover a
+resplandece, vermelho e glabro. Um que outro tem os interação entre jogadores, reduzindo o sentimento de
 isolamento social. Por outro lado, argumenta-se que os
 olhos no chão, a atitude discreta.
 exergames não podem substituir a experiência real das
-Naziazeno espera que ele lhe dê as costas, vá reatar                            práticas corporais, pois não motivam a longo prazo a
-a palestra interrompida, aquelas observações sobre a                               prática permanente de atividades físicas.
-questão social, comunismo e integralismo.                                              FINCO, M. D.; REATEGUI, E. B.; ZARO, M. A. Laboratório de exergames: um espaço
+Naziazeno espera que ele lhe dê as costas, vá reatar práticas corporais, pois não motivam a longo prazo a
+a palestra interrompida, aquelas observações sobre a prática permanente de atividades físicas.
+questão social, comunismo e integralismo. FINCO, M. D.; REATEGUI, E. B.; ZARO, M. A. Laboratório de exergames: um espaço
 complementar para as aulas de educação física. Movimento, n. 3, 2015 (adaptado).
 MACHADO, D. Os ratos. São Paulo: Círculo do Livro, s/d.
 Pela sua interatividade, os exergames apresentam-se
 A ficção modernista explorou tipos humanos em situação
 como possibilidade para estimular o(a)
 de conflito social. No fragmento do romancista gaúcho,
-esse conflito revela a                                                             A   exercitação física, promovendo a saúde.
-- A) sujeição moral amplificada pela pobreza.                                       B   vivência de exercícios físicos sistemáticos.
-- B) crise econômica em expansão nas cidades.                                       C   envolvimento com atividades físicas ao longo da vida.
-- C) falta de diálogo entre patrões e empregados.                                   D   jogo por meio de comandos fornecidos pelo videogame.
-- D) perspicácia marcada pela formação intelectual.                                 E   disputa entre jogadores, contribuindo para o
-- E) tensão política gerada pelas ideologias vigentes.                                  individualismo.
+esse conflito revela a A exercitação física, promovendo a saúde.
+- A) sujeição moral amplificada pela pobreza. B vivência de exercícios físicos sistemáticos.
+- B) crise econômica em expansão nas cidades. C envolvimento com atividades físicas ao longo da vida.
+- C) falta de diálogo entre patrões e empregados. D jogo por meio de comandos fornecidos pelo videogame.
+- D) perspicácia marcada pela formação intelectual. E disputa entre jogadores, contribuindo para o
+- E) tensão política gerada pelas ideologias vigentes. individualismo.
 LC - 1° dia | Caderno 1 - AZUL - Página 17
 
 ## Questão 043
@@ -1241,35 +1241,35 @@ LC - 1° dia | Caderno 1 - AZUL - Página 17
 - Área: Linguagens
 - Gabarito: B
 
-Quando quis agilizar o processo de seleção de                                            Viajo Curitiba das conferências positivistas, elas
-novos alunos, a tradicional faculdade britânica de                                       são onze em Curitiba, há treze no mundo inteiro; do
-medicina St. George usou um software para definir                                        tocador de realejo que não roda a manivela desde que
+Quando quis agilizar o processo de seleção de Viajo Curitiba das conferências positivistas, elas
+novos alunos, a tradicional faculdade britânica de são onze em Curitiba, há treze no mundo inteiro; do
+medicina St. George usou um software para definir tocador de realejo que não roda a manivela desde que
 quem deveria ser entrevistado. Ao reproduzir a forma
-como os funcionários faziam essa escolha, o programa                                     o macaquinho morreu; dos bravos soldados do fogo que
-eliminou, de cara, 60 de 2 000 candidatos. Só por causa                                  passam chispando no carro vermelho atrás do incêndio
-do sexo ou da origem racial, numa dedução baseada                                        que ninguém não viu, esta Curitiba e a do cachorro-quente
+como os funcionários faziam essa escolha, o programa o macaquinho morreu; dos bravos soldados do fogo que
+eliminou, de cara, 60 de 2 000 candidatos. Só por causa passam chispando no carro vermelho atrás do incêndio
+do sexo ou da origem racial, numa dedução baseada que ninguém não viu, esta Curitiba e a do cachorro-quente
 em sobrenome e local de nascimento. Um estudo sobre
 com chope duplo no Buraco do Tatu eu viajo.
 o caso foi publicado em 1988, mas, 25 anos depois,
-outra pesquisa apontou que esse tipo de discriminação                                        Curitiba, aquela do Burro Brabo, um cidadão
+outra pesquisa apontou que esse tipo de discriminação Curitiba, aquela do Burro Brabo, um cidadão
 segue firme. O exemplo recente envolve o buscador
 misterioso morreu nos braços da Rosicler, quem foi?
 do Google: ao digitar nomes comuns entre negros dos
-EUA, a chance de os anúncios automáticos oferecerem                                      quem não foi? foi o reizinho do Sião; da Ponte Preta da
-checagem de antecedentes criminais pode aumentar                                         estação, a única ponte da cidade, sem rio por baixo, esta
-25%. E pode piorar com a pergunta “detido?” logo após a                                  Curitiba viajo.
+EUA, a chance de os anúncios automáticos oferecerem quem não foi? foi o reizinho do Sião; da Ponte Preta da
+checagem de antecedentes criminais pode aumentar estação, a única ponte da cidade, sem rio por baixo, esta
+25%. E pode piorar com a pergunta “detido?” logo após a Curitiba viajo.
 palavra procurada.
 Disponível em: https://tab.uol.com.br. Acesso em: 11 ago. 2017 (adaptado).
 Curitiba sem pinheiro ou céu azul, pelo que vosmecê
-O texto permite o desnudamento da sociedade ao                                           é — província, cárcere, lar —, esta Curitiba, e não a outra
+O texto permite o desnudamento da sociedade ao é — província, cárcere, lar —, esta Curitiba, e não a outra
 relacionar as tecnologias de informação e comunicação
-com o(a)                                                                                 para inglês ver, com amor eu viajo, viajo, viajo.
+com o(a) para inglês ver, com amor eu viajo, viajo, viajo.
 TREVISAN, D. Em busca de Curitiba perdida. Rio de Janeiro: Record, 1992.
 - A) agilidade dos softwares.
-- B) passar dos anos.                                                                       A tematização de Curitiba é frequente na obra de Dalton
-- C) linguagem.                                                                             Trevisan. No fragmento, a relação do narrador com o
-- D) preconceito.                                                                           espaço urbano é caracterizada por um olhar
-- E) educação.                                                                              A destituído de afetividade, que ironiza os costumes e
+- B) passar dos anos. A tematização de Curitiba é frequente na obra de Dalton
+- C) linguagem. Trevisan. No fragmento, a relação do narrador com o
+- D) preconceito. espaço urbano é caracterizada por um olhar
+- E) educação. A destituído de afetividade, que ironiza os costumes e
 
 ## Questão 044
 
@@ -1285,7 +1285,7 @@ D embevecido pela simplicidade do cenário, indiferente
 à descrição de elementos de reconhecido valor
 histórico.
 E distanciado dos elementos narrados, que recorre
-Disponível em: www.acontecendoaqui.com.br. Acesso em: 15 jun. 2018.           ao ponto de vista do viajante como expressão de
+Disponível em: www.acontecendoaqui.com.br. Acesso em: 15 jun. 2018. ao ponto de vista do viajante como expressão de
 estranhamento.
 Nessa campanha publicitária, a imagem da família e o
 texto verbal unem-se para reforçar a ideia de que
@@ -1316,7 +1316,7 @@ uma pessoa está relacionada à forma como ela reage às exigências da vida e a
 desejos, capacidades, ambições, ideias e emoções. Todas as pessoas podem apresentar sinais de sofrimento
 psíquico em alguma fase da vida.
 Disponível em: http://www.saude.pr.gov.br. Acesso em: 27 jul. 2020 (adaptado).
-TEXTO II                                                          TEXTO III
+TEXTO II TEXTO III
 - A) origem da palavra “estigma” aponta para marcas ou cicatrizes
 deixadas por feridas. Por extensão, em um período que remonta
 SOCORRO,
@@ -1324,41 +1324,41 @@ SOCORRO,
 ferro em brasa em criminosos, escravos e outras pessoas que se
 BRASIL!
 Saiba mais sobre o problema de
-desejava separar da sociedade “correta” e “honrada”. Essa mesma      saúde que afeta mais de 1 em
+desejava separar da sociedade “correta” e “honrada”. Essa mesma saúde que afeta mais de 1 em
 cada 20 pessoas, mas que
-palavra muitas vezes está presente no universo das doenças           continuamos ignorando!
-psiquiátricas. No lugar da marca de ferro, relegamos preconceito,                                  Mais de
-falta de informação e tratamentos precários a pessoas que sofrem           322                    11,5 milhões
-milhões                  de brasileiros têm depressão
-de depressão, ansiedade, transtorno bipolar e outros transtornos   de pessoas vivem com
+palavra muitas vezes está presente no universo das doenças continuamos ignorando!
+psiquiátricas. No lugar da marca de ferro, relegamos preconceito, Mais de
+falta de informação e tratamentos precários a pessoas que sofrem 322 11,5 milhões
+milhões de brasileiros têm depressão
+de depressão, ansiedade, transtorno bipolar e outros transtornos de pessoas vivem com
 depressão em todo o mundo
-mentais graves.                                                                                       O Brasil é o país
+mentais graves. O Brasil é o país
 mais depressivo
 Hoje
 da América Latina
 Achar que a manifestação de um transtorno mental é “frescura”
 Depressão é a
-está relacionado a um ideal de felicidade que não é igual para                                           A depressão é a
-doença mais                    2 causa
+está relacionado a um ideal de felicidade que não é igual para A depressão é a
+doença mais 2 causa
 a
 incapacitante
-todo mundo. A tentativa de se encaixar nesse modelo cria                                                 do mundo
+todo mundo. A tentativa de se encaixar nesse modelo cria do mundo
 de afastamento de
 trabalho no mundo
 distância dos sentimentos reais, e quem os demonstra é rotulado,
 O número de
-o que progressivamente dificulta a interação social. É aqui que                                         1 trilhão                                           Mulheres
+o que progressivamente dificulta a interação social. É aqui que 1 trilhão Mulheres
 afetadas pela depressão
-redes sociais de enorme popularidade mostram uma face cruel,                                            de dólares                           é 30% mais elevado
-é o valor da perda econômica           que o dos homens
-desempenhando um papel de validação da vida perfeita e criando                                          mundial gerada pelas consequências
+redes sociais de enorme popularidade mostram uma face cruel, de dólares é 30% mais elevado
+é o valor da perda econômica que o dos homens
+desempenhando um papel de validação da vida perfeita e criando mundial gerada pelas consequências
 dos transtornos mentais
-um ambiente em que tudo deve ser mostrado em seu melhor                                                  Todos os dados foram divulgados pela Organização Mundial da Saúde
+um ambiente em que tudo deve ser mostrado em seu melhor Todos os dados foram divulgados pela Organização Mundial da Saúde
 (OMS) em fevereiro de 2017.
 ângulo. Fora dos holofotes da internet, porém, transtornos mentais
 Se você precisa de ajuda, ligue para o Centro de Valorização da Vida (CVV): 188.
-mostram-se mais presentes do que se imagina.                                                                                             Disponível em: https://zenklub.com.br.
-http://www.abrata.org.br. Acesso em: 27 jul. 2020 (adaptado).                                      Acesso em: 27 jul. 2020 (adaptado).
+mostram-se mais presentes do que se imagina. Disponível em: https://zenklub.com.br.
+http://www.abrata.org.br. Acesso em: 27 jul. 2020 (adaptado). Acesso em: 27 jul. 2020 (adaptado).
 PROPOSTA DE REDAÇÃO
 - A) partir da leitura dos textos motivadores e com base nos conhecimentos construídos ao longo de sua
 formação, redija um texto dissertativo-argumentativo em modalidade escrita formal da língua portuguesa
@@ -1373,38 +1373,38 @@ CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS
 - Área: Ciências Humanas
 - Gabarito: B
 
-Questões de 46 a 90                                                                               Nas últimas décadas, uma acentuada feminização
+Questões de 46 a 90 Nas últimas décadas, uma acentuada feminização
 
 ## Questão 046
 
 - Área: Ciências Humanas
 - Gabarito: D
 
-Embora inegáveis os benefícios que ambas as                                               masculina pouco cresceu no período pós-1970, a
-economias têm auferido do intercâmbio comercial, o Brasil                                     intensificação da inserção das mulheres foi o traço
-tem reiterado seu objetivo de desenvolver com a China                                         marcante. Entretanto, essa presença feminina se dá mais
-uma relação comercial menos assimétrica. Os números                                           no espaço dos empregos precários, onde a exploração,
-revelam com clareza a assimetria. As exportações                                              em grande medida, se encontra mais acentuada.
+Embora inegáveis os benefícios que ambas as masculina pouco cresceu no período pós-1970, a
+economias têm auferido do intercâmbio comercial, o Brasil intensificação da inserção das mulheres foi o traço
+tem reiterado seu objetivo de desenvolver com a China marcante. Entretanto, essa presença feminina se dá mais
+uma relação comercial menos assimétrica. Os números no espaço dos empregos precários, onde a exploração,
+revelam com clareza a assimetria. As exportações em grande medida, se encontra mais acentuada.
 NOGUEIRA, C. M. As trabalhadoras do telemarketing: uma nova divisão sexual do trabalho?
-brasileiras de produtos básicos, especialmente soja,                                                       In: ANTUNES, R. et al. Infoproletários: degradação real do trabalho virtual.
+brasileiras de produtos básicos, especialmente soja, In: ANTUNES, R. et al. Infoproletários: degradação real do trabalho virtual.
 São Paulo: Boitempo, 2009.
 minério de ferro e petróleo, compõem, dependendo do
-ano, algo entre 75% e 80% da pauta, ao passo que as                                           A transformação descrita no texto tem sido insuficiente
-importações brasileiras consistem, aproximadamente,                                           para o estabelecimento de uma condição de igualdade de
-em 95% de produtos industrializados chineses, que vão                                         oportunidade em virtude da(s)
+ano, algo entre 75% e 80% da pauta, ao passo que as A transformação descrita no texto tem sido insuficiente
+importações brasileiras consistem, aproximadamente, para o estabelecimento de uma condição de igualdade de
+em 95% de produtos industrializados chineses, que vão oportunidade em virtude da(s)
 desde os mais variados bens de consumo até máquinas
 A estagnação de direitos adquiridos e do anacronismo
 e equipamentos de alto valor.
 LEÃO, V. C. Prefácio. In: CINTRA, M. A. M.; SILVA FILHO, E. B.; PINTO, E. C. (Org.).
 da legislação vigente.
 China em transformação: dimensões econômicas e geopolíticas do desenvolvimento.
-Rio de Janeiro: Ipea, 2015.          B manutenção do status quo gerencial e dos padrões
-Uma ação estatal de longo prazo capaz de reduzir a                                                  de socialização familiar.
-assimetria na balança comercial brasileira, conforme                                          C desestruturação                  da     herança          patriarcal        e     das
-exposto no texto, é o(a)                                                                            mudanças do perfil ocupacional.
-- A) expansão do setor extrativista.                                                             D disputas na composição sindical e da presença na
-- B) incremento da atividade agrícola.                                                                 esfera político-partidária.
-- C) diversificação da matriz energética.                                                        E exigências de aperfeiçoamento profissional e de
+Rio de Janeiro: Ipea, 2015. B manutenção do status quo gerencial e dos padrões
+Uma ação estatal de longo prazo capaz de reduzir a de socialização familiar.
+assimetria na balança comercial brasileira, conforme C desestruturação da herança patriarcal e das
+exposto no texto, é o(a) mudanças do perfil ocupacional.
+- A) expansão do setor extrativista. D disputas na composição sindical e da presença na
+- B) incremento da atividade agrícola. esfera político-partidária.
+- C) diversificação da matriz energética. E exigências de aperfeiçoamento profissional e de
 - D) fortalecimento da pesquisa científica.
 habilidades na competência diretiva.
 - E) monitoramento do fluxo alfandegário.
@@ -1422,9 +1422,9 @@ habilidades na competência diretiva.
 - Gabarito: A
 
 A propriedade compreende, em seu conteúdo e alcance,
-As estatísticas mais recentes do Brasil rural revelam                                     além do tradicional direito de uso, gozo e disposição por
-um paradoxo que interessa a toda sociedade: o emprego                                         parte de seu titular, a obrigatoriedade do atendimento de
-de natureza agrícola definha em praticamente todo o país,                                     sua função social, cuja definição é inseparável do requisito
+As estatísticas mais recentes do Brasil rural revelam além do tradicional direito de uso, gozo e disposição por
+um paradoxo que interessa a toda sociedade: o emprego parte de seu titular, a obrigatoriedade do atendimento de
+de natureza agrícola definha em praticamente todo o país, sua função social, cuja definição é inseparável do requisito
 mas a população residente no campo voltou a crescer; ou
 obrigatório do uso racional da propriedade e dos recursos
 pelo menos parou de cair. Esses sinais trocados sugerem
@@ -1439,18 +1439,18 @@ do emprego não agrícola no campo. Ao mesmo tempo,
 dos direitos da coletividade, visando o bem-estar geral, no
 aumentou a massa de desempregados, inativos e
 âmbito do direito público.
-aposentados que mantêm residência rural.                                                        JELINEK, R. O princípio da função social da propriedade e sua repercussão sobre o
-SILVA, J. G. Velhos e novos mitos do rural brasileiro. Estudos Avançados, n. 43, dez. 2001.       sistema do Código Civil. Disponível em: www.mp.rs.gov.br. Acesso em: 20 fev. 2013.
-Sobre o espaço brasileiro, o texto apresenta argumentos                                       Os movimentos em prol da reforma agrária, que
-que refletem a                                                                                atuam com base no conceito de direito à propriedade
+aposentados que mantêm residência rural. JELINEK, R. O princípio da função social da propriedade e sua repercussão sobre o
+SILVA, J. G. Velhos e novos mitos do rural brasileiro. Estudos Avançados, n. 43, dez. 2001. sistema do Código Civil. Disponível em: www.mp.rs.gov.br. Acesso em: 20 fev. 2013.
+Sobre o espaço brasileiro, o texto apresenta argumentos Os movimentos em prol da reforma agrária, que
+que refletem a atuam com base no conceito de direito à propriedade
 apresentado no texto, propõem-se a
 - A) heterogeneidade do modo de vida agrário.
-- B) redução do fluxo populacional nas cidades.                                                  A     reverter o processo de privatização fundiária.
-- C) correlação entre força de trabalho e migração sazonal.                                      B     ressaltar a inviabilidade da produção latifundiária.
-- D) indissociabilidade entre local de moradia e acesso à                                        C     defender a desapropriação dos espaços improdutivos.
-renda.                                                                                      D     impedir a produção exportadora nas terras agricultáveis.
-- E) desregulamentação das propriedades nas zonas de                                             E coibir o funcionamento de empresas agroindustriais
-fronteira.                                                                                    no campo.
+- B) redução do fluxo populacional nas cidades. A reverter o processo de privatização fundiária.
+- C) correlação entre força de trabalho e migração sazonal. B ressaltar a inviabilidade da produção latifundiária.
+- D) indissociabilidade entre local de moradia e acesso à C defender a desapropriação dos espaços improdutivos.
+renda. D impedir a produção exportadora nas terras agricultáveis.
+- E) desregulamentação das propriedades nas zonas de E coibir o funcionamento de empresas agroindustriais
+fronteira. no campo.
 CH - 1° dia | Caderno 1 - AZUL - Página 20
 
 ## Questão 050
@@ -1478,7 +1478,7 @@ Zona de pastoreio e cultura do algodão e cereais do agreste (1963)
 PASTOREIO - - - - - - - - - - - - - - -
 PLANTIO E LIMPA - - - - - - - - - -
 CRESCIMENTO- - - - - - - - - - -
-CONVENÇÕES                COLHEITA DE FEIJÃO - - - - - - - -
+CONVENÇÕES COLHEITA DE FEIJÃO - - - - - - - -
 COLHEITA DE MILHO VERDE - - -
 COLHEITA DE MILHO SECO - - -
 COLHEITA DE ALGODÃO - - - - - -
@@ -1503,23 +1503,23 @@ CH - 1° dia | Caderno 1 - AZUL - Página 21
 - Área: Ciências Humanas
 - Gabarito: A
 
-Dois grandes eventos históricos tornaram possível                                            A arte pré-histórica africana foi incontestavelmente um
-um caso como o de Menocchio: a invenção da imprensa                                           veículo de mensagens pedagógicas e sociais. Os San,
+Dois grandes eventos históricos tornaram possível A arte pré-histórica africana foi incontestavelmente um
+um caso como o de Menocchio: a invenção da imprensa veículo de mensagens pedagógicas e sociais. Os San,
 que constituem hoje o povo mais próximo da realidade
 e a Reforma. A imprensa lhe permitiu confrontar os
 das representações rupestres, afirmam que seus
 livros com a tradição oral em que havia crescido e lhe
 antepassados lhes explicaram sua visão do mundo a partir
-forneceu as palavras para organizar o amontoado de                                            desse gigantesco livro de imagens que são as galerias.
-ideias e fantasias que nele conviviam. A Reforma lhe                                          A educação dos povos que desconhecem a escrita está
-deu audácia para comunicar o que pensava ao padre do                                          baseada sobretudo na imagem e no som, no audiovisual.
+forneceu as palavras para organizar o amontoado de desse gigantesco livro de imagens que são as galerias.
+ideias e fantasias que nele conviviam. A Reforma lhe A educação dos povos que desconhecem a escrita está
+deu audácia para comunicar o que pensava ao padre do baseada sobretudo na imagem e no som, no audiovisual.
 KI-ZERBO, J. A arte pré-histórica africana. In: KI-ZERBO, J. (Org.)
-vilarejo, conterrâneos, inquisidores — mesmo não tendo                                                              História geral da África, I: metodologia e pré-história da África.
+vilarejo, conterrâneos, inquisidores — mesmo não tendo História geral da África, I: metodologia e pré-história da África.
 Brasília: Unesco, 2010.
 conseguido dizer tudo diante do papa, dos cardeais e dos
 De acordo com o texto, a arte mencionada é importante
 príncipes, como queria.
-GINZBURG, C. O queijo e os vermes: o cotidiano e as ideias de um moleiro perseguido         para os povos que a cultivam por colaborar para o(a)
+GINZBURG, C. O queijo e os vermes: o cotidiano e as ideias de um moleiro perseguido para os povos que a cultivam por colaborar para o(a)
 pela Inquisição. São Paulo: Cia. das Letras, 2006.
 - A) transmissão dos saberes acumulados.
 Os acontecimentos históricos citados ajudaram esse
@@ -1549,27 +1549,27 @@ tudo o que você julgasse ser o mundo externo real fosse
 - Área: Ciências Humanas
 - Gabarito: D
 
-“Devo estar chegando perto do centro da Terra. Deixe                                     jamais fosse despertar? Se assim fosse, então é claro
-ver: deve ter sido mais de seis mil quilômetros, por aí...”                                   que você nunca poderia despertar, como faz quando
-(como se vê, Alice tinha aprendido uma porção de coisas                                       sonha, pois significaria que não há mundo “real” no qual
-desse tipo na escola, e embora essa não fosse uma                                             despertar. Logo, não seria exatamente igual a um sonho
-oportunidade lá muito boa de demonstrar conhecimentos,                                        ou alucinação normal.
-já que não havia ninguém por perto para escutá-la, em                                                NAGEL, T. Uma breve introdução à filosofia. São Paulo: Martins Fontes, 2011.
-todo caso era bom praticar um pouco) “... sim, deve ser                                       O texto confere visibilidade a uma doutrina filosófica
-mais ou menos essa a distância... mas então qual seria                                        contemporânea conhecida como:
-a latitude ou longitude em que estou?” (Alice não tinha                                       A Personalismo, que vincula a realidade circundante
-a menor ideia do que fosse latitude ou longitude, mas                                           aos domínios do pessoal.
+“Devo estar chegando perto do centro da Terra. Deixe jamais fosse despertar? Se assim fosse, então é claro
+ver: deve ter sido mais de seis mil quilômetros, por aí...” que você nunca poderia despertar, como faz quando
+(como se vê, Alice tinha aprendido uma porção de coisas sonha, pois significaria que não há mundo “real” no qual
+desse tipo na escola, e embora essa não fosse uma despertar. Logo, não seria exatamente igual a um sonho
+oportunidade lá muito boa de demonstrar conhecimentos, ou alucinação normal.
+já que não havia ninguém por perto para escutá-la, em NAGEL, T. Uma breve introdução à filosofia. São Paulo: Martins Fontes, 2011.
+todo caso era bom praticar um pouco) “... sim, deve ser O texto confere visibilidade a uma doutrina filosófica
+mais ou menos essa a distância... mas então qual seria contemporânea conhecida como:
+a latitude ou longitude em que estou?” (Alice não tinha A Personalismo, que vincula a realidade circundante
+a menor ideia do que fosse latitude ou longitude, mas aos domínios do pessoal.
 achou que eram palavras muito imponentes).
 CARROLL, L. Aventuras de Alice: no País das Maravilhas, Através do espelho e outros textos.
 B Falsificacionismo, que estabelece ciclos de problemas
-São Paulo: Summus, 1980.          para refutar uma conjectura.
+São Paulo: Summus, 1980. para refutar uma conjectura.
 O texto descreve uma confusão da personagem em
 C Falibilismo, que rejeita mecanismos mentais para
-relação                                                                                         sustentar uma crença inequívoca.
-- A) ao tipo de projeção cartográfica.                                                           D Idealismo, que nega a existência de objetos
-- B) aos contornos dos fusos horários.                                                             independentemente do trabalho cognoscente.
-- C) à localização do norte magnético.                                                           E Solipsismo, que reconhece limitações cognitivas para
-- D) aos referenciais de posição relativa.                                                         compreender uma experiência compartilhada.
+relação sustentar uma crença inequívoca.
+- A) ao tipo de projeção cartográfica. D Idealismo, que nega a existência de objetos
+- B) aos contornos dos fusos horários. independentemente do trabalho cognoscente.
+- C) à localização do norte magnético. E Solipsismo, que reconhece limitações cognitivas para
+- D) aos referenciais de posição relativa. compreender uma experiência compartilhada.
 - E) às distorções das formas continentais.
 CH - 1° dia | Caderno 1 - AZUL - Página 22
 
@@ -1585,39 +1585,39 @@ CH - 1° dia | Caderno 1 - AZUL - Página 22
 - Área: Ciências Humanas
 - Gabarito: C
 
-A demanda mundial para a produção de alimentos                                          Escudos antigos ou maciços cristalinos são
-aumenta progressivamente a taxas muito altas.                                           blocos imensos de rochas antigas. Estes escudos
+A demanda mundial para a produção de alimentos Escudos antigos ou maciços cristalinos são
+aumenta progressivamente a taxas muito altas. blocos imensos de rochas antigas. Estes escudos
 Atualmente, na maioria dos países, continentes e regiões,
 são constituídos por rochas cristalinas (magmático-
 a água consumida na agricultura é de cerca de 70% da
-disponibilidade total.                                                                  plutônicas), formadas em eras pré-cambrianas, ou
-TUNDISI, J. G. Recursos hídricos no futuro: problemas e soluções.   por rochas metamórficas (material sedimentar) do
+disponibilidade total. plutônicas), formadas em eras pré-cambrianas, ou
+TUNDISI, J. G. Recursos hídricos no futuro: problemas e soluções. por rochas metamórficas (material sedimentar) do
 Estudos Avançados, n. 63, 2008 (adaptado).
 Paleozoico. São resistentes, estáveis, porém bastante
 Para que haja a redução da pressão sobre o recurso
 desgastadas. Correspondem a 36% da área territorial
 natural mencionado, a expansão da agricultura demanda
-melhorias no(a)                                                                         e dividem-se em duas grandes porções: o Escudo das
+melhorias no(a) e dividem-se em duas grandes porções: o Escudo das
 Guianas (norte da Planície Amazônica) e o Escudo
 - A) fertilização química do solo.
 Brasileiro (porção centro-oriental brasileira).
-- B) escoamento hídrico do terreno.                                                                   Disponível em: http://ambientes.ambientebrasil.com.br. Acesso em: 25 jun. 2015.
+- B) escoamento hídrico do terreno. Disponível em: http://ambientes.ambientebrasil.com.br. Acesso em: 25 jun. 2015.
 - C) manutenção de poços artesianos.
 As estruturas geológicas indicadas no texto são
-- D) eficiência das técnicas de irrigação.                                                 importantes economicamente para o Brasil por
-- E) velocidade das máquinas colheitadeiras.                                               concentrarem
+- D) eficiência das técnicas de irrigação. importantes economicamente para o Brasil por
+- E) velocidade das máquinas colheitadeiras. concentrarem
 
 ## Questão 057
 
 - Área: Ciências Humanas
 - Gabarito: B
 
-A     fontes de águas termais.
+A fontes de águas termais.
 No caso do Departamento de Defesa dos Estados
-Unidos, a ênfase está posta no traçado de uma estratégia                                B     afloramentos de sal-gema.
-geral de desarticulação, não só dos inimigos reais como                                 C     jazidas de minerais metálicos.
-dos potenciais, inserida na concepção preventiva que                                    D     depósitos de calcário agrícola.
-supõe que a mínima dissidência é um sinal de perigo e de                                E     reservas de combustível fóssil.
+Unidos, a ênfase está posta no traçado de uma estratégia B afloramentos de sal-gema.
+geral de desarticulação, não só dos inimigos reais como C jazidas de minerais metálicos.
+dos potenciais, inserida na concepção preventiva que D depósitos de calcário agrícola.
+supõe que a mínima dissidência é um sinal de perigo e de E reservas de combustível fóssil.
 guerra futura. Deve-se ter capacidade para responder a
 uma guerra convencional tanto quanto para enfrentar um
 
@@ -1626,21 +1626,21 @@ uma guerra convencional tanto quanto para enfrentar um
 - Área: Ciências Humanas
 - Gabarito: E
 
-inimigo difuso, atentando simultaneamente para todas                                        Em A morte de Ivan Ilitch, Tolstoi descreve com
-as áreas geográficas do planeta. Trata-se, sem dúvida,                                  detalhes repulsivos o terror de encarar a morte
-da estratégia com pretensões mais abrangentes que se                                    iminente. Ilitch adoece depois de um pequeno acidente
-desenvolveu até agora.                                                                  e logo compreende que se encaminha para o fim de
+inimigo difuso, atentando simultaneamente para todas Em A morte de Ivan Ilitch, Tolstoi descreve com
+as áreas geográficas do planeta. Trata-se, sem dúvida, detalhes repulsivos o terror de encarar a morte
+da estratégia com pretensões mais abrangentes que se iminente. Ilitch adoece depois de um pequeno acidente
+desenvolveu até agora. e logo compreende que se encaminha para o fim de
 CECEÑA, A. E. Hegemonias e emancipações no século XXI.
-Buenos Aires: Clacso, 2005 (adaptado).       modo impossível de parar. “Nas profundezas de seu
-Tomando o texto como parâmetro, qual tendência                                          coração, ele sabia estar morrendo, mas em vez de se
+Buenos Aires: Clacso, 2005 (adaptado). modo impossível de parar. “Nas profundezas de seu
+Tomando o texto como parâmetro, qual tendência coração, ele sabia estar morrendo, mas em vez de se
 contemporânea impulsiona a formulação de estratégias
 acostumar com a ideia, simplesmente não o fazia e não
 mais abrangentes por parte do Estado americano?
 conseguia compreendê-la”.
-- A) Erradicação dos conflitos em territórios.                                             KAZEZ, J. O peso das coisas: filosofia para o bem-viver. Rio de Janeiro: Tinta Negra, 2004.
-- B) Propagação de organizações em redes.                                                  O texto descreve a experiência do personagem de Tolstoi
-- C) Eliminação das diferenças regionais.                                                  diante de um aspecto incontornável de nossas vidas.
-- D) Ampliação de modelo democrático.                                                      Esse aspecto foi um tema central na tradição filosófica
+- A) Erradicação dos conflitos em territórios. KAZEZ, J. O peso das coisas: filosofia para o bem-viver. Rio de Janeiro: Tinta Negra, 2004.
+- B) Propagação de organizações em redes. O texto descreve a experiência do personagem de Tolstoi
+- C) Eliminação das diferenças regionais. diante de um aspecto incontornável de nossas vidas.
+- D) Ampliação de modelo democrático. Esse aspecto foi um tema central na tradição filosófica
 - E) Projeção da diplomacia mundial.
 - A) marxista, no contexto do materialismo histórico.
 
@@ -1649,10 +1649,10 @@ conseguia compreendê-la”.
 - Área: Ciências Humanas
 - Gabarito: E
 
-O planejamento deixou de controlar o crescimento                                    B     logicista, no propósito de entendimento dos fatos.
-urbano e passou a encorajá-lo por todos os meios                                        C     utilitarista, no sentido da racionalidade das ações.
-possíveis e imagináveis. Cidades, a nova mensagem                                       D     pós-modernista, na discussão da fluidez das relações.
-soou em alto e bom som, eram máquinas de produzir                                       E     existencialista, na questão do reconhecimento de si.
+O planejamento deixou de controlar o crescimento B logicista, no propósito de entendimento dos fatos.
+urbano e passou a encorajá-lo por todos os meios C utilitarista, no sentido da racionalidade das ações.
+possíveis e imagináveis. Cidades, a nova mensagem D pós-modernista, na discussão da fluidez das relações.
+soou em alto e bom som, eram máquinas de produzir E existencialista, na questão do reconhecimento de si.
 riquezas; o primeiro e principal objetivo do planejamento
 devia ser o de azeitar a máquina.
 HALL, P. Cidades do amanhã: uma história intelectual do planejamento e do projeto
@@ -1693,12 +1693,12 @@ tempos em que os europeus do Renascimento se
 o ócio) veio sepultar o império do repouso, da folga e da
 aventuraram pelos mares e lhe cravaram os dentes
 preguiça, criando uma ética positiva do trabalho.
-na garganta. Passaram-se os séculos e a América                                           ANTUNES, R. O século XX e a era da degradação do trabalho. In: SILVA, J. P. (Org.).
-Latina aprimorou suas funções.                                                                 Por uma sociologia do século XX. São Paulo: Annablume, 2007 (adaptado).
-GALEANO, E. As veias abertas da América Latina. São Paulo: Paz e Terra, 1978.     O processo de ressignificação do trabalho nas sociedades
-Escrito na década de 1970, o texto considera a                                          modernas teve início a partir do surgimento de uma nova
-participação da América Latina na Divisão Internacional                                 mentalidade, influenciada pela
-do Trabalho marcada pela                                                                A reforma higienista, que combateu o caráter excessivo
+na garganta. Passaram-se os séculos e a América ANTUNES, R. O século XX e a era da degradação do trabalho. In: SILVA, J. P. (Org.).
+Latina aprimorou suas funções. Por uma sociologia do século XX. São Paulo: Annablume, 2007 (adaptado).
+GALEANO, E. As veias abertas da América Latina. São Paulo: Paz e Terra, 1978. O processo de ressignificação do trabalho nas sociedades
+Escrito na década de 1970, o texto considera a modernas teve início a partir do surgimento de uma nova
+participação da América Latina na Divisão Internacional mentalidade, influenciada pela
+do Trabalho marcada pela A reforma higienista, que combateu o caráter excessivo
 e insalubre do trabalho fabril.
 - A) produção inovadora de padrões de tecnologia.
 - B) Reforma Protestante, que expressou a importância
@@ -1716,8 +1716,8 @@ anarquismo reivindicando direitos trabalhistas.
 - Área: Ciências Humanas
 - Gabarito: B
 
-Sexto rei sumério (governante entre os séculos XVIII e                             E visão do catolicismo, que, desde a Idade Média,
-XVII a.C.) e nascido em Babel, “Khammu-rabi” (pronúncia                                    defendia a dignidade do trabalho e do lucro.
+Sexto rei sumério (governante entre os séculos XVIII e E visão do catolicismo, que, desde a Idade Média,
+XVII a.C.) e nascido em Babel, “Khammu-rabi” (pronúncia defendia a dignidade do trabalho e do lucro.
 em babilônio) foi fundador do I Império Babilônico
 
 ## Questão 064
@@ -1725,31 +1725,31 @@ em babilônio) foi fundador do I Império Babilônico
 - Área: Ciências Humanas
 - Gabarito: E
 
-(correspondente ao atual Iraque), unificando amplamente                                     É difícil imaginar que nos anos 1990, num país
-o mundo mesopotâmico, unindo os semitas e os sumérios                                   com setores da população na pobreza absoluta e sem
-e levando a Babilônia ao máximo esplendor. O nome                                       uma rede de benefícios sociais em que se apoiar, um
-de Hamurabi permanece indissociavelmente ligado ao                                      governo possa abandonar o papel de promotor de
-código jurídico tido como o mais remoto já descoberto: o                                programas de geração de emprego, de assistência
-Código de Hamurabi. O legislador babilônico consolidou                                  social, de desenvolvimento da infraestrutura e de
-a tradição jurídica, harmonizou os costumes e estendeu o                                promoção de regiões excluídas, na expectativa de
-direito e a lei a todos os súditos.                                                     que o mercado venha algum dia a dar uma resposta
+(correspondente ao atual Iraque), unificando amplamente É difícil imaginar que nos anos 1990, num país
+o mundo mesopotâmico, unindo os semitas e os sumérios com setores da população na pobreza absoluta e sem
+e levando a Babilônia ao máximo esplendor. O nome uma rede de benefícios sociais em que se apoiar, um
+de Hamurabi permanece indissociavelmente ligado ao governo possa abandonar o papel de promotor de
+código jurídico tido como o mais remoto já descoberto: o programas de geração de emprego, de assistência
+Código de Hamurabi. O legislador babilônico consolidou social, de desenvolvimento da infraestrutura e de
+a tradição jurídica, harmonizou os costumes e estendeu o promoção de regiões excluídas, na expectativa de
+direito e a lei a todos os súditos. que o mercado venha algum dia a dar uma resposta
 Disponível em: www.direitoshumanos.usp.br. Acesso em: 12 fev. 2013 (adaptado).
 adequada a tudo isso.
 SORJ, B. A nova sociedade brasileira. Rio de Janeiro: Jorge Zahar, 2000 (adaptado).
 Nesse contexto de organização da vida social, as leis
-contidas no Código citado tinham o sentido de                                           Nesse contexto, a criticada postura dos governos frente
+contidas no Código citado tinham o sentido de Nesse contexto, a criticada postura dos governos frente
 à situação social do país coincidiu com a priorização de
-- A) assegurar garantias individuais aos cidadãos livres.                                  que medidas?
+- A) assegurar garantias individuais aos cidadãos livres. que medidas?
 - B) tipificar regras referentes aos atos dignos de
 - A) Expansão dos investimentos nas empresas públicas
 punição.
 e nos bancos estatais.
-- C) conceder benefícios de indulto aos prisioneiros de                                    B Democratização do crédito habitacional e da aquisição
-guerra.                                                                                 de moradias populares.
-- D) promover distribuição de terras aos desempregados                                     C Enxugamento da carga fiscal individual e da
-urbanos.                                                                                contribuição tributária empresarial.
-- E) conferir prerrogativas políticas aos descendentes de                                  D Reformulação do acesso ao ensino superior e do
-estrangeiros.                                                                         financiamento científico nacional.
+- C) conceder benefícios de indulto aos prisioneiros de B Democratização do crédito habitacional e da aquisição
+guerra. de moradias populares.
+- D) promover distribuição de terras aos desempregados C Enxugamento da carga fiscal individual e da
+urbanos. contribuição tributária empresarial.
+- E) conferir prerrogativas políticas aos descendentes de D Reformulação do acesso ao ensino superior e do
+estrangeiros. financiamento científico nacional.
 - E) Reforma das políticas macroeconômicas e dos
 mecanismos de controle inflacionário.
 CH - 1° dia | Caderno 1 - AZUL - Página 24
@@ -1795,12 +1795,12 @@ CH - 1° dia | Caderno 1 - AZUL - Página 25
 - Gabarito: B
 
 a história do indivíduo por se constituir como
-Vale da Grande                                                               possibilidade de
-Fenda                                                                        A   adesão ao método positivista.
-Vulcões                                                                      B   expressão do papel das elites.
-C   resgate das narrativas heroicas.
-D   acesso ao cotidiano das comunidades.
-E   interpretação das manifestações do divino.
+Vale da Grande possibilidade de
+Fenda A adesão ao método positivista.
+Vulcões B expressão do papel das elites.
+C resgate das narrativas heroicas.
+D acesso ao cotidiano das comunidades.
+E interpretação das manifestações do divino.
 
 ## Questão 069
 
@@ -1821,11 +1821,11 @@ FERES JR., J.; POGREBINSCHI, T. Teoria política contemporânea: uma introduçã
 Rio de Janeiro: Elsevier, 2010.
 No contexto do pensamento político, a ideia apresentada
 mostra-se consoante o(a)
-A   ideal republicano de governo.
-B   corrente tripartite dos poderes.
-Disponível em: https://noticias.uol.com.br. Acesso em: 13 jun. 2018 (adaptado).   C   posicionamento crítico do socialismo.
-Os aspectos físicos apresentados originam-se da atuação                                    D   legitimidade do absolutismo monárquico.
-da força natural de                                                                        E   entendimento do contratualismo moderno.
+A ideal republicano de governo.
+B corrente tripartite dos poderes.
+Disponível em: https://noticias.uol.com.br. Acesso em: 13 jun. 2018 (adaptado). C posicionamento crítico do socialismo.
+Os aspectos físicos apresentados originam-se da atuação D legitimidade do absolutismo monárquico.
+da força natural de E entendimento do contratualismo moderno.
 
 ## Questão 070
 
@@ -1833,12 +1833,12 @@ da força natural de                                                            
 - Gabarito: E
 
 - A) colisão de placas tectônicas.
-- B) rifteamento da crosta terrestre.                                                             Com efeito, até a destruição de Cartago, o povo e o
+- B) rifteamento da crosta terrestre. Com efeito, até a destruição de Cartago, o povo e o
 Senado romano governavam a República em harmonia
 - C) subducção da plataforma oceânica.
 e sem paixão, e não havia entre os cidadãos luta por
-- D) formação de cadeias montanhosas.                                                         glória ou dominação; o medo do inimigo mantinha a
-- E) metamorfismo de bordas continentais.                                                     cidade no cumprimento do dever. Mas, assim que o
+- D) formação de cadeias montanhosas. glória ou dominação; o medo do inimigo mantinha a
+- E) metamorfismo de bordas continentais. cidade no cumprimento do dever. Mas, assim que o
 
 ## Questão 068
 
@@ -1846,14 +1846,14 @@ e sem paixão, e não havia entre os cidadãos luta por
 - Gabarito: D
 
 males pelos quais a prosperidade tem predileção, isto
-A reabilitação da biografia histórica integrou as                                      é, a libertinagem e o orgulho.
-aquisições da história social e cultural, oferecendo                                                        SALÚSTIO. A conjuração de Catilina/A guerra de Jugurta. Petrópolis:
+A reabilitação da biografia histórica integrou as é, a libertinagem e o orgulho.
+aquisições da história social e cultural, oferecendo SALÚSTIO. A conjuração de Catilina/A guerra de Jugurta. Petrópolis:
 Vozes, 1990 (adaptado).
 aos diferentes atores históricos uma importância
 O acontecimento histórico mencionado no texto de
 diferenciada, distinta, individual. Mas não se tratava
 Salústio, datado de I a.C., manteve correspondência com
-mais de fazer, simplesmente, a história dos grandes                                        o processo de
+mais de fazer, simplesmente, a história dos grandes o processo de
 nomes, em formato hagiográfico — quase uma vida
 A demarcação de terras públicas.
 de santo —, sem problemas, nem máculas. Mas de
@@ -1863,7 +1863,7 @@ C restrição da cidadania por parentesco.
 testemunhas, como reflexos, como reveladores de uma
 D restauração de instituições ancestrais.
 época.
-DEL PRIORE, M. Biografia: quando o indivíduo encontra a história.     E expansão das fronteiras extrapeninsulares.
+DEL PRIORE, M. Biografia: quando o indivíduo encontra a história. E expansão das fronteiras extrapeninsulares.
 Topoi, n. 19, jul.-dez. 2009.
 CH - 1° dia | Caderno 1 - AZUL - Página 26
 
@@ -1879,30 +1879,30 @@ CH - 1° dia | Caderno 1 - AZUL - Página 26
 - Área: Ciências Humanas
 - Gabarito: C
 
-O cântico da terra                                                      Declaração de Salamanca – 1994
+O cântico da terra Declaração de Salamanca – 1994
 Acreditamos e proclamamos que: toda criança
 Eu sou a terra, eu sou a vida.
 tem direito fundamental à educação e deve ser dada
-A ti, ó lavrador, tudo quanto é meu.                                         a oportunidade de atingir e manter o nível adequado
-Teu arado, tua foice, teu machado.                                           de aprendizagem; toda criança possui características,
+A ti, ó lavrador, tudo quanto é meu. a oportunidade de atingir e manter o nível adequado
+Teu arado, tua foice, teu machado. de aprendizagem; toda criança possui características,
 interesses, habilidades e necessidades de aprendizagem
 O berço pequenino de teu filho.
 que são únicas; sistemas educacionais deveriam ser
-O algodão de tua veste                                                       designados e programas educacionais deveriam ser
-e o pão de tua casa.                                                         implementados no sentido de se levar em conta a vasta
+O algodão de tua veste designados e programas educacionais deveriam ser
+e o pão de tua casa. implementados no sentido de se levar em conta a vasta
 diversidade de tais características e necessidades.
-E um dia bem distante                                                                                Disponível em: http://portal.mec.gov.br. Acesso em: 4 out. 2015.
+E um dia bem distante Disponível em: http://portal.mec.gov.br. Acesso em: 4 out. 2015.
 a mim tu voltarás.
 Como signatário da Declaração citada, o Brasil
-E no canteiro materno de meu seio                                            comprometeu-se com a elaboração de políticas públicas
-tranquilo dormirás.                                                          educacionais que contemplem a
-Plantemos a roça.                                                            A criação de privilégios.
+E no canteiro materno de meu seio comprometeu-se com a elaboração de políticas públicas
+tranquilo dormirás. educacionais que contemplem a
+Plantemos a roça. A criação de privilégios.
 B contenção dos gastos.
 Lavremos a gleba.
 CORALINA, C. Textos e contextos: poemas dos becos de Goiás e estórias mais.
 C pluralidade dos sujeitos.
-São Paulo: Global, 1997 (fragmento).   D padronização do currículo.
-No contexto das distintas formas de apropriação da terra,                           E valorização da meritocracia.
+São Paulo: Global, 1997 (fragmento). D padronização do currículo.
+No contexto das distintas formas de apropriação da terra, E valorização da meritocracia.
 o poema de Cora Coralina valoriza a relação entre
 
 ## Questão 074
@@ -1910,11 +1910,11 @@ o poema de Cora Coralina valoriza a relação entre
 - Área: Ciências Humanas
 - Gabarito: C
 
-- A) grileiros e controle territorial.                                               TEXTO I
-- B) meeiros e divisão do trabalho.                                                      Os meus pensamentos são todos sensações.
-- C) camponeses e uso da natureza.                                                       Penso com os olhos e com os ouvidos
-- D) indígenas e manejo agroecológico.                                                   E com as mãos e os pés
-- E) latifundiários e fertilização do solo.                                              E com o nariz e a boca.
+- A) grileiros e controle territorial. TEXTO I
+- B) meeiros e divisão do trabalho. Os meus pensamentos são todos sensações.
+- C) camponeses e uso da natureza. Penso com os olhos e com os ouvidos
+- D) indígenas e manejo agroecológico. E com as mãos e os pés
+- E) latifundiários e fertilização do solo. E com o nariz e a boca.
 PESSOA, F. O guardador de rebanhos – IX. In: GALHOZ, M. A. (Org.). Obras poéticas.
 
 ## Questão 072
@@ -1922,7 +1922,7 @@ PESSOA, F. O guardador de rebanhos – IX. In: GALHOZ, M. A. (Org.). Obras poét
 - Área: Ciências Humanas
 - Gabarito: B
 
-Montaigne deu o nome para um novo gênero                                        TEXTO II
+Montaigne deu o nome para um novo gênero TEXTO II
 literário; foi dos primeiros a instituir na literatura
 Tudo aquilo que sei do mundo, mesmo por ciência, eu
 moderna um espaço privado, o espaço do “eu”, do texto
@@ -1931,16 +1931,16 @@ o sei a partir de uma visão minha ou de uma experiência
 do mundo sem a qual os símbolos da ciência não
 no qual hesitações, autocríticas, correções entram no
 poderiam dizer nada.
-próprio texto.                                                                                          MERLEAU-PONTY, M. Fenomenologia da percepção. São Paulo:
-COELHO, M. Montaigne. São Paulo: Publifolha, 2001 (adaptado).                                                 Martins Fontes, 1999 (adaptado).
-O novo gênero de escrita aludido no texto é o(a)                                    Os textos mostram-se alinhados a um entendimento
+próprio texto. MERLEAU-PONTY, M. Fenomenologia da percepção. São Paulo:
+COELHO, M. Montaigne. São Paulo: Publifolha, 2001 (adaptado). Martins Fontes, 1999 (adaptado).
+O novo gênero de escrita aludido no texto é o(a) Os textos mostram-se alinhados a um entendimento
 acerca da ideia de conhecimento, numa perspectiva que
 - A) confissão, que relata experiências de transformação.
 ampara a
 - B) ensaio, que expõe concepções subjetivas de um tema.
-- C) carta, que comunica informações para um conhecido.                              A anterioridade da razão no domínio cognitivo.
-- D) meditação,        que      propõe         preparações           para       o    B confirmação da existência de saberes inatos.
-conhecimento.                                                                   C valorização do corpo na apreensão da realidade.
+- C) carta, que comunica informações para um conhecido. A anterioridade da razão no domínio cognitivo.
+- D) meditação, que propõe preparações para o B confirmação da existência de saberes inatos.
+conhecimento. C valorização do corpo na apreensão da realidade.
 - E) diálogo, que discute assuntos com diferentes
 - D) verificabilidade de proposições no campo da lógica.
 interlocutores.
@@ -1952,19 +1952,19 @@ CH - 1° dia | Caderno 1 - AZUL - Página 27
 - Área: Ciências Humanas
 - Gabarito: C
 
-Afirmar que a cartografia da época moderna integrou o                                   associa dois elementos essenciais à discussão sobre a
-processo de invenção da América por parte dos europeus                                       vida em comunidade, a saber:
-significa que os conhecimentos dos ameríndios sobre o                                        A Ética e política, pois conduzem à eudaimonia.
-território foram ignorados pela cartografia europeia ou que                                  B Retórica e linguagem, pois cuidam dos discursos
-eles foram privados de sua representação territorial e da                                      na ágora.
-autoridade que seus conhecimentos tinham sobre o espaço.                                     C Metafísica e ontologia, pois tratam da filosofia primeira.
+Afirmar que a cartografia da época moderna integrou o associa dois elementos essenciais à discussão sobre a
+processo de invenção da América por parte dos europeus vida em comunidade, a saber:
+significa que os conhecimentos dos ameríndios sobre o A Ética e política, pois conduzem à eudaimonia.
+território foram ignorados pela cartografia europeia ou que B Retórica e linguagem, pois cuidam dos discursos
+eles foram privados de sua representação territorial e da na ágora.
+autoridade que seus conhecimentos tinham sobre o espaço. C Metafísica e ontologia, pois tratam da filosofia primeira.
 OLIVEIRA, T. K. Desconstruindo mapas, revelando espacializações: reflexões sobre o uso
 da cartografia em estudos sobre o Brasil colonial. Revista Brasileira de História,
 D Democracia e sociedade, pois se referem a relações
 n. 68, 2014 (adaptado).
 sociais.
-Na análise contida no texto, a representação cartográfica                                    E Geração e corrupção, pois abarcam o campo da
-da América foi marcada por                                                                     physis.
+Na análise contida no texto, a representação cartográfica E Geração e corrupção, pois abarcam o campo da
+da América foi marcada por physis.
 A asserção da cultura dos nativos.
 
 ## Questão 078
@@ -1972,10 +1972,10 @@ A asserção da cultura dos nativos.
 - Área: Ciências Humanas
 - Gabarito: C
 
-B avanço dos estudos do ambiente.                                                                O toyotismo, a partir dos anos 1970, teve grande
-C afirmação das formas de dominação.                                                         impacto no mundo ocidental, quando se mostrou para
-D exatidão da demarcação das regiões.                                                        os países avançados como uma opção possível para a
-E aprimoramento do conceito de fronteira.                                                    superação de uma crise de acumulação.
+B avanço dos estudos do ambiente. O toyotismo, a partir dos anos 1970, teve grande
+C afirmação das formas de dominação. impacto no mundo ocidental, quando se mostrou para
+D exatidão da demarcação das regiões. os países avançados como uma opção possível para a
+E aprimoramento do conceito de fronteira. superação de uma crise de acumulação.
 ANTUNES, R. Os sentidos do trabalho: ensaio sobre a afirmação e a negação do trabalho.
 
 ## Questão 076
@@ -1983,15 +1983,15 @@ ANTUNES, R. Os sentidos do trabalho: ensaio sobre a afirmação e a negação do
 - Área: Ciências Humanas
 - Gabarito: B
 
-A principal característica da situação social dos                                        A característica organizacional do modelo em questão,
-anglo-americanos é seu caráter eminentemente                                                 requerida no contexto de crise, foi o(a)
+A principal característica da situação social dos A característica organizacional do modelo em questão,
+anglo-americanos é seu caráter eminentemente requerida no contexto de crise, foi o(a)
 democrático. Afirmei anteriormente que reinava uma
 A expansão dos grandes estoques.
 igualdade muito grande entre os emigrantes que foram
-se estabelecer na Nova Inglaterra. Para isso contribuiu                                      B incremento da fabricação em massa.
-a influência das leis de sucessão. Estabelecidas                                             C adequação da produção à demanda.
-de uma maneira, as leis de sucessão reúnem,                                                  D aumento da mecanização do trabalho.
-concentram e agrupam em um só a propriedade e o                                              E centralização das etapas de planejamento.
+se estabelecer na Nova Inglaterra. Para isso contribuiu B incremento da fabricação em massa.
+a influência das leis de sucessão. Estabelecidas C adequação da produção à demanda.
+de uma maneira, as leis de sucessão reúnem, D aumento da mecanização do trabalho.
+concentram e agrupam em um só a propriedade e o E centralização das etapas de planejamento.
 poder. Estabelecidas por outros princípios, produzem
 
 ## Questão 079
@@ -1999,9 +1999,9 @@ poder. Estabelecidas por outros princípios, produzem
 - Área: Ciências Humanas
 - Gabarito: D
 
-o oposto: dividem, partilham e disseminam os bens e                                               O fenômeno histórico conhecido como “tráfico de
+o oposto: dividem, partilham e disseminam os bens e O fenômeno histórico conhecido como “tráfico de
 o poder.
-TOCQUEVILLE, A. A democracia na América. Belo Horizonte: Itatiaia;        coolies” esteve associado diretamente ao período que vai
+TOCQUEVILLE, A. A democracia na América. Belo Horizonte: Itatiaia; coolies” esteve associado diretamente ao período que vai
 São Paulo: Edusp, 1977 (adaptado).
 do final da década de 1840 até o ano de 1874, quando
 O texto tematiza o papel desempenhado por uma norma
@@ -2011,24 +2011,24 @@ para Cuba e Peru e muitos abusos no recrutamento de
 - A) emprego do trabalho escravo.
 mão de obra foram identificados. O tráfico de coolies
 - B) consolidação dos valores burgueses.
-- C) banimento das dissidências religiosas.                                                     ou, em outros termos, o transporte por meios coativos
-- D) contenção da identificação nacionalista.                                                   de mão de obra de um lugar para outro, foi comparado
-- E) hierarquização dos agentes econômicos.                                                     ao tráfico africano de escravos por muitos periodistas e
+- C) banimento das dissidências religiosas. ou, em outros termos, o transporte por meios coativos
+- D) contenção da identificação nacionalista. de mão de obra de um lugar para outro, foi comparado
+- E) hierarquização dos agentes econômicos. ao tráfico africano de escravos por muitos periodistas e
 
 ## Questão 077
 
 - Área: Ciências Humanas
 - Gabarito: A
 
-Vemos que toda cidade é uma espécie de                                                       SANTOS, M. A. Migrações e trabalho sob contrato no século XIX. História, n. 12, 2017.
-comunidade, e toda comunidade se forma com vistas                                            A comparação mencionada no texto foi possível em razão
-a algum bem, pois todas as ações de todos os homens                                          da seguinte característica:
+Vemos que toda cidade é uma espécie de SANTOS, M. A. Migrações e trabalho sob contrato no século XIX. História, n. 12, 2017.
+comunidade, e toda comunidade se forma com vistas A comparação mencionada no texto foi possível em razão
+a algum bem, pois todas as ações de todos os homens da seguinte característica:
 são praticadas com vistas ao que lhe parece um bem;
-A    Oferta de contrato formal.
-se todas as comunidades visam algum bem, é evidente                                          B    Origem étnica dos grupos de trabalhadores.
-que a mais importante de todas elas e que inclui todas as                                    C    Conhecimento das tarefas desenvolvidas.
-outras tem mais que todas este objetivo e visa ao mais                                       D    Controle opressivo das vidas dos indivíduos.
-importante de todos os bens.                                                                 E    Investimento requerido dos empregadores.
+A Oferta de contrato formal.
+se todas as comunidades visam algum bem, é evidente B Origem étnica dos grupos de trabalhadores.
+que a mais importante de todas elas e que inclui todas as C Conhecimento das tarefas desenvolvidas.
+outras tem mais que todas este objetivo e visa ao mais D Controle opressivo das vidas dos indivíduos.
+importante de todos os bens. E Investimento requerido dos empregadores.
 ARISTÓTELES. Política. Brasília: UnB,1988.
 CH - 1° dia | Caderno 1 - AZUL - Página 28
 
@@ -2037,15 +2037,15 @@ CH - 1° dia | Caderno 1 - AZUL - Página 28
 - Área: Ciências Humanas
 - Gabarito: C
 
-Os seringueiros amazônicos eram invisíveis no                                          nos locais apresentados no texto é a ocorrência de
+Os seringueiros amazônicos eram invisíveis no nos locais apresentados no texto é a ocorrência de
 cenário nacional nos anos 1970. Começaram a se
-articular como um movimento agrário no início dos anos                                      A solo fértil.
-1980, e na década seguinte conseguiram reconhecimento                                       B encosta íngreme.
+articular como um movimento agrário no início dos anos A solo fértil.
+1980, e na década seguinte conseguiram reconhecimento B encosta íngreme.
 nacional, obtendo a implantação das primeiras reservas
 C vegetação diversificada.
 extrativas após o assassinato de Chico Mendes. Assim,
-em vinte anos, os camponeses da floresta passaram da                                        D drenagem eficiente.
-invisibilidade à posição de paradigma de desenvolvimento                                    E clima ameno.
+em vinte anos, os camponeses da floresta passaram da D drenagem eficiente.
+invisibilidade à posição de paradigma de desenvolvimento E clima ameno.
 sustentável com participação popular.
 
 ## Questão 083
@@ -2054,9 +2054,9 @@ sustentável com participação popular.
 - Gabarito: D
 
 ALMEIDA, M. W. B. Direitos à floresta e ambientalismo: seringueiros e suas lutas.
-Revista Brasileira de Ciências Sociais, n. 55, 2004.            Ao abrigo do teto, sua jornada de fé começava na
-De acordo com o texto, a visibilidade dos seringueiros                                      sala de jantar. Na pequena célula cristã, dividia-se a
-amazônicos foi estabelecida pela relação entre                                              refeição e durante elas os crentes conversavam, rezavam
+Revista Brasileira de Ciências Sociais, n. 55, 2004. Ao abrigo do teto, sua jornada de fé começava na
+De acordo com o texto, a visibilidade dos seringueiros sala de jantar. Na pequena célula cristã, dividia-se a
+amazônicos foi estabelecida pela relação entre refeição e durante elas os crentes conversavam, rezavam
 e liam cartas de correligionários residentes em locais
 - A) crescimento econômico e migração de trabalhadores.
 diferentes do Império Romano (século II da Era Cristã).
@@ -2064,7 +2064,7 @@ diferentes do Império Romano (século II da Era Cristã).
 Esse ambiente garantia peculiar apoio emocional às
 - C) reivindicação de terra e preservação de mata nativa.
 experiências intensamente individuais que abrigava.
-- D) incentivo governamental e conservação de territórios.                                                                  SENNET, R. Carne e pedra. Rio de Janeiro: Record, 2008.
+- D) incentivo governamental e conservação de territórios. SENNET, R. Carne e pedra. Rio de Janeiro: Record, 2008.
 - E) modernização de plantio e comércio de látex.
 
 ## Questão 081
@@ -2074,20 +2074,20 @@ experiências intensamente individuais que abrigava.
 
 no texto encontra-se no(a)
 Porque todos confessamos não se poder viver sem
-alguns escravos, que busquem a lenha e a água, e                                            A regra judaica, que pregava a superioridade espiritual
+alguns escravos, que busquem a lenha e a água, e A regra judaica, que pregava a superioridade espiritual
 façam cada dia o pão que se come, e outros serviços
-que não são possíveis poderem-se fazer pelos                                                   dos cultos das sinagogas.
-Irmãos Jesuítas, máxime sendo tão poucos, que seria                                         B moralismo da legislação, que dificultava as reuniões
-necessário deixar as confissões e tudo mais. Parece-                                           abertas da juventude livre.
+que não são possíveis poderem-se fazer pelos dos cultos das sinagogas.
+Irmãos Jesuítas, máxime sendo tão poucos, que seria B moralismo da legislação, que dificultava as reuniões
+necessário deixar as confissões e tudo mais. Parece- abertas da juventude livre.
 me que a Companhia de Jesus deve ter e adquirir
-escravos, justamente, por meios que as Constituições                                        C adesão do patriciado, que subvertia o conceito
-permitem, quando puder para nossos colégios e casas                                            original dos valores estrangeiros.
+escravos, justamente, por meios que as Constituições C adesão do patriciado, que subvertia o conceito
+permitem, quando puder para nossos colégios e casas original dos valores estrangeiros.
 de meninos.
 LEITE, S. História da Companhia de Jesus no Brasil. Rio de Janeiro:
 D decisão política, que censurava as manifestações
 Civilização Brasileira, 1938 (adaptado).
 públicas da doutrina dissidente.
-O texto explicita premissas da expansão ultramarina                                         E violência senhorial, que impunha a desestruturação
+O texto explicita premissas da expansão ultramarina E violência senhorial, que impunha a desestruturação
 portuguesa ao buscar justificar a
 forçada das famílias escravas.
 A propagação do ideário cristão.
@@ -2097,30 +2097,30 @@ A propagação do ideário cristão.
 - Área: Ciências Humanas
 - Gabarito: E
 
-B valorização do trabalho braçal.                                                               A colisão entre uma placa continental e uma oceânica
-C adoção do cativeiro na Colônia.                                                           provocará a subducção desta última sob a placa
-D adesão ao ascetismo contemplativo.                                                        continental, que, a exemplo dos arcos e ilhas, produzirá
-E alfabetização dos indígenas nas Missões.                                                  um arco magmático na borda do continente, composto
+B valorização do trabalho braçal. A colisão entre uma placa continental e uma oceânica
+C adoção do cativeiro na Colônia. provocará a subducção desta última sob a placa
+D adesão ao ascetismo contemplativo. continental, que, a exemplo dos arcos e ilhas, produzirá
+E alfabetização dos indígenas nas Missões. um arco magmático na borda do continente, composto
 
 ## Questão 082
 
 - Área: Ciências Humanas
 - Gabarito: A
 
-As cidades de Puebla, no México, e Legazpi, nas                                        metamorfismo tanto de rochas preexistentes como de
-Filipinas, não têm quase nada em comum. Estão muito                                         parte das rochas formadas no processo.
-longe uma da outra e são habitadas por povos muito                                               TEIXEIRA, W. et al. (Org.). Decifrando a Terra. São Paulo: Oficina de Textos, 2000.
+As cidades de Puebla, no México, e Legazpi, nas metamorfismo tanto de rochas preexistentes como de
+Filipinas, não têm quase nada em comum. Estão muito parte das rochas formadas no processo.
+longe uma da outra e são habitadas por povos muito TEIXEIRA, W. et al. (Org.). Decifrando a Terra. São Paulo: Oficina de Textos, 2000.
 diferentes. O que as une é um trágico detalhe de sua
-geografia. Elas foram erguidas na vizinhança de alguns                                      Qual feição fisiográfica é gerada pelo processo tectônico
-dos vulcões mais perigosos do mundo: o mexicano                                             apresentado?
+geografia. Elas foram erguidas na vizinhança de alguns Qual feição fisiográfica é gerada pelo processo tectônico
+dos vulcões mais perigosos do mundo: o mexicano apresentado?
 Popocatepétl e o filipino Mayon. Seus habitantes
-precisam estar prontos para correr a qualquer hora. Eles                                    A Planícies abissais.
-fazem parte dos 550 milhões de indivíduos que moram                                         B Planaltos cristalinos.
+precisam estar prontos para correr a qualquer hora. Eles A Planícies abissais.
+fazem parte dos 550 milhões de indivíduos que moram B Planaltos cristalinos.
 em zonas de risco vulcânico no mundo. Ao contrário do
 C Depressões absolutas.
 que seria sensato, continuam ali, indiferentes ao perigo
-que os espreita.                                                                            D Bacias sedimentares.
-ANGELO, C. Disponível em: http://super.abril.com.br. Acesso em: 24 out. 2015 (adaptado).   E Dobramentos modernos.
+que os espreita. D Bacias sedimentares.
+ANGELO, C. Disponível em: http://super.abril.com.br. Acesso em: 24 out. 2015 (adaptado). E Dobramentos modernos.
 CH - 1° dia | Caderno 1 - AZUL - Página 29
 
 ## Questão 085
@@ -2128,15 +2128,15 @@ CH - 1° dia | Caderno 1 - AZUL - Página 29
 - Área: Ciências Humanas
 - Gabarito: B
 
-O movimento sedicioso ocorrido na capitania                                                  Francesa, reflete uma profunda mudança social ao
-de Pernambuco, no ano 1817, foi analisado de                                                     estabelecer a
+O movimento sedicioso ocorrido na capitania Francesa, reflete uma profunda mudança social ao
+de Pernambuco, no ano 1817, foi analisado de estabelecer a
 formas diferentes por dois meios de comunicação
 A manutenção das terras comunais.
 daquela época. O Correio Braziliense apontou para
-o fato de ser “a comoção no Brasil motivada por um                                               B supressão do poder constituinte.
-descontentamento geral, e não por maquinações de                                                 C falência da sociedade burguesa.
-alguns indivíduos”. Já a Gazeta do Rio de Janeiro                                                D paridade do tratamento jurídico.
-considerou o movimento como um “pontual desvio                                                   E abolição dos partidos políticos.
+o fato de ser “a comoção no Brasil motivada por um B supressão do poder constituinte.
+descontentamento geral, e não por maquinações de C falência da sociedade burguesa.
+alguns indivíduos”. Já a Gazeta do Rio de Janeiro D paridade do tratamento jurídico.
+considerou o movimento como um “pontual desvio E abolição dos partidos políticos.
 de norma, apenas uma ‘mancha’ nas ‘páginas da
 
 ## Questão 087
@@ -2147,25 +2147,25 @@ de norma, apenas uma ‘mancha’ nas ‘páginas da
 História Portuguesa’, tão distinta pelos testemunhos
 Na Grécia, o conceito de povo abrange tão
 de amor e respeito que os vassalos desta nação
-consagram ao seu soberano”.                                                                      somente aqueles indivíduos considerados cidadãos.
+consagram ao seu soberano”. somente aqueles indivíduos considerados cidadãos.
 JANCSÓ, I.; PIMENTA, J. P. Peças de um mosaico. In: MOTA, C. G. (Org.). Viagem Incompleta:
 Assim é possível perceber que o conceito de povo era
 a experiência brasileira (1500-2000). São Paulo: Senac, 2000 (adaptado).
 muito restritivo. Mesmo tendo isso em conta, a forma
-Os fragmentos das matérias jornalísticas sobre o                                                 democrática vivenciada e experimentada pelos gregos
-acontecimento, embora com percepções diversas,                                                   atenienses nos séculos IV e V a.C. pode ser caracterizada,
-relacionam-se a um aspecto do processo de                                                        fundamentalmente, como direta.
-independência da colônia luso-americana expresso                                                                     MANDUCO, A. Ciência política. São Paulo: Saraiva, 2011.
+Os fragmentos das matérias jornalísticas sobre o democrática vivenciada e experimentada pelos gregos
+acontecimento, embora com percepções diversas, atenienses nos séculos IV e V a.C. pode ser caracterizada,
+relacionam-se a um aspecto do processo de fundamentalmente, como direta.
+independência da colônia luso-americana expresso MANDUCO, A. Ciência política. São Paulo: Saraiva, 2011.
 em dissensões entre
 Naquele contexto, a emergência do sistema de governo
 - A) quadros dirigentes em torno da abolição da ordem
 mencionado no excerto promoveu o(a)
 escravocrata.
-- B) grupos regionais acerca da configuração político-                                              A competição para a escolha de representantes.
--territorial.                                                                                  B campanha pela revitalização das oligarquias.
-- C) intelectuais laicos acerca da revogação do domínio                                             C estabelecimento de mandatos temporários.
-eclesiástico.                                                                                  D declínio da sociedade civil organizada.
-- D) homens livres em torno da extensão do direito de voto.                                         E participação no exercício do poder.
+- B) grupos regionais acerca da configuração político- A competição para a escolha de representantes.
+-territorial. B campanha pela revitalização das oligarquias.
+- C) intelectuais laicos acerca da revogação do domínio C estabelecimento de mandatos temporários.
+eclesiástico. D declínio da sociedade civil organizada.
+- D) homens livres em torno da extensão do direito de voto. E participação no exercício do poder.
 - E) elites locais acerca da ordenação do monopólio
 fundiário.
 
@@ -2194,7 +2194,7 @@ CH - 1° dia | Caderno 1 - AZUL - Página 30
 - Área: Ciências Humanas
 - Gabarito: C
 
-TEXTO I                                                                                  humano?
+TEXTO I humano?
 - A) A potência inata da mente.
 - B) A revelação da inspiração divina.
 - C) O estudo das tradições filosóficas.
@@ -2210,47 +2210,47 @@ TEXTO I
 O aumento de casos suspeitos de febre amarela em
 Minas pode estar relacionado à tragédia de Mariana,
 em 2015, segundo a bióloga da Fiocruz Márcia Chame.
-Rio Tietê, São Paulo (SP). Foto: Delfim Martins/Pulsar.                           A hipótese tem como ponto de partida a localização das
-TEXTO II                                                                                 cidades mineiras que identificaram até o momento casos
-O Rio Tietê está morto. Ao menos uma parte                                           de pacientes com sintomas da doença. Grande parte está
-dele: 137 quilômetros, para ser mais preciso. Uma                                        na região próxima do Rio Doce, afetado pelo rompimento
+Rio Tietê, São Paulo (SP). Foto: Delfim Martins/Pulsar. A hipótese tem como ponto de partida a localização das
+TEXTO II cidades mineiras que identificaram até o momento casos
+O Rio Tietê está morto. Ao menos uma parte de pacientes com sintomas da doença. Grande parte está
+dele: 137 quilômetros, para ser mais preciso. Uma na região próxima do Rio Doce, afetado pelo rompimento
 pesquisa da Fundação SOS Mata Atlântica mostra
-que, em 2016, o trecho do rio com qualidade de                                           da Barragem de Fundão, em novembro de 2015.
+que, em 2016, o trecho do rio com qualidade de da Barragem de Fundão, em novembro de 2015.
 FORMENTI, L. Para bióloga, surto de febre amarela pode ter relação com tragédia de
-água classificada como ruim ou péssima começa                                                                                   Mariana. O Estado de São Paulo, 14 jan. 2017.
+água classificada como ruim ou péssima começa Mariana. O Estado de São Paulo, 14 jan. 2017.
 em Itaquaquecetuba, passa por toda a Região
-Metropolitana de São Paulo e chega até Cabreúva,                                         TEXTO II
+Metropolitana de São Paulo e chega até Cabreúva, TEXTO II
 já no interior de São Paulo. Nesse trecho, a água não
-tem oxigênio suficiente para abrigar vida.                                                   Por outro lado, Servio Ribeiro considera remota a
+tem oxigênio suficiente para abrigar vida. Por outro lado, Servio Ribeiro considera remota a
 Disponível em: http://epoca.globo.com. Acesso em: 7 dez. 2017 (adaptado).
 possibilidade de influência da tragédia de Mariana (MG)
-Considerando a análise dos textos, a condição atual                                      neste surto de febre amarela em Minas Gerais. “A febre
+Considerando a análise dos textos, a condição atual neste surto de febre amarela em Minas Gerais. “A febre
 desse rio tem como origem a
 amarela é uma doença de interior de floresta. O mosquito
-- A) valorização do sítio urbano.                                                         que a transmite põe ovos em cavidades de árvores e em
+- A) valorização do sítio urbano. que a transmite põe ovos em cavidades de árvores e em
 - B) extinção da vegetação nativa.
 bromélias. É um mosquito da estrutura da floresta. Ele
 - C) recepção de densa carga de dejetos.
-- D) captação desordenada do regime pluvial.                                              não se relaciona muito com grandes corpos-d’água e
-- E) expansão do uso de defensivos químicos.                                              com rios. As cidades afetadas pela doença estão em uma
+- D) captação desordenada do regime pluvial. não se relaciona muito com grandes corpos-d’água e
+- E) expansão do uso de defensivos químicos. com rios. As cidades afetadas pela doença estão em uma
 
 ## Questão 089
 
 - Área: Ciências Humanas
 - Gabarito: D
 
-Adão, ainda que supuséssemos que suas faculdades                                     derrubar a floresta”, diz o biólogo.
+Adão, ainda que supuséssemos que suas faculdades derrubar a floresta”, diz o biólogo.
 RODRIGUES, L. Especialistas investigam relação entre febre amarela e degradação
-racionais fossem inteiramente perfeitas desde o início,                                                                               ambiental. Agência Brasil, 25 jan. 2017.
+racionais fossem inteiramente perfeitas desde o início, ambiental. Agência Brasil, 25 jan. 2017.
 não poderia ter inferido da fluidez e transparência da
 Sobre a tragédia de Mariana, os textos apresentam
 água que ela o sufocaria, nem da luminosidade e calor
-do fogo que este poderia consumi-lo. Nenhum objeto                                       divergência quanto ao(à)
+do fogo que este poderia consumi-lo. Nenhum objeto divergência quanto ao(à)
 jamais revela, pelas qualidades que aparecem aos
 A poluição dos rios locais.
 sentidos, nem as causas que o produziram, nem os
-efeitos que dele provirão; e tampouco nossa razão é                                      B identificação da área afetada.
-capaz de extrair, sem auxílio da experiência, qualquer                                   C destruição da vegetação nativa.
+efeitos que dele provirão; e tampouco nossa razão é B identificação da área afetada.
+capaz de extrair, sem auxílio da experiência, qualquer C destruição da vegetação nativa.
 conclusão referente à existência efetiva de coisas ou
 D aparecimento de enfermidade endêmica.
 questões de fato.
@@ -2260,10 +2260,10 @@ CH - 1° dia | Caderno 1 - AZUL - Página 31
 Transcreva a sua Redação para a Folha de Redação.
 O
 H
-N      O
-U      Ã
-C      Ç
-S      A
+N O
+U Ã
+C Ç
+S A
 A
 R RED
 A

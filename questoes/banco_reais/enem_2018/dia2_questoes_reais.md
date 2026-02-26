@@ -10,13 +10,13 @@ Total de blocos extraídos: **90**
 - Gabarito: B
 
 Para serem absorvidos pelas células do intestino humano, os lipídios ingeridos
-SUHFLVDP VHU SULPHLUDPHQWH HPXOVL¿FDGRV 1HVVD HWDSD GD GLJHVWmR WRUQDVH
+SUHFLVDP VHU SULPHLUDPHQWH HPXOVL¿FDGRV 1HVVD HWDSD GD GLJHVWmR WRUQD VH
 necessária a ação dos ácidos biliares, visto que os lipídios apresentam uma natureza
 apolar e são insolúveis em água.
 Esses ácidos atuam no processo de modo a
 - A) hidrolisar os lipídios.
 - B) agir como detergentes.
-- C) WRUQDURVOLStGLRVDQ¿ItOLFRV
+- C) WRUQDU RV OLStGLRV DQ¿ItOLFRV
 - D) promover a secreção de lipases.
 - E) estimular o trânsito intestinal dos lipídios.
 
@@ -39,7 +39,7 @@ A etiqueta funciona sem pilhas porque o campo
 - A) elétrico da onda de rádio agita elétrons da bobina.
 - B) elétrico da onda de rádio cria uma tensão na bobina.
 - C) magnético da onda de rádio induz corrente na bobina.
-- D) PDJQpWLFRGDRQGDGHUiGLRDTXHFHRV¿RVGDERELQD
+- D) PDJQpWLFR GD RQGD GH UiGLR DTXHFH RV ¿RV GD ERELQD
 - E) magnético da onda de rádio diminui a ressonância no interior da bobina.
 
 ## Questão 093
@@ -55,8 +55,8 @@ espécies, sua área de vida (área necessária para o suprimento de suas necess
 vitais e reprodutivas) e a distribuição de suas populações.
 Disponível em: www.mma.gov.br. Acesso em: 30 nov. 2017 (adaptado).
 Nessa estratégia, a recuperação da biodiversidade é efetiva porque
-- A) SURSLFLDRÀX[RJrQLFR
-- B) LQWHQVL¿FDRPDQHMRGHHVSpFLHV
+- A) SURSLFLD R ÀX[R JrQLFR
+- B) LQWHQVL¿FD R PDQHMR GH HVSpFLHV
 - C) amplia o processo de ocupação humana.
 - D) aumenta o número de indivíduos nas populações.
 - E) favorece a formação de ilhas de proteção integral.
@@ -67,22 +67,22 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 3
 - Área: Ciências da Natureza
 - Gabarito: C
 
-$ LGHQWL¿FDomR GH ULVFRV GH SURGXWRV SHULJRVRV SDUD R WUDQVSRUWH URGRYLiULR p
+$ LGHQWL¿FDomR GH ULVFRV GH SURGXWRV SHULJRVRV SDUD R WUDQVSRUWH URGRYLiULR p
 obrigatória e realizada por meio da sinalização composta por um painel de segurança,
 de cor alaranjada, e um rótulo de risco. As informações inseridas no painel de segurança
-H QR UyWXOR GH ULVFR FRQIRUPH GHWHUPLQD D OHJLVODomR SHUPLWHP TXH VH LGHQWL¿TXH R
+H QR UyWXOR GH ULVFR FRQIRUPH GHWHUPLQD D OHJLVODomR SHUPLWHP TXH VH LGHQWL¿TXH R
 produto transportado e os perigos a ele associados.
-$ VLQDOL]DomR PRVWUDGD LGHQWL¿FD XPD VXEVWkQFLD TXH HVWi VHQGR WUDQVSRUWDGD HP
+$ VLQDOL]DomR PRVWUDGD LGHQWL¿FD XPD VXEVWkQFLD TXH HVWi VHQGR WUDQVSRUWDGD HP
 um caminhão.
-268                                             GÁS
-1005                                            TÓXICO
+268 GÁS
+1005 TÓXICO
 Os três algarismos da parte superior do painel indicam o “Número de risco”.
 O número 268 indica tratar-se de um gás (2), tóxico (6) e corrosivo (8). Os quatro dígitos
-GDSDUWHLQIHULRUFRUUHVSRQGHPDR³1~PHUR218´TXHLGHQWL¿FDRSURGXWRWUDQVSRUWDGR
+GD SDUWH LQIHULRU FRUUHVSRQGHP DR ³1~PHUR 218´ TXH LGHQWL¿FD R SURGXWR WUDQVSRUWDGR
 BRASIL. Resolução n. 420, de 12/02/2004, da Agência Nacional de Transportes Terrestres (ANTT)/Ministério dos Transportes (adaptado).
 ABNT. NBR 7500
-LGHQWL¿FDomRSDUDRWUDQVSRUWHWHUUHVWUHPDQXVHLRPRYLPHQWDomRHDUPD]HQDPHQWRGHSURGXWRV5LRGH-DQHLUR DGDSWDGR 
-&RQVLGHUDQGR D LGHQWL¿FDomR DSUHVHQWDGD QR FDPLQKmR R FyGLJR  FRUUHVSRQGH j
+LGHQWL¿FDomR SDUD R WUDQVSRUWH WHUUHVWUH PDQXVHLR PRYLPHQWDomR H DUPD]HQDPHQWR GH SURGXWRV 5LR GH -DQHLUR DGDSWDGR
+&RQVLGHUDQGR D LGHQWL¿FDomR DSUHVHQWDGD QR FDPLQKmR R FyGLJR FRUUHVSRQGH j
 substância
 - A) eteno (C2H4).
 - B) nitrogênio (N2).
@@ -118,27 +118,27 @@ de onda. Informalmente, embora os pigmentos em si não possuam cor, estes são
 conhecidos como pigmentos “azul”, “verde” e “vermelho” e estão associados à cor
 que causa grande excitação (ativação). A sensação que temos ao observar um objeto
 colorido decorre da ativação relativa dos três pigmentos. Ou seja, se estimulássemos
-D UHWLQD FRP XPD OX] QD IDL[D GH  QP UHWkQJXOR , QR JUi¿FR  QmR H[FLWDUtDPRV R
+D UHWLQD FRP XPD OX] QD IDL[D GH QP UHWkQJXOR , QR JUi¿FR QmR H[FLWDUtDPRV R
 pigmento “azul”, o pigmento “verde” seria ativado ao máximo e o “vermelho” seria
 ativado em aproximadamente 75%, e isso nos daria a sensação de ver uma cor
-DPDUHODGD -i XPD OX] QD IDL[D GH FRPSULPHQWR GH RQGD GH  QP UHWkQJXOR ,, 
+DPDUHODGD -i XPD OX] QD IDL[D GH FRPSULPHQWR GH RQGD GH QP UHWkQJXOR ,,
 estimularia o pigmento “verde” um pouco e o “vermelho” em cerca de 75%, e isso nos
 daria a sensação de ver laranja-avermelhado. No entanto, há características genéticas
 presentes em alguns indivíduos, conhecidas coletivamente como Daltonismo, em que
 um ou mais pigmentos não funcionam perfeitamente.
-I        II
+I II
 “azul”
 “verde”
 “vermelho”
 Ativação (%)
-400      450      500       550       600      650
-roxo    azul          verde amarelo laranja vermelho
+400 450 500 550 600 650
+roxo azul verde amarelo laranja vermelho
 Comprimento de onda (nm)
 Disponível em: www.comprehensivephysiology.com. Acesso em: 3 ago. 2012 (adaptado).
 Caso estimulássemos a retina de um indivíduo com essa característica, que não
 possuísse o pigmento conhecido como “verde”, com as luzes de 530 nm e 600 nm na
 mesma intensidade luminosa, esse indivíduo seria incapaz de
-- A) LGHQWL¿FDURFRPSULPHQWRGHRQGDGRDPDUHORXPDYH]TXHQmRSRVVXLRSLJPHQWR
+- A) LGHQWL¿FDU R FRPSULPHQWR GH RQGD GR DPDUHOR XPD YH] TXH QmR SRVVXL R SLJPHQWR
 “verde”.
 - B) ver o estímulo de comprimento de onda laranja, pois não haveria estimulação de um
 pigmento visual.
@@ -157,7 +157,7 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 5
 
 O grafeno é uma forma alotrópica do carbono constituído por uma folha planar
 (arranjo bidimensional) de átomos de carbono compactados e com a espessura de
-apenas um átomo. Sua estrutura é hexagonal, cRQIRUPHD¿JXUD
+apenas um átomo. Sua estrutura é hexagonal, cRQIRUPH D ¿JXUD
 Nesse arranjo, os átomos de carbono possuem hibridação
 - A) sp de geometria linear.
 - B) sp2 de geometria trigonal planar.
@@ -173,7 +173,7 @@ Nesse arranjo, os átomos de carbono possuem hibridação
 Um projetista deseja construir um brinquedo que lance um pequeno cubo ao longo
 de um trilho horizontal, e o dispositivo precisa oferecer a opção de mudar a velocidade
 de lançamento. Para isso, ele utiliza uma mola e um trilho onde o atrito pode ser
-GHVSUH]DGRFRQIRUPHD¿JXUD
+GHVSUH]DGR FRQIRUPH D ¿JXUD
 Para que a velocidade de lançamento do cubo seja aumentada quatro vezes, o
 projetista deve
 - A) manter a mesma mola e aumentar duas vezes a sua deformação.
@@ -193,13 +193,13 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 6
 Pesquisas demonstram que nanodispositivos baseados em movimentos de
 dimensões atômicas, induzidos por luz, poderão ter aplicações em tecnologias futuras,
 substituindo micromotores, sem a necessidade de componentes mecânicos. Exemplo de
-PRYLPHQWR PROHFXODU LQGX]LGR SHOD OX] SRGH VHU REVHUYDGR SHOD ÀH[mR GH XPD OkPLQD
+PRYLPHQWR PROHFXODU LQGX]LGR SHOD OX] SRGH VHU REVHUYDGR SHOD ÀH[mR GH XPD OkPLQD
 delgada de silício, ligado a um polímero de azobenzeno e a um material suporte, em dois
-FRPSULPHQWRV GH RQGD FRQIRUPH LOXVWUDGR QD ¿JXUD &RP D DSOLFDomR GH OX] RFRUUHP
+FRPSULPHQWRV GH RQGD FRQIRUPH LOXVWUDGR QD ¿JXUD &RP D DSOLFDomR GH OX] RFRUUHP
 reações reversíveis da cadeia do polímero, que promovem o movimento observado.
 Átomos:
 Hidrogênio
-365 nm                                                          Carbono
+365 nm Carbono
 Nitrogênio
 420 nm
 TOMA, H. E. A nanotecnologia das moléculas. Química Nova na Escola,
@@ -211,7 +211,7 @@ ligações.
 trans.
 - C) tautomerização das unidades monoméricas do polímero, que leva a um composto
 mais compacto.
-- D) ressonância entre os elétrons Sdo grupo azo e os do anel aromático que encurta as
+- D) ressonância entre os elétrons S do grupo azo e os do anel aromático que encurta as
 ligações duplas.
 - E) variação conformacional das ligações N N, que resulta em estruturas com diferentes
 áreas de superfície.
@@ -222,16 +222,16 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 7
 - Área: Ciências da Natureza
 - Gabarito: D
 
-2 FDUUR ÀH[ p XPD UHDOLGDGH QR %UDVLO (VWHV YHtFXORV HVWmR HTXLSDGRV FRP PRWRU
+2 FDUUR ÀH[ p XPD UHDOLGDGH QR %UDVLO (VWHV YHtFXORV HVWmR HTXLSDGRV FRP PRWRU
 que tem a capacidade de funcionar com mais de um tipo de combustível. No entanto, as
 pessoas que têm esse tipo de veículo, na hora do abastecimento, têm sempre a dúvida:
 álcool ou gasolina? Para avaliar o consumo desses combustíveis, realizou-se um percurso
-FRPXPYHtFXORÀH[FRQVXPLQGROLWURVGHJDVROLQDHQRSHUFXUVRGHYROWDXWLOL]RXVHHWDQRO
+FRP XP YHtFXOR ÀH[ FRQVXPLQGR OLWURV GH JDVROLQD H QR SHUFXUVR GH YROWD XWLOL]RX VH HWDQRO
 Foi considerado o mesmo consumo de energia tanto no percurso de ida quanto no de volta.
 O quadro resume alguns dados aproximados sobre esses combustíveis.
-Combustível          Densidade (g mLí1)             Calor de combustão (kcal gí1)
-Etanol                     0,8                                       í
-Gasolina                    0,7                                      í
+Combustível Densidade (g mLí1) Calor de combustão (kcal gí1)
+Etanol 0,8 í
+Gasolina 0,7 í
 O volume de etanol combustível, em litro, consumido no percurso de volta é mais
 próximo de
 - A) 27.
@@ -252,17 +252,17 @@ abelhas-operárias produzem ácido 10-hidroxidec-2-enoico. Nós podemos distingu
 as abelhas-operárias e rainhas por sua aparência, mas, entre si, elas usam essa
 sinalização química para perceber a diferença. Pode-se dizer que veem por meio
 da química.
-/(&287(853
-%855(621-Os botões de Napoleão: as 17 moléculas
-TXHPXGDUDPDKLVWyULD5LRGH-DQHLUR
--RUJH=DKDU DGDSWDGR 
+/( &287(85 3
+%855(621 - Os botões de Napoleão: as 17 moléculas
+TXH PXGDUDP D KLVWyULD 5LR GH -DQHLUR
+-RUJH =DKDU DGDSWDGR
 As moléculas dos sinalizadores químicos produzidas pelas abelhas rainha e operária
 possuem diferença na
 - A) fórmula estrutural.
 - B) fórmula molecular.
-- C) LGHQWL¿FDomRGRVWLSRVGHOLJDomR
+- C) LGHQWL¿FDomR GRV WLSRV GH OLJDomR
 - D) contagem do número de carbonos.
-- E) LGHQWL¿FDomRGRVJUXSRVIXQFLRQDLV
+- E) LGHQWL¿FDomR GRV JUXSRV IXQFLRQDLV
 CN - 2º dia | Caderno 5 - AMARELO - Página 8
 
 ## Questão 102
@@ -292,14 +292,14 @@ Talvez você já tenha bebido suco usando dois canudinhos iguais. Entretanto,
 pode-se verificar que, se colocar um canudo imerso no suco e outro do lado
 de fora do líquido, fazendo a sucção simultaneamente em ambos, você terá
 dificuldade em bebê-lo.
-(VVDGL¿FXOGDGHRFRUUHSRUTXHR D
+(VVD GL¿FXOGDGH RFRUUH SRUTXH R D
 - A) força necessária para a sucção do ar e do suco simultaneamente dobra de valor.
 - B) densidade do ar é menor que a do suco, portanto, o volume de ar aspirado é muito
 maior que o volume de suco.
 - C) velocidade com que o suco sobe deve ser constante nos dois canudos, o que é
 impossível com um dos canudos de fora.
 - D) peso da coluna de suco é consideravelmente maior que o peso da coluna de ar, o
-TXHGL¿FXOWDDVXFomRGROtTXLGR
+TXH GL¿FXOWD D VXFomR GR OtTXLGR
 - E) pressão no interior da boca assume praticamente o mesmo valor daquela que atua
 sobre o suco.
 CN - 2º dia | Caderno 5 - AMARELO - Página 9
@@ -311,7 +311,7 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 9
 
 O alemão Fritz Haber recebeu o Prêmio Nobel de química de 1918 pelo
 desenvolvimento de um processo viável para a síntese da amônia (NH3). Em seu
-GLVFXUVRGHSUHPLDomR+DEHUMXVWL¿FRXDLPSRUWkQFLDGRIHLWRGL]HQGRTXH
+GLVFXUVR GH SUHPLDomR +DEHU MXVWL¿FRX D LPSRUWkQFLD GR IHLWR GL]HQGR TXH
 “Desde a metade do século passado, tornou-se conhecido que um suprimento
 de nitrogênio é uma necessidade básica para o aumento das safras de alimentos;
 entretanto, também se sabia que as plantas não podem absorver o nitrogênio em
@@ -328,7 +328,7 @@ próprios corpos, fertilizam o solo que cultivam.
 Desde a metade do último século, nós vínhamos aproveitando o suprimento de
 nitrogênio do salitre que a natureza tinha depositado nos desertos montanhosos do
 Chile. Comparando o rápido crescimento da demanda com a extensão calculada
-GHVVHV GHSyVLWRV ¿FRX FODUR TXH HP PHDGRV GR VpFXOR DWXDO XPD HPHUJrQFLD
+GHVVHV GHSyVLWRV ¿FRX FODUR TXH HP PHDGRV GR VpFXOR DWXDO XPD HPHUJrQFLD
 seríssima seria inevitável, a menos que a química encontrasse uma saída.”
 HABER, F. The Synthesis of Ammonia from its Elements. Disponível em: www.nobelprize.org. Acesso em: 13 jul. 2013 (adaptado).
 De acordo com os argumentos de Haber, qual fenômeno teria provocado o desequilíbrio no
@@ -336,7 +336,7 @@ De acordo com os argumentos de Haber, qual fenômeno teria provocado o desequil�
 - A) O esgotamento das reservas de salitre no Chile.
 - B) O aumento da exploração de carvão vegetal e carvão mineral.
 - C) A redução da fertilidade do solo nas economias agrícolas.
-- D) $LQWHQVL¿FDomRQRÀX[RGHSHVVRDVGRFDPSRSDUDDVFLGDGHV
+- D) $ LQWHQVL¿FDomR QR ÀX[R GH SHVVRDV GR FDPSR SDUD DV FLGDGHV
 - E) A necessidade das plantas de absorverem sais de nitrogênio disponíveis no solo.
 
 ## Questão 105
@@ -347,12 +347,12 @@ De acordo com os argumentos de Haber, qual fenômeno teria provocado o desequil�
 A polinização, que viabiliza o transporte do grão de pólen de uma planta até o
 estigma de outra, pode ser realizada biótica ou abioticamente. Nos processos abióticos,
 as plantas dependem de fatores como o vento e a água.
-$HVWUDWpJLDHYROXWLYDTXHUHVXOWDHPSROLQL]DomRPDLVH¿FLHQWHTXDQGRHVWDGHSHQGHGR
+$ HVWUDWpJLD HYROXWLYD TXH UHVXOWD HP SROLQL]DomR PDLV H¿FLHQWH TXDQGR HVWD GHSHQGH GR
 vento é o(a)
 - A) diminuição do cálice.
 - B) alongamento do ovário.
 - C) disponibilização do néctar.
-- D) LQWHQVL¿FDomRGDFRUGDVSpWDODV
+- D) LQWHQVL¿FDomR GD FRU GDV SpWDODV
 - E) aumento do número de estames.
 CN - 2º dia | Caderno 5 - AMARELO - Página 10
 
@@ -365,23 +365,23 @@ Muitos smartphones e tablets não precisam mais de teclas, uma vez que todos os
 comandos podem ser dados ao se pressionar a própria tela. Inicialmente essa tecnologia
 foi proporcionada por meio das telas resistivas, formadas basicamente por duas
 camadas de material condutor transparente que não se encostam até que alguém as
-SUHVVLRQHPRGL¿FDQGRDUHVLVWrQFLDWRWDOGRFLUFXLWRGHDFRUGRFRPRSRQWRRQGHRFRUUH
-RWRTXH$LPDJHPpXPDVLPSOL¿FDomRGRFLUFXLWRIRUPDGRSHODVSODFDVHPTXHA e B
+SUHVVLRQH PRGL¿FDQGR D UHVLVWrQFLD WRWDO GR FLUFXLWR GH DFRUGR FRP R SRQWR RQGH RFRUUH
+R WRTXH $ LPDJHP p XPD VLPSOL¿FDomR GR FLUFXLWR IRUPDGR SHODV SODFDV HP TXH A e B
 representam pontos onde o circuito pode ser fechado por meio do toque.
-Nȍ
-Nȍ
+Nȍ
+Nȍ
 +
-H-                                           A
-Nȍ
-Nȍ
+H- A
+Nȍ
+Nȍ
 B
 Qual é a resistência equivalente no circuito provocada por um toque que fecha o circuito
 no ponto A?
-- A) Nȍ
-- B) Nȍ
-- C) Nȍ
-- D) Nȍ
-- E) Nȍ
+- A) Nȍ
+- B) Nȍ
+- C) Nȍ
+- D) Nȍ
+- E) Nȍ
 
 ## Questão 107
 
@@ -391,15 +391,15 @@ no ponto A?
 Companhias que fabricam jeans usam cloro para o clareamento, seguido de
 lavagem. Algumas estão substituindo o cloro por substâncias ambientalmente
 mais seguras como peróxidos, que podem ser degradados por enzimas chamadas
-SHUR[LGDVHV 3HQVDQGR QLVVR SHVTXLVDGRUHV LQVHULUDP JHQHV FRGL¿FDGRUHV GH
+SHUR[LGDVHV 3HQVDQGR QLVVR SHVTXLVDGRUHV LQVHULUDP JHQHV FRGL¿FDGRUHV GH
 peroxidases em leveduras cultivadas nas condições de clareamento e lavagem dos
 jeans e selecionaram as sobreviventes para produção dessas enzimas.
-725725$*-
-)81.(%5
-&$6(&/Microbiologia5LRGH-DQHLUR
-$UWPHG DGDSWDGR 
-1HVVHFDVRRXVRGHVVDVOHYHGXUDVPRGL¿FDGDVREMHWLYD
-- A) UHGX]LUDTXDQWLGDGHGHUHVtGXRVWy[LFRVQRVHÀXHQWHVGDODYDJHP
+725725$ * -
+)81.( % 5
+&$6( & / Microbiologia 5LR GH -DQHLUR
+$UWPHG DGDSWDGR
+1HVVH FDVR R XVR GHVVDV OHYHGXUDV PRGL¿FDGDV REMHWLYD
+- A) UHGX]LU D TXDQWLGDGH GH UHVtGXRV Wy[LFRV QRV HÀXHQWHV GD ODYDJHP
 - B) eliminar a necessidade de tratamento da água consumida.
 - C) elevar a capacidade de clareamento dos jeans.
 - D) aumentar a resistência do jeans a peróxidos.
@@ -415,11 +415,11 @@ Por meio de reações químicas que envolvem carboidratos, lipídeos e proteína
 nossas células obtêm energia e produzem gás carbônico e água. A oxidação da glicose
 no organismo humano libera energia, conforme ilustra a equação química, sendo que
 aproximadamente 40% dela é disponibilizada para atividade muscular.
-C6H12O6 (s) + 6 O2 (g) ĺ 6 CO2 (g) + 6 H22 O ¨cH íN-
-Considere as massas molares (em g molí): H = 1; C = 12; O = 16.
-/,0$/0
-)5$*$&$0
-%$55(,52(-Química na saúde. São Paulo: Sociedade Brasileira de Química, 2010 (adaptado).
+C6H12O6 (s) + 6 O2 (g) ĺ 6 CO2 (g) + 6 H22 O ¨cH í N-
+Considere as massas molares (em g molí ): H = 1; C = 12; O = 16.
+/,0$ / 0
+)5$*$ & $ 0
+%$55(,52 ( - Química na saúde. São Paulo: Sociedade Brasileira de Química, 2010 (adaptado).
 Na oxidação de 1,0 grama de glicose, a energia obtida para atividade muscular, em
 quilojoule, é mais próxima de
 - A) 6,2.
@@ -438,12 +438,12 @@ uma corrente elétrica quando se encontram em perigo. Um poraquê de 1 metro de
 comprimento, em perigo, produz uma corrente em torno de 2 ampères e uma voltagem
 de 600 volts.
 O quadro apresenta a potência aproximada de equipamentos elétricos.
-Equipamento elétrico                     Potência aproximada (watt)
-Exaustor                                         150
-Computador                                          300
-Aspirador de pó                                       600
-Churrasqueira elétrica                                   1 200
-Secadora de roupas                                      3 600
+Equipamento elétrico Potência aproximada (watt)
+Exaustor 150
+Computador 300
+Aspirador de pó 600
+Churrasqueira elétrica 1 200
+Secadora de roupas 3 600
 O equipamento elétrico que tem potência similar àquela produzida por esse peixe em
 perigo é o(a)
 - A) exaustor.
@@ -459,32 +459,32 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 12
 - Gabarito: D
 
 Ao pesquisar um resistor feito de um novo tipo de material, um cientista observou o
-FRPSRUWDPHQWRPRVWUDGRQRJUi¿FRWHQVmRversus corrente.
+FRPSRUWDPHQWR PRVWUDGR QR JUi¿FR WHQVmR versus corrente.
 Tensão (V)
-0       1       2        3     4     5             6       7
+0 1 2 3 4 5 6 7
 Corrente (A)
-$SyVDDQiOLVHGRJUi¿FRHOHFRQFOXLXTXHDWHQVmRHPIXQomRGDFRUUHQWHpGDGD
+$SyV D DQiOLVH GR JUi¿FR HOH FRQFOXLX TXH D WHQVmR HP IXQomR GD FRUUHQWH p GDGD
 pela equação V = 10 i + i 2.
-2JUi¿FRGDUHVLVWrQFLDHOpWULFD R) do resistor em função da corrente (i) é
-20                                                                     18
-15                                                                     16
+2 JUi¿FR GD UHVLVWrQFLD HOpWULFD R) do resistor em função da corrente (i) é
+20 18
+15 16
 R (ȍ
 R (ȍ
-A                                                                      D          12
-0                                                                     8
-0   1   2             3         4   5   6       7                      0   1       2   3   4     5   6   7
-i $                                                              i $
-30                                                                     60
+A D 12
+0 8
+0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7
+i $ i $
+30 60
 R (ȍ
 R (ȍ
-B          15
-E          20
-10                                                                     0
-0   1   2             3         4   5   6       7                      0   1       2   3   4     5   6   7
-i $                                                              i $
+B 15
+E 20
+10 0
+0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7
+i $ i $
 R (ȍ
-C          3
-0   1   2                3      4   5   6       7
+C 3
+0 1 2 3 4 5 6 7
 i $
 CN - 2º dia | Caderno 5 - AMARELO - Página 13
 
@@ -494,28 +494,28 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 13
 - Gabarito: D
 
 A hidroxilamina (NH2OH) é extremamente reativa em reações de substituição
-QXFOHRItOLFDMXVWL¿FDQGRVXDXWLOL]DomRHPGLYHUVRVSURFHVVRV$UHDomRGHVXEVWLWXLomR
+QXFOHRItOLFD MXVWL¿FDQGR VXD XWLOL]DomR HP GLYHUVRV SURFHVVRV $ UHDomR GH VXEVWLWXLomR
 nucleofílica entre o anidrido acético e a hidroxilamina está representada.
-O                O
-+                NH2
-O       O                                  OH              O
+O O
++ NH2
+O O OH O
 Produto A
 + NH2OH
 O
-Anidrido                               O                O
-acético                                         +               OH
-OH               N
+Anidrido O O
+acético + OH
+OH N
 H
 Produto B
 O produto A é favorecido em relação ao B, por um fator de 105. Em um estudo de
 possível substituição do uso de hidroxilamina, foram testadas as móleculas numeradas
 de 1 a 5.
-HO                              HO
-N                               N        O                HO
-O                                      N                N
+HO HO
+N N O HO
+O N N
 NH2
-H                                H
-1            2                  3             4                5
+H H
+1 2 3 4 5
 Dentre as moléculas testadas, qual delas apresentou menor reatividade?
 - A) 1
 - B) 2
@@ -534,10 +534,10 @@ que compõem esse código genético e que a semente da cevada, apesar de pequena
 possui um genoma mais complexo que o humano, sendo boa parte desse código
 constituída de sequências repetidas. Nesse contexto, o conceito de código genético está
 abordado de forma equivocada.
-&LHQWL¿FDPHQWHHVVHFRQFHLWRpGH¿QLGRFRPR
-- A) WULQFDVGHQXFOHRWtGHRVTXHFRGL¿FDPRVDPLQRiFLGRV
+&LHQWL¿FDPHQWH HVVH FRQFHLWR p GH¿QLGR FRPR
+- A) WULQFDV GH QXFOHRWtGHRV TXH FRGL¿FDP RV DPLQRiFLGRV
 - B) localização de todos os genes encontrados em um genoma.
-- C) FRGL¿FDomRGHVHTXrQFLDVUHSHWLGDVSUHVHQWHVHPXPJHQRPD
+- C) FRGL¿FDomR GH VHTXrQFLDV UHSHWLGDV SUHVHQWHV HP XP JHQRPD
 - D) conjunto de todos os RNAs mensageiros transcritos em um organismo.
 - E) todas as sequências de pares de bases presentes em um organismo.
 CN - 2º dia | Caderno 5 - AMARELO - Página 14
@@ -551,24 +551,24 @@ Células solares à base de TiO2 sensibilizadas por corantes (S) são promissora
 poderão vir a substituir as células de silício. Nessas células, o corante adsorvido sobre
 o TiO2 é responsável por absorver a energia luminosa (hȞ), e o corante excitado (S*) é
 capaz de transferir elétrons para o TiO2. Um esquema dessa célula e os processos
-HQYROYLGRV HVWmR LOXVWUDGRV QD ¿JXUD$ FRQYHUVmR GH HQHUJLD VRODU HP HOpWULFD RFRUUH SRU
+HQYROYLGRV HVWmR LOXVWUDGRV QD ¿JXUD $ FRQYHUVmR GH HQHUJLD VRODU HP HOpWULFD RFRUUH SRU
 meio da sequência de reações apresentadas.
 Eletrodo de TiO2
-com corante              Corante          Eletrodo de Pt
+com corante Corante Eletrodo de Pt
 í
 e
 S*
-TiO2|S + hȞ ĺ TiO2|S*                           (1)
-hv                              Mediador de
+TiO2|S + hȞ ĺ TiO2|S* (1)
+hv Mediador de
 carga
-Ií3                            TiO2|S* ĺ TiO2|S+ + eí                          (2)
-I í                            TiO2|S+ + 3 Ií ĺ TiO2|S + 1 I3í (3)
-2                       2
-S/S+                                      1 í        3
-eí                                                     eí
-I3 + eí ĺ Ií                                  (4)
-2          2
-eí                             eí
+Ií3 TiO2|S* ĺ TiO2|S+ + eí (2)
+I í TiO2|S+ + 3 Ií ĺ TiO2|S + 1 I3í (3)
+2 2
+S/S+ 1 í 3
+eí eí
+I3 + eí ĺ Ií (4)
+2 2
+eí eí
 LONGO, C.; DE PAOLI, M.-A. Dye-Sensitized Solar Cells: A Successful Combination of Materials.
 Journal of the Brazilian Chemical Society, n. 6, 2003 (adaptado).
 A reação 3 é fundamental para o contínuo funcionamento da célula solar, pois
@@ -586,10 +586,10 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 15
 
 O nível metabólico de uma célula pode ser determinado pela taxa de síntese de
 RNAs e proteínas, processos dependentes de energia. Essa diferença na taxa de
-VtQWHVH GH ELRPROpFXODV p UHÀHWLGD QD DEXQGkQFLD H FDUDFWHUtVWLFDV PRUIROyJLFDV GRV
+VtQWHVH GH ELRPROpFXODV p UHÀHWLGD QD DEXQGkQFLD H FDUDFWHUtVWLFDV PRUIROyJLFDV GRV
 componentes celulares. Em uma empresa de produção de hormônios proteicos a partir
 do cultivo de células animais, um pesquisador deseja selecionar uma linhagem com o
-PHWDEROLVPRGHVtQWHVHPDLVHOHYDGRGHQWUHDVFLQFRHVTXHPDWL]DGDVQD¿JXUD
+PHWDEROLVPR GH VtQWHVH PDLV HOHYDGR GHQWUH DV FLQFR HVTXHPDWL]DGDV QD ¿JXUD
 Qual linhagem deve ser escolhida pelo pesquisador?
 - A) I
 - B) II
@@ -621,9 +621,9 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 16
 O sulfeto de mercúrio(II) foi usado como pigmento vermelho para pinturas de quadros
 e murais. Esse pigmento, conhecido como vermilion, escurece com o passar dos anos,
 fenômeno cuja origem é alvo de pesquisas. Aventou-se a hipótese de que o vermilion seja
-GHFRPSRVWR VRE D DomR GD OX] SURGX]LQGR XPD ¿QD FDPDGD GH PHUF~ULR PHWiOLFR QD
+GHFRPSRVWR VRE D DomR GD OX] SURGX]LQGR XPD ¿QD FDPDGD GH PHUF~ULR PHWiOLFR QD
 superfície. Essa reação seria catalisada por íon cloreto presente na umidade do ar.
-WOGAN, T. 0HUFXU\¶V'DUN,QÀXHQFHRQ$UW. Disponível em: www.chemistryworld.com.
+WOGAN, T. 0HUFXU\¶V 'DUN ,QÀXHQFH RQ $UW. Disponível em: www.chemistryworld.com.
 Acesso em: 26 abr. 2018 (adaptado).
 Segundo a hipótese proposta, o íon cloreto atua na decomposição fotoquímica do
 vermilion
@@ -665,7 +665,7 @@ As pessoas que utilizam objetos cujo princípio de funcionamento é o mesmo do d
 alavancas aplicam uma força, chamada de força potente, em um dado ponto da barra,
 para superar ou equilibrar uma segunda força, chamada de resistente, em outro ponto
 da barra. Por causa das diferentes distâncias entre os pontos de aplicação das forças,
-SRWHQWH H UHVLVWHQWH RV VHXV HIHLWRV WDPEpP VmR GLIHUHQWHV $ ¿JXUD PRVWUD DOJXQV
+SRWHQWH H UHVLVWHQWH RV VHXV HIHLWRV WDPEpP VmR GLIHUHQWHV $ ¿JXUD PRVWUD DOJXQV
 exemplos desses objetos.
 Em qual dos objetos a força potente é maior que a força resistente?
 - A) Pinça.
@@ -679,17 +679,17 @@ Em qual dos objetos a força potente é maior que a força resistente?
 - Área: Ciências da Natureza
 - Gabarito: C
 
-1D PLWRORJLD JUHJD 1LyELD HUD D ¿OKD GH 7kQWDOR GRLV SHUVRQDJHQV FRQKHFLGRV
-SHOR VRIULPHQWR 2 HOHPHQWR TXtPLFRGHQ~PHURDW{PLFR = LJXDODWHPSURSULHGDGHV
+1D PLWRORJLD JUHJD 1LyELD HUD D ¿OKD GH 7kQWDOR GRLV SHUVRQDJHQV FRQKHFLGRV
+SHOR VRIULPHQWR 2 HOHPHQWR TXtPLFR GH Q~PHUR DW{PLFR = LJXDO D WHP SURSULHGDGHV
 químicas e físicas tão parecidas com as do elemento de número atômico 73 que
 chegaram a ser confundidos. Por isso, em homenagem a esses dois personagens da
-PLWRORJLD JUHJD IRL FRQIHULGR D HVVHV HOHPHQWRV RV QRPHV GH QLyELR =    H WkQWDOR
-=    (VVHV GRLV HOHPHQWRV TXtPLFRV DGTXLULUDP JUDQGH LPSRUWkQFLD HFRQ{PLFD QD
+PLWRORJLD JUHJD IRL FRQIHULGR D HVVHV HOHPHQWRV RV QRPHV GH QLyELR = H WkQWDOR
+= (VVHV GRLV HOHPHQWRV TXtPLFRV DGTXLULUDP JUDQGH LPSRUWkQFLD HFRQ{PLFD QD
 metalurgia, na produção de supercondutores e em outras aplicações na indústria de
 ponta, exatamente pelas propriedades químicas e físicas comuns aos dois.
-.($16A colher que desaparece: e outras histórias reais de loucura, amor e morte a
-SDUWLUGRVHOHPHQWRVTXtPLFRV5LRGH-DQHLUR
-=DKDU DGDSWDGR 
+.($1 6 A colher que desaparece: e outras histórias reais de loucura, amor e morte a
+SDUWLU GRV HOHPHQWRV TXtPLFRV 5LR GH -DQHLUR
+=DKDU DGDSWDGR
 A importância econômica e tecnológica desses elementos, pela similaridade de suas
 propriedades químicas e físicas, deve-se a
 - A) terem elétrons no subnível f.
@@ -713,18 +713,18 @@ onde são encontradas — de uma espécie de orquídea (Epidendrum denticulatum)
 No diagrama estão os resultados dos cruzamentos entre as populações. Considere que
 o doador fornece o pólen para o receptor.
 RESULTADOS DOS
-CRUZAMENTOS                PÃO DE
-PETI                 PETI
+CRUZAMENTOS PÃO DE
+PETI PETI
 AÇÚCAR
 ITIRAPINA
 ALCOBAÇA
 ITAPEVA
-BERTIOGA                                                        OLIVENÇA
+BERTIOGA OLIVENÇA
 MARAMBAIA
 MASSAMBABA
-DOADOR            RECEPTOR - Polinização induzida bem-sucedida
-DOADOR            RECEPTOR - Polinização induzida inviável ou nula
-Mata Atlântica          Cerrado
+DOADOR RECEPTOR - Polinização induzida bem-sucedida
+DOADOR RECEPTOR - Polinização induzida inviável ou nula
+Mata Atlântica Cerrado
 FIORAVANTI, C. Os primeiros passos de novas espécies: plantas e animais se diferenciam
 por meio de mecanismos surpreendentes. Pesquisa Fapesp, out. 2013 (adaptado).
 Em populações de quais localidades se observa um processo de especiação evidente?
@@ -748,7 +748,7 @@ Um dos benefícios dessa forma de plantio é a
 - B) produção de frutos das duas espécies.
 - C) manutenção do genótipo da planta híbrida.
 - D) reprodução de clones das plantas parentais.
-- E) PRGL¿FDomRGRJHQRPDGHFRUUHQWHGDWUDQVJHQLD
+- E) PRGL¿FDomR GR JHQRPD GHFRUUHQWH GD WUDQVJHQLD
 
 ## Questão 122
 
@@ -756,14 +756,14 @@ Um dos benefícios dessa forma de plantio é a
 - Gabarito: B
 
 Alguns materiais sólidos são compostos por átomos que interagem entre si formando
-OLJDo}HV TXH SRGHP VHU FRYDOHQWHV L{QLFDV RX PHWiOLFDV $ ¿JXUD DSUHVHQWD D HQHUJLD
+OLJDo}HV TXH SRGHP VHU FRYDOHQWHV L{QLFDV RX PHWiOLFDV $ ¿JXUD DSUHVHQWD D HQHUJLD
 potencial de ligação em função da distância interatômica em um sólido cristalino.
-$QDOLVDQGR HVVD ¿JXUD REVHUYDVH TXH QD WHPSHUDWXUD GH ]HUR NHOYLQ D GLVWkQFLD
+$QDOLVDQGR HVVD ¿JXUD REVHUYD VH TXH QD WHPSHUDWXUD GH ]HUR NHOYLQ D GLVWkQFLD
 de equilíbrio da ligação entre os átomos (R0) corresponde ao valor mínimo de energia
 potencial. Acima dessa temperatura, a energia térmica fornecida aos átomos aumenta sua
 energia cinética e faz com que eles oscilem em torno de uma posição de equilíbrio média
 (círculos cheios), que é diferente para cada temperatura. A distância de ligação pode variar
-VREUHWRGDDH[WHQVmRGDVOLQKDVKRUL]RQWDLVLGHQWL¿FDGDVFRPRYDORUGDWHPSHUDWXUDGH
+VREUH WRGD D H[WHQVmR GDV OLQKDV KRUL]RQWDLV LGHQWL¿FDGDV FRP R YDORU GD WHPSHUDWXUD GH
 T1 a T4 (temperaturas crescentes).
 Energia de ligação
 Distância interatômica
@@ -803,16 +803,16 @@ O uso desses produtos pode auxiliar no controle da
 - Gabarito: E
 
 Nos manuais de instalação de equipamentos de som há o alerta aos usuários para
-TXH REVHUYHP D FRUUHWD SRODULGDGH GRV ¿RV DR UHDOL]DUHP DV FRQH[}HV GDV FDL[DV GH
-VRP$V¿JXUDVLOXVWUDPRHVTXHPDGHFRQH[mRGDVFDL[DVGHVRPGHXPHTXLSDPHQWR
+TXH REVHUYHP D FRUUHWD SRODULGDGH GRV ¿RV DR UHDOL]DUHP DV FRQH[}HV GDV FDL[DV GH
+VRP $V ¿JXUDV LOXVWUDP R HVTXHPD GH FRQH[mR GDV FDL[DV GH VRP GH XP HTXLSDPHQWR
 de som mono, no qual os alto-falantes emitem as mesmas ondas. No primeiro caso, a
-OLJDomR REHGHFH jV HVSHFL¿FDo}HV GR IDEULFDQWH H QR VHJXQGR PRVWUD XPD OLJDomR QD
+OLJDomR REHGHFH jV HVSHFL¿FDo}HV GR IDEULFDQWH H QR VHJXQGR PRVWUD XPD OLJDomR QD
 qual a polaridade está invertida.
-Polaridade correta                            Polaridade invertida
-Saídas do equipamento de som                   Saídas do equipamento de som
-E                        D                     E                         D
-E                        D                     E                         D
-Caixa de som            Caixa de som           Caixa de som             Caixa de som
+Polaridade correta Polaridade invertida
+Saídas do equipamento de som Saídas do equipamento de som
+E D E D
+E D E D
+Caixa de som Caixa de som Caixa de som Caixa de som
 O que ocorre com os alto-falantes E e D se forem conectados de acordo com o segundo
 esquema?
 - A) O alto-falante E funciona normalmente e o D entra em curto-circuito e não emite som.
@@ -832,15 +832,15 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 21
 - Área: Ciências da Natureza
 - Gabarito: D
 
-(P 
- R DUTXHyORJR DOHPmR :LOKHOP .|QLJ GLUHWRU GR 0XVHX 1DFLRQDO GR ,UDTXH
+(P
+R DUTXHyORJR DOHPmR :LOKHOP .|QLJ GLUHWRU GR 0XVHX 1DFLRQDO GR ,UDTXH
 encontrou um objeto estranho na coleção da instituição, que poderia ter sido usado como
 uma pilha, similar às utilizadas em nossos dias. A suposta pilha, datada de cerca de 200 a.C.,
 é constituída de um pequeno vaso de barro (argila) no qual foram instalados um
 tubo de cobre, uma barra de ferro (aparentemente corroída por ácido) e uma tampa
 de betume (asfalto), conforme ilustrado. Considere os potenciais-padrão de redução:
-E (Fe2+_)H  í9
-E (H+|H2) = 0,00 V; e E (Cu2+|Cu) = +0,34 V.
+E (Fe2+_)H í 9
+E (H+|H2) = 0,00 V; e E (Cu2+|Cu) = +0,34 V.
 Tampa de
 betume
 Barra de ferro
@@ -881,7 +881,7 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 22
 - Gabarito: D
 
 Usando um densímetro cuja menor divisão da escala, isto é, a diferença entre duas
-marcações consecutivas, é de 5,0 × 10í g cmí3, um estudante realizou um teste de
+marcações consecutivas, é de 5,0 × 10í g cmí3, um estudante realizou um teste de
 densidade: colocou este instrumento na água pura e observou que ele atingiu o repouso
 na posição mostrada.
 Legenda:
@@ -893,11 +893,11 @@ Quando o cloreto de sódio é adicionado à água pura ocorre sua dissociação
 formando os íons Na+ e Clí. Considere que esses íons ocupam os espaços
 intermoleculares na solução.
 Nestes recipientes, a posição de equilíbrio do densímetro está representada em:
-A                B                               A                   B
-A                                               D
-A                B                               A                  B
-B                                               E
-A                B
+A B A B
+A D
+A B A B
+B E
+A B
 C
 CN - 2º dia | Caderno 5 - AMARELO - Página 23
 
@@ -906,10 +906,10 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 23
 - Área: Ciências da Natureza
 - Gabarito: A
 
-$ ¿JXUD UHSUHVHQWD XP SULVPD ySWLFR FRQVWLWXtGR GH XP PDWHULDO WUDQVSDUHQWH FXMR
+$ ¿JXUD UHSUHVHQWD XP SULVPD ySWLFR FRQVWLWXtGR GH XP PDWHULDO WUDQVSDUHQWH FXMR
 índice de refração é crescente com a frequência da luz que sobre ele incide. Um feixe
 luminoso, composto por luzes vermelha, azul e verde, incide na face A, emerge na
-IDFH % H DSyV VHU UHÀHWLGR SRU XP HVSHOKR LQFLGH QXP ¿OPH SDUD IRWRJUD¿D FRORULGD
+IDFH % H DSyV VHU UHÀHWLGR SRU XP HVSHOKR LQFLGH QXP ¿OPH SDUD IRWRJUD¿D FRORULGD
 revelando três pontos.
 ho
 o
@@ -932,13 +932,13 @@ Ve
 Vi
 La
 Ve
-400       450       500      550     600      650      700         750    (nm)
-Face A     Face B
+400 450 500 550 600 650 700 750 (nm)
+Face A Face B
 Perfil do filme
 Feixe incidente
 Prisma
 Espelho
-2EVHUYDQGRRVSRQWRVOXPLQRVRVUHYHODGRVQR¿OPHGHEDL[RSDUDFLPDFRQVWDWDPVH
+2EVHUYDQGR RV SRQWRV OXPLQRVRV UHYHODGRV QR ¿OPH GH EDL[R SDUD FLPD FRQVWDWDP VH
 as seguintes cores:
 - A) Vermelha, verde, azul.
 - B) Verde, vermelha, azul.
@@ -952,32 +952,32 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 24
 - Área: Ciências da Natureza
 - Gabarito: B
 
-7HQVRDWLYRV VmR FRPSRVWRV RUJkQLFRV TXH SRVVXHP FRPSRUWDPHQWR DQ¿ItOLFR LVWR
+7HQVRDWLYRV VmR FRPSRVWRV RUJkQLFRV TXH SRVVXHP FRPSRUWDPHQWR DQ¿ItOLFR LVWR
 é, possuem duas regiões, uma hidrofóbica e outra hidrofílica. O principal tensoativo
 aniônico sintético surgiu na década de 1940 e teve grande aceitação no mercado de
 detergentes em razão do melhor desempenho comparado ao do sabão. No entanto, o
 uso desse produto provocou grandes problemas ambientais, dentre eles a resistência à
 degradação biológica, por causa dos diversos carbonos terciários na cadeia que compõe
-DSRUomRKLGURIyELFDGHVVHWHQVRDWLYRDQL{QLFR$VUDPL¿FDo}HVQDFDGHLDGL¿FXOWDPVXD
+D SRUomR KLGURIyELFD GHVVH WHQVRDWLYR DQL{QLFR $V UDPL¿FDo}HV QD FDGHLD GL¿FXOWDP VXD
 degradação, levando à persistência no meio ambiente por longos períodos. Isso levou
 a sua substituição na maioria dos países por tensoativos biodegradáveis, ou seja, com
 cadeias alquílicas lineares.
-3(17($'2-&3
-(/6(28'2$
-&$59$/+2/5)>@
-XPDDERUGDJHPDPELHQWDOHDQDOtWLFD
+3(17($'2 - & 3
+(/ 6(28' 2 $
+&$59$/+2 / 5 ) > @
+XPD DERUGDJHP DPELHQWDO H DQDOtWLFD
 Química Nova, n. 5, 2006 (adaptado).
 Qual a fórmula estrutural do tensoativo persistente no ambiente mencionado no texto?
 O
-A                 OH
-15         20
-SO3 Na+
+A OH
+15 20
+SO3 Na+
 B
 C
-SO3 Na+
-D                                              N+ Cl
+SO3 Na+
+D N+ Cl
 Cl
-E                                                           N+
+E N+
 CN - 2º dia | Caderno 5 - AMARELO - Página 25
 
 ## Questão 130
@@ -986,20 +986,20 @@ CN - 2º dia | Caderno 5 - AMARELO - Página 25
 - Gabarito: E
 
 Considere, em um fragmento ambiental, uma árvore matriz com frutos (M) e outras
-FLQFR TXH SURGX]LUDP ÀRUHV H VmR DSHQDV GRDGRUDV GH SyOHQ '3 '3 '3 '3 H
+FLQFR TXH SURGX]LUDP ÀRUHV H VmR DSHQDV GRDGRUDV GH SyOHQ '3 '3 '3 '3 H
 DP5). Foi excluída a capacidade de autopolinização das árvores. Os genótipos da
 matriz, da semente (S1) e das prováveis fontes de pólen foram obtidos pela análise de
-GRLVORFRV ORFR$HORFR% GHPDUFDGRUHVGH'1$FRQIRUPHD¿JXUD
-Esquema                  M             S1            DP1           DP2           DP3           DP4            DP5
+GRLV ORFRV ORFR $ H ORFR % GH PDUFDGRUHV GH '1$ FRQIRUPH D ¿JXUD
+Esquema M S1 DP1 DP2 DP3 DP4 DP5
 do Gel 1
 alelo 1
-loco A    alelo 2
+loco A alelo 2
 alelo 3
 alelo 4
-Esquema                  M             S1            DP1           DP2           DP3            DP4           DP5
+Esquema M S1 DP1 DP2 DP3 DP4 DP5
 do Gel 2
 alelo 1
-loco B    alelo 2
+loco B alelo 2
 alelo 3
 alelo 4
 alelo 5
@@ -1022,23 +1022,23 @@ Em desenhos animados é comum vermos a personagem tentando impulsionar
 um barco soprando ar contra a vela para compensar a falta de vento. Algumas vezes
 usam o próprio fôlego, foles ou ventiladores. Estudantes de um laboratório didático
 resolveram investigar essa possibilidade. Para isso, usaram dois pequenos carros de
-plástico, A e B LQVWDODUDP VREUH HVWHV SHTXHQDV YHQWRLQKDV H ¿[DUDP YHUWLFDOPHQWH
+plástico, A e B LQVWDODUDP VREUH HVWHV SHTXHQDV YHQWRLQKDV H ¿[DUDP YHUWLFDOPHQWH
 uma cartolina de curvatura parabólica para desempenhar uma função análoga à vela
 de um barco. No carro B inverteu-se o sentido da ventoinha e manteve-se a vela,
-D ¿P GH PDQWHU DV FDUDFWHUtVWLFDV ItVLFDV GR EDUFR PDVVD H IRUPDWR GD FDUWROLQD
-$V ¿JXUDV UHSUHVHQWDP RV FDUURV SURGX]LGRV$ PRQWDJHP GR FDUUR A busca simular a
+D ¿P GH PDQWHU DV FDUDFWHUtVWLFDV ItVLFDV GR EDUFR PDVVD H IRUPDWR GD FDUWROLQD
+$V ¿JXUDV UHSUHVHQWDP RV FDUURV SURGX]LGRV $ PRQWDJHP GR FDUUR A busca simular a
 situação dos desenhos animados, pois a ventoinha está direcionada para a vela.
-Carro A                                                      Carro B
-&RP RV FDUURV RULHQWDGRV GH DFRUGR FRP DV ¿JXUDV RV HVWXGDQWHV OLJDUDP DV
-YHQWRLQKDVDJXDUGDUDPRÀX[RGHDU¿FDUSHUPDQHQWHHGHWHUPLQDUDPRVPyGXORVGDV
+Carro A Carro B
+&RP RV FDUURV RULHQWDGRV GH DFRUGR FRP DV ¿JXUDV RV HVWXGDQWHV OLJDUDP DV
+YHQWRLQKDV DJXDUGDUDP R ÀX[R GH DU ¿FDU SHUPDQHQWH H GHWHUPLQDUDP RV PyGXORV GDV
 velocidades médias dos carros A (VA) e B (VB) para o mesmo intervalo de tempo.
 A respeito das intensidades das velocidades médias e do sentido de movimento do carro A,
 os estudantes observaram que:
-- A) VA    0; VB ! 0; o carro A não se move.
-- B) 0  VA  VB; o carro A se move para a direita.
-- C) 0  VA  VB; o carro A se move para a esquerda.
-- D) 0  VB  VA; o carro A se move para a direita.
-- E) 0  VB  VA; o carro A se move para a esquerda.
+- A) VA 0; VB ! 0; o carro A não se move.
+- B) 0 VA VB; o carro A se move para a direita.
+- C) 0 VA VB; o carro A se move para a esquerda.
+- D) 0 VB VA; o carro A se move para a direita.
+- E) 0 VB VA; o carro A se move para a esquerda.
 CN - 2º dia | Caderno 5 - AMARELO - Página 27
 
 ## Questão 132
@@ -1050,7 +1050,7 @@ O manejo adequado do solo possibilita a manutenção de sua fertilidade à medid
 que as trocas de nutrientes entre matéria orgânica, água, solo e o ar são mantidas
 para garantir a produção. Algumas espécies iônicas de alumínio são tóxicas, não
 só para a planta, mas para muitos organismos como as bactérias responsáveis pelas
-WUDQVIRUPDo}HV QR FLFOR GR QLWURJrQLR 2 DOXPtQLR GDQL¿FD DV PHPEUDQDV GDV FpOXODV
+WUDQVIRUPDo}HV QR FLFOR GR QLWURJrQLR 2 DOXPtQLR GDQL¿FD DV PHPEUDQDV GDV FpOXODV
 das raízes e restringe a expansão de suas paredes, com isso, a planta não cresce
 adequadamente. Para promover benefícios para a produção agrícola, é recomendada a
 remediação do solo utilizando calcário (CaCO3).
@@ -1134,20 +1134,20 @@ Questões de 136 a 180
 Numa atividade de treinamento realizada no Exército de um determinado país, três
 equipes – Alpha, Beta e Gama – foram designadas a percorrer diferentes caminhos,
 todos com os mesmos pontos de partida e de chegada.
- A equipe Alpha realizou seu percurso em 90 minutos com uma velocidade média
+ A equipe Alpha realizou seu percurso em 90 minutos com uma velocidade média
 de 6,0 km/h.
- A equipe Beta também percorreu sua trajetória em 90 minutos, mas sua
+ A equipe Beta também percorreu sua trajetória em 90 minutos, mas sua
 velocidade média foi de 5,0 km/h.
- Com uma velocidade média de 6,5 km/h, a equipe Gama concluiu seu caminho
+ Com uma velocidade média de 6,5 km/h, a equipe Gama concluiu seu caminho
 em 60 minutos.
 Com base nesses dados, foram comparadas as distâncias dBeta; dAlpha e dGama
 percorridas pelas três equipes.
 A ordem das distâncias percorridas pelas equipes Alpha, Beta e Gama é
-- A) dGama  d Beta  d Alpha
+- A) dGama d Beta d Alpha
 - B) d Alpha = dBeta < dGama
 - C) dGama < d Beta = d Alpha
-- D) dBeta  d Alpha  dGama
-- E) dGama  d Alpha  dBeta
+- D) dBeta d Alpha dGama
+- E) dGama d Alpha dBeta
 
 ## Questão 137
 
@@ -1158,18 +1158,18 @@ O colesterol total de uma pessoa é obtido pela soma da taxa do seu “colestero
 com a taxa do seu “colesterol ruim”. Os exames periódicos, realizados em um paciente
 adulto, apresentaram taxa normal de “colesterol bom”, porém, taxa do “colesterol ruim”
 (também chamado LDL) de 280 mg/dL.
-2TXDGURDSUHVHQWDXPDFODVVL¿FDomRGHDcordo com as taxas de LDL em adultos.
+2 TXDGUR DSUHVHQWD XPD FODVVL¿FDomR GH Dcordo com as taxas de LDL em adultos.
 Taxa de LDL (mg/dL)
-Ótima       Menor do que 100
-Próxima de ótima   De 100 a 129
-Limite        De 130 a 159
-Alta         De 160 a 189
-Muito alta       190 ou mais
+Ótima Menor do que 100
+Próxima de ótima De 100 a 129
+Limite De 130 a 159
+Alta De 160 a 189
+Muito alta 190 ou mais
 Disponível em: www.minhavida.com.br. Acesso em: 15 out. 2015 (adaptado).
 O paciente, seguindo as recomendações médicas sobre estilo de vida e alimentação,
 realizou o exame logo após o primeiro mês, e a taxa de LDL reduziu 25%. No mês
 seguinte, realizou novo exame e constatou uma redução de mais 20% na taxa de LDL.
-'H DFRUGR FRP R UHVXOWDGR GR VHJXQGR H[DPH D FODVVL¿FDomR GD WD[D GH /'/ GR
+'H DFRUGR FRP R UHVXOWDGR GR VHJXQGR H[DPH D FODVVL¿FDomR GD WD[D GH /'/ GR
 paciente é
 - A) ótima.
 - B) próxima de ótima.
@@ -1185,32 +1185,32 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 31
 
 Uma empresa deseja iniciar uma campanha publicitária divulgando uma promoção
 para seus possíveis consumidores. Para esse tipo de campanha, os meios mais viáveis
-VmR D GLVWULEXLomR GH SDQÀHWRV QD UXD H DQ~QFLRV QD UiGLR ORFDO &RQVLGHUDVH TXH D
-SRSXODomRDOFDQoDGDSHODGLVWULEXLomRGHSDQÀHWRVVHMDLJXDOjTXDQWLGDGHGHSDQÀHWRV
+VmR D GLVWULEXLomR GH SDQÀHWRV QD UXD H DQ~QFLRV QD UiGLR ORFDO &RQVLGHUD VH TXH D
+SRSXODomR DOFDQoDGD SHOD GLVWULEXLomR GH SDQÀHWRV VHMD LJXDO j TXDQWLGDGH GH SDQÀHWRV
 distribuídos, enquanto que a alcançada por um anúncio na rádio seja igual à quantidade
 de ouvintes desse anúncio. O custo de cada anúncio na rádio é de R$ 120,00, e a
-HVWLPDWLYDpGHTXHVHMDRXYLGRSRUSHVVRDV-iDSURGXomRHDGLVWULEXLomRGRV
-SDQÀHWRVFXVWDP5FDGDXQLGDGHV&RQVLGHUDQGRTXHFDGDSHVVRDVHUi
+HVWLPDWLYD p GH TXH VHMD RXYLGR SRU SHVVRDV -i D SURGXomR H D GLVWULEXLomR GRV
+SDQÀHWRV FXVWDP 5 FDGD XQLGDGHV &RQVLGHUDQGR TXH FDGD SHVVRD VHUi
 alcançada por um único desses meios de divulgação, a empresa pretende investir em
 ambas as mídias.
-Considere X e Y RVYDORUHV HPUHDO JDVWRVHPDQ~QFLRVQDUiGLRHFRPSDQÀHWRV
+Considere X e Y RV YDORUHV HP UHDO JDVWRV HP DQ~QFLRV QD UiGLR H FRP SDQÀHWRV
 respectivamente.
 O número de pessoas alcançadas pela campanha será dado pela expressão
 50 X 50Y
-- A) 
-4    9
+A
+4 9
 50 X 50Y
-- B) 
-9    4
+B
+9 4
 4 X 4Y
-- C) 
+C
 50 50
 50 50
-- D) 
+D
 4 X 9Y
 50 50Y
-- E) +
-9X   4Y
+E +
+9X 4Y
 MT - 2º dia | Caderno 5 - AMARELO - Página 32
 
 ## Questão 139
@@ -1220,7 +1220,7 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 32
 
 O remo de assento deslizante é um esporte que faz uso de um barco e dois remos do
 mesmo tamanho.
-$¿JXUDPRVWUDXPDGDVSRVLo}HVGHXPDWpFQLFDFKDPDGDDIDVWDPHQWR
+$ ¿JXUD PRVWUD XPD GDV SRVLo}HV GH XPD WpFQLFD FKDPDGD DIDVWDPHQWR
 Disponível em: www.remobrasil.com. Acesso em: 6 dez. 2017 (adaptado).
 Nessa posição, os dois remos se encontram no ponto A e suas outras extremidades
 estão indicadas pelos pontos B e C. Esses três pontos formam um triângulo ABC cujo
@@ -1260,7 +1260,7 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 34
 - Área: Matemática
 - Gabarito: A
 
-8P PDSD p D UHSUHVHQWDomR UHGX]LGD H VLPSOL¿FDGD GH XPD ORFDOLGDGH
+8P PDSD p D UHSUHVHQWDomR UHGX]LGD H VLPSOL¿FDGD GH XPD ORFDOLGDGH
 Essa redução, que é feita com o uso de uma escala, mantém a proporção do espaço
 representado em relação ao espaço real.
 Certo mapa tem escala 1 : 58 000 000.
@@ -1302,16 +1302,16 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 35
 
 A raiva é uma doença viral e infecciosa, transmitida por mamíferos. A campanha
 nacional de vacinação antirrábica tem o objetivo de controlar a circulação do vírus
-GD UDLYD FDQLQD H IHOLQD SUHYHQLQGR D UDLYD KXPDQD 2 JUi¿FR PRVWUD D FREHUWXUD
+GD UDLYD FDQLQD H IHOLQD SUHYHQLQGR D UDLYD KXPDQD 2 JUi¿FR PRVWUD D FREHUWXUD
 (porcentagem de vacinados) da campanha, em cães, nos anos de 2013, 2015 e 2017, no
 município de Belo Horizonte, em Minas Gerais. Os valores das coberturas dos anos de
-HQmRHVWmRLQIRUPDGRVQRJUi¿FRHGHVHMDVHHVWLPiORV3DUDWDOOHYRXVH
+H QmR HVWmR LQIRUPDGRV QR JUi¿FR H GHVHMD VH HVWLPi ORV 3DUD WDO OHYRX VH
 em consideração que a variação na cobertura de vacinação da campanha antirrábica, nos
 períodos de 2013 a 2015 e de 2015 a 2017, deu-se de forma linear.
 67%
 61%
 59%
-2013                   2014                    2015                     2016                          2017
+2013 2014 2015 2016 2017
 Disponível em: http://pni.datasus.gov.br. Acesso em: 5 nov. 2017.
 Qual teria sido a cobertura dessa campanha no ano de 2014?
 - A) 62,3%
@@ -1332,10 +1332,10 @@ guindaste deve ter sua altura entre 0,5 cm e 1 cm, enquanto a esteira deve apres
 comprimento superior a 4 cm. Todo o desenho deverá ser feito em uma escala 1 : X.
 Os valores possíveis para X são, apenas,
 - A) X ! 1 500.
-- B) X  3 000.
-- C) 1 500  X  2 250.
-- D) 1 500  X  3 000.
-- E) 2 250  X  3 000.
+- B) X 3 000.
+- C) 1 500 X 2 250.
+- D) 1 500 X 3 000.
+- E) 2 250 X 3 000.
 MT - 2º dia | Caderno 5 - AMARELO - Página 36
 
 ## Questão 145
@@ -1344,18 +1344,18 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 36
 - Gabarito: A
 
 Em 2014 foi inaugurada a maior roda-gigante do mundo, a High Roller, situada
-HP /DV 9HJDV$ ¿JXUD UHSUHVHQWD XP HVERoR GHVVD URGDJLJDQWH QR TXDO R SRQWR A
+HP /DV 9HJDV $ ¿JXUD UHSUHVHQWD XP HVERoR GHVVD URGD JLJDQWH QR TXDO R SRQWR A
 representa uma de suas cadeiras:
-O                         A
-Solo                         Solo
+O A
+Solo Solo
 Disponível em: http://en.wikipedia.org. Acesso em: 22 abr. 2014 (adaptado).
 A partir da posição indicada, em que o segmento OA se encontra paralelo ao
 plano do solo, rotaciona-se a High Roller no sentido anti-horário, em torno do ponto O.
 Sejam t o ângulo determinado pelo segmento OA em relação à sua posição inicial, e f a
 função que descreve a altura do ponto A, em relação ao solo, em função de t.
-Após duas voltas completas, fWHPRVHJXLQWHJUi¿FR
+Após duas voltas completas, f WHP R VHJXLQWH JUi¿FR
 f (metro)
-0       S/2            2S                           4S t (radiano)
+0 S/2 2S 4S t (radiano)
 A expressão da função altura é dada por
 - A) f (t ) = 80sen(t ) + 88
 - B) f (t ) = 80cos(t ) + 88
@@ -1373,15 +1373,15 @@ Minecraft é um jogo virtual que pode auxiliar no desenvolvimento de conheciment
 relacionados a espaço e forma. É possível criar casas, edifícios, monumentos e até
 naves espaciais, tudo em escala real, através do empilhamento de cubinhos.
 Um jogador deseja construir um cubo com dimensões 4 u 4 u 4. Ele já empilhou
-DOJXQVGRVFXELQKRVQHFHVViULRVFRQIRUPHD¿JXUD
+DOJXQV GRV FXELQKRV QHFHVViULRV FRQIRUPH D ¿JXUD
 +
 +
 +
-2V FXELQKRV TXH DLQGD IDOWDP HPSLOKDU SDUD ¿QDOL]DU D FRQVWUXomR GR FXER MXQWRV
+2V FXELQKRV TXH DLQGD IDOWDP HPSLOKDU SDUD ¿QDOL]DU D FRQVWUXomR GR FXER MXQWRV
 formam uma peça única, capaz de completar a tarefa.
 O formato da peça capaz de completar o cubo 4 u 4 u 4 é
-A                                                D
-B                                                E
+A D
+B E
 C
 MT - 2º dia | Caderno 5 - AMARELO - Página 38
 
@@ -1395,12 +1395,12 @@ o mercado de veículos elétricos atingiu um novo marco em 2016, quando foram ve
 mais de 750 mil automóveis da categoria. Com isso, o total de carros elétricos vendidos
 no mundo alcançou a marca de 2 milhões de unidades desde que os primeiros modelos
 começaram a ser comercializados em 2011.
-1R %UDVLO D H[SDQVmR GDV YHQGDV WDPEpP VH YHUL¿FD $ PDUFD $ SRU H[HPSOR
+1R %UDVLO D H[SDQVmR GDV YHQGDV WDPEpP VH YHUL¿FD $ PDUFD $ SRU H[HPSOR
 expandiu suas vendas no ano de 2016, superando em 360 unidades as vendas de 2015,
-FRQIRUPHUHSUHVHQWDGRQRJUi¿FR
+FRQIRUPH UHSUHVHQWDGR QR JUi¿FR
 Disponível em: www.tecmundo.com.br. Acesso em: 5 dez. 2017.
 A média anual do número de carros vendidos pela marca A, nos anos representados no
-JUi¿FRIRLGH
+JUi¿FR IRL GH
 - A) 192.
 - B) 240.
 - C) 252.
@@ -1434,14 +1434,14 @@ Torneios de tênis, em geral, são disputados em sistema de eliminatória simple
 Nesse sistema, são disputadas partidas entre dois competidores, com a eliminação do
 perdedor e promoção do vencedor para a fase seguinte. Dessa forma, se na 1a fase o
 torneio conta com 2n competidores, então na 2a fase restarão n competidores, e assim
-VXFHVVLYDPHQWHDWpDSDUWLGD¿QDO
+VXFHVVLYDPHQWH DWp D SDUWLGD ¿QDO
 Em um torneio de tênis, disputado nesse sistema, participam 128 tenistas.
-3DUDVHGH¿QLURFDPSHmRGHVVHWRUQHLRRQ~PHURGHSDUWLGDVQHFHVViULDVpGDGRSRU
+3DUD VH GH¿QLU R FDPSHmR GHVVH WRUQHLR R Q~PHUR GH SDUWLGDV QHFHVViULDV p GDGR SRU
 - A) 2 u 128
-- B) 64  32  16  8  4  2
-- C) 128  64  32  16  8  4  2  1
-- D) 128  64  32  16  8  4  2
-- E) 64  32  16  8  4  2  1
+- B) 64 32 16 8 4 2
+- C) 128 64 32 16 8 4 2 1
+- D) 128 64 32 16 8 4 2
+- E) 64 32 16 8 4 2 1
 
 ## Questão 150
 
@@ -1449,7 +1449,7 @@ Em um torneio de tênis, disputado nesse sistema, participam 128 tenistas.
 - Gabarito: A
 
 O artigo 33 da lei brasileira sobre drogas prevê a pena de reclusão de 5 a 15 anos
-SDUDTXDOTXHUSHVVRDTXHVHMDFRQGHQDGDSRUWUi¿FRLOtFLWRRXSURGXomRQmRDXWRUL]DGD
+SDUD TXDOTXHU SHVVRD TXH VHMD FRQGHQDGD SRU WUi¿FR LOtFLWR RX SURGXomR QmR DXWRUL]DGD
 de drogas. Entretanto, caso o condenado seja réu primário, com bons antecedentes
 criminais, essa pena pode sofrer uma redução de um sexto a dois terços.
 Suponha que um réu primário, com bons antecedentes criminais, foi condenado pelo
@@ -1479,17 +1479,17 @@ ponto (m ; r) cujas coordenadas são, respectivamente, a massa do satélite e o 
 sua órbita em torno da Terra.
 Raio (r)
 C
-A                         B
-0                                      Massa (m)
-&RP EDVH QDV SRVLo}HV UHODWLYDV GRV SRQWRV QR JUi¿FR GHVHMDVH FRPSDUDU DV
+A B
+0 Massa (m)
+&RP EDVH QDV SRVLo}HV UHODWLYDV GRV SRQWRV QR JUi¿FR GHVHMD VH FRPSDUDU DV
 intensidades FA, FB e FC da força gravitacional que a Terra exerce sobre os satélites
 A, B e C, respectivamente.
-As intensidades FA, FB e FC H[SUHVVDVQRJUi¿FRVDWLVID]HPDUHODomR
-- A) FC    FA  FB
-- B) FA    FB  FC
-- C) FA  FB  FC
-- D) FA  FC  FB
-- E) FC  FA  FB
+As intensidades FA, FB e FC H[SUHVVDV QR JUi¿FR VDWLVID]HP D UHODomR
+- A) FC FA FB
+- B) FA FB FC
+- C) FA FB FC
+- D) FA FC FB
+- E) FC FA FB
 MT - 2º dia | Caderno 5 - AMARELO - Página 41
 
 ## Questão 152
@@ -1497,15 +1497,14 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 41
 - Área: Matemática
 - Gabarito: B
 
-2VWLSRVGHSUDWDQRUPDOPHQWHYHQGLGRVVmR
-
-H
-(VVDFODVVL¿FDomRp
+2V WLSRV GH SUDWD QRUPDOPHQWH YHQGLGRV VmR
+H
+(VVD FODVVL¿FDomR p
 feita de acordo com a sua pureza. Por exemplo, a prata 975 é a substância constituída
 de 975 partes de prata pura e 25 partes de cobre em 1 000 partes da substância.
--i D SUDWD
- p FRQVWLWXtGD GH
- SDUWHV GH SUDWD SXUD H  GH FREUH HP 
+-i D SUDWD
+p FRQVWLWXtGD GH
+SDUWHV GH SUDWD SXUD H GH FREUH HP
 e a prata 925 é constituída de 925 partes de prata pura e 75 partes de cobre em 1 000.
 Um ourives possui 10 gramas de prata 925 e deseja obter 40 gramas de prata 950 para
 produção de uma joia.
@@ -1525,11 +1524,11 @@ fundidos com os 10 gramas de prata 925?
 Em um aeroporto, os passageiros devem submeter suas bagagens a uma das cinco
 máquinas de raio-X disponíveis ao adentrarem a sala de embarque. Num dado instante,
 o tempo gasto por essas máquinas para escanear a bagagem de cada passageiro e o
-Q~PHUR GH SHVVRDV SUHVHQWHV HP FDGD ¿OD HVWmR DSUHVHQWDGRV HP XP SDLQHO FRPR
-PRVWUDGRQD¿JXUD
-Máquina 1         Máquina 2         Máquina 3      Máquina 4         Máquina 5
-35 segundos       25 segundos      22 segundos     40 segundos       20 segundos
-5 pessoas         6 pessoas        7 pessoas       4 pessoas         8 pessoas
+Q~PHUR GH SHVVRDV SUHVHQWHV HP FDGD ¿OD HVWmR DSUHVHQWDGRV HP XP SDLQHO FRPR
+PRVWUDGR QD ¿JXUD
+Máquina 1 Máquina 2 Máquina 3 Máquina 4 Máquina 5
+35 segundos 25 segundos 22 segundos 40 segundos 20 segundos
+5 pessoas 6 pessoas 7 pessoas 4 pessoas 8 pessoas
 Um passageiro, ao chegar à sala de embarque desse aeroporto no instante indicado,
 visando esperar o menor tempo possível, deverá se dirigir à máquina
 - A) 1.
@@ -1550,14 +1549,14 @@ pedido da diretoria, uma pesquisa do número de acidentes sofridos por funcioná
 Essa pesquisa, realizada com uma amostra de 100 funcionários, norteará as ações da
 empresa na política de segurança no trabalho.
 Os resultados obtidos estão no quadro.
-Número de              Número de
-acidentes sofridos       trabalhadores
-0                      50
-1                      17
-2                      15
-3                      10
-4                       6
-5                       2
+Número de Número de
+acidentes sofridos trabalhadores
+0 50
+1 17
+2 15
+3 10
+4 6
+5 2
 A média do número de acidentes por funcionário na amostra que a CIPA apresentará à
 diretoria da empresa é
 - A) 0,15.
@@ -1572,15 +1571,15 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 43
 - Área: Matemática
 - Gabarito: E
 
-$ URVD GRV YHQWRV p XPD ¿JXUD TXH UHSUHVHQWD RLWR VHQWLGRV TXH GLYLGHP R FtUFXOR
+$ URVD GRV YHQWRV p XPD ¿JXUD TXH UHSUHVHQWD RLWR VHQWLGRV TXH GLYLGHP R FtUFXOR
 em partes iguais.
-8PDFkPHUDGHYLJLOkQFLDHVWi¿[DGDQRWHWRGHXPshopping e sua lente pode ser
+8PD FkPHUD GH YLJLOkQFLD HVWi ¿[DGD QR WHWR GH XP shopping e sua lente pode ser
 direcionada remotamente, através de um controlador, para qualquer sentido. A lente
 da câmera está apontada inicialmente no sentido Oeste e o seu controlador efetua três
 mudanças consecutivas, a saber:
- 1a mudança: 135º no sentido anti-horário;
- 2a mudança: 60º no sentido horário;
- 3a mudança: 45º no sentido anti-horário.
+ 1a mudança: 135º no sentido anti-horário;
+ 2a mudança: 60º no sentido horário;
+ 3a mudança: 45º no sentido anti-horário.
 Após a 3a mudança, ele é orientado a reposicionar a câmera, com a menor amplitude
 possível, no sentido Noroeste (NO) devido a um movimento suspeito de um cliente.
 Qual mudança de sentido o controlador deve efetuar para reposicionar a câmera?
@@ -1598,9 +1597,9 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 44
 
 Na teoria das eleições, o Método de Borda sugere que, em vez de escolher um
 candidato, cada juiz deve criar um ranking de sua preferência para os concorrentes
-LVWR p FULDU XPD OLVWD FRP D RUGHP GH FODVVL¿FDomR GRV FRQFRUUHQWHV $ HVWH ranking
+LVWR p FULDU XPD OLVWD FRP D RUGHP GH FODVVL¿FDomR GRV FRQFRUUHQWHV $ HVWH ranking
 é associada uma pontuação: um ponto para o último colocado no ranking, dois pontos
-SDUDRSHQ~OWLPRWUrVSDUDRDQWHSHQ~OWLPRHDVVLPVXFHVVLYDPHQWH$R¿QDOVRPDVH
+SDUD R SHQ~OWLPR WUrV SDUD R DQWHSHQ~OWLPR H DVVLP VXFHVVLYDPHQWH $R ¿QDO VRPD VH
 a pontuação atribuída a cada concorrente por cada um dos juízes.
 Em uma escola houve um concurso de poesia no qual cinco alunos concorreram
 a um prêmio, sendo julgados por 25 juízes. Para a escolha da poesia vencedora foi
@@ -1608,17 +1607,17 @@ utilizado o Método de Borda. Nos quadros, estão apresentados os rankings dos j
 a frequência de cada ranking.
 Ranking
 Colocação
-I         II      III           IV
-1o         Ana       Dani    Bia           Edu
-2o         Bia       Caio    Ana           Ana
-3o         Caio      Edu     Caio          Dani
-4o         Dani      Ana     Edu           Bia
-5o         Edu       Bia     Dani          Caio
-Ranking        Frequência
-I               4
-II              9
-III              7
-IV               5
+I II III IV
+1o Ana Dani Bia Edu
+2o Bia Caio Ana Ana
+3o Caio Edu Caio Dani
+4o Dani Ana Edu Bia
+5o Edu Bia Dani Caio
+Ranking Frequência
+I 4
+II 9
+III 7
+IV 5
 A poesia vencedora foi a de
 - A) Edu.
 - B) Dani.
@@ -1635,18 +1634,12 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 45
 Sobre um sistema cartesiano considera-se uma malha formada por circunferências
 de raios com medidas dadas por números naturais e por 12 semirretas com
 π
-extremidades na origem, separadas por ângulos de UDGFRQIRUPHD¿JXUD
+extremidades na origem, separadas por ângulos de UDG FRQIRUPH D ¿JXUD
 6 y
-A                       3
-2             B
+A 3
+2 B
 x
-6 5 4 3 2 1 0                 1   2   3   4   5   6
-1
-2
-3
-4
-5
-6
+6 5 4 3 2 1 0 1 2 3 4 5 6
 Suponha que os objetos se desloquem apenas pelas semirretas e pelas
 circunferências dessa malha, não podendo passar pela origem (0 ; 0).
 Considere o valor de S com aproximação de, pelo menos, uma casa decimal.
@@ -1676,14 +1669,14 @@ que as caixas possam ser fechadas.
 No mercado, existem cinco opções de caixas organizadoras, com tampa, em formato
 de paralelepípedo reto retângulo, vendidas pelo mesmo preço, possuindo as seguintes
 dimensões internas:
-Comprimento           Largura              Altura
+Comprimento Largura Altura
 Modelo
-(cm)                (cm)                 (cm)
-I               8                  8                  40
-II              8                 20                  14
-III             18                  5                  35
-IV              20                 12                  12
-V               24                  8                  14
+(cm) (cm) (cm)
+I 8 8 40
+II 8 20 14
+III 18 5 35
+IV 20 12 12
+V 24 8 14
 Qual desses modelos o artesão deve adquirir para conseguir armazenar o maior número
 de potes por caixa?
 - A) I
@@ -1722,7 +1715,7 @@ com primeiro, segundo, terceiro, ..., até o último andar. Uma criança entrou 
 e, tocando no painel, seguiu uma sequência de andares, parando, abrindo e fechando
 a porta em diversos andares. A partir de onde entrou a criança, o elevador subiu sete
 andares, em seguida desceu dez, desceu mais treze, subiu nove, desceu quatro e parou
-QRTXLQWRDQGDU¿QDOL]DQGRDVHTXrQFLD&RQVLGHUHTXHQRWUDMHWRVHJXLGRSHODFULDQoD
+QR TXLQWR DQGDU ¿QDOL]DQGR D VHTXrQFLD &RQVLGHUH TXH QR WUDMHWR VHJXLGR SHOD FULDQoD
 o elevador parou uma vez no último andar do edifício.
 De acordo com as informações dadas, o último andar do edifício é o
 - A) 16o
@@ -1751,11 +1744,11 @@ Uma expressão que fornece a quantidade de maneiras diferentes que os estandes
 podem ser compostos é
 - A) A10
 - B) C10
-2    2
-- C) C4 C6        2×2
-2     2
-- D) A4      A6 2 × 2
-2    2
+2 2
+- C) C4 C6 2×2
+2 2
+- D) A4 A6 2 × 2
+2 2
 - E) C4 × C6
 MT - 2º dia | Caderno 5 - AMARELO - Página 48
 
@@ -1766,7 +1759,7 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 48
 
 Os alunos da disciplina de estatística, em um curso universitário, realizam quatro
 avaliações por semestre com os pesos de 20%, 10%, 30% e 40%, respectivamente.
-1R¿QDOGRVHPHVWUHSUHFLVDPREWHUXPDPpGLDQDVTXDWURDYDOLDo}HVGHQRPtQLPR
+1R ¿QDO GR VHPHVWUH SUHFLVDP REWHU XPD PpGLD QDV TXDWUR DYDOLDo}HV GH QR PtQLPR
 60 pontos para serem aprovados. Um estudante dessa disciplina obteve os seguintes
 pontos nas três primeiras avaliações: 46, 60 e 50, respectivamente.
 O mínimo de pontos que esse estudante precisa obter na quarta avaliação para ser
@@ -1784,7 +1777,7 @@ aprovado é
 
 O gerente do setor de recursos humanos de uma empresa está organizando uma
 avaliação em que uma das etapas é um jogo de perguntas e respostas. Para essa
-HWDSDHOHFODVVL¿FRXDVSHUJXQWDVSHORQtYHOGHGL¿FXOGDGHHPIiFLOPpGLRHGLItFLOH
+HWDSD HOH FODVVL¿FRX DV SHUJXQWDV SHOR QtYHO GH GL¿FXOGDGH HP IiFLO PpGLR H GLItFLO H
 escreveu cada pergunta em cartões para colocação em uma urna.
 Contudo, após depositar vinte perguntas de diferentes níveis na urna, ele observou
 que 25% delas eram de nível fácil. Querendo que as perguntas de nível fácil sejam a
@@ -1805,7 +1798,7 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 49
 - Área: Matemática
 - Gabarito: A
 
-$ 7UDQVIHUrQFLD (OHWU{QLFD 'LVSRQtYHO 7('  p XPD WUDQVDomR ¿QDQFHLUD GH YDORUHV
+$ 7UDQVIHUrQFLD (OHWU{QLFD 'LVSRQtYHO 7(' p XPD WUDQVDomR ¿QDQFHLUD GH YDORUHV
 entre diferentes bancos. Um economista decide analisar os valores enviados por meio
 de TEDs entre cinco bancos (1, 2, 3, 4 e 5) durante um mês. Para isso, ele dispõe
 esses valores em uma matriz A [aij ], em que 1 d i d 5 e 1 d j d 5, e o elemento aij
@@ -1813,12 +1806,12 @@ corresponde ao total proveniente das operações feitas via TED, em milhão de r
 transferidos do banco i para o banco j durante o mês. Observe que os elementos
 aii 0, uma vez que TED é uma transferência entre bancos distintos. Esta é a matriz
 obtida para essa análise:
-⎡      0 2 2⎤
+⎡ 0 2 2⎤
 ⎢0 0 2 1 0 ⎥
-⎢                ⎥
+⎢ ⎥
 A = ⎢ 1 2 0 1 1⎥
-⎢                ⎥
-⎢ 0 2  2   0   0 ⎥
+⎢ ⎥
+⎢ 0 2 2 0 0 ⎥
 ⎢⎣3 0 1 1 0 ⎥⎦
 Com base nessas informações, o banco que transferiu a maior quantia via TED é o banco
 - A) 1.
@@ -1839,11 +1832,11 @@ uma quantia que deveria ser paga em uma data futura. Um valor presente P submeti
 a juros compostos com taxa i, por um período de tempo n, produz um valor futuro V
 determinado pela fórmula
 V = P ⋅ 1+ i n
-(PXPFRQWUDWRGHHPSUpVWLPRFRPVHVVHQWDSDUFHODV¿[DVPHQVDLVGH5
+(P XP FRQWUDWR GH HPSUpVWLPR FRP VHVVHQWD SDUFHODV ¿[DV PHQVDLV GH 5
 a uma taxa de juros de 1,32% ao mês, junto com a trigésima parcela será paga
 antecipadamente uma outra parcela, desde que o desconto seja superior a 25% do valor
 da parcela.
-Utilize 0,2877 como aproximação para In   e 0,0131 como aproximação para In (1,0132).
+Utilize 0,2877 como aproximação para In e 0,0131 como aproximação para In (1,0132).
 A primeira das parcelas que poderá ser antecipada junto com a 30a é a
 - A) 56a
 - B) 55a
@@ -1868,16 +1861,16 @@ equação de uma reta, cada ponto diferente da origem que for atingido vale 1 po
 Em uma situação de jogo, ainda restam os seguintes pontos para serem eliminados:
 A(0 ; 4), B(4 ; 4), C(4 ; 0), D(2 ; 2) e E(0 ; 2).
 y
-A                       B
-E            D
-C                  x
-0       1    2       3    4       5       6
+A B
+E D
+C x
+0 1 2 3 4 5 6
 Passando pelo ponto A, qual equação forneceria a maior pontuação?
 - A) x=0
 - B) y=0
 - C) x2 + y2 = 16
-- D) x2 \í 2 = 4
-- E) [í 2 \í 2 = 8
+- D) x2 \ í 2 = 4
+- E) [ í 2 \ í 2 = 8
 MT - 2º dia | Caderno 5 - AMARELO - Página 51
 
 ## Questão 167
@@ -1885,21 +1878,21 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 51
 - Área: Matemática
 - Gabarito: D
 
-'HYLGR DR QmR FXPSULPHQWR GDV PHWDV GH¿QLGDV SDUD D FDPSDQKD GH YDFLQDomR
+'HYLGR DR QmR FXPSULPHQWR GDV PHWDV GH¿QLGDV SDUD D FDPSDQKD GH YDFLQDomR
 contra a gripe comum e o vírus H1N1 em um ano, o Ministério da Saúde anunciou a
 prorrogação da campanha por mais uma semana. A tabela apresenta as quantidades de
 pessoas vacinadas dentre os cinco grupos de risco até a data de início da prorrogação
 da campanha.
 Balanço parcial nacional da vacinação
 contra a gripe
-População                  População já vacinada
+População População já vacinada
 Grupo de risco
-(milhão)                 (milhão)          (%)
-Crianças                         4,5                      0,9              20
-3UR¿VVLRQDLVGHVD~GH            2,0                      1,0              50
-Gestantes                        2,5                      1,5              60
-Indígenas                        0,5                      0,4              80
-Idosos                           20,5                     8,2              40
+(milhão) (milhão) (%)
+Crianças 4,5 0,9 20
+3UR¿VVLRQDLV GH VD~GH 2,0 1,0 50
+Gestantes 2,5 1,5 60
+Indígenas 0,5 0,4 80
+Idosos 20,5 8,2 40
 Disponível em: http://portalsaude.saude.gov.br. Acesso em: 16 ago. 2012.
 Qual é a porcentagem do total de pessoas desses grupos de risco já vacinadas?
 - A) 12
@@ -1932,7 +1925,7 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 52
 - Gabarito: A
 
 Um quebra-cabeça consiste em recobrir um quadrado com triângulos retângulos
-LVyVFHOHVFRPRLOXVWUDD¿JXUD
+LVyVFHOHV FRPR LOXVWUD D ¿JXUD
 Uma artesã confecciona um quebra-cabeça como o descrito, de tal modo que a
 menor das peças é um triângulo retângulo isósceles cujos catetos medem 2 cm.
 O quebra-cabeça, quando montado, resultará em um quadrado cuja medida do lado, em
@@ -1940,8 +1933,8 @@ centímetro, é
 - A) 14
 - B) 12
 - C) 7 2
-- D) 64 2
-- E) 62 2
+- D) 6 4 2
+- E) 6 2 2
 MT - 2º dia | Caderno 5 - AMARELO - Página 53
 
 ## Questão 170
@@ -1952,7 +1945,7 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 53
 Para decorar um cilindro circular reto será usada uma faixa retangular de papel
 transparente, na qual está desenhada em negrito uma diagonal que forma 30° com a
 borda inferior. O raio da base do cilindro mede 6 cm, e ao enrolar a faixa obtém-se uma
-OLQKDHPIRUPDWRGHKpOLFHFRPRQD¿JXUD
+OLQKD HP IRUPDWR GH KpOLFH FRPR QD ¿JXUD
 π
 30°
 O valor da medida da altura do cilindro, em centímetro, é
@@ -1992,7 +1985,7 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 54
 - Gabarito: B
 
 Uma loja vende automóveis em N parcelas iguais sem juros. No momento de
-FRQWUDWDU R ¿QDQFLDPHQWR FDVR R FOLHQWH TXHLUD DXPHQWDU R SUD]R DFUHVFHQWDQGR
+FRQWUDWDU R ¿QDQFLDPHQWR FDVR R FOLHQWH TXHLUD DXPHQWDU R SUD]R DFUHVFHQWDQGR
 mais 5 parcelas, o valor de cada uma das parcelas diminui R$ 200,00, ou se ele
 quiser diminuir o prazo, com 4 parcelas a menos, o valor de cada uma das parcelas
 sobe R$ 232,00. Considere ainda que, nas três possibilidades de pagamento, o valor
@@ -2014,28 +2007,28 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 55
 
 O salto ornamental é um esporte em que cada competidor realiza seis saltos. A nota
 em cada salto é calculada pela soma das notas dos juízes, multiplicada pela nota de
-SDUWLGD RJUDXGHGL¿FXOGDGHGHFDGDVDOWR )LFDHPSULPHLUROXJDURDWOHWDTXHREWLYHUD
+SDUWLGD R JUDX GH GL¿FXOGDGH GH FDGD VDOWR )LFD HP SULPHLUR OXJDU R DWOHWD TXH REWLYHU D
 maior soma das seis notas recebidas.
-22 DWOHWD  LUi UHDOL]DU R ~OWLPR VDOWR GD ¿QDO (OH REVHUYD QR 4XDGUR  DQWHV GH
-H[HFXWDU R VDOWR R UHFRUWH GR TXDGUR SDUFLDO GH QRWDV FRPDVXD FODVVL¿FDomR HDGRV
+22 DWOHWD LUi UHDOL]DU R ~OWLPR VDOWR GD ¿QDO (OH REVHUYD QR 4XDGUR DQWHV GH
+H[HFXWDU R VDOWR R UHFRUWH GR TXDGUR SDUFLDO GH QRWDV FRP D VXD FODVVL¿FDomR H D GRV
 três primeiros lugares até aquele momento.
 Quadro 1
-&ODVVL¿FDomR           Atleta         6o Salto           Total
-1o                 3             135,0           829,0
-2o                 4             140,0           825,2
-3o                 8             140,4           824,2
-6o                10                             687,5
+&ODVVL¿FDomR Atleta 6o Salto Total
+1o 3 135,0 829,0
+2o 4 140,0 825,2
+3o 8 140,4 824,2
+6o 10 687,5
 Ele precisa decidir com seu treinador qual salto deverá realizar. Os dados dos
 possíveis tipos de salto estão no Quadro 2.
 Quadro 2
-Tipo           Nota         Estimativa da            Probabilidade
-de             de         soma das notas              de obter a
-salto         partida        dos juízes                   nota
-T1             2,2                57                    89,76%
-T2             2,4                58                    93,74%
-T3             2,6                55                    91,88%
-T4             2,8                50                    95,38%
-T5             3,0                53                    87,34%
+Tipo Nota Estimativa da Probabilidade
+de de soma das notas de obter a
+salto partida dos juízes nota
+T1 2,2 57 89,76%
+T2 2,4 58 93,74%
+T3 2,6 55 91,88%
+T4 2,8 50 95,38%
+T5 3,0 53 87,34%
 O atleta optará pelo salto com a maior probabilidade de obter a nota estimada, de
 maneira que lhe permita alcançar o primeiro lugar.
 Considerando essas condições, o salto que o atleta deverá escolher é o de tipo
@@ -2052,30 +2045,30 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 56
 - Gabarito: A
 
 Os guindastes são fundamentais em canteiros de obras, no manejo de materiais
-SHVDGRV FRPR YLJDV GH DoR $ ¿JXUD LOXVWUD XPD VHTXrQFLD GH HVWiJLRV HP TXH XP
+SHVDGRV FRPR YLJDV GH DoR $ ¿JXUD LOXVWUD XPD VHTXrQFLD GH HVWiJLRV HP TXH XP
 guindaste iça uma viga de aço que se encontra inicialmente no solo.
 Cabo de aço
-Viga                                        M                                     M
-M   O                                O                                      O
-Estágio 1                        Estágio 2                              Estágio 3
-1D¿JXUDRSRQWR2UHSUHVHQWDDSURMHomRRUWRJRQDOGRFDERGHDoRVREUHRSODQR
+Viga M M
+M O O O
+Estágio 1 Estágio 2 Estágio 3
+1D ¿JXUD R SRQWR 2 UHSUHVHQWD D SURMHomR RUWRJRQDO GR FDER GH DoR VREUH R SODQR
 do chão e este se mantém na vertical durante todo o movimento de içamento da viga,
-que se inicia no tempo t   HVWiJLR   H ¿QDOL]D QR WHPSR W f (estágio 3). Uma das
+que se inicia no tempo t HVWiJLR H ¿QDOL]D QR WHPSR W f (estágio 3). Uma das
 extremidades da viga é içada verticalmente a partir do ponto O, enquanto que a outra
 extremidade desliza sobre o solo em direção ao ponto O. Considere que o cabo de aço
-XWLOL]DGR SHOR JXLQGDVWH SDUD LoDU D YLJD ¿TXH VHPSUH QD SRVLomR YHUWLFDO 1D ¿JXUD R
+XWLOL]DGR SHOR JXLQGDVWH SDUD LoDU D YLJD ¿TXH VHPSUH QD SRVLomR YHUWLFDO 1D ¿JXUD R
 ponto M representa o ponto médio do segmento que representa a viga.
-2JUi¿FRTXHGHVFUHYHDGLVWkQFLDGRSRQWR0DRSRQWR2HPIXQomRGRWHPSRHQWUH
+2 JUi¿FR TXH GHVFUHYH D GLVWkQFLD GR SRQWR 0 DR SRQWR 2 HP IXQomR GR WHPSR HQWUH
 t 0 e t f, é
-Distância                                            Distância
-A                                                    D
-0                   tf   Tempo                       0                 tf       Tempo
-Distância                                            Distância
-B                                                    E
-0                   tf   Tempo                       0                 tf       Tempo
+Distância Distância
+A D
+0 tf Tempo 0 tf Tempo
+Distância Distância
+B E
+0 tf Tempo 0 tf Tempo
 Distância
 C
-0                   tf   Tempo
+0 tf Tempo
 MT - 2º dia | Caderno 5 - AMARELO - Página 57
 
 ## Questão 175
@@ -2085,16 +2078,16 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 57
 
 A inclinação de uma rampa é calculada da seguinte maneira: para cada metro
 medido na horizontal, mede-se x centímetros na vertical. Diz-se, nesse caso, que a
-rampa tem inclinação de xFRPRQRH[HPSORGD¿JXUD
-20 cm                        Inclinação     20%
+rampa tem inclinação de x FRPR QR H[HPSOR GD ¿JXUD
+20 cm Inclinação 20%
 1m
-$¿JXUDDSUHVHQWDXPSURMHWRGHXPDUDPSDGHDFHVVRDXPDJDUDJHPUHVLGHQFLDO
+$ ¿JXUD DSUHVHQWD XP SURMHWR GH XPD UDPSD GH DFHVVR D XPD JDUDJHP UHVLGHQFLDO
 cuja base, situada 2 metros abaixo do nível da rua, tem 8 metros de comprimento.
 Portão
 Nível da rua
-2m                                                       Garagem
+2m Garagem
 Rampa
-Nível da base                      8m
+Nível da base 8m
 da garagem
 Depois de projetada a rampa, o responsável pela obra foi informado de que as
 normas técnicas do município onde ela está localizada exigem que a inclinação máxima
@@ -2118,18 +2111,18 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 58
 Para ganhar um prêmio, uma pessoa deverá retirar, sucessivamente e sem
 reposição, duas bolas pretas de uma mesma urna.
 Inicialmente, as quantidades e cores das bolas são como descritas a seguir:
- Urna A – Possui três bolas brancas, duas bolas pretas e uma bola verde;
- Urna B – Possui seis bolas brancas, três bolas pretas e uma bola verde;
- Urna C – Possui duas bolas pretas e duas bolas verdes;
- Urna D – Possui três bolas brancas e três bolas pretas.
+ Urna A – Possui três bolas brancas, duas bolas pretas e uma bola verde;
+ Urna B – Possui seis bolas brancas, três bolas pretas e uma bola verde;
+ Urna C – Possui duas bolas pretas e duas bolas verdes;
+ Urna D – Possui três bolas brancas e três bolas pretas.
 A pessoa deve escolher uma entre as cinco opções apresentadas:
- Opção 1 – Retirar, aleatoriamente, duas bolas da urna A;
- Opção 2 – Retirar, aleatoriamente, duas bolas da urna B;
- Opção 3 – Passar, aleatoriamente, uma bola da urna C para a urna A; após isso,
+ Opção 1 – Retirar, aleatoriamente, duas bolas da urna A;
+ Opção 2 – Retirar, aleatoriamente, duas bolas da urna B;
+ Opção 3 – Passar, aleatoriamente, uma bola da urna C para a urna A; após isso,
 retirar, aleatoriamente, duas bolas da urna A;
- Opção 4 – Passar, aleatoriamente, uma bola da urna D para a urna C; após isso,
+ Opção 4 – Passar, aleatoriamente, uma bola da urna D para a urna C; após isso,
 retirar, aleatoriamente, duas bolas da urna C;
- Opção 5 – Passar, aleatoriamente, uma bola da urna C para a urna D; após isso,
+ Opção 5 – Passar, aleatoriamente, uma bola da urna C para a urna D; após isso,
 retirar, aleatoriamente, duas bolas da urna D.
 Com o objetivo de obter a maior probabilidade possível de ganhar o prêmio, a pessoa
 deve escolher a opção
@@ -2152,9 +2145,9 @@ da impressão.
 Disponível em: www.goo.gl. Acesso em: 2 dez. 2017 (adaptado).
 Suponha que a palavra ECO esteja escrita nessa fonte, com tamanho 192, e que
 seja composta por letras formadas por quadrados de lados x com furos circulares de
-x                                               1
-raio r = . Para que a área a ser pintada seja reduzida a    da área inicial, pretende-se
-3                                               16
+x 1
+raio r = . Para que a área a ser pintada seja reduzida a da área inicial, pretende-se
+3 16
 reduzir o tamanho da fonte. Sabe-se que, ao alterar o tamanho da fonte, o tamanho da
 letra é alterado na mesma proporção.
 Nessas condições, o tamanho adequado da fonte será
@@ -2170,23 +2163,20 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 60
 - Área: Matemática
 - Gabarito: B
 
-3DUD FULDU XP ORJRWLSR XP SUR¿VVLRQDO GD iUHD GH design JUi¿FR GHVHMD FRQVWUXtOR
+3DUD FULDU XP ORJRWLSR XP SUR¿VVLRQDO GD iUHD GH design JUi¿FR GHVHMD FRQVWUXt OR
 utilizando o conjunto de pontos do plano na forma de um triângulo, exatamente como
 mostra a imagem.
 y
 x
-15           10           5          0              5            10           15
-5
-10
-15
-3DUD FRQVWUXLU WDO LPDJHP XWLOL]DQGR XPD IHUUDPHQWD JUi¿FD VHUi QHFHVViULR
-HVFUHYHUDOJHEULFDPHQWHRFRQMXQWRTXHUHSUHVHQWDRVSRQWRVGHVVHJUi¿FR
-Esse conjunto é dado pelos pares ordenados (x ; y) `u`, tais que
+15 10 5 0 5 10 15
+3DUD FRQVWUXLU WDO LPDJHP XWLOL]DQGR XPD IHUUDPHQWD JUi¿FD VHUi QHFHVViULR
+HVFUHYHU DOJHEULFDPHQWH R FRQMXQWR TXH UHSUHVHQWD RV SRQWRV GHVVH JUi¿FR
+Esse conjunto é dado pelos pares ordenados (x ; y)  ` u `, tais que
 - A) 0 d x d y d 10
 - B) 0 d y d x d 10
-- C) 0 d x d 10, 0 dyd
-- D) 0 d x  y d 10
-- E) 0 d x  y d 20
+- C) 0 d x d 10, 0 d y d
+- D) 0 d x y d 10
+- E) 0 d x y d 20
 MT - 2º dia | Caderno 5 - AMARELO - Página 61
 
 ## Questão 179
@@ -2194,8 +2184,8 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 61
 - Área: Matemática
 - Gabarito: D
 
-$¿JXUDPRVWUDXPDSUDoDFLUFXODUTXHFRQWpPXPFKDIDUL]HPVHXFHQWURHHPVHX
-HQWRUQRXPSDVVHLR2VFtUFXORVTXHGH¿QHPDSUDoDHRFKDIDUL]VmRFRQFrQWULFRV
+$ ¿JXUD PRVWUD XPD SUDoD FLUFXODU TXH FRQWpP XP FKDIDUL] HP VHX FHQWUR H HP VHX
+HQWRUQR XP SDVVHLR 2V FtUFXORV TXH GH¿QHP D SUDoD H R FKDIDUL] VmR FRQFrQWULFRV
 Passeio
 Passeio
 Passeio
@@ -2204,9 +2194,9 @@ Passeio
 Praça
 O passeio terá seu piso revestido com ladrilhos. Sem condições de calcular os raios,
 pois o chafariz está cheio, um engenheiro fez a seguinte medição: esticou uma trena
-tangente ao chafariz, medindo a distância entre dois pontos A e B FRQIRUPH D ¿JXUD
+tangente ao chafariz, medindo a distância entre dois pontos A e B FRQIRUPH D ¿JXUD
 Com isso, obteve a medida do segmento de reta AB: 16 m.
-A                                     B
+A B
 16 m
 Dispondo apenas dessa medida, o engenheiro calculou corretamente a medida da
 área do passeio, em metro quadrado.
@@ -2224,13 +2214,13 @@ MT - 2º dia | Caderno 5 - AMARELO - Página 62
 - Gabarito: D
 
 Um designer de jogos planeja um jogo que faz uso de um tabuleiro de dimensão
-n u n, com n t 2, no qual cada jogador, na sua vez, coloca uma peça sobre uma
+n u n, com n t 2, no qual cada jogador, na sua vez, coloca uma peça sobre uma
 das casas vazias do tabuleiro. Quando uma peça é posicionada, a região formada
 pelas casas que estão na mesma linha ou coluna dessa peça é chamada de zona
-GH FRPEDWH GHVVD SHoD 1D ¿JXUD HVWi LOXVWUDGD D ]RQD GH FRPEDWH GH XPD SHoD
+GH FRPEDWH GHVVD SHoD 1D ¿JXUD HVWi LOXVWUDGD D ]RQD GH FRPEDWH GH XPD SHoD
 colocada em uma das casas de um tabuleiro de dimensão 8 u 8.
 O tabuleiro deve ser dimensionado de forma que a probabilidade de se posicionar a
-VHJXQGD SHoD DOHDWRULDPHQWH VHJXLQGR D UHJUD GR MRJR H HVWD ¿FDU VREUH D ]RQD GH
+VHJXQGD SHoD DOHDWRULDPHQWH VHJXLQGR D UHJUD GR MRJR H HVWD ¿FDU VREUH D ]RQD GH
 combate da primeira, seja inferior a .
 A dimensão mínima que o designer deve adotar para esse tabuleiro é
 - A) 4 u 4.

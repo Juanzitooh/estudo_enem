@@ -1,0 +1,51 @@
+{
+  "ano": 2017,
+  "dia": 1,
+  "area_order": [
+    "Linguagens",
+    "Ciências Humanas"
+  ],
+  "area_ranges": [
+    {
+      "inicio": 1,
+      "fim": 45,
+      "area": "Linguagens"
+    },
+    {
+      "inicio": 46,
+      "fim": 90,
+      "area": "Ciências Humanas"
+    }
+  ],
+  "diagnostics": {
+    "expected_start": 1,
+    "expected_end": 90,
+    "total_blocks_raw": 95,
+    "total_blocks_valid": 95,
+    "unique_questions": 90,
+    "missing_questions": [],
+    "out_of_range_questions": [],
+    "language_slots": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "language_slot_variations": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2
+    },
+    "duplicate_non_language": {},
+    "duplicate_all": {
+      "1": 2,
+      "3": 2,
+      "2": 2,
+      "4": 2,
+      "5": 2
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "ano": 2018,
+  "dia": 2,
+  "area_order": [
+    "Ciências da Natureza",
+    "Matemática"
+  ],
+  "area_ranges": [
+    {
+      "inicio": 91,
+      "fim": 135,
+      "area": "Ciências da Natureza"
+    },
+    {
+      "inicio": 136,
+      "fim": 180,
+      "area": "Matemática"
+    }
+  ],
+  "diagnostics": {
+    "expected_start": 91,
+    "expected_end": 180,
+    "total_blocks_raw": 90,
+    "total_blocks_valid": 90,
+    "unique_questions": 90,
+    "missing_questions": [],
+    "out_of_range_questions": [],
+    "language_slots": [],
+    "language_slot_variations": {},
+    "duplicate_non_language": {},
+    "duplicate_all": {}
+  }
+}

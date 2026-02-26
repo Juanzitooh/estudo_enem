@@ -1,0 +1,33 @@
+{
+  "ano": 2016,
+  "dia": 1,
+  "area_order": [
+    "Ciências Humanas",
+    "Ciências da Natureza"
+  ],
+  "area_ranges": [
+    {
+      "inicio": 1,
+      "fim": 45,
+      "area": "Ciências Humanas"
+    },
+    {
+      "inicio": 46,
+      "fim": 90,
+      "area": "Ciências da Natureza"
+    }
+  ],
+  "diagnostics": {
+    "expected_start": 1,
+    "expected_end": 90,
+    "total_blocks_raw": 90,
+    "total_blocks_valid": 90,
+    "unique_questions": 90,
+    "missing_questions": [],
+    "out_of_range_questions": [],
+    "language_slots": [],
+    "language_slot_variations": {},
+    "duplicate_non_language": {},
+    "duplicate_all": {}
+  }
+}

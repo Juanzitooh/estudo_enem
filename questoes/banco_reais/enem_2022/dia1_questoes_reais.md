@@ -65,37 +65,37 @@ de parceiros.
 encontros românticos.
 - E) valorizar a importância da aparência física na
 seleção de pretendentes.
-2                                                            LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+2 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 003
 
 - Área: Linguagens
 - Gabarito: Inglês: B | Espanhol: C
 
-NEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+NEM 2022
 BEYOND THE CASTLE IS
 NOW THAT YOU ARE MY
 A HIGH WALL WITH NO
 BRIDE, YOU WILL NEVER
 GATE, AND BEYOND THAT
-LEAVE THIS CASTLE!                 IS A DEEP, DARK FOREST
-WOW! YOUR                  WITH NO PATH.
-LIBRARY IS                      I SUPPOSE IT´S
-AMAZING!                      MY LIBRARY TOO,
+LEAVE THIS CASTLE! IS A DEEP, DARK FOREST
+WOW! YOUR WITH NO PATH.
+LIBRARY IS I SUPPOSE IT´S
+AMAZING! MY LIBRARY TOO,
 NOW WE‛ RE
 MARRIED.
-1                                         2
-THE FOREST IS CRAWLING                    WHEN THE SUN SETS,
-WITH RAVENOUS WOLVES,                  I TRANSFORM INTO A WILD
-MALIGNANT BIRDS AND                     BEAST AND SOAR INTO
-THE SPIRITS OF LONG-                    THE NIGHT, SEIZED BY
-DEAD TRAVELLERS.                     A TERRIBLE BLOODLUST!
+1 2
+THE FOREST IS CRAWLING WHEN THE SUN SETS,
+WITH RAVENOUS WOLVES, I TRANSFORM INTO A WILD
+MALIGNANT BIRDS AND BEAST AND SOAR INTO
+THE SPIRITS OF LONG- THE NIGHT, SEIZED BY
+DEAD TRAVELLERS. A TERRIBLE BLOODLUST!
 OK. I´LL STAY
 SO MANY BOOKS!
 HERE AND READ.
-I CAN´T BELIEVE                   SEE YOU IN THE
-MY LUCK!                         MORNING.
-3                                      4
+I CAN´T BELIEVE SEE YOU IN THE
+MY LUCK! MORNING.
+3 4
 GAULD, T. Disponível em: www.tomgauld.com. Acesso em: 25 out. 2021.
 Nessa tirinha, o comportamento da mulher expressa
 - A) revolta com a falta de sorte.
@@ -109,7 +109,7 @@ Nessa tirinha, o comportamento da mulher expressa
 - Área: Linguagens
 - Gabarito: Inglês: D | Espanhol: A
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE
+ENE
 A Teen’s View of Social Media
 Instagram is made up of all photos and videos. There
 is the home page that showcases the posts from people
@@ -161,7 +161,7 @@ Nesse poema, o eu lírico evidencia um sentimento de
 - D) mágoa com o comportamento de alguém.
 - E) insatisfação com uma forma de comunicação.
 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
-M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+M 2022
 
 ## Questão 001 (variação 2)
 
@@ -169,7 +169,7 @@ M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE
 - Gabarito: Inglês: D | Espanhol: E
 
 Contigo
-Diidxagola                                               es posible
+Diidxagola es posible
 Binnigula’ sa’
 Nisa ri’ biraru’ mani’
 Duxhu’dxa’ ndaani
@@ -185,7 +185,7 @@ patrimonio nacional.
 SEP
 SECRETARÍA DE
 EDUCACIÓN
-PÚBLICA           INSTITUTO NACIONAL DE LENGUAS INDÍGENAS
+PÚBLICA INSTITUTO NACIONAL DE LENGUAS INDÍGENAS
 www.inali.gob.mx
 Disponível em: www.inali.gob.mx. Acesso em: 2 dez. 2018.
 Esse cartaz tem a função social de
@@ -204,7 +204,7 @@ garantindo a diversidade linguística mexicana.
 - Área: Linguagens
 - Gabarito: Inglês: C | Espanhol: D
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE
+ENE
 Pequeño hermano
 Es, no cabe duda, el instrumento más presente y más
 poderoso de todos los que entraron en nuestras vidas. Ni la
@@ -256,14 +256,14 @@ expressões existentes em espanhol para se referir a
 - C) do papel da amizade em diferentes contextos.
 - D) do hábito de reunir amigos em torno da mesa.
 - E) dos graus de intimidade entre os amigos.
-4                                                       LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+4 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 004 (variação 2)
 
 - Área: Linguagens
 - Gabarito: Inglês: D | Espanhol: A
 
-M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+M 2022
 Los niños de nuestro olvido
 Escribo sobre un destino
 que apenas puedo tocar
@@ -305,7 +305,6 @@ metrópoles.
 - Área: Linguagens
 - Gabarito: Inglês: E | Espanhol: A
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 MATERNIDADES EN TIEMPOS DE PANDEMIA
 Maternar nunca ha
 sido fácil; es
@@ -316,15 +315,15 @@ guarderías por
 covid-19 incrementó
 el trabajo.
 Porque en este sistema
-La maternidad está                   no hay lugar para la
-romantizada. No todas                    queja, se da por
+La maternidad está no hay lugar para la
+romantizada. No todas queja, se da por
 sentado que las
-viven las mismas                   mujeres están hechas
-condiciones, pero aún                 para asumir la crianza
-así las madres ponen                a pesar de las pocas o
+viven las mismas mujeres están hechas
+condiciones, pero aún para asumir la crianza
+así las madres ponen a pesar de las pocas o
 nulas herramientas
-lo mejor de sí para                   que el Estado o la
-sobrellevarlo.                   sociedad les da para
+lo mejor de sí para que el Estado o la
+sobrellevarlo. sociedad les da para
 ejercer la maternidad.
 PARA MATERNAR SE
 NECESITA UNA TRIBU, LA
@@ -347,7 +346,6 @@ educação das crianças.
 social das famílias.
 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 Questões de 06 a 45
 
 ## Questão 006
@@ -391,7 +389,6 @@ uma primeira e sai em disparada”.
 - Área: Linguagens
 - Gabarito: A
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 TEXTO I
 EI...
 ME LEVE PARA SUA CASA!!!
@@ -449,9 +446,8 @@ Malala Yousafzai, a astronauta Valentina Tereshkova e a
 aviadora Amelia Earhart. O Who’s She? (“Quem é ela?”,
 em português) traz, no total, 28 mulheres que representam
 diversas profissões, nacionalidades e idades.
-6                                                       LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+6 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 A ideia é que, em vez de perguntar sobre a aparência
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 das personagens, as questões sejam direcionadas aos
 feitos delas: ganhou algum Nobel, fez alguma descoberta?
 Para cada personagem há um cartão com fatos divertidos
@@ -507,7 +503,7 @@ acidentes automobilísticos.
 - Área: Linguagens
 - Gabarito: C
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE
+ENE
 Ciente de que, no campo da criação, as inovações
 tecnológicas abrem amplo leque de possibilidades
 — ao permitir, e mesmo estimular, que o artista
@@ -564,7 +560,7 @@ ECO, U.; CARRIÈRE, J.-C. Não contem com o fim do livro.
 Rio de Janeiro: Record, 2010 (adaptado).
 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 O texto revela que, quando a sociedade promove o
-M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+M 2022
 desenvolvimento de uma nova técnica, o que mais
 impacta seus usuários é a
 - A) dificuldade na apropriação da nova linguagem.
@@ -590,18 +586,18 @@ Papos
 — O “te” e o “você” não combinam.
 — Lhe digo?
 — Também não. O que você ia me dizer?
-— Que você está sendo grosseiro, pedante e
+— Que você está sendo grosseiro, pedante e
 chato. [...]
-— Dispenso as suas correções. Vê se esquece-me.
+— Dispenso as suas correções. Vê se esquece-me.
 Falo como bem entender. Mais uma correção e eu...
 — O quê?
 — O mato.
 — Que mato?
-— Mato-o. Mato-lhe. Mato você. Matar-lhe-ei-te.
+— Mato-o. Mato-lhe. Mato você. Matar-lhe-ei-te.
 Ouviu bem? Pois esqueça-o e para-te. Pronome
 no lugar certo é elitismo!
 — Se você prefere falar errado...
-— Falo como todo mundo fala. O importante é me
+— Falo como todo mundo fala. O importante é me
 entenderem. Ou entenderem-me?
 VERISSIMO, L. F. Comédias para se ler na escola.
 Rio de Janeiro: Objetiva, 2001 (adaptado).
@@ -620,7 +616,6 @@ dá.
 - Área: Linguagens
 - Gabarito: B
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 São vários os fatores, internos e externos, que
 influenciam os hábitos das pessoas no acesso à internet,
 assim como nas práticas culturais realizadas na rede.
@@ -675,9 +670,8 @@ discriminação contra os negros. Basta recordar algumas
 delas, como passar um “dia negro”, ter um “lado negro”,
 ser a “ovelha negra” da família ou praticar “magia negra”.
 Disponível em: https://brasil.elpais.com. Acesso em: 22 maio 2018.
-8                                                           LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+8 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 O Texto II exemplifica o que se afirma no Texto I, na
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 medida em que defende a ideia de que as escolhas
 lexicais são resultantes de um
 - A) expediente próprio do sistema linguístico que nos
@@ -707,7 +701,7 @@ Considerando-se a função social dos posts, essa imagem
 evidencia a apropriação de outro gênero com o objetivo de
 - A) promover o uso adequado de campanhas publicitárias
 do governo.
-- B) divulgar o projeto                  sobre        transparência            da
+- B) divulgar o projeto sobre transparência da
 administração pública.
 - C) responsabilizar o cidadão pelo controle dos gastos
 públicos.
@@ -719,7 +713,6 @@ públicos.
 - Área: Linguagens
 - Gabarito: E
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 Ela era linda. Gostava de dançar, fazia teatro em São
 Paulo e sonhava ser atriz em Hollywood. Tinha 13 anos
 quando ganhou uma câmera de vídeo — e uma irmã.
@@ -780,7 +773,6 @@ passa. A palavra fogo queima. A palavra faca corta.
 A palavra carro corre. A palavra “palavra” diz. O que quer.
 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 E nunca desdiz depois. As palavras têm corpo e alma,
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 mas são diferentes das pessoas em vários pontos.
 As palavras dizem o que querem, está dito, e pronto.
 FALCÃO, A. Pequeno dicionário de palavras ao vento.
@@ -840,7 +832,7 @@ lógicos.
 - Área: Linguagens
 - Gabarito: C
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 EN
+EN
 Pisoteamento, arrastão, empurra-empurra, agressões,
 vandalismo e até furto a um torcedor que estava caído no
 asfalto após ser atropelado nas imediações do estádio do
@@ -876,14 +868,14 @@ país.
 público.
 - E) consequência da insatisfação dos clubes com a
 organização dos jogos.
-10                                                        LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+10 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 020
 
 - Área: Linguagens
 - Gabarito: C
 
-EM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+EM 2022
 Seis em cada dez pessoas com 15 anos ou mais
 não praticam esporte ou atividade física. São mais de
 100 milhões de sedentários. Esses são dados do estudo
@@ -935,7 +927,7 @@ promoção da saúde pelo esporte.
 - Área: Linguagens
 - Gabarito: B
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE
+ENE
 A escrava
 — Admira-me —, disse uma senhora de sentimentos
 sinceramente abolicionistas —; faz-me até pasmar como
@@ -1004,7 +996,7 @@ uma plataforma de braille dinâmico, ao lado do teclado.
 KIFFER, D. Inclusão ampla e irrestrita. Rio Pesquisa, n. 36, set. 2016 (adaptado).
 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 TEXTO II
-M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+M 2022
 Projeto Surdonews, desenvolvido na UFRJ, garante
 acesso de surdos à informação e contribui para
 sua “inclusão científica”
@@ -1072,7 +1064,7 @@ estabelece correlações que refletem a
 - Área: Linguagens
 - Gabarito: E
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 E
+E
 O complexo de falar difícil
 O que importa realmente é que o(a) detentor(a)
 do notável saber jurídico saiba quando e como deve
@@ -1116,14 +1108,14 @@ evidencia a importância de(a)
 - C) falar difícil para demonstrar inteligência.
 - D) coesão e da coerência em documentos jurídicos.
 - E) adequação da linguagem à situação de comunicação.
-12                                                            LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+12 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 025
 
 - Área: Linguagens
 - Gabarito: C
 
-NEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+NEM 2022
 A conquista da medalha de prata por Rayssa Leal,
 no skate street nos Jogos Olímpicos, é exemplo da
 representatividade feminina no esporte, avalia a âncora do
@@ -1160,7 +1152,6 @@ de Tóquio.
 - Área: Linguagens
 - Gabarito: C
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 Assentamento
 Zanza daqui
 Zanza pra acolá
@@ -1198,20 +1189,19 @@ Entretanto, a função emotiva pode ser identificada no verso:
 - Área: Linguagens
 - Gabarito: B
 
-Mulher ao volante,                      Os homens
-perigo constante.                       não choram.
+Mulher ao volante, Os homens
+perigo constante. não choram.
 tem estrada para andar
 Disponível em: https://viva-porto.pt. Acesso em: 24 nov. 2021 (adaptado).
 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 A articulação entre os elementos verbais e os não verbais
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 do texto tem como propósito desencadear a
 - A) identificação de distinções entre mulheres e homens.
-- B) revisão de            representações               estereotipadas              de
+- B) revisão de representações estereotipadas de
 gênero.
 - C) adoção de medidas preventivas de combate ao
 sexismo.
-- D) ratificação de              comportamentos                   femininos           e
+- D) ratificação de comportamentos femininos e
 masculinos.
 - E) retomada de opiniões a respeito da diversidade dos
 papéis sociais.
@@ -1266,7 +1256,7 @@ no Brasil.
 - Área: Linguagens
 - Gabarito: D
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE
+ENE
 Esaú e Jacó
 Bárbara entrou, enquanto o pai pegou da viola e
 passou ao patamar de pedra, à porta da esquerda.
@@ -1322,9 +1312,9 @@ esse que fosse ajudar ao vaqueiro das bestas.
 Ordens dadas, o Quinquim referendava. Cada um
 moralizava o outro, para moralizar-se.
 PAIVA, M. O. Dona Guidinha do Poço. Rio de Janeiro: Tecnoprint, s/d.
-14                                                     LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+14 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 No trecho do romance naturalista, a forma como
-M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+M 2022
 o narrador julga comportamentos e emoções das
 personagens femininas revela influência do pensamento
 - A) capitalista, marcado pela distribuição funcional do
@@ -1384,12 +1374,12 @@ MANUAL DE ORIENTAÇÃO
 O primeiro guia prático da Sociedade Brasileira de Pediatria para ajudar
 pais e pediatras no desafio de educar nativos digitais
 TRABALHO DE BASE
-Até 2 anos                                    De 2 a 5 anos                                               Até 10 anos
-A criança não deve ser exposta             O tempo de exposição às telas deve                          Devem ter acesso controlado
-passivamente às telas — TV,                ser limitado a 1 hora por dia. Crianças                     a computadores e dispositivos
-tablet, celular etc. —, principalmente     dessa faixa etária devem ser mais                           móveis. Crianças de até 10
-durante as refeições e até 2               protegidas da violência virtual, pois                       anos não devem usar TV ou
-horas antes de dormir.                     não sabem separar fantasia de realidade.                    computador no próprio quarto.
+Até 2 anos De 2 a 5 anos Até 10 anos
+A criança não deve ser exposta O tempo de exposição às telas deve Devem ter acesso controlado
+passivamente às telas — TV, ser limitado a 1 hora por dia. Crianças a computadores e dispositivos
+tablet, celular etc. —, principalmente dessa faixa etária devem ser mais móveis. Crianças de até 10
+durante as refeições e até 2 protegidas da violência virtual, pois anos não devem usar TV ou
+horas antes de dormir. não sabem separar fantasia de realidade. computador no próprio quarto.
 Disponível em: https://tab.uol.com.br. Acesso em: 25 ago. 2017 (adaptado).
 O texto sobre os chamados nativos digitais traz informações com a função de
 - A) propor ações específicas para cada etapa da infância.
@@ -1420,14 +1410,14 @@ como inventário é a
 - C) ocorrência de período longo no trecho.
 - D) combinação de verbos no presente e no pretérito.
 - E) presença de léxico do campo semântico de funerais.
-LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação                                                                15
+LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação 15
 
 ## Questão 034
 
 - Área: Linguagens
 - Gabarito: D
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2
+ENEM 2
 Criado há cerca de 20 anos na Califórnia, o
 mountainboard é um esporte de aventura que utiliza uma
 espécie de skate off-road para realizar manobras similares
@@ -1489,9 +1479,8 @@ leitor. Aqui no jornal apenas falo com o leitor e agrada-me
 que ele fique agradado. Vou dizer a verdade: não estou
 contente.
 LISPECTOR, C. In: A descoberta do mundo. Rio de Janeiro: Rocco, 1999.
-16                                                     LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+16 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 No texto, ao refletir sobre a atividade de cronista, a autora
-022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 questiona características do gênero crônica, como
 - A) relação distanciada entre os interlocutores.
 - B) articulação de vários núcleos narrativos.
@@ -1539,7 +1528,6 @@ tomada de decisões.
 - Área: Linguagens
 - Gabarito: A
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 “Vida perfeita” em redes sociais pode afetar a
 saúde mental
 Nas várias redes sociais que povoam a internet,
@@ -1586,7 +1574,6 @@ National Gallery of Art, Washington, Estados Unidos, circa 1610-1614.
 Disponível em: https://images.nga.gov. Acesso em: 28 jun. 2019 (adaptado).
 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 TEXTO II
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 Essa impressionante obra apresenta o sacerdote
 Laocoonte sendo punido pelos deuses por tentar alertar
 os troianos da ameaça do Cavalo de Troia, que escondia
@@ -1637,7 +1624,7 @@ minimalista é uma
 - Área: Linguagens
 - Gabarito: D
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 202
+ENEM 202
 Firmo, o vaqueiro
 No dia seguinte, à hora em que saía o gado, estava eu
 debruçado à varanda quando vi o cafuzo que preparava o
@@ -1655,11 +1642,11 @@ Fui ver, coitado!... estava morto”. E deu de esporas para
 que eu não lhe visse as lágrimas.
 NETTO, C. In: MARCHEZAN, L. G. (Org.). O conto regionalista.
 São Paulo: Martins Fontes, 2009.
-A passagem registra um momento                            em       que       a
+A passagem registra um momento em que a
 expressividade lírica é reforçada pela
 - A) plasticidade da imagem do rebanho reunido.
 - B) sugestão da firmeza do sertanejo ao arrear o cavalo.
-- C) situação de        pobreza        encontrada           nos       sertões
+- C) situação de pobreza encontrada nos sertões
 brasileiros.
 - D) afetividade demonstrada ao noticiar a morte do
 cantador.
@@ -1690,9 +1677,8 @@ mas o deboche anônimo, o deboche ritual de chegar,
 pegar, acabar, continuar. Era ignóbil. Felizmente muita
 gente sofre do mesmo mal no carnaval.
 RIO, J. Dentro da noite. São Paulo: Antiqua, 2002.
-18                                                 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+18 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 No texto, o personagem vincula ao carnaval atitudes e
-2 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 reações coletivas diante das quais expressa
 - A) consagração da alegria do povo.
 - B) atração e asco perante atitudes libertinas.
@@ -1735,7 +1721,7 @@ a autora faz uma reflexão em que transparece a
 - Área: Linguagens
 - Gabarito: E
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 202
+ENEM 202
 Vanda vinha do interior de Minas Gerais e de dentro
 de um livro de Charles Dickens. Sem dinheiro para criá-la,
 sua mãe a dera, com seus sete anos, a uma conhecida.
@@ -1773,7 +1759,6 @@ SILVEIRA, R. In absentia, 1983. Instalação, 17ª Bienal de São Paulo.
 Disponível em: www.bienal.org.br. Acesso em: 1 set. 2016 (adaptado).
 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 TEXTO II
-2 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 O termo ready-made foi criado por Marcel Duchamp
 (1887-1968) para designar um tipo de objeto, por ele
 inventado, que consiste em um ou mais artigos de uso
@@ -1839,70 +1824,70 @@ origens, criando uma nova combinação estética.
 INSTRUÇÕES PARA A REDAÇÃO
 1. O rascunho da redação deve ser feito no espaço apropriado.
 2. O texto definitivo deve ser escrito à tinta preta, na folha própria, em até 30 linhas.
-3. A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
+3. A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
 copiadas desconsiderado para a contagem de linhas.
 4. Receberá nota zero, em qualquer das situações expressas a seguir, a redação que:
 4.1. tiver até 7 (sete) linhas escritas, sendo considerada “texto insuficiente”;
 4.2. fugir ao tema ou não atender ao tipo dissertativo-argumentativo;
 4.3. apresentar parte do texto deliberadamente desconectada do tema proposto;
 4.4. apresentar nome, assinatura, rubrica ou outras formas de identificação no espaço destinado ao texto.
-TEXTO I                                                                                        TEXTO III
-Você sabe quais são as comunidades e os povos                                                    Povos e comunidades tradicionais
+TEXTO I TEXTO III
+Você sabe quais são as comunidades e os povos Povos e comunidades tradicionais
 tradicionais brasileiros? Talvez indígenas e quilombolas
-sejam os primeiros que passam pela cabeça, mas,                                                    O Ministério do Desenvolvimento Social (MDS)
+sejam os primeiros que passam pela cabeça, mas, O Ministério do Desenvolvimento Social (MDS)
 preside, desde 2007, a Comissão Nacional de
-na verdade, além deles, existem 26 reconhecidos                                                Desenvolvimento Sustentável dos Povos e Comunidades
-oficialmente e muitos outros que ainda não foram                                               Tradicionais (CNPCT), criada em 2006. Fruto dos
-incluídos na legislação.                                                                       trabalhos da CNPCT, foi instituída, por meio do Decreto
-São pescadores artesanais, quebradeiras de coco                                           nº 6.040, de 7 de fevereiro de 2017, a Política Nacional de
-babaçu, apanhadores de flores sempre-vivas, caatingueiros,                                     Desenvolvimento Sustentável dos Povos e Comunidades
+na verdade, além deles, existem 26 reconhecidos Desenvolvimento Sustentável dos Povos e Comunidades
+oficialmente e muitos outros que ainda não foram Tradicionais (CNPCT), criada em 2006. Fruto dos
+incluídos na legislação. trabalhos da CNPCT, foi instituída, por meio do Decreto
+São pescadores artesanais, quebradeiras de coco nº 6.040, de 7 de fevereiro de 2017, a Política Nacional de
+babaçu, apanhadores de flores sempre-vivas, caatingueiros, Desenvolvimento Sustentável dos Povos e Comunidades
 Tradicionais (PNPCT). A PNPCT foi criada em um
-extrativistas, para citar alguns, todos considerados                                           contexto de busca de reconhecimento e preservação de
-culturalmente diferenciados, capazes de se reconhecerem                                        outras formas de organização social por parte do Estado.
-entre si.                                                                                                      Disponível em: http://mds.gov.br. Acesso em: 17 jun. 2022 (adaptado).
-Para uma pesquisadora da UnB, essas populações                                            TEXTO IV
-consideram a terra como uma mãe, e há uma relação de                                                             Carta da Amazônia 2021
+extrativistas, para citar alguns, todos considerados contexto de busca de reconhecimento e preservação de
+culturalmente diferenciados, capazes de se reconhecerem outras formas de organização social por parte do Estado.
+entre si. Disponível em: http://mds.gov.br. Acesso em: 17 jun. 2022 (adaptado).
+Para uma pesquisadora da UnB, essas populações TEXTO IV
+consideram a terra como uma mãe, e há uma relação de Carta da Amazônia 2021
 reciprocidade com a natureza. Nessa troca, a natureza fornece
 Aos participantes da 26ª Conferência das Nações Unidas
 “alimento, um lugar saudável para habitar, para ter água.
 sobre Mudanças Climáticas (COP26)
 - E) elas se responsabilizam por cuidar dela, por tirar dela
-apenas o suficiente para viver bem e respeitam o tempo de                                           Não podia ser mais estratégico para nós, Povos
-regeneração da própria natureza”, diz.                                                         Indígenas, Populações e Comunidades Tradicionais
-Disponível em: https://g1.globo.com. Acesso em: 17 jun. 2022 (adaptado).    brasileiras, reafirmarmos a defesa da sociobiodiversidade
+apenas o suficiente para viver bem e respeitam o tempo de Não podia ser mais estratégico para nós, Povos
+regeneração da própria natureza”, diz. Indígenas, Populações e Comunidades Tradicionais
+Disponível em: https://g1.globo.com. Acesso em: 17 jun. 2022 (adaptado). brasileiras, reafirmarmos a defesa da sociobiodiversidade
 amazônica neste momento em que o mundo volta a
-TEXTO II                                                                                       debater a crise climática na COP26. Uma crise que
+TEXTO II debater a crise climática na COP26. Uma crise que
 atinge, em todos os contextos, os viventes da Terra!
-Povos tradicionais do Brasil                                                       Nossos territórios protegidos e direitos respeitados
-Estados com a maior concentração de famílias                                         são as reivindicações dos movimentos sociais e
+Povos tradicionais do Brasil Nossos territórios protegidos e direitos respeitados
+Estados com a maior concentração de famílias são as reivindicações dos movimentos sociais e
 ambientais brasileiros.
-Indígena                                       Pescador
-AM                          43.264            PA                             40.123            Não compactuamos com qualquer tentativa e estratégia
-MS                          21.507            MA                             33.085       baseada somente na lógica do mercado, com empresas
-RR                          15.316            BA                             30.920       que apoiam legislações ambientais que ameaçam nossos
+Indígena Pescador
+AM 43.264 PA 40.123 Não compactuamos com qualquer tentativa e estratégia
+MS 21.507 MA 33.085 baseada somente na lógica do mercado, com empresas
+RR 15.316 BA 30.920 que apoiam legislações ambientais que ameaçam nossos
 direitos e com mecanismos de financiamento que não
-Quilombola                                      Povos de terreiro                    condizem com a realidade dos nossos territórios.
-BA                           43.009           BA                              1.883
-MA                           39.316           PI                                856            Propomos o que temos de melhor: a experiência das
-PA                           15.282           CE                                603
+Quilombola Povos de terreiro condizem com a realidade dos nossos territórios.
+BA 43.009 BA 1.883
+MA 39.316 PI 856 Propomos o que temos de melhor: a experiência das
+PA 15.282 CE 603
 nossas sociedades e culturas históricas, construídas com
 base em nossos saberes tradicionais e ancestrais, além de
-Cigano                                         Ribeirinho
-BA                            1.538           PA                             50.314
+Cigano Ribeirinho
+BA 1.538 PA 50.314
 nosso profundo conhecimento da natureza.
 GO
 MG
-AM                             16.507            Inovação, para nós, não pode resultar em processos
-BA                              9.670
+AM 16.507 Inovação, para nós, não pode resultar em processos
+BA 9.670
 que venham a ameaçar nossos territórios, nossas formas
 Extrativista
 tradicionais e harmônicas de viver e produzir.
-PA                           11.826
-AM                            9.772                  Fonte: Ministério Público Federal.
+PA 11.826
+AM 9.772 Fonte: Ministério Público Federal.
 Amazônia, Brasil, 20 de outubro de 2021.
-MA                            7.190             Infográfico elaborado em: 25/10/2019.
+MA 7.190 Infográfico elaborado em: 25/10/2019.
 Entidades signatárias: CNS; Coiab; Conaq; MIQCB;
-Disponível em: https://g1.globo.com. Acesso em: 17 jun. 2022 (adaptado).    Coica; ANA Amazônia e Confrem
+Disponível em: https://g1.globo.com. Acesso em: 17 jun. 2022 (adaptado). Coica; ANA Amazônia e Confrem
 Disponível em: https://s3.amazonaws.com. Acesso em: 17 jun. 2022 (adaptado).
 PROPOSTA DE REDAÇÃO
 - A) partir da leitura dos textos motivadores e com base nos conhecimentos construídos ao longo de sua formação,
@@ -1910,9 +1895,8 @@ redija um texto dissertativo-argumentativo em modalidade escrita formal da líng
 “Desafios para a valorização de comunidades e povos tradicionais no Brasil”, apresentando proposta de
 intervenção que respeite os direitos humanos. Selecione, organize e relacione, de forma coerente e coesa,
 argumentos e fatos para a defesa de seu ponto de vista.
-20                                                              LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+20 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 Questões de 46 a 90
 
 ## Questão 046
@@ -1994,21 +1978,20 @@ CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 - Área: Ciências Humanas
 - Gabarito: B
 
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 evapotranspiração: 40%
 escoamento
 superficial:10%
 infiltração
 subsuperficial: 25%
 percolação
-Cobertura natural do solo                                profunda: 25%
+Cobertura natural do solo profunda: 25%
 evapotranspiração: 38%
 escoamento
 superficial: 20%
 infiltração
 subsuperficial: 21%
 percolação
-10% - 20% de superfície impermeável                       profunda: 21%
+10% - 20% de superfície impermeável profunda: 21%
 evapotranspiração: 35%
 escoamento
 superficial: 30%
@@ -2022,7 +2005,7 @@ superficial: 55%
 infiltração
 subsuperficial: 10%
 percolação
-75% - 100% de superfície impermeável                       profunda: 5%
+75% - 100% de superfície impermeável profunda: 5%
 PAZ, A. D. Disponível em: www.ct.ufpb.br. Acesso em: 15 out. 2021 (adaptado).
 A intensificação da ocupação urbana demonstrada afeta
 de forma imediata o(a)
@@ -2037,7 +2020,7 @@ de forma imediata o(a)
 - Área: Ciências Humanas
 - Gabarito: E
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 202
+ENEM 202
 Na construção da ferrovia Madeira-Mamoré, o
 que dizer dos doentes, eternos moribundos a vagar
 entre delírios febris, doses de quinino e corredores da
@@ -2090,14 +2073,13 @@ organização econômica descrita no texto?
 - C) Fragilização dos cartéis.
 - D) Padronização de mercadorias.
 - E) Desterritorialização da produção.
-22                                                     CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+22 CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 052
 
 - Área: Ciências Humanas
 - Gabarito: D
 
-2 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 Olhar o Brasil e não ver o sertão
 É como negar o queijo com a faca na mão
 Esse gigante em movimento
@@ -2162,7 +2144,6 @@ Segundo Reinado ao(à)
 - Área: Ciências Humanas
 - Gabarito: E
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 Os caixeiros do comércio a retalho do Rio de Janeiro
 estiveram entre as primeiras categorias de trabalhadores
 a se organizar em associações e a exigir a intervenção
@@ -2222,7 +2203,6 @@ CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 - Área: Ciências Humanas
 - Gabarito: A
 
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 TEXTO I
 TÁ
 ESTUDANDO,
@@ -2260,7 +2240,6 @@ aspecto da sociedade contemporânea:
 - Área: Ciências Humanas
 - Gabarito: A
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 O leproso é visto dentro de uma prática da rejeição,
 do exílio-cerca; deixa-se que se perca lá dentro como
 numa massa que não tem muita importância diferenciar;
@@ -2321,14 +2300,13 @@ cristianismo medieval.
 cerimônias ecumênicas.
 - E) Criação de lugares místicos e experiências do
 catolicismo popular.
-24                                                         CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+24 CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 059
 
 - Área: Ciências Humanas
 - Gabarito: C
 
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 Em 2003, teve início o Programa de Aquisição de
 Alimentos e, com ele, várias mudanças na perspectiva dos
 mercados institucionais. Trata-se do primeiro programa
@@ -2390,7 +2368,6 @@ ferramentas virtuais.
 - Área: Ciências Humanas
 - Gabarito: E
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM
 A dublagem é o novo campo a ser explorado pela
 inteligência artificial, e há empresas dedicadas a fazer
 com que as vozes originais de atores sejam transpostas
@@ -2456,7 +2433,6 @@ SILVA, M. C. Os agentes públicos e a fome nos primeiros séculos da Idade Médi
 Varia Historia, n. 60, set.-dez. 2016 (adaptado).
 CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 Na conjuntura histórica destacada no texto, o dever de
-2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 agir em face da situação de crise apresentada pertencia à
 jurisdição
 - A) da nobreza, proveniente da obrigação de proteção ao
@@ -2496,17 +2472,17 @@ em que provoca a formação de
 - Área: Ciências Humanas
 - Gabarito: B
 
-TENSÃO           MORTE
+TENSÃO MORTE
 AGRESSÃO
-TENSÃO            LUA DE MEL
+TENSÃO LUA DE MEL
 AGRESSÃO
-TENSÃO               LUA DE MEL
+TENSÃO LUA DE MEL
 AGRESSÃO
-TENSÃO                 LUA DE MEL
+TENSÃO LUA DE MEL
 AGRESSÃO
 TENSÃO
 LUA DE MEL
-LUA DE MEL                AGRESSÃO
+LUA DE MEL AGRESSÃO
 TENSÃO
 LUA DE MEL
 LUA DE MEL
@@ -2531,7 +2507,7 @@ caracterizada pela
 - Área: Ciências Humanas
 - Gabarito: C
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENE
+ENE
 TEXTO I
 A primeira grande lei educacional do Brasil, de 1827,
 determinava que, nas “escolas de primeiras letras” do
@@ -2587,14 +2563,14 @@ social para
 - C) controlar a propriedade estatal.
 - D) garantir o preceito constitucional.
 - E) incentivar a especulação imobiliária.
-26                                                             CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+26 CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 068
 
 - Área: Ciências Humanas
 - Gabarito: D
 
-M 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+M 2022
 TEXTO I
 A Marinha identifica, na voz de Thomas Barnett, uma
 ampla região potencialmente insubmissa ou simplesmente
@@ -2649,20 +2625,19 @@ soberania nacional.
 - Área: Ciências Humanas
 - Gabarito: A
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 TEXTO I
 Interseccionalidade: intercruzamento de desigualdades
 que gera padrões complexos de discriminação.
 TEXTO II
 Proporção de pessoas abaixo da linha de pobreza
 Por arranjo domiciliar no Brasil — 2017
-Mulher sem cônjuge e com filho(s) até 14 anos                            56,9%
-Mulher preta ou parda sem cônjuge e com filho(s) até 14 anos              64,4%
-Mulher branca sem cônjuge e com filho(s) até 14 anos              41,5%
-Casal com filho(s)              30,4%
-Outros          21,0%
-Unipessoal          11,6%
-Casal sem filho          10,0%
+Mulher sem cônjuge e com filho(s) até 14 anos 56,9%
+Mulher preta ou parda sem cônjuge e com filho(s) até 14 anos 64,4%
+Mulher branca sem cônjuge e com filho(s) até 14 anos 41,5%
+Casal com filho(s) 30,4%
+Outros 21,0%
+Unipessoal 11,6%
+Casal sem filho 10,0%
 Disponível em: www.agenciadenoticias.ibge.gov.br. Acesso em: 2 dez. 2018.
 Considerando o conceito apresentado no Texto I e os
 dados apresentados no Texto II, no Brasil, são fatores
@@ -2702,7 +2677,6 @@ CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 - Área: Ciências Humanas
 - Gabarito: D
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 Brasileiros levam mais tempo de casa para o trabalho
 Pesquisa do IBGE aponta que a situação é mais
 grave no Sudeste: 13% das pessoas levam mais de uma
@@ -2754,12 +2728,11 @@ tinha por objetivo
 - Área: Ciências Humanas
 - Gabarito: C
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 RADIAÇÃO SOLAR
 GLOBAL HORIZONTAL
 MÉDIA ANUAL
 3,15 3,50 3,85 4,20 4,55 4,90 5,25 5,60 5,95 6,30 6,65 kWh/m²
-0   200    400 600     800 1000 km
+0 200 400 600 800 1000 km
 PEREIRA, E. B. et al. Atlas brasileiro de energia solar. São José dos Campos: Inpe, 2006.
 Uma característica regional que justifica o maior
 potencial anual médio para o aproveitamento da
@@ -2797,14 +2770,13 @@ Pelo descrito no texto, o povo Kambeba tem o rio como um(a)
 - C) cenário bucólico e paisagístico.
 - D) riqueza individual e efêmera.
 - E) patrimônio cultural e afetivo.
-28                                                               CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+28 CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 076
 
 - Área: Ciências Humanas
 - Gabarito: D
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 Lá embaixo está o Açude Itans, com seu formigueiro
 a cavar a terra. É mesmo impressionante o esforço
 daquele formigar de homens ao sol, lavados em suor, que
@@ -2863,7 +2835,7 @@ justifica no âmbito dos objetivos
 - Área: Ciências Humanas
 - Gabarito: E
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 E
+E
 Possível trajeto do voo MH370 da Malaysia Airlines
 antes da queda, em 2014
 Último contato
@@ -2872,8 +2844,8 @@ Kuala Lumpur
 INDONÉSIA
 Possível trajeto antes da queda
 MADAGASCAR
-OCEANO                                   AUSTRÁLIA
-ÍNDICO                             Perth
+OCEANO AUSTRÁLIA
+ÍNDICO Perth
 km
 Local onde os destroços
 foram avistados
@@ -2927,7 +2899,7 @@ CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 - Área: Ciências Humanas
 - Gabarito: C
 
-NEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+NEM 2022
 Advento da Polis, nascimento da filosofia: entre as
 duas ordens de fenômenos, os vínculos são demasiado
 estreitos para que o pensamento racional não apareça,
@@ -2987,44 +2959,43 @@ criado permitiram ao governo promover o(a)
 - Área: Ciências Humanas
 - Gabarito: B
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 ROCHAS ÍGNEAS DA AMAZÔNIA LEGAL
-70°W                         60°W                      50°W
+70°W 60°W 50°W
 Guiana Francesa
-5°N                         Venezuela                                                                          5°N
+5°N Venezuela 5°N
 Suriname
-Roraima Guiana                                 Oc
+Roraima Guiana Oc
 Colômbia
 Amapá
 Atl eano
 ânti
 co
-0°                                                                                                             0°
+0° 0°
 Pará
 Amazonas
 aranhão
 Maranhão
-5°S                                                                                                            5°S
-Acre                                                                                Piauí
+5°S 5°S
+Acre Piauí
 10°S
 Tocantins
 10°S
 Rondônia
-Mato Grosso                             Bahia
+Mato Grosso Bahia
 Peru
 Goiás
 15°S
 DF Minas Gerais
 15°S
-Oc                     Bolívia
-Pa ean                                                                      0     80   160   320
+Oc Bolívia
+Pa ean 0 80 160 320
 Km
 cíf o
 ico
-Chile                             Mato Grosso do Sul
+Chile Mato Grosso do Sul
 Projeção: Albers
 Datum: SIRGAS 2000
-70°W                         60°W                      50°W
+70°W 60°W 50°W
 Rochas ígneas
 Amazônia Legal
 Geoestatísticas de recursos naturais da Amazônia Legal.
@@ -3057,14 +3028,13 @@ nascerem já se encontram na condição sociopolítica de
 - C) foragidas.
 - D) refugiadas.
 - E) clandestinas.
-30                                                                      CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+30 CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 
 ## Questão 084
 
 - Área: Ciências Humanas
 - Gabarito: C
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
 TEXTO I
 Uma filosofia da percepção que queira reaprender a
 ver o mundo restituirá à pintura e às artes em geral seu
@@ -3126,7 +3096,7 @@ da Igreja em
 - Área: Ciências Humanas
 - Gabarito: C
 
-ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 E
+E
 Empédocles estabelece quatro elementos corporais
 — fogo, ar, água e terra —, que são eternos e que mudam
 aumentando e diminuindo mediante mistura e separação;
@@ -3193,7 +3163,7 @@ CH - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
 - Área: Ciências Humanas
 - Gabarito: C
 
-NEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022
+NEM 2022
 Quando os espanhóis chegaram à América, estava
 em seu apogeu o império teocrático dos Incas, que
 estendia seu poder sobre o que hoje chamamos Peru,
@@ -3251,12 +3221,12 @@ do mundo natural e a
 Transcreva a sua Redação para a Folha de Redação.
 O
 H
-N      O
-U      Ã
+N O
+U Ã
 - C) Ç
-S      A
+S A
 A
 R RED
 A
 D
-32         1° dia | Caderno 1 - AZUL - 1ª Aplicação
+32 1° dia | Caderno 1 - AZUL - 1ª Aplicação

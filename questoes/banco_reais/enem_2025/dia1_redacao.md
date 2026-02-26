@@ -87,7 +87,7 @@ L
 INSTRUÇÕES PARA A REDAÇÃO
 1. O rascunho da redação deve ser feito no espaço apropriado.
 2. O texto definitivo deve ser escrito à tinta preta, na folha própria, em até 30 (trinta) linhas.
-3. A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
+3. A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas
 copiadas desconsiderado para a contagem de linhas.
 4. Receberá nota zero, em qualquer das situações expressas a seguir, a redação que:
 4.1. tiver até 7 (sete) linhas escritas, sendo considerada “texto insuficiente”;
