@@ -69,6 +69,7 @@ class _HomePageState extends State<HomePage> {
   bool _simuladoEmbaralhar = true;
   List<AttemptRecord> _recentAttempts = const [];
   List<StudyBlockSuggestion> _studyBlockSuggestions = const [];
+  List<SkillPriorityItem> _skillPriorities = const [];
   List<WeakSkillStat> _weakSkills = const [];
   List<ModuleSuggestion> _moduleSuggestions = const [];
   List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
@@ -261,6 +262,10 @@ class _HomePageState extends State<HomePage> {
         await _localDatabase.loadRecentAttempts(db, limit: 10);
     final studyBlockSuggestions =
         await _localDatabase.suggestStudyBlocks(db, limit: 5);
+    final skillPriorities = await _localDatabase.loadSkillPriorities(
+      db,
+      limit: 10,
+    );
     final moduleSuggestions = await _localDatabase.recommendModulesByWeakSkills(
       db,
       weakSkillLimit: 3,
@@ -294,6 +299,7 @@ class _HomePageState extends State<HomePage> {
       _filteredQuestions = filteredQuestions;
       _recentAttempts = recentAttempts;
       _studyBlockSuggestions = studyBlockSuggestions;
+      _skillPriorities = skillPriorities;
       _weakSkills = weakSkills;
       _moduleSuggestions = moduleSuggestions;
       _moduleQuestionMatches = moduleQuestionMatches;
@@ -998,6 +1004,64 @@ class _HomePageState extends State<HomePage> {
                   '(${item.correct}/${item.total})',
                 ),
               ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSkillPriorityCard() {
+    if (_skillPriorities.isEmpty) {
+      return const Card(
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Priorização automática por lacuna',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 8),
+              Text(
+                'Sem dados suficientes. Resolva questões para calcular prioridade.',
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
+    final focoCount =
+        _skillPriorities.where((item) => item.band == 'foco').length;
+    final manutencaoCount =
+        _skillPriorities.where((item) => item.band == 'manutencao').length;
+    final forteCount =
+        _skillPriorities.where((item) => item.band == 'forte').length;
+    final topItems = _skillPriorities.take(5).toList();
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Priorização automática por lacuna',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Faixas | foco: $focoCount | manutenção: $manutencaoCount | forte: $forteCount',
+            ),
+            const SizedBox(height: 8),
+            ...topItems.map(
+              (item) => Text(
+                '${item.skill} | ${item.band} | prioridade ${item.priorityScore.toStringAsFixed(3)} '
+                '| acurácia ${_percent(item.accuracy)}% | tentativas ${item.attempts} '
+                '| recência ${item.daysSinceLastSeen}d',
+              ),
+            ),
           ],
         ),
       ),
@@ -2102,6 +2166,8 @@ class _HomePageState extends State<HomePage> {
             if (_busy) const LinearProgressIndicator(),
             const SizedBox(height: 16),
             _buildWeakSkillsCard(),
+            const SizedBox(height: 12),
+            _buildSkillPriorityCard(),
             const SizedBox(height: 12),
             _buildModuleSuggestionsCard(),
             const SizedBox(height: 12),

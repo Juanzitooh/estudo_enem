@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math' as math;
 
 import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart';
@@ -19,6 +20,30 @@ class WeakSkillStat {
   final int total;
 
   double get accuracy => total <= 0 ? 0 : correct / total;
+}
+
+class SkillPriorityItem {
+  const SkillPriorityItem({
+    required this.skill,
+    required this.accuracy,
+    required this.attempts,
+    required this.daysSinceLastSeen,
+    required this.deficit,
+    required this.recency,
+    required this.confidence,
+    required this.priorityScore,
+    required this.band,
+  });
+
+  final String skill;
+  final double accuracy;
+  final int attempts;
+  final int daysSinceLastSeen;
+  final double deficit;
+  final double recency;
+  final double confidence;
+  final double priorityScore;
+  final String band;
 }
 
 class ModuleSuggestion {
@@ -882,6 +907,35 @@ class LocalDatabase {
       return 'dificil';
     }
     return '';
+  }
+
+  double _confidenceFromAttempts(int attempts) {
+    if (attempts <= 0) {
+      return 0;
+    }
+    final raw = math.log(1 + attempts);
+    final normalizer = math.log(1 + 20);
+    if (normalizer <= 0) {
+      return 0;
+    }
+    final normalized = raw / normalizer;
+    if (normalized < 0) {
+      return 0;
+    }
+    if (normalized > 1) {
+      return 1;
+    }
+    return normalized;
+  }
+
+  String _bandFromAccuracy(double accuracy) {
+    if (accuracy < 0.55) {
+      return 'foco';
+    }
+    if (accuracy <= 0.75) {
+      return 'manutencao';
+    }
+    return 'forte';
   }
 
   List<String> _extractSkills(Object? rawSkills, String rawSkillsText) {
@@ -1820,6 +1874,74 @@ class LocalDatabase {
         )
         .where((item) => item.skill.isNotEmpty && item.total > 0)
         .toList();
+  }
+
+  Future<List<SkillPriorityItem>> loadSkillPriorities(
+    Database db, {
+    int limit = 10,
+  }) async {
+    final safeLimit = limit <= 0 ? 10 : limit.clamp(1, 50);
+    final rows = await db.rawQuery('''
+      SELECT
+        q.skill AS skill,
+        SUM(CASE WHEN p.is_correct = 1 THEN 1 ELSE 0 END) AS correct_count,
+        COUNT(*) AS total_count,
+        MAX(p.answered_at) AS last_answered_at
+      FROM progress p
+      JOIN questions q ON q.id = p.question_id
+      WHERE q.skill IS NOT NULL AND TRIM(q.skill) <> ''
+      GROUP BY q.skill
+    ''');
+
+    if (rows.isEmpty) {
+      return const [];
+    }
+
+    final now = DateTime.now();
+    final priorities = <SkillPriorityItem>[];
+    for (final row in rows) {
+      final skill = (row['skill'] ?? '').toString().trim();
+      final attempts = _toInt(row['total_count']);
+      final correct = _toInt(row['correct_count']);
+      if (skill.isEmpty || attempts <= 0) {
+        continue;
+      }
+
+      final accuracy = correct / attempts;
+      final deficit = 1 - accuracy;
+      final lastAnsweredRaw = (row['last_answered_at'] ?? '').toString().trim();
+      final lastAnswered = DateTime.tryParse(lastAnsweredRaw)?.toLocal();
+      final daysSinceLastSeen = lastAnswered == null
+          ? 30
+          : now.difference(lastAnswered).inDays.clamp(0, 365);
+      final recency = (daysSinceLastSeen * 0.02).clamp(0, 0.3).toDouble();
+      final confidence = _confidenceFromAttempts(attempts);
+      final priorityScore = deficit + recency + (1 - confidence);
+
+      priorities.add(
+        SkillPriorityItem(
+          skill: skill,
+          accuracy: accuracy,
+          attempts: attempts,
+          daysSinceLastSeen: daysSinceLastSeen,
+          deficit: deficit,
+          recency: recency,
+          confidence: confidence,
+          priorityScore: priorityScore,
+          band: _bandFromAccuracy(accuracy),
+        ),
+      );
+    }
+
+    priorities.sort((a, b) {
+      final scoreCompare = b.priorityScore.compareTo(a.priorityScore);
+      if (scoreCompare != 0) {
+        return scoreCompare;
+      }
+      return b.attempts.compareTo(a.attempts);
+    });
+
+    return priorities.take(safeLimit).toList();
   }
 
   Future<List<ModuleSuggestion>> recommendModulesByWeakSkills(
