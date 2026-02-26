@@ -35,6 +35,14 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Exibir feedback de legibilidade quando houver muitos marcadores `[ILEGÍVEL]`.
 - [ ] Persistir evolução e ranking de redação (faixas de nota e progresso no tempo).
 
+## Bloco 6 — Intercorrelação Módulo x Questão (curto/médio prazo)
+- [ ] Criar `questoes/mapeamento_habilidades/modulo_questao_matches.csv` com score e confiança por vínculo.
+- [ ] Definir e publicar um catálogo de `tags_assunto` canônicas (com sinônimos).
+- [ ] Implementar script de matching inicial por `keywords + habilidades + competências + expectativas`.
+- [ ] Classificar tipo de vínculo: `direto`, `relacionado`, `interdisciplinar`.
+- [ ] Marcar candidatos de baixa confiança para revisão manual em lote.
+- [ ] Expor no app filtros por `módulo`, `assunto`, `tipo_match` e `score_match`.
+
 ## Backlog futuro (pós-lotes `tem_imagem`)
 - [ ] Validar precisão da flag `tem_imagem` em amostra manual por área.
 - [ ] Adicionar campo `depende_contexto_visual` para priorizar revisão manual de itens com imagem.
