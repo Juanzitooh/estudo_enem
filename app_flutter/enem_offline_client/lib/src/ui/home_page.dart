@@ -45,6 +45,8 @@ class _HomePageState extends State<HomePage> {
       TextEditingController(text: '3');
   final TextEditingController _treinoQuantidadeController =
       TextEditingController(text: '10');
+  final TextEditingController _diagnosticoPorNivelController =
+      TextEditingController(text: '3');
   final TextEditingController _matchMateriaController = TextEditingController();
   final TextEditingController _matchAssuntoController = TextEditingController();
   final TextEditingController _matchScoreController = TextEditingController(
@@ -80,6 +82,7 @@ class _HomePageState extends State<HomePage> {
   bool _treinoRespondida = false;
   String _treinoRespostaSelecionada = '';
   String _treinoFeedback = '';
+  List<QuestionCardItem> _diagnosticoQuestions = const [];
   List<QuestionCardItem> _simuladoQuestions = const [];
   int _simuladoTempoTotalMinutos = 0;
   bool _simuladoEmbaralhar = true;
@@ -120,6 +123,7 @@ class _HomePageState extends State<HomePage> {
     _simuladoQuantidadeController.dispose();
     _simuladoTempoPorQuestaoController.dispose();
     _treinoQuantidadeController.dispose();
+    _diagnosticoPorNivelController.dispose();
     _matchMateriaController.dispose();
     _matchAssuntoController.dispose();
     _matchScoreController.dispose();
@@ -219,6 +223,17 @@ class _HomePageState extends State<HomePage> {
     return parsed;
   }
 
+  int _readDiagnosticoPorNivel() {
+    final parsed = int.tryParse(_diagnosticoPorNivelController.text.trim());
+    if (parsed == null || parsed <= 0) {
+      return 3;
+    }
+    if (parsed > 10) {
+      return 10;
+    }
+    return parsed;
+  }
+
   QuestionFilter _buildTreinoPoolFilter() {
     return QuestionFilter(
       year: _questionYearSelecionado,
@@ -231,6 +246,24 @@ class _HomePageState extends State<HomePage> {
       difficulty: _questionDifficultySelecionada,
       hasImage: _readHasImageFilter(),
       limit: 200,
+    );
+  }
+
+  QuestionFilter _buildDiagnosticoFilter({
+    required String difficulty,
+    required int limit,
+  }) {
+    return QuestionFilter(
+      year: _questionYearSelecionado,
+      day: _questionDaySelecionado,
+      area: _questionAreaSelecionada,
+      discipline: _questionDisciplineSelecionada,
+      materia: _questionMateriaSelecionada,
+      competency: _questionCompetencySelecionada,
+      skill: _questionSkillSelecionada,
+      difficulty: difficulty,
+      hasImage: _readHasImageFilter(),
+      limit: limit,
     );
   }
 
@@ -527,6 +560,22 @@ class _HomePageState extends State<HomePage> {
     return _treinoQuestions[_treinoCurrentIndex];
   }
 
+  void _startTreinoSession(
+    List<QuestionCardItem> questions, {
+    required String statusMessage,
+  }) {
+    setState(() {
+      _treinoQuestions = questions;
+      _treinoCurrentIndex = 0;
+      _treinoAcertos = 0;
+      _treinoErros = 0;
+      _treinoRespondida = false;
+      _treinoRespostaSelecionada = '';
+      _treinoFeedback = '';
+      _status = statusMessage;
+    });
+  }
+
   Future<void> _iniciarTreino() async {
     setState(() {
       _busy = true;
@@ -566,16 +615,11 @@ class _HomePageState extends State<HomePage> {
       if (!mounted) {
         return;
       }
-      setState(() {
-        _treinoQuestions = selecionadas;
-        _treinoCurrentIndex = 0;
-        _treinoAcertos = 0;
-        _treinoErros = 0;
-        _treinoRespondida = false;
-        _treinoRespostaSelecionada = '';
-        _treinoFeedback = '';
-        _status = 'Treino iniciado com ${selecionadas.length} questão(ões).';
-      });
+      _startTreinoSession(
+        selecionadas,
+        statusMessage:
+            'Treino iniciado com ${selecionadas.length} questão(ões).',
+      );
     } catch (error) {
       if (!mounted) {
         return;
@@ -590,6 +634,95 @@ class _HomePageState extends State<HomePage> {
         });
       }
     }
+  }
+
+  Future<void> _montarDiagnostico333() async {
+    setState(() {
+      _busy = true;
+      _status = 'Montando diagnóstico por dificuldade (3/3/3)...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      final perLevel = _readDiagnosticoPorNivel();
+      const levels = ['facil', 'media', 'dificil'];
+      final selected = <QuestionCardItem>[];
+      final seen = <String>{};
+      final perLevelCount = <String, int>{
+        'facil': 0,
+        'media': 0,
+        'dificil': 0,
+      };
+
+      for (final level in levels) {
+        final pool = await _localDatabase.searchQuestions(
+          db,
+          filter: _buildDiagnosticoFilter(
+            difficulty: level,
+            limit: perLevel * 4,
+          ),
+        );
+        for (final item in pool) {
+          if (perLevelCount[level]! >= perLevel) {
+            break;
+          }
+          if (!seen.add(item.id)) {
+            continue;
+          }
+          selected.add(item);
+          perLevelCount[level] = (perLevelCount[level] ?? 0) + 1;
+        }
+      }
+
+      if (selected.isEmpty) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {
+          _diagnosticoQuestions = const [];
+          _status =
+              'Sem questões com dificuldade classificada para montar diagnóstico.';
+        });
+        return;
+      }
+
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _diagnosticoQuestions = selected;
+        _status =
+            'Diagnóstico montado: fácil ${perLevelCount['facil']} | média ${perLevelCount['media']} | difícil ${perLevelCount['dificil']} '
+            '| total ${selected.length}.';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao montar diagnóstico: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  void _iniciarTreinoDiagnostico() {
+    if (_diagnosticoQuestions.isEmpty) {
+      setState(() {
+        _status = 'Monte o diagnóstico antes de iniciar.';
+      });
+      return;
+    }
+    _startTreinoSession(
+      List<QuestionCardItem>.from(_diagnosticoQuestions),
+      statusMessage:
+          'Treino diagnóstico iniciado com ${_diagnosticoQuestions.length} questão(ões).',
+    );
   }
 
   Future<void> _responderTreino(String alternativa) async {
@@ -1507,6 +1640,73 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildDiagnosticoCard() {
+    final easyCount = _diagnosticoQuestions
+        .where((item) => item.difficulty.toLowerCase() == 'facil')
+        .length;
+    final mediumCount = _diagnosticoQuestions
+        .where((item) => item.difficulty.toLowerCase() == 'media')
+        .length;
+    final hardCount = _diagnosticoQuestions
+        .where((item) => item.difficulty.toLowerCase() == 'dificil')
+        .length;
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Diagnóstico por dificuldade (3/3/3)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                SizedBox(
+                  width: 180,
+                  child: TextField(
+                    controller: _diagnosticoPorNivelController,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Qtd por nível',
+                    ),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: _busy ? null : _montarDiagnostico333,
+                  child: const Text('Montar diagnóstico'),
+                ),
+                OutlinedButton(
+                  onPressed: _busy ? null : _iniciarTreinoDiagnostico,
+                  child: const Text('Treinar diagnóstico'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Resultado atual | fácil: $easyCount | média: $mediumCount | difícil: $hardCount | total: ${_diagnosticoQuestions.length}',
+            ),
+            if (_diagnosticoQuestions.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              ..._diagnosticoQuestions.take(12).map(
+                    (item) => Text(
+                      'Q ${item.year}/${item.day}/${item.number} '
+                      '| ${item.difficulty.isEmpty ? '-' : item.difficulty} '
+                      '| ${item.skill.isEmpty ? '-' : item.skill}',
+                    ),
+                  ),
+            ],
           ],
         ),
       ),
@@ -2496,6 +2696,8 @@ class _HomePageState extends State<HomePage> {
             if (_busy) const LinearProgressIndicator(),
             const SizedBox(height: 16),
             _buildWeakSkillsCard(),
+            const SizedBox(height: 12),
+            _buildDiagnosticoCard(),
             const SizedBox(height: 12),
             _buildSkillPriorityCard(),
             const SizedBox(height: 12),
