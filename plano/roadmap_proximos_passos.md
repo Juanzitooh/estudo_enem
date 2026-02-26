@@ -101,6 +101,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
-1. Integrar previsão do planner com recomendações de módulos/aulas (não só habilidades).
-2. Retomar indexação por habilidade/competência em lote e fechar cobertura incremental.
-3. Iniciar estrutura de `questoes/generateds/` com schema validado para lotes por agent.
+1. Retomar indexação por habilidade/competência em lote e fechar cobertura incremental.
+2. Iniciar estrutura de `questoes/generateds/` com schema validado para lotes por agent.
+3. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.

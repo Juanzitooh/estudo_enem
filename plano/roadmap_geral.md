@@ -129,7 +129,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Gerar plano diário/semanal automaticamente a partir da ficha do estudante (horas, dias e data-alvo).
 - [x] Projetar previsão de carga por meta (`horas necessárias`, `habilidades por semana`, `risco de atraso`).
 - [x] Recalcular o plano após cada sessão para refletir ganho/perda de domínio.
-- [ ] Exibir "próximas aulas recomendadas" por janela de dias (ex.: próximos 7 dias) com justificativa objetiva.
+- [x] Exibir "próximas aulas recomendadas" por janela de dias (ex.: próximos 7 dias) com justificativa objetiva.
 - [x] Permitir exportar/importar o plano junto do perfil para continuidade entre dispositivos.
 
 ### Funcionalidades do MVP
