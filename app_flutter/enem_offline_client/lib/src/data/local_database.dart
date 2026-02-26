@@ -45,6 +45,36 @@ class ModuleSuggestion {
   final String matchedSkill;
 }
 
+class StudyBlockSuggestion {
+  const StudyBlockSuggestion({
+    required this.skill,
+    required this.accuracy,
+    required this.attempts,
+    required this.correct,
+    required this.questionPool,
+    required this.recommendedQuestions,
+    required this.recommendedMinutes,
+    required this.area,
+    required this.materia,
+    required this.modulo,
+    required this.title,
+    required this.page,
+  });
+
+  final String skill;
+  final double accuracy;
+  final int attempts;
+  final int correct;
+  final int questionPool;
+  final int recommendedQuestions;
+  final int recommendedMinutes;
+  final String area;
+  final String materia;
+  final int modulo;
+  final String title;
+  final String page;
+}
+
 class ModuleQuestionMatch {
   const ModuleQuestionMatch({
     required this.questionId,
@@ -1762,6 +1792,94 @@ class LocalDatabase {
         if (suggestions.length >= maxTotal) {
           return suggestions;
         }
+      }
+    }
+
+    return suggestions;
+  }
+
+  Future<List<StudyBlockSuggestion>> suggestStudyBlocks(
+    Database db, {
+    int limit = 4,
+  }) async {
+    final safeLimit = limit <= 0 ? 4 : limit.clamp(1, 20);
+    final weakSkills = await loadWeakSkills(db, limit: safeLimit * 3);
+    if (weakSkills.isEmpty) {
+      return const [];
+    }
+
+    final suggestions = <StudyBlockSuggestion>[];
+    final seenSkills = <String>{};
+
+    for (final weak in weakSkills) {
+      if (!seenSkills.add(weak.skill)) {
+        continue;
+      }
+
+      final countRows = await db.rawQuery(
+        '''
+        SELECT COUNT(*) AS c
+        FROM questions
+        WHERE LOWER(COALESCE(skill, '')) = LOWER(?)
+        ''',
+        [weak.skill],
+      );
+      final questionPool = _toInt(
+        countRows.isEmpty ? 0 : countRows.first['c'],
+      );
+
+      final moduleRows = await db.query(
+        'book_modules',
+        columns: ['area', 'materia', 'modulo', 'title', 'page'],
+        where: 'skills LIKE ?',
+        whereArgs: ['%;${weak.skill};%'],
+        orderBy: 'volume ASC, materia ASC, modulo ASC',
+        limit: 1,
+      );
+
+      final module =
+          moduleRows.isEmpty ? const <String, Object?>{} : moduleRows.first;
+      final accuracy = weak.accuracy;
+      int recommendedQuestions;
+      int minutesPerQuestion;
+
+      if (accuracy < 0.45) {
+        recommendedQuestions = 14;
+        minutesPerQuestion = 4;
+      } else if (accuracy < 0.65) {
+        recommendedQuestions = 10;
+        minutesPerQuestion = 3;
+      } else {
+        recommendedQuestions = 8;
+        minutesPerQuestion = 3;
+      }
+
+      if (questionPool > 0 && recommendedQuestions > questionPool) {
+        recommendedQuestions = questionPool;
+      }
+      if (recommendedQuestions <= 0) {
+        recommendedQuestions = 6;
+      }
+
+      suggestions.add(
+        StudyBlockSuggestion(
+          skill: weak.skill,
+          accuracy: accuracy,
+          attempts: weak.total,
+          correct: weak.correct,
+          questionPool: questionPool,
+          recommendedQuestions: recommendedQuestions,
+          recommendedMinutes: recommendedQuestions * minutesPerQuestion,
+          area: (module['area'] ?? '').toString(),
+          materia: (module['materia'] ?? '').toString(),
+          modulo: _toInt(module['modulo']),
+          title: (module['title'] ?? '').toString(),
+          page: (module['page'] ?? '').toString(),
+        ),
+      );
+
+      if (suggestions.length >= safeLimit) {
+        break;
       }
     }
 

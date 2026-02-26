@@ -68,6 +68,7 @@ class _HomePageState extends State<HomePage> {
   int _simuladoTempoTotalMinutos = 0;
   bool _simuladoEmbaralhar = true;
   List<AttemptRecord> _recentAttempts = const [];
+  List<StudyBlockSuggestion> _studyBlockSuggestions = const [];
   List<WeakSkillStat> _weakSkills = const [];
   List<ModuleSuggestion> _moduleSuggestions = const [];
   List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
@@ -254,6 +255,8 @@ class _HomePageState extends State<HomePage> {
     );
     final recentAttempts =
         await _localDatabase.loadRecentAttempts(db, limit: 10);
+    final studyBlockSuggestions =
+        await _localDatabase.suggestStudyBlocks(db, limit: 5);
     final moduleSuggestions = await _localDatabase.recommendModulesByWeakSkills(
       db,
       weakSkillLimit: 3,
@@ -286,6 +289,7 @@ class _HomePageState extends State<HomePage> {
       _questionFilterOptions = questionFilterOptions;
       _filteredQuestions = filteredQuestions;
       _recentAttempts = recentAttempts;
+      _studyBlockSuggestions = studyBlockSuggestions;
       _weakSkills = weakSkills;
       _moduleSuggestions = moduleSuggestions;
       _moduleQuestionMatches = moduleQuestionMatches;
@@ -664,6 +668,26 @@ class _HomePageState extends State<HomePage> {
       _treinoFeedback = '';
       _status = 'Sessão de treino encerrada.';
     });
+  }
+
+  Future<void> _iniciarBlocoSugestao(StudyBlockSuggestion item) async {
+    if (_busy) {
+      return;
+    }
+
+    setState(() {
+      _questionSkillSelecionada = item.skill;
+      if (item.area.trim().isNotEmpty) {
+        _questionAreaSelecionada = item.area.trim();
+      }
+      if (item.materia.trim().isNotEmpty) {
+        _questionMateriaSelecionada = item.materia.trim();
+      }
+      _treinoQuantidadeController.text = '${item.recommendedQuestions}';
+      _status = 'Aplicando bloco de estudo para ${item.skill}...';
+    });
+
+    await _iniciarTreino();
   }
 
   String _buildSimuladoDistribuicaoResumo(List<QuestionCardItem> items) {
@@ -1134,6 +1158,73 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ],
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStudyBlockSuggestionsCard() {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Próximos blocos de estudo (automático)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            if (_studyBlockSuggestions.isEmpty)
+              const Text(
+                'Ainda sem blocos sugeridos. Resolva algumas questões para gerar priorização.',
+              )
+            else
+              ..._studyBlockSuggestions.map(
+                (item) => Padding(
+                  padding: const EdgeInsets.only(bottom: 10),
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey.shade400),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: const EdgeInsets.all(10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '${item.skill} | acurácia ${_percent(item.accuracy)}% '
+                          '(${item.correct}/${item.attempts})',
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          'Bloco sugerido: ${item.recommendedQuestions} questões '
+                          '| ${item.recommendedMinutes} min',
+                        ),
+                        Text(
+                          'Banco disponível: ${item.questionPool} questão(ões) para a skill.',
+                        ),
+                        if (item.materia.trim().isNotEmpty || item.modulo > 0)
+                          Text(
+                            'Revisão recomendada: '
+                            '${item.materia.trim().isEmpty ? '-' : item.materia}'
+                            '${item.modulo > 0 ? ' | Módulo ${item.modulo}' : ''}'
+                            '${item.page.trim().isEmpty ? '' : ' | pág. ${item.page}'}'
+                            '${item.title.trim().isEmpty ? '' : ' | ${item.title}'}',
+                          ),
+                        const SizedBox(height: 6),
+                        OutlinedButton(
+                          onPressed:
+                              _busy ? null : () => _iniciarBlocoSugestao(item),
+                          child: const Text('Iniciar bloco no treino'),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
           ],
         ),
@@ -1975,6 +2066,8 @@ class _HomePageState extends State<HomePage> {
             _buildWeakSkillsCard(),
             const SizedBox(height: 12),
             _buildModuleSuggestionsCard(),
+            const SizedBox(height: 12),
+            _buildStudyBlockSuggestionsCard(),
             const SizedBox(height: 12),
             _buildRecentAttemptsCard(),
             const SizedBox(height: 12),
