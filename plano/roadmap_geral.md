@@ -55,7 +55,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 
 ### Funcionalidades do MVP
 - [x] Tela de filtros: ano, dia, área, disciplina/matéria, competência, habilidade e `tem_imagem`.
-- [ ] Incluir filtro de dificuldade quando a classificação de dificuldade estiver estabilizada no banco.
+- [x] Incluir filtro de dificuldade quando houver classificação disponível no banco.
 - [x] Modo treino: resolver questões por habilidade com correção imediata.
 - [x] Modo simulado: montar prova com tempo e quantidade configuráveis.
 - [x] Histórico de tentativas com análise por habilidade.

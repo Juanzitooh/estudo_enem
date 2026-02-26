@@ -55,7 +55,7 @@ O app mostra:
 - modo treino por habilidade com correção imediata e registro de tentativa no banco local.
 - histórico recente de tentativas com status (acerto/erro), skill/competência e timestamp.
 - sugestão automática de próximos blocos de estudo por skill (prioridade por acurácia + volume de tentativas).
-- filtro local de questões em cards (ano, dia, área, disciplina, matéria, competência, habilidade, `tem_imagem` e limite).
+- filtro local de questões em cards (ano, dia, área, disciplina, matéria, competência, habilidade, dificuldade, `tem_imagem` e limite).
 - montador de simulado rápido com base nos filtros atuais (quantidade, minutos por questão e distribuição por área).
 - filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).
 - prompt builder de redação para IA externa (gerar tema e prompt de correção com cópia rápida).
