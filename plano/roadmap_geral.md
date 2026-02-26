@@ -115,9 +115,9 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Incluir prompt automático de reescrita pós-correção mantendo estrutura original do aluno.
 
 ### Priorização automática por lacuna
-- [ ] Implementar prioridade dinâmica por habilidade com fórmula base: `priority = deficit + recency + (1 - confidence)`.
-- [ ] Definir `deficit = 1 - accuracy`, `confidence = ln(1 + attempts)` e `recency = min(0.3, dias_sem_ver * 0.02)`.
-- [ ] Selecionar Top N habilidades por prioridade para alimentar o próximo ciclo de foco.
+- [x] Implementar prioridade dinâmica por habilidade com fórmula base: `priority = deficit + recency + (1 - confidence)`.
+- [x] Definir `deficit = 1 - accuracy`, `confidence = ln(1 + attempts)` e `recency = min(0.3, dias_sem_ver * 0.02)`.
+- [x] Selecionar Top N habilidades por prioridade para alimentar o próximo ciclo de foco.
 
 ### “Dá para criar provas?”
 Sim. Neste roadmap, “criar provas” significa montar simulados a partir do banco real com regras de montagem.
