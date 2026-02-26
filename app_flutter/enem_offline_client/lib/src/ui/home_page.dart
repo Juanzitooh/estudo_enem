@@ -85,6 +85,7 @@ class _HomePageState extends State<HomePage> {
   String _questionMateriaSelecionada = '';
   String _questionCompetencySelecionada = '';
   String _questionSkillSelecionada = '';
+  String _questionDifficultySelecionada = '';
   String _questionHasImageSelecionado = '';
   String _essayThemeSourceSelecionado = 'ia';
   String _essayParserModeSelecionado = EssayParserMode.livre.value;
@@ -147,6 +148,7 @@ class _HomePageState extends State<HomePage> {
       materia: _questionMateriaSelecionada,
       competency: _questionCompetencySelecionada,
       skill: _questionSkillSelecionada,
+      difficulty: _questionDifficultySelecionada,
       hasImage: _readHasImageFilter(),
       limit: _readQuestionLimit(),
     );
@@ -183,6 +185,7 @@ class _HomePageState extends State<HomePage> {
       materia: _questionMateriaSelecionada,
       competency: _questionCompetencySelecionada,
       skill: _questionSkillSelecionada,
+      difficulty: _questionDifficultySelecionada,
       hasImage: _readHasImageFilter(),
       limit: 200,
     );
@@ -208,6 +211,7 @@ class _HomePageState extends State<HomePage> {
       materia: _questionMateriaSelecionada,
       competency: _questionCompetencySelecionada,
       skill: _questionSkillSelecionada,
+      difficulty: _questionDifficultySelecionada,
       hasImage: _readHasImageFilter(),
       limit: 200,
     );
@@ -484,6 +488,7 @@ class _HomePageState extends State<HomePage> {
       _questionMateriaSelecionada = '';
       _questionCompetencySelecionada = '';
       _questionSkillSelecionada = '';
+      _questionDifficultySelecionada = '';
       _questionHasImageSelecionado = '';
     });
     await _applyQuestionFilters();
@@ -1121,6 +1126,8 @@ class _HomePageState extends State<HomePage> {
                     '${question.area} | ${question.discipline}'
                     '${question.skill.isEmpty ? '' : ' | ${question.skill}'}',
                   ),
+                  if (question.difficulty.trim().isNotEmpty)
+                    Text('Dificuldade: ${question.difficulty}'),
                   const SizedBox(height: 6),
                   Text(previewText(question.statement)),
                   const SizedBox(height: 8),
@@ -1287,6 +1294,7 @@ class _HomePageState extends State<HomePage> {
     final materias = <String>['', ..._questionFilterOptions.materias];
     final competencies = <String>['', ..._questionFilterOptions.competencies];
     final skills = <String>['', ..._questionFilterOptions.skills];
+    final difficulties = <String>['', ..._questionFilterOptions.difficulties];
     const hasImageOptions = ['', 'sim', 'nao'];
 
     String previewText(String value) {
@@ -1500,6 +1508,34 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 SizedBox(
+                  width: 180,
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey(
+                      'question_difficulty_$_questionDifficultySelecionada',
+                    ),
+                    initialValue: _questionDifficultySelecionada,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Dificuldade',
+                    ),
+                    items: difficulties
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value.isEmpty ? 'Todas' : value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _questionDifficultySelecionada = value ?? '';
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
                   width: 170,
                   child: DropdownButtonFormField<String>(
                     key: ValueKey(
@@ -1592,6 +1628,7 @@ class _HomePageState extends State<HomePage> {
                         Text(
                           'Competência: ${item.competency.isEmpty ? '-' : item.competency} '
                           '| Habilidade: ${item.skill.isEmpty ? '-' : item.skill} '
+                          '| Dificuldade: ${item.difficulty.isEmpty ? '-' : item.difficulty} '
                           '| Imagem: ${item.hasImage ? 'sim' : 'nao'}',
                         ),
                         const SizedBox(height: 4),
@@ -1696,6 +1733,7 @@ class _HomePageState extends State<HomePage> {
                 (item) => Text(
                   'Q ${item.year}/${item.day}/${item.number} '
                   '${item.area} | ${item.skill.isEmpty ? '-' : item.skill}'
+                  '${item.difficulty.isEmpty ? '' : ' | ${item.difficulty}'}'
                   ' | ${previewText(item.statement)}',
                 ),
               ),

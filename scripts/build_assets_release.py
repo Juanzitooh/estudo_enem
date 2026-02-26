@@ -290,6 +290,20 @@ def parse_score(raw_value: str) -> float:
     return score
 
 
+def normalize_difficulty(raw_value: str) -> str:
+    token = strip_diacritics(raw_value).strip().casefold()
+    normalized = re.sub(r"[^a-z0-9]+", "", token)
+    if not normalized:
+        return ""
+    if normalized in {"facil", "easy", "f"}:
+        return "facil"
+    if normalized in {"media", "medio", "medium", "m"}:
+        return "media"
+    if normalized in {"dificil", "hard", "d"}:
+        return "dificil"
+    return ""
+
+
 def collect_fallback_assets(
     questions: list[dict[str, object]],
     project_root: Path,
@@ -384,6 +398,9 @@ def read_questions(questions_csv: Path, limit: int = 0) -> list[dict[str, object
                     (row.get("competencia_estimada") or "").strip()
                 ),
                 "skill": normalize_skill_token((row.get("habilidade_estimada") or "").strip()),
+                "difficulty": normalize_difficulty(
+                    (row.get("dificuldade") or row.get("dificuldade_estimada") or "").strip()
+                ),
                 "confidence": (row.get("confianca") or "").strip(),
                 "has_image": has_image,
                 "text_empty": parse_bool_flag((row.get("texto_vazio") or "").strip()),

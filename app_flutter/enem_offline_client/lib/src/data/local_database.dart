@@ -140,6 +140,7 @@ class QuestionFilter {
     this.materia = '',
     this.competency = '',
     this.skill = '',
+    this.difficulty = '',
     this.hasImage,
     this.limit = 20,
   });
@@ -151,6 +152,7 @@ class QuestionFilter {
   final String materia;
   final String competency;
   final String skill;
+  final String difficulty;
   final bool? hasImage;
   final int limit;
 }
@@ -164,6 +166,7 @@ class QuestionFilterOptions {
     this.materias = const [],
     this.competencies = const [],
     this.skills = const [],
+    this.difficulties = const [],
   });
 
   final List<int> years;
@@ -173,6 +176,7 @@ class QuestionFilterOptions {
   final List<String> materias;
   final List<String> competencies;
   final List<String> skills;
+  final List<String> difficulties;
 }
 
 class QuestionCardItem {
@@ -187,6 +191,7 @@ class QuestionCardItem {
     required this.materia,
     required this.competency,
     required this.skill,
+    required this.difficulty,
     required this.hasImage,
     required this.statement,
     required this.answer,
@@ -202,6 +207,7 @@ class QuestionCardItem {
   final String materia;
   final String competency;
   final String skill;
+  final String difficulty;
   final bool hasImage;
   final String statement;
   final String answer;
@@ -323,9 +329,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 8,
+      version: 9,
       onCreate: (db, _) async {
-        await _createSchemaV8(db);
+        await _createSchemaV9(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -345,6 +351,9 @@ class LocalDatabase {
         }
         if (oldVersion < 8) {
           await _ensureQuestionsSchemaV8(db);
+        }
+        if (oldVersion < 9) {
+          await _ensureQuestionsSchemaV9(db);
         }
       },
     );
@@ -474,6 +483,11 @@ class LocalDatabase {
     }
   }
 
+  Future<void> _createSchemaV9(Database db) async {
+    await _createSchemaV8(db);
+    await _ensureQuestionsSchemaV9(db);
+  }
+
   Future<void> _createSchemaV8(Database db) async {
     await _createSchemaV7(db);
     await _ensureQuestionsSchemaV8(db);
@@ -509,6 +523,7 @@ class LocalDatabase {
         materia TEXT,
         competency TEXT,
         skill TEXT,
+        difficulty TEXT,
         has_image INTEGER NOT NULL DEFAULT 0,
         text_empty INTEGER NOT NULL DEFAULT 0,
         statement TEXT NOT NULL,
@@ -724,6 +739,23 @@ class LocalDatabase {
     ''');
   }
 
+  Future<void> _ensureQuestionsSchemaV9(Database db) async {
+    final columns = await db.rawQuery("PRAGMA table_info('questions')");
+    final names = columns
+        .map((row) => (row['name'] ?? '').toString())
+        .where((name) => name.isNotEmpty)
+        .toSet();
+
+    if (!names.contains('difficulty')) {
+      await db.execute('ALTER TABLE questions ADD COLUMN difficulty TEXT');
+    }
+
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_questions_difficulty
+      ON questions (difficulty)
+    ''');
+  }
+
   void _ensureDesktopDriver() {
     if (Platform.isAndroid || Platform.isIOS) {
       return;
@@ -822,6 +854,32 @@ class LocalDatabase {
     final prefixed = RegExp(r'^C(\d+)(?:[-:.].*)?$').firstMatch(token);
     if (prefixed != null) {
       return 'C${int.parse(prefixed.group(1)!)}';
+    }
+    return '';
+  }
+
+  String _normalizeDifficultyToken(String rawValue) {
+    final token = rawValue.trim().toLowerCase();
+    if (token.isEmpty) {
+      return '';
+    }
+
+    final compact = token.replaceAll(RegExp(r'[^a-z0-9]'), '');
+    if (compact.isEmpty) {
+      return '';
+    }
+
+    if (compact == 'facil' || compact == 'easy' || compact == 'f') {
+      return 'facil';
+    }
+    if (compact == 'media' ||
+        compact == 'medio' ||
+        compact == 'medium' ||
+        compact == 'm') {
+      return 'media';
+    }
+    if (compact == 'dificil' || compact == 'hard' || compact == 'd') {
+      return 'dificil';
     }
     return '';
   }
@@ -1128,6 +1186,12 @@ class LocalDatabase {
       WHERE TRIM(COALESCE(skill, '')) <> ''
       ORDER BY value COLLATE NOCASE
     ''');
+    final difficultyRows = await db.rawQuery('''
+      SELECT DISTINCT TRIM(difficulty) AS value
+      FROM questions
+      WHERE TRIM(COALESCE(difficulty, '')) <> ''
+      ORDER BY value COLLATE NOCASE
+    ''');
 
     List<String> toStringList(List<Map<String, Object?>> rows) {
       final seen = <String>{};
@@ -1163,6 +1227,7 @@ class LocalDatabase {
       materias: toStringList(materiaRows),
       competencies: toStringList(competencyRows),
       skills: toStringList(skillRows),
+      difficulties: toStringList(difficultyRows),
     );
   }
 
@@ -1245,6 +1310,12 @@ class LocalDatabase {
       args.add('%${skill.toLowerCase()}%');
     }
 
+    final difficulty = _normalizeDifficultyToken(filter.difficulty);
+    if (difficulty.isNotEmpty) {
+      whereClauses.add('LOWER(COALESCE(q.difficulty, \'\')) = LOWER(?)');
+      args.add(difficulty);
+    }
+
     if (filter.hasImage != null) {
       if (filter.hasImage == true) {
         whereClauses.add(
@@ -1269,6 +1340,7 @@ class LocalDatabase {
       )
       ..writeln("  COALESCE(q.competency, '') AS competency,")
       ..writeln("  COALESCE(q.skill, '') AS skill,")
+      ..writeln("  COALESCE(q.difficulty, '') AS difficulty,")
       ..writeln(
         "  CASE WHEN COALESCE(q.has_image, 0) = 1 OR COALESCE(q.fallback_images, '') <> '' THEN 1 ELSE 0 END AS has_image,",
       )
@@ -1310,6 +1382,7 @@ class LocalDatabase {
             materia: (row['materia'] ?? '').toString(),
             competency: (row['competency'] ?? '').toString(),
             skill: (row['skill'] ?? '').toString(),
+            difficulty: (row['difficulty'] ?? '').toString(),
             hasImage: _toBool(row['has_image']),
             statement: (row['statement'] ?? '').toString(),
             answer: (row['answer'] ?? '').toString(),
@@ -1508,6 +1581,9 @@ class LocalDatabase {
             (item['discipline'] ?? '').toString().trim();
         final normalizedMateria =
             (item['materia'] ?? normalizedDiscipline).toString().trim();
+        final normalizedDifficulty = _normalizeDifficultyToken(
+          (item['difficulty'] ?? item['dificuldade'] ?? '').toString(),
+        );
         final fallbackImagePaths = _extractFallbackImagePaths(
           item['fallback_image_paths'],
         );
@@ -1537,6 +1613,7 @@ class LocalDatabase {
             'materia': normalizedMateria,
             'competency': normalizedCompetency,
             'skill': normalizedSkill,
+            'difficulty': normalizedDifficulty,
             'has_image': hasImage ? 1 : 0,
             'text_empty': textEmpty ? 1 : 0,
             'statement': statement,
@@ -1990,6 +2067,7 @@ class LocalDatabase {
             'materia': 'Língua Portuguesa',
             'competency': 'C8',
             'skill': 'H18',
+            'difficulty': 'media',
             'has_image': false,
             'text_empty': false,
             'statement':
@@ -2008,6 +2086,7 @@ class LocalDatabase {
             'materia': 'Matemática 1',
             'competency': 'C4',
             'skill': 'H16',
+            'difficulty': 'dificil',
             'has_image': false,
             'text_empty': false,
             'statement': 'Questão de demonstração para treino de matemática.',
