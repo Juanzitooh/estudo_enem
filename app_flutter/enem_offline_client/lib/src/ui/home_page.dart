@@ -7,6 +7,7 @@ import '../config/app_config.dart';
 import '../data/local_database.dart';
 import '../essay/essay_feedback_parser.dart';
 import '../essay/essay_prompt_builder.dart';
+import '../study/study_prompt_builder.dart';
 import '../update/content_updater.dart';
 
 class _AdaptiveSlot {
@@ -60,6 +61,7 @@ class _HomePageState extends State<HomePage> {
   bool _busy = false;
   String _status = 'Pronto.';
   String _essayPromptPreview = '';
+  String _studyPromptPreview = '';
   String _contentVersion = '0';
   int _questionCount = 0;
   int _bookModuleCount = 0;
@@ -930,6 +932,95 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  String _inferErrorReasonForSuggestion(
+    StudyBlockSuggestion item,
+    SkillPriorityItem? priority,
+  ) {
+    if (item.attempts <= 2) {
+      return 'Poucas tentativas ainda; consolidar base da habilidade.';
+    }
+    if (item.accuracy < 0.45) {
+      return 'Acurácia muito baixa com recorrência de erros.';
+    }
+    if (item.accuracy < 0.65) {
+      return 'Acurácia intermediária; precisa reforçar método de resolução.';
+    }
+    if (priority != null && priority.daysSinceLastSeen >= 10) {
+      return 'Bom desempenho, mas com alta recência sem revisão.';
+    }
+    return 'Manter consistência para estabilizar desempenho.';
+  }
+
+  Future<void> _revisarTeoriaSuggestion(StudyBlockSuggestion item) async {
+    final hasModule = item.materia.trim().isNotEmpty || item.modulo > 0;
+    final message = hasModule
+        ? 'Revisar teoria: ${item.materia.isEmpty ? '-' : item.materia}'
+            '${item.modulo > 0 ? ' | módulo ${item.modulo}' : ''}'
+            '${item.page.isEmpty ? '' : ' | pág. ${item.page}'}'
+            '${item.title.isEmpty ? '' : ' | ${item.title}'}'
+        : 'Sem módulo exato para ${item.skill}. Revisar conteúdo-base dessa habilidade.';
+    setState(() {
+      _status = message;
+    });
+  }
+
+  Future<void> _copyStudyPromptForSuggestion(
+    StudyBlockSuggestion item, {
+    required String mode,
+  }) async {
+    SkillPriorityItem? priority;
+    for (final entry in _skillPriorities) {
+      if (entry.skill == item.skill) {
+        priority = entry;
+        break;
+      }
+    }
+    final reason = _inferErrorReasonForSuggestion(item, priority);
+    final area =
+        item.area.trim().isEmpty ? _questionAreaSelecionada : item.area;
+    final topicHint = item.title.trim().isNotEmpty ? item.title : item.materia;
+    final moduleTitle =
+        item.title.trim().isEmpty ? 'Módulo ${item.modulo}' : item.title;
+
+    late final String prompt;
+    late final String successMessage;
+    if (mode == 'videos') {
+      prompt = StudyPromptBuilder.buildVideosPrompt(
+        skillCode: item.skill,
+        area: area,
+        topicHint: topicHint,
+      );
+      successMessage = 'Prompt de vídeos copiado.';
+    } else if (mode == 'treino') {
+      prompt = StudyPromptBuilder.buildPracticePrompt(
+        skillCode: item.skill,
+        area: area,
+        topicHint: topicHint,
+      );
+      successMessage = 'Prompt de treino copiado.';
+    } else {
+      prompt = StudyPromptBuilder.buildFullLessonPrompt(
+        skillCode: item.skill,
+        area: area,
+        moduleTitle: moduleTitle,
+        accuracy: item.accuracy,
+        attempts: item.attempts,
+        errorReason: reason,
+        topicHint: topicHint,
+      );
+      successMessage = 'Prompt de aula completa copiado.';
+    }
+
+    await Clipboard.setData(ClipboardData(text: prompt));
+    if (!mounted) {
+      return;
+    }
+    setState(() {
+      _studyPromptPreview = prompt;
+      _status = successMessage;
+    });
+  }
+
   Future<void> _copyEssayThemePrompt() async {
     final prompt = EssayPromptBuilder.buildThemeGenerationPrompt(
       focusHint: _essayFocusController.text.trim(),
@@ -1423,6 +1514,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildStudyBlockSuggestionsCard() {
+    final priorityMap = <String, SkillPriorityItem>{};
+    for (final item in _skillPriorities) {
+      priorityMap[item.skill] = item;
+    }
+
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -1430,7 +1526,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Próximos blocos de estudo (automático)',
+              'Habilidades em foco',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -1453,9 +1549,14 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          '${item.skill} | acurácia ${_percent(item.accuracy)}% '
-                          '(${item.correct}/${item.attempts})',
+                          'Domínio: ${_percent(item.accuracy)}%',
                           style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          '${item.skill} | ${item.correct}/${item.attempts} acertos',
+                        ),
+                        Text(
+                          'Causa provável: ${_inferErrorReasonForSuggestion(item, priorityMap[item.skill])}',
                         ),
                         Text(
                           'Bloco sugerido: ${item.recommendedQuestions} questões '
@@ -1473,16 +1574,59 @@ class _HomePageState extends State<HomePage> {
                             '${item.title.trim().isEmpty ? '' : ' | ${item.title}'}',
                           ),
                         const SizedBox(height: 6),
-                        OutlinedButton(
-                          onPressed:
-                              _busy ? null : () => _iniciarBlocoSugestao(item),
-                          child: const Text('Iniciar bloco no treino'),
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: [
+                            OutlinedButton(
+                              onPressed: _busy
+                                  ? null
+                                  : () => _iniciarBlocoSugestao(item),
+                              child: const Text('Treinar agora'),
+                            ),
+                            OutlinedButton(
+                              onPressed: _busy
+                                  ? null
+                                  : () => _revisarTeoriaSuggestion(item),
+                              child: const Text('Revisar teoria'),
+                            ),
+                            OutlinedButton(
+                              onPressed: _busy
+                                  ? null
+                                  : () => _copyStudyPromptForSuggestion(
+                                        item,
+                                        mode: 'aula',
+                                      ),
+                              child: const Text('Prompt: aula'),
+                            ),
+                            OutlinedButton(
+                              onPressed: _busy
+                                  ? null
+                                  : () => _copyStudyPromptForSuggestion(
+                                        item,
+                                        mode: 'videos',
+                                      ),
+                              child: const Text('Prompt: vídeos'),
+                            ),
+                            OutlinedButton(
+                              onPressed: _busy
+                                  ? null
+                                  : () => _copyStudyPromptForSuggestion(
+                                        item,
+                                        mode: 'treino',
+                                      ),
+                              child: const Text('Prompt: treino'),
+                            ),
+                          ],
                         ),
                       ],
                     ),
                   ),
                 ),
               ),
+            const SizedBox(height: 8),
+            if (_studyPromptPreview.trim().isNotEmpty)
+              SelectableText(_studyPromptPreview),
           ],
         ),
       ),
