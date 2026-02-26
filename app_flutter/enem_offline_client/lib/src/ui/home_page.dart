@@ -1949,10 +1949,22 @@ class _HomePageState extends State<HomePage> {
             else
               ...days.map(
                 (day) => Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: Text(
-                    '${day.dateLabel} | ${day.totalMinutes} min | '
-                    '${day.slots.map((slot) => '${slot.skill} (${slot.minutes}m)').join(' ; ')}',
+                  padding: const EdgeInsets.only(bottom: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('${day.dateLabel} | ${day.totalMinutes} min'),
+                      const SizedBox(height: 4),
+                      ...day.slots.map(
+                        (slot) => Padding(
+                          padding: const EdgeInsets.only(left: 8, bottom: 4),
+                          child: Text(
+                            '- ${slot.skill} (${slot.minutes}m) | ${slot.reason} | '
+                            '${_moduleHintForSkill(slot.skill)}',
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -1960,6 +1972,51 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
+  }
+
+  StudyBlockSuggestion? _findStudyBlockSuggestionForSkill(String skill) {
+    final normalized = skill.trim().toLowerCase();
+    if (normalized.isEmpty) {
+      return null;
+    }
+    for (final item in _studyBlockSuggestions) {
+      if (item.skill.trim().toLowerCase() == normalized) {
+        return item;
+      }
+    }
+    return null;
+  }
+
+  ModuleSuggestion? _findModuleSuggestionForSkill(String skill) {
+    final normalized = skill.trim().toLowerCase();
+    if (normalized.isEmpty) {
+      return null;
+    }
+    for (final item in _moduleSuggestions) {
+      if (item.matchedSkill.trim().toLowerCase() == normalized) {
+        return item;
+      }
+    }
+    return null;
+  }
+
+  String _moduleHintForSkill(String skill) {
+    final block = _findStudyBlockSuggestionForSkill(skill);
+    if (block != null && block.modulo > 0) {
+      final titlePart = block.title.trim().isEmpty ? '' : ' | ${block.title}';
+      final pagePart = block.page.trim().isEmpty ? '' : ' | pág. ${block.page}';
+      return 'Módulo sugerido: ${block.materia} M${block.modulo}$pagePart$titlePart';
+    }
+
+    final module = _findModuleSuggestionForSkill(skill);
+    if (module != null && module.modulo > 0) {
+      final titlePart = module.title.trim().isEmpty ? '' : ' | ${module.title}';
+      final pagePart =
+          module.page.trim().isEmpty ? '' : ' | pág. ${module.page}';
+      return 'Módulo sugerido: Vol ${module.volume} ${module.materia} M${module.modulo}$pagePart$titlePart';
+    }
+
+    return 'Sem módulo sugerido para esta skill (ainda).';
   }
 
   Future<void> _analyzeAndSaveEssaySession() async {
