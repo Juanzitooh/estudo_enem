@@ -47,10 +47,10 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Criar schema local de perfil de estudante (`student_profiles`) com ficha editável de contexto.
 - [x] Implementar multi-perfil com troca rápida (ex.: Perfil A / Perfil B).
 - [x] Implementar export/import de perfil com histórico e plano (`profile_export.zip`).
-- [ ] Validar compatibilidade de versão durante importação e registrar migração quando necessário.
-- [ ] Salvar e restaurar planejamento inteligente no perfil importado sem perda de progresso.
-- [ ] Implementar motor determinístico de planejamento por horas/dias disponíveis e data-alvo.
-- [ ] Exibir previsão de estudo para os próximos dias com base no perfil + desempenho atual.
+- [x] Validar compatibilidade de versão durante importação e registrar migração quando necessário.
+- [x] Salvar e restaurar planejamento inteligente no perfil importado sem perda de progresso.
+- [x] Implementar motor determinístico de planejamento por horas/dias disponíveis e data-alvo.
+- [x] Exibir previsão de estudo para os próximos dias com base no perfil + desempenho atual.
 
 ## Bloco 4 — Operação semanal (médio prazo)
 - [ ] Integrar banco real ao fluxo de revisão semanal.
@@ -93,6 +93,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
-1. Fechar validação de versão/migração no import de perfil e padronizar pacote `profile_export.zip`.
-2. Implementar motor determinístico de planejamento com base em horas/dias/data-alvo.
-3. Exibir previsão dos próximos dias e sincronizar com recomendações de habilidades.
+1. Integrar previsão do planner com recomendações de módulos/aulas (não só habilidades).
+2. Retomar indexação por habilidade/competência em lote e fechar cobertura incremental.
+3. Iniciar estrutura de `questoes/generateds/` com schema validado para lotes por agent.

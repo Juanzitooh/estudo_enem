@@ -111,17 +111,17 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Criar tela de "ficha do estudante" (onboarding editável) para contexto de planejamento.
 - [x] Salvar planner/contexto no próprio perfil e permitir edição contínua.
 - [x] Implementar exportação de perfil (JSON/ZIP) com histórico, métricas e plano.
-- [ ] Implementar importação de perfil com validação de versão e merge seguro.
-- [ ] Incluir no pacote exportado um arquivo de planejamento (`planejamento_profile.json`) para portabilidade completa.
+- [x] Implementar importação de perfil com validação de versão e merge seguro.
+- [x] Incluir no pacote exportado um arquivo de planejamento (`planejamento_profile.json`) para portabilidade completa.
 - [x] Garantir que import/export funcione offline, sem backend e sem IA.
 
 ### Planejamento inteligente determinístico (sem IA)
-- [ ] Criar motor de estimativa de estudo por habilidade com base em `acurácia`, `recência`, `tempo disponível` e `dificuldade`.
-- [ ] Gerar plano diário/semanal automaticamente a partir da ficha do estudante (horas, dias e data-alvo).
-- [ ] Projetar previsão de carga por meta (`horas necessárias`, `habilidades por semana`, `risco de atraso`).
-- [ ] Recalcular o plano após cada sessão para refletir ganho/perda de domínio.
+- [x] Criar motor de estimativa de estudo por habilidade com base em `acurácia`, `recência`, `tempo disponível` e `dificuldade`.
+- [x] Gerar plano diário/semanal automaticamente a partir da ficha do estudante (horas, dias e data-alvo).
+- [x] Projetar previsão de carga por meta (`horas necessárias`, `habilidades por semana`, `risco de atraso`).
+- [x] Recalcular o plano após cada sessão para refletir ganho/perda de domínio.
 - [ ] Exibir "próximas aulas recomendadas" por janela de dias (ex.: próximos 7 dias) com justificativa objetiva.
-- [ ] Permitir exportar/importar o plano junto do perfil para continuidade entre dispositivos.
+- [x] Permitir exportar/importar o plano junto do perfil para continuidade entre dispositivos.
 
 ### Funcionalidades do MVP
 - [x] Tela de filtros: ano, dia, área, disciplina/matéria, competência, habilidade e `tem_imagem`.
