@@ -1,0 +1,1820 @@
+ano,dia,numero,variacao,area,disciplina,materia,volume,modulo,competencias,habilidades,assuntos_match,score_match,tipo_match,confianca,revisado_manual
+2015,1,4,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia; brasil,0.5600,direto,media,False
+2015,1,4,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2015,1,4,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2015,1,4,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2015,1,8,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,8,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,8,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,8,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,10,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2015,1,10,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2015,1,10,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2015,1,10,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2015,1,10,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2015,1,14,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,14,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,14,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,14,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,18,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2015,1,18,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2015,1,18,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2015,1,18,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2015,1,18,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2015,1,19,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,19,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,19,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,19,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,21,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2015,1,21,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,21,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,21,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,21,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,22,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2015,1,24,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia; africa,0.5600,direto,media,False
+2015,1,24,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2015,1,24,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2015,1,24,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2015,1,24,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2015,1,25,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,25,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,25,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,25,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,27,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2015,1,27,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2015,1,27,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2015,1,27,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2015,1,29,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2015,1,30,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2015,1,30,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2015,1,30,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2015,1,30,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2015,1,30,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2015,1,34,1,Ciências Humanas,Filosofia,Filosofia,1,5,C1,,filosofia; teoria; crise,0.5900,direto,media,False
+2015,1,34,1,Ciências Humanas,Filosofia,Filosofia,1,1,C1,,filosofia,0.5300,direto,media,False
+2015,1,34,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2015,1,34,1,Ciências Humanas,Filosofia,Filosofia,1,3,C1,,filosofia,0.5300,direto,media,False
+2015,1,34,1,Ciências Humanas,Filosofia,Filosofia,1,4,C1,,filosofia,0.5300,direto,media,False
+2015,1,35,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2015,1,35,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,35,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,35,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,35,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2015,1,46,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,agua,0.6100,direto,media,False
+2015,1,46,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2015,1,46,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2015,1,49,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2015,1,49,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2015,1,49,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2015,1,49,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2015,1,49,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2015,1,52,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2015,1,52,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2015,1,52,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2015,1,52,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2015,1,56,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2015,1,56,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2015,1,56,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2015,1,56,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2015,1,56,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2015,1,57,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2015,1,57,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2015,1,57,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2015,1,57,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2015,1,57,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2015,1,58,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2015,1,60,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2015,1,60,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2015,1,61,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2015,1,61,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica_organica,0.4100,relacionado,baixa,False
+2015,1,63,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2015,1,63,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2015,1,63,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2015,1,63,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2015,1,63,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2015,1,64,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2015,1,64,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2015,1,66,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2015,1,66,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2015,1,66,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2015,1,66,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2015,1,66,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica; metodo,0.5600,direto,media,False
+2015,1,67,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2015,1,67,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2015,1,69,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2015,1,69,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2015,1,69,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2015,1,69,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2015,1,69,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2015,1,72,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,fisiologia; biologia,0.5600,direto,media,False
+2015,1,72,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2015,1,72,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2015,1,74,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2015,1,76,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2015,1,78,1,Ciências da Natureza,Química,Química 1,1,4,C5,,quimica,0.5300,direto,media,False
+2015,1,78,1,Ciências da Natureza,Química,Química 2,1,1,C5,,quimica,0.5300,direto,media,False
+2015,1,78,1,Ciências da Natureza,Química,Química 2,1,2,C5,,quimica,0.5300,direto,media,False
+2015,1,78,1,Ciências da Natureza,Química,Química 2,1,3,C5,,quimica,0.5300,direto,media,False
+2015,1,78,1,Ciências da Natureza,Química,Química 2,1,4,C5,,quimica,0.5300,direto,media,False
+2015,1,79,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica; ser,0.5600,direto,media,False
+2015,1,79,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica_organica,0.4100,relacionado,baixa,False
+2015,1,79,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica_organica,0.4100,relacionado,baixa,False
+2015,1,80,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2015,1,80,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2015,1,80,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2015,1,80,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2015,1,80,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2015,1,82,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2015,1,82,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2015,1,89,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica,0.5300,direto,media,False
+2015,1,90,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2015,1,90,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2015,1,90,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2015,1,90,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2015,1,90,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,2,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2016,1,6,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2016,1,7,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2016,1,7,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2016,1,7,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2016,1,7,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2016,1,7,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2016,1,9,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia; africa,0.5600,direto,media,False
+2016,1,9,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; producao,0.5600,direto,media,False
+2016,1,9,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2016,1,9,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2016,1,9,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2016,1,10,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2016,1,12,1,Ciências Humanas,História,História 2,1,5,C3,,instituicao; historia; estatal,0.5900,direto,media,False
+2016,1,12,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2016,1,12,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; inicio,0.5600,direto,media,False
+2016,1,12,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2016,1,12,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2016,1,13,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2016,1,13,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2016,1,13,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2016,1,13,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2016,1,13,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2016,1,15,1,Ciências Humanas,Filosofia,Filosofia,1,1,C1,,filosofia,0.5300,direto,media,False
+2016,1,15,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2016,1,15,1,Ciências Humanas,Filosofia,Filosofia,1,3,C1,,filosofia,0.5300,direto,media,False
+2016,1,15,1,Ciências Humanas,Filosofia,Filosofia,1,4,C1,,filosofia,0.5300,direto,media,False
+2016,1,15,1,Ciências Humanas,Filosofia,Filosofia,1,5,C1,,filosofia,0.5300,direto,media,False
+2016,1,18,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geopolitica; geografia,0.5600,direto,media,False
+2016,1,18,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2016,1,18,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2016,1,18,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2016,1,18,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2016,1,19,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2016,1,23,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; seculo,0.5600,direto,media,False
+2016,1,23,1,Ciências Humanas,História,História 2,1,5,C3,,historia; seculo,0.5600,direto,media,False
+2016,1,23,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2016,1,23,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2016,1,23,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2016,1,25,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2016,1,26,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia; social,0.5600,direto,media,False
+2016,1,26,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2016,1,26,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2016,1,26,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2016,1,29,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2016,1,29,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2016,1,29,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2016,1,29,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2016,1,29,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2016,1,33,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2016,1,33,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2016,1,34,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2016,1,34,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2016,1,34,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2016,1,34,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2016,1,35,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2016,1,35,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; relacao,0.5600,direto,media,False
+2016,1,35,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2016,1,35,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2016,1,35,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2016,1,36,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2016,1,36,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2016,1,43,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2016,1,43,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2016,1,45,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2016,1,45,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2016,1,45,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2016,1,45,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2016,1,46,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2016,1,46,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica_organica,0.4100,relacionado,baixa,False
+2016,1,47,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,47,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2016,1,47,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2016,1,47,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,47,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2016,1,49,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.6100,direto,media,False
+2016,1,49,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,49,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,49,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,49,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,50,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,50,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2016,1,50,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2016,1,50,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2016,1,50,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,51,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,51,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2016,1,51,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2016,1,51,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2016,1,51,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,52,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,52,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2016,1,52,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2016,1,52,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2016,1,52,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,54,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,54,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2016,1,54,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2016,1,54,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,54,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2016,1,57,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2016,1,57,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,57,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,57,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,57,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,58,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,58,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2016,1,58,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2016,1,58,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2016,1,58,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,63,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.4100,relacionado,baixa,False
+2016,1,63,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.4100,relacionado,baixa,False
+2016,1,65,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2016,1,69,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,agua,0.4100,relacionado,baixa,False
+2016,1,72,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2016,1,72,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2016,1,72,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2016,1,73,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,fisiologia; biologia,0.5600,direto,media,False
+2016,1,73,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2016,1,73,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2016,1,74,1,Ciências da Natureza,Física,Física 3,1,4,C6,,eletricidade,0.5800,direto,media,False
+2016,1,74,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,74,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2016,1,74,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2016,1,74,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,75,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.6100,direto,media,False
+2016,1,75,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,75,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,75,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,75,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,76,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica_organica,0.5800,direto,media,False
+2016,1,76,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica_organica,0.5800,direto,media,False
+2016,1,76,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica_organica,0.5800,direto,media,False
+2016,1,76,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2016,1,76,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2016,1,77,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2016,1,77,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2016,1,77,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2016,1,77,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,77,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2016,1,78,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica; ser,0.5600,direto,media,False
+2016,1,82,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2016,1,82,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,82,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,82,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,82,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,86,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,86,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2016,1,86,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2016,1,86,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2016,1,86,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2016,1,89,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,aquecimento; fisica,0.5600,direto,media,False
+2016,1,89,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,89,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2016,1,89,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,1,46,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; seculo; xiv,0.5900,direto,media,False
+2017,1,46,1,Ciências Humanas,História,História 2,1,5,C3,,historia; seculo; xiv,0.5900,direto,media,False
+2017,1,46,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2017,1,46,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia; imperio,0.5600,direto,media,False
+2017,1,46,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2017,1,49,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2017,1,49,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2017,1,50,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2017,1,50,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; sua,0.5600,direto,media,False
+2017,1,50,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2017,1,50,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2017,1,50,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2017,1,52,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2017,1,52,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2017,1,52,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2017,1,52,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2017,1,52,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2017,1,56,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia; brasil,0.5600,direto,media,False
+2017,1,56,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2017,1,56,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2017,1,56,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2017,1,57,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2017,1,57,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2017,1,57,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2017,1,59,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,59,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,59,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,59,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,60,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geopolitica; geografia,0.5600,direto,media,False
+2017,1,60,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2017,1,60,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2017,1,60,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2017,1,60,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2017,1,61,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2017,1,61,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2017,1,61,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2017,1,61,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2017,1,61,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2017,1,63,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2017,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2017,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,66,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2017,1,68,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2017,1,68,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2017,1,68,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2017,1,68,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2017,1,68,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2017,1,71,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2017,1,71,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2017,1,72,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2017,1,72,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2017,1,72,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2017,1,72,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2017,1,72,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2017,1,75,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2017,1,75,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2017,1,75,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2017,1,75,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2017,1,75,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2017,1,76,1,Ciências Humanas,Sociologia,História 1,1,4,C2; C3,,africana; processo; costa,0.4100,interdisciplinar,baixa,False
+2017,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,80,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,80,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,80,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,80,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2017,1,82,1,Ciências Humanas,História,História 2,1,1,C5; C6,,democracia,0.6100,direto,media,False
+2017,1,83,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; periodo,0.5600,direto,media,False
+2017,1,83,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2017,1,83,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2017,1,83,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2017,1,83,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2017,1,86,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia; escala,0.5600,direto,media,False
+2017,1,86,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2017,1,87,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2017,1,89,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2017,2,91,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica,0.5300,direto,media,False
+2017,2,93,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.4100,relacionado,baixa,False
+2017,2,94,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,fisiologia; biologia,0.5600,direto,media,False
+2017,2,94,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2017,2,94,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2017,2,96,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica_organica,0.5800,direto,media,False
+2017,2,96,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica_organica,0.5800,direto,media,False
+2017,2,96,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica_organica,0.5800,direto,media,False
+2017,2,96,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,96,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2017,2,97,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,97,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2017,2,97,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2017,2,97,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2017,2,97,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,98,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2017,2,98,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2017,2,98,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2017,2,100,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,100,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2017,2,100,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2017,2,100,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2017,2,100,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,101,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica; sua,0.5600,direto,media,False
+2017,2,101,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,101,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,101,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,103,1,Ciências da Natureza,Física,Física 3,1,4,C6,,eletricidade,0.5800,direto,media,False
+2017,2,103,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2017,2,103,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2017,2,103,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2017,2,103,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2017,2,104,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2017,2,104,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2017,2,105,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,historia; fisica,0.5600,direto,media,False
+2017,2,105,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,105,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,105,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,105,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,109,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2017,2,109,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2017,2,109,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2017,2,109,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2017,2,109,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2017,2,111,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,111,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,111,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,111,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,111,1,Ciências da Natureza,Física,Física 3,1,4,C6,,eletricidade,0.4400,relacionado,baixa,False
+2017,2,114,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,114,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2017,2,114,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2017,2,114,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2017,2,114,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,116,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,116,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2017,2,116,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2017,2,116,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2017,2,116,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,117,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2017,2,119,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,119,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2017,2,119,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2017,2,119,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2017,2,119,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,121,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2017,2,121,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica; tipos,0.5600,direto,media,False
+2017,2,121,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,121,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,121,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,124,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,124,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2017,2,124,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2017,2,124,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2017,2,124,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,127,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.6100,direto,media,False
+2017,2,127,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2017,2,127,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2017,2,127,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2017,2,127,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2017,2,128,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2017,2,128,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2017,2,129,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2017,2,129,1,Ciências da Natureza,Física,Física 1,1,2,C5,,fisica,0.5300,direto,media,False
+2017,2,129,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,129,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,129,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,130,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2017,2,130,1,Ciências da Natureza,Física,Física 1,1,2,C5,,fisica,0.5300,direto,media,False
+2017,2,130,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,130,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,130,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2017,2,133,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,133,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2017,2,133,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2017,2,133,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2017,2,133,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2017,2,134,1,Ciências da Natureza,Química,Química 1,1,4,C5,,quimica,0.5300,direto,media,False
+2017,2,134,1,Ciências da Natureza,Química,Química 2,1,1,C5,,quimica,0.5300,direto,media,False
+2017,2,134,1,Ciências da Natureza,Química,Química 2,1,2,C5,,quimica,0.5300,direto,media,False
+2017,2,134,1,Ciências da Natureza,Química,Química 2,1,3,C5,,quimica,0.5300,direto,media,False
+2017,2,134,1,Ciências da Natureza,Química,Química 2,1,4,C5,,quimica,0.5300,direto,media,False
+2018,1,47,1,Ciências Humanas,Filosofia,Filosofia,1,5,C1,,filosofia; teoria,0.5600,direto,media,False
+2018,1,47,1,Ciências Humanas,Filosofia,Filosofia,1,1,C1,,filosofia,0.5300,direto,media,False
+2018,1,47,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2018,1,47,1,Ciências Humanas,Filosofia,Filosofia,1,3,C1,,filosofia,0.5300,direto,media,False
+2018,1,47,1,Ciências Humanas,Filosofia,Filosofia,1,4,C1,,filosofia,0.5300,direto,media,False
+2018,1,52,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia; social,0.5600,direto,media,False
+2018,1,52,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2018,1,52,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2018,1,52,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2018,1,52,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2018,1,55,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2018,1,55,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2018,1,55,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2018,1,55,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2018,1,55,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2018,1,56,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2018,1,59,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2018,1,59,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2018,1,59,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2018,1,59,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2018,1,59,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2018,1,62,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2018,1,62,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2018,1,62,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2018,1,62,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2018,1,62,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2018,1,63,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2018,1,63,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2018,1,63,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2018,1,63,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2018,1,64,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2018,1,64,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2018,1,67,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2018,1,67,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2018,1,67,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2018,1,67,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2018,1,67,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2018,1,71,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia; seus,0.5600,direto,media,False
+2018,1,71,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2018,1,71,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2018,1,71,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2018,1,71,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2018,1,73,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2018,1,73,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2018,1,75,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2018,1,75,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2018,1,79,1,Ciências Humanas,Filosofia,Filosofia,1,1,C1,,filosofia,0.5300,direto,media,False
+2018,1,79,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2018,1,79,1,Ciências Humanas,Filosofia,Filosofia,1,3,C1,,filosofia,0.5300,direto,media,False
+2018,1,79,1,Ciências Humanas,Filosofia,Filosofia,1,4,C1,,filosofia,0.5300,direto,media,False
+2018,1,79,1,Ciências Humanas,Filosofia,Filosofia,1,5,C1,,filosofia,0.5300,direto,media,False
+2018,1,80,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2018,1,80,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2018,1,81,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geopolitica; geografia,0.5600,direto,media,False
+2018,1,81,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2018,1,81,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2018,1,81,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2018,1,81,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2018,1,83,1,Ciências Humanas,Filosofia,Filosofia,1,4,C1,,filosofia; verdade,0.5600,direto,media,False
+2018,1,83,1,Ciências Humanas,Filosofia,Filosofia,1,5,C1,,filosofia; teoria,0.5600,direto,media,False
+2018,1,83,1,Ciências Humanas,Filosofia,Filosofia,1,1,C1,,filosofia,0.5300,direto,media,False
+2018,1,83,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2018,1,83,1,Ciências Humanas,Filosofia,Filosofia,1,3,C1,,filosofia,0.5300,direto,media,False
+2018,1,85,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2018,1,86,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2018,1,86,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; producao,0.5600,direto,media,False
+2018,1,86,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2018,1,86,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2018,1,86,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2018,1,88,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia; producao,0.5600,direto,media,False
+2018,1,88,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2018,1,88,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2018,1,88,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2018,1,88,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2018,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia; teoricos,0.5600,direto,media,False
+2018,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2018,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2018,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2018,2,91,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2018,2,92,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2018,2,92,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,92,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,92,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,92,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,94,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,94,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,94,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,94,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,94,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,96,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2018,2,96,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,96,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,96,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,96,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,97,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica; atomos,0.5600,direto,media,False
+2018,2,97,1,Ciências da Natureza,Química,Química 3,1,2,C7,,carbono; quimica,0.5600,direto,media,False
+2018,2,97,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica; atomos,0.5600,direto,media,False
+2018,2,97,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,97,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,98,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2018,2,98,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2018,2,99,1,Ciências da Natureza,Química,Química 1,1,5,C7,,atomicas; quimica,0.5600,direto,media,False
+2018,2,99,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,99,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,99,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,99,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,101,1,Ciências da Natureza,Química,Química 1,1,5,C7,,distinguir; quimica,0.5600,direto,media,False
+2018,2,101,1,Ciências da Natureza,Química,Química 3,1,3,C7,,distinguir; quimica,0.5600,direto,media,False
+2018,2,101,1,Ciências da Natureza,Química,Química 3,1,5,C7,,distinguir; quimica,0.5600,direto,media,False
+2018,2,101,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,101,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,103,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2018,2,103,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,103,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,103,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,103,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,104,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,104,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,104,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,104,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,104,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,107,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2018,2,108,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,108,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,108,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,108,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,108,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,109,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,109,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,109,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,109,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,110,1,Ciências da Natureza,Física,Física 3,1,4,C6,,eletricidade,0.5800,direto,media,False
+2018,2,110,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2018,2,110,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2018,2,110,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2018,2,110,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2018,2,111,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,111,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,111,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,111,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,111,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,115,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2018,2,115,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2018,2,115,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2018,2,116,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,116,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,116,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,116,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,116,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,118,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.6100,direto,media,False
+2018,2,118,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2018,2,118,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2018,2,118,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2018,2,118,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2018,2,119,1,Ciências da Natureza,Química,Química 1,1,4,C5,,quimica,0.5300,direto,media,False
+2018,2,119,1,Ciências da Natureza,Química,Química 2,1,1,C5,,quimica,0.5300,direto,media,False
+2018,2,119,1,Ciências da Natureza,Química,Química 2,1,2,C5,,quimica,0.5300,direto,media,False
+2018,2,119,1,Ciências da Natureza,Química,Química 2,1,3,C5,,quimica,0.5300,direto,media,False
+2018,2,119,1,Ciências da Natureza,Química,Química 2,1,4,C5,,quimica,0.5300,direto,media,False
+2018,2,122,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2018,2,122,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2018,2,122,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2018,2,122,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2018,2,122,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2018,2,124,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,124,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,124,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,124,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,125,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,125,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,125,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,125,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,125,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,126,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2018,2,128,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2018,2,128,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2018,2,128,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2018,2,128,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2018,2,128,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2018,2,131,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2018,2,131,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,131,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,131,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,131,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,132,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2018,2,132,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2018,2,133,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,133,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,133,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,133,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2018,2,133,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.4100,relacionado,baixa,False
+2018,2,135,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2018,2,135,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2018,2,135,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2018,2,135,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2018,2,135,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2019,1,48,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2019,1,48,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2019,1,48,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; seculo; epoca; nova,0.4200,relacionado,baixa,False
+2019,1,51,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia; direito,0.5600,direto,media,False
+2019,1,51,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2019,1,51,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2019,1,51,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2019,1,51,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2019,1,52,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2019,1,52,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2019,1,52,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2019,1,52,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2019,1,52,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2019,1,57,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2019,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2019,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,62,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2019,1,63,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2019,1,63,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2019,1,63,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2019,1,63,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2019,1,63,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2019,1,68,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,68,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,68,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,68,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,71,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia; sistema,0.5600,direto,media,False
+2019,1,71,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2019,1,75,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia; antigas,0.5600,direto,media,False
+2019,1,75,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2019,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2019,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,79,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2019,1,80,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2019,1,80,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2019,1,80,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2019,1,80,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2019,1,80,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2019,1,83,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia; sociais,0.5600,direto,media,False
+2019,1,85,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,elementos; geografia,0.5600,direto,media,False
+2019,1,85,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2019,1,87,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2019,1,87,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2019,1,88,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; periodo; sua,0.5900,direto,media,False
+2019,1,88,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2019,1,88,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2019,1,88,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2019,1,88,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2019,1,90,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2019,1,90,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2019,1,90,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2019,1,90,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2019,1,90,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2019,2,93,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,93,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2019,2,93,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2019,2,93,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2019,2,93,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,96,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,agua,0.6400,direto,alta,False
+2019,2,96,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2019,2,96,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2019,2,99,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,fisiologia; biologia,0.5600,direto,media,False
+2019,2,99,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2019,2,99,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2019,2,101,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica,0.5300,direto,media,False
+2019,2,104,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2019,2,108,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica_organica,0.6400,direto,alta,False
+2019,2,108,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica_organica,0.6100,direto,media,False
+2019,2,108,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica_organica,0.5800,direto,media,False
+2019,2,108,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,108,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2019,2,111,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,111,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2019,2,111,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2019,2,111,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2019,2,111,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,112,1,Ciências da Natureza,Química,Química 1,1,4,C5,,quimica,0.5300,direto,media,False
+2019,2,112,1,Ciências da Natureza,Química,Química 2,1,1,C5,,quimica,0.5300,direto,media,False
+2019,2,112,1,Ciências da Natureza,Química,Química 2,1,2,C5,,quimica,0.5300,direto,media,False
+2019,2,112,1,Ciências da Natureza,Química,Química 2,1,3,C5,,quimica,0.5300,direto,media,False
+2019,2,112,1,Ciências da Natureza,Química,Química 2,1,4,C5,,quimica,0.5300,direto,media,False
+2019,2,113,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,termodinamica,0.4100,relacionado,baixa,False
+2019,2,114,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2019,2,114,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2019,2,114,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2019,2,114,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2019,2,114,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2019,2,116,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,116,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2019,2,116,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2019,2,116,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2019,2,116,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,117,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.4100,relacionado,baixa,False
+2019,2,119,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,119,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2019,2,119,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2019,2,119,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2019,2,119,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,122,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2019,2,122,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2019,2,124,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2019,2,124,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2019,2,124,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2019,2,124,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2019,2,124,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2019,2,125,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2019,2,126,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2019,2,126,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2019,2,126,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2019,2,127,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,127,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2019,2,127,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2019,2,127,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2019,2,127,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2019,2,128,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,diversidade; biologia,0.5600,direto,media,False
+2019,2,128,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2019,2,128,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2019,2,130,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2019,2,130,1,Ciências da Natureza,Física,Física 1,1,2,C5,,fisica,0.5300,direto,media,False
+2019,2,130,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2019,2,130,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2019,2,130,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2019,2,132,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.6100,direto,media,False
+2019,2,132,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.6100,direto,media,False
+2019,2,132,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2019,2,132,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2019,2,132,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2019,2,133,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica,0.5300,direto,media,False
+2019,2,135,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2019,2,135,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2020,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2020,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2020,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2020,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2020,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2020,1,50,1,Ciências Humanas,História,História 1,1,4,C2; C3,,formacao; historia,0.5600,direto,media,False
+2020,1,50,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; producao,0.5600,direto,media,False
+2020,1,50,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2020,1,50,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2020,1,50,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2020,1,53,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geopolitica; geografia,0.5600,direto,media,False
+2020,1,53,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2020,1,53,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2020,1,53,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2020,1,53,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2020,1,54,1,Ciências Humanas,História,História 1,1,4,C2; C3,,africana; historia; grandes,0.5900,direto,media,False
+2020,1,54,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2020,1,54,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2020,1,54,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2020,1,54,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2020,1,57,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia; esta,0.5600,direto,media,False
+2020,1,57,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2020,1,57,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2020,1,58,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2020,1,60,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2020,1,60,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2020,1,60,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2020,1,60,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2020,1,60,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2020,1,62,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2020,1,64,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia; mundo,0.5600,direto,media,False
+2020,1,65,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2020,1,65,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2020,1,68,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2020,1,68,1,Ciências Humanas,História,História 2,1,5,C3,,historia; quais,0.5600,direto,media,False
+2020,1,68,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2020,1,68,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2020,1,68,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2020,1,69,1,Ciências Humanas,História,História 2,1,1,C5; C6,,sociedade; historia,0.5600,direto,media,False
+2020,1,70,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia; ate,0.5600,direto,media,False
+2020,1,70,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2020,1,70,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2020,1,70,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2020,1,70,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2020,1,75,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,cartografia,0.4400,relacionado,baixa,False
+2020,1,75,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,cartografia,0.4100,relacionado,baixa,False
+2020,1,77,1,Ciências Humanas,Filosofia,História 2,1,5,C3,,historia; seculo; sob,0.4100,interdisciplinar,baixa,False
+2020,1,79,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historico; historia; poder,0.5900,direto,media,False
+2020,1,79,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2020,1,79,1,Ciências Humanas,História,História 2,1,5,C3,,historia; poder,0.5600,direto,media,False
+2020,1,79,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2020,1,79,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2020,1,80,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2020,1,80,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2020,1,81,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2020,1,82,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2020,1,82,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2020,1,82,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2020,1,82,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2020,1,82,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2020,1,83,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2020,1,83,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2020,1,83,1,Ciências Humanas,História,Geografia 1,1,5,C6,,brasileira; historia; brasil,0.4100,interdisciplinar,baixa,False
+2020,1,84,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2020,1,85,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia; social,0.5600,direto,media,False
+2020,1,85,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2020,1,85,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2020,1,85,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2020,1,87,1,Ciências Humanas,História,História 1,1,5,C3,,portuguesa; historia; brasil,0.5900,direto,media,False
+2020,1,87,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2020,1,87,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2020,1,87,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2020,1,87,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2020,2,91,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2020,2,92,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2020,2,92,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2020,2,92,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2020,2,92,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2020,2,92,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2020,2,93,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.4400,relacionado,baixa,False
+2020,2,95,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,95,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,95,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,95,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,97,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,97,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,97,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,97,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,98,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica,0.5300,direto,media,False
+2020,2,99,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica; ser,0.5600,direto,media,False
+2020,2,99,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica; valor,0.5600,direto,media,False
+2020,2,99,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2020,2,99,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2020,2,99,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2020,2,101,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,termodinamica,0.4100,relacionado,baixa,False
+2020,2,103,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,103,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2020,2,103,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2020,2,103,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2020,2,103,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,104,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,fisiologia; biologia,0.5600,direto,media,False
+2020,2,104,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2020,2,104,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2020,2,106,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,106,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,106,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,106,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,107,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2020,2,109,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2020,2,109,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2020,2,109,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2020,2,109,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2020,2,109,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2020,2,111,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,111,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2020,2,111,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2020,2,111,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2020,2,111,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,112,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica; raios,0.5600,direto,media,False
+2020,2,112,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2020,2,112,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2020,2,112,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2020,2,112,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2020,2,114,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2020,2,114,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2020,2,114,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2020,2,115,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,115,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2020,2,115,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2020,2,115,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2020,2,115,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,116,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2020,2,116,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2020,2,120,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2020,2,121,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica; metodo,0.5600,direto,media,False
+2020,2,121,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,121,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,121,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,121,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,123,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,123,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2020,2,123,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2020,2,123,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2020,2,123,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,124,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2020,2,124,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,124,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,124,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,124,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,130,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,130,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2020,2,130,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2020,2,130,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2020,2,130,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,131,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2020,2,131,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2020,2,131,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2020,2,131,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2020,2,131,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2020,2,132,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,132,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2020,2,132,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2020,2,132,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2020,2,132,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2020,2,134,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica; pelo,0.5600,direto,media,False
+2020,2,134,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2020,2,134,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,134,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,134,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2020,2,135,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2020,2,135,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2020,2,135,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2020,2,135,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2021,1,47,1,Ciências Humanas,História,História 1,1,2,C1; C4,,cultural; historia,0.5600,direto,media,False
+2021,1,47,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2021,1,47,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2021,1,52,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2021,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2021,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2021,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2021,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2021,1,61,1,Ciências Humanas,Ciências Humanas (geral),História 2,1,4,C2; C3,,relacoes; sociais; grupos,0.4100,interdisciplinar,baixa,False
+2021,1,65,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2021,1,69,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2021,1,69,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2021,1,69,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2021,1,69,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2021,1,72,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2021,1,72,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2021,1,72,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2021,1,72,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2021,1,76,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2021,1,76,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2021,1,76,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2021,1,76,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2021,1,76,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2021,1,87,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2021,1,87,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2021,1,87,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2021,1,87,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2021,1,87,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2021,1,90,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2021,1,90,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2021,1,90,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2021,1,90,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2021,1,90,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2021,2,92,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2021,2,92,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2021,2,92,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2021,2,92,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2021,2,92,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2021,2,96,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2021,2,96,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,96,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,96,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,96,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,98,1,Ciências da Natureza,Química,Química 1,1,4,C5,,quimica,0.5300,direto,media,False
+2021,2,98,1,Ciências da Natureza,Química,Química 2,1,1,C5,,quimica,0.5300,direto,media,False
+2021,2,98,1,Ciências da Natureza,Química,Química 2,1,2,C5,,quimica,0.5300,direto,media,False
+2021,2,98,1,Ciências da Natureza,Química,Química 2,1,3,C5,,quimica,0.5300,direto,media,False
+2021,2,98,1,Ciências da Natureza,Química,Química 2,1,4,C5,,quimica,0.5300,direto,media,False
+2021,2,104,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2021,2,104,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,104,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,104,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,104,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,105,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,105,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,105,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,105,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,108,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2021,2,108,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2021,2,108,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2021,2,108,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2021,2,108,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2021,2,109,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2021,2,109,1,Ciências da Natureza,Física,Física 1,1,2,C5,,fisica,0.5300,direto,media,False
+2021,2,109,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,109,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,109,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,111,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2021,2,111,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2021,2,111,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2021,2,111,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2021,2,111,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2021,2,113,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2021,2,113,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2021,2,113,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2021,2,113,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2021,2,113,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2021,2,115,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2021,2,115,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2021,2,115,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2021,2,115,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2021,2,115,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2021,2,117,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2021,2,117,1,Ciências da Natureza,Física,Física 1,1,2,C5,,fisica,0.5300,direto,media,False
+2021,2,117,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,117,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,117,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,118,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,fisiologia; biologia,0.5600,direto,media,False
+2021,2,118,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2021,2,118,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2021,2,120,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,agua,0.4100,relacionado,baixa,False
+2021,2,121,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,121,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,121,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,121,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2021,2,121,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.4100,relacionado,baixa,False
+2021,2,123,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2021,2,123,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2021,2,123,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2021,2,131,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.6100,direto,media,False
+2021,2,131,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.6100,direto,media,False
+2021,2,131,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2021,2,131,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2021,2,131,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2021,2,133,1,Ciências da Natureza,Química,Química 1,1,4,C5,,quimica,0.5300,direto,media,False
+2021,2,133,1,Ciências da Natureza,Química,Química 2,1,1,C5,,quimica,0.5300,direto,media,False
+2021,2,133,1,Ciências da Natureza,Química,Química 2,1,2,C5,,quimica,0.5300,direto,media,False
+2021,2,133,1,Ciências da Natureza,Química,Química 2,1,3,C5,,quimica,0.5300,direto,media,False
+2021,2,133,1,Ciências da Natureza,Química,Química 2,1,4,C5,,quimica,0.5300,direto,media,False
+2021,2,134,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,fisiologia; biologia,0.5600,direto,media,False
+2021,2,134,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia; saude,0.5600,direto,media,False
+2021,2,134,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2021,2,135,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2021,2,135,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2021,2,135,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2021,2,135,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2021,2,135,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,1,46,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2022,1,46,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2022,1,48,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2022,1,48,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,48,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2022,1,48,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,48,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2022,1,49,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2022,1,49,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2022,1,49,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2022,1,49,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2022,1,54,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2022,1,55,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia; solos,0.5600,direto,media,False
+2022,1,55,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2022,1,55,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2022,1,55,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2022,1,56,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,56,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,56,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,56,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,63,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia; origem,0.5600,direto,media,False
+2022,1,63,1,Ciências Humanas,História,História 2,1,4,C2; C3,,politicas; historia,0.5600,direto,media,False
+2022,1,63,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,63,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2022,1,63,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2022,1,64,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2022,1,64,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2022,1,64,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2022,1,64,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2022,1,65,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2022,1,65,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,65,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,65,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,65,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,66,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2022,1,68,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2022,1,68,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2022,1,68,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,68,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2022,1,68,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2022,1,69,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,69,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2022,1,69,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2022,1,69,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,69,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2022,1,71,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,71,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,71,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,71,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,73,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2022,1,73,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,73,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,73,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,73,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2022,1,74,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2022,1,74,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2022,1,75,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2022,1,77,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2022,1,77,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,77,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2022,1,77,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,77,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2022,1,78,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2022,1,78,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2022,1,81,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2022,1,85,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia; idade,0.5600,direto,media,False
+2022,1,85,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; idade,0.5600,direto,media,False
+2022,1,85,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,85,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2022,1,85,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2022,1,86,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2022,1,89,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia; america,0.5600,direto,media,False
+2022,1,89,1,Ciências Humanas,História,História 1,1,5,C3,,historia; america,0.5600,direto,media,False
+2022,1,89,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia; imperio,0.5600,direto,media,False
+2022,1,89,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2022,1,89,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2022,2,93,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2022,2,95,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2022,2,95,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,95,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,95,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,95,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,99,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,99,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,99,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,99,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,101,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,101,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,101,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2022,2,101,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,101,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,102,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,102,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2022,2,102,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2022,2,102,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2022,2,102,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,104,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2022,2,104,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2022,2,104,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2022,2,105,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2022,2,105,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2022,2,105,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2022,2,105,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2022,2,105,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2022,2,108,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2022,2,108,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2022,2,108,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2022,2,108,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,108,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,109,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,109,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2022,2,109,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2022,2,109,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2022,2,109,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,110,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,110,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2022,2,110,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2022,2,110,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2022,2,110,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,111,1,Ciências da Natureza,Física,Física 3,1,4,C6,,eletricidade,0.5800,direto,media,False
+2022,2,111,1,Ciências da Natureza,Física,Física 3,1,1,C6,,eletrica; fisica,0.5600,direto,media,False
+2022,2,111,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,111,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,111,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,112,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,112,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2022,2,112,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2022,2,112,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2022,2,112,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,113,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2022,2,115,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.4100,relacionado,baixa,False
+2022,2,116,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,116,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2022,2,116,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2022,2,116,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2022,2,116,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,118,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,118,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,118,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,118,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,118,1,Ciências da Natureza,Física,Física 3,1,5,,,eletricidade,0.4100,relacionado,baixa,False
+2022,2,119,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica; corpo,0.5600,direto,media,False
+2022,2,119,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2022,2,119,1,Ciências da Natureza,Física,Física 1,1,2,C5,,fisica,0.5300,direto,media,False
+2022,2,119,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,119,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2022,2,121,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2022,2,121,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2022,2,121,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2022,2,122,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,122,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2022,2,122,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2022,2,122,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2022,2,122,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,124,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,124,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,124,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2022,2,124,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,124,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,125,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,125,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2022,2,125,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2022,2,125,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2022,2,125,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,126,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2022,2,126,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2022,2,126,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2022,2,126,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,126,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,127,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,127,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2022,2,127,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2022,2,127,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2022,2,127,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2022,2,129,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica; terra,0.5600,direto,media,False
+2022,2,129,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,129,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,129,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,129,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,130,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2022,2,130,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2022,2,131,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia; seres; vivos,0.5900,direto,media,False
+2022,2,131,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2022,2,131,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2022,2,132,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica; terra,0.5600,direto,media,False
+2022,2,132,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,132,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2022,2,132,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2022,2,132,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2023,1,47,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2023,1,47,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2023,1,47,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2023,1,48,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2023,1,50,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2023,1,50,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2023,1,50,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2023,1,50,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2023,1,50,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2023,1,51,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2023,1,51,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2023,1,51,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2023,1,51,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2023,1,51,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2023,1,57,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2023,1,59,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2023,1,59,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2023,1,60,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2023,1,68,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2023,1,68,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2023,1,68,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2023,1,68,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2023,1,71,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2023,1,74,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia; imperio,0.5600,direto,media,False
+2023,1,74,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2023,1,74,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2023,1,74,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2023,1,74,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2023,1,75,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2023,1,75,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2023,1,75,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2023,1,75,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2023,1,75,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2023,1,79,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2023,1,86,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2023,1,86,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2023,1,86,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2023,1,86,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2023,1,86,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2023,1,88,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2023,1,89,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; periodo; relacao,0.5900,direto,media,False
+2023,1,89,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2023,1,89,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2023,1,89,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2023,1,89,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2023,2,91,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2023,2,91,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2023,2,91,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2023,2,91,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2023,2,91,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2023,2,92,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,92,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,92,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,92,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,93,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,93,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,93,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,93,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,105,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,105,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,105,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,105,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,106,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2023,2,106,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2023,2,106,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2023,2,106,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2023,2,106,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2023,2,108,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,108,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2023,2,108,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2023,2,108,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2023,2,108,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,109,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2023,2,109,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2023,2,109,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2023,2,110,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,110,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2023,2,110,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2023,2,110,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2023,2,110,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,111,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2023,2,114,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,114,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2023,2,114,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2023,2,114,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2023,2,114,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,116,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,116,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2023,2,116,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2023,2,116,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2023,2,116,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,117,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,117,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,117,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,117,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,118,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica,0.5300,direto,media,False
+2023,2,119,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2023,2,119,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,119,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,119,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,119,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,121,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,121,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2023,2,121,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2023,2,121,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2023,2,121,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,124,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,124,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2023,2,124,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2023,2,124,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2023,2,124,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2023,2,126,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,agua,0.4100,relacionado,baixa,False
+2023,2,127,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.4400,relacionado,baixa,False
+2023,2,129,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2023,2,129,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2023,2,132,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.6100,direto,media,False
+2023,2,132,1,Ciências da Natureza,Física,Física 1,1,2,C5,,fisica,0.5300,direto,media,False
+2023,2,132,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,132,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,132,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,133,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.6100,direto,media,False
+2023,2,133,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2023,2,133,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2023,2,133,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica; raios,0.5600,direto,media,False
+2023,2,133,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2023,2,134,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2023,2,135,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2023,2,135,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,135,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,135,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2023,2,135,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,1,46,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2024,1,46,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2024,1,48,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2024,1,48,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,48,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,48,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,48,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,49,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; relacao; seculo,0.5900,direto,media,False
+2024,1,49,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2024,1,49,1,Ciências Humanas,História,História 2,1,5,C3,,historia; seculo,0.5600,direto,media,False
+2024,1,49,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2024,1,49,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2024,1,50,1,Ciências Humanas,História,História 1,1,5,C3,,historia; america; brasil,0.5900,direto,media,False
+2024,1,50,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia; america,0.5600,direto,media,False
+2024,1,50,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2024,1,50,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2024,1,50,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2024,1,51,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2024,1,52,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2024,1,53,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2024,1,53,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2024,1,54,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,54,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,54,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,54,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,56,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2024,1,59,1,Ciências Humanas,História,História 2,1,4,C2; C3,,instituicoes; historia; idade,0.5900,direto,media,False
+2024,1,59,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia; idade,0.5600,direto,media,False
+2024,1,59,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2024,1,59,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2024,1,59,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2024,1,63,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2024,1,64,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2024,1,64,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2024,1,64,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2024,1,64,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2024,1,64,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2024,1,65,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2024,1,66,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2024,1,66,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2024,1,69,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2024,1,70,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2024,1,70,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2024,1,70,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2024,1,70,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2024,1,70,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2024,1,72,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia,0.5300,direto,media,False
+2024,1,73,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2024,1,73,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2024,1,73,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2024,1,74,1,Ciências Humanas,História,História 1,1,2,C1; C4,,cultural; historia,0.5600,direto,media,False
+2024,1,74,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia; ocorre,0.5600,direto,media,False
+2024,1,74,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2024,1,77,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,77,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,77,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,77,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,80,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2024,1,80,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; epoca,0.5600,direto,media,False
+2024,1,80,1,Ciências Humanas,História,História 2,1,5,C3,,historia; foram,0.5600,direto,media,False
+2024,1,80,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2024,1,80,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2024,1,81,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2024,1,81,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2024,1,83,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,cartografia,0.6100,direto,media,False
+2024,1,83,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,cartografia,0.5800,direto,media,False
+2024,1,84,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2024,1,84,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2024,1,84,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2024,1,86,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2024,1,86,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2024,1,88,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2024,1,88,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2024,1,88,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2024,1,88,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2024,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2024,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2024,1,90,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2024,2,92,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,92,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2024,2,92,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2024,2,92,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2024,2,92,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,94,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,94,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2024,2,94,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2024,2,94,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2024,2,94,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,95,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2024,2,95,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,95,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,95,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,95,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,96,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica_organica,0.5800,direto,media,False
+2024,2,96,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica_organica,0.5800,direto,media,False
+2024,2,96,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica_organica,0.5800,direto,media,False
+2024,2,96,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,96,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2024,2,98,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,98,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2024,2,98,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2024,2,98,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2024,2,98,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,101,1,Ciências da Natureza,Física,Física 3,1,4,C6,,eletricidade,0.5800,direto,media,False
+2024,2,101,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2024,2,101,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2024,2,101,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2024,2,101,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2024,2,102,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2024,2,102,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,102,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,102,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,102,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,103,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2024,2,103,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2024,2,103,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2024,2,103,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2024,2,103,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2024,2,104,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,104,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,104,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,104,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,104,1,Ciências da Natureza,Física,Física 3,1,4,C6,,eletricidade,0.4100,relacionado,baixa,False
+2024,2,106,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.6100,direto,media,False
+2024,2,106,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2024,2,106,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2024,2,106,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2024,2,106,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2024,2,109,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,109,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,109,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,109,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,110,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2024,2,110,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,110,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,110,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,110,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,111,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,111,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2024,2,111,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2024,2,111,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2024,2,111,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,112,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,112,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2024,2,112,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2024,2,112,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2024,2,112,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,114,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.5800,direto,media,False
+2024,2,114,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,114,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,114,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,114,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,115,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,115,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2024,2,115,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2024,2,115,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2024,2,115,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,117,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2024,2,117,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,117,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,117,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,117,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,118,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2024,2,118,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,118,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,118,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,118,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2024,2,121,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2024,2,121,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2024,2,123,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica_organica,0.6100,direto,media,False
+2024,2,125,1,Ciências da Natureza,Química,Química 1,1,1,C3,,quimica,0.5300,direto,media,False
+2024,2,126,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,termodinamica,0.6400,direto,alta,False
+2024,2,126,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2024,2,126,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,termodinamica,0.6100,direto,media,False
+2024,2,126,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,termodinamica,0.5800,direto,media,False
+2024,2,130,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,130,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2024,2,130,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2024,2,130,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2024,2,130,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2024,2,135,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia,0.5300,direto,media,False
+2024,2,135,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2024,2,135,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2025,1,46,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2025,1,46,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2025,1,46,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,46,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2025,1,46,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2025,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia; entre,0.5600,direto,media,False
+2025,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2025,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2025,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2025,1,47,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2025,1,49,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2025,1,52,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; inicio,0.5600,direto,media,False
+2025,1,52,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,52,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,52,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2025,1,52,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,53,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2025,1,53,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2025,1,53,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2025,1,53,1,Ciências Humanas,História,História 2,1,5,C3,,historia; partir; seculo; foram,0.4200,relacionado,baixa,False
+2025,1,54,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2025,1,54,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2025,1,54,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2025,1,54,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2025,1,54,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2025,1,56,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,56,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,56,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2025,1,56,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,56,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,58,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,58,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,58,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,58,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,59,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,energia,0.5800,direto,media,False
+2025,1,59,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2025,1,59,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia,0.5300,direto,media,False
+2025,1,59,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia,0.5300,direto,media,False
+2025,1,61,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2025,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,64,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,66,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2025,1,66,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,66,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,66,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,66,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,68,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,68,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,68,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2025,1,68,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,68,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,69,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia; sua,0.5600,direto,media,False
+2025,1,69,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,69,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,69,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2025,1,69,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,71,1,Ciências Humanas,Geografia,Geografia 1,1,1,C2,,geografia,0.5300,direto,media,False
+2025,1,71,1,Ciências Humanas,Geografia,Geografia 1,1,2,C2,,geografia,0.5300,direto,media,False
+2025,1,72,1,Ciências Humanas,História,História 1,1,1,C2; C6,,historia,0.5300,direto,media,False
+2025,1,72,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2025,1,75,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2025,1,75,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2025,1,75,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2025,1,76,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2025,1,77,1,Ciências Humanas,História,História 1,1,2,C1; C4,,historia,0.5300,direto,media,False
+2025,1,77,1,Ciências Humanas,História,História 1,1,3,C1; C2,,historia,0.5300,direto,media,False
+2025,1,77,1,Ciências Humanas,História,História 2,1,2,C1; C2,,historia,0.5300,direto,media,False
+2025,1,80,1,Ciências Humanas,Filosofia,Filosofia,1,2,C1; C2,,filosofia; sociedade,0.5600,direto,media,False
+2025,1,81,1,Ciências Humanas,Sociologia,Sociologia,1,3,C3; C5,,sociologia; social,0.5600,direto,media,False
+2025,1,81,1,Ciências Humanas,Sociologia,Sociologia,1,2,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,81,1,Ciências Humanas,Sociologia,Sociologia,1,4,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,81,1,Ciências Humanas,Sociologia,Sociologia,1,5,C3; C5,,sociologia,0.5300,direto,media,False
+2025,1,83,1,Ciências Humanas,História,História 2,1,1,C5; C6,,historia,0.5300,direto,media,False
+2025,1,84,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,geografia,0.5300,direto,media,False
+2025,1,84,1,Ciências Humanas,Geografia,Geografia 2,1,2,C4,,geografia,0.5300,direto,media,False
+2025,1,84,1,Ciências Humanas,Geografia,Geografia 2,1,3,C4,,geografia,0.5300,direto,media,False
+2025,1,84,1,Ciências Humanas,Geografia,Geografia 2,1,4,C4,,geografia,0.5300,direto,media,False
+2025,1,84,1,Ciências Humanas,Geografia,Geografia 2,1,5,C4,,geografia,0.5300,direto,media,False
+2025,1,85,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,85,1,Ciências Humanas,História,História 1,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,85,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2025,1,85,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,85,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,86,1,Ciências Humanas,Geografia,Geografia 1,1,5,C6,,geografia; historia; brasil,0.5900,direto,media,False
+2025,1,86,1,Ciências Humanas,Geografia,Geografia 2,1,1,C6; C4,,energia,0.5800,direto,media,False
+2025,1,86,1,Ciências Humanas,Geografia,Geografia 1,1,4,C6,,geografia; solo,0.5600,direto,media,False
+2025,1,86,1,Ciências Humanas,Geografia,Geografia 1,1,3,C6,,geografia,0.5300,direto,media,False
+2025,1,87,1,Ciências Humanas,História,História 1,1,5,C3,,historia; brasil,0.5600,direto,media,False
+2025,1,87,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,87,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2025,1,87,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,87,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2025,1,88,1,Ciências Humanas,Sociologia,Sociologia,1,1,C1; C3,,sociologia,0.5300,direto,media,False
+2025,1,90,1,Ciências Humanas,História,História 1,1,5,C3,,historia; america; brasil,0.5900,direto,media,False
+2025,1,90,1,Ciências Humanas,História,História 1,1,4,C2; C3,,historia; america,0.5600,direto,media,False
+2025,1,90,1,Ciências Humanas,História,História 2,1,3,C2; C3,,historia,0.5300,direto,media,False
+2025,1,90,1,Ciências Humanas,História,História 2,1,4,C2; C3,,historia,0.5300,direto,media,False
+2025,1,90,1,Ciências Humanas,História,História 2,1,5,C3,,historia,0.5300,direto,media,False
+2025,2,91,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2025,2,91,1,Ciências da Natureza,Física,Física 1,1,2,C5,,fisica,0.5300,direto,media,False
+2025,2,91,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,91,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,91,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,96,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,96,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,96,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2025,2,96,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2025,2,96,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,100,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,termodinamica,0.4100,relacionado,baixa,False
+2025,2,101,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica; metodo,0.5600,direto,media,False
+2025,2,101,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,101,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,101,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,101,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,103,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,103,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,103,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,103,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,105,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2025,2,105,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2025,2,105,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica,0.5300,direto,media,False
+2025,2,105,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2025,2,105,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2025,2,106,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica_organica,0.5800,direto,media,False
+2025,2,106,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica_organica,0.5800,direto,media,False
+2025,2,106,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica_organica,0.5800,direto,media,False
+2025,2,106,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,106,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,107,1,Ciências da Natureza,Física,Física 3,1,4,C6,,eletricidade,0.5800,direto,media,False
+2025,2,107,1,Ciências da Natureza,Física,Física 3,1,1,C6,,eletrica; fisica,0.5600,direto,media,False
+2025,2,107,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2025,2,107,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica,0.5300,direto,media,False
+2025,2,107,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2025,2,108,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,108,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,108,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2025,2,108,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2025,2,108,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,109,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,109,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,109,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2025,2,109,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2025,2,109,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,110,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2025,2,110,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2025,2,114,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,114,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,114,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2025,2,114,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2025,2,114,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,115,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2025,2,115,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,115,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,115,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,115,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,116,1,Ciências da Natureza,Química,Química 1,1,4,C5,,quimica,0.5300,direto,media,False
+2025,2,116,1,Ciências da Natureza,Química,Química 2,1,1,C5,,quimica,0.5300,direto,media,False
+2025,2,116,1,Ciências da Natureza,Química,Química 2,1,2,C5,,quimica,0.5300,direto,media,False
+2025,2,116,1,Ciências da Natureza,Química,Química 2,1,3,C5,,quimica,0.5300,direto,media,False
+2025,2,116,1,Ciências da Natureza,Química,Química 2,1,4,C5,,quimica,0.5300,direto,media,False
+2025,2,118,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,mecanica,0.6100,direto,media,False
+2025,2,118,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,118,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,118,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,118,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,119,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,119,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,119,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2025,2,119,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2025,2,119,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,120,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,aquecimento; fisica,0.5600,direto,media,False
+2025,2,120,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,120,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,120,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,120,1,Ciências da Natureza,Física,Física 3,1,5,,,eletricidade,0.4100,relacionado,baixa,False
+2025,2,123,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,123,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,123,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2025,2,123,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2025,2,123,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,124,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.5800,direto,media,False
+2025,2,124,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.5800,direto,media,False
+2025,2,124,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.5800,direto,media,False
+2025,2,124,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2025,2,124,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2025,2,125,1,Ciências da Natureza,Física,Física 1,1,1,C1; C5,,fisica,0.5300,direto,media,False
+2025,2,125,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,125,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,125,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,125,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,127,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,127,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,127,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2025,2,127,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2025,2,127,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,128,1,Ciências da Natureza,Física,Física 1,1,3,C6,,mecanica,0.6100,direto,media,False
+2025,2,128,1,Ciências da Natureza,Física,Física 1,1,4,C6,,mecanica,0.6100,direto,media,False
+2025,2,128,1,Ciências da Natureza,Física,Física 3,1,1,C6,,mecanica,0.6100,direto,media,False
+2025,2,128,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2025,2,128,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2025,2,129,1,Ciências da Natureza,Química,Química 1,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,129,1,Ciências da Natureza,Química,Química 3,1,2,C7,,quimica,0.5300,direto,media,False
+2025,2,129,1,Ciências da Natureza,Química,Química 3,1,3,C7,,quimica,0.5300,direto,media,False
+2025,2,129,1,Ciências da Natureza,Química,Química 3,1,4,C7,,quimica,0.5300,direto,media,False
+2025,2,129,1,Ciências da Natureza,Química,Química 3,1,5,C7,,quimica,0.5300,direto,media,False
+2025,2,130,1,Ciências da Natureza,Física,Física 1,1,4,C6,,fisica; pode; ser,0.5900,direto,media,False
+2025,2,130,1,Ciências da Natureza,Física,Física 3,1,1,C6,,fisica; fio,0.5600,direto,media,False
+2025,2,130,1,Ciências da Natureza,Física,Física 1,1,3,C6,,fisica,0.5300,direto,media,False
+2025,2,130,1,Ciências da Natureza,Física,Física 3,1,3,C6,,fisica,0.5300,direto,media,False
+2025,2,130,1,Ciências da Natureza,Física,Física 3,1,4,C6,,fisica,0.5300,direto,media,False
+2025,2,131,1,Ciências da Natureza,Química,Química 3,1,1,C2,,quimica,0.5300,direto,media,False
+2025,2,133,1,Ciências da Natureza,Biologia,Biologia 1,1,1,C4,,biologia; seres; vivos,0.5900,direto,media,False
+2025,2,133,1,Ciências da Natureza,Biologia,Biologia 1,1,2,C4,,biologia,0.5300,direto,media,False
+2025,2,133,1,Ciências da Natureza,Biologia,Biologia 1,1,3,C4,,biologia,0.5300,direto,media,False
+2025,2,134,1,Ciências da Natureza,Química,Química 1,1,2,C1,,quimica,0.5300,direto,media,False
+2025,2,134,1,Ciências da Natureza,Química,Química 1,1,3,C1,,quimica,0.5300,direto,media,False
+2025,2,135,1,Ciências da Natureza,Física,Física 2,1,1,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,135,1,Ciências da Natureza,Física,Física 2,1,2,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,135,1,Ciências da Natureza,Física,Física 2,1,3,C1; C2; C5,,fisica,0.5300,direto,media,False
+2025,2,135,1,Ciências da Natureza,Física,Física 2,1,5,C1; C2; C5,,fisica,0.5300,direto,media,False
