@@ -21,6 +21,37 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Incluir validação automática: distribuição 5/3/2 e alternativas A–E em linhas separadas.
 - [ ] Incluir checklist de qualidade para detectar cópia literal de enunciados reais.
 
+## Bloco 8 — Arquitetura de conteúdo e publicação offline (curto prazo)
+- [x] Publicar briefing de arquitetura em `plano/arquitetura_conteudo_offline.md`.
+- [ ] Definir estrutura de pastas: `conteudo/raw`, `conteudo/generated`, `conteudo/reviewed`, `conteudo/published`.
+- [ ] Definir manifests por domínio: `banco_questoes`, `banco_aulas`, `banco_videos`, `banco_redacao`.
+- [ ] Padronizar metadados editoriais em todos os itens: `generated_by`, `reviewed_by`, `review_status`, `version`, `updated_at`, `source_url`.
+- [ ] Implementar estado editorial padrão (`rascunho` -> `revisado` -> `aprovado` -> `publicado`) nos scripts de build.
+- [ ] Fechar pipeline de publicação `manifest.json + assets.zip + checksum` para consumo no app Flutter.
+
+## Bloco 9 — Questões geradas por agent (médio prazo)
+- [ ] Criar `questoes/generateds/` por área (`linguagens`, `humanas`, `natureza`, `matematica`) com schema compatível ao banco real.
+- [ ] Definir contrato obrigatório por questão gerada: enunciado, A-E, gabarito, explicação, competência, habilidade, dificuldade, tags e fontes.
+- [ ] Implementar script/agent de geração por habilidade com lotes auditáveis e rastreabilidade de prompt.
+- [ ] Adicionar validação de qualidade pós-geração: formato, consistência do gabarito e score de similaridade com base real.
+- [ ] Publicar somente itens com revisão humana aprovada.
+
+## Bloco 10 — Limpeza guiada do repositório (curto prazo)
+- [x] Definir política de retenção por pasta (`raw`, `generated`, `reviewed`, `published`, `archive`) em `plano/politica_retencao_repositorio.md`.
+- [x] Criar script de auditoria para detectar pastas/arquivos órfãos em relação ao roadmap e ao pipeline de build (`scripts/auditar_pastas_orfas.py`).
+- [x] Gerar relatório de limpeza com proposta de ação: `manter`, `mover para archive`, `remover` (`plano/relatorio_limpeza_repositorio.md`).
+- [x] Executar limpeza segura fase 1 (somente temporários e duplicados evidentes).
+- [x] Marcar tarefas de limpeza que dependem do catálogo completo antes de execução final.
+
+## Bloco 11 — Perfil offline + planner portável (curto/médio prazo)
+- [x] Criar schema local de perfil de estudante (`student_profiles`) com ficha editável de contexto.
+- [x] Implementar multi-perfil com troca rápida (ex.: Perfil A / Perfil B).
+- [x] Implementar export/import de perfil com histórico e plano (`profile_export.zip`).
+- [ ] Validar compatibilidade de versão durante importação e registrar migração quando necessário.
+- [ ] Salvar e restaurar planejamento inteligente no perfil importado sem perda de progresso.
+- [ ] Implementar motor determinístico de planejamento por horas/dias disponíveis e data-alvo.
+- [ ] Exibir previsão de estudo para os próximos dias com base no perfil + desempenho atual.
+
 ## Bloco 4 — Operação semanal (médio prazo)
 - [ ] Integrar banco real ao fluxo de revisão semanal.
 - [ ] Atualizar `plano/tracker.md` com campo de erro por habilidade (`Hxx`).
@@ -42,6 +73,8 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Implementar parser opcional da resposta IA (`modo livre` + `modo validado` por regex).
 - [x] Exibir feedback de legibilidade quando houver muitos marcadores `[ILEGÍVEL]`.
 - [x] Persistir evolução e ranking de redação (faixas de nota e progresso no tempo).
+- [ ] Criar fluxo para tema de redação gerado por IA com status editorial e referência de fontes motivadoras.
+- [ ] Criar bloco de textos de apoio reais com curadoria e citação explícita (fonte + data).
 
 ## Bloco 6 — Intercorrelação Módulo x Questão (curto/médio prazo)
 - [x] Criar `questoes/mapeamento_habilidades/intercorrelacao/modulo_questao_matches.csv` com score e confiança por vínculo.
@@ -60,6 +93,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
-1. Rodar auditoria amostral das revisões manuais aplicadas em `revisao_manual/overrides.csv`.
-2. Implementar indexação por habilidade/competência em lote.
-3. Gerar primeiro simulado de treino totalmente ancorado no banco real.
+1. Fechar validação de versão/migração no import de perfil e padronizar pacote `profile_export.zip`.
+2. Implementar motor determinístico de planejamento com base em horas/dias/data-alvo.
+3. Exibir previsão dos próximos dias e sincronizar com recomendações de habilidades.

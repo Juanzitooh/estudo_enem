@@ -29,6 +29,28 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Criar regra de atualização incremental quando entrar novo ano de prova.
 - [ ] Planejar pipeline futuro de recorte de imagens da prova por questão (`asset_path` + metadados), sem bloquear MVP.
 
+### Arquitetura de conteúdo versionado (offline-first)
+- [x] Publicar briefing inicial da arquitetura em `plano/arquitetura_conteudo_offline.md`.
+- [ ] Definir árvore canônica de conteúdo: `conteudo/raw/`, `conteudo/generated/`, `conteudo/reviewed/` e `conteudo/published/`.
+- [ ] Separar bancos por domínio no conteúdo publicado: `banco_questoes`, `banco_aulas`, `banco_videos`, `banco_redacao`.
+- [ ] Definir contrato de metadados editoriais comum: `source_type`, `source_url`, `source_date`, `generated_by`, `reviewed_by`, `review_status`, `version`, `updated_at`.
+- [ ] Definir estado editorial obrigatório por item: `rascunho` -> `revisado` -> `aprovado` -> `publicado`.
+- [ ] Criar pipeline de empacotamento para atualização: `manifest.json` + `assets.zip` + checksum.
+- [ ] Definir política de compatibilidade entre versão de conteúdo e versão do app Flutter.
+- [ ] Formalizar repositório como origem única de atualização (conteúdo versionado + scripts de build), mantendo app funcional 100% offline.
+
+### Higienização contínua do repositório (sem perder histórico útil)
+- [x] Definir política de retenção: o que permanece em `raw`, o que vira `archive` e o que pode ser removido após publicação (ver `plano/politica_retencao_repositorio.md`).
+- [x] Criar checklist de limpeza por ciclo de release (arquivos temporários, saídas intermediárias, lotes obsoletos, duplicados).
+- [x] Automatizar auditoria de pastas não referenciadas no roadmap/build (`scripts/auditar_pastas_orfas.py`).
+- [x] Adicionar regra de segurança para nunca remover fontes oficiais, revisões manuais e artefatos publicados.
+- [x] Publicar relatório de limpeza por versão com diff de arquivos removidos/movidos (`plano/relatorio_limpeza_repositorio.md`).
+
+### Dependências de catalogação (separação explícita)
+- [x] Itens que podem fechar antes do catálogo completo: estrutura de pastas, schemas, pipeline de build/publicação, perfil offline e import/export.
+- [x] Itens bloqueados até catálogo completo dos 6 volumes: validação final de cobertura módulo->habilidade, curadoria final de aulas por módulo e calibração fina das recomendações.
+- [x] Criar marcador de status por tarefa (`independe_catalogo` | `depende_catalogo`) para priorização operacional.
+
 ## Fase 2 — Motor de Prática e Planejamento
 - [ ] Calcular métricas por habilidade: acurácia, volume, tempo médio, reincidência de erro.
 - [ ] Definir algoritmo de priorização por lacuna (sem IA, determinístico).
@@ -64,6 +86,16 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Registrar vínculos interdisciplinares explícitos (questão conectada a mais de uma matéria/eixo).
 - [ ] Mapear pré-requisitos entre módulos para trilha de aprofundamento progressivo.
 - [ ] Versionar o mapeamento para rastrear mudanças de regra ao longo do tempo.
+- [ ] Criar CSV adicional de intercorrelação semântica (`modulo_assunto_keywords.csv`) para ligar expectativas, palavras-chave e temas por área.
+- [ ] Incluir relações de aprofundamento e interdisciplinaridade explícitas (`modulo_origem`, `modulo_relacionado`, `motivo_relacao`).
+
+### Banco de questões geradas (agent + revisão humana)
+- [ ] Criar estrutura de conteúdo em `questoes/generateds/` separada por área (`linguagens`, `humanas`, `natureza`, `matematica`) e tipo (`treino`, `simulado`, `redacao`).
+- [ ] Definir schema de questão gerada compatível com o banco real: cabeçalho, enunciado, alternativas A-E, gabarito, explicação, competência/habilidade, dificuldade, tags e fontes.
+- [ ] Criar agent/script de geração orientado por habilidade para produzir lotes de questões inéditas no estilo ENEM (sem cópia literal).
+- [ ] Implementar validações automáticas de qualidade: formato, distribuição de dificuldade, consistência do gabarito e detector de similaridade com questões reais.
+- [ ] Exigir revisão humana antes de publicação com campos `reviewed_by`, `review_notes` e `approved_at`.
+- [ ] Definir política de publicação incremental para liberar conteúdo gerado sem bloquear o banco real.
 
 ## Fase 3 — Seção dedicada: App Open Source Gratuito
 
@@ -72,6 +104,24 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Banco local em SQLite para desempenho, histórico e preferências.
 - [ ] Importação de dados por pacote versionado (CSV -> `assets.zip` -> SQLite local).
 - [ ] Interface simples para resolver questões, corrigir e evoluir no plano.
+
+### Perfil de usuário offline + portabilidade
+- [x] Implementar perfil local com dados mínimos: `nome_exibicao`, `ano_alvo`, `dias_semana_estudo`, `horas_por_dia`, `foco_area`, `data_prova`.
+- [x] Permitir múltiplos perfis locais e troca rápida de perfil no app.
+- [x] Criar tela de "ficha do estudante" (onboarding editável) para contexto de planejamento.
+- [x] Salvar planner/contexto no próprio perfil e permitir edição contínua.
+- [x] Implementar exportação de perfil (JSON/ZIP) com histórico, métricas e plano.
+- [ ] Implementar importação de perfil com validação de versão e merge seguro.
+- [ ] Incluir no pacote exportado um arquivo de planejamento (`planejamento_profile.json`) para portabilidade completa.
+- [x] Garantir que import/export funcione offline, sem backend e sem IA.
+
+### Planejamento inteligente determinístico (sem IA)
+- [ ] Criar motor de estimativa de estudo por habilidade com base em `acurácia`, `recência`, `tempo disponível` e `dificuldade`.
+- [ ] Gerar plano diário/semanal automaticamente a partir da ficha do estudante (horas, dias e data-alvo).
+- [ ] Projetar previsão de carga por meta (`horas necessárias`, `habilidades por semana`, `risco de atraso`).
+- [ ] Recalcular o plano após cada sessão para refletir ganho/perda de domínio.
+- [ ] Exibir "próximas aulas recomendadas" por janela de dias (ex.: próximos 7 dias) com justificativa objetiva.
+- [ ] Permitir exportar/importar o plano junto do perfil para continuidade entre dispositivos.
 
 ### Funcionalidades do MVP
 - [x] Tela de filtros: ano, dia, área, disciplina/matéria, competência, habilidade e `tem_imagem`.
@@ -133,6 +183,9 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Adicionar modo de legibilidade com alerta quando houver muitos trechos `[ILEGÍVEL]`.
 - [x] Adicionar gamificação de redação por faixas de nota (Bronze/Prata/Ouro/Elite).
 - [x] Incluir prompt automático de reescrita pós-correção mantendo estrutura original do aluno.
+- [ ] Criar banco de temas gerados (`redacao/generated_temas`) com status editorial e vínculo de fontes.
+- [ ] Incluir campo obrigatório de referência para textos motivadores externos (fonte, data e contexto brasileiro).
+- [ ] Definir trilha de curadoria para temas de redação gerados por IA (`rascunho` -> `revisado` -> `publicado`).
 
 ### Priorização automática por lacuna
 - [x] Implementar prioridade dinâmica por habilidade com fórmula base: `priority = deficit + recency + (1 - confidence)`.
