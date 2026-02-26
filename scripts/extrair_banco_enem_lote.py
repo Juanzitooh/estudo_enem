@@ -230,51 +230,62 @@ def write_status_report(results: list[ExtractionResult], output_path: Path) -> N
     output_path.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
 
 
-def read_redacao_payload(year_dir: Path) -> dict[str, object] | None:
-    redacao_path = year_dir / "dia1_redacao.json"
-    if not redacao_path.exists():
-        return None
-    return json.loads(redacao_path.read_text(encoding="utf-8"))
+def read_redacao_payloads(year_dir: Path) -> list[dict[str, object]]:
+    payloads: list[dict[str, object]] = []
+    for day in (1, 2):
+        redacao_path = year_dir / f"dia{day}_redacao.json"
+        if not redacao_path.exists():
+            continue
+        payload = json.loads(redacao_path.read_text(encoding="utf-8"))
+        if not isinstance(payload, dict):
+            continue
+        payloads.append(payload)
+    return payloads
 
 
 def write_redacao_panorama(results: list[ExtractionResult], out_base: Path, output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    day1_results = sorted(
-        (item for item in results if item.day == 1),
-        key=lambda item: item.year,
-    )
+    years = sorted({item.year for item in results})
+    result_by_year: dict[int, list[ExtractionResult]] = {}
+    for item in results:
+        result_by_year.setdefault(item.year, []).append(item)
 
     lines: list[str] = []
     lines.append("# Panorama de Temas de Redação")
     lines.append("")
-    lines.append("Consolidado automático por ano (Dia 1).")
+    lines.append("Consolidado automático por ano (dia de Linguagens).")
     lines.append("")
-    lines.append("| Ano | Tema | Status | Arquivo |")
-    lines.append("|---:|---|---|---|")
+    lines.append("| Ano | Dia | Tema | Status | Arquivo |")
+    lines.append("|---:|---:|---|---|---|")
 
     found_count = 0
     missing_count = 0
 
-    for result in day1_results:
-        md_path = f"enem_{result.year}/dia1_redacao.md"
-
-        if result.status != "ok":
+    for year in years:
+        year_results = result_by_year.get(year, [])
+        if not year_results or all(item.status != "ok" for item in year_results):
             missing_count += 1
             lines.append(
-                f"| {result.year} | [não disponível] | extração {result.status} | `{md_path}` |"
+                f"| {year} | - | [não disponível] | extração indisponível | `enem_{year}/dia1_redacao.md` |"
             )
             continue
 
-        payload = read_redacao_payload(out_base / f"enem_{result.year}")
-        if not payload:
+        payloads = read_redacao_payloads(out_base / f"enem_{year}")
+        if not payloads:
             missing_count += 1
-            lines.append(f"| {result.year} | [não disponível] | arquivo ausente | `{md_path}` |")
+            lines.append(f"| {year} | - | [não disponível] | arquivo ausente | `enem_{year}/dia1_redacao.md` |")
             continue
 
-        theme = str(payload.get("tema") or "").strip()
-        redacao_found = bool(payload.get("redacao_encontrada"))
-        theme_found = bool(payload.get("tema_encontrado"))
+        selected_payload = next(
+            (payload for payload in payloads if bool(payload.get("redacao_encontrada"))),
+            payloads[0],
+        )
+        selected_day = int(selected_payload.get("dia") or 1)
+        md_path = f"enem_{year}/dia{selected_day}_redacao.md"
+
+        theme = str(selected_payload.get("tema") or "").strip()
+        redacao_found = bool(selected_payload.get("redacao_encontrada"))
+        theme_found = bool(selected_payload.get("tema_encontrado"))
 
         if theme_found and theme:
             found_count += 1
@@ -289,7 +300,7 @@ def write_redacao_panorama(results: list[ExtractionResult], out_base: Path, outp
             theme_text = "[seção de redação não encontrada]"
             status = "não encontrada"
 
-        lines.append(f"| {result.year} | {theme_text} | {status} | `{md_path}` |")
+        lines.append(f"| {year} | {selected_day} | {theme_text} | {status} | `{md_path}` |")
 
     lines.insert(3, f"- Temas identificados: **{found_count}**")
     lines.insert(4, f"- Pendências: **{missing_count}**")

@@ -27,6 +27,7 @@ DATE_TIME_PATTERN = re.compile(r"\d{2}/\d{2}/\d{4}\s+\d{2}:\d{2}:\d{2}")
 CONTROL_CHAR_PATTERN = re.compile(r"[\x00-\x08\x0B-\x1F\x7F]")
 REPEATED_ENEM_BANNER_PATTERN = re.compile(r"(?:\bENEM\s*\d{4}\b[\s|]*){2,}", re.IGNORECASE)
 REDACAO_PATTERN = re.compile(r"(?im)^PROPOSTA DE REDA[ÇC][AÃ]O\b")
+REDACAO_PAGE_PATTERN = re.compile(r"(?im)^\s*PROPOSTA DE REDA[ÇC][AÃ]O\b")
 REDACAO_END_HINT_PATTERN = re.compile(
     r"(?im)^QUEST[ÕO]ES DE\s+\d{1,3}\s+A\s+\d{1,3}\b|"
     r"^CI[ÊE]NCIAS HUMANAS\b|"
@@ -131,6 +132,71 @@ def reflow_multicolumn_pages(layout_text: str) -> str:
 def read_exam_text(pdf_path: Path) -> str:
     layout_text = read_pdf_text(pdf_path, layout=True)
     return reflow_multicolumn_pages(layout_text)
+
+
+def detect_redacao_page_numbers(layout_text: str) -> list[int]:
+    pages = layout_text.split("\f")
+    detected: list[int] = []
+
+    for page_number, page_text in enumerate(pages, start=1):
+        if REDACAO_PAGE_PATTERN.search(page_text):
+            detected.append(page_number)
+
+    return detected
+
+
+def render_pdf_page_image(
+    pdf_path: Path,
+    page_number: int,
+    out_png_path: Path,
+    *,
+    dpi: int = 170,
+) -> None:
+    out_png_path.parent.mkdir(parents=True, exist_ok=True)
+    out_prefix = out_png_path.with_suffix("")
+    command = [
+        "pdftoppm",
+        "-f",
+        str(page_number),
+        "-l",
+        str(page_number),
+        "-singlefile",
+        "-r",
+        str(dpi),
+        "-png",
+        str(pdf_path),
+        str(out_prefix),
+    ]
+    subprocess.run(command, capture_output=True, text=True, check=True)
+
+
+def export_redacao_page_images(
+    pdf_path: Path,
+    output_dir: Path,
+    day: int,
+    page_numbers: list[int],
+) -> list[str]:
+    images_dir = output_dir / f"dia{day}_redacao_imagens"
+
+    if images_dir.exists():
+        for stale_png in images_dir.glob("*.png"):
+            stale_png.unlink()
+
+    if not page_numbers:
+        return []
+
+    images_dir.mkdir(parents=True, exist_ok=True)
+    relative_paths: list[str] = []
+    for page_number in page_numbers:
+        image_name = f"pagina_{page_number:02d}.png"
+        image_path = images_dir / image_name
+        try:
+            render_pdf_page_image(pdf_path, page_number, image_path)
+        except subprocess.CalledProcessError:
+            continue
+        relative_paths.append(f"{images_dir.name}/{image_name}")
+
+    return relative_paths
 
 
 def should_drop_line(line: str) -> bool:
@@ -246,10 +312,7 @@ def extract_redacao_theme(section_text: str) -> str | None:
     return None
 
 
-def extract_redacao_record(cleaned_text: str, day: int) -> RedacaoRecord | None:
-    if day != 1:
-        return None
-
+def extract_redacao_record(cleaned_text: str) -> RedacaoRecord | None:
     start_match = REDACAO_PATTERN.search(cleaned_text)
     if not start_match:
         return None
@@ -514,6 +577,7 @@ def parse_day2_gabarito(gabarito_text: str) -> dict[int, Any]:
 
 
 def infer_area(
+    year: int,
     day: int,
     question_number: int,
     area_order: tuple[str, str] | None = None,
@@ -530,16 +594,28 @@ def infer_area(
         if 46 <= question_number <= 90 or 136 <= question_number <= 180:
             return area_order[1]
 
-    if day == 1:
-        if 1 <= question_number <= 45:
-            return "Linguagens"
-        if 46 <= question_number <= 90:
-            return "Ciências Humanas"
-    if day == 2:
-        if 91 <= question_number <= 135:
-            return "Ciências da Natureza"
-        if 136 <= question_number <= 180:
-            return "Matemática"
+    if year <= 2016:
+        if day == 1:
+            if 1 <= question_number <= 45:
+                return "Ciências Humanas"
+            if 46 <= question_number <= 90:
+                return "Ciências da Natureza"
+        if day == 2:
+            if 91 <= question_number <= 135:
+                return "Linguagens"
+            if 136 <= question_number <= 180:
+                return "Matemática"
+    else:
+        if day == 1:
+            if 1 <= question_number <= 45:
+                return "Linguagens"
+            if 46 <= question_number <= 90:
+                return "Ciências Humanas"
+        if day == 2:
+            if 91 <= question_number <= 135:
+                return "Ciências da Natureza"
+            if 136 <= question_number <= 180:
+                return "Matemática"
 
     return "Área não identificada"
 
@@ -627,6 +703,7 @@ def format_gabarito(answer: Any) -> str:
 
 
 def build_records(
+    year: int,
     day: int,
     blocks: list[tuple[int, str]],
     answers: dict[int, Any],
@@ -640,7 +717,13 @@ def build_records(
         counter[number] += 1
         variation = counter[number]
 
-        area = infer_area(day, number, area_order=area_order, area_ranges=area_ranges)
+        area = infer_area(
+            year,
+            day,
+            number,
+            area_order=area_order,
+            area_ranges=area_ranges,
+        )
         answer = answers.get(number)
         content = format_question_block(block)
 
@@ -791,9 +874,14 @@ def diagnostics_to_payload(diagnostics: ExtractionDiagnostics) -> dict[str, Any]
     }
 
 
-def redacao_to_markdown(year: int, record: RedacaoRecord | None) -> str:
+def redacao_to_markdown(
+    year: int,
+    day: int,
+    record: RedacaoRecord | None,
+    image_paths: list[str],
+) -> str:
     lines: list[str] = []
-    lines.append(f"# Redação ENEM {year} — Dia 1")
+    lines.append(f"# Redação ENEM {year} — Dia {day}")
     lines.append("")
     lines.append("Gerado automaticamente a partir do PDF oficial.")
     lines.append("")
@@ -814,6 +902,13 @@ def redacao_to_markdown(year: int, record: RedacaoRecord | None) -> str:
     else:
         lines.append("[SEÇÃO DE REDAÇÃO NÃO IDENTIFICADA NESTA EXTRAÇÃO]")
 
+    if image_paths:
+        lines.append("")
+        lines.append("## Página(s) da Proposta (imagem)")
+        lines.append("")
+        for image_path in image_paths:
+            lines.append(f"![Página da proposta de redação]({image_path})")
+
     lines.append("")
     return "\n".join(lines)
 
@@ -822,11 +917,13 @@ def write_output_files(
     output_dir: Path,
     year: int,
     day: int,
+    prova_pdf_path: Path,
     cleaned_text: str,
     answers: dict[int, Any],
     records: list[QuestionRecord],
     markdown_content: str,
     redacao_record: RedacaoRecord | None,
+    redacao_page_numbers: list[int],
     diagnostics: ExtractionDiagnostics,
     area_order: tuple[str, str] | None,
     area_ranges: list[tuple[int, int, str]],
@@ -861,22 +958,32 @@ def write_output_files(
     )
     markdown_path.write_text(markdown_content, encoding="utf-8")
 
-    if day == 1:
-        redacao_json_path = output_dir / "dia1_redacao.json"
-        redacao_md_path = output_dir / "dia1_redacao.md"
+    redacao_json_path = output_dir / f"dia{day}_redacao.json"
+    redacao_md_path = output_dir / f"dia{day}_redacao.md"
+    redacao_image_paths = export_redacao_page_images(
+        prova_pdf_path,
+        output_dir,
+        day,
+        redacao_page_numbers,
+    )
 
-        redacao_payload = {
-            "ano": year,
-            "dia": 1,
-            "redacao_encontrada": redacao_record is not None,
-            "tema": redacao_record.tema if redacao_record else None,
-            "tema_encontrado": bool(redacao_record and redacao_record.tema),
-        }
-        redacao_json_path.write_text(
-            json.dumps(redacao_payload, ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
-        redacao_md_path.write_text(redacao_to_markdown(year, redacao_record), encoding="utf-8")
+    redacao_payload = {
+        "ano": year,
+        "dia": day,
+        "redacao_encontrada": bool(redacao_record or redacao_page_numbers),
+        "tema": redacao_record.tema if redacao_record else None,
+        "tema_encontrado": bool(redacao_record and redacao_record.tema),
+        "paginas_proposta": redacao_page_numbers,
+        "imagens_proposta": redacao_image_paths,
+    }
+    redacao_json_path.write_text(
+        json.dumps(redacao_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    redacao_md_path.write_text(
+        redacao_to_markdown(year, day, redacao_record, redacao_image_paths),
+        encoding="utf-8",
+    )
 
 
 def main() -> int:
@@ -887,7 +994,8 @@ def main() -> int:
     if not args.gabarito.exists():
         raise FileNotFoundError(f"PDF do gabarito não encontrado: {args.gabarito}")
 
-    prova_raw_text = read_exam_text(args.prova)
+    prova_layout_text = read_pdf_text(args.prova, layout=True)
+    prova_raw_text = reflow_multicolumn_pages(prova_layout_text)
     gabarito_raw_text = read_pdf_text(args.gabarito, layout=True)
 
     cleaned_text = clean_text(prova_raw_text)
@@ -905,6 +1013,7 @@ def main() -> int:
         answers = parse_day2_gabarito(gabarito_raw_text)
 
     records = build_records(
+        args.ano,
         args.dia,
         question_blocks,
         answers,
@@ -919,17 +1028,20 @@ def main() -> int:
         answers=answers,
     )
     markdown_content = records_to_markdown(args.ano, args.dia, records)
-    redacao_record = extract_redacao_record(cleaned_text, args.dia)
+    redacao_record = extract_redacao_record(cleaned_text)
+    redacao_page_numbers = detect_redacao_page_numbers(prova_layout_text)
 
     write_output_files(
         args.outdir,
         args.ano,
         args.dia,
+        args.prova,
         cleaned_text,
         answers,
         records,
         markdown_content,
         redacao_record,
+        redacao_page_numbers,
         diagnostics,
         area_order,
         area_ranges,
@@ -941,6 +1053,10 @@ def main() -> int:
         f"únicas={diagnostics.unique_questions} | faltantes={len(diagnostics.missing_questions)} | "
         f"fora_faixa={len(diagnostics.out_of_range_questions)} | "
         f"dup_nao_idioma={len(diagnostics.duplicate_non_language)}"
+    )
+    print(
+        f"[diag] redação: seção={'sim' if redacao_record else 'não'} | "
+        f"paginas_proposta={','.join(str(page) for page in redacao_page_numbers) or '-'}"
     )
     print(f"[ok] Saída: {args.outdir}")
     return 0
