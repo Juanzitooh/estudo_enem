@@ -177,6 +177,30 @@ class QuestionCardItem {
   final String answer;
 }
 
+class AttemptRecord {
+  const AttemptRecord({
+    required this.questionId,
+    required this.year,
+    required this.day,
+    required this.number,
+    required this.variation,
+    required this.skill,
+    required this.competency,
+    required this.isCorrect,
+    required this.answeredAt,
+  });
+
+  final String questionId;
+  final int year;
+  final int day;
+  final int number;
+  final int variation;
+  final String skill;
+  final String competency;
+  final bool isCorrect;
+  final String answeredAt;
+}
+
 class EssaySessionInput {
   const EssaySessionInput({
     required this.themeTitle,
@@ -978,6 +1002,50 @@ class LocalDatabase {
   Future<int> countAttempts(Database db) async {
     final result = await db.rawQuery('SELECT COUNT(*) AS c FROM progress');
     return Sqflite.firstIntValue(result) ?? 0;
+  }
+
+  Future<List<AttemptRecord>> loadRecentAttempts(
+    Database db, {
+    int limit = 10,
+  }) async {
+    final safeLimit = limit <= 0 ? 10 : limit.clamp(1, 200);
+    final rows = await db.rawQuery(
+      '''
+      SELECT
+        p.question_id AS question_id,
+        q.year AS year,
+        q.day AS day,
+        q.number AS number,
+        COALESCE(q.variation, 1) AS variation,
+        COALESCE(q.skill, '') AS skill,
+        COALESCE(q.competency, '') AS competency,
+        p.is_correct AS is_correct,
+        p.answered_at AS answered_at
+      FROM progress p
+      LEFT JOIN questions q ON q.id = p.question_id
+      ORDER BY p.answered_at DESC, p.id DESC
+      LIMIT ?
+      ''',
+      [safeLimit],
+    );
+
+    return rows
+        .map(
+          (row) => AttemptRecord(
+            questionId: (row['question_id'] ?? '').toString(),
+            year: _toInt(row['year']),
+            day: _toInt(row['day']),
+            number: _toInt(row['number']),
+            variation:
+                _toInt(row['variation']) <= 0 ? 1 : _toInt(row['variation']),
+            skill: (row['skill'] ?? '').toString(),
+            competency: (row['competency'] ?? '').toString(),
+            isCorrect: _toBool(row['is_correct']),
+            answeredAt: (row['answered_at'] ?? '').toString(),
+          ),
+        )
+        .where((item) => item.questionId.isNotEmpty)
+        .toList();
   }
 
   Future<QuestionFilterOptions> loadQuestionFilterOptions(Database db) async {

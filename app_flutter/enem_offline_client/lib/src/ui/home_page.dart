@@ -28,6 +28,8 @@ class _HomePageState extends State<HomePage> {
       TextEditingController(text: '20');
   final TextEditingController _simuladoTempoPorQuestaoController =
       TextEditingController(text: '3');
+  final TextEditingController _treinoQuantidadeController =
+      TextEditingController(text: '10');
   final TextEditingController _matchMateriaController = TextEditingController();
   final TextEditingController _matchAssuntoController = TextEditingController();
   final TextEditingController _matchScoreController = TextEditingController(
@@ -54,9 +56,18 @@ class _HomePageState extends State<HomePage> {
   String _databasePath = '-';
   QuestionFilterOptions _questionFilterOptions = const QuestionFilterOptions();
   List<QuestionCardItem> _filteredQuestions = const [];
+  List<QuestionCardItem> _treinoQuestions = const [];
+  int _treinoCurrentIndex = 0;
+  int _treinoAcertos = 0;
+  int _treinoErros = 0;
+  bool _treinoEmbaralhar = true;
+  bool _treinoRespondida = false;
+  String _treinoRespostaSelecionada = '';
+  String _treinoFeedback = '';
   List<QuestionCardItem> _simuladoQuestions = const [];
   int _simuladoTempoTotalMinutos = 0;
   bool _simuladoEmbaralhar = true;
+  List<AttemptRecord> _recentAttempts = const [];
   List<WeakSkillStat> _weakSkills = const [];
   List<ModuleSuggestion> _moduleSuggestions = const [];
   List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
@@ -89,6 +100,7 @@ class _HomePageState extends State<HomePage> {
     _questionLimitController.dispose();
     _simuladoQuantidadeController.dispose();
     _simuladoTempoPorQuestaoController.dispose();
+    _treinoQuantidadeController.dispose();
     _matchMateriaController.dispose();
     _matchAssuntoController.dispose();
     _matchScoreController.dispose();
@@ -175,6 +187,31 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  int _readTreinoQuantidade() {
+    final parsed = int.tryParse(_treinoQuantidadeController.text.trim());
+    if (parsed == null || parsed <= 0) {
+      return 10;
+    }
+    if (parsed > 50) {
+      return 50;
+    }
+    return parsed;
+  }
+
+  QuestionFilter _buildTreinoPoolFilter() {
+    return QuestionFilter(
+      year: _questionYearSelecionado,
+      day: _questionDaySelecionado,
+      area: _questionAreaSelecionada,
+      discipline: _questionDisciplineSelecionada,
+      materia: _questionMateriaSelecionada,
+      competency: _questionCompetencySelecionada,
+      skill: _questionSkillSelecionada,
+      hasImage: _readHasImageFilter(),
+      limit: 200,
+    );
+  }
+
   double _readMinScore() {
     final parsed = double.tryParse(
       _matchScoreController.text.trim().replaceAll(',', '.'),
@@ -215,6 +252,8 @@ class _HomePageState extends State<HomePage> {
       db,
       filter: _buildQuestionFilter(),
     );
+    final recentAttempts =
+        await _localDatabase.loadRecentAttempts(db, limit: 10);
     final moduleSuggestions = await _localDatabase.recommendModulesByWeakSkills(
       db,
       weakSkillLimit: 3,
@@ -246,6 +285,7 @@ class _HomePageState extends State<HomePage> {
       _databasePath = databasePath;
       _questionFilterOptions = questionFilterOptions;
       _filteredQuestions = filteredQuestions;
+      _recentAttempts = recentAttempts;
       _weakSkills = weakSkills;
       _moduleSuggestions = moduleSuggestions;
       _moduleQuestionMatches = moduleQuestionMatches;
@@ -443,6 +483,187 @@ class _HomePageState extends State<HomePage> {
       _questionHasImageSelecionado = '';
     });
     await _applyQuestionFilters();
+  }
+
+  QuestionCardItem? get _currentTreinoQuestion {
+    if (_treinoQuestions.isEmpty) {
+      return null;
+    }
+    if (_treinoCurrentIndex < 0 ||
+        _treinoCurrentIndex >= _treinoQuestions.length) {
+      return null;
+    }
+    return _treinoQuestions[_treinoCurrentIndex];
+  }
+
+  Future<void> _iniciarTreino() async {
+    setState(() {
+      _busy = true;
+      _status = 'Montando sessão de treino...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      final pool = await _localDatabase.searchQuestions(
+        db,
+        filter: _buildTreinoPoolFilter(),
+      );
+      if (pool.isEmpty) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {
+          _treinoQuestions = const [];
+          _treinoCurrentIndex = 0;
+          _treinoAcertos = 0;
+          _treinoErros = 0;
+          _treinoRespondida = false;
+          _treinoRespostaSelecionada = '';
+          _treinoFeedback = '';
+          _status = 'Sem questões para treino com os filtros atuais.';
+        });
+        return;
+      }
+
+      final quantidade = _readTreinoQuantidade();
+      final ordered = List<QuestionCardItem>.from(pool);
+      if (_treinoEmbaralhar) {
+        ordered.shuffle(Random());
+      }
+      final selecionadas = ordered.take(quantidade).toList();
+
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _treinoQuestions = selecionadas;
+        _treinoCurrentIndex = 0;
+        _treinoAcertos = 0;
+        _treinoErros = 0;
+        _treinoRespondida = false;
+        _treinoRespostaSelecionada = '';
+        _treinoFeedback = '';
+        _status = 'Treino iniciado com ${selecionadas.length} questão(ões).';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao iniciar treino: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _responderTreino(String alternativa) async {
+    final current = _currentTreinoQuestion;
+    if (current == null || _treinoRespondida) {
+      return;
+    }
+
+    final answer = current.answer.trim().toUpperCase();
+    if (answer.isEmpty) {
+      setState(() {
+        _treinoRespondida = true;
+        _treinoRespostaSelecionada = alternativa;
+        _treinoFeedback =
+            'Gabarito indisponível para esta questão. Tentativa não registrada.';
+        _status = 'Questão sem gabarito no banco.';
+      });
+      return;
+    }
+
+    final isCorrect = alternativa.toUpperCase() == answer;
+    setState(() {
+      _busy = true;
+      _status = isCorrect
+          ? 'Registrando acerto do treino...'
+          : 'Registrando erro do treino...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      await _localDatabase.recordAnswer(
+        db,
+        questionId: current.id,
+        isCorrect: isCorrect,
+      );
+      await _refreshStats();
+
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _treinoRespondida = true;
+        _treinoRespostaSelecionada = alternativa.toUpperCase();
+        if (isCorrect) {
+          _treinoAcertos += 1;
+        } else {
+          _treinoErros += 1;
+        }
+        _treinoFeedback = isCorrect
+            ? 'Correto! Resposta: $answer.'
+            : 'Incorreto. Sua resposta: ${alternativa.toUpperCase()} | Gabarito: $answer.';
+        _status = isCorrect
+            ? 'Acerto registrado no treino.'
+            : 'Erro registrado no treino.';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao registrar resposta de treino: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  void _proximaTreino() {
+    if (_treinoQuestions.isEmpty) {
+      return;
+    }
+    final nextIndex = _treinoCurrentIndex + 1;
+    if (nextIndex >= _treinoQuestions.length) {
+      final answered = _treinoAcertos + _treinoErros;
+      final accuracy = answered <= 0 ? 0 : (_treinoAcertos / answered) * 100;
+      setState(() {
+        _status =
+            'Treino concluído. Acertos: $_treinoAcertos | Erros: $_treinoErros | Acurácia ${accuracy.toStringAsFixed(1)}%.';
+      });
+      return;
+    }
+
+    setState(() {
+      _treinoCurrentIndex = nextIndex;
+      _treinoRespondida = false;
+      _treinoRespostaSelecionada = '';
+      _treinoFeedback = '';
+    });
+  }
+
+  void _encerrarTreino() {
+    setState(() {
+      _treinoQuestions = const [];
+      _treinoCurrentIndex = 0;
+      _treinoAcertos = 0;
+      _treinoErros = 0;
+      _treinoRespondida = false;
+      _treinoRespostaSelecionada = '';
+      _treinoFeedback = '';
+      _status = 'Sessão de treino encerrada.';
+    });
   }
 
   String _buildSimuladoDistribuicaoResumo(List<QuestionCardItem> items) {
@@ -775,6 +996,190 @@ class _HomePageState extends State<HomePage> {
                   'Skill ${item.matchedSkill} -> Vol ${item.volume} | ${item.materia} '
                   '| Módulo ${item.modulo} | pág. ${item.page.isEmpty ? '-' : item.page} '
                   '${item.title.isEmpty ? '' : '| ${item.title}'}',
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTreinoCard() {
+    final question = _currentTreinoQuestion;
+    final answered = _treinoAcertos + _treinoErros;
+    final accuracy = answered <= 0 ? 0 : (_treinoAcertos / answered) * 100;
+    const alternativas = ['A', 'B', 'C', 'D', 'E'];
+
+    String previewText(String value) {
+      final normalized = value.trim().replaceAll('\n', ' ');
+      if (normalized.length <= 600) {
+        return normalized;
+      }
+      return '${normalized.substring(0, 600)}...';
+    }
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Modo treino por habilidade (correção imediata)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                SizedBox(
+                  width: 180,
+                  child: TextField(
+                    controller: _treinoQuantidadeController,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Qtde treino',
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 220,
+                  child: CheckboxListTile(
+                    value: _treinoEmbaralhar,
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _treinoEmbaralhar = value ?? true;
+                            });
+                          },
+                    title: const Text('Embaralhar'),
+                    controlAffinity: ListTileControlAffinity.leading,
+                    dense: true,
+                    contentPadding: EdgeInsets.zero,
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: _busy ? null : _iniciarTreino,
+                  child: const Text('Iniciar treino'),
+                ),
+                OutlinedButton(
+                  onPressed: _busy ? null : _encerrarTreino,
+                  child: const Text('Encerrar'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text('Sessão: ${_treinoQuestions.length} questão(ões)'),
+            Text(
+                'Respondidas: $answered | Acurácia: ${accuracy.toStringAsFixed(1)}%'),
+            if (question == null)
+              const Padding(
+                padding: EdgeInsets.only(top: 8),
+                child: Text(
+                    'Inicie uma sessão para começar a responder questões.'),
+              )
+            else
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(height: 8),
+                  Text(
+                    'Questão ${_treinoCurrentIndex + 1}/${_treinoQuestions.length} '
+                    '| ${question.year}/${question.day}/${question.number}'
+                    '${question.variation > 1 ? ' (v${question.variation})' : ''}',
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    '${question.area} | ${question.discipline}'
+                    '${question.skill.isEmpty ? '' : ' | ${question.skill}'}',
+                  ),
+                  const SizedBox(height: 6),
+                  Text(previewText(question.statement)),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: alternativas
+                        .map(
+                          (option) => OutlinedButton(
+                            onPressed: _busy || _treinoRespondida
+                                ? null
+                                : () => _responderTreino(option),
+                            child: Text(option),
+                          ),
+                        )
+                        .toList(),
+                  ),
+                  if (_treinoRespostaSelecionada.isNotEmpty)
+                    Text('Resposta marcada: $_treinoRespostaSelecionada'),
+                  if (_treinoFeedback.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 6),
+                      child: Text(_treinoFeedback),
+                    ),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      ElevatedButton(
+                        onPressed:
+                            _busy || !_treinoRespondida ? null : _proximaTreino,
+                        child: const Text('Próxima questão'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildRecentAttemptsCard() {
+    String compactDate(String raw) {
+      if (raw.trim().isEmpty) {
+        return '-';
+      }
+      final parsed = DateTime.tryParse(raw);
+      if (parsed == null) {
+        return raw;
+      }
+      final local = parsed.toLocal();
+      final dd = local.day.toString().padLeft(2, '0');
+      final mm = local.month.toString().padLeft(2, '0');
+      final hh = local.hour.toString().padLeft(2, '0');
+      final min = local.minute.toString().padLeft(2, '0');
+      return '$dd/$mm $hh:$min';
+    }
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Histórico recente de tentativas',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            if (_recentAttempts.isEmpty)
+              const Text('Sem tentativas registradas ainda.')
+            else
+              ..._recentAttempts.map(
+                (attempt) => Text(
+                  '${attempt.isCorrect ? 'Acerto' : 'Erro'} | '
+                  'Q ${attempt.year}/${attempt.day}/${attempt.number}'
+                  '${attempt.variation > 1 ? ' (v${attempt.variation})' : ''} | '
+                  '${attempt.skill.isEmpty ? '-' : attempt.skill} | '
+                  '${attempt.competency.isEmpty ? '-' : attempt.competency} | '
+                  '${compactDate(attempt.answeredAt)}',
                 ),
               ),
           ],
@@ -1570,6 +1975,10 @@ class _HomePageState extends State<HomePage> {
             _buildWeakSkillsCard(),
             const SizedBox(height: 12),
             _buildModuleSuggestionsCard(),
+            const SizedBox(height: 12),
+            _buildRecentAttemptsCard(),
+            const SizedBox(height: 12),
+            _buildTreinoCard(),
             const SizedBox(height: 12),
             _buildQuestionFiltersCard(),
             const SizedBox(height: 12),
