@@ -63,7 +63,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Sugestão automática de próximos blocos de estudo.
 
 ### Fluxo adaptativo de aprofundamento por erros
-- [ ] Implementar simulado diagnóstico por matéria com distribuição 3 fáceis + 3 médias + 3 difíceis.
+- [x] Implementar simulado diagnóstico por matéria com distribuição 3 fáceis + 3 médias + 3 difíceis.
 - [ ] Exibir resultado do diagnóstico com score por matéria, Top 5 habilidades em déficit e erro dominante.
 - [x] Criar tela "Habilidades em foco" com domínio (%), causa provável da queda e ações rápidas.
 - [x] Disponibilizar ações por habilidade: Treinar agora (10 questões), Revisar teoria e Copiar prompt de estudo.
