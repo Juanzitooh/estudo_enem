@@ -4,7 +4,7 @@ Gerado automaticamente a partir do PDF oficial.
 
 ## Tema
 
-[TEMA NÃO IDENTIFICADO]
+Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil
 
 ## Proposta e textos motivadores
 
