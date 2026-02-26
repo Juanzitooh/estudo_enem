@@ -3,5 +3,11 @@
   "dia": 1,
   "redacao_encontrada": true,
   "tema": "O estigma associado às doenças mentais na sociedade brasileira",
-  "tema_encontrado": true
+  "tema_encontrado": true,
+  "paginas_proposta": [
+    19
+  ],
+  "imagens_proposta": [
+    "dia1_redacao_imagens/pagina_19.png"
+  ]
 }

@@ -94,3 +94,7 @@ copiadas desconsiderado para a contagem de linhas.
 4.2. fugir ao tema ou não atender ao tipo dissertativo-argumentativo;
 4.3. apresentar parte do texto deliberadamente desconectada do tema proposto;
 4.4. apresentar nome, assinatura, rubrica ou outras formas de identificação no espaço destinado ao texto.
+
+## Página(s) da Proposta (imagem)
+
+![Página da proposta de redação](dia1_redacao_imagens/pagina_20.png)

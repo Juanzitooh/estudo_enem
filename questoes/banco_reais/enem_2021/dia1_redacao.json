@@ -3,5 +3,11 @@
   "dia": 1,
   "redacao_encontrada": true,
   "tema": null,
-  "tema_encontrado": false
+  "tema_encontrado": false,
+  "paginas_proposta": [
+    21
+  ],
+  "imagens_proposta": [
+    "dia1_redacao_imagens/pagina_21.png"
+  ]
 }

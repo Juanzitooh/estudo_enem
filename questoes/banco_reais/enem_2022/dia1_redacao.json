@@ -3,5 +3,11 @@
   "dia": 1,
   "redacao_encontrada": true,
   "tema": "Desafios para a valorização de comunidades e povos tradicionais no Brasil",
-  "tema_encontrado": true
+  "tema_encontrado": true,
+  "paginas_proposta": [
+    20
+  ],
+  "imagens_proposta": [
+    "dia1_redacao_imagens/pagina_20.png"
+  ]
 }

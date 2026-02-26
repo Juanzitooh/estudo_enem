@@ -51,3 +51,7 @@ Alunos admiram grafite de Zumbi dos
 Palmares na Pedra do Sal.
 Disponível em: www.oglobo.com. Acesso em:
 29 maio 2024 (adaptado).
+
+## Página(s) da Proposta (imagem)
+
+![Página da proposta de redação](dia1_redacao_imagens/pagina_19.png)

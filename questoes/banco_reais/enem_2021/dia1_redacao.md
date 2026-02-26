@@ -21,3 +21,7 @@ K
 ( 8 4 F k
 ( (
 !" K   " K ;B! K  ;( *+ 21
+
+## Página(s) da Proposta (imagem)
+
+![Página da proposta de redação](dia1_redacao_imagens/pagina_21.png)

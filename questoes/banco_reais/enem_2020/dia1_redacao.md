@@ -15,3 +15,7 @@ sobre o tema “O estigma associado às doenças mentais na sociedade brasileira
 intervenção que respeite os direitos humanos. Selecione, organize e relacione, de forma coerente e coesa,
 argumentos e fatos para defesa de seu ponto de vista.
 LC - 1° dia | Caderno 1 - AZUL - Página 19
+
+## Página(s) da Proposta (imagem)
+
+![Página da proposta de redação](dia1_redacao_imagens/pagina_19.png)

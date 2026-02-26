@@ -15,3 +15,7 @@ redija um texto dissertativo-argumentativo em modalidade escrita formal da líng
 intervenção que respeite os direitos humanos. Selecione, organize e relacione, de forma coerente e coesa,
 argumentos e fatos para a defesa de seu ponto de vista.
 20 LC - 1° dia | Caderno 1 - AZUL - 1ª Aplicação
+
+## Página(s) da Proposta (imagem)
+
+![Página da proposta de redação](dia1_redacao_imagens/pagina_20.png)

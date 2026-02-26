@@ -3,5 +3,7 @@
   "dia": 1,
   "redacao_encontrada": false,
   "tema": null,
-  "tema_encontrado": false
+  "tema_encontrado": false,
+  "paginas_proposta": [],
+  "imagens_proposta": []
 }
