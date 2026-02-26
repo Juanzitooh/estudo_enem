@@ -96,6 +96,8 @@ No app:
 - use navegação rápida por `Volume`, `Área`, `Matéria` e `Módulo` com o botão `Ir para`;
 - use `Próx. não preenchido` para saltar para o próximo registro com algum campo pendente;
 - preencha `Título`, `Página`, `Habilidades` e `Expectativas de Aprendizagem`;
+- use `Tipo do módulo = exercicios` para módulos de lista/exercícios (nesse caso, habilidades/expectativas podem ficar vazias);
+- em `Referência (módulos)`, informe de quais módulos o bloco de exercícios depende (ex.: `m3; m4`);
 - em Linguagens, o índice contempla `Língua Portuguesa`, `Literatura`, `Redação` e `Inglês` (5 módulos por volume);
 - em `Habilidades`, pode usar vírgula ou `;` (o app salva em formato normalizado, ex.: `c2; c6; c2-h19`);
 - em `Expectativas de Aprendizagem`, liste 2-4 itens curtos (uma por linha ou separados por `;`);
