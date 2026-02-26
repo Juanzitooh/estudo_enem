@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../config/app_config.dart';
 import '../data/local_database.dart';
+import '../essay/essay_feedback_parser.dart';
 import '../essay/essay_prompt_builder.dart';
 import '../update/content_updater.dart';
 
@@ -26,6 +27,8 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _essayThemeController = TextEditingController();
   final TextEditingController _essayFocusController = TextEditingController();
   final TextEditingController _essayContextController = TextEditingController();
+  final TextEditingController _essayFeedbackController =
+      TextEditingController();
 
   bool _busy = false;
   String _status = 'Pronto.';
@@ -34,13 +37,17 @@ class _HomePageState extends State<HomePage> {
   int _questionCount = 0;
   int _bookModuleCount = 0;
   int _moduleQuestionMatchCount = 0;
+  int _essaySessionCount = 0;
   int _attemptCount = 0;
   double _globalAccuracy = 0;
   String _databasePath = '-';
   List<WeakSkillStat> _weakSkills = const [];
   List<ModuleSuggestion> _moduleSuggestions = const [];
   List<ModuleQuestionMatch> _moduleQuestionMatches = const [];
+  List<EssaySessionRecord> _recentEssaySessions = const [];
   String _matchTipoSelecionado = '';
+  String _essayThemeSourceSelecionado = 'ia';
+  String _essayParserModeSelecionado = EssayParserMode.livre.value;
 
   @override
   void initState() {
@@ -57,6 +64,7 @@ class _HomePageState extends State<HomePage> {
     _essayThemeController.dispose();
     _essayFocusController.dispose();
     _essayContextController.dispose();
+    _essayFeedbackController.dispose();
     super.dispose();
   }
 
@@ -93,6 +101,7 @@ class _HomePageState extends State<HomePage> {
     final bookModuleCount = await _localDatabase.countBookModules(db);
     final moduleQuestionMatchCount =
         await _localDatabase.countModuleQuestionMatches(db);
+    final essaySessionCount = await _localDatabase.countEssaySessions(db);
     final attemptCount = await _localDatabase.countAttempts(db);
     final accuracy = await _localDatabase.globalAccuracy(db);
     final databasePath = await _localDatabase.databasePath();
@@ -108,6 +117,10 @@ class _HomePageState extends State<HomePage> {
       db,
       filter: _buildMatchFilter(),
     );
+    final recentEssaySessions = await _localDatabase.loadRecentEssaySessions(
+      db,
+      limit: 5,
+    );
     final version = await _localDatabase.getContentVersion(db);
 
     if (!mounted) {
@@ -117,12 +130,14 @@ class _HomePageState extends State<HomePage> {
       _questionCount = questionCount;
       _bookModuleCount = bookModuleCount;
       _moduleQuestionMatchCount = moduleQuestionMatchCount;
+      _essaySessionCount = essaySessionCount;
       _attemptCount = attemptCount;
       _globalAccuracy = accuracy;
       _databasePath = databasePath;
       _weakSkills = weakSkills;
       _moduleSuggestions = moduleSuggestions;
       _moduleQuestionMatches = moduleQuestionMatches;
+      _recentEssaySessions = recentEssaySessions;
       _contentVersion = version;
     });
   }
@@ -324,6 +339,106 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  String _formatScore(int? score) {
+    if (score == null) {
+      return '-';
+    }
+    return '$score';
+  }
+
+  Future<void> _analyzeAndSaveEssaySession() async {
+    final rawFeedback = _essayFeedbackController.text.trim();
+    if (rawFeedback.isEmpty) {
+      setState(() {
+        _status = 'Cole o retorno da IA para analisar/salvar a sessão.';
+      });
+      return;
+    }
+
+    final parserMode = EssayParserMode.fromValue(_essayParserModeSelecionado);
+    final parsed = EssayFeedbackParser.parse(
+      rawFeedback: rawFeedback,
+      mode: parserMode,
+    );
+
+    if (!parsed.isValid && parserMode == EssayParserMode.validado) {
+      setState(() {
+        _status =
+            'Formato inválido no modo validado. Esperado C1..C5 no texto da IA.';
+      });
+      return;
+    }
+
+    setState(() {
+      _busy = true;
+      _status = 'Salvando sessão de redação...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      final themeTitle = _essayThemeController.text.trim().isEmpty
+          ? 'Tema não informado'
+          : _essayThemeController.text.trim();
+      final generatedPrompt = EssayPromptBuilder.buildThemeGenerationPrompt(
+        focusHint: _essayFocusController.text.trim(),
+      );
+      final correctionPrompt = EssayPromptBuilder.buildCorrectionPrompt(
+        themeTitle: themeTitle,
+        studentContext: _essayContextController.text.trim(),
+      );
+
+      await _localDatabase.insertEssaySession(
+        db,
+        input: EssaySessionInput(
+          themeTitle: themeTitle,
+          themeSource: _essayThemeSourceSelecionado,
+          generatedPrompt: generatedPrompt,
+          correctionPrompt: correctionPrompt,
+          submittedText: '',
+          submittedPhotoPath: '',
+          iaFeedbackRaw: _essayFeedbackController.text,
+          parserMode: parserMode.value,
+          c1Score: parsed.c1,
+          c2Score: parsed.c2,
+          c3Score: parsed.c3,
+          c4Score: parsed.c4,
+          c5Score: parsed.c5,
+          finalScore: parsed.finalScore,
+          legibilityWarning: parsed.hasLegibilityWarning,
+        ),
+      );
+
+      await _refreshStats();
+      if (!mounted) {
+        return;
+      }
+
+      final legibilityNote = parsed.hasLegibilityWarning
+          ? ' | alerta de legibilidade: ${parsed.illegibleCount} [ILEGÍVEL]'
+          : '';
+      setState(() {
+        _status =
+            'Sessão salva | C1 ${_formatScore(parsed.c1)} C2 ${_formatScore(parsed.c2)} '
+            'C3 ${_formatScore(parsed.c3)} C4 ${_formatScore(parsed.c4)} '
+            'C5 ${_formatScore(parsed.c5)} | Final ${_formatScore(parsed.finalScore)}'
+            '$legibilityNote';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao salvar sessão de redação: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
   Widget _buildWeakSkillsCard() {
     return Card(
       child: Padding(
@@ -484,6 +599,9 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildEssayPromptBuilderCard() {
+    const themeSources = ['ia', 'offline'];
+    const parserModes = ['livre', 'validado'];
+
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -524,6 +642,62 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             const SizedBox(height: 8),
+            Row(
+              children: [
+                Expanded(
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey(_essayThemeSourceSelecionado),
+                    initialValue: _essayThemeSourceSelecionado,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Origem do tema',
+                    ),
+                    items: themeSources
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _essayThemeSourceSelecionado = value ?? 'ia';
+                            });
+                          },
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: DropdownButtonFormField<String>(
+                    key: ValueKey(_essayParserModeSelecionado),
+                    initialValue: _essayParserModeSelecionado,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Parser de feedback IA',
+                    ),
+                    items: parserModes
+                        .map(
+                          (value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            setState(() {
+                              _essayParserModeSelecionado = value ?? 'livre';
+                            });
+                          },
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
             Wrap(
               spacing: 8,
               runSpacing: 8,
@@ -539,12 +713,47 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             const SizedBox(height: 8),
+            TextField(
+              controller: _essayFeedbackController,
+              maxLines: 6,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Retorno da IA (colar aqui para salvar sessão)',
+                helperText:
+                    'No modo validado, o parser exige C1..C5 no feedback.',
+              ),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                ElevatedButton(
+                  onPressed: _busy ? null : _analyzeAndSaveEssaySession,
+                  child: const Text('Analisar + salvar sessão'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
             if (_essayPromptPreview.isEmpty)
               const Text(
                 'Ainda sem prompt gerado nesta sessão. Clique em um botão para copiar.',
               )
             else
               SelectableText(_essayPromptPreview),
+            const SizedBox(height: 8),
+            Text('Sessões de redação salvas: $_essaySessionCount'),
+            const SizedBox(height: 8),
+            if (_recentEssaySessions.isEmpty)
+              const Text('Sem sessões de redação salvas ainda.')
+            else
+              ..._recentEssaySessions.map(
+                (session) => Text(
+                  '#${session.id} | ${session.themeTitle} | ${session.parserMode} '
+                  '| Final ${_formatScore(session.finalScore)}'
+                  '${session.legibilityWarning ? ' | alerta legibilidade' : ''}',
+                ),
+              ),
           ],
         ),
       ),
@@ -574,6 +783,7 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       'Vínculos módulo x questão: $_moduleQuestionMatchCount',
                     ),
+                    Text('Sessões de redação: $_essaySessionCount'),
                     Text('Tentativas registradas: $_attemptCount'),
                     Text('Acurácia global: ${_percent(_globalAccuracy)}%'),
                     Text('Banco local: $_databasePath'),

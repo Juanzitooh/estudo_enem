@@ -101,6 +101,72 @@ class ModuleQuestionMatchFilter {
   final int limit;
 }
 
+class EssaySessionInput {
+  const EssaySessionInput({
+    required this.themeTitle,
+    required this.themeSource,
+    required this.generatedPrompt,
+    required this.correctionPrompt,
+    required this.submittedText,
+    required this.submittedPhotoPath,
+    required this.iaFeedbackRaw,
+    required this.parserMode,
+    required this.c1Score,
+    required this.c2Score,
+    required this.c3Score,
+    required this.c4Score,
+    required this.c5Score,
+    required this.finalScore,
+    required this.legibilityWarning,
+  });
+
+  final String themeTitle;
+  final String themeSource;
+  final String generatedPrompt;
+  final String correctionPrompt;
+  final String submittedText;
+  final String submittedPhotoPath;
+  final String iaFeedbackRaw;
+  final String parserMode;
+  final int? c1Score;
+  final int? c2Score;
+  final int? c3Score;
+  final int? c4Score;
+  final int? c5Score;
+  final int? finalScore;
+  final bool legibilityWarning;
+}
+
+class EssaySessionRecord {
+  const EssaySessionRecord({
+    required this.id,
+    required this.themeTitle,
+    required this.themeSource,
+    required this.parserMode,
+    required this.legibilityWarning,
+    required this.createdAt,
+    this.c1Score,
+    this.c2Score,
+    this.c3Score,
+    this.c4Score,
+    this.c5Score,
+    this.finalScore,
+  });
+
+  final int id;
+  final String themeTitle;
+  final String themeSource;
+  final String parserMode;
+  final bool legibilityWarning;
+  final String createdAt;
+  final int? c1Score;
+  final int? c2Score;
+  final int? c3Score;
+  final int? c4Score;
+  final int? c5Score;
+  final int? finalScore;
+}
+
 class LocalDatabase {
   LocalDatabase();
 
@@ -113,9 +179,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 6,
+      version: 7,
       onCreate: (db, _) async {
-        await _createSchemaV6(db);
+        await _createSchemaV7(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -129,6 +195,9 @@ class LocalDatabase {
         }
         if (oldVersion < 6) {
           await _createModuleQuestionMatchesTable(db);
+        }
+        if (oldVersion < 7) {
+          await _createEssaySessionsTable(db);
         }
       },
     );
@@ -258,6 +327,11 @@ class LocalDatabase {
     }
   }
 
+  Future<void> _createSchemaV7(Database db) async {
+    await _createSchemaV6(db);
+    await _createEssaySessionsTable(db);
+  }
+
   Future<void> _createSchemaV6(Database db) async {
     await _createSchemaV5(db);
     await _createModuleQuestionMatchesTable(db);
@@ -367,6 +441,40 @@ class LocalDatabase {
     ''');
   }
 
+  Future<void> _createEssaySessionsTable(DatabaseExecutor db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS essay_sessions (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        theme_title TEXT NOT NULL,
+        theme_source TEXT NOT NULL,
+        generated_prompt TEXT,
+        correction_prompt TEXT,
+        submitted_text TEXT,
+        submitted_photo_path TEXT,
+        ia_feedback_raw TEXT,
+        parser_mode TEXT NOT NULL DEFAULT 'livre',
+        c1_score INTEGER,
+        c2_score INTEGER,
+        c3_score INTEGER,
+        c4_score INTEGER,
+        c5_score INTEGER,
+        final_score INTEGER,
+        legibility_warning INTEGER NOT NULL DEFAULT 0,
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+      )
+    ''');
+
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_essay_sessions_created_at
+      ON essay_sessions (created_at DESC)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_essay_sessions_theme_source
+      ON essay_sessions (theme_source, parser_mode)
+    ''');
+  }
+
   Future<void> _ensureBookModulesSchemaV4(Database db) async {
     final columns = await db.rawQuery("PRAGMA table_info('book_modules')");
     final names = columns
@@ -449,6 +557,20 @@ class LocalDatabase {
         normalized == 'sim' ||
         normalized == 'yes' ||
         normalized == 'y';
+  }
+
+  int? _toOptionalInt(Object? value) {
+    if (value == null) {
+      return null;
+    }
+    if (value is int) {
+      return value;
+    }
+    if (value is num) {
+      return value.toInt();
+    }
+    final parsed = int.tryParse('$value'.trim());
+    return parsed;
   }
 
   String _normalizeSkillToken(String rawValue) {
@@ -694,9 +816,97 @@ class LocalDatabase {
     return Sqflite.firstIntValue(result) ?? 0;
   }
 
+  Future<int> countEssaySessions(Database db) async {
+    final result =
+        await db.rawQuery('SELECT COUNT(*) AS c FROM essay_sessions');
+    return Sqflite.firstIntValue(result) ?? 0;
+  }
+
   Future<int> countAttempts(Database db) async {
     final result = await db.rawQuery('SELECT COUNT(*) AS c FROM progress');
     return Sqflite.firstIntValue(result) ?? 0;
+  }
+
+  Future<void> insertEssaySession(
+    Database db, {
+    required EssaySessionInput input,
+  }) async {
+    final now = DateTime.now().toIso8601String();
+    final normalizedTheme = input.themeTitle.trim().isEmpty
+        ? 'Tema não informado'
+        : input.themeTitle.trim();
+    final normalizedThemeSource =
+        input.themeSource.trim().isEmpty ? 'ia' : input.themeSource.trim();
+    final normalizedParserMode =
+        input.parserMode.trim().isEmpty ? 'livre' : input.parserMode.trim();
+
+    await db.insert(
+      'essay_sessions',
+      {
+        'theme_title': normalizedTheme,
+        'theme_source': normalizedThemeSource,
+        'generated_prompt': input.generatedPrompt.trim(),
+        'correction_prompt': input.correctionPrompt.trim(),
+        'submitted_text': input.submittedText.trim(),
+        'submitted_photo_path': input.submittedPhotoPath.trim(),
+        'ia_feedback_raw': input.iaFeedbackRaw,
+        'parser_mode': normalizedParserMode,
+        'c1_score': input.c1Score,
+        'c2_score': input.c2Score,
+        'c3_score': input.c3Score,
+        'c4_score': input.c4Score,
+        'c5_score': input.c5Score,
+        'final_score': input.finalScore,
+        'legibility_warning': input.legibilityWarning ? 1 : 0,
+        'created_at': now,
+        'updated_at': now,
+      },
+    );
+  }
+
+  Future<List<EssaySessionRecord>> loadRecentEssaySessions(
+    Database db, {
+    int limit = 5,
+  }) async {
+    final rows = await db.query(
+      'essay_sessions',
+      columns: [
+        'id',
+        'theme_title',
+        'theme_source',
+        'parser_mode',
+        'c1_score',
+        'c2_score',
+        'c3_score',
+        'c4_score',
+        'c5_score',
+        'final_score',
+        'legibility_warning',
+        'created_at',
+      ],
+      orderBy: 'created_at DESC',
+      limit: limit,
+    );
+
+    return rows
+        .map(
+          (row) => EssaySessionRecord(
+            id: _toInt(row['id']),
+            themeTitle: (row['theme_title'] ?? '').toString(),
+            themeSource: (row['theme_source'] ?? '').toString(),
+            parserMode: (row['parser_mode'] ?? '').toString(),
+            c1Score: _toOptionalInt(row['c1_score']),
+            c2Score: _toOptionalInt(row['c2_score']),
+            c3Score: _toOptionalInt(row['c3_score']),
+            c4Score: _toOptionalInt(row['c4_score']),
+            c5Score: _toOptionalInt(row['c5_score']),
+            finalScore: _toOptionalInt(row['final_score']),
+            legibilityWarning: _toBool(row['legibility_warning']),
+            createdAt: (row['created_at'] ?? '').toString(),
+          ),
+        )
+        .where((item) => item.id > 0)
+        .toList();
   }
 
   Future<double> globalAccuracy(Database db) async {
