@@ -59,8 +59,8 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Modo treino: resolver questões por habilidade com correção imediata.
 - [x] Modo simulado: montar prova com tempo e quantidade configuráveis.
 - [x] Histórico de tentativas com análise por habilidade.
-- [ ] Recomendação de módulos do livro com base nas habilidades de maior erro.
-- [ ] Sugestão automática de próximos blocos de estudo.
+- [x] Recomendação de módulos do livro com base nas habilidades de maior erro.
+- [x] Sugestão automática de próximos blocos de estudo.
 
 ### Fluxo adaptativo de aprofundamento por erros
 - [ ] Implementar simulado diagnóstico por matéria com distribuição 3 fáceis + 3 médias + 3 difíceis.
