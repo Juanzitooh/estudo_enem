@@ -26,6 +26,25 @@ python3 scripts/mapear_habilidades_enem.py \
   --year-to 2025
 ```
 
+## Intercorrelação módulo x questão
+
+Gerar vínculos entre módulos do livro e questões reais com `score_match`:
+
+```bash
+python3 scripts/gerar_intercorrelacao_modulo_questao.py \
+  --questions-csv questoes/mapeamento_habilidades/questoes_mapeadas.csv \
+  --modules-csv plano/indice_livros_6_volumes.csv \
+  --tags-csv questoes/mapeamento_habilidades/intercorrelacao/tags_assunto_canonicas.csv \
+  --out-csv questoes/mapeamento_habilidades/intercorrelacao/modulo_questao_matches.csv \
+  --summary-md questoes/mapeamento_habilidades/intercorrelacao/resumo_modulo_questao_matches.md
+```
+
+Arquivos dessa camada:
+
+- `intercorrelacao/tags_assunto_canonicas.csv`: taxonomia de tags/assuntos com sinônimos.
+- `intercorrelacao/modulo_questao_matches.csv`: vínculos módulo-questão com tipo, score e confiança.
+- `intercorrelacao/resumo_modulo_questao_matches.md`: resumo da execução e distribuição de vínculos.
+
 ## Consultar e filtrar o banco
 
 Script de consulta:
