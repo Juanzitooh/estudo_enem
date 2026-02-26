@@ -52,6 +52,8 @@ O app mostra:
 - status do conteúdo local;
 - habilidades com maior erro pelo histórico;
 - sugestão de módulos do livro para revisar (incluindo módulos marcados por competência).
+- modo treino por habilidade com correção imediata e registro de tentativa no banco local.
+- histórico recente de tentativas com status (acerto/erro), skill/competência e timestamp.
 - filtro local de questões em cards (ano, dia, área, disciplina, matéria, competência, habilidade, `tem_imagem` e limite).
 - montador de simulado rápido com base nos filtros atuais (quantidade, minutos por questão e distribuição por área).
 - filtro local de intercorrelação módulo x questão (matéria, assunto/tag, tipo de match e score).
