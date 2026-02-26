@@ -9,6 +9,20 @@ import '../essay/essay_feedback_parser.dart';
 import '../essay/essay_prompt_builder.dart';
 import '../update/content_updater.dart';
 
+class _AdaptiveSlot {
+  const _AdaptiveSlot({
+    required this.skill,
+    required this.band,
+    required this.questionCount,
+    required this.priorityScore,
+  });
+
+  final String skill;
+  final String band;
+  final int questionCount;
+  final double priorityScore;
+}
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -701,6 +715,117 @@ class _HomePageState extends State<HomePage> {
     await _iniciarTreino();
   }
 
+  List<_AdaptiveSlot> _buildAdaptiveSlots({required int totalQuestions}) {
+    if (_skillPriorities.isEmpty || totalQuestions <= 0) {
+      return const [];
+    }
+
+    final focus =
+        _skillPriorities.where((item) => item.band == 'foco').toList();
+    final maintenance =
+        _skillPriorities.where((item) => item.band == 'manutencao').toList();
+    final strong =
+        _skillPriorities.where((item) => item.band == 'forte').toList();
+
+    int focusTarget = (totalQuestions * 0.6).round();
+    int maintenanceTarget = (totalQuestions * 0.3).round();
+    int strongTarget = totalQuestions - focusTarget - maintenanceTarget;
+    if (strongTarget < 0) {
+      strongTarget = 0;
+    }
+
+    List<_AdaptiveSlot> allocate({
+      required List<SkillPriorityItem> source,
+      required int target,
+      required String band,
+    }) {
+      if (target <= 0 || source.isEmpty) {
+        return const [];
+      }
+      final skillCount = min(source.length, target);
+      if (skillCount <= 0) {
+        return const [];
+      }
+      final base = target ~/ skillCount;
+      final remainder = target % skillCount;
+      final slots = <_AdaptiveSlot>[];
+      for (var index = 0; index < skillCount; index += 1) {
+        final extra = index < remainder ? 1 : 0;
+        final questionCount = base + extra;
+        if (questionCount <= 0) {
+          continue;
+        }
+        final item = source[index];
+        slots.add(
+          _AdaptiveSlot(
+            skill: item.skill,
+            band: band,
+            questionCount: questionCount,
+            priorityScore: item.priorityScore,
+          ),
+        );
+      }
+      return slots;
+    }
+
+    final slots = <_AdaptiveSlot>[
+      ...allocate(source: focus, target: focusTarget, band: 'foco'),
+      ...allocate(
+        source: maintenance,
+        target: maintenanceTarget,
+        band: 'manutencao',
+      ),
+      ...allocate(source: strong, target: strongTarget, band: 'forte'),
+    ];
+
+    final allocated = slots.fold<int>(
+      0,
+      (sum, slot) => sum + slot.questionCount,
+    );
+    var remaining = totalQuestions - allocated;
+    var fallbackIndex = 0;
+    while (remaining > 0 && _skillPriorities.isNotEmpty) {
+      final source = _skillPriorities[fallbackIndex % _skillPriorities.length];
+      final existingIndex =
+          slots.indexWhere((slot) => slot.skill == source.skill);
+      if (existingIndex >= 0) {
+        final current = slots[existingIndex];
+        slots[existingIndex] = _AdaptiveSlot(
+          skill: current.skill,
+          band: current.band,
+          questionCount: current.questionCount + 1,
+          priorityScore: current.priorityScore,
+        );
+      } else {
+        slots.add(
+          _AdaptiveSlot(
+            skill: source.skill,
+            band: source.band,
+            questionCount: 1,
+            priorityScore: source.priorityScore,
+          ),
+        );
+      }
+      fallbackIndex += 1;
+      remaining -= 1;
+    }
+
+    slots.sort((a, b) => b.priorityScore.compareTo(a.priorityScore));
+    return slots;
+  }
+
+  Future<void> _iniciarSlotAdaptativo(_AdaptiveSlot slot) async {
+    if (_busy) {
+      return;
+    }
+    setState(() {
+      _questionSkillSelecionada = slot.skill;
+      _treinoQuantidadeController.text = '${slot.questionCount}';
+      _status = 'Aplicando sessão adaptativa para ${slot.skill}...';
+    });
+    await _iniciarTreino();
+  }
+
   String _buildSimuladoDistribuicaoResumo(List<QuestionCardItem> items) {
     if (items.isEmpty) {
       return '-';
@@ -1062,6 +1187,67 @@ class _HomePageState extends State<HomePage> {
                 '| recência ${item.daysSinceLastSeen}d',
               ),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAdaptiveSessionCard() {
+    final totalQuestions = _readTreinoQuantidade();
+    final slots = _buildAdaptiveSlots(totalQuestions: totalQuestions);
+    final focusCount = slots
+        .where((slot) => slot.band == 'foco')
+        .fold<int>(0, (sum, slot) => sum + slot.questionCount);
+    final maintenanceCount = slots
+        .where((slot) => slot.band == 'manutencao')
+        .fold<int>(0, (sum, slot) => sum + slot.questionCount);
+    final strongCount = slots
+        .where((slot) => slot.band == 'forte')
+        .fold<int>(0, (sum, slot) => sum + slot.questionCount);
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Sessão adaptativa sugerida (60/30/10)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Total alvo: $totalQuestions questões | '
+              'foco $focusCount | manutenção $maintenanceCount | forte $strongCount',
+            ),
+            const SizedBox(height: 8),
+            if (slots.isEmpty)
+              const Text(
+                'Sem slots adaptativos ainda. Resolva mais questões para gerar distribuição.',
+              )
+            else
+              ...slots.map(
+                (slot) => Padding(
+                  padding: const EdgeInsets.only(bottom: 6),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          '${slot.skill} | ${slot.band} | '
+                          '${slot.questionCount} questão(ões) | '
+                          'prioridade ${slot.priorityScore.toStringAsFixed(3)}',
+                        ),
+                      ),
+                      OutlinedButton(
+                        onPressed:
+                            _busy ? null : () => _iniciarSlotAdaptativo(slot),
+                        child: const Text('Iniciar'),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
           ],
         ),
       ),
@@ -2168,6 +2354,8 @@ class _HomePageState extends State<HomePage> {
             _buildWeakSkillsCard(),
             const SizedBox(height: 12),
             _buildSkillPriorityCard(),
+            const SizedBox(height: 12),
+            _buildAdaptiveSessionCard(),
             const SizedBox(height: 12),
             _buildModuleSuggestionsCard(),
             const SizedBox(height: 12),
