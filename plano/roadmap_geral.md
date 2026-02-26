@@ -83,6 +83,22 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Criar modo de prompt "Só treino" com exercícios progressivos sem entregar gabarito de questão real.
 - [ ] Incluir no prompt: `skill_code`, `skill_description`, `area`, `module_title`, métricas e `error_profile`.
 
+### Indexação de videoaulas YouTube por minutagem (futuro)
+- [ ] Tratar índice de videoaulas como conteúdo versionado (`assets.zip`), com metadados e links, sem download/redistribuição de mídia.
+- [ ] Padronizar pasta `build_assets/input/videos/` com arquivos `*.md` (fonte humana), `*.segments.csv` (parser) e `*.segment_skill.csv` (curadoria incremental).
+- [ ] Implementar `scripts/parse_video_timestamps.py` para converter `*.md` em `*.segments.csv` e `*.segments.json`.
+- [ ] Regras do parser: detectar grupos (`group_title`), converter `HH:MM:SS` para `start_sec`, normalizar títulos e inferir `end_sec` a partir do próximo segmento.
+- [ ] Regras do parser: marcar `availability=external` em blocos de bônus/não liberados.
+- [ ] Criar no SQLite de conteúdo a tabela `videos` (`platform`, `video_id`, `title`, `channel`, `language`).
+- [ ] Criar no SQLite de conteúdo a tabela `video_segments` (`video_ref_id`, `group_title`, `segment_title`, `start_sec`, `end_sec`, `tags_json`, `availability`).
+- [ ] Criar no SQLite de conteúdo a tabela opcional `segment_skill` (`segment_id`, `skill_id`, `weight`) para recomendação por habilidade.
+- [ ] Implementar `scripts/import_videos.py` para importar CSV em SQLite com índices em `(video_id, start_sec)` e `group_title`.
+- [ ] No app Flutter, exibir segmentos recomendados na tela de habilidade em foco e abrir link externo com `https://www.youtube.com/watch?v={video_id}&t={start_sec}s`.
+- [ ] No app Flutter, exibir aviso visual quando `availability=external`.
+- [ ] Criar arquivo base `build_assets/input/videos/youtube_bio_megaculao_001.md` (video_id `NOBaD0hCGYU`) com minutagem curada por capítulos.
+- [ ] Iniciar curadoria de `*.segment_skill.csv` com tópicos-chave (ex.: Células, Mitose, Ecologia) para retorno por `skill_id`.
+- [ ] Critérios de aceite: parser gera todos os segmentos, app lista por grupo, abre no timestamp correto e marca segmentos bônus com aviso.
+
 ### Redação com IA externa (sem API no app)
 - [ ] Manter arquitetura sem backend e sem chave de API (app como orquestrador pedagógico offline).
 - [ ] Implementar dois modos de redação:
@@ -121,6 +137,7 @@ Sim. Neste roadmap, “criar provas” significa montar simulados a partir do ba
 - [ ] Manter créditos e origem dos dados oficiais (INEP/ENEM).
 - [ ] Documentar no README que o app organiza estudo e não substitui fonte oficial.
 - [ ] Separar release do app e release de conteúdo (`manifest.json` + `assets.zip`).
+- [ ] Para videoaulas externas, manter apenas deep links públicos por timestamp (sem espelhar ou redistribuir conteúdo de terceiros).
 
 ## Fase 4 — Qualidade de Produto
 - [ ] Testes unitários para parser, seleção de questões e cálculo de métricas.

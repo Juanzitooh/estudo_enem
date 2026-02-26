@@ -49,6 +49,8 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Adicionar campo `depende_contexto_visual` para priorizar revisão manual de itens com imagem.
 - [ ] Planejar extração de recortes de imagem por questão (`asset_path` + coordenadas).
 - [x] Integrar filtros no app por `matéria`, `competência`, `habilidade` e `tem_imagem`.
+- [ ] Planejar pipeline de videoaulas por minutagem (`*.md` -> `*.segments.csv` -> SQLite) com deep link YouTube por `start_sec`.
+- [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
 1. Rodar auditoria amostral das revisões manuais aplicadas em `revisao_manual/overrides.csv`.
