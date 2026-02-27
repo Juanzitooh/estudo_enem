@@ -68,6 +68,8 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 ## Bloco 7 — Aulas por módulo (curto/médio prazo)
 - [ ] Definir template final de “aula por módulo de conteúdo” com objetivos + explicação + perguntas finais de retenção.
 - [ ] Incluir no template campos editoriais obrigatórios: `atualizado por IA em` + `revisado manualmente em` + `revisado por`.
+- [ ] Ajustar prompt/agent para exigir exemplos de cotidiano brasileiro e aplicação prática por matéria (evitar contexto genérico/artificial).
+- [ ] Incluir bloco fixo de questões contextualizadas por módulo com situações reais de dia a dia e profissões.
 - [ ] Gerar primeiro lote piloto (ex.: 20 módulos) e medir qualidade com rubrica objetiva.
 - [ ] Ajustar prompt/template até reduzir retrabalho humano para nível operacional.
 - [ ] Planejar integração com índice de videoaulas por minutagem para aprofundamento opcional no fim da aula.
