@@ -20,7 +20,7 @@ DEFAULT_REFERENCE_FILES = (
     Path("plano/politica_retencao_repositorio.md"),
     Path("README.md"),
     Path("dist.sh"),
-    Path("run_local.sh"),
+    Path("deploy.sh"),
     Path("scripts/build_assets_release.py"),
     Path("scripts/package_linux_artifacts.sh"),
 )
@@ -44,9 +44,10 @@ FORCED_KEEP_TOP_LEVEL = {
     ".gitignore",
     "agents.global.md",
     "dist.sh",
-    "dev_linux.sh",
+    "deploy.sh",
     "install_linux.sh",
-    "run_local.sh",
+    "dist_windows.bat",
+    "deploy.bat",
     "edital.pdf",
 }
 KNOWN_ARCHIVE_HINTS = {
@@ -71,6 +72,7 @@ PATH_LIKE_SUFFIXES = (
     ".md",
     ".py",
     ".sh",
+    ".bat",
     ".json",
     ".csv",
     ".zip",

@@ -13,7 +13,7 @@
 - `plano/politica_retencao_repositorio.md`
 - `README.md`
 - `dist.sh`
-- `run_local.sh`
+- `deploy.sh`
 - `scripts/build_assets_release.py`
 - `scripts/package_linux_artifacts.sh`
 
@@ -29,7 +29,7 @@
 | `assets` | manter | referenciado no roadmap/build |
 | `aulas` | manter | referenciado no roadmap/build |
 | `CHANGELOG.md` | manter | referenciado no roadmap/build |
-| `dev_linux.sh` | manter | pasta/arquivo essencial por politica |
+| `deploy.sh` | manter | pasta/arquivo essencial por politica |
 | `dist.sh` | manter | referenciado no roadmap/build |
 | `edital.pdf` | manter | referenciado no roadmap/build |
 | `install_linux.sh` | manter | pasta/arquivo essencial por politica |
@@ -41,7 +41,7 @@
 | `prompts` | manter | referenciado no roadmap/build |
 | `questoes` | manter | referenciado no roadmap/build |
 | `README.md` | manter | referenciado no roadmap/build |
-| `run_local.sh` | manter | referenciado no roadmap/build |
+| `dist_windows.bat` | manter | referenciado no roadmap/build |
 | `scripts` | manter | referenciado no roadmap/build |
 | `sources` | manter | referenciado no roadmap/build |
 | `templates` | manter | referenciado no roadmap/build |
