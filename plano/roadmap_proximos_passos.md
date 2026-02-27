@@ -69,8 +69,8 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 ## Bloco 13 — Tema visual e acessibilidade (curto prazo)
 - [x] Implementar gerenciamento de tema no app: `sistema` (padrão), `claro` e `escuro`.
 - [x] Garantir contraste mínimo de leitura em todos os temas (texto principal vs fundo) e revisar telas críticas.
-- [ ] Definir paleta base com tokens de cor por tema (`background`, `surface`, `text`, `muted`, `accent`, `success`, `warning`, `error`).
-- [ ] Aplicar os tokens no app inteiro para manter consistência visual e design mínimo agradável.
+- [x] Definir paleta base com tokens de cor por tema (`background`, `surface`, `text`, `muted`, `accent`, `success`, `warning`, `error`).
+- [x] Aplicar os tokens no app inteiro para manter consistência visual e design mínimo agradável.
 - [x] Implementar ajuste de tamanho de fonte para acessibilidade (ex.: slider com escala global).
 - [x] Persistir preferência de tema e tamanho da fonte por perfil local.
 - [x] Adicionar tela de preferências de aparência com pré-visualização rápida.
@@ -127,6 +127,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
-1. Fechar bloco visual: tokenizar paleta por tema e aplicar no app inteiro, seguido de validação de legibilidade desktop/mobile.
+1. Rodar validação visual desktop/mobile do bloco 13 (claro/escuro/sistema + fonte ampliada) e fechar checklist de legibilidade.
 2. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
 3. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.
