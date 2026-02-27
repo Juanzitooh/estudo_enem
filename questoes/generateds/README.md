@@ -38,6 +38,8 @@ Schema de referencia:
 Template inicial:
 
 - `questoes/generateds/natureza/treino/lote_template.jsonl`
+- `prompts/gerar_questoes_habilidade_enem.md` (prompt padrao para IA externa)
+- `questoes/generateds/checklist_qualidade.md` (revisao manual de qualidade)
 
 ## Validacao de lotes
 
@@ -54,4 +56,12 @@ Validar tudo:
 python3 scripts/validar_questoes_geradas.py \
   --input questoes/generateds \
   --summary-md questoes/generateds/relatorio_validacao.md
+```
+
+Validar lote no padrao ENEM 5/3/2:
+
+```bash
+python3 scripts/validar_questoes_geradas.py \
+  --input questoes/generateds/natureza/treino/lote_template.jsonl \
+  --expected-distribution 5,3,2
 ```

@@ -41,6 +41,9 @@ class FileValidationResult:
     total_lines: int = 0
     valid_lines: int = 0
     invalid_lines: int = 0
+    facil_count: int = 0
+    media_count: int = 0
+    dificil_count: int = 0
 
 
 def parse_args() -> argparse.Namespace:
@@ -64,6 +67,15 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=100,
         help="Limite de erros detalhados exibidos no terminal.",
+    )
+    parser.add_argument(
+        "--expected-distribution",
+        type=str,
+        default="",
+        help=(
+            "Distribuicao esperada de dificuldade no formato facil,media,dificil "
+            "(ex.: 5,3,2)."
+        ),
     )
     return parser.parse_args()
 
@@ -165,7 +177,29 @@ def validate_record(record: object) -> list[str]:
     return errors
 
 
-def validate_file(file_path: Path, max_errors: int) -> tuple[FileValidationResult, list[str]]:
+def parse_expected_distribution(raw_value: str) -> tuple[int, int, int] | None:
+    if not raw_value.strip():
+        return None
+
+    parts = [chunk.strip() for chunk in raw_value.split(",")]
+    if len(parts) != 3:
+        raise ValueError("distribuicao invalida; use o formato facil,media,dificil (ex.: 5,3,2)")
+
+    try:
+        parsed = tuple(int(part) for part in parts)
+    except ValueError as exc:
+        raise ValueError("distribuicao invalida; todos os valores devem ser inteiros") from exc
+
+    if any(value < 0 for value in parsed):
+        raise ValueError("distribuicao invalida; valores negativos nao sao permitidos")
+    return parsed
+
+
+def validate_file(
+    file_path: Path,
+    max_errors: int,
+    expected_distribution: tuple[int, int, int] | None,
+) -> tuple[FileValidationResult, list[str]]:
     result = FileValidationResult(path=file_path)
     detailed_errors: list[str] = []
 
@@ -186,6 +220,15 @@ def validate_file(file_path: Path, max_errors: int) -> tuple[FileValidationResul
                 )
             continue
 
+        if isinstance(record, dict):
+            difficulty = record.get("dificuldade")
+            if difficulty == "facil":
+                result.facil_count += 1
+            elif difficulty == "media":
+                result.media_count += 1
+            elif difficulty == "dificil":
+                result.dificil_count += 1
+
         line_errors = validate_record(record)
         if line_errors:
             result.invalid_lines += 1
@@ -194,6 +237,19 @@ def validate_file(file_path: Path, max_errors: int) -> tuple[FileValidationResul
                 detailed_errors.append(f"{file_path}:{line_number}: {detail}")
         else:
             result.valid_lines += 1
+
+    if expected_distribution is not None:
+        actual_distribution = (result.facil_count, result.media_count, result.dificil_count)
+        if actual_distribution != expected_distribution:
+            result.invalid_lines += 1
+            expected_text = ",".join(str(value) for value in expected_distribution)
+            actual_text = ",".join(str(value) for value in actual_distribution)
+            detailed_errors.append(
+                (
+                    f"{file_path}:0: distribuicao de dificuldade fora do esperado "
+                    f"(esperado {expected_text}; encontrado {actual_text})"
+                ),
+            )
 
     return result, detailed_errors
 
@@ -219,7 +275,10 @@ def write_summary_markdown(
     for result in file_results:
         relative_path = result.path.as_posix()
         lines.append(
-            f"| `{relative_path}` | {result.total_lines} | {result.valid_lines} | {result.invalid_lines} |",
+            (
+                f"| `{relative_path}` | {result.total_lines} | {result.valid_lines} | "
+                f"{result.invalid_lines} |"
+            ),
         )
 
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -227,6 +286,11 @@ def write_summary_markdown(
 
 def main() -> int:
     args = parse_args()
+    try:
+        expected_distribution = parse_expected_distribution(args.expected_distribution)
+    except ValueError as exc:
+        print(f"[erro] {exc}")
+        return 2
 
     try:
         jsonl_files = iter_jsonl_files(args.input)
@@ -244,7 +308,11 @@ def main() -> int:
     total_invalid = 0
 
     for jsonl_file in jsonl_files:
-        result, file_errors = validate_file(jsonl_file, args.max_errors)
+        result, file_errors = validate_file(
+            file_path=jsonl_file,
+            max_errors=args.max_errors,
+            expected_distribution=expected_distribution,
+        )
         all_results.append(result)
         all_errors.extend(file_errors)
         total_records += result.total_lines

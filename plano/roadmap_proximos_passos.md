@@ -17,9 +17,9 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Gerar arquivo consolidado para consulta rápida do agente.
 
 ## Bloco 3 — Geração orientada por base real (médio prazo)
-- [ ] Criar prompt-padrão para gerar questões novas por habilidade usando o banco real como referência de estilo.
-- [ ] Incluir validação automática: distribuição 5/3/2 e alternativas A–E em linhas separadas.
-- [ ] Incluir checklist de qualidade para detectar cópia literal de enunciados reais.
+- [x] Criar prompt-padrão para gerar questões novas por habilidade usando o banco real como referência de estilo.
+- [x] Incluir validação automática: distribuição 5/3/2 e alternativas A–E em linhas separadas.
+- [x] Incluir checklist de qualidade para detectar cópia literal de enunciados reais.
 
 ## Bloco 8 — Arquitetura de conteúdo e publicação offline (curto prazo)
 - [x] Publicar briefing de arquitetura em `plano/arquitetura_conteudo_offline.md`.
