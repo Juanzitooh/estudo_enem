@@ -184,19 +184,17 @@ flutter build macos --release
 
 ## 7) One-command release (`dist.sh`)
 
-Se quiser fazer tudo com um comando (conteúdo + build Linux + abrir app no final):
+Se quiser fazer o ciclo completo Linux com um comando:
+- gera conteúdo;
+- build Linux/Android/Web;
+- gera `.deb` e `.AppImage`;
+- publica deploy local;
+- instala `.deb`;
+- abre o app Linux no final.
 
 ```bash
 ./dist.sh --version 2026.02.24.1
 ```
-
-O script:
-- gera `assets_<version>.zip` + `manifest.json` com SHA256;
-- tenta instalar/configurar Flutter automaticamente se não estiver no `PATH`;
-- roda `flutter pub get` + `flutter build linux --release`;
-- empacota o bundle Linux em `.tar.gz` dentro da pasta versionada;
-- gera também pacotes `.deb` e `.AppImage` (por padrão);
-- executa o app Linux no final para teste manual.
 
 Por padrão, os artefatos ficam em `app_flutter/releases/<versao>/`.
 Se quiser copiar também para a raiz do repositório, use `--root-export`.
@@ -207,20 +205,38 @@ Se você quiser publicar update remoto, use `--base-url`:
 ./dist.sh --version 2026.02.24.1 --base-url https://SEU_HOST/releases
 ```
 
-Se quiser setup + build + servidor local em um único comando (na raiz do repositório):
+Dev rápido Linux (web local):
 
 ```bash
-./run_local.sh
+./deploy.sh
 ```
 
-`run_local.sh` usa `--linux-packages none` por padrão (mais rápido para dev local).
-Ele sobe servidor local, mas não abre a janela do app.
+Esse script faz setup, build web, deploy local, sobe/reaproveita servidor e abre navegador.
 
-Se quiser ciclo completo de dev (servidor + abrir app), use:
+### Fluxo Windows separado (`.bat`)
 
-```bash
-./dev_linux.sh
+No Windows, rode na raiz do repositório:
+
+```bat
+dist_windows.bat --version windows --tag-alias stable
 ```
+
+Esse dist é separado e atualiza só artefatos de conteúdo + Windows no `release_manifest.json`.
+Pasta padrão não versionada: `app_flutter\releases\windows`.
+
+Para build + servidor local + abrir o app:
+
+```bat
+deploy.bat --version windows --tag-alias stable
+```
+
+Se a porta do servidor local já estiver ocupada, o `deploy.bat` reutiliza o servidor já existente.
+
+Argumentos principais:
+- Linux (`deploy.sh`): `--version`, `--port`, `--skip-setup`, `--skip-build`, `--deploy-root`, `--tag-alias`.
+- Linux (`dist.sh`): `--skip-linux-build`, `--no-android-apk`, `--no-web`, `--no-install-linux`, `--no-run`, `--deploy-root`, `--tag-alias`.
+- Windows (`dist_windows.bat`): `--version`, `--out-dir`, `--limit`, `--tag-alias`, `--no-tag-alias`.
+- Windows (`deploy.bat`): `--version`, `--port`, `--skip-build`, `--tag-alias`, `--no-tag-alias`.
 
 Instalar app Linux após gerar release:
 
@@ -270,6 +286,9 @@ Opções úteis:
 # gera só conteúdo (sem flutter build)
 ./dist.sh --version 2026.02.24.1 --skip-flutter --no-run
 
+# pula build Linux (mantém conteúdo/web/android conforme flags)
+./dist.sh --version 2026.02.24.1 --skip-linux-build --no-run
+
 # não abre o app ao final
 ./dist.sh --version 2026.02.24.1 --no-run
 
@@ -279,9 +298,34 @@ Opções úteis:
 # desativa geração de .deb/.AppImage
 ./dist.sh --version 2026.02.24.1 --linux-packages none
 
+# desativa APK Android
+./dist.sh --version 2026.02.24.1 --no-android-apk
+
+# desativa Web
+./dist.sh --version 2026.02.24.1 --no-web
+
+# não instala Linux no final
+./dist.sh --version 2026.02.24.1 --no-install-linux
+
 # copia artefatos Linux também para a raiz do repo
 ./dist.sh --version 2026.02.24.1 --root-export
+
+# gera aliases estaveis (ex.: stable) e publica web+conteudo em pasta local
+./dist.sh --version 2026.02.24.1 --no-run \
+  --tag-alias stable \
+  --deploy-root app_flutter/local_deploy
 ```
+
+Com `--deploy-local`, sirva `app_flutter/local_deploy`:
+
+```bash
+cd app_flutter/local_deploy
+python3 -m http.server 8787
+```
+
+URLs:
+- Web: `http://127.0.0.1:8787/`
+- Conteúdo para update do app: `http://127.0.0.1:8787/content/manifest.json`
 
 ## 8) Builds para outras plataformas
 

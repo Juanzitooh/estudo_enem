@@ -112,23 +112,28 @@ Guia completo:
 
 ## App Flutter: uso rápido e release
 
-### Fluxo 1: teste rápido de desenvolvimento (Linux)
+### Fluxo 1: desenvolvimento rápido Linux (`deploy.sh`)
 
-Um comando para setup + build local + servidor de update + abrir app:
+Um comando para setup + build web + deploy local + abrir navegador:
 
 ```bash
-./dev_linux.sh
+./deploy.sh
 ```
 
 Esse fluxo:
-- compila o app Linux;
-- sobe o servidor local de update;
-- abre a janela do app.
+- instala dependências necessárias (via `scripts/setup_flutter_linux.sh`);
+- gera conteúdo e build web;
+- atualiza `app_flutter/local_deploy`;
+- sobe/reaproveita servidor local;
+- abre `http://127.0.0.1:8787/`.
 
-No app:
-1. Cole `http://127.0.0.1:8787/manifest.json`.
-2. Clique em `Atualizar por manifest`.
-3. Verifique se contadores saíram de `0` (questões/módulos carregados).
+Argumentos principais (`deploy.sh`):
+- `--version <v>`: versão local do build.
+- `--port <n>`: porta do servidor local.
+- `--skip-setup`: pula setup de dependências.
+- `--skip-build`: reaproveita deploy local já existente.
+- `--deploy-root <dir>`: pasta do deploy local.
+- `--tag-alias <nome>`: gera alias (ex.: `stable`) no conteúdo.
 
 Defaults atuais do app:
 - URL inicial do manifest: `http://127.0.0.1:8787/manifest.json`
@@ -152,19 +157,30 @@ No `dist.sh`, os mesmos overrides podem ser passados assim:
 ./dist.sh --version "$V" --manifest-url http://127.0.0.1:8787/manifest.json --db-dir /home/jp/.local/share/estudo_enem_offline_client
 ```
 
-Se você quiser apenas o servidor (sem abrir app), use:
+### Fluxo 2: distribuição completa Linux (`dist.sh`)
 
-```bash
-./run_local.sh
-```
-
-### Fluxo 2: simular release completo Linux (distribuição)
-
-Gerar release com conteúdo + binários Linux + pacotes `.deb` e `.AppImage`:
+Gerar release completo (conteúdo + Linux + Android + Web + deploy local + instala `.deb` + abre app):
 
 ```bash
 V=2026.02.25.1
-./dist.sh --version "$V" --no-run --linux-packages all
+./dist.sh --version "$V"
+```
+
+Argumentos principais (`dist.sh`):
+- `--skip-linux-build`: não gera binário Linux/DEB/AppImage.
+- `--no-android-apk`: não gera APK Android.
+- `--no-web`: não gera build Web.
+- `--no-install-linux`: não instala app Linux no final.
+- `--no-run`: não abre o app Linux no final.
+- `--deploy-root <dir>`: pasta do deploy local.
+- `--tag-alias <nome>`: alias estável (`manifest_<alias>.json`, `assets_<alias>.zip`).
+- `--base-url <url>`: base remota para download no manifest.
+
+Exemplo com alias estável:
+
+```bash
+V=2026.02.25.1
+./dist.sh --version "$V" --tag-alias stable
 ```
 
 Artefatos ficam em:
@@ -192,6 +208,36 @@ Opcional: se quiser copiar artefatos também para a raiz do repo:
 ./dist.sh --version "$V" --linux-packages all --root-export --no-run
 ```
 
+### Fluxo Windows (separado)
+
+No Windows, a distribuição é separada e focada apenas em artefatos Windows.
+Por padrão, usa pasta não versionada: `app_flutter\releases\windows`.
+
+Dist Windows (gera conteúdo + executável/zip Windows):
+
+```bat
+dist_windows.bat --version windows --tag-alias stable
+```
+
+Esse script gera/atualiza:
+- `manifest.json` + `assets_<versao>.zip` (e alias `stable`, se habilitado);
+- bundle Windows em pasta;
+- ZIP Windows com SHA256;
+- atualização de `release_manifest.json` apenas para artefatos de conteúdo e Windows.
+
+Deploy/execução Windows (build opcional + servidor local + abrir app):
+
+```bat
+deploy.bat --version windows --tag-alias stable
+```
+
+`deploy.bat` é idempotente para o servidor: se a porta já estiver em uso, reutiliza o servidor existente.
+O versionamento geral de web/distribuição permanece no fluxo Linux (`dist.sh`).
+
+Argumentos principais (Dev Windows):
+- `dist_windows.bat`: `--version`, `--out-dir`, `--limit`, `--tag-alias`, `--no-tag-alias`, `--base-url`, `--manifest-url`, `--db-dir`.
+- `deploy.bat`: `--version`, `--port`, `--skip-build`, `--tag-alias`, `--no-tag-alias`, `--out-dir`.
+
 ### Como rodar update manualmente
 
 1. Gere ou escolha uma release em `app_flutter/releases/<versao>/`.
@@ -204,6 +250,17 @@ python3 -m http.server 8787
 
 3. Abra o app e use `http://127.0.0.1:8787/manifest.json`.
 4. Clique em `Atualizar por manifest`.
+
+Se estiver usando `--deploy-local`, sirva a pasta de deploy:
+
+```bash
+cd app_flutter/local_deploy
+python3 -m http.server 8787
+```
+
+URLs:
+- Web: `http://127.0.0.1:8787/`
+- Manifest de conteúdo: `http://127.0.0.1:8787/content/manifest.json`
 
 ### Builds de outros alvos (máximo de distribuição)
 
