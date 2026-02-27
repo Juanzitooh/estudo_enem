@@ -102,8 +102,8 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [ ] Incluir relações de aprofundamento e interdisciplinaridade explícitas (`modulo_origem`, `modulo_relacionado`, `motivo_relacao`).
 
 ### Banco de questões geradas (agent + revisão humana)
-- [ ] Criar estrutura de conteúdo em `questoes/generateds/` separada por área (`linguagens`, `humanas`, `natureza`, `matematica`) e tipo (`treino`, `simulado`, `redacao`).
-- [ ] Definir schema de questão gerada compatível com o banco real: cabeçalho, enunciado, alternativas A-E, gabarito, explicação, competência/habilidade, dificuldade, tags e fontes.
+- [x] Criar estrutura de conteúdo em `questoes/generateds/` separada por área (`linguagens`, `humanas`, `natureza`, `matematica`) e tipo (`treino`, `simulado`, `redacao`).
+- [x] Definir schema de questão gerada compatível com o banco real: cabeçalho, enunciado, alternativas A-E, gabarito, explicação, competência/habilidade, dificuldade, tags e fontes.
 - [ ] Criar agent/script de geração orientado por habilidade para produzir lotes de questões inéditas no estilo ENEM (sem cópia literal).
 - [ ] Implementar validações automáticas de qualidade: formato, distribuição de dificuldade, consistência do gabarito e detector de similaridade com questões reais.
 - [ ] Exigir revisão humana antes de publicação com campos `reviewed_by`, `review_notes` e `approved_at`.

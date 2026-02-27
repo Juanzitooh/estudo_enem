@@ -30,10 +30,10 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Fechar pipeline de publicação `manifest.json + assets.zip + checksum` para consumo no app Flutter.
 
 ## Bloco 9 — Questões geradas por agent (médio prazo)
-- [ ] Criar `questoes/generateds/` por área (`linguagens`, `humanas`, `natureza`, `matematica`) com schema compatível ao banco real.
-- [ ] Definir contrato obrigatório por questão gerada: enunciado, A-E, gabarito, explicação, competência, habilidade, dificuldade, tags e fontes.
+- [x] Criar `questoes/generateds/` por área (`linguagens`, `humanas`, `natureza`, `matematica`) com schema compatível ao banco real.
+- [x] Definir contrato obrigatório por questão gerada: enunciado, A-E, gabarito, explicação, competência, habilidade, dificuldade, tags e fontes.
 - [ ] Implementar script/agent de geração por habilidade com lotes auditáveis e rastreabilidade de prompt.
-- [ ] Adicionar validação de qualidade pós-geração: formato, consistência do gabarito e score de similaridade com base real.
+- [ ] Expandir validação de qualidade pós-geração: formato e consistência base já cobertos em `scripts/validar_questoes_geradas.py`; falta score de similaridade com base real.
 - [ ] Publicar somente itens com revisão humana aprovada.
 
 ## Bloco 10 — Limpeza guiada do repositório (curto prazo)
@@ -103,6 +103,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
-1. Iniciar estrutura de `questoes/generateds/` com schema validado para lotes por agent.
+1. Implementar script/agent de geração por habilidade com lotes auditáveis e rastreabilidade de prompt.
 2. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
 3. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.
