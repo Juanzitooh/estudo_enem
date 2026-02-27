@@ -384,6 +384,23 @@ def read_questions(questions_csv: Path, limit: int = 0) -> list[dict[str, object
             if fallback_image_paths:
                 has_image = True
 
+            competencia_value = (
+                (row.get("competencia") or "").strip()
+                or (row.get("competencia_estimada") or "").strip()
+            )
+            habilidade_value = (
+                (row.get("habilidade") or "").strip()
+                or (row.get("habilidade_estimada") or "").strip()
+            )
+            confianca_value = (
+                (row.get("confianca_mapeamento") or "").strip()
+                or (row.get("confianca") or "").strip()
+            )
+            tema_value = (
+                (row.get("tema") or "").strip()
+                or (row.get("tema_estimado") or "").strip()
+            )
+
             question = {
                 "id": f"{year}_{day}_{number}_{variation}",
                 "year": year,
@@ -393,15 +410,13 @@ def read_questions(questions_csv: Path, limit: int = 0) -> list[dict[str, object
                 "area": (row.get("area") or "").strip(),
                 "discipline": (row.get("disciplina") or "").strip(),
                 "materia": (row.get("materia") or row.get("disciplina") or "").strip(),
-                "theme": (row.get("tema_estimado") or "").strip(),
-                "competency": normalize_competency_token(
-                    (row.get("competencia_estimada") or "").strip()
-                ),
-                "skill": normalize_skill_token((row.get("habilidade_estimada") or "").strip()),
+                "theme": tema_value,
+                "competency": normalize_competency_token(competencia_value),
+                "skill": normalize_skill_token(habilidade_value),
                 "difficulty": normalize_difficulty(
                     (row.get("dificuldade") or row.get("dificuldade_estimada") or "").strip()
                 ),
-                "confidence": (row.get("confianca") or "").strip(),
+                "confidence": confianca_value,
                 "has_image": has_image,
                 "text_empty": parse_bool_flag((row.get("texto_vazio") or "").strip()),
                 "statement": (row.get("preview") or "").strip(),

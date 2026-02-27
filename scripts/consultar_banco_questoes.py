@@ -45,13 +45,19 @@ class QueryResult:
 
 
 def parse_args() -> argparse.Namespace:
+    default_mapped_csv = Path(
+        "questoes/mapeamento_habilidades/questoes_metadados_consolidados.csv"
+    )
+    if not default_mapped_csv.exists():
+        default_mapped_csv = Path("questoes/mapeamento_habilidades/questoes_mapeadas.csv")
+
     parser = argparse.ArgumentParser(
         description="Consulta o banco de questões reais com filtros por metadados."
     )
     parser.add_argument(
         "--mapped-csv",
         type=Path,
-        default=Path("questoes/mapeamento_habilidades/questoes_mapeadas.csv"),
+        default=default_mapped_csv,
         help="CSV com o mapeamento consolidado.",
     )
     parser.add_argument(
@@ -159,6 +165,26 @@ def load_records(path: Path) -> list[QuestionRecord]:
     with path.open("r", encoding="utf-8", newline="") as file_obj:
         reader = csv.DictReader(file_obj)
         for row in reader:
+            competencia = sanitize_ocr_line(
+                row.get("competencia_estimada")
+                or row.get("competencia")
+                or ""
+            )
+            habilidade = sanitize_ocr_line(
+                row.get("habilidade_estimada")
+                or row.get("habilidade")
+                or ""
+            )
+            tema = sanitize_ocr_line(
+                row.get("tema_estimado")
+                or row.get("tema")
+                or ""
+            )
+            confianca = sanitize_ocr_line(
+                row.get("confianca")
+                or row.get("confianca_mapeamento")
+                or ""
+            )
             rows.append(
                 QuestionRecord(
                     ano=int(row["ano"]),
@@ -167,10 +193,10 @@ def load_records(path: Path) -> list[QuestionRecord]:
                     variacao=int(row.get("variacao", "1") or "1"),
                     area=sanitize_ocr_line(row["area"]),
                     disciplina=sanitize_ocr_line(row["disciplina"]),
-                    competencia_estimada=sanitize_ocr_line(row["competencia_estimada"]),
-                    tema_estimado=sanitize_ocr_line(row["tema_estimado"]),
-                    habilidade_estimada=sanitize_ocr_line(row["habilidade_estimada"]),
-                    confianca=sanitize_ocr_line(row["confianca"]),
+                    competencia_estimada=competencia,
+                    tema_estimado=tema,
+                    habilidade_estimada=habilidade,
+                    confianca=confianca,
                     tem_imagem=parse_bool(row.get("tem_imagem", "false")),
                     texto_vazio=parse_bool(row.get("texto_vazio", "false")),
                     fallback_image_paths=parse_fallback_image_paths(
