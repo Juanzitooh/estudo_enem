@@ -43,6 +43,20 @@ Template inicial:
 
 ## Validacao de lotes
 
+Criar lote auditavel por habilidade (prompt + manifest + saida jsonl):
+
+```bash
+python3 scripts/gerar_lote_questoes_por_habilidade.py \
+  --area-key natureza \
+  --tipo treino \
+  --disciplina Biologia \
+  --materia Biologia \
+  --competencia C3 \
+  --habilidade H10 \
+  --total-questoes 10 \
+  --distribution 5,3,2
+```
+
 Validar um arquivo:
 
 ```bash
