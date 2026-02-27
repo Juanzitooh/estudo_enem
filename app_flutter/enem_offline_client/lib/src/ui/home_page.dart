@@ -30,7 +30,9 @@ class _AdaptiveSlot {
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({super.key, this.onAppearanceChanged});
+
+  final void Function(String themeMode, double fontScale)? onAppearanceChanged;
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -138,6 +140,8 @@ class _HomePageState extends State<HomePage> {
   String _essayThemeSourceSelecionado = 'ia';
   String _essayParserModeSelecionado = EssayParserMode.livre.value;
   String _selectedStudentProfileId = '';
+  String _profileThemeMode = profileThemeModeSystem;
+  double _profileFontScale = profileFontScaleDefault;
 
   @override
   void initState() {
@@ -364,6 +368,20 @@ class _HomePageState extends State<HomePage> {
     _profileExamDateController.text = profile.examDate;
     _profilePlannerContextController.text = profile.plannerContext;
     _selectedStudentProfileId = profile.id;
+    _profileThemeMode = normalizeProfileThemeMode(profile.themeMode);
+    _profileFontScale = normalizeProfileFontScale(profile.fontScale);
+    widget.onAppearanceChanged?.call(_profileThemeMode, _profileFontScale);
+  }
+
+  String _themeModeLabel(String value) {
+    final normalized = normalizeProfileThemeMode(value);
+    if (normalized == profileThemeModeLight) {
+      return 'Claro';
+    }
+    if (normalized == profileThemeModeDark) {
+      return 'Escuro';
+    }
+    return 'Sistema';
   }
 
   Future<String> _defaultProfileExportPath(String profileId) async {
@@ -567,6 +585,8 @@ class _HomePageState extends State<HomePage> {
         examDate: examDate,
         plannerContext: plannerContext,
         plannerSnapshotJson: '',
+        themeMode: _profileThemeMode,
+        fontScale: _profileFontScale,
         isActive: true,
         createdAt: '',
         updatedAt: '',
@@ -582,6 +602,8 @@ class _HomePageState extends State<HomePage> {
         examDate: examDate,
         plannerContext: plannerContext,
         plannerSnapshotJson: jsonEncode(planSnapshot.toMap()),
+        themeMode: _profileThemeMode,
+        fontScale: _profileFontScale,
       );
       await _localDatabase.upsertStudentProfile(
         db,
@@ -1751,6 +1773,9 @@ class _HomePageState extends State<HomePage> {
             Text(
               'Ativo: ${_activeStudentProfile == null ? '-' : _activeStudentProfile!.displayName}',
             ),
+            Text(
+              'Tema/fonte: ${_themeModeLabel(_profileThemeMode)} | ${(_profileFontScale * 100).round()}%',
+            ),
             const SizedBox(height: 8),
             if (profileItems.isEmpty)
               const Text('Nenhum perfil local ainda.')
@@ -1814,6 +1839,79 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                SizedBox(
+                  width: 240,
+                  child: DropdownButtonFormField<String>(
+                    initialValue: _profileThemeMode,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Tema visual',
+                    ),
+                    items: const [
+                      DropdownMenuItem<String>(
+                        value: profileThemeModeSystem,
+                        child: Text('Sistema (padrão)'),
+                      ),
+                      DropdownMenuItem<String>(
+                        value: profileThemeModeLight,
+                        child: Text('Claro'),
+                      ),
+                      DropdownMenuItem<String>(
+                        value: profileThemeModeDark,
+                        child: Text('Escuro'),
+                      ),
+                    ],
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            if (value == null) {
+                              return;
+                            }
+                            final normalized = normalizeProfileThemeMode(value);
+                            setState(() {
+                              _profileThemeMode = normalized;
+                            });
+                            widget.onAppearanceChanged
+                                ?.call(normalized, _profileFontScale);
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 320,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Tamanho da fonte: ${(_profileFontScale * 100).round()}%',
+                      ),
+                      Slider(
+                        value: _profileFontScale,
+                        min: profileFontScaleMin,
+                        max: profileFontScaleMax,
+                        divisions: 11,
+                        label: '${(_profileFontScale * 100).round()}%',
+                        onChanged: _busy
+                            ? null
+                            : (value) {
+                                final normalized =
+                                    normalizeProfileFontScale(value);
+                                setState(() {
+                                  _profileFontScale = normalized;
+                                });
+                                widget.onAppearanceChanged
+                                    ?.call(_profileThemeMode, normalized);
+                              },
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
             TextField(
               controller: _profileStudyDaysController,
               decoration: const InputDecoration(
@@ -1868,9 +1966,15 @@ class _HomePageState extends State<HomePage> {
                             _profileFocusAreaController.clear();
                             _profileExamDateController.clear();
                             _profilePlannerContextController.clear();
+                            _profileThemeMode = profileThemeModeSystem;
+                            _profileFontScale = profileFontScaleDefault;
                             _status =
                                 'Novo perfil em edição. Salve para criar.';
                           });
+                          widget.onAppearanceChanged?.call(
+                            profileThemeModeSystem,
+                            profileFontScaleDefault,
+                          );
                         },
                   child: const Text('Novo perfil'),
                 ),

@@ -8,6 +8,32 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import '../config/app_config.dart';
 
+const String profileThemeModeSystem = 'system';
+const String profileThemeModeLight = 'light';
+const String profileThemeModeDark = 'dark';
+const double profileFontScaleMin = 0.85;
+const double profileFontScaleMax = 1.40;
+const double profileFontScaleDefault = 1.00;
+
+String normalizeProfileThemeMode(String value) {
+  final normalized = value.trim().toLowerCase();
+  if (normalized == profileThemeModeLight) {
+    return profileThemeModeLight;
+  }
+  if (normalized == profileThemeModeDark) {
+    return profileThemeModeDark;
+  }
+  return profileThemeModeSystem;
+}
+
+double normalizeProfileFontScale(double? value) {
+  final normalized = value ?? profileFontScaleDefault;
+  if (!normalized.isFinite) {
+    return profileFontScaleDefault;
+  }
+  return normalized.clamp(profileFontScaleMin, profileFontScaleMax).toDouble();
+}
+
 class WeakSkillStat {
   const WeakSkillStat({
     required this.skill,
@@ -353,6 +379,8 @@ class StudentProfileInput {
     this.examDate = '',
     this.plannerContext = '',
     this.plannerSnapshotJson = '',
+    this.themeMode = profileThemeModeSystem,
+    this.fontScale = profileFontScaleDefault,
   });
 
   final String id;
@@ -364,6 +392,8 @@ class StudentProfileInput {
   final String examDate;
   final String plannerContext;
   final String plannerSnapshotJson;
+  final String themeMode;
+  final double fontScale;
 }
 
 class StudentProfileRecord {
@@ -377,6 +407,8 @@ class StudentProfileRecord {
     required this.examDate,
     required this.plannerContext,
     required this.plannerSnapshotJson,
+    required this.themeMode,
+    required this.fontScale,
     required this.isActive,
     required this.createdAt,
     required this.updatedAt,
@@ -391,6 +423,8 @@ class StudentProfileRecord {
   final String examDate;
   final String plannerContext;
   final String plannerSnapshotJson;
+  final String themeMode;
+  final double fontScale;
   final bool isActive;
   final String createdAt;
   final String updatedAt;
@@ -406,6 +440,8 @@ class StudentProfileRecord {
       'exam_date': examDate,
       'planner_context': plannerContext,
       'planner_snapshot_json': plannerSnapshotJson,
+      'theme_mode': normalizeProfileThemeMode(themeMode),
+      'font_scale': normalizeProfileFontScale(fontScale),
       'is_active': isActive ? 1 : 0,
       'created_at': createdAt,
       'updated_at': updatedAt,
@@ -430,7 +466,7 @@ class ProfileImportResult {
 class LocalDatabase {
   LocalDatabase();
 
-  static const int profileBundleSchemaVersion = 2;
+  static const int profileBundleSchemaVersion = 3;
 
   bool _ffiInitialized = false;
   String? _databasePath;
@@ -441,9 +477,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 11,
+      version: 12,
       onCreate: (db, _) async {
-        await _createSchemaV11(db);
+        await _createSchemaV12(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -472,6 +508,9 @@ class LocalDatabase {
         }
         if (oldVersion < 11) {
           await _ensureStudentProfilesSchemaV11(db);
+        }
+        if (oldVersion < 12) {
+          await _ensureStudentProfilesSchemaV12(db);
         }
       },
     );
@@ -599,6 +638,11 @@ class LocalDatabase {
         // Tenta próximo candidato.
       }
     }
+  }
+
+  Future<void> _createSchemaV12(Database db) async {
+    await _createSchemaV11(db);
+    await _ensureStudentProfilesSchemaV12(db);
   }
 
   Future<void> _createSchemaV11(Database db) async {
@@ -787,6 +831,8 @@ class LocalDatabase {
         exam_date TEXT,
         planner_context TEXT,
         planner_snapshot_json TEXT,
+        theme_mode TEXT NOT NULL DEFAULT 'system',
+        font_scale REAL NOT NULL DEFAULT 1.0,
         is_active INTEGER NOT NULL DEFAULT 0,
         created_at TEXT NOT NULL,
         updated_at TEXT NOT NULL
@@ -809,6 +855,25 @@ class LocalDatabase {
     if (!names.contains('planner_snapshot_json')) {
       await db.execute(
         'ALTER TABLE student_profiles ADD COLUMN planner_snapshot_json TEXT',
+      );
+    }
+  }
+
+  Future<void> _ensureStudentProfilesSchemaV12(Database db) async {
+    final columns = await db.rawQuery("PRAGMA table_info('student_profiles')");
+    final names = columns
+        .map((row) => (row['name'] ?? '').toString())
+        .where((name) => name.isNotEmpty)
+        .toSet();
+
+    if (!names.contains('theme_mode')) {
+      await db.execute(
+        "ALTER TABLE student_profiles ADD COLUMN theme_mode TEXT NOT NULL DEFAULT 'system'",
+      );
+    }
+    if (!names.contains('font_scale')) {
+      await db.execute(
+        'ALTER TABLE student_profiles ADD COLUMN font_scale REAL NOT NULL DEFAULT 1.0',
       );
     }
   }
@@ -1328,6 +1393,10 @@ class LocalDatabase {
       examDate: (row['exam_date'] ?? '').toString(),
       plannerContext: (row['planner_context'] ?? '').toString(),
       plannerSnapshotJson: (row['planner_snapshot_json'] ?? '').toString(),
+      themeMode:
+          normalizeProfileThemeMode((row['theme_mode'] ?? '').toString()),
+      fontScale:
+          normalizeProfileFontScale(_toOptionalDouble(row['font_scale'])),
       isActive: _toBool(row['is_active']),
       createdAt: (row['created_at'] ?? '').toString(),
       updatedAt: (row['updated_at'] ?? '').toString(),
@@ -1427,6 +1496,8 @@ class LocalDatabase {
           'exam_date': input.examDate.trim(),
           'planner_context': input.plannerContext.trim(),
           'planner_snapshot_json': input.plannerSnapshotJson.trim(),
+          'theme_mode': normalizeProfileThemeMode(input.themeMode),
+          'font_scale': normalizeProfileFontScale(input.fontScale),
           'is_active': makeActive ? 1 : 0,
           'created_at': createdAt,
           'updated_at': now,
@@ -1555,6 +1626,11 @@ class LocalDatabase {
       plannerContext: (rawProfile['planner_context'] ?? '').toString(),
       plannerSnapshotJson:
           (rawProfile['planner_snapshot_json'] ?? '').toString(),
+      themeMode: normalizeProfileThemeMode(
+          (rawProfile['theme_mode'] ?? '').toString()),
+      fontScale: normalizeProfileFontScale(
+        _toOptionalDouble(rawProfile['font_scale']),
+      ),
     );
 
     await upsertStudentProfile(db, input, makeActive: makeActive);
