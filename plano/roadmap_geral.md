@@ -129,12 +129,12 @@ Ao encerrar sessão, responder em 3 linhas:
 - [ ] Interface simples para resolver questões, corrigir e evoluir no plano.
 
 ### Acessibilidade visual e tema
-- [ ] Implementar seletor de tema com 3 modos: `sistema` (padrão), `claro` e `escuro`.
-- [ ] Garantir pares de cor com contraste adequado para leitura (fundo/texto, cards, botões e estados).
+- [x] Implementar seletor de tema com 3 modos: `sistema` (padrão), `claro` e `escuro`.
+- [x] Garantir pares de cor com contraste adequado para leitura (fundo/texto, cards, botões e estados).
 - [ ] Definir paleta de cores por tokens para os 3 modos, evitando hardcode espalhado no app.
 - [ ] Aplicar design mínimo consistente (tons de superfície, destaque e estados semânticos).
-- [ ] Implementar controle de tamanho de fonte com escala global para acessibilidade.
-- [ ] Persistir preferências de aparência (tema + escala de fonte) por perfil local.
+- [x] Implementar controle de tamanho de fonte com escala global para acessibilidade.
+- [x] Persistir preferências de aparência (tema + escala de fonte) por perfil local.
 - [ ] Validar em desktop e mobile os cenários: tema claro, tema escuro e tema sistema com fonte ampliada.
 
 ### Perfil de usuário offline + portabilidade
