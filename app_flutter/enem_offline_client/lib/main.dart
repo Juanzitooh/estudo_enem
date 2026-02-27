@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'src/data/local_database.dart';
+import 'src/ui/app_theme.dart';
 import 'src/ui/home_page.dart';
 
 void main() {
@@ -44,28 +45,11 @@ class _EnemOfflineAppState extends State<EnemOfflineApp> {
 
   @override
   Widget build(BuildContext context) {
-    final lightScheme = ColorScheme.fromSeed(
-      seedColor: const Color(0xFF0A7A52),
-      brightness: Brightness.light,
-    );
-    final darkScheme = ColorScheme.fromSeed(
-      seedColor: const Color(0xFF2EA37B),
-      brightness: Brightness.dark,
-    );
-
     return MaterialApp(
       title: 'ENEM Offline Client',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: lightScheme,
-        useMaterial3: true,
-        scaffoldBackgroundColor: const Color(0xFFF5F7F6),
-      ),
-      darkTheme: ThemeData(
-        colorScheme: darkScheme,
-        useMaterial3: true,
-        scaffoldBackgroundColor: const Color(0xFF0E1512),
-      ),
+      theme: AppTheme.light(),
+      darkTheme: AppTheme.dark(),
       themeMode: _themeMode,
       builder: (context, child) {
         final mediaQuery = MediaQuery.of(context);

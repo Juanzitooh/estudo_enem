@@ -13,6 +13,7 @@ import '../essay/essay_feedback_parser.dart';
 import '../essay/essay_prompt_builder.dart';
 import '../study/offline_planner.dart';
 import '../study/study_prompt_builder.dart';
+import 'app_theme.dart';
 import '../update/content_updater.dart';
 
 class _AdaptiveSlot {
@@ -382,6 +383,46 @@ class _HomePageState extends State<HomePage> {
       return 'Escuro';
     }
     return 'Sistema';
+  }
+
+  Color _statusColor(BuildContext context) {
+    final palette = context.appPalette;
+    if (_busy) {
+      return palette.accent;
+    }
+    final normalized = _status.trim().toLowerCase();
+    if (normalized.contains('falha') ||
+        normalized.contains('inválido') ||
+        normalized.contains('erro')) {
+      return palette.error;
+    }
+    if (normalized.contains('alerta') ||
+        normalized.contains('atenção') ||
+        normalized.contains('pendente')) {
+      return palette.warning;
+    }
+    if (normalized.contains('sucesso') ||
+        normalized.contains('conclu') ||
+        normalized.contains('salvo') ||
+        normalized.contains('importado') ||
+        normalized.contains('exportado')) {
+      return palette.success;
+    }
+    return palette.muted;
+  }
+
+  Color _riskColor(BuildContext context, String riskLabel) {
+    final palette = context.appPalette;
+    if (riskLabel == 'alto') {
+      return palette.error;
+    }
+    if (riskLabel == 'medio') {
+      return palette.warning;
+    }
+    if (riskLabel == 'baixo') {
+      return palette.success;
+    }
+    return palette.muted;
   }
 
   Future<String> _defaultProfileExportPath(String profileId) async {
@@ -1750,6 +1791,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildStudentProfileCard() {
+    final palette = context.appPalette;
     final profileItems = _studentProfiles;
     final hasSelected = profileItems.any(
       (item) => item.id == _selectedStudentProfileId,
@@ -1775,6 +1817,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Text(
               'Tema/fonte: ${_themeModeLabel(_profileThemeMode)} | ${(_profileFontScale * 100).round()}%',
+              style: TextStyle(color: palette.muted),
             ),
             const SizedBox(height: 8),
             if (profileItems.isEmpty)
@@ -1846,6 +1889,7 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   width: 240,
                   child: DropdownButtonFormField<String>(
+                    key: ValueKey('profile_theme_$_profileThemeMode'),
                     initialValue: _profileThemeMode,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
@@ -2016,6 +2060,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildPlannerForecastCard() {
+    final palette = context.appPalette;
     final plan = _offlinePlanForecast;
     final days = plan.days;
     final riskLabel = plan.riskLabel.trim().toLowerCase();
@@ -2042,9 +2087,16 @@ class _HomePageState extends State<HomePage> {
               'Capacidade semanal: ${plan.weeklyCapacityHours.toStringAsFixed(1)}h | '
               'Carga estimada: ${plan.weeklyRequiredHours.toStringAsFixed(1)}h | '
               'Risco: $riskText',
+              style: TextStyle(
+                color: _riskColor(context, riskLabel),
+                fontWeight: FontWeight.w600,
+              ),
             ),
             const SizedBox(height: 4),
-            Text(plan.note.isEmpty ? '-' : plan.note),
+            Text(
+              plan.note.isEmpty ? '-' : plan.note,
+              style: TextStyle(color: palette.muted),
+            ),
             const SizedBox(height: 8),
             if (days.isEmpty)
               const Text(
@@ -3613,7 +3665,13 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 12),
             _buildEssayPromptBuilderCard(),
             const SizedBox(height: 12),
-            SelectableText(_status),
+            SelectableText(
+              _status,
+              style: TextStyle(
+                color: _statusColor(context),
+                fontWeight: FontWeight.w600,
+              ),
+            ),
           ],
         ),
       ),
