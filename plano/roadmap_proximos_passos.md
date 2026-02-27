@@ -12,9 +12,9 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Aplicar revisão manual em lotes até zerar pendências de `confianca=baixa`.
 
 ## Bloco 2 — Indexação por habilidade (curto prazo)
-- [ ] Criar esquema de metadados por questão (`ano`, `dia`, `numero`, `area`, `disciplina`, `competencia`, `habilidade`, `dificuldade`, `tem_imagem`).
-- [ ] Mapear questões reais para habilidades da matriz (`Hxx`).
-- [ ] Gerar arquivo consolidado para consulta rápida do agente.
+- [x] Criar esquema de metadados por questão (`ano`, `dia`, `numero`, `area`, `disciplina`, `competencia`, `habilidade`, `dificuldade`, `tem_imagem`).
+- [x] Mapear questões reais para habilidades da matriz (`Hxx`).
+- [x] Gerar arquivo consolidado para consulta rápida do agente.
 
 ## Bloco 3 — Geração orientada por base real (médio prazo)
 - [ ] Criar prompt-padrão para gerar questões novas por habilidade usando o banco real como referência de estilo.
@@ -101,6 +101,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
-1. Retomar indexação por habilidade/competência em lote e fechar cobertura incremental.
-2. Iniciar estrutura de `questoes/generateds/` com schema validado para lotes por agent.
-3. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
+1. Iniciar estrutura de `questoes/generateds/` com schema validado para lotes por agent.
+2. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
+3. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.

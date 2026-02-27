@@ -26,6 +26,16 @@ python3 scripts/mapear_habilidades_enem.py \
   --year-to 2025
 ```
 
+Gerar metadados consolidados para consulta rápida do agente:
+
+```bash
+python3 scripts/gerar_metadados_questoes_consolidados.py \
+  --mapped-csv questoes/mapeamento_habilidades/questoes_mapeadas.csv \
+  --out-csv questoes/mapeamento_habilidades/questoes_metadados_consolidados.csv \
+  --out-jsonl questoes/mapeamento_habilidades/questoes_metadados_consolidados.jsonl \
+  --out-summary questoes/mapeamento_habilidades/resumo_metadados_consolidados.md
+```
+
 ## Intercorrelação módulo x questão
 
 Gerar vínculos entre módulos do livro e questões reais com `score_match`:
@@ -84,6 +94,9 @@ python3 scripts/consultar_banco_questoes.py \
 
 - `questoes_mapeadas.csv`: base tabular completa por questão.
 - `questoes_mapeadas.jsonl`: base completa em JSONL.
+- `questoes_metadados_consolidados.csv`: esquema padrão para filtros rápidos (`ano`, `dia`, `numero`, `area`, `disciplina`, `competencia`, `habilidade`, `dificuldade`, `tem_imagem`).
+- `questoes_metadados_consolidados.jsonl`: versão JSONL do consolidado.
+- `resumo_metadados_consolidados.md`: estatísticas do consolidado para auditoria.
 - `banco_questoes_view.md`: visão gerada por consulta/filtro (quando exportado).
 - Campos centrais: `disciplina`, `competencia_estimada`, `tema_estimado`, `habilidade_estimada`.
 - Campo `tem_imagem`: sinalizador heurístico (`true/false`) para indicar menção a elemento visual (figura, gráfico, tabela, tirinha etc.).
