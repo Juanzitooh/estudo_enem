@@ -99,3 +99,22 @@ python3 scripts/validar_questoes_geradas.py \
   --input <arquivo_lote.jsonl> \
   --skip-similarity-check
 ```
+
+## Publicacao com gate humano
+
+Publicar somente itens aprovados (com `review_status=aprovado`, `reviewed_by` e `approved_at`):
+
+```bash
+python3 scripts/publicar_questoes_geradas.py \
+  --input questoes/generateds \
+  --out-jsonl questoes/generateds/published/questoes_publicadas.jsonl \
+  --summary-md questoes/generateds/published/resumo_publicacao.md
+```
+
+Validar gate de aprovacao antes de publicar:
+
+```bash
+python3 scripts/validar_questoes_geradas.py \
+  --input <arquivo_lote.jsonl> \
+  --require-approved
+```

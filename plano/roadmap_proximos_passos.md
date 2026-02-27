@@ -34,7 +34,7 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Definir contrato obrigatório por questão gerada: enunciado, A-E, gabarito, explicação, competência, habilidade, dificuldade, tags e fontes.
 - [x] Implementar script/agent de geração por habilidade com lotes auditáveis e rastreabilidade de prompt.
 - [x] Expandir validação de qualidade pós-geração: formato, consistência base e score de similaridade com base real.
-- [ ] Publicar somente itens com revisão humana aprovada.
+- [x] Publicar somente itens com revisão humana aprovada.
 
 ## Bloco 10 — Limpeza guiada do repositório (curto prazo)
 - [x] Definir política de retenção por pasta (`raw`, `generated`, `reviewed`, `published`, `archive`) em `plano/politica_retencao_repositorio.md`.
@@ -103,6 +103,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
-1. Publicar somente itens com revisão humana aprovada (gates por `review_status`, `reviewed_by`, `approved_at`).
-2. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
-3. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.
+1. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
+2. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.
+3. Definir política de publicação incremental para conteúdo gerado sem bloquear banco real.

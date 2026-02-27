@@ -128,6 +128,11 @@ def parse_args() -> argparse.Namespace:
         default=0,
         help="Limita quantidade de snippets reais carregados (0=todos).",
     )
+    parser.add_argument(
+        "--require-approved",
+        action="store_true",
+        help="Exige gate editorial de publicacao: review_status=aprovado + reviewed_by + approved_at.",
+    )
     return parser.parse_args()
 
 
@@ -184,7 +189,7 @@ def validate_sources(sources: object, errors: list[str]) -> None:
         break
 
 
-def validate_record(record: object) -> list[str]:
+def validate_record(record: object, require_approved: bool = False) -> list[str]:
     errors: list[str] = []
     if not isinstance(record, dict):
         return ["linha nao contem JSON objeto"]
@@ -224,6 +229,15 @@ def validate_record(record: object) -> list[str]:
     review_status = record.get("review_status")
     if review_status and review_status not in ALLOWED_REVIEW_STATUS:
         errors.append("campo `review_status` invalido")
+    if require_approved:
+        if review_status != "aprovado":
+            errors.append("gate de publicacao: `review_status` deve ser `aprovado`")
+        reviewed_by = record.get("reviewed_by")
+        approved_at = record.get("approved_at")
+        if not isinstance(reviewed_by, str) or not reviewed_by.strip():
+            errors.append("gate de publicacao: `reviewed_by` obrigatorio")
+        if not isinstance(approved_at, str) or not approved_at.strip():
+            errors.append("gate de publicacao: `approved_at` obrigatorio")
 
     return errors
 
@@ -401,6 +415,7 @@ def validate_file(
     similarity_threshold: float,
     jaccard_threshold: float,
     skip_similarity_check: bool,
+    require_approved: bool,
 ) -> tuple[FileValidationResult, list[str]]:
     result = FileValidationResult(path=file_path)
     detailed_errors: list[str] = []
@@ -431,7 +446,7 @@ def validate_file(
             elif difficulty == "dificil":
                 result.dificil_count += 1
 
-        line_errors = validate_record(record)
+        line_errors = validate_record(record, require_approved=require_approved)
         if isinstance(record, dict) and not skip_similarity_check:
             similarity_match = detect_similarity_match(
                 enunciado=str(record.get("enunciado", "")),
@@ -563,6 +578,7 @@ def main() -> int:
             similarity_threshold=args.similarity_threshold,
             jaccard_threshold=args.jaccard_threshold,
             skip_similarity_check=args.skip_similarity_check,
+            require_approved=args.require_approved,
         )
         all_results.append(result)
         all_errors.extend(file_errors)

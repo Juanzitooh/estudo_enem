@@ -28,7 +28,7 @@ Use este checklist antes de publicar qualquer lote em `questoes/generateds/`.
 
 - [ ] Cada questao possui ao menos 1 fonte (`fontes`).
 - [ ] Lote possui `prompt_ref` e `generated_by` preenchidos.
-- [ ] Revisao humana registrada antes de publicar (`reviewed_by`, `approved_at`).
+- [ ] Revisao humana registrada antes de publicar (`review_status=aprovado`, `reviewed_by`, `approved_at`).
 
 ## Comando de validacao rapida
 
