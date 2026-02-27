@@ -6,6 +6,7 @@ import 'package:archive/archive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:path/path.dart' as path;
+import 'package:sqflite/sqflite.dart';
 
 import '../config/app_config.dart';
 import '../data/local_database.dart';
@@ -27,6 +28,20 @@ class _AdaptiveSlot {
   final String skill;
   final String band;
   final int questionCount;
+  final double priorityScore;
+}
+
+class _ReelQuestionEntry {
+  const _ReelQuestionEntry({
+    required this.question,
+    required this.skill,
+    required this.band,
+    required this.priorityScore,
+  });
+
+  final QuestionCardItem question;
+  final String skill;
+  final String band;
   final double priorityScore;
 }
 
@@ -86,6 +101,8 @@ class _HomePageState extends State<HomePage> {
       TextEditingController();
   final TextEditingController _profileImportPathController =
       TextEditingController();
+  final Map<String, String> _reelMarkedAnswers = <String, String>{};
+  final Map<String, String> _reelFeedbackByQuestion = <String, String>{};
 
   bool _busy = false;
   String _status = 'Pronto.';
@@ -143,6 +160,9 @@ class _HomePageState extends State<HomePage> {
   String _selectedStudentProfileId = '';
   String _profileThemeMode = profileThemeModeSystem;
   double _profileFontScale = profileFontScaleDefault;
+  int _selectedTabIndex = 0;
+  int _reelCurrentIndex = 0;
+  List<_ReelQuestionEntry> _plannerReels = const [];
 
   @override
   void initState() {
@@ -385,6 +405,130 @@ class _HomePageState extends State<HomePage> {
     return 'Sistema';
   }
 
+  String _tabTitle() {
+    if (_selectedTabIndex == 0) {
+      return 'Questões para você';
+    }
+    if (_selectedTabIndex == 1) {
+      return 'Aulas e módulos';
+    }
+    return 'Perfil e configurações';
+  }
+
+  String _bandLabel(String band) {
+    if (band == 'foco') {
+      return 'Foco';
+    }
+    if (band == 'manutencao') {
+      return 'Manutenção';
+    }
+    if (band == 'forte') {
+      return 'Forte';
+    }
+    return 'Recomendado';
+  }
+
+  _ReelQuestionEntry? get _currentReelEntry {
+    if (_plannerReels.isEmpty) {
+      return null;
+    }
+    if (_reelCurrentIndex < 0 || _reelCurrentIndex >= _plannerReels.length) {
+      return null;
+    }
+    return _plannerReels[_reelCurrentIndex];
+  }
+
+  Future<List<_ReelQuestionEntry>> _buildPlannerReels(
+    Database db, {
+    required List<SkillPriorityItem> priorities,
+    int totalQuestions = 18,
+  }) async {
+    if (priorities.isEmpty || totalQuestions <= 0) {
+      final fallback = await _localDatabase.searchQuestions(
+        db,
+        filter: const QuestionFilter(limit: 18),
+      );
+      return fallback
+          .map(
+            (item) => _ReelQuestionEntry(
+              question: item,
+              skill: item.skill,
+              band: 'forte',
+              priorityScore: 0,
+            ),
+          )
+          .toList();
+    }
+
+    final slots = _buildAdaptiveSlots(
+      totalQuestions: totalQuestions,
+      priorities: priorities,
+    );
+    final entries = <_ReelQuestionEntry>[];
+    final seenIds = <String>{};
+    final random = Random();
+
+    for (final slot in slots) {
+      final pool = await _localDatabase.searchQuestions(
+        db,
+        filter: QuestionFilter(
+          skill: slot.skill,
+          limit: max(8, slot.questionCount * 4),
+        ),
+      );
+      if (pool.isEmpty) {
+        continue;
+      }
+      final ordered = List<QuestionCardItem>.from(pool)..shuffle(random);
+      for (final item in ordered) {
+        if (!seenIds.add(item.id)) {
+          continue;
+        }
+        entries.add(
+          _ReelQuestionEntry(
+            question: item,
+            skill: slot.skill,
+            band: slot.band,
+            priorityScore: slot.priorityScore,
+          ),
+        );
+        if (entries.length >= totalQuestions) {
+          return entries;
+        }
+        final perSkillCount =
+            entries.where((entry) => entry.skill == slot.skill);
+        if (perSkillCount.length >= slot.questionCount) {
+          break;
+        }
+      }
+    }
+
+    if (entries.length < totalQuestions) {
+      final fallback = await _localDatabase.searchQuestions(
+        db,
+        filter: QuestionFilter(limit: totalQuestions * 2),
+      );
+      for (final item in fallback) {
+        if (!seenIds.add(item.id)) {
+          continue;
+        }
+        entries.add(
+          _ReelQuestionEntry(
+            question: item,
+            skill: item.skill,
+            band: 'manutencao',
+            priorityScore: 0,
+          ),
+        );
+        if (entries.length >= totalQuestions) {
+          break;
+        }
+      }
+    }
+
+    return entries;
+  }
+
   Color _statusColor(BuildContext context) {
     final palette = context.appPalette;
     if (_busy) {
@@ -472,7 +616,7 @@ class _HomePageState extends State<HomePage> {
     return rawContent.toString();
   }
 
-  Future<void> _refreshStats() async {
+  Future<void> _refreshStats({bool refreshReels = true}) async {
     final db = await _localDatabase.open();
     final ensuredProfile = await _localDatabase.ensureDefaultStudentProfile(db);
     final studentProfiles = await _localDatabase.loadStudentProfiles(db);
@@ -519,6 +663,13 @@ class _HomePageState extends State<HomePage> {
     );
     final essayScoreSummary = await _localDatabase.loadEssayScoreSummary(db);
     final version = await _localDatabase.getContentVersion(db);
+    final plannerReels = refreshReels
+        ? await _buildPlannerReels(
+            db,
+            priorities: skillPriorities,
+            totalQuestions: 18,
+          )
+        : _plannerReels;
     final livePlanForecast = OfflinePlannerEngine.build(
       now: DateTime.now(),
       profile: activeStudentProfile,
@@ -557,6 +708,17 @@ class _HomePageState extends State<HomePage> {
       _recentEssaySessions = recentEssaySessions;
       _essayScoreSummary = essayScoreSummary;
       _contentVersion = version;
+      _plannerReels = plannerReels;
+      if (_plannerReels.isEmpty) {
+        _reelCurrentIndex = 0;
+      } else if (_reelCurrentIndex >= _plannerReels.length) {
+        _reelCurrentIndex = _plannerReels.length - 1;
+      }
+      if (refreshReels) {
+        final ids = _plannerReels.map((entry) => entry.question.id).toSet();
+        _reelMarkedAnswers.removeWhere((key, _) => !ids.contains(key));
+        _reelFeedbackByQuestion.removeWhere((key, _) => !ids.contains(key));
+      }
     });
     _syncProfileFields(activeStudentProfile);
   }
@@ -970,6 +1132,71 @@ class _HomePageState extends State<HomePage> {
       }
       setState(() {
         _status = 'Falha ao registrar tentativa demo: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _responderReel(String alternativa) async {
+    final current = _currentReelEntry;
+    if (current == null) {
+      return;
+    }
+    final question = current.question;
+    if (_reelMarkedAnswers.containsKey(question.id)) {
+      return;
+    }
+    final answer = question.answer.trim().toUpperCase();
+    if (answer.isEmpty) {
+      setState(() {
+        _reelMarkedAnswers[question.id] = alternativa.toUpperCase();
+        _reelFeedbackByQuestion[question.id] =
+            'Questão sem gabarito no banco. Resposta não registrada.';
+        _status = 'Questão sem gabarito para registrar resposta.';
+      });
+      return;
+    }
+
+    final marked = alternativa.toUpperCase();
+    final isCorrect = marked == answer;
+    setState(() {
+      _busy = true;
+      _status = isCorrect
+          ? 'Registrando acerto no reels...'
+          : 'Registrando erro no reels...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      await _localDatabase.recordAnswer(
+        db,
+        questionId: question.id,
+        isCorrect: isCorrect,
+      );
+      await _refreshStats(refreshReels: false);
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _reelMarkedAnswers[question.id] = marked;
+        _reelFeedbackByQuestion[question.id] = isCorrect
+            ? 'Correto! Gabarito: $answer.'
+            : 'Incorreto. Marcada: $marked | Gabarito: $answer.';
+        _status = isCorrect
+            ? 'Acerto registrado no reels.'
+            : 'Erro registrado no reels.';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao registrar resposta do reels: $error';
       });
     } finally {
       if (mounted) {
@@ -1403,17 +1630,21 @@ class _HomePageState extends State<HomePage> {
     await _iniciarTreino();
   }
 
-  List<_AdaptiveSlot> _buildAdaptiveSlots({required int totalQuestions}) {
-    if (_skillPriorities.isEmpty || totalQuestions <= 0) {
+  List<_AdaptiveSlot> _buildAdaptiveSlots({
+    required int totalQuestions,
+    List<SkillPriorityItem>? priorities,
+  }) {
+    final sourcePriorities = priorities ?? _skillPriorities;
+    if (sourcePriorities.isEmpty || totalQuestions <= 0) {
       return const [];
     }
 
     final focus =
-        _skillPriorities.where((item) => item.band == 'foco').toList();
+        sourcePriorities.where((item) => item.band == 'foco').toList();
     final maintenance =
-        _skillPriorities.where((item) => item.band == 'manutencao').toList();
+        sourcePriorities.where((item) => item.band == 'manutencao').toList();
     final strong =
-        _skillPriorities.where((item) => item.band == 'forte').toList();
+        sourcePriorities.where((item) => item.band == 'forte').toList();
 
     int focusTarget = (totalQuestions * 0.6).round();
     int maintenanceTarget = (totalQuestions * 0.3).round();
@@ -1472,8 +1703,8 @@ class _HomePageState extends State<HomePage> {
     );
     var remaining = totalQuestions - allocated;
     var fallbackIndex = 0;
-    while (remaining > 0 && _skillPriorities.isNotEmpty) {
-      final source = _skillPriorities[fallbackIndex % _skillPriorities.length];
+    while (remaining > 0 && sourcePriorities.isNotEmpty) {
+      final source = sourcePriorities[fallbackIndex % sourcePriorities.length];
       final existingIndex =
           slots.indexWhere((slot) => slot.skill == source.skill);
       if (existingIndex >= 0) {
@@ -2442,6 +2673,353 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildReelsTab() {
+    const alternatives = ['A', 'B', 'C', 'D', 'E'];
+
+    String previewText(String value) {
+      final normalized = value.trim().replaceAll('\n', ' ');
+      if (normalized.length <= 720) {
+        return normalized;
+      }
+      return '${normalized.substring(0, 720)}...';
+    }
+
+    if (_plannerReels.isEmpty) {
+      return ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Reels de questões',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Ainda não há questões para montar o feed inteligente.',
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Registre tentativas (ou inicialize a demo) para o planner priorizar automaticamente as próximas questões.',
+                  ),
+                  const SizedBox(height: 12),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      ElevatedButton(
+                        onPressed: _busy ? null : _refreshStats,
+                        child: const Text('Tentar novamente'),
+                      ),
+                      OutlinedButton(
+                        onPressed: _busy ? null : _seedDemo,
+                        child: const Text('Inicializar demo local'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      );
+    }
+
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+          child: Row(
+            children: [
+              Expanded(
+                child: Text(
+                  'Feed inteligente: ${_plannerReels.length} questão(ões) recomendadas',
+                ),
+              ),
+              OutlinedButton(
+                onPressed: _busy ? null : _refreshStats,
+                child: const Text('Atualizar feed'),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: PageView.builder(
+            scrollDirection: Axis.vertical,
+            itemCount: _plannerReels.length,
+            onPageChanged: (index) {
+              setState(() {
+                _reelCurrentIndex = index;
+              });
+            },
+            itemBuilder: (context, index) {
+              final entry = _plannerReels[index];
+              final question = entry.question;
+              final marked = _reelMarkedAnswers[question.id] ?? '';
+              final feedback = _reelFeedbackByQuestion[question.id] ?? '';
+              final answered = marked.isNotEmpty;
+
+              return Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: ListView(
+                      children: [
+                        Text(
+                          'Reel ${index + 1}/${_plannerReels.length} | ${_bandLabel(entry.band)}',
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Skill ${entry.skill.isEmpty ? '-' : entry.skill} | prioridade ${entry.priorityScore.toStringAsFixed(3)}',
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          '${question.year}/${question.day}/${question.number}'
+                          '${question.variation > 1 ? ' (v${question.variation})' : ''}'
+                          ' | ${question.area}${question.discipline.trim().isEmpty ? '' : ' | ${question.discipline}'}',
+                        ),
+                        if (question.difficulty.trim().isNotEmpty)
+                          Text('Dificuldade: ${question.difficulty}'),
+                        if (question.hasImage)
+                          const Text('Inclui imagem/contexto visual.'),
+                        const SizedBox(height: 8),
+                        Text(previewText(question.statement)),
+                        const SizedBox(height: 12),
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: alternatives
+                              .map(
+                                (option) => OutlinedButton(
+                                  onPressed: _busy || answered
+                                      ? null
+                                      : () => _responderReel(option),
+                                  child: Text(option),
+                                ),
+                              )
+                              .toList(),
+                        ),
+                        if (marked.isNotEmpty) ...[
+                          const SizedBox(height: 8),
+                          Text('Resposta marcada: $marked'),
+                        ],
+                        if (feedback.isNotEmpty) ...[
+                          const SizedBox(height: 6),
+                          Text(feedback),
+                        ],
+                        if (!answered) ...[
+                          const SizedBox(height: 6),
+                          const Text(
+                            'Toque em A/B/C/D/E para registrar e receber feedback imediato.',
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildAulasTab() {
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        const Card(
+          child: Padding(
+            padding: EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Aulas e módulos recomendados',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 8),
+                Text(
+                  'Esta área conecta o desempenho atual com os módulos do livro e as aulas que serão construídas com IA + revisão manual.',
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 12),
+        _buildModuleSuggestionsCard(),
+        const SizedBox(height: 12),
+        Card(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Próximos blocos do planner',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 8),
+                if (_studyBlockSuggestions.isEmpty)
+                  const Text(
+                    'Sem blocos recomendados no momento. Resolva algumas questões no reels para ativar recomendações por skill.',
+                  )
+                else
+                  ..._studyBlockSuggestions.map(
+                    (item) => Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: Text(
+                        '${item.skill} | ${item.recommendedQuestions} questões | '
+                        '${item.recommendedMinutes} min | '
+                        '${item.materia.isEmpty ? 'Matéria não mapeada' : item.materia}'
+                        '${item.modulo > 0 ? ' | Módulo ${item.modulo}' : ''}'
+                        '${item.title.trim().isEmpty ? '' : ' | ${item.title}'}',
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildPerfilTab() {
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        Card(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Versão de conteúdo: $_contentVersion'),
+                const SizedBox(height: 8),
+                Text('Questões no banco local: $_questionCount'),
+                Text('Módulos de livro no banco local: $_bookModuleCount'),
+                Text('Vínculos módulo x questão: $_moduleQuestionMatchCount'),
+                Text('Sessões de redação: $_essaySessionCount'),
+                Text('Tentativas registradas: $_attemptCount'),
+                Text('Acurácia global: ${_percent(_globalAccuracy)}%'),
+                Text('Perfis locais: $_studentProfileCount'),
+                Text(
+                  'Perfil ativo: ${_activeStudentProfile == null ? '-' : _activeStudentProfile!.displayName}',
+                ),
+                Text('Banco local: $_databasePath'),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 12),
+        _buildStudentProfileCard(),
+        const SizedBox(height: 12),
+        _buildPlannerForecastCard(),
+        const SizedBox(height: 12),
+        Card(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Operação local',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: _manifestController,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'URL do manifest.json',
+                    helperText:
+                        'Ex.: release no GitHub Pages, S3 ou servidor próprio.',
+                  ),
+                ),
+                const SizedBox(height: 12),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    ElevatedButton(
+                      onPressed: _busy ? null : _seedDemo,
+                      child: const Text('Inicializar demo local'),
+                    ),
+                    ElevatedButton(
+                      onPressed: _busy ? null : _runUpdate,
+                      child: const Text('Atualizar por manifest'),
+                    ),
+                    OutlinedButton(
+                      onPressed: _busy ? null : () => _recordDemoAttempt(false),
+                      child: const Text('Simular erro'),
+                    ),
+                    OutlinedButton(
+                      onPressed: _busy ? null : () => _recordDemoAttempt(true),
+                      child: const Text('Simular acerto'),
+                    ),
+                    OutlinedButton(
+                      onPressed: _busy ? null : _refreshStats,
+                      child: const Text('Recarregar status'),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 12),
+        Card(
+          child: ExpansionTile(
+            title: const Text('Ferramentas avançadas'),
+            subtitle: const Text(
+              'Diagnóstico, treino completo, filtros, redação e intercorrelação',
+            ),
+            childrenPadding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+            children: [
+              _buildWeakSkillsCard(),
+              const SizedBox(height: 12),
+              _buildDiagnosticoCard(),
+              const SizedBox(height: 12),
+              _buildSkillPriorityCard(),
+              const SizedBox(height: 12),
+              _buildAdaptiveSessionCard(),
+              const SizedBox(height: 12),
+              _buildStudyBlockSuggestionsCard(),
+              const SizedBox(height: 12),
+              _buildRecentAttemptsCard(),
+              const SizedBox(height: 12),
+              _buildTreinoCard(),
+              const SizedBox(height: 12),
+              _buildQuestionFiltersCard(),
+              const SizedBox(height: 12),
+              _buildSimuladoCard(),
+              const SizedBox(height: 12),
+              _buildIntercorrelationFiltersCard(),
+              const SizedBox(height: 12),
+              _buildEssayPromptBuilderCard(),
+            ],
+          ),
+        ),
+        const SizedBox(height: 12),
+        SelectableText(
+          _status,
+          style: TextStyle(
+            color: _statusColor(context),
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ],
     );
   }
 
@@ -3564,116 +4142,46 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final tabBody = _selectedTabIndex == 0
+        ? _buildReelsTab()
+        : _selectedTabIndex == 1
+            ? _buildAulasTab()
+            : _buildPerfilTab();
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ENEM Offline Client (MVP)'),
+        title: Text(_tabTitle()),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: ListView(
-          children: [
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('Versão de conteúdo: $_contentVersion'),
-                    const SizedBox(height: 8),
-                    Text('Questões no banco local: $_questionCount'),
-                    Text('Módulos de livro no banco local: $_bookModuleCount'),
-                    Text(
-                      'Vínculos módulo x questão: $_moduleQuestionMatchCount',
-                    ),
-                    Text('Sessões de redação: $_essaySessionCount'),
-                    Text('Tentativas registradas: $_attemptCount'),
-                    Text('Acurácia global: ${_percent(_globalAccuracy)}%'),
-                    Text('Perfis locais: $_studentProfileCount'),
-                    Text(
-                      'Perfil ativo: ${_activeStudentProfile == null ? '-' : _activeStudentProfile!.displayName}',
-                    ),
-                    Text('Banco local: $_databasePath'),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(height: 12),
-            _buildStudentProfileCard(),
-            const SizedBox(height: 12),
-            _buildPlannerForecastCard(),
-            const SizedBox(height: 16),
-            TextField(
-              controller: _manifestController,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'URL do manifest.json',
-                helperText:
-                    'Ex.: release no GitHub Pages, S3 ou servidor próprio.',
-              ),
-            ),
-            const SizedBox(height: 16),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                ElevatedButton(
-                  onPressed: _busy ? null : _seedDemo,
-                  child: const Text('Inicializar demo local'),
-                ),
-                ElevatedButton(
-                  onPressed: _busy ? null : _runUpdate,
-                  child: const Text('Atualizar por manifest'),
-                ),
-                OutlinedButton(
-                  onPressed: _busy ? null : () => _recordDemoAttempt(false),
-                  child: const Text('Simular erro'),
-                ),
-                OutlinedButton(
-                  onPressed: _busy ? null : () => _recordDemoAttempt(true),
-                  child: const Text('Simular acerto'),
-                ),
-                OutlinedButton(
-                  onPressed: _busy ? null : _refreshStats,
-                  child: const Text('Recarregar status'),
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            if (_busy) const LinearProgressIndicator(),
-            const SizedBox(height: 16),
-            _buildWeakSkillsCard(),
-            const SizedBox(height: 12),
-            _buildDiagnosticoCard(),
-            const SizedBox(height: 12),
-            _buildSkillPriorityCard(),
-            const SizedBox(height: 12),
-            _buildAdaptiveSessionCard(),
-            const SizedBox(height: 12),
-            _buildModuleSuggestionsCard(),
-            const SizedBox(height: 12),
-            _buildStudyBlockSuggestionsCard(),
-            const SizedBox(height: 12),
-            _buildRecentAttemptsCard(),
-            const SizedBox(height: 12),
-            _buildTreinoCard(),
-            const SizedBox(height: 12),
-            _buildQuestionFiltersCard(),
-            const SizedBox(height: 12),
-            _buildSimuladoCard(),
-            const SizedBox(height: 12),
-            _buildIntercorrelationFiltersCard(),
-            const SizedBox(height: 12),
-            _buildEssayPromptBuilderCard(),
-            const SizedBox(height: 12),
-            SelectableText(
-              _status,
-              style: TextStyle(
-                color: _statusColor(context),
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ],
-        ),
+      body: Column(
+        children: [
+          if (_busy) const LinearProgressIndicator(),
+          Expanded(child: tabBody),
+        ],
+      ),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: _selectedTabIndex,
+        onDestinationSelected: (index) {
+          setState(() {
+            _selectedTabIndex = index;
+          });
+        },
+        destinations: const [
+          NavigationDestination(
+            icon: Icon(Icons.smart_display_outlined),
+            selectedIcon: Icon(Icons.smart_display),
+            label: 'Questões',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.menu_book_outlined),
+            selectedIcon: Icon(Icons.menu_book),
+            label: 'Aulas',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.person_outline),
+            selectedIcon: Icon(Icons.person),
+            label: 'Perfil',
+          ),
+        ],
       ),
     );
   }
