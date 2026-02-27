@@ -5,8 +5,8 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 
 ## Painel pré-catálogo (status operacional)
 - Última atualização: **2026-02-27**
-- Blocos pré-catálogo concluídos: **7/11** (`2`, `3`, `5`, `6`, `9`, `10`, `11`)
-- Blocos pré-catálogo em andamento: `1`, `4`, `7`, `8`
+- Blocos pré-catálogo concluídos: **7/12** (`2`, `3`, `5`, `6`, `9`, `10`, `11`)
+- Blocos pré-catálogo em andamento: `1`, `4`, `7`, `8`, `13`
 - Bloco pós-catálogo (bloqueado): `12`
 - Próximo foco técnico (independe de catálogo): integração planner -> abertura direta de módulo/treino por skill.
 
@@ -66,6 +66,16 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Implementar motor determinístico de planejamento por horas/dias disponíveis e data-alvo.
 - [x] Exibir previsão de estudo para os próximos dias com base no perfil + desempenho atual.
 
+## Bloco 13 — Tema visual e acessibilidade (curto prazo)
+- [ ] Implementar gerenciamento de tema no app: `sistema` (padrão), `claro` e `escuro`.
+- [ ] Garantir contraste mínimo de leitura em todos os temas (texto principal vs fundo) e revisar telas críticas.
+- [ ] Definir paleta base com tokens de cor por tema (`background`, `surface`, `text`, `muted`, `accent`, `success`, `warning`, `error`).
+- [ ] Aplicar os tokens no app inteiro para manter consistência visual e design mínimo agradável.
+- [ ] Implementar ajuste de tamanho de fonte para acessibilidade (ex.: slider com escala global).
+- [ ] Persistir preferência de tema e tamanho da fonte por perfil local.
+- [ ] Adicionar tela de preferências de aparência com pré-visualização rápida.
+- [ ] Validar legibilidade em desktop e mobile com combinações de tema + escala de fonte.
+
 ## Bloco 12 — Pós-catálogo (após concluir 100% dos 6 volumes)
 - [ ] Classificar módulos por nível (`fundacao`, `intermediario`, `aplicado_enem`) e pré-requisitos.
 - [ ] Construir ordem transversal de módulos independente de matéria (grafo de progressão).
@@ -117,6 +127,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
 
 ## Próxima sessão sugerida
-1. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
-2. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.
-3. Definir estrutura canônica `conteudo/raw|generated|reviewed|published` e manifests por domínio.
+1. Implementar bloco de tema visual e acessibilidade (`sistema/claro/escuro` + ajuste de fonte).
+2. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
+3. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.
