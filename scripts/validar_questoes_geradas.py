@@ -4,11 +4,14 @@
 from __future__ import annotations
 
 import argparse
+import csv
 from dataclasses import dataclass
+from difflib import SequenceMatcher
 import json
 from pathlib import Path
 import re
 import sys
+import unicodedata
 
 
 EXPECTED_ALTERNATIVES = ("A", "B", "C", "D", "E")
@@ -44,6 +47,25 @@ class FileValidationResult:
     facil_count: int = 0
     media_count: int = 0
     dificil_count: int = 0
+    similarity_flags: int = 0
+
+
+@dataclass(slots=True)
+class RealQuestionSnippet:
+    id_questao: str
+    area: str
+    disciplina: str
+    preview: str
+    preview_normalized: str
+
+
+@dataclass(slots=True)
+class SimilarityMatch:
+    id_questao: str
+    sequence_ratio: float
+    jaccard: float
+    containment: float
+    preview: str
 
 
 def parse_args() -> argparse.Namespace:
@@ -76,6 +98,35 @@ def parse_args() -> argparse.Namespace:
             "Distribuicao esperada de dificuldade no formato facil,media,dificil "
             "(ex.: 5,3,2)."
         ),
+    )
+    parser.add_argument(
+        "--real-questions-csv",
+        type=Path,
+        default=Path("questoes/mapeamento_habilidades/questoes_metadados_consolidados.csv"),
+        help="CSV da base real para detector de similaridade.",
+    )
+    parser.add_argument(
+        "--skip-similarity-check",
+        action="store_true",
+        help="Desativa detector de similaridade com base real.",
+    )
+    parser.add_argument(
+        "--similarity-threshold",
+        type=float,
+        default=0.88,
+        help="Threshold minimo de SequenceMatcher para marcar similaridade suspeita.",
+    )
+    parser.add_argument(
+        "--jaccard-threshold",
+        type=float,
+        default=0.66,
+        help="Threshold minimo de Jaccard para marcar similaridade suspeita.",
+    )
+    parser.add_argument(
+        "--max-real-snippets",
+        type=int,
+        default=0,
+        help="Limita quantidade de snippets reais carregados (0=todos).",
     )
     return parser.parse_args()
 
@@ -195,10 +246,161 @@ def parse_expected_distribution(raw_value: str) -> tuple[int, int, int] | None:
     return parsed
 
 
+def strip_diacritics(raw_text: str) -> str:
+    normalized = unicodedata.normalize("NFKD", raw_text)
+    return "".join(ch for ch in normalized if not unicodedata.combining(ch))
+
+
+def normalize_text_for_similarity(raw_text: str) -> str:
+    base = strip_diacritics(raw_text).casefold()
+    base = base.replace("...", " ")
+    base = re.sub(r"[^a-z0-9]+", " ", base)
+    base = re.sub(r"\s+", " ", base).strip()
+    return base
+
+
+def normalize_area_key(raw_value: str) -> str:
+    normalized = normalize_text_for_similarity(raw_value)
+    if "linguagens" in normalized:
+        return "linguagens"
+    if "human" in normalized:
+        return "humanas"
+    if "natureza" in normalized:
+        return "natureza"
+    if "matemat" in normalized:
+        return "matematica"
+    return normalized
+
+
+def build_real_question_id(row: dict[str, str], fallback_index: int) -> str:
+    direct_id = (row.get("id_questao") or "").strip()
+    if direct_id:
+        return direct_id
+    year = (row.get("ano") or "").strip()
+    day = (row.get("dia") or "").strip()
+    number = (row.get("numero") or "").strip()
+    if year and day and number:
+        return f"{year}-d{day}-q{number.zfill(3)}"
+    return f"real_{fallback_index:05d}"
+
+
+def load_real_question_snippets(
+    csv_path: Path,
+    max_snippets: int,
+) -> list[RealQuestionSnippet]:
+    if not csv_path.exists():
+        raise FileNotFoundError(f"CSV real nao encontrado: {csv_path}")
+
+    snippets: list[RealQuestionSnippet] = []
+    with csv_path.open("r", encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for index, row in enumerate(reader, start=1):
+            preview = (row.get("preview") or row.get("enunciado") or "").strip()
+            normalized_preview = normalize_text_for_similarity(preview)
+            if len(normalized_preview) < 32:
+                continue
+
+            snippets.append(
+                RealQuestionSnippet(
+                    id_questao=build_real_question_id(row, index),
+                    area=normalize_area_key(row.get("area", "")),
+                    disciplina=normalize_text_for_similarity(row.get("disciplina", "")),
+                    preview=preview,
+                    preview_normalized=normalized_preview,
+                ),
+            )
+            if max_snippets > 0 and len(snippets) >= max_snippets:
+                break
+
+    return snippets
+
+
+def compute_jaccard(tokens_a: set[str], tokens_b: set[str]) -> float:
+    union = tokens_a | tokens_b
+    if not union:
+        return 0.0
+    return len(tokens_a & tokens_b) / len(union)
+
+
+def compute_containment(source_tokens: set[str], target_tokens: set[str]) -> float:
+    if not target_tokens:
+        return 0.0
+    return len(source_tokens & target_tokens) / len(target_tokens)
+
+
+def detect_similarity_match(
+    enunciado: str,
+    area: str,
+    disciplina: str,
+    snippets: list[RealQuestionSnippet],
+    similarity_threshold: float,
+    jaccard_threshold: float,
+) -> SimilarityMatch | None:
+    normalized_enunciado = normalize_text_for_similarity(enunciado)
+    if len(normalized_enunciado) < 32 or not snippets:
+        return None
+
+    area_key = normalize_area_key(area)
+    disciplina_key = normalize_text_for_similarity(disciplina)
+
+    candidates = [item for item in snippets if item.area == area_key]
+    if disciplina_key:
+        discipline_candidates = [item for item in candidates if item.disciplina == disciplina_key]
+        if discipline_candidates:
+            candidates = discipline_candidates
+    if not candidates:
+        candidates = snippets
+
+    enunciado_tokens = set(normalized_enunciado.split())
+    best_match: SimilarityMatch | None = None
+    best_rank = -1.0
+
+    for candidate in candidates:
+        candidate_text = candidate.preview_normalized
+        if not candidate_text:
+            continue
+
+        candidate_tokens = set(candidate_text.split())
+        sequence_ratio = SequenceMatcher(None, normalized_enunciado, candidate_text).ratio()
+        jaccard = compute_jaccard(enunciado_tokens, candidate_tokens)
+        containment = compute_containment(enunciado_tokens, candidate_tokens)
+        has_substring = candidate_text in normalized_enunciado and len(candidate_text) >= 40
+        is_suspicious = (
+            has_substring
+            or sequence_ratio >= similarity_threshold
+            or (
+                jaccard >= jaccard_threshold
+                and containment >= 0.75
+                and len(enunciado_tokens & candidate_tokens) >= 10
+            )
+        )
+        if not is_suspicious:
+            continue
+
+        rank = max(sequence_ratio, jaccard, containment * 0.95)
+        if rank <= best_rank:
+            continue
+
+        best_rank = rank
+        best_match = SimilarityMatch(
+            id_questao=candidate.id_questao,
+            sequence_ratio=sequence_ratio,
+            jaccard=jaccard,
+            containment=containment,
+            preview=candidate.preview,
+        )
+
+    return best_match
+
+
 def validate_file(
     file_path: Path,
     max_errors: int,
     expected_distribution: tuple[int, int, int] | None,
+    real_question_snippets: list[RealQuestionSnippet],
+    similarity_threshold: float,
+    jaccard_threshold: float,
+    skip_similarity_check: bool,
 ) -> tuple[FileValidationResult, list[str]]:
     result = FileValidationResult(path=file_path)
     detailed_errors: list[str] = []
@@ -230,6 +432,27 @@ def validate_file(
                 result.dificil_count += 1
 
         line_errors = validate_record(record)
+        if isinstance(record, dict) and not skip_similarity_check:
+            similarity_match = detect_similarity_match(
+                enunciado=str(record.get("enunciado", "")),
+                area=str(record.get("area", "")),
+                disciplina=str(record.get("disciplina", "")),
+                snippets=real_question_snippets,
+                similarity_threshold=similarity_threshold,
+                jaccard_threshold=jaccard_threshold,
+            )
+            if similarity_match is not None:
+                result.similarity_flags += 1
+                line_errors.append(
+                    (
+                        "similaridade suspeita com base real "
+                        f"(id={similarity_match.id_questao}, "
+                        f"seq={similarity_match.sequence_ratio:.3f}, "
+                        f"jaccard={similarity_match.jaccard:.3f}, "
+                        f"containment={similarity_match.containment:.3f})"
+                    ),
+                )
+
         if line_errors:
             result.invalid_lines += 1
             if len(detailed_errors) < max_errors:
@@ -268,8 +491,8 @@ def write_summary_markdown(
         f"- Registros processados: **{total_records}**",
         f"- Registros invalidos: **{total_invalid}**",
         "",
-        "| Arquivo | Registros | Validos | Invalidos |",
-        "|---|---:|---:|---:|",
+        "| Arquivo | Registros | Validos | Invalidos | Similaridade suspeita |",
+        "|---|---:|---:|---:|---:|",
     ]
 
     for result in file_results:
@@ -277,7 +500,7 @@ def write_summary_markdown(
         lines.append(
             (
                 f"| `{relative_path}` | {result.total_lines} | {result.valid_lines} | "
-                f"{result.invalid_lines} |"
+                f"{result.invalid_lines} | {result.similarity_flags} |"
             ),
         )
 
@@ -291,6 +514,30 @@ def main() -> int:
     except ValueError as exc:
         print(f"[erro] {exc}")
         return 2
+
+    if not 0.0 <= args.similarity_threshold <= 1.0:
+        print("[erro] --similarity-threshold deve ficar entre 0 e 1.")
+        return 2
+    if not 0.0 <= args.jaccard_threshold <= 1.0:
+        print("[erro] --jaccard-threshold deve ficar entre 0 e 1.")
+        return 2
+
+    real_question_snippets: list[RealQuestionSnippet] = []
+    if not args.skip_similarity_check:
+        try:
+            real_question_snippets = load_real_question_snippets(
+                csv_path=args.real_questions_csv,
+                max_snippets=args.max_real_snippets,
+            )
+        except FileNotFoundError as exc:
+            print(f"[erro] {exc}")
+            return 2
+        if not real_question_snippets:
+            print(
+                "[erro] nenhum snippet de base real foi carregado; "
+                "use --skip-similarity-check ou ajuste --real-questions-csv.",
+            )
+            return 2
 
     try:
         jsonl_files = iter_jsonl_files(args.input)
@@ -312,6 +559,10 @@ def main() -> int:
             file_path=jsonl_file,
             max_errors=args.max_errors,
             expected_distribution=expected_distribution,
+            real_question_snippets=real_question_snippets,
+            similarity_threshold=args.similarity_threshold,
+            jaccard_threshold=args.jaccard_threshold,
+            skip_similarity_check=args.skip_similarity_check,
         )
         all_results.append(result)
         all_errors.extend(file_errors)

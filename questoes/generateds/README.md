@@ -79,3 +79,23 @@ python3 scripts/validar_questoes_geradas.py \
   --input questoes/generateds/natureza/treino/lote_template.jsonl \
   --expected-distribution 5,3,2
 ```
+
+O detector de similaridade com base real e executado por padrao usando:
+- `questoes/mapeamento_habilidades/questoes_metadados_consolidados.csv`
+
+Parametros uteis:
+
+```bash
+python3 scripts/validar_questoes_geradas.py \
+  --input <arquivo_lote.jsonl> \
+  --similarity-threshold 0.88 \
+  --jaccard-threshold 0.66
+```
+
+Para desativar apenas a checagem de similaridade (nao recomendado):
+
+```bash
+python3 scripts/validar_questoes_geradas.py \
+  --input <arquivo_lote.jsonl> \
+  --skip-similarity-check
+```
