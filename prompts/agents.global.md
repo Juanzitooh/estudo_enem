@@ -60,21 +60,21 @@ Gerar aulas no padrão ENEM focadas em uma habilidade da Matriz do INEP, usando 
 ## Workflow local (.sh) para app Flutter
 Quando o pedido envolver validação/execução do app, priorizar os scripts da raiz do repositório:
 
-1. `./dev_linux.sh`
-- Fluxo de desenvolvimento rápido no Linux (setup + build local + servidor de manifest + abrir app).
-- Usar para validação visual/manual de interface (tema, contraste, acessibilidade etc.).
+1. `./deploy.sh`
+- Fluxo de desenvolvimento rápido no Linux (setup + build web + deploy local + servidor + abrir navegador).
+- Usar para validação visual/manual da interface web e do deploy local.
 
-2. `./run_local.sh`
-- Sobe somente servidor local do `manifest.json` (não abre a janela do app).
-- Usar quando quiser testar update manual com app já aberto.
+2. `./dist.sh --version <versao> [opcoes]`
+- Gera release completa no Linux (conteúdo + Linux + Android + Web + deploy local).
+- Por padrão instala `.deb` e abre o app Linux no final.
 
-3. `./dist.sh --version <versao> [opcoes]`
-- Gera release versionada com `manifest.json` + `assets_<versao>.zip` + build Linux.
-- Usar para testes de empacotamento/distribuição e verificação do pipeline de release.
-
-4. `./install_linux.sh --type <deb|appimage> --version <versao> --release-dir app_flutter/releases/<versao>`
+3. `./install_linux.sh --type <deb|appimage> --version <versao> --release-dir app_flutter/releases/<versao>`
 - Instala artefatos Linux gerados pelo `dist.sh`.
 - Usar para validar instalação/execução fora da pasta de build.
+
+4. Windows (quando aplicável):
+- `dist_windows.bat` para dist de artefatos Windows.
+- `deploy.bat` para subir servidor local e abrir o app.
 
 Referência operacional detalhada: `README.md` (seção “App Flutter: uso rápido e release”) e `app_flutter/README.md`.
 
