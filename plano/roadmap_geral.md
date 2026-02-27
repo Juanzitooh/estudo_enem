@@ -21,6 +21,17 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - Scaffold de cliente Flutter offline em `app_flutter/enem_offline_client/`.
 - Índice dos livros com campo de habilidades em `plano/indice_livros_6_volumes.csv`.
 
+## Painel Até Catálogo (para status de sessão)
+- Última atualização: **2026-02-27**
+- Pré-catálogo concluído: núcleo de geração/validação/publicação de questões geradas + planner offline + intercorrelação.
+- Pré-catálogo em andamento: arquitetura canônica de conteúdo (`conteudo/raw|generated|reviewed|published`) e integração planner -> navegação de treino/módulo.
+- Pós-catálogo (bloqueado até 100% dos 6 volumes): trilha transversal final, revisão editorial 2019->2026 e calibração final de aulas.
+
+Ao encerrar sessão, responder em 3 linhas:
+1. `Onde estamos (até catálogo)`.
+2. `O que foi feito na sessão`.
+3. `Próximo passo sem depender de terminar o catálogo`.
+
 ## Fase 1 — Consolidação de Dados
 - [ ] Validar qualidade da extração em amostras por ano (enunciado, alternativas, gabarito).
 - [x] Sinalizar `tem_imagem` por questão (heurística textual) para filtrar itens com figura/gráfico/tabela/tirinha.
@@ -107,7 +118,7 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - [x] Criar agent/script de geração orientado por habilidade para produzir lotes de questões inéditas no estilo ENEM (sem cópia literal).
 - [x] Implementar validações automáticas de qualidade: formato, distribuição de dificuldade, consistência do gabarito e detector de similaridade com questões reais.
 - [x] Exigir revisão humana antes de publicação com campos `reviewed_by`, `review_notes` e `approved_at`.
-- [ ] Definir política de publicação incremental para liberar conteúdo gerado sem bloquear o banco real.
+- [x] Definir política de publicação incremental para liberar conteúdo gerado sem bloquear o banco real.
 
 ## Fase 3 — Seção dedicada: App Open Source Gratuito
 

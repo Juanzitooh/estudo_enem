@@ -107,8 +107,12 @@ Publicar somente itens aprovados (com `review_status=aprovado`, `reviewed_by` e 
 ```bash
 python3 scripts/publicar_questoes_geradas.py \
   --input questoes/generateds \
+  --publish-mode merge-id \
+  --release-version qgen.2026.02.27.1 \
   --out-jsonl questoes/generateds/published/questoes_publicadas.jsonl \
-  --summary-md questoes/generateds/published/resumo_publicacao.md
+  --summary-md questoes/generateds/published/resumo_publicacao.md \
+  --manifest-json questoes/generateds/published/manifest_publicacao.json \
+  --history-jsonl questoes/generateds/published/historico_publicacao.jsonl
 ```
 
 Validar gate de aprovacao antes de publicar:
@@ -118,3 +122,7 @@ python3 scripts/validar_questoes_geradas.py \
   --input <arquivo_lote.jsonl> \
   --require-approved
 ```
+
+Politica completa:
+
+- `questoes/generateds/politica_publicacao_incremental.md`

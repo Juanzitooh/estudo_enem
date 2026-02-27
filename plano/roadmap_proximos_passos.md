@@ -3,6 +3,19 @@
 ## Objetivo imediato
 Consolidar o banco de questões reais e evoluir para um gerador de treino por habilidade da matriz ENEM.
 
+## Painel pré-catálogo (status operacional)
+- Última atualização: **2026-02-27**
+- Blocos pré-catálogo concluídos: **7/11** (`2`, `3`, `5`, `6`, `9`, `10`, `11`)
+- Blocos pré-catálogo em andamento: `1`, `4`, `7`, `8`
+- Bloco pós-catálogo (bloqueado): `12`
+- Próximo foco técnico (independe de catálogo): integração planner -> abertura direta de módulo/treino por skill.
+
+### Regra de fechamento das respostas do Codex (enquanto você cataloga)
+- Ao fim de cada sessão, responder sempre em 3 pontos:
+1. `Onde estamos (pré-catálogo)` com blocos concluídos/em andamento.
+2. `O que foi concluído nesta sessão` (arquivos, scripts e validações).
+3. `Próximo passo natural` que não dependa de concluir o catálogo.
+
 ## Bloco 1 — Qualidade da extração (curto prazo)
 - [ ] Revisar manualmente amostra de 20 questões do Dia 1 e 20 do Dia 2.
 - [ ] Identificar ruídos em enunciados com imagem/tabela/fórmula.
@@ -35,6 +48,7 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Implementar script/agent de geração por habilidade com lotes auditáveis e rastreabilidade de prompt.
 - [x] Expandir validação de qualidade pós-geração: formato, consistência base e score de similaridade com base real.
 - [x] Publicar somente itens com revisão humana aprovada.
+- [x] Definir política de publicação incremental sem bloquear banco real (`merge-id`, manifest e histórico de release).
 
 ## Bloco 10 — Limpeza guiada do repositório (curto prazo)
 - [x] Definir política de retenção por pasta (`raw`, `generated`, `reviewed`, `published`, `archive`) em `plano/politica_retencao_repositorio.md`.
@@ -105,4 +119,4 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 ## Próxima sessão sugerida
 1. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
 2. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.
-3. Definir política de publicação incremental para conteúdo gerado sem bloquear banco real.
+3. Definir estrutura canônica `conteudo/raw|generated|reviewed|published` e manifests por domínio.

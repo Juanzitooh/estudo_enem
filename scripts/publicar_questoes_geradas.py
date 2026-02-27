@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 import sys
@@ -79,6 +80,33 @@ def parse_args() -> argparse.Namespace:
         default=80,
         help="Maximo de linhas detalhadas no resumo markdown.",
     )
+    parser.add_argument(
+        "--publish-mode",
+        choices=("merge-id", "append", "overwrite"),
+        default="merge-id",
+        help=(
+            "Modo de escrita da saida: merge-id (incremental sem duplicar id), "
+            "append (concatena) ou overwrite (substitui)."
+        ),
+    )
+    parser.add_argument(
+        "--release-version",
+        type=str,
+        default="",
+        help="Versao da publicacao incremental (ex.: qgen.2026.02.27.1).",
+    )
+    parser.add_argument(
+        "--manifest-json",
+        type=Path,
+        default=Path("questoes/generateds/published/manifest_publicacao.json"),
+        help="Manifest json da publicacao incremental.",
+    )
+    parser.add_argument(
+        "--history-jsonl",
+        type=Path,
+        default=Path("questoes/generateds/published/historico_publicacao.jsonl"),
+        help="Historico append-only das publicacoes incrementais.",
+    )
     return parser.parse_args()
 
 
@@ -102,6 +130,52 @@ def write_jsonl(output_path: Path, records: list[dict[str, object]]) -> None:
             handle.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
+def read_jsonl(path: Path) -> list[dict[str, object]]:
+    if not path.exists():
+        return []
+    records: list[dict[str, object]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        record = json.loads(line)
+        if isinstance(record, dict):
+            records.append(record)
+    return records
+
+
+def apply_publish_mode(
+    *,
+    publish_mode: str,
+    existing_records: list[dict[str, object]],
+    new_records: list[dict[str, object]],
+) -> tuple[list[dict[str, object]], int]:
+    if publish_mode == "overwrite":
+        return list(new_records), len(new_records)
+
+    if publish_mode == "append":
+        return existing_records + new_records, len(new_records)
+
+    merged: list[dict[str, object]] = []
+    id_to_index: dict[str, int] = {}
+    for record in existing_records:
+        record_id = str(record.get("id", "")).strip()
+        if record_id:
+            id_to_index[record_id] = len(merged)
+        merged.append(record)
+
+    new_items = 0
+    for record in new_records:
+        record_id = str(record.get("id", "")).strip()
+        if record_id and record_id in id_to_index:
+            merged[id_to_index[record_id]] = record
+            continue
+        if record_id:
+            id_to_index[record_id] = len(merged)
+        merged.append(record)
+        new_items += 1
+    return merged, new_items
+
+
 def write_summary_markdown(
     summary_path: Path,
     *,
@@ -111,6 +185,11 @@ def write_summary_markdown(
     total_records: int,
     published_records: int,
     blocked_records: int,
+    existing_records: int,
+    output_total_records: int,
+    new_records_added: int,
+    publish_mode: str,
+    release_version: str,
     blocked_reasons: Counter[str],
     blocked_details: list[str],
     max_error_lines: int,
@@ -121,10 +200,15 @@ def write_summary_markdown(
         "",
         f"- Origem: `{input_path}`",
         f"- Saida: `{output_path}`",
+        f"- Release: `{release_version}`",
+        f"- Modo de publicacao: `{publish_mode}`",
         f"- Arquivos fonte: **{source_files}**",
         f"- Registros processados: **{total_records}**",
         f"- Registros publicados: **{published_records}**",
         f"- Registros bloqueados: **{blocked_records}**",
+        f"- Registros existentes na saida antes da rodada: **{existing_records}**",
+        f"- Novos registros adicionados nessa rodada: **{new_records_added}**",
+        f"- Total final na saida: **{output_total_records}**",
         "",
     ]
 
@@ -170,6 +254,10 @@ def main() -> int:
     if not source_files:
         print("[erro] nenhum arquivo .jsonl encontrado para publicar.")
         return 2
+
+    release_version = args.release_version.strip()
+    if not release_version:
+        release_version = "qgen." + datetime.now(timezone.utc).strftime("%Y.%m.%d.%H%M%S")
 
     output_dir = args.out_jsonl.parent.resolve()
     if args.input.is_dir():
@@ -246,7 +334,41 @@ def main() -> int:
             blocked_reasons["json_objeto_esperado"] += 1
             blocked_details.append(f"{entry_ref}: linha nao contem JSON objeto")
 
-    write_jsonl(args.out_jsonl, published_records)
+    existing_records = read_jsonl(args.out_jsonl)
+    final_records, new_records_added = apply_publish_mode(
+        publish_mode=args.publish_mode,
+        existing_records=existing_records,
+        new_records=published_records,
+    )
+
+    write_jsonl(args.out_jsonl, final_records)
+
+    created_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    manifest_data = {
+        "release_version": release_version,
+        "created_at": created_at,
+        "input": str(args.input),
+        "output_jsonl": str(args.out_jsonl),
+        "summary_md": str(args.summary_md),
+        "publish_mode": args.publish_mode,
+        "source_files": len(source_files),
+        "processed_records": total_records,
+        "approved_records_in_run": len(published_records),
+        "blocked_records_in_run": sum(blocked_reasons.values()),
+        "existing_records_before_run": len(existing_records),
+        "new_records_added_in_run": new_records_added,
+        "final_records_in_output": len(final_records),
+        "similarity_check_enabled": not args.skip_similarity_check,
+        "similarity_threshold": args.similarity_threshold,
+        "jaccard_threshold": args.jaccard_threshold,
+    }
+    args.manifest_json.parent.mkdir(parents=True, exist_ok=True)
+    args.manifest_json.write_text(json.dumps(manifest_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    args.history_jsonl.parent.mkdir(parents=True, exist_ok=True)
+    with args.history_jsonl.open("a", encoding="utf-8") as history:
+        history.write(json.dumps(manifest_data, ensure_ascii=False) + "\n")
+
     write_summary_markdown(
         summary_path=args.summary_md,
         input_path=args.input,
@@ -255,6 +377,11 @@ def main() -> int:
         total_records=total_records,
         published_records=len(published_records),
         blocked_records=sum(blocked_reasons.values()),
+        existing_records=len(existing_records),
+        output_total_records=len(final_records),
+        new_records_added=new_records_added,
+        publish_mode=args.publish_mode,
+        release_version=release_version,
         blocked_reasons=blocked_reasons,
         blocked_details=blocked_details,
         max_error_lines=args.max_error_lines,
@@ -270,6 +397,7 @@ def main() -> int:
     )
     print(f"[ok] saida publicada em {args.out_jsonl}")
     print(f"[ok] resumo salvo em {args.summary_md}")
+    print(f"[ok] manifest salvo em {args.manifest_json}")
 
     if args.fail_on_blocked and blocked_reasons:
         return 1
