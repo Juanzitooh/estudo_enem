@@ -127,6 +127,8 @@ Ao encerrar sessão, responder em 3 linhas:
 - [ ] Banco local em SQLite para desempenho, histórico e preferências.
 - [ ] Importação de dados por pacote versionado (CSV -> `assets.zip` -> SQLite local).
 - [ ] Interface simples para resolver questões, corrigir e evoluir no plano.
+- [ ] Evoluir `dist.sh` para gerar artefato Android `.apk` opcional por versão, com checksum e registro no `dist_summary.txt`.
+- [ ] Definir etapa de assinatura Android para distribuição (`debug/local` e `release` com keystore) no checklist de release.
 
 ### Acessibilidade visual e tema
 - [x] Implementar seletor de tema com 3 modos: `sistema` (padrão), `claro` e `escuro`.
@@ -166,7 +168,7 @@ Ao encerrar sessão, responder em 3 linhas:
 
 ### Fluxo adaptativo de aprofundamento por erros
 - [x] Implementar simulado diagnóstico por matéria com distribuição 3 fáceis + 3 médias + 3 difíceis.
-- [ ] Exibir resultado do diagnóstico com score por matéria, Top 5 habilidades em déficit e erro dominante.
+- [x] Exibir resultado do diagnóstico com score por matéria, Top 5 habilidades em déficit e erro dominante.
 - [x] Criar tela "Habilidades em foco" com domínio (%), causa provável da queda e ações rápidas.
 - [x] Disponibilizar ações por habilidade: Treinar agora (10 questões), Revisar teoria e Copiar prompt de estudo.
 - [x] Classificar habilidades por faixa de domínio: foco (<55%), manutenção (55% a 75%) e forte (>75%).
@@ -174,7 +176,7 @@ Ao encerrar sessão, responder em 3 linhas:
 - [x] Recalcular foco automaticamente após cada sessão para substituir habilidades que melhorarem.
 
 ### Perfil de erro local (sem IA embarcada)
-- [ ] Implementar `error_profile` por habilidade com: `pacing`, `level_break`, `topic_tags` e `pattern`.
+- [x] Implementar `error_profile` por habilidade com: `pacing`, `level_break`, `topic_tags` e `pattern`.
 - [ ] Inferir sinais locais: tempo alto + erro, erro rápido, erro recorrente por tag e erro em questão fácil.
 - [ ] Armazenar "evidência do erro" via tags/tipo de questão sem expor texto de enunciado.
 
@@ -183,7 +185,7 @@ Ao encerrar sessão, responder em 3 linhas:
 - [x] Criar modo de prompt "Aula completa" com explicação, erros comuns, heurística, exemplos e plano de revisão.
 - [x] Criar modo de prompt "Só vídeos" com palavras-chave e títulos sugeridos (sem inventar links).
 - [x] Criar modo de prompt "Só treino" com exercícios progressivos sem entregar gabarito de questão real.
-- [ ] Incluir no prompt: `skill_code`, `skill_description`, `area`, `module_title`, métricas e `error_profile`.
+- [x] Incluir no prompt: `skill_code`, `skill_description`, `area`, `module_title`, métricas e `error_profile`.
 
 ### Indexação de videoaulas YouTube por minutagem (futuro)
 - [ ] Tratar índice de videoaulas como conteúdo versionado (`assets.zip`), com metadados e links, sem download/redistribuição de mídia.
@@ -249,6 +251,7 @@ Sim. Neste roadmap, “criar provas” significa montar simulados a partir do ba
 - [ ] Testes de regressão para evitar quebra em atualizações do banco.
 - [ ] Validação manual de UX com fluxo real de estudo (ciclo semanal).
 - [ ] Checklist de release para versões estáveis.
+- [ ] Upgrade major planejado de dependências Flutter/Dart (`flutter pub upgrade --major-versions`) com rodada completa de compatibilidade (prioridade baixa, após blocos centrais).
 
 ## Fase 5 — Comunidade Open Source
 - [ ] Criar `CONTRIBUTING.md` com padrão de branch, commit e PR.

@@ -4,11 +4,12 @@
 Consolidar o banco de questões reais e evoluir para um gerador de treino por habilidade da matriz ENEM.
 
 ## Painel pré-catálogo (status operacional)
-- Última atualização: **2026-02-27**
+- Última atualização: **2026-02-28**
 - Blocos pré-catálogo concluídos: **7/12** (`2`, `3`, `5`, `6`, `9`, `10`, `11`)
 - Blocos pré-catálogo em andamento: `1`, `4`, `7`, `8`, `13`
 - Bloco pós-catálogo (bloqueado): `12`
-- Próximo foco técnico (independe de catálogo): integração planner -> abertura direta de módulo/treino por skill.
+- Último foco técnico concluído: persistência/uso de `error_profile` local (`pacing`, `level_break`, `topic_tags`, `pattern`) no PromptBuilder de estudo.
+- Próximo foco técnico (independe de catálogo): validar legibilidade desktop/mobile (tema claro/escuro/sistema + escala de fonte ampliada) e fechar checklist do bloco 13.
 
 ### Regra de fechamento das respostas do Codex (enquanto você cataloga)
 - Ao fim de cada sessão, responder sempre em 3 pontos:
@@ -123,8 +124,11 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Adicionar campo `depende_contexto_visual` para priorizar revisão manual de itens com imagem.
 - [ ] Planejar extração de recortes de imagem por questão (`asset_path` + coordenadas).
 - [x] Integrar filtros no app por `matéria`, `competência`, `habilidade` e `tem_imagem`.
+- [ ] Evoluir `dist.sh` para gerar `.apk` Android opcional por versão (artefato em `app_flutter/releases/<versao>/` + checksum + entrada no `dist_summary.txt`).
+- [ ] Definir fluxo de assinatura Android no pipeline (`debug/local` vs `release distribuível` com keystore) e documentar validações mínimas antes de publicar APK.
 - [ ] Planejar pipeline de videoaulas por minutagem (`*.md` -> `*.segments.csv` -> SQLite) com deep link YouTube por `start_sec`.
 - [ ] Definir seed inicial de vídeos com `youtube_bio_megaculao_001.md` e mapeamento manual inicial `segment_skill` para habilidades INEP.
+- [ ] Rodar upgrade major de dependências Flutter/Dart (`flutter pub upgrade --major-versions`) com janela dedicada de compatibilidade e regressão (baixa prioridade, pós-entrega dos blocos principais).
 
 ## Próxima sessão sugerida
 1. Rodar validação visual desktop/mobile do bloco 13 (claro/escuro/sistema + fonte ampliada) e fechar checklist de legibilidade.
