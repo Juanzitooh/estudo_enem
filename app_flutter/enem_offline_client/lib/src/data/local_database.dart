@@ -1047,6 +1047,12 @@ class LocalDatabase {
 
   void _ensureDesktopDriver() {
     if (kIsWeb) {
+      if (_ffiInitialized) {
+        return;
+      }
+      // On web, sqflite_common_ffi exposes a web-backed database factory.
+      databaseFactory = databaseFactoryFfi;
+      _ffiInitialized = true;
       return;
     }
     if (Platform.isAndroid || Platform.isIOS) {
