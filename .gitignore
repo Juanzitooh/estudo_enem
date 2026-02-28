@@ -13,6 +13,7 @@ __pycache__/
 # Artefatos locais de release Flutter (gerados por dist/run_local)
 app_flutter/releases/local.*/
 app_flutter/releases/manifest.json
+app_flutter/local_deploy/
 
 # Export local do app Linux na raiz (gerado por dist.sh)
 enem_offline_client_linux_x64_*.tar.gz
