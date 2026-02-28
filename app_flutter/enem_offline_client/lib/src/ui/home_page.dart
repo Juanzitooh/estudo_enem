@@ -104,6 +104,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   static const Duration _autoUpdateInterval = Duration(minutes: 5);
   static const Duration _autoUpdateResumeDebounce = Duration(minutes: 1);
+  static const int _tabAulas = 0;
+  static const int _tabQuestoes = 1;
+  static const int _tabPerfil = 2;
 
   final LocalDatabase _localDatabase = LocalDatabase();
   final TextEditingController _manifestController = TextEditingController(
@@ -223,7 +226,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   String _profileThemeMode = profileThemeModeSystem;
   double _profileFontScale = profileFontScaleDefault;
   DateTime? _lastAutoUpdateCheckAt;
-  int _selectedTabIndex = 0;
+  int _selectedTabIndex = _tabQuestoes;
   int _reelCurrentIndex = 0;
   List<_ReelQuestionEntry> _plannerReels = const [];
   DateTime? _reelQuestionStartedAt;
@@ -574,13 +577,16 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   }
 
   String _tabTitle() {
-    if (_selectedTabIndex == 0) {
+    if (_selectedTabIndex == _tabQuestoes) {
       return 'Questões para você';
     }
-    if (_selectedTabIndex == 1) {
+    if (_selectedTabIndex == _tabAulas) {
       return 'Aulas e módulos';
     }
-    return 'Perfil e configurações';
+    if (_selectedTabIndex == _tabPerfil) {
+      return 'Perfil e configurações';
+    }
+    return 'Enem Questões';
   }
 
   String _bandLabel(String band) {
@@ -2110,7 +2116,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     }
 
     setState(() {
-      _selectedTabIndex = 0;
+      _selectedTabIndex = _tabQuestoes;
       _questionSkillSelecionada = item.skill;
       if (item.area.trim().isNotEmpty) {
         _questionAreaSelecionada = item.area.trim();
@@ -2375,7 +2381,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             '${item.title.isEmpty ? '' : ' | ${item.title}'}'
         : 'Aba Aulas aberta. Sem módulo exato para ${item.skill}; revisar conteúdo-base dessa habilidade.';
     setState(() {
-      _selectedTabIndex = 1;
+      _selectedTabIndex = _tabAulas;
       _focusedStudySkill = item.skill.trim();
       _focusedStudyMateria = item.materia.trim();
       _focusedStudyModulo = item.modulo;
@@ -2389,7 +2395,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     }
 
     setState(() {
-      _selectedTabIndex = 0;
+      _selectedTabIndex = _tabQuestoes;
       _questionSkillSelecionada = item.matchedSkill.trim();
       if (item.area.trim().isNotEmpty) {
         _questionAreaSelecionada = item.area.trim();
@@ -2542,11 +2548,13 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    final tabBody = _selectedTabIndex == 0
-        ? _buildReelsTab()
-        : _selectedTabIndex == 1
-            ? _buildAulasTab()
-            : _buildPerfilTab();
+    final tabBody = _selectedTabIndex == _tabAulas
+        ? _buildAulasTab()
+        : _selectedTabIndex == _tabQuestoes
+            ? _buildReelsTab()
+            : _selectedTabIndex == _tabPerfil
+                ? _buildPerfilTab()
+                : _buildReelsTab();
 
     return Scaffold(
       appBar: AppBar(
@@ -2567,14 +2575,14 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         },
         destinations: const [
           NavigationDestination(
-            icon: Icon(Icons.smart_display_outlined),
-            selectedIcon: Icon(Icons.smart_display),
-            label: 'Questões',
-          ),
-          NavigationDestination(
             icon: Icon(Icons.menu_book_outlined),
             selectedIcon: Icon(Icons.menu_book),
             label: 'Aulas',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.smart_display_outlined),
+            selectedIcon: Icon(Icons.smart_display),
+            label: 'Questões',
           ),
           NavigationDestination(
             icon: Icon(Icons.person_outline),

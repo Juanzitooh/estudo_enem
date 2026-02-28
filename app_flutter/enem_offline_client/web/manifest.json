@@ -1,11 +1,11 @@
 {
-    "name": "enem_offline_client",
-    "short_name": "enem_offline_client",
+    "name": "Enem Questões",
+    "short_name": "Enem Questões",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "App offline de estudo para ENEM.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
