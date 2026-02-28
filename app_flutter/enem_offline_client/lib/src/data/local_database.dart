@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:math' as math;
 
+import 'package:flutter/foundation.dart';
 import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
@@ -550,6 +551,9 @@ class LocalDatabase {
   }
 
   Future<String> _resolveDatabasePath() async {
+    if (kIsWeb) {
+      return AppConfig.linuxDbFileName;
+    }
     if (Platform.isLinux) {
       return _resolveLinuxDatabasePath();
     }
@@ -1042,6 +1046,9 @@ class LocalDatabase {
   }
 
   void _ensureDesktopDriver() {
+    if (kIsWeb) {
+      return;
+    }
     if (Platform.isAndroid || Platform.isIOS) {
       return;
     }
