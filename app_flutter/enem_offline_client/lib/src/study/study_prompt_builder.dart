@@ -9,12 +9,22 @@ class StudyPromptBuilder {
     required int attempts,
     required String errorReason,
     required String topicHint,
+    required String pacing,
+    required String levelBreak,
+    required List<String> topicTags,
+    required String pattern,
   }) {
     final safeArea = area.trim().isEmpty ? 'Não informado' : area.trim();
     final safeModule =
         moduleTitle.trim().isEmpty ? 'Não informado' : moduleTitle.trim();
     final safeTopic =
         topicHint.trim().isEmpty ? 'Não informado' : topicHint.trim();
+    final safePacing = pacing.trim().isEmpty ? 'indefinido' : pacing.trim();
+    final safeLevelBreak =
+        levelBreak.trim().isEmpty ? 'indefinido' : levelBreak.trim();
+    final safePattern = pattern.trim().isEmpty ? 'aleatorio' : pattern.trim();
+    final safeTopicTags =
+        topicTags.isEmpty ? 'não identificado' : topicTags.join(', ');
     final accuracyPercent = (accuracy * 100).toStringAsFixed(1);
 
     return '''
@@ -26,6 +36,12 @@ Módulo sugerido: $safeModule
 Desempenho atual: $accuracyPercent% de acerto em $attempts tentativa(s)
 Causa provável do erro: $errorReason
 Tópico relacionado: $safeTopic
+
+Perfil de erro local:
+- pacing: $safePacing
+- level_break: $safeLevelBreak
+- topic_tags: $safeTopicTags
+- pattern: $safePattern
 
 Quero que você:
 1) Explique o conteúdo do zero até nível ENEM.

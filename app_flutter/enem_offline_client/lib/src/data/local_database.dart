@@ -72,6 +72,28 @@ class SkillPriorityItem {
   final String band;
 }
 
+class SkillErrorProfile {
+  const SkillErrorProfile({
+    required this.skill,
+    required this.attempts,
+    required this.accuracy,
+    required this.pacing,
+    required this.levelBreak,
+    required this.pattern,
+    required this.topicTags,
+    required this.averageSeconds,
+  });
+
+  final String skill;
+  final int attempts;
+  final double accuracy;
+  final String pacing;
+  final String levelBreak;
+  final String pattern;
+  final List<String> topicTags;
+  final double averageSeconds;
+}
+
 class ModuleSuggestion {
   const ModuleSuggestion({
     required this.id,
@@ -477,9 +499,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 12,
+      version: 13,
       onCreate: (db, _) async {
-        await _createSchemaV12(db);
+        await _createSchemaV13(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -511,6 +533,9 @@ class LocalDatabase {
         }
         if (oldVersion < 12) {
           await _ensureStudentProfilesSchemaV12(db);
+        }
+        if (oldVersion < 13) {
+          await _ensureProgressSchemaV13(db);
         }
       },
     );
@@ -640,6 +665,11 @@ class LocalDatabase {
     }
   }
 
+  Future<void> _createSchemaV13(Database db) async {
+    await _createSchemaV12(db);
+    await _ensureProgressSchemaV13(db);
+  }
+
   Future<void> _createSchemaV12(Database db) async {
     await _createSchemaV11(db);
     await _ensureStudentProfilesSchemaV12(db);
@@ -711,6 +741,8 @@ class LocalDatabase {
         question_id TEXT NOT NULL,
         is_correct INTEGER NOT NULL,
         answered_at TEXT NOT NULL,
+        elapsed_seconds INTEGER,
+        answer_source TEXT,
         FOREIGN KEY(question_id) REFERENCES questions(id)
       )
     ''');
@@ -743,6 +775,28 @@ class LocalDatabase {
         description TEXT,
         source TEXT
       )
+    ''');
+  }
+
+  Future<void> _ensureProgressSchemaV13(Database db) async {
+    final progressColumns = await db.rawQuery("PRAGMA table_info('progress')");
+    final progressColumnNames =
+        progressColumns.map((row) => (row['name'] ?? '').toString()).toSet();
+
+    if (!progressColumnNames.contains('elapsed_seconds')) {
+      await db
+          .execute('ALTER TABLE progress ADD COLUMN elapsed_seconds INTEGER');
+    }
+    if (!progressColumnNames.contains('answer_source')) {
+      await db.execute('ALTER TABLE progress ADD COLUMN answer_source TEXT');
+    }
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_progress_answered_at
+      ON progress (answered_at DESC)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_progress_question_answered
+      ON progress (question_id, answered_at DESC)
     ''');
   }
 
@@ -1127,6 +1181,22 @@ class LocalDatabase {
       return 'dificil';
     }
     return '';
+  }
+
+  String _normalizeTopicTag(String rawValue) {
+    final normalized = rawValue.trim().toLowerCase();
+    if (normalized.isEmpty) {
+      return '';
+    }
+
+    final compact = normalized.replaceAll(RegExp(r'\s+'), ' ');
+    if (compact.length < 3) {
+      return '';
+    }
+    if (compact == '-' || compact == 'na' || compact == 'n/a') {
+      return '';
+    }
+    return compact;
   }
 
   double _confidenceFromAttempts(int attempts) {
@@ -2323,13 +2393,20 @@ class LocalDatabase {
     required String questionId,
     required bool isCorrect,
     DateTime? answeredAt,
+    int? elapsedSeconds,
+    String answerSource = '',
   }) async {
+    final normalizedElapsed =
+        elapsedSeconds == null || elapsedSeconds <= 0 ? null : elapsedSeconds;
+    final normalizedSource = answerSource.trim();
     await db.insert(
       'progress',
       {
         'question_id': questionId,
         'is_correct': isCorrect ? 1 : 0,
         'answered_at': (answeredAt ?? DateTime.now()).toIso8601String(),
+        'elapsed_seconds': normalizedElapsed,
+        'answer_source': normalizedSource.isEmpty ? null : normalizedSource,
       },
     );
   }
@@ -2352,7 +2429,12 @@ class LocalDatabase {
     if (questionId == null || questionId.isEmpty) {
       return;
     }
-    await recordAnswer(db, questionId: questionId, isCorrect: isCorrect);
+    await recordAnswer(
+      db,
+      questionId: questionId,
+      isCorrect: isCorrect,
+      answerSource: 'demo',
+    );
   }
 
   Future<List<WeakSkillStat>> loadWeakSkills(Database db,
@@ -2385,6 +2467,186 @@ class LocalDatabase {
         )
         .where((item) => item.skill.isNotEmpty && item.total > 0)
         .toList();
+  }
+
+  Future<SkillErrorProfile?> loadSkillErrorProfile(
+    Database db, {
+    required String skill,
+    int topicLimit = 5,
+  }) async {
+    final normalizedSkill = _normalizeSkillToken(skill);
+    if (normalizedSkill.isEmpty) {
+      return null;
+    }
+
+    final summaryRows = await db.rawQuery(
+      '''
+      SELECT
+        SUM(CASE WHEN p.is_correct = 1 THEN 1 ELSE 0 END) AS correct_count,
+        COUNT(*) AS total_count,
+        AVG(
+          CASE
+            WHEN p.elapsed_seconds IS NOT NULL AND p.elapsed_seconds > 0
+            THEN p.elapsed_seconds
+            ELSE NULL
+          END
+        ) AS avg_seconds,
+        AVG(
+          CASE
+            WHEN p.is_correct = 0
+             AND p.elapsed_seconds IS NOT NULL
+             AND p.elapsed_seconds > 0
+            THEN p.elapsed_seconds
+            ELSE NULL
+          END
+        ) AS avg_error_seconds
+      FROM progress p
+      JOIN questions q ON q.id = p.question_id
+      WHERE LOWER(COALESCE(q.skill, '')) = LOWER(?)
+      ''',
+      [normalizedSkill],
+    );
+    if (summaryRows.isEmpty) {
+      return null;
+    }
+
+    final summary = summaryRows.first;
+    final attempts = _toInt(summary['total_count']);
+    if (attempts <= 0) {
+      return null;
+    }
+    final correct = _toInt(summary['correct_count']);
+    final accuracy = correct / attempts;
+    final averageSeconds = _toDouble(summary['avg_seconds']);
+    final averageErrorSeconds = _toDouble(summary['avg_error_seconds']);
+
+    final levelRows = await db.rawQuery(
+      '''
+      SELECT
+        LOWER(COALESCE(q.difficulty, '')) AS difficulty,
+        SUM(CASE WHEN p.is_correct = 0 THEN 1 ELSE 0 END) AS error_count,
+        COUNT(*) AS total_count
+      FROM progress p
+      JOIN questions q ON q.id = p.question_id
+      WHERE LOWER(COALESCE(q.skill, '')) = LOWER(?)
+      GROUP BY LOWER(COALESCE(q.difficulty, ''))
+      ''',
+      [normalizedSkill],
+    );
+
+    String levelBreak = 'media';
+    int bestErrorCount = -1;
+    double bestErrorRate = -1;
+    for (final row in levelRows) {
+      final difficulty =
+          _normalizeDifficultyToken((row['difficulty'] ?? '').toString());
+      if (difficulty.isEmpty) {
+        continue;
+      }
+      final errorCount = _toInt(row['error_count']);
+      final totalCount = _toInt(row['total_count']);
+      if (totalCount <= 0) {
+        continue;
+      }
+      final errorRate = errorCount / totalCount;
+      final isBetter = errorCount > bestErrorCount ||
+          (errorCount == bestErrorCount && errorRate > bestErrorRate);
+      if (!isBetter) {
+        continue;
+      }
+      bestErrorCount = errorCount;
+      bestErrorRate = errorRate;
+      levelBreak = difficulty;
+    }
+
+    String pacing = 'equilibrado';
+    final paceReference =
+        averageErrorSeconds > 0 ? averageErrorSeconds : averageSeconds;
+    if (paceReference > 0) {
+      if (paceReference <= 40) {
+        pacing = 'rapido';
+      } else if (paceReference >= 120) {
+        pacing = 'lento';
+      }
+    }
+
+    final topicRows = await db.rawQuery(
+      '''
+      SELECT
+        COALESCE(m.assuntos_match, '') AS assuntos_match,
+        COALESCE(q.materia, '') AS materia,
+        COALESCE(q.discipline, '') AS discipline
+      FROM progress p
+      JOIN questions q ON q.id = p.question_id
+      LEFT JOIN module_question_matches m ON m.question_id = q.id
+      WHERE LOWER(COALESCE(q.skill, '')) = LOWER(?)
+        AND p.is_correct = 0
+      ''',
+      [normalizedSkill],
+    );
+
+    final topicCounts = <String, int>{};
+    for (final row in topicRows) {
+      final rawAssuntos = (row['assuntos_match'] ?? '').toString();
+      final rawMateria = (row['materia'] ?? '').toString();
+      final rawDiscipline = (row['discipline'] ?? '').toString();
+      final rawTokens = <String>[];
+
+      if (rawAssuntos.trim().isNotEmpty) {
+        rawTokens.addAll(rawAssuntos.split(RegExp(r'[;,|/]')));
+      }
+      if (rawTokens.isEmpty && rawMateria.trim().isNotEmpty) {
+        rawTokens.add(rawMateria);
+      }
+      if (rawTokens.isEmpty && rawDiscipline.trim().isNotEmpty) {
+        rawTokens.add(rawDiscipline);
+      }
+
+      for (final token in rawTokens) {
+        final normalized = _normalizeTopicTag(token);
+        if (normalized.isEmpty) {
+          continue;
+        }
+        topicCounts[normalized] = (topicCounts[normalized] ?? 0) + 1;
+      }
+    }
+
+    final sortedTopics = topicCounts.entries.toList()
+      ..sort((a, b) {
+        final byCount = b.value.compareTo(a.value);
+        if (byCount != 0) {
+          return byCount;
+        }
+        return a.key.compareTo(b.key);
+      });
+    final safeLimit = topicLimit.clamp(1, 12).toInt();
+    final topicTags =
+        sortedTopics.take(safeLimit).map((entry) => entry.key).toList();
+
+    String pattern = 'aleatorio';
+    if (sortedTopics.isNotEmpty) {
+      final totalTagMentions = sortedTopics.fold<int>(
+        0,
+        (sum, entry) => sum + entry.value,
+      );
+      final topTagMentions = sortedTopics.first.value;
+      if (totalTagMentions >= 3 && topTagMentions / totalTagMentions >= 0.5) {
+        pattern = 'repetido';
+      }
+    } else if (bestErrorRate >= 0.6) {
+      pattern = 'repetido';
+    }
+
+    return SkillErrorProfile(
+      skill: normalizedSkill,
+      attempts: attempts,
+      accuracy: accuracy,
+      pacing: pacing,
+      levelBreak: levelBreak,
+      pattern: pattern,
+      topicTags: topicTags,
+      averageSeconds: averageSeconds,
+    );
   }
 
   Future<List<SkillPriorityItem>> loadSkillPriorities(
