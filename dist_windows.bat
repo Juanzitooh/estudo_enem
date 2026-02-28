@@ -111,6 +111,7 @@ set "MODULES_CSV=%SCRIPT_DIR%plano\indice_livros_6_volumes.csv"
 set "ASSET_BUILDER=%SCRIPT_DIR%scripts\build_assets_release.py"
 set "MANIFEST_UPDATER=%SCRIPT_DIR%scripts\update_release_manifest_windows.py"
 set "APP_DIR=%SCRIPT_DIR%app_flutter\enem_offline_client"
+set "WINDOWS_ICON_SOURCE=%APP_DIR%\assets\app_icon.ico"
 set "RELEASE_DIR=%OUT_DIR_ABS%\%VERSION%"
 set "MANIFEST_PATH=%RELEASE_DIR%\manifest.json"
 set "RELEASE_MANIFEST_PATH=%RELEASE_DIR%\release_manifest.json"
@@ -215,6 +216,14 @@ if errorlevel 1 (
   popd >nul
   set "ERR_MSG=falha no flutter pub get."
   goto :die
+)
+if exist "%WINDOWS_ICON_SOURCE%" if exist "%APP_DIR%\windows\runner\resources" (
+  copy /y "%WINDOWS_ICON_SOURCE%" "%APP_DIR%\windows\runner\resources\app_icon.ico" >nul
+  if errorlevel 1 (
+    popd >nul
+    set "ERR_MSG=falha ao copiar app_icon.ico para windows/runner/resources."
+    goto :die
+  )
 )
 
 set "DART_DEFINES="
