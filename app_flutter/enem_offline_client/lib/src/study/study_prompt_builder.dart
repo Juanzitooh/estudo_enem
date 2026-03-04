@@ -13,6 +13,8 @@ class StudyPromptBuilder {
     required String levelBreak,
     required List<String> topicTags,
     required String pattern,
+    List<String> localSignals = const [],
+    List<String> evidenceSnippets = const [],
   }) {
     final safeArea = area.trim().isEmpty ? 'Não informado' : area.trim();
     final safeModule =
@@ -25,6 +27,11 @@ class StudyPromptBuilder {
     final safePattern = pattern.trim().isEmpty ? 'aleatorio' : pattern.trim();
     final safeTopicTags =
         topicTags.isEmpty ? 'não identificado' : topicTags.join(', ');
+    final safeSignals =
+        localSignals.isEmpty ? 'sem_sinal_forte' : localSignals.join(', ');
+    final safeEvidence = evidenceSnippets.isEmpty
+        ? 'sem_evidencia_relevante'
+        : evidenceSnippets.join(' | ');
     final accuracyPercent = (accuracy * 100).toStringAsFixed(1);
 
     return '''
@@ -42,6 +49,8 @@ Perfil de erro local:
 - level_break: $safeLevelBreak
 - topic_tags: $safeTopicTags
 - pattern: $safePattern
+- signals: $safeSignals
+- evidence: $safeEvidence
 
 Quero que você:
 1) Explique o conteúdo do zero até nível ENEM.

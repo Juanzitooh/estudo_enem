@@ -84,6 +84,11 @@ class SkillErrorProfile {
     required this.pattern,
     required this.topicTags,
     required this.averageSeconds,
+    required this.highTimeErrorSignal,
+    required this.quickErrorSignal,
+    required this.repeatedTagErrorSignal,
+    required this.easyErrorSignal,
+    required this.evidence,
   });
 
   final String skill;
@@ -94,6 +99,29 @@ class SkillErrorProfile {
   final String pattern;
   final List<String> topicTags;
   final double averageSeconds;
+  final bool highTimeErrorSignal;
+  final bool quickErrorSignal;
+  final bool repeatedTagErrorSignal;
+  final bool easyErrorSignal;
+  final List<SkillErrorEvidence> evidence;
+}
+
+class SkillErrorEvidence {
+  const SkillErrorEvidence({
+    required this.signal,
+    required this.evidenceType,
+    required this.evidenceValue,
+    required this.errorCount,
+    required this.totalCount,
+    required this.errorRate,
+  });
+
+  final String signal;
+  final String evidenceType;
+  final String evidenceValue;
+  final int errorCount;
+  final int totalCount;
+  final double errorRate;
 }
 
 class ModuleSuggestion {
@@ -501,9 +529,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 13,
+      version: 14,
       onCreate: (db, _) async {
-        await _createSchemaV13(db);
+        await _createSchemaV14(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -538,6 +566,9 @@ class LocalDatabase {
         }
         if (oldVersion < 13) {
           await _ensureProgressSchemaV13(db);
+        }
+        if (oldVersion < 14) {
+          await _ensureSkillErrorEvidenceSchemaV14(db);
         }
       },
     );
@@ -668,6 +699,11 @@ class LocalDatabase {
         // Tenta próximo candidato.
       }
     }
+  }
+
+  Future<void> _createSchemaV14(Database db) async {
+    await _createSchemaV13(db);
+    await _ensureSkillErrorEvidenceSchemaV14(db);
   }
 
   Future<void> _createSchemaV13(Database db) async {
@@ -802,6 +838,30 @@ class LocalDatabase {
     await db.execute('''
       CREATE INDEX IF NOT EXISTS idx_progress_question_answered
       ON progress (question_id, answered_at DESC)
+    ''');
+  }
+
+  Future<void> _ensureSkillErrorEvidenceSchemaV14(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS skill_error_evidence (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        skill TEXT NOT NULL,
+        signal TEXT NOT NULL,
+        evidence_type TEXT NOT NULL,
+        evidence_value TEXT NOT NULL,
+        error_count INTEGER NOT NULL DEFAULT 0,
+        total_count INTEGER NOT NULL DEFAULT 0,
+        error_rate REAL NOT NULL DEFAULT 0,
+        updated_at TEXT NOT NULL
+      )
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_skill_error_evidence_skill
+      ON skill_error_evidence (skill, updated_at DESC)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_skill_error_evidence_signal
+      ON skill_error_evidence (signal, error_rate DESC)
     ''');
   }
 
@@ -2496,7 +2556,34 @@ class LocalDatabase {
       '''
       SELECT
         SUM(CASE WHEN p.is_correct = 1 THEN 1 ELSE 0 END) AS correct_count,
+        SUM(CASE WHEN p.is_correct = 0 THEN 1 ELSE 0 END) AS error_count,
         COUNT(*) AS total_count,
+        SUM(
+          CASE
+            WHEN p.is_correct = 0
+             AND p.elapsed_seconds IS NOT NULL
+             AND p.elapsed_seconds >= 120
+            THEN 1
+            ELSE 0
+          END
+        ) AS high_time_error_count,
+        SUM(
+          CASE
+            WHEN p.is_correct = 0
+             AND p.elapsed_seconds IS NOT NULL
+             AND p.elapsed_seconds <= 30
+            THEN 1
+            ELSE 0
+          END
+        ) AS quick_error_count,
+        SUM(
+          CASE
+            WHEN p.is_correct = 0
+             AND LOWER(TRIM(COALESCE(q.difficulty, ''))) IN ('facil', 'fácil', 'easy', 'f')
+            THEN 1
+            ELSE 0
+          END
+        ) AS easy_error_count,
         AVG(
           CASE
             WHEN p.elapsed_seconds IS NOT NULL AND p.elapsed_seconds > 0
@@ -2529,9 +2616,19 @@ class LocalDatabase {
       return null;
     }
     final correct = _toInt(summary['correct_count']);
+    final errorCount = _toInt(summary['error_count']);
+    final highTimeErrorCount = _toInt(summary['high_time_error_count']);
+    final quickErrorCount = _toInt(summary['quick_error_count']);
+    final easyErrorCount = _toInt(summary['easy_error_count']);
     final accuracy = correct / attempts;
     final averageSeconds = _toDouble(summary['avg_seconds']);
     final averageErrorSeconds = _toDouble(summary['avg_error_seconds']);
+    final highTimeErrorRate =
+        (errorCount <= 0 ? 0.0 : highTimeErrorCount / errorCount).toDouble();
+    final quickErrorRate =
+        (errorCount <= 0 ? 0.0 : quickErrorCount / errorCount).toDouble();
+    final easyErrorRate =
+        (errorCount <= 0 ? 0.0 : easyErrorCount / errorCount).toDouble();
 
     final levelRows = await db.rawQuery(
       '''
@@ -2635,20 +2732,101 @@ class LocalDatabase {
     final safeLimit = topicLimit.clamp(1, 12).toInt();
     final topicTags =
         sortedTopics.take(safeLimit).map((entry) => entry.key).toList();
+    final totalTagMentions = sortedTopics.fold<int>(
+      0,
+      (sum, entry) => sum + entry.value,
+    );
+    final topTagMentions = sortedTopics.isEmpty ? 0 : sortedTopics.first.value;
+    final topTagRate =
+        totalTagMentions <= 0 ? 0 : topTagMentions / totalTagMentions;
+
+    final highTimeErrorSignal =
+        highTimeErrorCount >= 2 || highTimeErrorRate >= 0.45;
+    final quickErrorSignal = quickErrorCount >= 2 || quickErrorRate >= 0.45;
+    final easyErrorSignal = easyErrorCount >= 2 || easyErrorRate >= 0.35;
+    final repeatedTagErrorSignal =
+        topTagMentions >= 2 && (topTagRate >= 0.5 || topTagMentions >= 3);
 
     String pattern = 'aleatorio';
-    if (sortedTopics.isNotEmpty) {
-      final totalTagMentions = sortedTopics.fold<int>(
-        0,
-        (sum, entry) => sum + entry.value,
-      );
-      final topTagMentions = sortedTopics.first.value;
-      if (totalTagMentions >= 3 && topTagMentions / totalTagMentions >= 0.5) {
-        pattern = 'repetido';
-      }
+    if (repeatedTagErrorSignal) {
+      pattern = 'repetido';
     } else if (bestErrorRate >= 0.6) {
       pattern = 'repetido';
     }
+
+    final evidence = <SkillErrorEvidence>[];
+    if (errorCount > 0) {
+      evidence.add(
+        SkillErrorEvidence(
+          signal: 'erro_tempo_alto',
+          evidenceType: 'tempo',
+          evidenceValue: '>=120s',
+          errorCount: highTimeErrorCount,
+          totalCount: errorCount,
+          errorRate: highTimeErrorRate,
+        ),
+      );
+      evidence.add(
+        SkillErrorEvidence(
+          signal: 'erro_rapido',
+          evidenceType: 'tempo',
+          evidenceValue: '<=30s',
+          errorCount: quickErrorCount,
+          totalCount: errorCount,
+          errorRate: quickErrorRate,
+        ),
+      );
+      evidence.add(
+        SkillErrorEvidence(
+          signal: 'erro_questao_facil',
+          evidenceType: 'difficulty',
+          evidenceValue: 'facil',
+          errorCount: easyErrorCount,
+          totalCount: errorCount,
+          errorRate: easyErrorRate,
+        ),
+      );
+    }
+
+    for (final row in levelRows) {
+      final difficulty =
+          _normalizeDifficultyToken((row['difficulty'] ?? '').toString());
+      final levelErrorCount = _toInt(row['error_count']);
+      final levelTotalCount = _toInt(row['total_count']);
+      if (difficulty.isEmpty || levelErrorCount <= 0 || levelTotalCount <= 0) {
+        continue;
+      }
+      evidence.add(
+        SkillErrorEvidence(
+          signal: 'erro_por_dificuldade',
+          evidenceType: 'difficulty',
+          evidenceValue: difficulty,
+          errorCount: levelErrorCount,
+          totalCount: levelTotalCount,
+          errorRate: levelErrorCount / levelTotalCount,
+        ),
+      );
+    }
+
+    if (totalTagMentions > 0) {
+      for (final entry in sortedTopics.take(safeLimit)) {
+        evidence.add(
+          SkillErrorEvidence(
+            signal: 'erro_recorrente_tag',
+            evidenceType: 'tag',
+            evidenceValue: entry.key,
+            errorCount: entry.value,
+            totalCount: totalTagMentions,
+            errorRate: entry.value / totalTagMentions,
+          ),
+        );
+      }
+    }
+    await _persistSkillErrorEvidence(
+      db,
+      skill: normalizedSkill,
+      evidence: evidence,
+    );
 
     return SkillErrorProfile(
       skill: normalizedSkill,
@@ -2659,7 +2837,58 @@ class LocalDatabase {
       pattern: pattern,
       topicTags: topicTags,
       averageSeconds: averageSeconds,
+      highTimeErrorSignal: highTimeErrorSignal,
+      quickErrorSignal: quickErrorSignal,
+      repeatedTagErrorSignal: repeatedTagErrorSignal,
+      easyErrorSignal: easyErrorSignal,
+      evidence: evidence,
     );
+  }
+
+  Future<void> _persistSkillErrorEvidence(
+    Database db, {
+    required String skill,
+    required List<SkillErrorEvidence> evidence,
+  }) async {
+    final normalizedSkill = _normalizeSkillToken(skill);
+    if (normalizedSkill.isEmpty) {
+      return;
+    }
+
+    final now = DateTime.now().toIso8601String();
+    await db.transaction((txn) async {
+      await txn.delete(
+        'skill_error_evidence',
+        where: 'LOWER(skill) = LOWER(?)',
+        whereArgs: [normalizedSkill],
+      );
+
+      for (final item in evidence) {
+        final signal = item.signal.trim().toLowerCase();
+        final evidenceType = item.evidenceType.trim().toLowerCase();
+        final evidenceValue = item.evidenceValue.trim().toLowerCase();
+        if (signal.isEmpty || evidenceType.isEmpty || evidenceValue.isEmpty) {
+          continue;
+        }
+        if (item.totalCount <= 0 || item.errorCount <= 0) {
+          continue;
+        }
+
+        await txn.insert(
+          'skill_error_evidence',
+          {
+            'skill': normalizedSkill,
+            'signal': signal,
+            'evidence_type': evidenceType,
+            'evidence_value': evidenceValue,
+            'error_count': item.errorCount,
+            'total_count': item.totalCount,
+            'error_rate': item.errorRate.clamp(0, 1).toDouble(),
+            'updated_at': now,
+          },
+        );
+      }
+    });
   }
 
   Future<List<SkillPriorityItem>> loadSkillPriorities(

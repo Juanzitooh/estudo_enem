@@ -2515,6 +2515,23 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     final levelBreak = errorProfile?.levelBreak ?? 'media';
     final pattern = errorProfile?.pattern ?? 'aleatorio';
     final topicTags = errorProfile?.topicTags ?? <String>[];
+    final localSignals = <String>[
+      if (errorProfile?.highTimeErrorSignal ?? false) 'tempo_alto+erro',
+      if (errorProfile?.quickErrorSignal ?? false) 'erro_rapido',
+      if (errorProfile?.repeatedTagErrorSignal ?? false) 'erro_recorrente_tag',
+      if (errorProfile?.easyErrorSignal ?? false) 'erro_questao_facil',
+    ];
+    final evidenceSnippets =
+        (errorProfile?.evidence ?? const <SkillErrorEvidence>[])
+        .where((item) => item.errorCount > 0 && item.totalCount > 0)
+        .take(5)
+        .map(
+          (item) =>
+              '${item.evidenceType}:${item.evidenceValue} '
+              '(${(item.errorRate * 100).toStringAsFixed(0)}%, '
+              '${item.errorCount}/${item.totalCount})',
+        )
+        .toList();
 
     late final String prompt;
     late final String successMessage;
@@ -2545,6 +2562,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         levelBreak: levelBreak,
         topicTags: topicTags,
         pattern: pattern,
+        localSignals: localSignals,
+        evidenceSnippets: evidenceSnippets,
       );
       successMessage = 'Prompt de aula completa copiado.';
     }
