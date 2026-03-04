@@ -521,6 +521,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 180,
                   child: DropdownButtonFormField<int?>(
+                    isExpanded: true,
                     key: ValueKey('question_year_$_questionYearSelecionado'),
                     initialValue: _questionYearSelecionado,
                     decoration: const InputDecoration(
@@ -547,6 +548,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 140,
                   child: DropdownButtonFormField<int?>(
+                    isExpanded: true,
                     key: ValueKey('question_day_$_questionDaySelecionado'),
                     initialValue: _questionDaySelecionado,
                     decoration: const InputDecoration(
@@ -573,6 +575,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 280,
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey('question_area_$_questionAreaSelecionada'),
                     initialValue: _questionAreaSelecionada,
                     decoration: const InputDecoration(
@@ -599,6 +602,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 280,
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey(
                       'question_discipline_$_questionDisciplineSelecionada',
                     ),
@@ -627,6 +631,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 280,
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey(
                         'question_materia_$_questionMateriaSelecionada'),
                     initialValue: _questionMateriaSelecionada,
@@ -654,6 +659,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 180,
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey(
                       'question_competency_$_questionCompetencySelecionada',
                     ),
@@ -682,6 +688,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 180,
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey('question_skill_$_questionSkillSelecionada'),
                     initialValue: _questionSkillSelecionada,
                     decoration: const InputDecoration(
@@ -708,6 +715,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 180,
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey(
                       'question_difficulty_$_questionDifficultySelecionada',
                     ),
@@ -736,6 +744,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 SizedBox(
                   width: 170,
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey(
                       'question_has_image_$_questionHasImageSelecionado',
                     ),
@@ -985,6 +994,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 const SizedBox(width: 8),
                 Expanded(
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey(_matchTipoSelecionado),
                     initialValue: _matchTipoSelecionado,
                     decoration: const InputDecoration(
@@ -1102,6 +1112,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
               children: [
                 Expanded(
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey(_essayThemeSourceSelecionado),
                     initialValue: _essayThemeSourceSelecionado,
                     decoration: const InputDecoration(
@@ -1128,6 +1139,7 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 const SizedBox(width: 8),
                 Expanded(
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey(_essayParserModeSelecionado),
                     initialValue: _essayParserModeSelecionado,
                     decoration: const InputDecoration(

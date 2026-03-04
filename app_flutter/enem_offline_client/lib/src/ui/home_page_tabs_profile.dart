@@ -84,6 +84,7 @@ extension _HomePageTabsProfileExt on _HomePageState {
               const Text('Nenhum perfil local ainda.')
             else
               DropdownButtonFormField<String>(
+                isExpanded: true,
                 key: ValueKey(selectedValue ?? 'no_profile'),
                 initialValue: selectedValue,
                 decoration: const InputDecoration(
@@ -149,6 +150,7 @@ extension _HomePageTabsProfileExt on _HomePageState {
                 SizedBox(
                   width: 240,
                   child: DropdownButtonFormField<String>(
+                    isExpanded: true,
                     key: ValueKey('profile_theme_$_profileThemeMode'),
                     initialValue: _profileThemeMode,
                     decoration: const InputDecoration(
