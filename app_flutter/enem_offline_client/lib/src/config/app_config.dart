@@ -4,7 +4,7 @@ class AppConfig {
   // URL padrão exibida no campo de update do app.
   static const String defaultManifestUrl = String.fromEnvironment(
     'ENEM_MANIFEST_URL',
-    defaultValue: 'http://127.0.0.1:8787/manifest.json',
+    defaultValue: 'http://127.0.0.1:8787/content/manifest.json',
   );
 
   // Diretório opcional para forçar caminho único do banco no Linux.

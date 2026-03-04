@@ -696,6 +696,7 @@ extension _HomePageTabsProfileExt on _HomePageState {
             else
               ..._moduleSuggestions.map(
                 (item) {
+                  final hasMatchedSkill = item.matchedSkill.trim().isNotEmpty;
                   final isFocused = _isFocusedStudyItem(
                     skill: item.matchedSkill,
                     materia: item.materia,
@@ -720,7 +721,7 @@ extension _HomePageTabsProfileExt on _HomePageState {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Skill ${item.matchedSkill} -> Vol ${item.volume} | ${item.materia}'
+                            '${hasMatchedSkill ? 'Skill ${item.matchedSkill}' : 'Catálogo'} -> Vol ${item.volume} | ${item.materia}'
                             ' | Módulo ${item.modulo} | pág. ${item.page.isEmpty ? '-' : item.page}',
                             style: const TextStyle(fontWeight: FontWeight.w600),
                           ),

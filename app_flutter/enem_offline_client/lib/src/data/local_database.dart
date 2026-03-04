@@ -2738,7 +2738,7 @@ class LocalDatabase {
   }) async {
     final weakSkills = await loadWeakSkills(db, limit: weakSkillLimit);
     if (weakSkills.isEmpty) {
-      return const [];
+      return _fallbackModuleSuggestions(db, limit: maxTotal);
     }
 
     final suggestions = <ModuleSuggestion>[];
@@ -2781,6 +2781,71 @@ class LocalDatabase {
     }
 
     return suggestions;
+  }
+
+  Future<List<ModuleSuggestion>> _fallbackModuleSuggestions(
+    Database db, {
+    int limit = 8,
+  }) async {
+    final safeLimit = limit <= 0 ? 8 : limit.clamp(1, 20);
+    final rows = await db.query(
+      'book_modules',
+      columns: [
+        'id',
+        'volume',
+        'area',
+        'materia',
+        'modulo',
+        'title',
+        'page',
+        'skills',
+        'skills_raw',
+      ],
+      where: "TRIM(COALESCE(title, '')) <> ''",
+      orderBy: 'volume ASC, materia ASC, modulo ASC',
+      limit: safeLimit,
+    );
+
+    if (rows.isEmpty) {
+      return const [];
+    }
+
+    return rows.map((row) {
+      final moduleSkill = _extractModulePrimarySkill(row);
+      return ModuleSuggestion(
+        id: (row['id'] ?? '').toString(),
+        volume: _toInt(row['volume']),
+        area: (row['area'] ?? '').toString(),
+        materia: (row['materia'] ?? '').toString(),
+        modulo: _toInt(row['modulo']),
+        title: (row['title'] ?? '').toString(),
+        page: (row['page'] ?? '').toString(),
+        skillsRaw: (row['skills_raw'] ?? '').toString(),
+        matchedSkill: moduleSkill,
+      );
+    }).toList();
+  }
+
+  String _extractModulePrimarySkill(Map<String, Object?> row) {
+    final skillsRaw = (row['skills_raw'] ?? '').toString();
+    final normalizedRaw = skillsRaw.replaceAll(';', ',');
+    for (final chunk in normalizedRaw.split(',')) {
+      final skill = _normalizeSkillToken(chunk);
+      if (skill.isNotEmpty) {
+        return skill;
+      }
+    }
+
+    final skillsBlob = (row['skills'] ?? '').toString();
+    final normalizedBlob = skillsBlob.replaceAll(';', ',');
+    for (final chunk in normalizedBlob.split(',')) {
+      final skill = _normalizeSkillToken(chunk);
+      if (skill.isNotEmpty) {
+        return skill;
+      }
+    }
+
+    return '';
   }
 
   Future<List<StudyBlockSuggestion>> suggestStudyBlocks(

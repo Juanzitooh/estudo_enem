@@ -499,6 +499,17 @@ if [[ "$SKIP_FLUTTER" -eq 0 ]]; then
 
   if [[ "$BUILD_WEB" -eq 1 ]]; then
     log "gerando build Web release..."
+    SQFLITE_WEB_SW="$APP_DIR/web/sqflite_sw.js"
+    SQFLITE_WEB_WASM="$APP_DIR/web/sqlite3.wasm"
+    if [[ ! -f "$SQFLITE_WEB_SW" || ! -f "$SQFLITE_WEB_WASM" ]]; then
+      log "runtime sqlite web ausente (sqflite_sw.js/sqlite3.wasm). executando setup..."
+      pushd "$APP_DIR" >/dev/null
+      dart run sqflite_common_ffi_web:setup
+      popd >/dev/null
+    fi
+    [[ -f "$SQFLITE_WEB_SW" ]] || die "arquivo nao encontrado apos setup: $SQFLITE_WEB_SW"
+    [[ -f "$SQFLITE_WEB_WASM" ]] || die "arquivo nao encontrado apos setup: $SQFLITE_WEB_WASM"
+
     FLUTTER_BUILD_WEB_CMD=(flutter build web --release)
     if [[ -n "$MANIFEST_URL" ]]; then
       FLUTTER_BUILD_WEB_CMD+=(--dart-define="ENEM_MANIFEST_URL=$MANIFEST_URL")
@@ -512,6 +523,8 @@ if [[ "$SKIP_FLUTTER" -eq 0 ]]; then
 
     GENERATED_WEB_DIR="$APP_DIR/build/web"
     [[ -d "$GENERATED_WEB_DIR" ]] || die "build Web nao encontrado apos build: $GENERATED_WEB_DIR"
+    cp -f "$SQFLITE_WEB_SW" "$GENERATED_WEB_DIR/sqflite_sw.js"
+    cp -f "$SQFLITE_WEB_WASM" "$GENERATED_WEB_DIR/sqlite3.wasm"
     WEB_ARCHIVE="$RELEASE_DIR/enem_offline_client_web_${VERSION}.tar.gz"
     tar -C "$APP_DIR/build" -czf "$WEB_ARCHIVE" web
     sha256sum "$WEB_ARCHIVE" > "$WEB_ARCHIVE.sha256"

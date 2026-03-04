@@ -10,6 +10,9 @@ import 'content_manifest.dart';
 import 'update_result.dart';
 
 class ContentUpdater {
+  static const Duration _manifestTimeout = Duration(seconds: 15);
+  static const Duration _assetTimeout = Duration(seconds: 120);
+
   ContentUpdater({
     required this.localDatabase,
     required this.manifestUri,
@@ -57,7 +60,8 @@ class ContentUpdater {
   }
 
   Future<ContentManifest> _fetchManifest() async {
-    final response = await _client.get(manifestUri);
+    final response =
+        await _client.get(manifestUri).timeout(_manifestTimeout);
     if (response.statusCode != 200) {
       throw Exception('Falha ao baixar manifest: HTTP ${response.statusCode}');
     }
@@ -71,7 +75,7 @@ class ContentUpdater {
 
   Future<Uint8List> _downloadAsset(ContentManifest manifest) async {
     final uri = _resolveAssetUri(manifest);
-    final response = await _client.get(uri);
+    final response = await _client.get(uri).timeout(_assetTimeout);
     if (response.statusCode != 200) {
       throw Exception('Falha ao baixar asset zip: HTTP ${response.statusCode}');
     }

@@ -589,6 +589,24 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     return 'Enem Questões';
   }
 
+  String _normalizeAreaForQuestionFilter(String value) {
+    final raw = value.trim();
+    final normalized = raw.toLowerCase();
+    if (normalized.contains('linguagens')) {
+      return 'Linguagens';
+    }
+    if (normalized.contains('humanas')) {
+      return 'Ciências Humanas';
+    }
+    if (normalized.contains('natureza')) {
+      return 'Ciências da Natureza';
+    }
+    if (normalized.contains('matem')) {
+      return 'Matemática';
+    }
+    return raw;
+  }
+
   String _bandLabel(String band) {
     if (band == 'foco') {
       return 'Foco';
@@ -729,6 +747,17 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     return palette.muted;
   }
 
+  String _friendlyErrorMessage({
+    required String prefix,
+    required Object error,
+  }) {
+    final raw = '$error';
+    if (raw.contains('SqfliteFfiWebException')) {
+      return '$prefix: SQLite web não inicializado. Rode ./deploy.sh novamente e recarregue a página (Ctrl+Shift+R).';
+    }
+    return '$prefix: $error';
+  }
+
   Color _riskColor(BuildContext context, String riskLabel) {
     final palette = context.appPalette;
     if (riskLabel == 'alto') {
@@ -791,111 +820,136 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   }
 
   Future<void> _refreshStats({bool refreshReels = true}) async {
-    final db = await _localDatabase.open();
-    final ensuredProfile = await _localDatabase.ensureDefaultStudentProfile(db);
-    final studentProfiles = await _localDatabase.loadStudentProfiles(db);
-    final activeStudentProfile =
-        await _localDatabase.loadActiveStudentProfile(db) ?? ensuredProfile;
-    final studentProfileCount = studentProfiles.length;
-    final questionCount = await _localDatabase.countQuestions(db);
-    final bookModuleCount = await _localDatabase.countBookModules(db);
-    final moduleQuestionMatchCount =
-        await _localDatabase.countModuleQuestionMatches(db);
-    final essaySessionCount = await _localDatabase.countEssaySessions(db);
-    final attemptCount = await _localDatabase.countAttempts(db);
-    final accuracy = await _localDatabase.globalAccuracy(db);
-    final databasePath = await _localDatabase.databasePath();
-    final weakSkills = await _localDatabase.loadWeakSkills(db, limit: 5);
-    final questionFilterOptions =
-        await _localDatabase.loadQuestionFilterOptions(db);
-    final filteredQuestions = await _localDatabase.searchQuestions(
-      db,
-      filter: _buildQuestionFilter(),
-    );
-    final recentAttempts =
-        await _localDatabase.loadRecentAttempts(db, limit: 10);
-    final studyBlockSuggestions =
-        await _localDatabase.suggestStudyBlocks(db, limit: 5);
-    final skillPriorities = await _localDatabase.loadSkillPriorities(
-      db,
-      limit: 10,
-    );
-    final moduleSuggestions = await _localDatabase.recommendModulesByWeakSkills(
-      db,
-      weakSkillLimit: 3,
-      modulePerSkill: 2,
-      maxTotal: 8,
-    );
-    final moduleQuestionMatches =
-        await _localDatabase.searchModuleQuestionMatches(
-      db,
-      filter: _buildMatchFilter(),
-    );
-    final recentEssaySessions = await _localDatabase.loadRecentEssaySessions(
-      db,
-      limit: 5,
-    );
-    final essayScoreSummary = await _localDatabase.loadEssayScoreSummary(db);
-    final version = await _localDatabase.getContentVersion(db);
-    final plannerReels = refreshReels
-        ? await _buildPlannerReels(
-            db,
-            priorities: skillPriorities,
-            totalQuestions: 18,
-          )
-        : _plannerReels;
-    final livePlanForecast = OfflinePlannerEngine.build(
-      now: DateTime.now(),
-      profile: activeStudentProfile,
-      priorities: skillPriorities,
-      horizonDays: 7,
-    );
-    final planForecast = _readSnapshotOrFallback(
-      profile: activeStudentProfile,
-      fallback: livePlanForecast,
-    );
+    try {
+      final db = await _localDatabase.open();
+      final ensuredProfile =
+          await _localDatabase.ensureDefaultStudentProfile(db);
+      final studentProfiles = await _localDatabase.loadStudentProfiles(db);
+      final activeStudentProfile =
+          await _localDatabase.loadActiveStudentProfile(db) ?? ensuredProfile;
+      final studentProfileCount = studentProfiles.length;
+      var questionCount = await _localDatabase.countQuestions(db);
 
-    if (!mounted) {
-      return;
+      // Primeiro uso no web pode abrir com banco vazio.
+      // Faz seed mínimo automático para evitar tela sem conteúdo.
+      if (questionCount == 0) {
+        await _localDatabase.seedLocalDemoIfEmpty(db);
+        questionCount = await _localDatabase.countQuestions(db);
+      }
+
+      final bookModuleCount = await _localDatabase.countBookModules(db);
+      final moduleQuestionMatchCount =
+          await _localDatabase.countModuleQuestionMatches(db);
+      final essaySessionCount = await _localDatabase.countEssaySessions(db);
+      final attemptCount = await _localDatabase.countAttempts(db);
+      final accuracy = await _localDatabase.globalAccuracy(db);
+      final databasePath = await _localDatabase.databasePath();
+      final weakSkills = await _localDatabase.loadWeakSkills(db, limit: 5);
+      final questionFilterOptions =
+          await _localDatabase.loadQuestionFilterOptions(db);
+      final filteredQuestions = await _localDatabase.searchQuestions(
+        db,
+        filter: _buildQuestionFilter(),
+      );
+      final recentAttempts = await _localDatabase.loadRecentAttempts(
+        db,
+        limit: 10,
+      );
+      final studyBlockSuggestions =
+          await _localDatabase.suggestStudyBlocks(db, limit: 5);
+      final skillPriorities = await _localDatabase.loadSkillPriorities(
+        db,
+        limit: 10,
+      );
+      final moduleSuggestions =
+          await _localDatabase.recommendModulesByWeakSkills(
+        db,
+        weakSkillLimit: 3,
+        modulePerSkill: 2,
+        maxTotal: 8,
+      );
+      final moduleQuestionMatches =
+          await _localDatabase.searchModuleQuestionMatches(
+        db,
+        filter: _buildMatchFilter(),
+      );
+      final recentEssaySessions = await _localDatabase.loadRecentEssaySessions(
+        db,
+        limit: 5,
+      );
+      final essayScoreSummary = await _localDatabase.loadEssayScoreSummary(db);
+      final version = await _localDatabase.getContentVersion(db);
+      final plannerReels = refreshReels
+          ? await _buildPlannerReels(
+              db,
+              priorities: skillPriorities,
+              totalQuestions: 18,
+            )
+          : _plannerReels;
+      final livePlanForecast = OfflinePlannerEngine.build(
+        now: DateTime.now(),
+        profile: activeStudentProfile,
+        priorities: skillPriorities,
+        horizonDays: 7,
+      );
+      final planForecast = _readSnapshotOrFallback(
+        profile: activeStudentProfile,
+        fallback: livePlanForecast,
+      );
+
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _studentProfiles = studentProfiles;
+        _activeStudentProfile = activeStudentProfile;
+        _offlinePlanForecast = planForecast;
+        _studentProfileCount = studentProfileCount;
+        _selectedStudentProfileId = activeStudentProfile.id;
+        _questionCount = questionCount;
+        _bookModuleCount = bookModuleCount;
+        _moduleQuestionMatchCount = moduleQuestionMatchCount;
+        _essaySessionCount = essaySessionCount;
+        _attemptCount = attemptCount;
+        _globalAccuracy = accuracy;
+        _databasePath = databasePath;
+        _questionFilterOptions = questionFilterOptions;
+        _filteredQuestions = filteredQuestions;
+        _recentAttempts = recentAttempts;
+        _studyBlockSuggestions = studyBlockSuggestions;
+        _skillPriorities = skillPriorities;
+        _weakSkills = weakSkills;
+        _moduleSuggestions = moduleSuggestions;
+        _moduleQuestionMatches = moduleQuestionMatches;
+        _recentEssaySessions = recentEssaySessions;
+        _essayScoreSummary = essayScoreSummary;
+        _contentVersion = version;
+        _plannerReels = plannerReels;
+        if (_plannerReels.isEmpty) {
+          _reelCurrentIndex = 0;
+        } else if (_reelCurrentIndex >= _plannerReels.length) {
+          _reelCurrentIndex = _plannerReels.length - 1;
+        }
+        if (refreshReels) {
+          _reelQuestionStartedAt =
+              _plannerReels.isEmpty ? null : DateTime.now();
+          final ids = _plannerReels.map((entry) => entry.question.id).toSet();
+          _reelMarkedAnswers.removeWhere((key, _) => !ids.contains(key));
+          _reelFeedbackByQuestion.removeWhere((key, _) => !ids.contains(key));
+        }
+      });
+      _syncProfileFields(activeStudentProfile);
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = _friendlyErrorMessage(
+          prefix: 'Falha ao carregar dados locais',
+          error: error,
+        );
+      });
     }
-    setState(() {
-      _studentProfiles = studentProfiles;
-      _activeStudentProfile = activeStudentProfile;
-      _offlinePlanForecast = planForecast;
-      _studentProfileCount = studentProfileCount;
-      _selectedStudentProfileId = activeStudentProfile.id;
-      _questionCount = questionCount;
-      _bookModuleCount = bookModuleCount;
-      _moduleQuestionMatchCount = moduleQuestionMatchCount;
-      _essaySessionCount = essaySessionCount;
-      _attemptCount = attemptCount;
-      _globalAccuracy = accuracy;
-      _databasePath = databasePath;
-      _questionFilterOptions = questionFilterOptions;
-      _filteredQuestions = filteredQuestions;
-      _recentAttempts = recentAttempts;
-      _studyBlockSuggestions = studyBlockSuggestions;
-      _skillPriorities = skillPriorities;
-      _weakSkills = weakSkills;
-      _moduleSuggestions = moduleSuggestions;
-      _moduleQuestionMatches = moduleQuestionMatches;
-      _recentEssaySessions = recentEssaySessions;
-      _essayScoreSummary = essayScoreSummary;
-      _contentVersion = version;
-      _plannerReels = plannerReels;
-      if (_plannerReels.isEmpty) {
-        _reelCurrentIndex = 0;
-      } else if (_reelCurrentIndex >= _plannerReels.length) {
-        _reelCurrentIndex = _plannerReels.length - 1;
-      }
-      if (refreshReels) {
-        _reelQuestionStartedAt = _plannerReels.isEmpty ? null : DateTime.now();
-        final ids = _plannerReels.map((entry) => entry.question.id).toSet();
-        _reelMarkedAnswers.removeWhere((key, _) => !ids.contains(key));
-        _reelFeedbackByQuestion.removeWhere((key, _) => !ids.contains(key));
-      }
-    });
-    _syncProfileFields(activeStudentProfile);
   }
 
   Future<void> _seedDemo() async {
@@ -1400,7 +1454,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
     setState(() {
       _busy = true;
-      _status = 'Buscando update...';
+      _status = 'Buscando update... (pode levar alguns segundos)';
     });
 
     try {
@@ -1408,7 +1462,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         localDatabase: _localDatabase,
         manifestUri: Uri.parse(manifestText),
       );
-      final result = await updater.checkAndUpdate();
+      final result = await updater
+          .checkAndUpdate()
+          .timeout(const Duration(minutes: 3));
       await _refreshStats();
 
       if (!mounted) {
@@ -1422,7 +1478,10 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         return;
       }
       setState(() {
-        _status = 'Falha no update: $error';
+        _status = _friendlyErrorMessage(
+          prefix: 'Falha no update',
+          error: error,
+        );
       });
     } finally {
       if (mounted) {
@@ -1547,10 +1606,21 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
     try {
       final db = await _localDatabase.open();
-      final pool = await _localDatabase.searchQuestions(
+      var pool = await _localDatabase.searchQuestions(
         db,
         filter: _buildTreinoPoolFilter(),
       );
+      var usedFallbackPool = false;
+      if (pool.isEmpty) {
+        final fallbackPool = await _localDatabase.searchQuestions(
+          db,
+          filter: const QuestionFilter(limit: 200),
+        );
+        if (fallbackPool.isNotEmpty) {
+          pool = fallbackPool;
+          usedFallbackPool = true;
+        }
+      }
       if (pool.isEmpty) {
         if (!mounted) {
           return;
@@ -1563,7 +1633,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           _treinoRespondida = false;
           _treinoRespostaSelecionada = '';
           _treinoFeedback = '';
-          _status = 'Sem questões para treino com os filtros atuais.';
+          _status =
+              'Sem questões no banco local. Verifique o manifest de conteúdo e atualize.';
         });
         return;
       }
@@ -1580,8 +1651,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       }
       _startTreinoSession(
         selecionadas,
-        statusMessage:
-            'Treino iniciado com ${selecionadas.length} questão(ões).',
+        statusMessage: usedFallbackPool
+            ? 'Treino iniciado com ${selecionadas.length} questão(ões) do banco geral (filtros atuais sem resultado).'
+            : 'Treino iniciado com ${selecionadas.length} questão(ões).',
       );
     } catch (error) {
       if (!mounted) {
@@ -2118,12 +2190,10 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     setState(() {
       _selectedTabIndex = _tabQuestoes;
       _questionSkillSelecionada = item.skill;
-      if (item.area.trim().isNotEmpty) {
-        _questionAreaSelecionada = item.area.trim();
-      }
-      if (item.materia.trim().isNotEmpty) {
-        _questionMateriaSelecionada = item.materia.trim();
-      }
+      final normalizedArea = _normalizeAreaForQuestionFilter(item.area);
+      _questionAreaSelecionada = normalizedArea;
+      _questionMateriaSelecionada = '';
+      _questionDisciplineSelecionada = '';
       _focusedStudySkill = item.skill.trim();
       _focusedStudyMateria = item.materia.trim();
       _focusedStudyModulo = item.modulo;
@@ -2397,16 +2467,16 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     setState(() {
       _selectedTabIndex = _tabQuestoes;
       _questionSkillSelecionada = item.matchedSkill.trim();
-      if (item.area.trim().isNotEmpty) {
-        _questionAreaSelecionada = item.area.trim();
-      }
-      if (item.materia.trim().isNotEmpty) {
-        _questionMateriaSelecionada = item.materia.trim();
-      }
+      final normalizedArea = _normalizeAreaForQuestionFilter(item.area);
+      _questionAreaSelecionada = normalizedArea;
+      _questionMateriaSelecionada = '';
+      _questionDisciplineSelecionada = '';
       _focusedStudySkill = item.matchedSkill.trim();
       _focusedStudyMateria = item.materia.trim();
       _focusedStudyModulo = item.modulo;
-      _status = 'Abrindo treino para ${item.matchedSkill}...';
+      _status = item.matchedSkill.trim().isNotEmpty
+          ? 'Abrindo treino para ${item.matchedSkill}...'
+          : 'Abrindo treino para ${item.materia} módulo ${item.modulo}...';
     });
 
     await _iniciarTreino();
