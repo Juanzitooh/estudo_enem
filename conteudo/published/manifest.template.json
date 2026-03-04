@@ -1,0 +1,55 @@
+{
+  "version": "2026.03.04.1",
+  "generated_at": "2026-03-04T00:00:00Z",
+  "review_status": "publicado",
+  "editorial_state_flow": [
+    "rascunho",
+    "revisado",
+    "aprovado",
+    "publicado"
+  ],
+  "metadata_contract": {
+    "required": [
+      "source_type",
+      "source_url",
+      "source_date",
+      "generated_by",
+      "reviewed_by",
+      "review_status",
+      "version",
+      "updated_at"
+    ]
+  },
+  "archive_file": "assets_2026.03.04.1.zip",
+  "archive_checksum_file": "assets_2026.03.04.1.zip.sha256",
+  "bundle_file": "content_bundle.json",
+  "sha256": "<sha256_do_zip>",
+  "size": 0,
+  "download_url": "",
+  "domains": {
+    "banco_questoes": {
+      "version": "2026.03.04.1",
+      "item_count": 0,
+      "path_hint": "banco_questoes/",
+      "review_status": "publicado"
+    },
+    "banco_aulas": {
+      "version": "2026.03.04.1",
+      "item_count": 0,
+      "path_hint": "banco_aulas/",
+      "review_status": "publicado"
+    },
+    "banco_videos": {
+      "version": "2026.03.04.1",
+      "item_count": 0,
+      "path_hint": "banco_videos/",
+      "review_status": "publicado"
+    },
+    "banco_redacao": {
+      "version": "2026.03.04.1",
+      "item_count": 0,
+      "path_hint": "banco_redacao/",
+      "review_status": "publicado"
+    }
+  }
+}

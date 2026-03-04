@@ -9,6 +9,7 @@ Separar claramente:
 ## Princípios
 - O app funciona sem internet com o conteúdo já instalado.
 - A internet entra apenas para atualizar pacotes (`manifest.json` + `assets.zip`).
+- Compatibilidade app x conteúdo segue contrato em `plano/politica_compatibilidade_atualizacao_offline.md`.
 - Conteúdo gerado por IA sempre passa por revisão humana antes de publicação.
 - Todo item publicado tem rastreabilidade de fonte e revisão.
 - Limpeza/retencao segue politica dedicada em `plano/politica_retencao_repositorio.md`.

@@ -1,0 +1,26 @@
+{
+  "domain": "banco_aulas",
+  "version": "2026.03.04.1",
+  "generated_at": "2026-03-04T00:00:00Z",
+  "review_status": "publicado",
+  "editorial_state_flow": [
+    "rascunho",
+    "revisado",
+    "aprovado",
+    "publicado"
+  ],
+  "item_count": 0,
+  "path_hint": "banco_aulas/",
+  "metadata_contract": {
+    "required": [
+      "source_type",
+      "source_url",
+      "source_date",
+      "generated_by",
+      "reviewed_by",
+      "review_status",
+      "version",
+      "updated_at"
+    ]
+  }
+}

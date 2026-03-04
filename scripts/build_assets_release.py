@@ -22,6 +22,8 @@ DEFAULT_MODULE_QUESTION_MATCHES_CSV = Path(
     "questoes/mapeamento_habilidades/intercorrelacao/modulo_questao_matches.csv"
 )
 DEFAULT_OUTPUT_DIR = Path("app_flutter/releases")
+DEFAULT_CONTENT_TREE_ROOT = Path("conteudo")
+CONTENT_BUNDLE_SCHEMA = "2"
 BUNDLE_FILE_NAME = "content_bundle.json"
 COMPETENCE_HEADER_RE = re.compile(r"^###\s+Competência de área\s+(\d+)\b", re.IGNORECASE)
 SKILL_LINE_RE = re.compile(r"^\s*-\s+\*\*H(\d+)\*\*")
@@ -35,6 +37,17 @@ MATRIX_SKILL_FILES = {
     "NATUREZA": Path("matriz/habilidades_por_area/natureza.md"),
 }
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+EDITORIAL_STATE_FLOW = ("rascunho", "revisado", "aprovado", "publicado")
+METADATA_CONTRACT_REQUIRED = (
+    "source_type",
+    "source_url",
+    "source_date",
+    "generated_by",
+    "reviewed_by",
+    "review_status",
+    "version",
+    "updated_at",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -84,6 +97,71 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=0,
         help="Limita quantidade de questões no bundle (0 = todas).",
+    )
+    parser.add_argument(
+        "--content-tree-root",
+        type=Path,
+        default=DEFAULT_CONTENT_TREE_ROOT,
+        help="Raiz da árvore canônica de conteúdo (raw/generated/reviewed/published).",
+    )
+    parser.add_argument(
+        "--write-content-tree",
+        action="store_true",
+        help="Escreve snapshot do release em conteudo/published/<versao>/.",
+    )
+    parser.add_argument(
+        "--generated-by",
+        type=str,
+        default="scripts/build_assets_release.py",
+        help="Identificador do processo/autor de geração.",
+    )
+    parser.add_argument(
+        "--reviewed-by",
+        type=str,
+        default="curadoria_humana",
+        help="Identificador da revisão humana.",
+    )
+    parser.add_argument(
+        "--review-status",
+        type=str,
+        default="publicado",
+        help="Estado editorial final do pacote (rascunho|revisado|aprovado|publicado).",
+    )
+    parser.add_argument(
+        "--source-type",
+        type=str,
+        default="repositorio_csv",
+        help="Tipo de fonte para metadados editoriais.",
+    )
+    parser.add_argument(
+        "--source-url",
+        type=str,
+        default="",
+        help="URL/caminho base da fonte para metadados editoriais (opcional).",
+    )
+    parser.add_argument(
+        "--source-date",
+        type=str,
+        default="",
+        help="Data da fonte em ISO-8601 (opcional). Se vazio, usa data de geracao.",
+    )
+    parser.add_argument(
+        "--min-app-version",
+        type=str,
+        default="",
+        help="Versão mínima do app Flutter compatível com este conteúdo (opcional).",
+    )
+    parser.add_argument(
+        "--max-app-version",
+        type=str,
+        default="",
+        help="Versão máxima do app Flutter compatível com este conteúdo (opcional).",
+    )
+    parser.add_argument(
+        "--origin-repo",
+        type=str,
+        default="",
+        help="Identificador da origem única do conteúdo (ex.: org/repo).",
     )
     return parser.parse_args()
 
@@ -576,6 +654,240 @@ def join_url(base: str, name: str) -> str:
     return f"{normalized}/{name}" if normalized else ""
 
 
+def normalize_review_status(raw_value: str) -> str:
+    token = raw_value.strip().casefold()
+    if token in EDITORIAL_STATE_FLOW:
+        return token
+    raise ValueError(
+        "review_status inválido: "
+        f"{raw_value!r}. Use um de: {', '.join(EDITORIAL_STATE_FLOW)}"
+    )
+
+
+def normalize_source_date(raw_value: str, fallback_generated_at: str) -> str:
+    source_date = raw_value.strip()
+    if not source_date:
+        return fallback_generated_at
+
+    normalized = source_date.replace("Z", "+00:00")
+    parsed = datetime.fromisoformat(normalized)
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc).isoformat()
+
+
+def ensure_editorial_transition(
+    current_status: str,
+    target_status: str,
+) -> None:
+    current = normalize_review_status(current_status)
+    target = normalize_review_status(target_status)
+    current_index = EDITORIAL_STATE_FLOW.index(current)
+    target_index = EDITORIAL_STATE_FLOW.index(target)
+    if target_index < current_index:
+        raise RuntimeError(
+            "Transição editorial inválida: "
+            f"{current} -> {target}. Fluxo: {' -> '.join(EDITORIAL_STATE_FLOW)}"
+        )
+
+
+def attach_editorial_metadata(
+    *,
+    items: list[dict[str, object]],
+    source_url_hint: str,
+    source_type: str,
+    source_date: str,
+    generated_by: str,
+    reviewed_by: str,
+    review_status: str,
+    version: str,
+    updated_at: str,
+) -> list[dict[str, object]]:
+    normalized_source_type = source_type.strip() or "repositorio_csv"
+    normalized_generated_by = generated_by.strip() or "scripts/build_assets_release.py"
+    normalized_reviewed_by = reviewed_by.strip() or "curadoria_humana"
+    normalized_review_status = normalize_review_status(review_status)
+    normalized_source_url_hint = source_url_hint.strip()
+
+    enriched_items: list[dict[str, object]] = []
+    for item in items:
+        source_url = normalized_source_url_hint
+        existing_source = str(item.get("source", "")).strip()
+        if not source_url:
+            source_url = existing_source
+
+        existing_status = str(item.get("review_status", "")).strip()
+        if existing_status:
+            ensure_editorial_transition(
+                current_status=existing_status,
+                target_status=normalized_review_status,
+            )
+
+        payload = dict(item)
+        payload.update(
+            {
+                "source_type": normalized_source_type,
+                "source_url": source_url,
+                "source_date": source_date,
+                "generated_by": normalized_generated_by,
+                "reviewed_by": normalized_reviewed_by,
+                "review_status": normalized_review_status,
+                "version": version,
+                "updated_at": updated_at,
+            }
+        )
+        enriched_items.append(payload)
+
+    return enriched_items
+
+
+def build_compatibility_policy(
+    *,
+    content_schema: str,
+    min_app_version: str,
+    max_app_version: str,
+) -> dict[str, str]:
+    return {
+        "content_schema": content_schema,
+        "app_min_version": min_app_version.strip(),
+        "app_max_version": max_app_version.strip(),
+    }
+
+
+def build_update_origin(*, origin_repo: str) -> dict[str, str]:
+    normalized_repo = origin_repo.strip()
+    if not normalized_repo:
+        normalized_repo = PROJECT_ROOT.name
+    return {
+        "source_type": "repository",
+        "source_repo": normalized_repo,
+        "build_script": "scripts/build_assets_release.py",
+        "offline_first": "true",
+    }
+
+
+def build_domain_manifests(
+    *,
+    version: str,
+    generated_at: str,
+    bundle_file: str,
+    review_status: str,
+    question_count: int,
+    book_module_count: int,
+    module_question_match_count: int,
+) -> dict[str, dict[str, object]]:
+    normalized_review_status = normalize_review_status(review_status)
+    flow = list(EDITORIAL_STATE_FLOW)
+    metadata_contract = {"required": list(METADATA_CONTRACT_REQUIRED)}
+    return {
+        "banco_questoes": {
+            "version": version,
+            "generated_at": generated_at,
+            "domain": "banco_questoes",
+            "item_count": question_count,
+            "source_bundle": bundle_file,
+            "path_hint": "banco_questoes/",
+            "notes": "questoes reais mapeadas + metadados de habilidade",
+            "review_status": normalized_review_status,
+            "editorial_state_flow": flow,
+            "metadata_contract": metadata_contract,
+        },
+        "banco_aulas": {
+            "version": version,
+            "generated_at": generated_at,
+            "domain": "banco_aulas",
+            "item_count": book_module_count,
+            "source_bundle": bundle_file,
+            "path_hint": "banco_aulas/",
+            "notes": "modulos e expectativas de aprendizagem",
+            "review_status": normalized_review_status,
+            "editorial_state_flow": flow,
+            "metadata_contract": metadata_contract,
+        },
+        "banco_videos": {
+            "version": version,
+            "generated_at": generated_at,
+            "domain": "banco_videos",
+            "item_count": 0,
+            "source_bundle": bundle_file,
+            "path_hint": "banco_videos/",
+            "notes": "reservado para indexacao de videoaulas por segmento",
+            "review_status": normalized_review_status,
+            "editorial_state_flow": flow,
+            "metadata_contract": metadata_contract,
+        },
+        "banco_redacao": {
+            "version": version,
+            "generated_at": generated_at,
+            "domain": "banco_redacao",
+            "item_count": 0,
+            "source_bundle": bundle_file,
+            "path_hint": "banco_redacao/",
+            "notes": "reservado para temas e artefatos editoriais de redacao",
+            "review_status": normalized_review_status,
+            "editorial_state_flow": flow,
+            "metadata_contract": metadata_contract,
+        },
+        "intercorrelacao_modulo_questao": {
+            "version": version,
+            "generated_at": generated_at,
+            "domain": "intercorrelacao_modulo_questao",
+            "item_count": module_question_match_count,
+            "source_bundle": bundle_file,
+            "path_hint": "banco_questoes/intercorrelacao/",
+            "notes": "vinculos modulo x questao com score/tipo de match",
+            "review_status": normalized_review_status,
+            "editorial_state_flow": flow,
+            "metadata_contract": metadata_contract,
+        },
+    }
+
+
+def ensure_content_tree_structure(content_root: Path) -> None:
+    for relative in (
+        "raw",
+        "generated",
+        "reviewed",
+        "published/banco_questoes",
+        "published/banco_aulas",
+        "published/banco_videos",
+        "published/banco_redacao",
+    ):
+        (content_root / relative).mkdir(parents=True, exist_ok=True)
+
+
+def write_content_tree_snapshot(
+    *,
+    content_root: Path,
+    version: str,
+    manifest: dict[str, object],
+    archive_path: Path,
+    checksum_path: Path,
+) -> None:
+    ensure_content_tree_structure(content_root)
+
+    version_root = content_root / "published" / version
+    version_root.mkdir(parents=True, exist_ok=True)
+
+    (version_root / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    shutil.copy2(archive_path, version_root / archive_path.name)
+    shutil.copy2(checksum_path, version_root / checksum_path.name)
+
+    domains_payload = manifest.get("domains", {})
+    if isinstance(domains_payload, dict):
+        for domain_name, payload in domains_payload.items():
+            target_dir = content_root / "published" / str(domain_name)
+            target_dir.mkdir(parents=True, exist_ok=True)
+            target_path = target_dir / f"{version}.manifest.json"
+            target_path.write_text(
+                json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+
 def main() -> int:
     args = parse_args()
 
@@ -585,26 +897,75 @@ def main() -> int:
 
     version = make_version(args.version)
     generated_at = datetime.now(timezone.utc).isoformat()
+    review_status = normalize_review_status(args.review_status)
+    source_date = normalize_source_date(
+        raw_value=args.source_date,
+        fallback_generated_at=generated_at,
+    )
+    compatibility_policy = build_compatibility_policy(
+        content_schema=CONTENT_BUNDLE_SCHEMA,
+        min_app_version=args.min_app_version,
+        max_app_version=args.max_app_version,
+    )
+    update_origin = build_update_origin(origin_repo=args.origin_repo)
 
-    questions = read_questions(questions_csv=questions_csv, limit=max(args.limit, 0))
+    questions_raw = read_questions(questions_csv=questions_csv, limit=max(args.limit, 0))
+    questions = attach_editorial_metadata(
+        items=questions_raw,
+        source_url_hint=args.source_url or str(questions_csv),
+        source_type=args.source_type,
+        source_date=source_date,
+        generated_by=args.generated_by,
+        reviewed_by=args.reviewed_by,
+        review_status=review_status,
+        version=version,
+        updated_at=generated_at,
+    )
     if not questions:
         raise RuntimeError("Nenhuma questão válida encontrada para empacotar.")
     fallback_assets = collect_fallback_assets(questions, project_root=PROJECT_ROOT)
 
-    book_modules = read_book_modules(modules_csv=args.modules_csv)
+    book_modules_raw = read_book_modules(modules_csv=args.modules_csv)
+    book_modules = attach_editorial_metadata(
+        items=book_modules_raw,
+        source_url_hint=args.source_url or str(args.modules_csv),
+        source_type=args.source_type,
+        source_date=source_date,
+        generated_by=args.generated_by,
+        reviewed_by=args.reviewed_by,
+        review_status=review_status,
+        version=version,
+        updated_at=generated_at,
+    )
     if not book_modules:
         print(f"[warn] sem módulos/livros no bundle: {args.modules_csv}")
-    module_question_matches = read_module_question_matches(
+    module_question_matches_raw = read_module_question_matches(
         matches_csv=args.module_question_matches_csv
+    )
+    module_question_matches = attach_editorial_metadata(
+        items=module_question_matches_raw,
+        source_url_hint=args.source_url or str(args.module_question_matches_csv),
+        source_type=args.source_type,
+        source_date=source_date,
+        generated_by=args.generated_by,
+        reviewed_by=args.reviewed_by,
+        review_status=review_status,
+        version=version,
+        updated_at=generated_at,
     )
 
     out_root = args.out_dir / version
     out_root.mkdir(parents=True, exist_ok=True)
 
     bundle = {
-        "schema": "2",
+        "schema": CONTENT_BUNDLE_SCHEMA,
         "version": version,
         "generated_at": generated_at,
+        "editorial_state_flow": list(EDITORIAL_STATE_FLOW),
+        "metadata_contract": {"required": list(METADATA_CONTRACT_REQUIRED)},
+        "review_status": review_status,
+        "compatibility_policy": compatibility_policy,
+        "update_origin": update_origin,
         "question_count": len(questions),
         "book_module_count": len(book_modules),
         "module_question_match_count": len(module_question_matches),
@@ -632,11 +993,31 @@ def main() -> int:
 
     digest = sha256_file(archive_path)
     archive_size = archive_path.stat().st_size
+    checksum_name = f"{archive_name}.sha256"
+    checksum_path = out_root / checksum_name
+    checksum_path.write_text(f"{digest}  {archive_name}\n", encoding="utf-8")
+
+    domains = build_domain_manifests(
+        version=version,
+        generated_at=generated_at,
+        bundle_file=BUNDLE_FILE_NAME,
+        review_status=review_status,
+        question_count=len(questions),
+        book_module_count=len(book_modules),
+        module_question_match_count=len(module_question_matches),
+    )
 
     manifest = {
+        "schema": CONTENT_BUNDLE_SCHEMA,
         "version": version,
         "generated_at": generated_at,
+        "editorial_state_flow": list(EDITORIAL_STATE_FLOW),
+        "metadata_contract": {"required": list(METADATA_CONTRACT_REQUIRED)},
+        "review_status": review_status,
+        "compatibility_policy": compatibility_policy,
+        "update_origin": update_origin,
         "archive_file": archive_name,
+        "archive_checksum_file": checksum_name,
         "bundle_file": BUNDLE_FILE_NAME,
         "sha256": digest,
         "size": archive_size,
@@ -645,6 +1026,7 @@ def main() -> int:
         "book_module_count": len(book_modules),
         "module_question_match_count": len(module_question_matches),
         "fallback_asset_count": len(fallback_assets),
+        "domains": domains,
     }
 
     manifest_path = out_root / "manifest.json"
@@ -657,14 +1039,29 @@ def main() -> int:
     latest_manifest_path.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(manifest_path, latest_manifest_path)
 
+    if args.write_content_tree:
+        write_content_tree_snapshot(
+            content_root=args.content_tree_root,
+            version=version,
+            manifest=manifest,
+            archive_path=archive_path,
+            checksum_path=checksum_path,
+        )
+
     print(f"[ok] versão: {version}")
     print(f"[ok] questões: {len(questions)}")
     print(f"[ok] módulos/livro: {len(book_modules)}")
     print(f"[ok] vínculos módulo-questão: {len(module_question_matches)}")
     print(f"[ok] assets fallback: {len(fallback_assets)}")
     print(f"[ok] zip: {archive_path}")
+    print(f"[ok] checksum: {checksum_path}")
     print(f"[ok] manifest: {manifest_path}")
     print(f"[ok] latest manifest: {latest_manifest_path}")
+    if args.write_content_tree:
+        print(
+            f"[ok] conteudo published snapshot: "
+            f"{args.content_tree_root / 'published' / version}"
+        )
     return 0
 
 
