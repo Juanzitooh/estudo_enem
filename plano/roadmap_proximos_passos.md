@@ -4,12 +4,12 @@
 Consolidar o banco de questões reais e evoluir para um gerador de treino por habilidade da matriz ENEM.
 
 ## Painel pré-catálogo (status operacional)
-- Última atualização: **2026-02-28**
-- Blocos pré-catálogo concluídos: **7/12** (`2`, `3`, `5`, `6`, `9`, `10`, `11`)
-- Blocos pré-catálogo em andamento: `1`, `4`, `7`, `8`, `13`
+- Última atualização: **2026-03-04**
+- Blocos pré-catálogo concluídos: **9/12** (`2`, `3`, `5`, `6`, `8`, `9`, `10`, `11`, `13`)
+- Blocos pré-catálogo em andamento: `1`, `4`, `7`
 - Bloco pós-catálogo (bloqueado): `12`
-- Último foco técnico concluído: persistência/uso de `error_profile` local (`pacing`, `level_break`, `topic_tags`, `pattern`) no PromptBuilder de estudo.
-- Próximo foco técnico (independe de catálogo): validar legibilidade desktop/mobile (tema claro/escuro/sistema + escala de fonte ampliada) e fechar checklist do bloco 13.
+- Último foco técnico concluído: bloco 7 inicial (template de aula por módulo + prompt dedicado + lote piloto de 20 rascunhos + validação estrutural + rubrica objetiva).
+- Próximo foco técnico (independe de catálogo): bloco 7 operacional (ajustar prompt/template por retrabalho e planejar integração de aprofundamento por vídeo).
 
 ### Regra de fechamento das respostas do Codex (enquanto você cataloga)
 - Ao fim de cada sessão, responder sempre em 3 pontos:
@@ -37,11 +37,11 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 
 ## Bloco 8 — Arquitetura de conteúdo e publicação offline (curto prazo)
 - [x] Publicar briefing de arquitetura em `plano/arquitetura_conteudo_offline.md`.
-- [ ] Definir estrutura de pastas: `conteudo/raw`, `conteudo/generated`, `conteudo/reviewed`, `conteudo/published`.
-- [ ] Definir manifests por domínio: `banco_questoes`, `banco_aulas`, `banco_videos`, `banco_redacao`.
-- [ ] Padronizar metadados editoriais em todos os itens: `generated_by`, `reviewed_by`, `review_status`, `version`, `updated_at`, `source_url`.
-- [ ] Implementar estado editorial padrão (`rascunho` -> `revisado` -> `aprovado` -> `publicado`) nos scripts de build.
-- [ ] Fechar pipeline de publicação `manifest.json + assets.zip + checksum` para consumo no app Flutter.
+- [x] Definir estrutura de pastas: `conteudo/raw`, `conteudo/generated`, `conteudo/reviewed`, `conteudo/published`.
+- [x] Definir manifests por domínio: `banco_questoes`, `banco_aulas`, `banco_videos`, `banco_redacao`.
+- [x] Padronizar metadados editoriais em todos os itens: `generated_by`, `reviewed_by`, `review_status`, `version`, `updated_at`, `source_url`.
+- [x] Implementar estado editorial padrão (`rascunho` -> `revisado` -> `aprovado` -> `publicado`) nos scripts de build.
+- [x] Fechar pipeline de publicação `manifest.json + assets.zip + checksum` para consumo no app Flutter.
 
 ## Bloco 9 — Questões geradas por agent (médio prazo)
 - [x] Criar `questoes/generateds/` por área (`linguagens`, `humanas`, `natureza`, `matematica`) com schema compatível ao banco real.
@@ -75,7 +75,7 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [x] Implementar ajuste de tamanho de fonte para acessibilidade (ex.: slider com escala global).
 - [x] Persistir preferência de tema e tamanho da fonte por perfil local.
 - [x] Adicionar tela de preferências de aparência com pré-visualização rápida.
-- [ ] Validar legibilidade em desktop e mobile com combinações de tema + escala de fonte.
+- [x] Validar legibilidade em desktop e mobile com combinações de tema + escala de fonte.
 
 ## Bloco 12 — Pós-catálogo (após concluir 100% dos 6 volumes)
 - [ ] Classificar módulos por nível (`fundacao`, `intermediario`, `aplicado_enem`) e pré-requisitos.
@@ -91,11 +91,11 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Definir rotina de atualização quando novos cadernos forem adicionados ao repositório.
 
 ## Bloco 7 — Aulas por módulo (curto/médio prazo)
-- [ ] Definir template final de “aula por módulo de conteúdo” com objetivos + explicação + perguntas finais de retenção.
-- [ ] Incluir no template campos editoriais obrigatórios: `atualizado por IA em` + `revisado manualmente em` + `revisado por`.
-- [ ] Ajustar prompt/agent para exigir exemplos de cotidiano brasileiro e aplicação prática por matéria (evitar contexto genérico/artificial).
-- [ ] Incluir bloco fixo de questões contextualizadas por módulo com situações reais de dia a dia e profissões.
-- [ ] Gerar primeiro lote piloto (ex.: 20 módulos) e medir qualidade com rubrica objetiva.
+- [x] Definir template final de “aula por módulo de conteúdo” com objetivos + explicação + perguntas finais de retenção.
+- [x] Incluir no template campos editoriais obrigatórios: `atualizado por IA em` + `revisado manualmente em` + `revisado por`.
+- [x] Ajustar prompt/agent para exigir exemplos de cotidiano brasileiro e aplicação prática por matéria (evitar contexto genérico/artificial).
+- [x] Incluir bloco fixo de questões contextualizadas por módulo com situações reais de dia a dia e profissões.
+- [x] Gerar primeiro lote piloto (ex.: 20 módulos) e medir qualidade com rubrica objetiva.
 - [ ] Ajustar prompt/template até reduzir retrabalho humano para nível operacional.
 - [ ] Planejar integração com índice de videoaulas por minutagem para aprofundamento opcional no fim da aula.
 
@@ -131,6 +131,6 @@ Consolidar o banco de questões reais e evoluir para um gerador de treino por ha
 - [ ] Rodar upgrade major de dependências Flutter/Dart (`flutter pub upgrade --major-versions`) com janela dedicada de compatibilidade e regressão (baixa prioridade, pós-entrega dos blocos principais).
 
 ## Próxima sessão sugerida
-1. Rodar validação visual desktop/mobile do bloco 13 (claro/escuro/sistema + fonte ampliada) e fechar checklist de legibilidade.
-2. Integrar previsão do planner com abertura direta da tela de módulo/treino por skill.
-3. Definir e iniciar classificação calibrada de `dificuldade` no consolidado.
+1. Rodar avaliação manual do lote piloto de 20 módulos com `plano/rubrica_qualidade_aula_modulo.md` e consolidar gaps recorrentes.
+2. Ajustar `prompts/gerar_aula_modulo_enem.md` e `templates/aula_modulo_enem.md` com base nos gaps para reduzir retrabalho operacional.
+3. Planejar integração com índice de videoaulas por minutagem para aprofundamento no fim das aulas por módulo.

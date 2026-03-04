@@ -22,9 +22,9 @@ Transformar este repositório em um sistema completo de estudo para ENEM que:
 - Índice dos livros com campo de habilidades em `plano/indice_livros_6_volumes.csv`.
 
 ## Painel Até Catálogo (para status de sessão)
-- Última atualização: **2026-02-27**
+- Última atualização: **2026-03-04**
 - Pré-catálogo concluído: núcleo de geração/validação/publicação de questões geradas + planner offline + intercorrelação.
-- Pré-catálogo em andamento: arquitetura canônica de conteúdo (`conteudo/raw|generated|reviewed|published`) e integração planner -> navegação de treino/módulo.
+- Pré-catálogo em andamento: integração planner -> navegação de treino/módulo.
 - Pós-catálogo (bloqueado até 100% dos 6 volumes): trilha transversal final, revisão editorial 2019->2026 e calibração final de aulas.
 
 Ao encerrar sessão, responder em 3 linhas:
@@ -42,13 +42,13 @@ Ao encerrar sessão, responder em 3 linhas:
 
 ### Arquitetura de conteúdo versionado (offline-first)
 - [x] Publicar briefing inicial da arquitetura em `plano/arquitetura_conteudo_offline.md`.
-- [ ] Definir árvore canônica de conteúdo: `conteudo/raw/`, `conteudo/generated/`, `conteudo/reviewed/` e `conteudo/published/`.
-- [ ] Separar bancos por domínio no conteúdo publicado: `banco_questoes`, `banco_aulas`, `banco_videos`, `banco_redacao`.
-- [ ] Definir contrato de metadados editoriais comum: `source_type`, `source_url`, `source_date`, `generated_by`, `reviewed_by`, `review_status`, `version`, `updated_at`.
-- [ ] Definir estado editorial obrigatório por item: `rascunho` -> `revisado` -> `aprovado` -> `publicado`.
-- [ ] Criar pipeline de empacotamento para atualização: `manifest.json` + `assets.zip` + checksum.
-- [ ] Definir política de compatibilidade entre versão de conteúdo e versão do app Flutter.
-- [ ] Formalizar repositório como origem única de atualização (conteúdo versionado + scripts de build), mantendo app funcional 100% offline.
+- [x] Definir árvore canônica de conteúdo: `conteudo/raw/`, `conteudo/generated/`, `conteudo/reviewed/` e `conteudo/published/`.
+- [x] Separar bancos por domínio no conteúdo publicado: `banco_questoes`, `banco_aulas`, `banco_videos`, `banco_redacao`.
+- [x] Definir contrato de metadados editoriais comum: `source_type`, `source_url`, `source_date`, `generated_by`, `reviewed_by`, `review_status`, `version`, `updated_at`.
+- [x] Definir estado editorial obrigatório por item: `rascunho` -> `revisado` -> `aprovado` -> `publicado`.
+- [x] Criar pipeline de empacotamento para atualização: `manifest.json` + `assets.zip` + checksum.
+- [x] Definir política de compatibilidade entre versão de conteúdo e versão do app Flutter.
+- [x] Formalizar repositório como origem única de atualização (conteúdo versionado + scripts de build), mantendo app funcional 100% offline.
 
 ### Higienização contínua do repositório (sem perder histórico útil)
 - [x] Definir política de retenção: o que permanece em `raw`, o que vira `archive` e o que pode ser removido após publicação (ver `plano/politica_retencao_repositorio.md`).
@@ -78,23 +78,23 @@ Ao encerrar sessão, responder em 3 linhas:
 - [ ] Gerar plano semanal automático com base em disponibilidade de tempo.
 
 ### Conteúdo didático por módulo (geração assistida)
-- [ ] Definir schema mínimo de aula por módulo: `area`, `materia`, `volume`, `modulo`, `titulo`, `expectativas_aprendizagem`, `competencias/habilidades`.
-- [ ] Criar pipeline para gerar rascunho de aula para cada módulo de conteúdo (excluir `tipo_modulo=exercicios`), usando template padronizado.
-- [ ] Registrar metadados editoriais em cada aula: `ia_updated_at` (data/hora), `manual_reviewed_at` (data/hora) e `manual_reviewed_by` (nome).
-- [ ] Definir objetivo pedagógico explícito por aula (o que o aluno deve saber, aplicar e revisar ao final do módulo).
-- [ ] Incluir seção obrigatória de “o que deve ser aprendido” alinhada às expectativas de aprendizagem do módulo.
-- [ ] Atualizar prompt/agent de geração de aulas para priorizar contexto de cotidiano brasileiro e aplicação profissional real, evitando exemplos artificiais.
-- [ ] Exigir em cada aula pelo menos 2 exemplos contextualizados de uso prático no dia a dia (ex.: impostos, consumo, transporte, saúde, trabalho, cidadania), ajustados à matéria.
-- [ ] Incluir seção obrigatória de “contexto atual” com fatos dos últimos 12 meses (com datas absolutas) e linguagem adequada ao ENEM.
-- [ ] Priorizar exemplos brasileiros e regionalidades do Brasil; usar exemplos externos apenas quando forem essenciais ao conceito.
-- [ ] Incluir seção de “problema real” (estudo de caso) para aprofundamento aplicado do conteúdo.
-- [ ] Em Física/Química/Biologia/Matemática, incluir ao menos um recurso visual didático mínimo (gráfico, diagrama, esquema ou desenho explicativo).
-- [ ] Incluir seção obrigatória de “checagem de entendimento” com 5-10 perguntas de recuperação ativa (curtas e retóricas) no fim de cada aula.
-- [ ] Incluir bloco de questões contextualizadas por aula com cenários reais (cotidiano e profissões), alinhadas ao estilo ENEM e às habilidades do módulo.
-- [ ] Incluir seção obrigatória “erros comuns” e “como revisar” para consolidar retenção.
-- [ ] Incluir seção “aprofundamento” com recomendações de vídeo por tema (usando índice de videoaulas por minutagem quando disponível).
-- [ ] Definir rubrica de qualidade para aula gerada: correção conceitual, clareza, progressão didática, aderência ENEM e ausência de alucinação factual.
-- [ ] Implementar validações automáticas mínimas do texto gerado (estrutura obrigatória, tamanho por seção, presença de perguntas finais, termos proibidos).
+- [x] Definir schema mínimo de aula por módulo: `area`, `materia`, `volume`, `modulo`, `titulo`, `expectativas_aprendizagem`, `competencias/habilidades`.
+- [x] Criar pipeline para gerar rascunho de aula para cada módulo de conteúdo (excluir `tipo_modulo=exercicios`), usando template padronizado.
+- [x] Registrar metadados editoriais em cada aula: `ia_updated_at` (data/hora), `manual_reviewed_at` (data/hora) e `manual_reviewed_by` (nome).
+- [x] Definir objetivo pedagógico explícito por aula (o que o aluno deve saber, aplicar e revisar ao final do módulo).
+- [x] Incluir seção obrigatória de “o que deve ser aprendido” alinhada às expectativas de aprendizagem do módulo.
+- [x] Atualizar prompt/agent de geração de aulas para priorizar contexto de cotidiano brasileiro e aplicação profissional real, evitando exemplos artificiais.
+- [x] Exigir em cada aula pelo menos 2 exemplos contextualizados de uso prático no dia a dia (ex.: impostos, consumo, transporte, saúde, trabalho, cidadania), ajustados à matéria.
+- [x] Incluir seção obrigatória de “contexto atual” com fatos dos últimos 12 meses (com datas absolutas) e linguagem adequada ao ENEM.
+- [x] Priorizar exemplos brasileiros e regionalidades do Brasil; usar exemplos externos apenas quando forem essenciais ao conceito.
+- [x] Incluir seção de “problema real” (estudo de caso) para aprofundamento aplicado do conteúdo.
+- [x] Em Física/Química/Biologia/Matemática, incluir ao menos um recurso visual didático mínimo (gráfico, diagrama, esquema ou desenho explicativo).
+- [x] Incluir seção obrigatória de “checagem de entendimento” com 5-10 perguntas de recuperação ativa (curtas e retóricas) no fim de cada aula.
+- [x] Incluir bloco de questões contextualizadas por aula com cenários reais (cotidiano e profissões), alinhadas ao estilo ENEM e às habilidades do módulo.
+- [x] Incluir seção obrigatória “erros comuns” e “como revisar” para consolidar retenção.
+- [x] Incluir seção “aprofundamento” com recomendações de vídeo por tema (usando índice de videoaulas por minutagem quando disponível).
+- [x] Definir rubrica de qualidade para aula gerada: correção conceitual, clareza, progressão didática, aderência ENEM e ausência de alucinação factual.
+- [x] Implementar validações automáticas mínimas do texto gerado (estrutura obrigatória, tamanho por seção, presença de perguntas finais, termos proibidos).
 - [ ] Implementar workflow de revisão humana em lote (`rascunho` -> `revisado` -> `publicado`) antes de expor conteúdo no app.
 - [ ] Salvar versão de conteúdo por módulo para permitir melhoria incremental e histórico de qualidade.
 - [ ] Exibir no app o selo editorial da aula (`atualizado por IA em ...`, `revisado manualmente por ...`) para transparência.
@@ -137,7 +137,7 @@ Ao encerrar sessão, responder em 3 linhas:
 - [x] Aplicar design mínimo consistente (tons de superfície, destaque e estados semânticos).
 - [x] Implementar controle de tamanho de fonte com escala global para acessibilidade.
 - [x] Persistir preferências de aparência (tema + escala de fonte) por perfil local.
-- [ ] Validar em desktop e mobile os cenários: tema claro, tema escuro e tema sistema com fonte ampliada.
+- [x] Validar em desktop e mobile os cenários: tema claro, tema escuro e tema sistema com fonte ampliada.
 
 ### Perfil de usuário offline + portabilidade
 - [x] Implementar perfil local com dados mínimos: `nome_exibicao`, `ano_alvo`, `dias_semana_estudo`, `horas_por_dia`, `foco_area`, `data_prova`.
@@ -177,8 +177,8 @@ Ao encerrar sessão, responder em 3 linhas:
 
 ### Perfil de erro local (sem IA embarcada)
 - [x] Implementar `error_profile` por habilidade com: `pacing`, `level_break`, `topic_tags` e `pattern`.
-- [ ] Inferir sinais locais: tempo alto + erro, erro rápido, erro recorrente por tag e erro em questão fácil.
-- [ ] Armazenar "evidência do erro" via tags/tipo de questão sem expor texto de enunciado.
+- [x] Inferir sinais locais: tempo alto + erro, erro rápido, erro recorrente por tag e erro em questão fácil.
+- [x] Armazenar "evidência do erro" via tags/tipo de questão sem expor texto de enunciado.
 
 ### Construtor de prompt para aprofundamento
 - [x] Implementar `PromptBuilder` offline para gerar prompt copiável (uso externo em ChatGPT/YouTube).

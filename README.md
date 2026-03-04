@@ -20,12 +20,14 @@ Este repositório foi estruturado para você estudar com:
 - `plano/plano_semanal.md`: planejamento da semana.
 - `plano/tracker.md`: histórico de progresso e erros.
 - `templates/aula_habilidade_enem.md`: template definitivo de aula por habilidade.
+- `templates/aula_modulo_enem.md`: template definitivo de aula por módulo.
 - `notes/`: notas de pesquisa (vídeos, artigos e referências).
 - `aulas/`: aulas geradas por área e habilidade.
 - `questoes/`: bancos extras de questões por área e habilidade.
 - `questoes/banco_reais/`: provas reais extraídas para Markdown (base de calibração).
 - `assets/img/`: imagens usadas nas aulas em Markdown/PDF.
 - `prompts/agents.global.md`: regras globais de atuação do agente.
+- `prompts/gerar_aula_modulo_enem.md`: prompt operacional para geração de aula por módulo.
 - `prompts/contexto_sessao.md`: template para contexto da sessão.
 - `prompts/contexto_sessao.example.md`: exemplo preenchido.
 - `prompts/contexto_planejador.example.json`: exemplo de contexto para o motor offline.
@@ -42,6 +44,23 @@ Este repositório foi estruturado para você estudar com:
 2. Inicie uma sessão no Codex com o comando padrão abaixo.
 3. Estude por habilidade e registre no tracker.
 4. Feche a semana com revisão e replanejamento.
+
+## Aulas por módulo (Bloco 7)
+
+Gerar rascunhos de aulas por módulo (exclui `tipo_modulo=exercicios`):
+
+```bash
+python3 scripts/gerar_rascunhos_aulas_modulo.py --limit 20
+```
+
+Validar estrutura mínima do lote gerado:
+
+```bash
+python3 scripts/validar_aulas_modulo.py \
+  --input-glob 'aulas/*/modulos/*.md' \
+  --allow-placeholders \
+  --report-md plano/relatorio_validacao_bloco7_lote_piloto.md
+```
 
 ## Planejador offline (sem IA)
 
@@ -315,6 +334,31 @@ python3 scripts/build_assets_release.py \
   --out-dir app_flutter/releases \
   --version 2026.02.24.1 \
   --base-url https://SEU_HOST/releases/2026.02.24.1
+```
+
+Opcional (escrever snapshot na árvore canônica `conteudo/`):
+
+```bash
+python3 scripts/build_assets_release.py \
+  --out-dir app_flutter/releases \
+  --version 2026.02.24.1 \
+  --write-content-tree \
+  --content-tree-root conteudo
+```
+
+Metadados editoriais (fluxo `rascunho -> revisado -> aprovado -> publicado`):
+
+```bash
+python3 scripts/build_assets_release.py \
+  --out-dir app_flutter/releases \
+  --version 2026.02.24.1 \
+  --review-status publicado \
+  --generated-by scripts/build_assets_release.py \
+  --reviewed-by curadoria_humana \
+  --source-type repositorio_csv \
+  --min-app-version 0.1.0 \
+  --max-app-version 0.9.99 \
+  --origin-repo estudo_enem
 ```
 
 No cliente, esse pacote alimenta:
