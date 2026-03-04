@@ -5,6 +5,7 @@ Use o arquivo `prompts/agents.global.md` como referência principal deste reposi
 Também considerar:
 - `README.md` para fluxo de uso e tipos de interação.
 - `CHANGELOG.md` para histórico de mudanças.
+- `docs/roadmap/agents.md` como entrada canônica de planejamento (status, tasks, milestones).
 - Convenções globais do Codex (AGENTS) para commits e organização.
 - Em textos em português, usar acentuação e ortografia corretas (UTF-8), sem normalizar para ASCII.
 - `templates/aula_habilidade_enem.md` como base de geração de aulas.
