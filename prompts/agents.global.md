@@ -1,7 +1,9 @@
-# Agent Global — ENEM Aula por Habilidade
+# Agent Global — ENEM Aula por Habilidade e por Módulo
 
 ## Missão
-Gerar aulas no padrão ENEM focadas em uma habilidade da Matriz do INEP, usando o template `templates/aula_habilidade_enem.md`.
+Gerar aulas no padrão ENEM:
+- por habilidade da Matriz do INEP, usando `templates/aula_habilidade_enem.md`;
+- por módulo de conteúdo, usando `templates/aula_modulo_enem.md`.
 
 ## Fontes internas do repositório
 - `sources/inep_matriz_referencia.pdf` (fonte primária)
@@ -13,6 +15,8 @@ Gerar aulas no padrão ENEM focadas em uma habilidade da Matriz do INEP, usando 
 - `prompts/contexto_planejador.json` (quando existir, contexto do motor offline sem IA)
 - `plano/desempenho_habilidades.csv` (feedback real por habilidade)
 - `templates/aula_habilidade_enem.md` (template obrigatório)
+- `templates/aula_modulo_enem.md` (template obrigatório para aulas por módulo)
+- `prompts/gerar_aula_modulo_enem.md` (prompt operacional para geração por módulo)
 - `README.md` (fluxo operacional)
 - `CHANGELOG.md` (histórico de mudanças)
 
@@ -36,19 +40,23 @@ Gerar aulas no padrão ENEM focadas em uma habilidade da Matriz do INEP, usando 
 17. Priorizar exemplos do Brasil e regionalidades brasileiras; usar contexto internacional apenas quando for essencial para explicar o conceito.
 18. Para Física, Química, Biologia e Matemática, incluir pelo menos um recurso visual didático (gráfico, esquema, diagrama ou desenho) quando o tema exigir apoio visual.
 19. Incluir um problema real aplicado ao contexto brasileiro com perguntas de reflexão no fim da aula.
+20. Em aulas por módulo, incluir obrigatoriamente: objetivo pedagógico (`saber`, `aplicar`, `revisar`), seção “o que deve ser aprendido”, checagem final de entendimento (5–10 perguntas curtas) e bloco fixo de questões contextualizadas por módulo.
+21. Em aulas por módulo, exigir no mínimo 2 exemplos práticos brasileiros (cotidiano e aplicação profissional) e evitar contexto genérico/artificial.
 
 ## Estrutura de saída
 - Aula em `aulas/{area}/HXX_{tema}.md`
 - Banco extra em `questoes/{area}/HXX_{tema}.md`
+- Aula por módulo em `aulas/{area}/modulos/V{volume}_M{modulo}_{slug}.md`
 - Quando necessário, imagens de apoio em `assets/img/`
 
 ## Fluxo de trabalho
-1. Ler a habilidade alvo na matriz (`matriz/habilidades_por_area/` ou `sources/inep_matriz_referencia.pdf`).
-2. Consultar `notes/` se houver notas para a habilidade.
-3. Consultar `questoes/banco_reais/` para calibrar formato de enunciado e dificuldade.
-4. Preencher `templates/aula_habilidade_enem.md` e salvar em `aulas/{area}/`.
-5. Gerar também banco extra de 20 questões em `questoes/{area}/`.
-6. Registrar mudanças relevantes no `CHANGELOG.md`.
+1. Identificar se o pedido é por habilidade ou por módulo.
+2. Ler contexto oficial na matriz (`matriz/habilidades_por_area/` ou `sources/inep_matriz_referencia.pdf`).
+3. Consultar `notes/` e `questoes/banco_reais/` para calibrar linguagem, comando e nível.
+4. Se for habilidade: preencher `templates/aula_habilidade_enem.md`.
+5. Se for módulo: preencher `templates/aula_modulo_enem.md`.
+6. Salvar no caminho de saída correspondente.
+7. Registrar mudanças relevantes no `CHANGELOG.md`.
 
 ## Entregáveis mínimos por aula
 - Aula completa no template.
@@ -56,6 +64,7 @@ Gerar aulas no padrão ENEM focadas em uma habilidade da Matriz do INEP, usando 
 - Banco de 20 questões extras (originais) + gabarito curto.
 - Lista de 10 erros comuns e como corrigir.
 - Mini-plano de revisão de 7 dias.
+- Para aula por módulo: checagem final de entendimento (5–10), bloco fixo de questões contextualizadas e metadados editoriais preenchidos.
 
 ## Workflow local (.sh) para app Flutter
 Quando o pedido envolver validação/execução do app, priorizar os scripts da raiz do repositório:
