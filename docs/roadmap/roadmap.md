@@ -20,12 +20,15 @@ Status: `em_andamento`
 - Introduzir camada de conceitos com Q-matrix e dependências em piloto incremental por área.
 - Evoluir feed inteligente para seleção híbrida (`habilidade + conceito`) com knowledge tracing leve.
 - Incluir diagnóstico pós-erro curto para identificar lacuna conceitual acionável.
+- Definir política de roteamento pós-erro (`reels -> recuperação rápida` vs `aula completa`).
+- Exibir no perfil métricas combinadas (`matriz INEP + grafo de conceitos + aulas concluídas`).
 
 ## R3 - Aulas por módulo (geração assistida)
 Status: `em_andamento`
 - Operacionalizar lote piloto com rubrica e redução de retrabalho.
 - Completar workflow editorial de revisão em lote.
 - Integrar aprofundamento por vídeo com minutagem.
+- Consolidar convivência dos 3 tipos de aula: habilidade, módulo completo e recuperação rápida.
 
 ## R4 - Conteúdo versionado e publicação offline
 Status: `parcialmente_concluido`

@@ -21,6 +21,7 @@ Este repositório foi estruturado para você estudar com:
 - `plano/tracker.md`: histórico de progresso e erros.
 - `templates/aula_habilidade_enem.md`: template definitivo de aula por habilidade.
 - `templates/aula_modulo_enem.md`: template definitivo de aula por módulo.
+- `templates/aula_modulo_recuperacao_rapida_enem.md`: template de recuperação rápida pós-erro no feed.
 - `notes/`: notas de pesquisa (vídeos, artigos e referências).
 - `aulas/`: aulas geradas por área e habilidade.
 - `questoes/`: bancos extras de questões por área e habilidade.
@@ -61,6 +62,15 @@ python3 scripts/validar_aulas_modulo.py \
   --allow-placeholders \
   --report-md plano/relatorio_validacao_bloco7_lote_piloto.md
 ```
+
+Fluxo editorial idempotente recomendado (por template):
+1. Gerar rascunho com placeholders (`status=rascunho`).
+2. Preencher conteúdo com IA (mantendo contrato estrutural).
+3. Validar automaticamente e revisar manualmente antes de publicar.
+
+Recomendação operacional:
+- Pilotar primeiro 1 módulo completo e 1 recuperação rápida.
+- Só depois replicar em lote quando o retrabalho estiver sob controle.
 
 ## Planejador offline (sem IA)
 

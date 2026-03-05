@@ -31,6 +31,9 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - Suporte no bundle para `questions` + `book_modules` (índice dos livros) com update offline.
 - Trilha de planejamento em `docs/roadmap/` para feed híbrido (`habilidade + conceito`) com Q-matrix, dependências e diagnóstico pós-erro (T2.4 a T2.8).
 - Referência técnica de grafo movida para `docs/roadmap/references/aprendizado_grafo.md`.
+- Template de recuperação rápida pós-erro em `templates/aula_modulo_recuperacao_rapida_enem.md`.
+- Planejamento canônico atualizado para explicitar os 3 tipos de aula (`habilidade`, `módulo completo`, `recuperação rápida`) e a política `reels -> rápida/completa`.
+- Planejamento canônico atualizado com pesos fundacionais do grafo e métricas de perfil (`matriz INEP + conceitos + aulas concluídas`).
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

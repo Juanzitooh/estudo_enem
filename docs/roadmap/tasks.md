@@ -27,6 +27,12 @@ Aceite: fallback por habilidade ativo quando não houver mapeamento conceitual.
 Aceite: respostas atualizam `concept_mastery` local e influenciam a próxima recomendação.
 - [ ] T2.8 Rodar avaliação comparativa do feed atual vs feed híbrido.
 Aceite: relatório com métricas offline (`acurácia`, `tempo`, `retenção`) e decisão de rollout.
+- [ ] T2.9 Definir política de roteamento pós-erro (`reels -> recuperação rápida` vs `aula completa`).
+Aceite: regra documentada com gatilhos mínimos (`primeiro contato`, `mastery`, `acertos no microtreino`).
+- [ ] T2.10 Definir pesos de conceitos fundacionais no grafo.
+Aceite: tabela de pesos inicial aprovada para leitura/interpretação e matemática básica com impacto explícito no ranking.
+- [ ] T2.11 Definir painel de métricas de perfil (`matriz INEP + grafo + aulas`).
+Aceite: contrato de métricas documentado com campos de cobertura por habilidade, domínio por conceito e aulas concluídas.
 
 ## M3 - Aulas por módulo operacional
 - [ ] T3.1 Avaliar manualmente o lote piloto de 20 módulos com rubrica.
@@ -37,6 +43,10 @@ Aceite: checklist de gaps reduzido e versão do prompt incrementada.
 Aceite: proposta técnica aprovada com campos e fluxo no app.
 - [ ] T3.4 Definir workflow de revisão humana em lote (`rascunho -> revisado -> publicado`).
 Aceite: fluxo e critérios de aprovação documentados.
+- [ ] T3.5 Pilotar o template de recuperação rápida em 1 módulo real.
+Aceite: 1 aula rápida preenchida, revisada e testada no fluxo pós-erro.
+- [ ] T3.6 Consolidar a taxonomia editorial dos 3 tipos de aula.
+Aceite: documentação única com papéis e gatilhos de uso para `habilidade`, `módulo completo` e `recuperação rápida`.
 
 ## M4 - Publicação de conteúdo offline
 - [x] T4.1 Estruturar árvore canônica `conteudo/{raw,generated,reviewed,published}`.

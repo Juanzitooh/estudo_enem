@@ -30,3 +30,14 @@ Decisão:
 - manter `M3/T3.1` como tarefa atual para não quebrar o foco operacional vigente;
 - preservar o canvas original como referência em `docs/roadmap/references/aprendizado_grafo.md`.
 Impacto: evolução do feed para modelo híbrido (`habilidade + conceito`) sem bloquear o trabalho atual de aulas e revisão editorial.
+
+## D-005 - Modelo pedagógico com 3 tipos de aula + roteamento pós-erro
+Data: 2026-03-05
+Status: aceito
+Contexto: o fluxo por grafo exige separar primeiro contato de recuperação curta para evitar retrabalho e reduzir tempo de intervenção após erro no feed.
+Decisão:
+- manter aula por habilidade como eixo canônico de cobertura da Matriz INEP (não remover);
+- adotar 3 modelos de aula no fluxo: `habilidade`, `módulo completo` e `recuperação rápida`;
+- definir política de roteamento `reels -> rápida/completa` baseada em contato prévio e domínio estimado;
+- introduzir pesos estruturais para conceitos fundacionais (ex.: interpretação/compreensão e matemática básica).
+Impacto: fluxo de estudo mais adaptativo, com recuperação mais curta quando possível e reforço completo quando necessário.

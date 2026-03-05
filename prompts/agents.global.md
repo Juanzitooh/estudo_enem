@@ -3,7 +3,8 @@
 ## Missão
 Gerar aulas no padrão ENEM:
 - por habilidade da Matriz do INEP, usando `templates/aula_habilidade_enem.md`;
-- por módulo de conteúdo, usando `templates/aula_modulo_enem.md`.
+- por módulo de conteúdo, usando `templates/aula_modulo_enem.md`;
+- por recuperação rápida pós-erro, usando `templates/aula_modulo_recuperacao_rapida_enem.md`.
 
 ## Fontes internas do repositório
 - `sources/inep_matriz_referencia.pdf` (fonte primária)
@@ -16,6 +17,7 @@ Gerar aulas no padrão ENEM:
 - `plano/desempenho_habilidades.csv` (feedback real por habilidade)
 - `templates/aula_habilidade_enem.md` (template obrigatório)
 - `templates/aula_modulo_enem.md` (template obrigatório para aulas por módulo)
+- `templates/aula_modulo_recuperacao_rapida_enem.md` (template obrigatório para recuperação rápida)
 - `prompts/gerar_aula_modulo_enem.md` (prompt operacional para geração por módulo)
 - `README.md` (fluxo operacional)
 - `CHANGELOG.md` (histórico de mudanças)
@@ -54,9 +56,10 @@ Gerar aulas no padrão ENEM:
 2. Ler contexto oficial na matriz (`matriz/habilidades_por_area/` ou `sources/inep_matriz_referencia.pdf`).
 3. Consultar `notes/` e `questoes/banco_reais/` para calibrar linguagem, comando e nível.
 4. Se for habilidade: preencher `templates/aula_habilidade_enem.md`.
-5. Se for módulo: preencher `templates/aula_modulo_enem.md`.
-6. Salvar no caminho de saída correspondente.
-7. Registrar mudanças relevantes no `CHANGELOG.md`.
+5. Se for módulo completo: preencher `templates/aula_modulo_enem.md`.
+6. Se for pós-erro no feed: preencher `templates/aula_modulo_recuperacao_rapida_enem.md`.
+7. Salvar no caminho de saída correspondente.
+8. Registrar mudanças relevantes no `CHANGELOG.md`.
 
 ## Entregáveis mínimos por aula
 - Aula completa no template.

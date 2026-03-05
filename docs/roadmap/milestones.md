@@ -14,6 +14,8 @@ Critérios de saída:
 - rotina semanal padronizada no tracker;
 - atualização de novos cadernos documentada.
 - piloto de grafo de conceitos (1 área) validado com métricas comparativas.
+- política de decisão pós-erro (`rápida vs completa`) operacional no app.
+- painel de perfil com cobertura da matriz INEP + domínio conceitual ativo.
 
 ## M3 - Aulas por módulo operacional
 Status: `em_andamento`
@@ -21,6 +23,7 @@ Critérios de saída:
 - lote piloto avaliado por rubrica;
 - ajuste de prompt/template reduzindo retrabalho;
 - workflow editorial em lote definido.
+- template de recuperação rápida validado em piloto e pronto para escala.
 
 ## M4 - Publicação de conteúdo offline
 Status: `parcialmente_concluido`
