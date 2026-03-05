@@ -20,3 +20,13 @@ Status: aceito
 Contexto: bloco 7 está operacionalmente mais próximo de fechamento sem depender de release.
 Decisão: definir `CURRENT_MILESTONE=M3` e `NEXT_TASK=T3.1`.
 Impacto: foco em qualidade pedagógica e redução de retrabalho antes de avançar para vídeo/Android.
+
+## D-004 - Trilha incremental de feed por conceito (grafo)
+Data: 2026-03-05
+Status: aceito
+Contexto: o feed atual já prioriza habilidades, mas ainda sem camada conceitual explícita (Q-matrix + dependências + domínio por conceito).
+Decisão:
+- incorporar a trilha de grafo como extensão de M2 (`T2.4` a `T2.8`) em rollout incremental;
+- manter `M3/T3.1` como tarefa atual para não quebrar o foco operacional vigente;
+- preservar o canvas original como referência em `docs/roadmap/references/aprendizado_grafo.md`.
+Impacto: evolução do feed para modelo híbrido (`habilidade + conceito`) sem bloquear o trabalho atual de aulas e revisão editorial.

@@ -29,6 +29,8 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - Script raiz `dist.sh` para pipeline idempotente de release (conteúdo + build Linux + execução final).
 - Guia dedicado de cliente offline em `app_flutter/README.md`.
 - Suporte no bundle para `questions` + `book_modules` (índice dos livros) com update offline.
+- Trilha de planejamento em `docs/roadmap/` para feed híbrido (`habilidade + conceito`) com Q-matrix, dependências e diagnóstico pós-erro (T2.4 a T2.8).
+- Referência técnica de grafo movida para `docs/roadmap/references/aprendizado_grafo.md`.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

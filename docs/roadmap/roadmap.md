@@ -17,6 +17,9 @@ Status: `em_andamento`
 - Completar integração planner -> abertura direta de treino/módulo.
 - Fechar rotina operacional semanal com tracker por habilidade.
 - Consolidar métricas e priorização determinística por lacuna.
+- Introduzir camada de conceitos com Q-matrix e dependências em piloto incremental por área.
+- Evoluir feed inteligente para seleção híbrida (`habilidade + conceito`) com knowledge tracing leve.
+- Incluir diagnóstico pós-erro curto para identificar lacuna conceitual acionável.
 
 ## R3 - Aulas por módulo (geração assistida)
 Status: `em_andamento`

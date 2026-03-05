@@ -13,6 +13,7 @@ Critérios de saída:
 - integração planner -> treino/módulo concluída;
 - rotina semanal padronizada no tracker;
 - atualização de novos cadernos documentada.
+- piloto de grafo de conceitos (1 área) validado com métricas comparativas.
 
 ## M3 - Aulas por módulo operacional
 Status: `em_andamento`
