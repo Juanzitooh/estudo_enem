@@ -41,3 +41,13 @@ Decisão:
 - definir política de roteamento `reels -> rápida/completa` baseada em contato prévio e domínio estimado;
 - introduzir pesos estruturais para conceitos fundacionais (ex.: interpretação/compreensão e matemática básica).
 Impacto: fluxo de estudo mais adaptativo, com recuperação mais curta quando possível e reforço completo quando necessário.
+
+## D-006 - Dois modos de sessão (`adaptativo` e `prova oficial`)
+Data: 2026-03-05
+Status: aceito
+Contexto: parte dos usuários precisa treinar por fluxo inteligente contínuo, enquanto outra parte quer simular prova ENEM real por ano/dia sem interrupções pedagógicas durante o caderno.
+Decisão:
+- manter `adaptativo` como modo padrão de estudo no feed;
+- incluir modo `prova_oficial` com seleção por `ano/dia`, ordem fechada e sem roteamento pós-erro durante a sessão;
+- aplicar diagnóstico/recomendação adaptativa somente após encerramento da prova oficial.
+Impacto: o produto passa a atender treino direcionado e simulação fiel de prova no mesmo app, sem misturar comportamentos durante a sessão oficial.

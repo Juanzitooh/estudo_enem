@@ -31,6 +31,12 @@
 - Escalada: roteamento para `aula completa` quando houver baixa base/primeiro contato/baixa retenção.
 - Retorno ao feed: após critério mínimo de saída (microtreino/checagem).
 
+## Modos de sessão de estudo
+- `adaptativo` (plano comum): feed inteligente com priorização híbrida e intervenções pós-erro.
+- `prova_oficial`: execução de caderno ENEM por `ano/dia` em sequência fechada, sem intervenções adaptativas durante a sessão.
+- Contrato mínimo de sessão: `mode`, `exam_year`, `exam_day`, `question_order`, `adaptive_enabled`.
+- Regra: `adaptive_enabled=false` em `prova_oficial`; diagnósticos e recomendações só após finalizar o caderno.
+
 ## Métricas de perfil (matriz + grafo + aulas)
 - Cobertura INEP por habilidade (`tentadas`, `domínio estimado`, `lacunas críticas`).
 - Domínio por conceito no grafo (`mastery`, `tendência`, `pré-requisitos pendentes`).

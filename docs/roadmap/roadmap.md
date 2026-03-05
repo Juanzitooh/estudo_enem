@@ -22,6 +22,8 @@ Status: `em_andamento`
 - Incluir diagnóstico pós-erro curto para identificar lacuna conceitual acionável.
 - Definir política de roteamento pós-erro (`reels -> recuperação rápida` vs `aula completa`).
 - Exibir no perfil métricas combinadas (`matriz INEP + grafo de conceitos + aulas concluídas`).
+- Oferecer modos de sessão: `adaptativo` e `prova oficial ENEM por ano/dia`.
+- Garantir execução de prova oficial em sequência fechada, sem intervenções adaptativas durante o caderno.
 
 ## R3 - Aulas por módulo (geração assistida)
 Status: `em_andamento`

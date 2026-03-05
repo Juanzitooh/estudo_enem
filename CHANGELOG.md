@@ -34,6 +34,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - Template de recuperação rápida pós-erro em `templates/aula_modulo_recuperacao_rapida_enem.md`.
 - Planejamento canônico atualizado para explicitar os 3 tipos de aula (`habilidade`, `módulo completo`, `recuperação rápida`) e a política `reels -> rápida/completa`.
 - Planejamento canônico atualizado com pesos fundacionais do grafo e métricas de perfil (`matriz INEP + conceitos + aulas concluídas`).
+- Planejamento canônico atualizado com 2 modos de sessão: `adaptativo` (plano comum) e `prova oficial ENEM por ano/dia` em caderno fechado sem adaptação durante a resolução.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

@@ -5,6 +5,7 @@ BLOCKERS:
 - none
 
 RECENT_CHANGES:
+- 2026-03-05 - Planejamento atualizado com modos de sessão (`adaptativo` e `prova oficial por ano/dia`) e regra de prova fechada sem adaptação durante o caderno.
 - 2026-03-05 - Planejamento atualizado para explicitar 3 tipos de aula (`habilidade`, `módulo completo`, `recuperação rápida`).
 - 2026-03-05 - Trilha M2 estendida com política pós-erro, pesos fundacionais do grafo e métricas de perfil.
 - 2026-03-05 - Trilha de grafo de conhecimento adicionada ao M2 (`T2.4` a `T2.8`) com rollout incremental.

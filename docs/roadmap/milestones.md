@@ -16,6 +16,7 @@ Critérios de saída:
 - piloto de grafo de conceitos (1 área) validado com métricas comparativas.
 - política de decisão pós-erro (`rápida vs completa`) operacional no app.
 - painel de perfil com cobertura da matriz INEP + domínio conceitual ativo.
+- modo `prova oficial` por ano/dia executando caderno fechado, sem roteamento adaptativo durante a sessão.
 
 ## M3 - Aulas por módulo operacional
 Status: `em_andamento`
