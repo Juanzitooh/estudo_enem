@@ -72,3 +72,13 @@ Decisão:
 - priorizar próximas tarefas de implementação no app (`T3.8+`) sem fechar decisão editorial definitiva;
 - consolidar decisão final de template apenas após a catalogação completa, com revisão global.
 Impacto: o time avança execução sem travar o roadmap e preserva espaço para ajustes finais com base no catálogo completo.
+
+## D-009 - Contrato formal `lesson_payload_aluno`
+Data: 2026-03-05
+Status: aceito
+Contexto: após validar o player no app, faltava formalizar o contrato de publicação para separar estrutura editorial de autoria e payload final para estudante.
+Decisão:
+- aprovar contrato canônico em `docs/roadmap/references/lesson_payload_aluno.md`;
+- definir explicitamente campos pedagógicos exibíveis e campos editoriais internos;
+- estabelecer regra de transformação `md -> payload` com validação mínima e versionamento por publicação.
+Impacto: reduz ambiguidade entre conteúdo de autoria e experiência final do app, permitindo escalar geração/revisão com compatibilidade estável no cliente.

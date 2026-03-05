@@ -40,6 +40,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - Persistência mínima local da aula adicionada no app (retomada de respostas/finalização) com interrelação versionada `aula <-> questão` e marcação de tentativas desatualizadas por versão.
 - Fluxo de aula validado manualmente (`T3.8`/`T3.9`) e UI com aviso de tentativas desatualizadas por mudança de versão da aula.
 - `T3.10` concluída no app com histórico de tentativas por versão da aula e identificação de tentativas desatualizadas.
+- `T3.7` concluída com especificação formal do contrato `lesson_payload_aluno` e regra de transformação `md -> payload`.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

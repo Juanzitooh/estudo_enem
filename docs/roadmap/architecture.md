@@ -23,6 +23,7 @@
 - Artefato de consumo: `lesson_payload_aluno` em assets offline (somente conteúdo exibível ao estudante).
 - Campos mínimos no payload: `lesson_id`, `lesson_version`, `title`, `learning_expectations`, `context_12m`, `concepts`, `resolution_steps`, `enem_patterns`, `examples`, `questions`, `deepening`.
 - Regra de publicação: converter e publicar apenas aulas com estado editorial `aprovado/publicado`.
+- Especificação formal: `docs/roadmap/references/lesson_payload_aluno.md`.
 
 ## Interrelação aula x questão (app)
 - Relação canônica: `lesson_id` + `question_id` + `lesson_version`.
