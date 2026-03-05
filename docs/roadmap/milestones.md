@@ -25,6 +25,9 @@ Critérios de saída:
 - ajuste de prompt/template reduzindo retrabalho;
 - workflow editorial em lote definido.
 - template de recuperação rápida validado em piloto e pronto para escala.
+- player de aula no app ativo para módulos publicados, com questões interativas e gabarito oculto até finalização.
+- interrelação `aula <-> questão` versionada e com regra de atualização de tentativas quando conteúdo mudar.
+- aprofundamento da aula desbloqueado apenas após tentativa mínima de questões no próprio módulo.
 
 ## M4 - Publicação de conteúdo offline
 Status: `parcialmente_concluido`

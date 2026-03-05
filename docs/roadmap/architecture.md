@@ -18,6 +18,18 @@
 - Estado editorial padrão: `rascunho -> revisado -> aprovado -> publicado`.
 - Referência técnica do canvas de grafo: `docs/roadmap/references/aprendizado_grafo.md`.
 
+## Contrato de aula para aluno (derivado de Markdown)
+- Fonte editorial: `aulas/*/modulos/*.md` (completo para IA/revisão humana).
+- Artefato de consumo: `lesson_payload_aluno` em assets offline (somente conteúdo exibível ao estudante).
+- Campos mínimos no payload: `lesson_id`, `lesson_version`, `title`, `learning_expectations`, `context_12m`, `concepts`, `resolution_steps`, `enem_patterns`, `examples`, `questions`, `deepening`.
+- Regra de publicação: converter e publicar apenas aulas com estado editorial `aprovado/publicado`.
+
+## Interrelação aula x questão (app)
+- Relação canônica: `lesson_id` + `question_id` + `lesson_version`.
+- Tentativas de aluno por aula: armazenar respostas e status de finalização localmente no SQLite.
+- Atualização de conteúdo: quando `lesson_version`/`question_revision` mudar, manter histórico e marcar tentativa anterior como `desatualizada`.
+- Aprofundamento: seção desbloqueada somente após tentativa mínima (>= 1 questão respondida na aula).
+
 ## Contrato mínimo da camada de conceitos (piloto M2)
 - `concepts`: catálogo de conceitos canônicos (`id`, `label`, `area`, `difficulty`).
 - `question_concepts`: Q-matrix esparsa (`question_id`, `concept_id`, `weight`).

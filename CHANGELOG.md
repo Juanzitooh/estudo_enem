@@ -35,6 +35,11 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - Planejamento canônico atualizado para explicitar os 3 tipos de aula (`habilidade`, `módulo completo`, `recuperação rápida`) e a política `reels -> rápida/completa`.
 - Planejamento canônico atualizado com pesos fundacionais do grafo e métricas de perfil (`matriz INEP + conceitos + aulas concluídas`).
 - Planejamento canônico atualizado com 2 modos de sessão: `adaptativo` (plano comum) e `prova oficial ENEM por ano/dia` em caderno fechado sem adaptação durante a resolução.
+- POC de player de aula no Flutter com payload de conteúdo para aluno, questões interativas com gabarito oculto e seção de aprofundamento desbloqueada após tentativa mínima.
+- Planejamento ajustado para aprovação parcial de template/player e avanço da trilha técnica, deixando decisão editorial final para pós-catalogação dos 6 volumes.
+- Persistência mínima local da aula adicionada no app (retomada de respostas/finalização) com interrelação versionada `aula <-> questão` e marcação de tentativas desatualizadas por versão.
+- Fluxo de aula validado manualmente (`T3.8`/`T3.9`) e UI com aviso de tentativas desatualizadas por mudança de versão da aula.
+- `T3.10` concluída no app com histórico de tentativas por versão da aula e identificação de tentativas desatualizadas.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

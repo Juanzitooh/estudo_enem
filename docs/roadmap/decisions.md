@@ -51,3 +51,24 @@ Decisão:
 - incluir modo `prova_oficial` com seleção por `ano/dia`, ordem fechada e sem roteamento pós-erro durante a sessão;
 - aplicar diagnóstico/recomendação adaptativa somente após encerramento da prova oficial.
 Impacto: o produto passa a atender treino direcionado e simulação fiel de prova no mesmo app, sem misturar comportamentos durante a sessão oficial.
+
+## D-007 - Aula no app com payload derivado e aprofundamento por gatilho de tentativa
+Data: 2026-03-05
+Status: aceito
+Contexto: o markdown completo de aula contém instruções editoriais úteis para autoria, mas não é ideal como experiência final do estudante.
+Decisão:
+- manter `md` como fonte editorial e gerar `lesson_payload_aluno` para o app;
+- exibir questões interativas com gabarito oculto até finalização;
+- desbloquear aprofundamento apenas após tentativa mínima de questões na própria aula;
+- versionar relação `aula <-> questão` para controlar atualização e revalidação de tentativas.
+Impacto: experiência do aluno fica mais objetiva e mensurável, preservando qualidade editorial no fluxo interno de geração/revisão.
+
+## D-008 - Aprovação parcial do template e decisão final pós-catalogação
+Data: 2026-03-05
+Status: aceito
+Contexto: existe validação positiva do formato inicial da aula no app, porém ainda sem visão completa de todos os módulos enquanto a catalogação total dos 6 volumes não foi finalizada.
+Decisão:
+- tratar o template/player como aprovado parcialmente para avanço técnico;
+- priorizar próximas tarefas de implementação no app (`T3.8+`) sem fechar decisão editorial definitiva;
+- consolidar decisão final de template apenas após a catalogação completa, com revisão global.
+Impacto: o time avança execução sem travar o roadmap e preserva espaço para ajustes finais com base no catálogo completo.

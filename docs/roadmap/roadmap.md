@@ -31,6 +31,9 @@ Status: `em_andamento`
 - Completar workflow editorial de revisão em lote.
 - Integrar aprofundamento por vídeo com minutagem.
 - Consolidar convivência dos 3 tipos de aula: habilidade, módulo completo e recuperação rápida.
+- Entregar player de aula no app com visualização para aluno e questões interativas com gabarito oculto.
+- Formalizar interrelação `aula <-> questão` para rastrear tentativas por aula/versão e atualização de conteúdo.
+- Desbloquear seção de aprofundamento somente após tentativa mínima de questões na própria aula.
 
 ## R4 - Conteúdo versionado e publicação offline
 Status: `parcialmente_concluido`

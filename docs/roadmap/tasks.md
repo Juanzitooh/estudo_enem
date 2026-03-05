@@ -51,6 +51,16 @@ Aceite: fluxo e critérios de aprovação documentados.
 Aceite: 1 aula rápida preenchida, revisada e testada no fluxo pós-erro.
 - [ ] T3.6 Consolidar a taxonomia editorial dos 3 tipos de aula.
 Aceite: documentação única com papéis e gatilhos de uso para `habilidade`, `módulo completo` e `recuperação rápida`.
+- [-] T3.7 Definir contrato `lesson_payload_aluno` derivado de `aula_modulo_enem` aprovado.
+Aceite: especificação documentada com campos pedagógicos exibíveis, campos editoriais internos e regra de transformação `md -> payload`.
+- [x] T3.8 Implementar player de aula no app com persistência mínima local.
+Aceite: aluno abre aula na aba `Aulas`, responde questões no app, finaliza correção com gabarito oculto prévio e retoma estado local ao reabrir.
+- [x] T3.9 Implementar regra de desbloqueio de aprofundamento por tentativa mínima.
+Aceite: seção de aprofundamento permanece bloqueada até o aluno tentar ao menos 1 questão da aula.
+- [x] T3.10 Implementar interrelação versionada `aula <-> questão`.
+Aceite: vínculo por `lesson_id`, `question_id`, `lesson_version` e regra documentada para marcar tentativa como desatualizada quando a questão for revisada.
+- [ ] T3.11 Consolidar decisão final dos templates após catalogação completa.
+Aceite: decisão final registrada com base na catalogação dos 6 volumes e checklist de ajustes finais aprovado.
 
 ## M4 - Publicação de conteúdo offline
 - [x] T4.1 Estruturar árvore canônica `conteudo/{raw,generated,reviewed,published}`.
