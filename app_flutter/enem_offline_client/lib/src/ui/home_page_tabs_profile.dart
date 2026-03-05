@@ -1,6 +1,57 @@
 part of 'home_page.dart';
 
+const String _lessonDemoAssetPath =
+    'assets/lessons/v1_m1_antiguidade_oriental_demo.json';
+
 extension _HomePageTabsProfileExt on _HomePageState {
+  Future<void> _abrirAulaDemoAntiguidade() async {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => const LessonPlayerPage(
+          assetPath: _lessonDemoAssetPath,
+        ),
+      ),
+    );
+    if (!mounted) {
+      return;
+    }
+    setState(() {
+      _status = 'Aula demo visualizada.';
+    });
+  }
+
+  Widget _buildLessonDemoCard() {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Aula demo para validação',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            const Text(
+              'Visualização para aluno com questões interativas e gabarito oculto até a correção.',
+            ),
+            const SizedBox(height: 10),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                FilledButton(
+                  onPressed: _busy ? null : _abrirAulaDemoAntiguidade,
+                  child: const Text('Abrir aula Antiguidade Oriental'),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   String _formatScore(int? score) {
     if (score == null) {
       return '-';
@@ -942,6 +993,8 @@ extension _HomePageTabsProfileExt on _HomePageState {
             ),
           ),
         ),
+        const SizedBox(height: 12),
+        _buildLessonDemoCard(),
         const SizedBox(height: 12),
         _buildModuleSuggestionsCard(),
         const SizedBox(height: 12),

@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'dart:math' as math;
 
@@ -448,6 +449,56 @@ class StudentProfileInput {
   final double fontScale;
 }
 
+class LessonProgressRecord {
+  const LessonProgressRecord({
+    required this.lessonId,
+    required this.lessonVersion,
+    required this.answers,
+    required this.submitted,
+    required this.score,
+    required this.totalQuestions,
+    required this.updatedAt,
+  });
+
+  final String lessonId;
+  final String lessonVersion;
+  final Map<String, String> answers;
+  final bool submitted;
+  final int score;
+  final int totalQuestions;
+  final DateTime updatedAt;
+}
+
+class LessonQuestionAttemptInput {
+  const LessonQuestionAttemptInput({
+    required this.lessonQuestionId,
+    required this.selectedOption,
+    required this.isCorrect,
+    this.sourceQuestionId = '',
+  });
+
+  final String lessonQuestionId;
+  final String selectedOption;
+  final bool isCorrect;
+  final String sourceQuestionId;
+}
+
+class LessonVersionAttemptSummary {
+  const LessonVersionAttemptSummary({
+    required this.lessonVersion,
+    required this.attemptCount,
+    required this.correctCount,
+    required this.outdatedCount,
+    required this.lastAttemptedAt,
+  });
+
+  final String lessonVersion;
+  final int attemptCount;
+  final int correctCount;
+  final int outdatedCount;
+  final DateTime lastAttemptedAt;
+}
+
 class StudentProfileRecord {
   const StudentProfileRecord({
     required this.id,
@@ -529,9 +580,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 14,
+      version: 16,
       onCreate: (db, _) async {
-        await _createSchemaV14(db);
+        await _createSchemaV16(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -569,6 +620,12 @@ class LocalDatabase {
         }
         if (oldVersion < 14) {
           await _ensureSkillErrorEvidenceSchemaV14(db);
+        }
+        if (oldVersion < 15) {
+          await _createLessonProgressTable(db);
+        }
+        if (oldVersion < 16) {
+          await _createLessonQuestionAttemptsTable(db);
         }
       },
     );
@@ -699,6 +756,16 @@ class LocalDatabase {
         // Tenta próximo candidato.
       }
     }
+  }
+
+  Future<void> _createSchemaV16(Database db) async {
+    await _createSchemaV15(db);
+    await _createLessonQuestionAttemptsTable(db);
+  }
+
+  Future<void> _createSchemaV15(Database db) async {
+    await _createSchemaV14(db);
+    await _createLessonProgressTable(db);
   }
 
   Future<void> _createSchemaV14(Database db) async {
@@ -935,6 +1002,49 @@ class LocalDatabase {
     await db.execute('''
       CREATE INDEX IF NOT EXISTS idx_essay_sessions_theme_source
       ON essay_sessions (theme_source, parser_mode)
+    ''');
+  }
+
+  Future<void> _createLessonProgressTable(DatabaseExecutor db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS lesson_progress (
+        lesson_id TEXT NOT NULL,
+        lesson_version TEXT NOT NULL,
+        answers_json TEXT NOT NULL DEFAULT '{}',
+        submitted INTEGER NOT NULL DEFAULT 0,
+        score INTEGER NOT NULL DEFAULT 0,
+        total_questions INTEGER NOT NULL DEFAULT 0,
+        updated_at TEXT NOT NULL,
+        PRIMARY KEY (lesson_id, lesson_version)
+      )
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_lesson_progress_updated_at
+      ON lesson_progress (updated_at DESC)
+    ''');
+  }
+
+  Future<void> _createLessonQuestionAttemptsTable(DatabaseExecutor db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS lesson_question_attempts (
+        lesson_id TEXT NOT NULL,
+        lesson_version TEXT NOT NULL,
+        lesson_question_id TEXT NOT NULL,
+        source_question_id TEXT,
+        selected_option TEXT NOT NULL,
+        is_correct INTEGER NOT NULL DEFAULT 0,
+        is_outdated INTEGER NOT NULL DEFAULT 0,
+        attempted_at TEXT NOT NULL,
+        PRIMARY KEY (lesson_id, lesson_version, lesson_question_id)
+      )
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_lesson_question_attempts_lesson
+      ON lesson_question_attempts (lesson_id, attempted_at DESC)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_lesson_question_attempts_source
+      ON lesson_question_attempts (source_question_id, attempted_at DESC)
     ''');
   }
 
@@ -2482,6 +2592,237 @@ class LocalDatabase {
         'answer_source': normalizedSource.isEmpty ? null : normalizedSource,
       },
     );
+  }
+
+  Future<LessonProgressRecord?> loadLessonProgress(
+    Database db, {
+    required String lessonId,
+    required String lessonVersion,
+  }) async {
+    final normalizedLessonId = lessonId.trim();
+    final normalizedVersion = lessonVersion.trim();
+    if (normalizedLessonId.isEmpty || normalizedVersion.isEmpty) {
+      return null;
+    }
+
+    final rows = await db.query(
+      'lesson_progress',
+      where: 'lesson_id = ? AND lesson_version = ?',
+      whereArgs: [normalizedLessonId, normalizedVersion],
+      limit: 1,
+    );
+    if (rows.isEmpty) {
+      return null;
+    }
+
+    final row = rows.first;
+    final answersJson = (row['answers_json'] ?? '{}').toString();
+    final answers = <String, String>{};
+    try {
+      final decoded = jsonDecode(answersJson);
+      if (decoded is Map<String, dynamic>) {
+        for (final entry in decoded.entries) {
+          final key = entry.key.trim();
+          final value = entry.value.toString().trim().toUpperCase();
+          if (key.isEmpty || value.isEmpty) {
+            continue;
+          }
+          answers[key] = value;
+        }
+      }
+    } catch (_) {
+      // Ignora payload inválido e segue com mapa vazio.
+    }
+
+    final updatedAtRaw = (row['updated_at'] ?? '').toString();
+    final updatedAt = DateTime.tryParse(updatedAtRaw) ?? DateTime.now();
+    return LessonProgressRecord(
+      lessonId: normalizedLessonId,
+      lessonVersion: normalizedVersion,
+      answers: answers,
+      submitted: _toBool(row['submitted']),
+      score: _toInt(row['score']),
+      totalQuestions: _toInt(row['total_questions']),
+      updatedAt: updatedAt,
+    );
+  }
+
+  Future<void> upsertLessonProgress(
+    Database db, {
+    required String lessonId,
+    required String lessonVersion,
+    required Map<String, String> answers,
+    required bool submitted,
+    required int score,
+    required int totalQuestions,
+  }) async {
+    final normalizedLessonId = lessonId.trim();
+    final normalizedVersion = lessonVersion.trim();
+    if (normalizedLessonId.isEmpty || normalizedVersion.isEmpty) {
+      return;
+    }
+
+    final normalizedAnswers = <String, String>{};
+    for (final entry in answers.entries) {
+      final key = entry.key.trim();
+      final value = entry.value.trim().toUpperCase();
+      if (key.isEmpty || value.isEmpty) {
+        continue;
+      }
+      normalizedAnswers[key] = value;
+    }
+
+    await db.insert(
+      'lesson_progress',
+      {
+        'lesson_id': normalizedLessonId,
+        'lesson_version': normalizedVersion,
+        'answers_json': jsonEncode(normalizedAnswers),
+        'submitted': submitted ? 1 : 0,
+        'score': math.max(0, score),
+        'total_questions': math.max(0, totalQuestions),
+        'updated_at': DateTime.now().toIso8601String(),
+      },
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  Future<void> deleteLessonProgress(
+    Database db, {
+    required String lessonId,
+    required String lessonVersion,
+  }) async {
+    final normalizedLessonId = lessonId.trim();
+    final normalizedVersion = lessonVersion.trim();
+    if (normalizedLessonId.isEmpty || normalizedVersion.isEmpty) {
+      return;
+    }
+    await db.delete(
+      'lesson_progress',
+      where: 'lesson_id = ? AND lesson_version = ?',
+      whereArgs: [normalizedLessonId, normalizedVersion],
+    );
+  }
+
+  Future<void> markLessonAttemptsOutdated(
+    Database db, {
+    required String lessonId,
+    required String keepLessonVersion,
+  }) async {
+    final normalizedLessonId = lessonId.trim();
+    final normalizedKeepVersion = keepLessonVersion.trim();
+    if (normalizedLessonId.isEmpty || normalizedKeepVersion.isEmpty) {
+      return;
+    }
+    await db.update(
+      'lesson_question_attempts',
+      {'is_outdated': 1},
+      where: 'lesson_id = ? AND lesson_version <> ? AND is_outdated = 0',
+      whereArgs: [normalizedLessonId, normalizedKeepVersion],
+    );
+  }
+
+  Future<void> upsertLessonQuestionAttempts(
+    Database db, {
+    required String lessonId,
+    required String lessonVersion,
+    required List<LessonQuestionAttemptInput> attempts,
+  }) async {
+    final normalizedLessonId = lessonId.trim();
+    final normalizedVersion = lessonVersion.trim();
+    if (normalizedLessonId.isEmpty || normalizedVersion.isEmpty) {
+      return;
+    }
+    if (attempts.isEmpty) {
+      return;
+    }
+
+    await db.transaction((txn) async {
+      for (final input in attempts) {
+        final questionId = input.lessonQuestionId.trim();
+        final selected = input.selectedOption.trim().toUpperCase();
+        final sourceId = input.sourceQuestionId.trim();
+        if (questionId.isEmpty || selected.isEmpty) {
+          continue;
+        }
+        await txn.insert(
+          'lesson_question_attempts',
+          {
+            'lesson_id': normalizedLessonId,
+            'lesson_version': normalizedVersion,
+            'lesson_question_id': questionId,
+            'source_question_id': sourceId.isEmpty ? null : sourceId,
+            'selected_option': selected,
+            'is_correct': input.isCorrect ? 1 : 0,
+            'is_outdated': 0,
+            'attempted_at': DateTime.now().toIso8601String(),
+          },
+          conflictAlgorithm: ConflictAlgorithm.replace,
+        );
+      }
+    });
+  }
+
+  Future<int> countOutdatedLessonAttempts(
+    Database db, {
+    required String lessonId,
+  }) async {
+    final normalizedLessonId = lessonId.trim();
+    if (normalizedLessonId.isEmpty) {
+      return 0;
+    }
+    final rows = await db.rawQuery(
+      '''
+      SELECT COUNT(*) AS c
+      FROM lesson_question_attempts
+      WHERE lesson_id = ? AND is_outdated = 1
+      ''',
+      [normalizedLessonId],
+    );
+    if (rows.isEmpty) {
+      return 0;
+    }
+    return _toInt(rows.first['c']);
+  }
+
+  Future<List<LessonVersionAttemptSummary>> loadLessonAttemptSummaries(
+    Database db, {
+    required String lessonId,
+    int limit = 12,
+  }) async {
+    final normalizedLessonId = lessonId.trim();
+    if (normalizedLessonId.isEmpty) {
+      return const [];
+    }
+    final safeLimit = limit <= 0 ? 12 : limit.clamp(1, 50);
+    final rows = await db.rawQuery(
+      '''
+      SELECT
+        lesson_version,
+        COUNT(*) AS attempt_count,
+        SUM(CASE WHEN is_correct = 1 THEN 1 ELSE 0 END) AS correct_count,
+        SUM(CASE WHEN is_outdated = 1 THEN 1 ELSE 0 END) AS outdated_count,
+        MAX(attempted_at) AS last_attempted_at
+      FROM lesson_question_attempts
+      WHERE lesson_id = ?
+      GROUP BY lesson_version
+      ORDER BY last_attempted_at DESC
+      LIMIT ?
+      ''',
+      [normalizedLessonId, safeLimit],
+    );
+    return rows.map((row) {
+      final lastAttemptedRaw = (row['last_attempted_at'] ?? '').toString();
+      final lastAttemptedAt =
+          DateTime.tryParse(lastAttemptedRaw) ?? DateTime.fromMillisecondsSinceEpoch(0);
+      return LessonVersionAttemptSummary(
+        lessonVersion: (row['lesson_version'] ?? '').toString(),
+        attemptCount: _toInt(row['attempt_count']),
+        correctCount: _toInt(row['correct_count']),
+        outdatedCount: _toInt(row['outdated_count']),
+        lastAttemptedAt: lastAttemptedAt,
+      );
+    }).toList(growable: false);
   }
 
   Future<String?> firstQuestionId(Database db) async {

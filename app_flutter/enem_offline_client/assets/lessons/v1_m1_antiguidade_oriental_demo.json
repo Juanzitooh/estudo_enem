@@ -1,0 +1,179 @@
+{
+  "id": "v1_historia1_m1_antiguidade_oriental",
+  "version": "demo.2026-03-05.3",
+  "title": "Antiguidade Oriental",
+  "area": "Ciências Humanas e suas Tecnologias",
+  "materia": "História 1",
+  "volume": 1,
+  "modulo": 1,
+  "learning_expectations": [
+    "Entender Mesopotâmia e Egito como civilizações orientais antigas.",
+    "Compreender a centralidade da água na organização política e econômica.",
+    "Relacionar patrimônio histórico antigo com debates atuais de preservação cultural."
+  ],
+  "competencies": ["C2", "C6"],
+  "context_12m": {
+    "window": "2025-03-05 a 2026-03-05",
+    "events": [
+      {
+        "date": "2025-03-22",
+        "title": "Dia Mundial da Água",
+        "description": "Debates no Brasil sobre segurança hídrica, uso racional e gestão de bacias."
+      },
+      {
+        "date": "2025-06-05",
+        "title": "Dia Mundial do Meio Ambiente",
+        "description": "Campanhas sobre preservação de recursos naturais e planejamento urbano sustentável."
+      }
+    ],
+    "connection": "Assim como nas civilizações da Antiguidade Oriental, o controle da água segue sendo fator estratégico para produção, estabilidade social e ação do Estado.",
+    "brazil_cut": "No semiárido brasileiro, políticas de armazenamento e distribuição de água mostram como infraestrutura hídrica continua organizando a vida econômica e social."
+  },
+  "concepts": [
+    "Civilizações hidráulicas: sociedades organizadas em torno do controle da água e da irrigação.",
+    "Teocracia e centralização: autoridade política legitimada pela religião e por uma burocracia estatal.",
+    "Escrita e leis: instrumentos de administração, registro e poder no mundo antigo."
+  ],
+  "resolution_steps": [
+    "Localize no enunciado o tempo e o espaço históricos (Egito, Mesopotâmia, Crescente Fértil, Oriente Antigo).",
+    "Identifique o tema-chave (água, Estado, religião, leis, escrita, trabalho).",
+    "Compare as alternativas buscando a que melhor conecta organização social e contexto material da época."
+  ],
+  "enem_patterns": [
+    "Questões com texto-base sobre rios, agricultura e formação do Estado.",
+    "Questões comparativas entre formas de poder e de organização social em civilizações antigas."
+  ],
+  "examples": [
+    {
+      "title": "Exemplo 1",
+      "kind": "Cotidiano",
+      "scenario": "Uma cidade entra em racionamento de água após período de baixa nos reservatórios.",
+      "application": "Assim como no Oriente Antigo, a gestão da água exige coordenação coletiva, planejamento e normas públicas.",
+      "conclusion": "Infraestrutura hídrica continua sendo base para estabilidade social e econômica."
+    },
+    {
+      "title": "Exemplo 2",
+      "kind": "Aplicação profissional",
+      "scenario": "Equipe de gestão pública elabora plano de irrigação para agricultura familiar.",
+      "application": "O planejamento lembra a lógica histórica de obras coletivas e administração central para garantir produção e abastecimento.",
+      "conclusion": "Entender Antiguidade Oriental ajuda a analisar decisões atuais de política territorial e segurança alimentar."
+    }
+  ],
+  "case_study": {
+    "situation": "Um município do semiárido precisa decidir entre ampliar barragem, recuperar canais existentes e rever critérios de distribuição de água.",
+    "reflection_questions": [
+      "Quais grupos sociais são mais impactados quando o acesso à água é desigual?",
+      "Como o Estado pode evitar conflitos e garantir uso coletivo justo?",
+      "Que lições históricas de sociedades antigas podem orientar decisões atuais?"
+    ]
+  },
+  "deepening": {
+    "goal": "Consolidar comparação entre organização política, economia agrária e controle da água para usar em questões e repertório de redação.",
+    "video_keywords": [
+      "Crescente Fértil",
+      "Mesopotâmia",
+      "Egito Antigo",
+      "civilizações hidráulicas",
+      "Código de Hamurábi",
+      "teocracia"
+    ]
+  },
+  "quick_check": [
+    "Explique por que rios como Nilo, Tigre e Eufrates foram decisivos para os primeiros Estados.",
+    "Diferencie o papel da religião no poder político do Egito Antigo e de uma democracia atual.",
+    "Relacione escrita, leis e organização social em civilizações antigas."
+  ],
+  "summary": "As civilizações da Antiguidade Oriental se estruturaram na gestão da água, no trabalho coletivo e na centralização política.",
+  "questions": [
+    {
+      "id": "Q1",
+      "source_question_id": "2023_1_45_1",
+      "level": "Fácil",
+      "statement": "A concentração de comunidades nas margens do Nilo, do Tigre e do Eufrates ocorreu, principalmente, porque esses rios",
+      "options": [
+        {"id": "A", "text": "favoreciam o isolamento econômico das cidades."},
+        {"id": "B", "text": "garantiam fertilização do solo e viabilizavam agricultura regular."},
+        {"id": "C", "text": "eliminavam a necessidade de trabalho coletivo."},
+        {"id": "D", "text": "impediam a formação de centros urbanos."},
+        {"id": "E", "text": "substituíam completamente formas de tributação."}
+      ],
+      "answer": "B",
+      "commentary": "A regularidade agrícola nas áreas de cheias sustentou população e Estado."
+    },
+    {
+      "id": "Q2",
+      "source_question_id": "2022_1_47_1",
+      "level": "Fácil",
+      "statement": "Nas civilizações mesopotâmicas e egípcias, a escrita teve papel central ao",
+      "options": [
+        {"id": "A", "text": "abolir a tradição oral e religiosa."},
+        {"id": "B", "text": "registrar tributos, estoques, leis e decisões administrativas."},
+        {"id": "C", "text": "universalizar a alfabetização de toda a população."},
+        {"id": "D", "text": "eliminar a função política dos escribas."},
+        {"id": "E", "text": "tornar desnecessário o poder estatal."}
+      ],
+      "answer": "B",
+      "commentary": "A escrita foi instrumento de administração e controle político-econômico."
+    },
+    {
+      "id": "Q3",
+      "source_question_id": "2021_1_49_1",
+      "level": "Fácil",
+      "statement": "Um traço típico de regimes teocráticos da Antiguidade Oriental é",
+      "options": [
+        {"id": "A", "text": "separação completa entre religião e Estado."},
+        {"id": "B", "text": "legitimidade religiosa da autoridade política central."},
+        {"id": "C", "text": "eleições periódicas com participação popular ampla."},
+        {"id": "D", "text": "extinção de hierarquias sociais fixas."},
+        {"id": "E", "text": "autonomia plena das aldeias frente ao governo central."}
+      ],
+      "answer": "B",
+      "commentary": "O governante concentrava poder com legitimação religiosa."
+    },
+    {
+      "id": "Q4",
+      "source_question_id": "2020_1_51_1",
+      "level": "Média",
+      "statement": "Sobre Egito e Mesopotâmia, assinale a alternativa correta.",
+      "options": [
+        {"id": "A", "text": "Eram sociedades rurais sem organização estatal duradoura."},
+        {"id": "B", "text": "Desenvolveram-se sem dependência relevante de rios."},
+        {"id": "C", "text": "Compartilharam experiências de centralização política e obras hidráulicas."},
+        {"id": "D", "text": "Tinham economia baseada exclusivamente no comércio marítimo."},
+        {"id": "E", "text": "Organizaram-se em modelos democráticos semelhantes aos atuais."}
+      ],
+      "answer": "C",
+      "commentary": "Nos dois casos, gestão hídrica e centralização política foram pilares."
+    },
+    {
+      "id": "Q5",
+      "source_question_id": "2019_1_53_1",
+      "level": "Média",
+      "statement": "O Código de Hamurábi é frequentemente usado no ENEM para discutir",
+      "options": [
+        {"id": "A", "text": "igualdade jurídica absoluta entre todos os grupos sociais."},
+        {"id": "B", "text": "ausência de punições corporais no mundo antigo."},
+        {"id": "C", "text": "uso da lei escrita para organizar conflitos em sociedade hierarquizada."},
+        {"id": "D", "text": "substituição da religião por ciência como base do Estado."},
+        {"id": "E", "text": "fim da autoridade real na Mesopotâmia."}
+      ],
+      "answer": "C",
+      "commentary": "A lei escrita padronizou punições em uma sociedade estratificada."
+    },
+    {
+      "id": "Q6",
+      "source_question_id": "2018_1_55_1",
+      "level": "Difícil",
+      "statement": "Em estudos sobre o Oriente Antigo, a expressão \"controle da água e do trabalho\" indica que",
+      "options": [
+        {"id": "A", "text": "a administração estatal era irrelevante para obras coletivas."},
+        {"id": "B", "text": "a produção agrícola dependia de coordenação política e técnica contínua."},
+        {"id": "C", "text": "as cheias dos rios dispensavam qualquer planejamento social."},
+        {"id": "D", "text": "o poder religioso não influenciava decisões econômicas."},
+        {"id": "E", "text": "as cidades antigas cresceram sem hierarquia administrativa."}
+      ],
+      "answer": "B",
+      "commentary": "Grandes obras e produção agrícola exigiam coordenação contínua do poder."
+    }
+  ]
+}

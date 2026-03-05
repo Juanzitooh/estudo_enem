@@ -16,6 +16,7 @@ import '../essay/essay_prompt_builder.dart';
 import '../study/offline_planner.dart';
 import '../study/study_prompt_builder.dart';
 import 'app_theme.dart';
+import 'lesson_player_page.dart';
 import '../update/content_updater.dart';
 
 part 'home_page_tabs_profile.dart';
