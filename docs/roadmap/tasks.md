@@ -19,7 +19,7 @@ Aceite: modelo atualizado e validado em uso local.
 Aceite: procedimento reproduzível com checklist.
 - [x] T2.4 Definir contrato mínimo da camada de conceitos (`concepts`, `question_concepts`, `concept_dependencies`, `concept_mastery`).
 Aceite: contrato documentado em `docs/roadmap/architecture.md` com exemplo de bundle offline.
-- [ ] T2.5 Gerar Q-matrix piloto para 1 área sem depender do catálogo completo.
+- [x] T2.5 Gerar Q-matrix piloto para 1 área sem depender do catálogo completo.
 Aceite: mínimo de 80 questões mapeadas para 25+ conceitos com cobertura auditável.
 - [ ] T2.6 Implementar seleção híbrida de feed (`habilidade + conceito`) no cliente offline.
 Aceite: fallback por habilidade ativo quando não houver mapeamento conceitual.

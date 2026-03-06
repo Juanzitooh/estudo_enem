@@ -147,3 +147,12 @@ Decisão:
 - formalizar no `architecture.md` o contrato mínimo de `concepts`, `question_concepts`, `concept_dependencies`, `concept_mastery` e `concept_priority_weights`;
 - publicar exemplo canônico em `docs/roadmap/references/concepts_bundle_offline_exemplo.json`.
 Impacto: reduz ambiguidade de implementação no app/pipeline e acelera execução de `T2.5` (Q-matrix piloto).
+
+## D-017 - Piloto Q-matrix em Humanas com cobertura auditável
+Data: 2026-03-06
+Status: aceito
+Contexto: para iniciar o feed híbrido sem depender da catalogação completa, era necessário um piloto de Q-matrix em uma área com massa crítica de questões.
+Decisão:
+- executar piloto em Ciências Humanas com geração reprodutível via `scripts/gerar_qmatrix_piloto_humanas.py`;
+- publicar artefatos auditáveis (`concepts`, `question_concepts`, `dependencies`, `weights`, `bundle`, `resumo`) em `questoes/mapeamento_habilidades/conceitos_piloto_humanas/`.
+Impacto: cria base concreta para implementação da seleção híbrida em `T2.6` com fallback por habilidade já existente.

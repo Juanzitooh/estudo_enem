@@ -40,6 +40,7 @@
 - `concept_mastery`: domínio local por perfil (`profile_id`, `concept_id`, `mastery`, `updated_at`).
 - `concept_priority_weights`: pesos estruturais por conceito (`concept_id`, `base_weight`, `reason`).
 - Exemplo de bundle offline: `docs/roadmap/references/concepts_bundle_offline_exemplo.json`.
+- Piloto Q-matrix (Humanas): `questoes/mapeamento_habilidades/conceitos_piloto_humanas/`.
 
 ### Exemplo resumido do bundle offline
 ```json

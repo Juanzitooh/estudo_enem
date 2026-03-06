@@ -51,6 +51,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T2.2` concluída com evolução do `plano/tracker.md` para erro explícito por habilidade (`Hxx`) e ciclo de revisão/reavaliação.
 - `T2.3` concluída com rotina documentada para atualização de novos cadernos (extração, auditoria OCR, mapeamento e geração de bundle com checklist).
 - `T2.4` concluída com contrato mínimo da camada de conceitos e exemplo de bundle offline para implementação do feed híbrido.
+- `T2.5` concluída com Q-matrix piloto de Ciências Humanas (`120` questões, `79` conceitos) e artefatos auditáveis para feed híbrido.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.
