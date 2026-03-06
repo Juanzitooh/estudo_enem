@@ -58,6 +58,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T2.9` concluída com política canônica de roteamento pós-erro (`reels -> recuperação rápida|aula completa`) documentada com gatilhos mínimos (`primeiro_contato`, `mastery`, `acertos_microtreino`) e regra de escalada.
 - `T2.10` concluída com tabela inicial de pesos fundacionais do grafo (leitura/interpretação + matemática básica) e impacto explícito de `base_weight` no ranking conceitual.
 - `T2.11` concluída com contrato canônico de métricas de perfil (`matriz INEP + grafo + aulas`) para painel offline em `profile_metrics_payload`.
+- `T2.12` concluída com contrato canônico de modos de sessão (`adaptativo` vs `prova_oficial`) com parâmetros mínimos (`ano`, `dia`, `ordem`) e regra mandatória de desligamento adaptativo na prova oficial.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

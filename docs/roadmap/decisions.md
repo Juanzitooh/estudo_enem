@@ -216,3 +216,13 @@ Decisão:
 - definir três blocos obrigatórios: `matriz_inep`, `grafo_conceitos`, `aulas`, com campos mínimos e regras de fallback offline;
 - adotar regra inicial de tipagem de aula por `lesson_id` (contém `recuperacao_rapida`) para separar concluídas de recuperação vs módulo completo enquanto o catálogo final não está fechado.
 Impacto: cria base única para UI de perfil, rastreabilidade entre métricas pedagógicas e evolução incremental sem quebrar compatibilidade local.
+
+## D-024 - Contrato de modos de sessão (`T2.12`)
+Data: 2026-03-06
+Status: aceito
+Contexto: apesar de já existir decisão macro sobre dois modos (`D-006`), faltava contrato operacional com payload mínimo e regras de validação para implementação segura da `prova_oficial`.
+Decisão:
+- formalizar `session_config` e `session_runtime` em `docs/roadmap/references/t2_12_contrato_modos_sessao.md`;
+- exigir parâmetros mínimos na prova oficial (`exam_year`, `exam_day`, `question_order=enem_oficial`);
+- tornar mandatória a regra `adaptive_enabled=false` em `prova_oficial` (com `post_error_routing` e `concept_diagnostic` desligados durante a sessão).
+Impacto: reduz ambiguidade na implementação de `T2.13`, garante simulação fiel do caderno e evita mistura de comportamentos adaptativos na prova oficial.
