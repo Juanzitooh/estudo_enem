@@ -21,7 +21,7 @@ Aceite: procedimento reproduzível com checklist.
 Aceite: contrato documentado em `docs/roadmap/architecture.md` com exemplo de bundle offline.
 - [x] T2.5 Gerar Q-matrix piloto para 1 área sem depender do catálogo completo.
 Aceite: mínimo de 80 questões mapeadas para 25+ conceitos com cobertura auditável.
-- [ ] T2.6 Implementar seleção híbrida de feed (`habilidade + conceito`) no cliente offline.
+- [x] T2.6 Implementar seleção híbrida de feed (`habilidade + conceito`) no cliente offline.
 Aceite: fallback por habilidade ativo quando não houver mapeamento conceitual.
 - [ ] T2.7 Implementar diagnóstico pós-erro curto por conceito (3 perguntas objetivas).
 Aceite: respostas atualizam `concept_mastery` local e influenciam a próxima recomendação.

@@ -156,3 +156,13 @@ Decisão:
 - executar piloto em Ciências Humanas com geração reprodutível via `scripts/gerar_qmatrix_piloto_humanas.py`;
 - publicar artefatos auditáveis (`concepts`, `question_concepts`, `dependencies`, `weights`, `bundle`, `resumo`) em `questoes/mapeamento_habilidades/conceitos_piloto_humanas/`.
 Impacto: cria base concreta para implementação da seleção híbrida em `T2.6` com fallback por habilidade já existente.
+
+## D-018 - Feed híbrido com fallback explícito por habilidade no cliente offline
+Data: 2026-03-06
+Status: aceito
+Contexto: o app precisava sair do feed puramente por habilidade e consumir a camada de conceitos sem quebrar o comportamento atual em bundles legados.
+Decisão:
+- implementar no app a priorização inicial por conceito (fraqueza observada em `progress` + peso estrutural + peso `question_concepts`);
+- complementar a sessão com slots adaptativos por habilidade para manter continuidade da estratégia atual;
+- quando não houver mapeamento conceitual disponível, manter fallback automático para seleção por habilidade e fallback geral de questões.
+Impacto: permite rollout incremental do grafo no cliente offline com compatibilidade retroativa de conteúdo.

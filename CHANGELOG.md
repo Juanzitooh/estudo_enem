@@ -52,6 +52,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T2.3` concluída com rotina documentada para atualização de novos cadernos (extração, auditoria OCR, mapeamento e geração de bundle com checklist).
 - `T2.4` concluída com contrato mínimo da camada de conceitos e exemplo de bundle offline para implementação do feed híbrido.
 - `T2.5` concluída com Q-matrix piloto de Ciências Humanas (`120` questões, `79` conceitos) e artefatos auditáveis para feed híbrido.
+- `T2.6` concluída no app com seleção híbrida do reels (`conceito + habilidade`), migração SQLite para tabelas de conceitos (`concepts`, `question_concepts`, `concept_dependencies`, `concept_priority_weights`, `concept_mastery`) e fallback automático por habilidade.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.
