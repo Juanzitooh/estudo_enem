@@ -196,3 +196,13 @@ Decisão:
 - definir regra v1: enviar para `aula_completa` quando `primeiro_contato=true` ou `mastery<0.45` ou `acertos_microtreino<=1`; nos demais casos, enviar para `recuperação_rapida`;
 - definir escalada pós-recuperação: acurácia `< 50%` na recuperação rápida redireciona para `aula_completa`.
 Impacto: cria base única para implementação no app, telemetria comparável entre sessões e redução de intervenção longa desnecessária em erros pontuais.
+
+## D-022 - Pesos fundacionais iniciais do grafo (`T2.10`)
+Data: 2026-03-06
+Status: aceito
+Contexto: após fechar o roteamento pós-erro, faltava explicitar a priorização estrutural de conceitos fundacionais no ranking híbrido para leitura/interpretação e matemática básica.
+Decisão:
+- aprovar tabela inicial em `docs/roadmap/references/t2_10_pesos_fundacionais_grafo.md` com pesos maiores para `geral_leitura_*` e `mat_*` fundacionais;
+- manter baseline `1.10` para conceitos derivados de habilidade e `1.00` para temas disciplinares não fundacionais;
+- registrar explicitamente a fórmula de ranking por conceito no roadmap para rastreabilidade (`weakness * baseWeight` como termo dominante).
+Impacto: o feed passa a ter viés intencional para lacunas fundacionais transversais, preservando fallback estável para conceitos não priorizados.

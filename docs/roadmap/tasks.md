@@ -29,7 +29,7 @@ Aceite: respostas atualizam `concept_mastery` local e influenciam a próxima rec
 Aceite: relatório com métricas offline (`acurácia`, `tempo`, `retenção`) e decisão de rollout.
 - [x] T2.9 Definir política de roteamento pós-erro (`reels -> recuperação rápida` vs `aula completa`).
 Aceite: regra documentada com gatilhos mínimos (`primeiro contato`, `mastery`, `acertos no microtreino`).
-- [ ] T2.10 Definir pesos de conceitos fundacionais no grafo.
+- [x] T2.10 Definir pesos de conceitos fundacionais no grafo.
 Aceite: tabela de pesos inicial aprovada para leitura/interpretação e matemática básica com impacto explícito no ranking.
 - [ ] T2.11 Definir painel de métricas de perfil (`matriz INEP + grafo + aulas`).
 Aceite: contrato de métricas documentado com campos de cobertura por habilidade, domínio por conceito e aulas concluídas.

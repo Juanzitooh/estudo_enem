@@ -18,6 +18,7 @@
 - Estado editorial padrão: `rascunho -> revisado -> aprovado -> publicado`.
 - Referência técnica do canvas de grafo: `docs/roadmap/references/aprendizado_grafo.md`.
 - Política canônica de roteamento pós-erro: `docs/roadmap/references/t2_9_politica_roteamento_pos_erro.md`.
+- Tabela inicial de pesos fundacionais do grafo: `docs/roadmap/references/t2_10_pesos_fundacionais_grafo.md`.
 - Operação editorial M3 (taxonomia + workflow + vídeo): `docs/roadmap/references/m3_operacao_editorial.md`.
 - Publicação/release (versionamento por módulo + assinatura Android): `docs/roadmap/references/publicacao_release.md`.
 
@@ -42,6 +43,12 @@
 - `concept_priority_weights`: pesos estruturais por conceito (`concept_id`, `base_weight`, `reason`).
 - Exemplo de bundle offline: `docs/roadmap/references/concepts_bundle_offline_exemplo.json`.
 - Piloto Q-matrix (Humanas): `questoes/mapeamento_habilidades/conceitos_piloto_humanas/`.
+- Política de pesos fundacionais (v1): `docs/roadmap/references/t2_10_pesos_fundacionais_grafo.md`.
+
+### Fórmula de prioridade por conceito (cliente offline)
+- `priorityScore = (weakness * baseWeight) + ((1 - confidence) * 0.25) + recencyBoost`
+- `baseWeight` é lido de `concept_priority_weights.base_weight`.
+- Impacto: conceitos fundacionais com maior `baseWeight` sobem no ranking quando a fraqueza (`weakness`) é equivalente.
 
 ### Exemplo resumido do bundle offline
 ```json

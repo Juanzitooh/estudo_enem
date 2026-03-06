@@ -56,6 +56,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T2.7` concluída no app com diagnóstico pós-erro por conceito (3 questões), atualização local de `concept_mastery` por perfil e influência direta desse domínio no ranking do feed híbrido.
 - `T2.8` concluída com avaliação comparativa offline (`skill-only` vs `híbrido`) via simulação reproduzível, métricas (`acurácia`, `tempo`, `retenção`) e decisão registrada de `manter_piloto` antes de rollout amplo.
 - `T2.9` concluída com política canônica de roteamento pós-erro (`reels -> recuperação rápida|aula completa`) documentada com gatilhos mínimos (`primeiro_contato`, `mastery`, `acertos_microtreino`) e regra de escalada.
+- `T2.10` concluída com tabela inicial de pesos fundacionais do grafo (leitura/interpretação + matemática básica) e impacto explícito de `base_weight` no ranking conceitual.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.
