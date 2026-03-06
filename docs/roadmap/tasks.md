@@ -11,7 +11,7 @@ Aceite: versão nomeada, congelada e referenciada no roadmap.
 Aceite: fluxo documentado com entrada, validação e publicação.
 
 ## M2 - Planner + treino operacional
-- [ ] T2.1 Integrar previsão do planner com abertura direta da tela de treino/módulo.
+- [x] T2.1 Integrar previsão do planner com abertura direta da tela de treino/módulo.
 Aceite: ação na UI abre treino/módulo correspondente sem etapa manual extra.
 - [ ] T2.2 Atualizar `plano/tracker.md` com campo de erro por habilidade (`Hxx`).
 Aceite: modelo atualizado e validado em uso local.

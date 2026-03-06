@@ -111,3 +111,12 @@ Decisão:
 - considerar `T5.1` concluída após auditoria técnica do script e critérios de aceite;
 - manter `T5.2` como complemento de assinatura e checklist de publicação.
 Impacto: backlog alinhado ao estado real do código, reduzindo pendências artificiais no roadmap.
+
+## D-013 - Planner acionável na UI (treino/módulo direto)
+Data: 2026-03-06
+Status: aceito
+Contexto: a previsão do planner estava informativa, mas ainda exigia navegação indireta para iniciar treino ou revisar módulo.
+Decisão:
+- tornar cada slot diário do planner acionável com botões `Treinar agora` e `Abrir módulo`;
+- reutilizar mapeamentos existentes (`StudyBlockSuggestion`/`ModuleSuggestion`) com fallback por skill quando não houver módulo exato.
+Impacto: o fluxo planner -> execução ficou direto, reduzindo atrito operacional e atendendo o aceite de `T2.1`.
