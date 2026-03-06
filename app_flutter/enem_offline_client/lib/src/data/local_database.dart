@@ -75,6 +75,32 @@ class SkillPriorityItem {
   final String band;
 }
 
+class ConceptQuestionCandidate {
+  const ConceptQuestionCandidate({
+    required this.question,
+    required this.conceptId,
+    required this.conceptWeight,
+    required this.conceptPriorityScore,
+    required this.score,
+  });
+
+  final QuestionCardItem question;
+  final String conceptId;
+  final double conceptWeight;
+  final double conceptPriorityScore;
+  final double score;
+}
+
+class _ConceptPriorityItem {
+  const _ConceptPriorityItem({
+    required this.conceptId,
+    required this.priorityScore,
+  });
+
+  final String conceptId;
+  final double priorityScore;
+}
+
 class SkillErrorProfile {
   const SkillErrorProfile({
     required this.skill,
@@ -580,9 +606,9 @@ class LocalDatabase {
 
     return openDatabase(
       dbPath,
-      version: 16,
+      version: 17,
       onCreate: (db, _) async {
-        await _createSchemaV16(db);
+        await _createSchemaV17(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -626,6 +652,9 @@ class LocalDatabase {
         }
         if (oldVersion < 16) {
           await _createLessonQuestionAttemptsTable(db);
+        }
+        if (oldVersion < 17) {
+          await _createConceptGraphTables(db);
         }
       },
     );
@@ -756,6 +785,11 @@ class LocalDatabase {
         // Tenta próximo candidato.
       }
     }
+  }
+
+  Future<void> _createSchemaV17(Database db) async {
+    await _createSchemaV16(db);
+    await _createConceptGraphTables(db);
   }
 
   Future<void> _createSchemaV16(Database db) async {
@@ -1074,6 +1108,80 @@ class LocalDatabase {
     ''');
   }
 
+  Future<void> _createConceptGraphTables(DatabaseExecutor db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS concepts (
+        id TEXT PRIMARY KEY,
+        label TEXT NOT NULL,
+        area TEXT,
+        difficulty TEXT,
+        source TEXT
+      )
+    ''');
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS question_concepts (
+        question_id TEXT NOT NULL,
+        concept_id TEXT NOT NULL,
+        weight REAL NOT NULL DEFAULT 0,
+        source TEXT,
+        PRIMARY KEY (question_id, concept_id),
+        FOREIGN KEY(question_id) REFERENCES questions(id),
+        FOREIGN KEY(concept_id) REFERENCES concepts(id)
+      )
+    ''');
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS concept_dependencies (
+        concept_id TEXT NOT NULL,
+        depends_on TEXT NOT NULL,
+        strength REAL NOT NULL DEFAULT 0,
+        source TEXT,
+        PRIMARY KEY (concept_id, depends_on),
+        FOREIGN KEY(concept_id) REFERENCES concepts(id)
+      )
+    ''');
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS concept_priority_weights (
+        concept_id TEXT PRIMARY KEY,
+        base_weight REAL NOT NULL DEFAULT 1,
+        reason TEXT,
+        source TEXT,
+        FOREIGN KEY(concept_id) REFERENCES concepts(id)
+      )
+    ''');
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS concept_mastery (
+        profile_id TEXT NOT NULL,
+        concept_id TEXT NOT NULL,
+        mastery REAL NOT NULL DEFAULT 0.5,
+        updated_at TEXT NOT NULL,
+        PRIMARY KEY (profile_id, concept_id),
+        FOREIGN KEY(profile_id) REFERENCES student_profiles(id),
+        FOREIGN KEY(concept_id) REFERENCES concepts(id)
+      )
+    ''');
+
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_question_concepts_question
+      ON question_concepts (question_id)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_question_concepts_concept
+      ON question_concepts (concept_id)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_concept_dependencies_concept
+      ON concept_dependencies (concept_id)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_concept_priority_weights_weight
+      ON concept_priority_weights (base_weight DESC)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_concept_mastery_profile
+      ON concept_mastery (profile_id, updated_at DESC)
+    ''');
+  }
+
   Future<void> _ensureStudentProfilesSchemaV11(Database db) async {
     final columns = await db.rawQuery("PRAGMA table_info('student_profiles')");
     final names = columns
@@ -1366,6 +1474,18 @@ class LocalDatabase {
     return '';
   }
 
+  String _normalizeConceptId(String rawValue) {
+    final normalized = rawValue
+        .trim()
+        .toLowerCase()
+        .replaceAll(RegExp(r'\s+'), '_')
+        .replaceAll(RegExp(r'[^a-z0-9_:-]'), '');
+    if (normalized.isEmpty) {
+      return '';
+    }
+    return normalized;
+  }
+
   String _normalizeTopicTag(String rawValue) {
     final normalized = rawValue.trim().toLowerCase();
     if (normalized.isEmpty) {
@@ -1380,6 +1500,64 @@ class LocalDatabase {
       return '';
     }
     return compact;
+  }
+
+  Future<bool> _tableExists(Database db, String tableName) async {
+    final normalized = tableName.trim();
+    if (normalized.isEmpty) {
+      return false;
+    }
+    final rows = await db.rawQuery(
+      '''
+      SELECT name
+      FROM sqlite_master
+      WHERE type = 'table' AND name = ?
+      LIMIT 1
+      ''',
+      [normalized],
+    );
+    return rows.isNotEmpty;
+  }
+
+  Future<bool> _hasConceptGraphTables(Database db) async {
+    const requiredTables = [
+      'concepts',
+      'question_concepts',
+      'concept_dependencies',
+      'concept_priority_weights',
+    ];
+    for (final table in requiredTables) {
+      if (!await _tableExists(db, table)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  QuestionCardItem? _questionCardFromRow(Map<String, Object?> row) {
+    final question = QuestionCardItem(
+      id: (row['id'] ?? '').toString(),
+      year: _toInt(row['year']),
+      day: _toInt(row['day']),
+      number: _toInt(row['number']),
+      variation: _toInt(row['variation']) <= 0 ? 1 : _toInt(row['variation']),
+      area: (row['area'] ?? '').toString(),
+      discipline: (row['discipline'] ?? '').toString(),
+      materia: (row['materia'] ?? '').toString(),
+      competency: (row['competency'] ?? '').toString(),
+      skill: (row['skill'] ?? '').toString(),
+      difficulty: (row['difficulty'] ?? '').toString(),
+      hasImage: _toBool(row['has_image']),
+      statement: (row['statement'] ?? '').toString(),
+      answer: (row['answer'] ?? '').toString(),
+    );
+    if (question.id.isEmpty ||
+        question.year <= 0 ||
+        question.day <= 0 ||
+        question.number <= 0) {
+      return null;
+    }
+    return question;
   }
 
   double _confidenceFromAttempts(int attempts) {
@@ -2372,6 +2550,10 @@ class LocalDatabase {
     await upsertQuestionsFromBundle(db, bundle);
     await upsertBookModulesFromBundle(db, bundle);
     await upsertModuleQuestionMatchesFromBundle(db, bundle);
+    await upsertConceptsFromBundle(db, bundle);
+    await upsertQuestionConceptsFromBundle(db, bundle);
+    await upsertConceptDependenciesFromBundle(db, bundle);
+    await upsertConceptPriorityWeightsFromBundle(db, bundle);
   }
 
   Future<void> upsertQuestionsFromBundle(
@@ -2566,6 +2748,160 @@ class LocalDatabase {
             'revisado_manual': _toBool(item['revisado_manual']) ? 1 : 0,
             'source': (item['source'] ?? '').toString(),
           },
+        );
+      }
+    });
+  }
+
+  Future<void> upsertConceptsFromBundle(
+    Database db,
+    Map<String, dynamic> bundle,
+  ) async {
+    if (!await _hasConceptGraphTables(db)) {
+      return;
+    }
+    final rawConcepts = (bundle['concepts'] as List<dynamic>? ?? const []);
+    if (rawConcepts.isEmpty) {
+      return;
+    }
+
+    await db.transaction((txn) async {
+      await txn.delete('concepts');
+      for (final item in rawConcepts) {
+        if (item is! Map<String, dynamic>) {
+          continue;
+        }
+        final conceptId = _normalizeConceptId('${item['id'] ?? ''}');
+        final label = ('${item['label'] ?? ''}').trim();
+        if (conceptId.isEmpty || label.isEmpty) {
+          continue;
+        }
+        await txn.insert(
+          'concepts',
+          {
+            'id': conceptId,
+            'label': label,
+            'area': ('${item['area'] ?? ''}').trim(),
+            'difficulty': ('${item['difficulty'] ?? ''}').trim(),
+            'source': ('${item['source'] ?? ''}').trim(),
+          },
+          conflictAlgorithm: ConflictAlgorithm.replace,
+        );
+      }
+    });
+  }
+
+  Future<void> upsertQuestionConceptsFromBundle(
+    Database db,
+    Map<String, dynamic> bundle,
+  ) async {
+    if (!await _hasConceptGraphTables(db)) {
+      return;
+    }
+    final rawMappings =
+        (bundle['question_concepts'] as List<dynamic>? ?? const []);
+    if (rawMappings.isEmpty) {
+      return;
+    }
+
+    await db.transaction((txn) async {
+      await txn.delete('question_concepts');
+      for (final item in rawMappings) {
+        if (item is! Map<String, dynamic>) {
+          continue;
+        }
+        final questionId = ('${item['question_id'] ?? ''}').trim();
+        final conceptId = _normalizeConceptId('${item['concept_id'] ?? ''}');
+        final weight = _toDouble(item['weight']).clamp(0, 1).toDouble();
+        if (questionId.isEmpty || conceptId.isEmpty || weight <= 0) {
+          continue;
+        }
+        await txn.insert(
+          'question_concepts',
+          {
+            'question_id': questionId,
+            'concept_id': conceptId,
+            'weight': weight,
+            'source': ('${item['source'] ?? ''}').trim(),
+          },
+          conflictAlgorithm: ConflictAlgorithm.replace,
+        );
+      }
+    });
+  }
+
+  Future<void> upsertConceptDependenciesFromBundle(
+    Database db,
+    Map<String, dynamic> bundle,
+  ) async {
+    if (!await _hasConceptGraphTables(db)) {
+      return;
+    }
+    final rawDependencies =
+        (bundle['concept_dependencies'] as List<dynamic>? ?? const []);
+    if (rawDependencies.isEmpty) {
+      return;
+    }
+
+    await db.transaction((txn) async {
+      await txn.delete('concept_dependencies');
+      for (final item in rawDependencies) {
+        if (item is! Map<String, dynamic>) {
+          continue;
+        }
+        final conceptId = _normalizeConceptId('${item['concept_id'] ?? ''}');
+        final dependsOn = _normalizeConceptId('${item['depends_on'] ?? ''}');
+        final strength = _toDouble(item['strength']).clamp(0, 1).toDouble();
+        if (conceptId.isEmpty || dependsOn.isEmpty || strength <= 0) {
+          continue;
+        }
+        await txn.insert(
+          'concept_dependencies',
+          {
+            'concept_id': conceptId,
+            'depends_on': dependsOn,
+            'strength': strength,
+            'source': ('${item['source'] ?? ''}').trim(),
+          },
+          conflictAlgorithm: ConflictAlgorithm.replace,
+        );
+      }
+    });
+  }
+
+  Future<void> upsertConceptPriorityWeightsFromBundle(
+    Database db,
+    Map<String, dynamic> bundle,
+  ) async {
+    if (!await _hasConceptGraphTables(db)) {
+      return;
+    }
+    final rawWeights =
+        (bundle['concept_priority_weights'] as List<dynamic>? ?? const []);
+    if (rawWeights.isEmpty) {
+      return;
+    }
+
+    await db.transaction((txn) async {
+      await txn.delete('concept_priority_weights');
+      for (final item in rawWeights) {
+        if (item is! Map<String, dynamic>) {
+          continue;
+        }
+        final conceptId = _normalizeConceptId('${item['concept_id'] ?? ''}');
+        final baseWeight = _toDouble(item['base_weight']).clamp(0.1, 5);
+        if (conceptId.isEmpty || baseWeight <= 0) {
+          continue;
+        }
+        await txn.insert(
+          'concept_priority_weights',
+          {
+            'concept_id': conceptId,
+            'base_weight': baseWeight.toDouble(),
+            'reason': ('${item['reason'] ?? ''}').trim(),
+            'source': ('${item['source'] ?? ''}').trim(),
+          },
+          conflictAlgorithm: ConflictAlgorithm.replace,
         );
       }
     });
@@ -3300,6 +3636,191 @@ class LocalDatabase {
     return priorities.take(safeLimit).toList();
   }
 
+  Future<List<_ConceptPriorityItem>> _loadConceptPriorities(
+    Database db, {
+    int limit = 8,
+  }) async {
+    final safeLimit = limit <= 0 ? 8 : limit.clamp(1, 24).toInt();
+    if (!await _hasConceptGraphTables(db)) {
+      return const [];
+    }
+
+    final rows = await db.rawQuery('''
+      SELECT
+        qc.concept_id AS concept_id,
+        COUNT(*) AS attempts,
+        SUM(CASE WHEN p.is_correct = 1 THEN qc.weight ELSE 0 END) AS weighted_correct,
+        SUM(qc.weight) AS weighted_total,
+        COALESCE(MAX(cpw.base_weight), 1) AS base_weight,
+        MAX(p.answered_at) AS last_answered_at
+      FROM progress p
+      JOIN question_concepts qc ON qc.question_id = p.question_id
+      LEFT JOIN concept_priority_weights cpw
+        ON LOWER(cpw.concept_id) = LOWER(qc.concept_id)
+      GROUP BY qc.concept_id
+      HAVING COUNT(*) > 0
+    ''');
+
+    if (rows.isEmpty) {
+      return const [];
+    }
+
+    final now = DateTime.now();
+    final priorities = <_ConceptPriorityItem>[];
+    for (final row in rows) {
+      final conceptId = _normalizeConceptId('${row['concept_id'] ?? ''}');
+      if (conceptId.isEmpty) {
+        continue;
+      }
+
+      final attempts = _toInt(row['attempts']);
+      final weightedTotal = _toDouble(row['weighted_total']);
+      final weightedCorrect = _toDouble(row['weighted_correct']);
+      if (attempts <= 0 || weightedTotal <= 0) {
+        continue;
+      }
+
+      final mastery = (weightedCorrect / weightedTotal).clamp(0, 1).toDouble();
+      final weakness = 1 - mastery;
+      final confidence = _confidenceFromAttempts(attempts);
+      final baseWeight = _toDouble(row['base_weight']).clamp(0.5, 3).toDouble();
+      final lastAnsweredRaw = ('${row['last_answered_at'] ?? ''}').trim();
+      final lastAnswered = DateTime.tryParse(lastAnsweredRaw)?.toLocal();
+      final daysSinceLastSeen = lastAnswered == null
+          ? 30
+          : now.difference(lastAnswered).inDays.clamp(0, 365);
+      final recencyBoost = (daysSinceLastSeen * 0.01).clamp(0, 0.2).toDouble();
+      final priorityScore =
+          (weakness * baseWeight) + ((1 - confidence) * 0.25) + recencyBoost;
+
+      priorities.add(
+        _ConceptPriorityItem(
+          conceptId: conceptId,
+          priorityScore: priorityScore,
+        ),
+      );
+    }
+
+    priorities.sort(
+      (a, b) => b.priorityScore.compareTo(a.priorityScore),
+    );
+    return priorities.take(safeLimit).toList();
+  }
+
+  Future<List<ConceptQuestionCandidate>> loadConceptQuestionCandidates(
+    Database db, {
+    int conceptLimit = 8,
+    int perConceptQuestionLimit = 12,
+    int maxQuestions = 30,
+  }) async {
+    final safeQuestionLimit =
+        maxQuestions <= 0 ? 30 : maxQuestions.clamp(1, 90).toInt();
+    final safePerConceptLimit = perConceptQuestionLimit <= 0
+        ? 12
+        : perConceptQuestionLimit.clamp(1, 60).toInt();
+    final conceptPriorities = await _loadConceptPriorities(
+      db,
+      limit: conceptLimit,
+    );
+    if (conceptPriorities.isEmpty) {
+      return const [];
+    }
+
+    final byQuestion = <String, ConceptQuestionCandidate>{};
+    final now = DateTime.now();
+
+    for (final concept in conceptPriorities) {
+      final rows = await db.rawQuery(
+        '''
+        SELECT
+          q.id AS id,
+          q.year AS year,
+          q.day AS day,
+          q.number AS number,
+          COALESCE(q.variation, 1) AS variation,
+          COALESCE(q.area, '') AS area,
+          COALESCE(q.discipline, '') AS discipline,
+          COALESCE(q.materia, '') AS materia,
+          COALESCE(q.competency, '') AS competency,
+          COALESCE(q.skill, '') AS skill,
+          COALESCE(q.difficulty, '') AS difficulty,
+          CASE
+            WHEN COALESCE(q.has_image, 0) = 1 OR COALESCE(q.fallback_images, '') <> ''
+            THEN 1 ELSE 0
+          END AS has_image,
+          COALESCE(q.statement, '') AS statement,
+          COALESCE(q.answer, '') AS answer,
+          qc.weight AS concept_weight,
+          COALESCE(qp.attempt_count, 0) AS attempt_count,
+          COALESCE(qp.correct_count, 0) AS correct_count,
+          COALESCE(qp.last_answered_at, '') AS last_answered_at
+        FROM question_concepts qc
+        JOIN questions q ON q.id = qc.question_id
+        LEFT JOIN (
+          SELECT
+            question_id,
+            COUNT(*) AS attempt_count,
+            SUM(CASE WHEN is_correct = 1 THEN 1 ELSE 0 END) AS correct_count,
+            MAX(answered_at) AS last_answered_at
+          FROM progress
+          GROUP BY question_id
+        ) qp ON qp.question_id = q.id
+        WHERE LOWER(qc.concept_id) = LOWER(?)
+        ORDER BY qc.weight DESC, q.year DESC, q.day ASC, q.number ASC
+        LIMIT ?
+        ''',
+        [concept.conceptId, safePerConceptLimit],
+      );
+
+      for (final row in rows) {
+        final question = _questionCardFromRow(row);
+        if (question == null) {
+          continue;
+        }
+
+        final conceptWeight =
+            _toDouble(row['concept_weight']).clamp(0, 1).toDouble();
+        if (conceptWeight <= 0) {
+          continue;
+        }
+        final attempts = _toInt(row['attempt_count']);
+        final correct = _toInt(row['correct_count']);
+        final questionWeakness = attempts <= 0
+            ? 0.12
+            : (1 - (correct / attempts)).clamp(0, 1).toDouble();
+        final lastAnsweredRaw = ('${row['last_answered_at'] ?? ''}').trim();
+        final lastAnswered = DateTime.tryParse(lastAnsweredRaw)?.toLocal();
+        final recencyBoost = lastAnswered == null
+            ? 0.08
+            : (now.difference(lastAnswered).inDays * 0.004)
+                .clamp(0, 0.12)
+                .toDouble();
+        final score = (concept.priorityScore * conceptWeight) +
+            (questionWeakness * 0.22) +
+            recencyBoost;
+
+        final previous = byQuestion[question.id];
+        if (previous == null || score > previous.score) {
+          byQuestion[question.id] = ConceptQuestionCandidate(
+            question: question,
+            conceptId: concept.conceptId,
+            conceptWeight: conceptWeight.toDouble(),
+            conceptPriorityScore: concept.priorityScore,
+            score: score,
+          );
+        }
+      }
+    }
+
+    if (byQuestion.isEmpty) {
+      return const [];
+    }
+
+    final ordered = byQuestion.values.toList()
+      ..sort((a, b) => b.score.compareTo(a.score));
+    return ordered.take(safeQuestionLimit).toList();
+  }
+
   Future<List<ModuleSuggestion>> recommendModulesByWeakSkills(
     Database db, {
     int weakSkillLimit = 3,
@@ -3722,6 +4243,58 @@ class LocalDatabase {
             'tipo_match': 'direto',
             'confianca': 'alta',
             'revisado_manual': true,
+            'source': 'demo_local'
+          },
+        ],
+        'concepts': [
+          {
+            'id': 'geral_leitura_comando',
+            'label': 'Leitura de comando',
+            'area': 'Transversal',
+            'difficulty': 'basico',
+            'source': 'demo_local'
+          },
+          {
+            'id': 'mat_razao_proporcao',
+            'label': 'Razão e proporção',
+            'area': 'Matemática',
+            'difficulty': 'basico',
+            'source': 'demo_local'
+          },
+        ],
+        'question_concepts': [
+          {
+            'question_id': 'demo_2025_1_001',
+            'concept_id': 'geral_leitura_comando',
+            'weight': 0.7,
+            'source': 'demo_local'
+          },
+          {
+            'question_id': 'demo_2025_2_120',
+            'concept_id': 'mat_razao_proporcao',
+            'weight': 0.9,
+            'source': 'demo_local'
+          },
+        ],
+        'concept_dependencies': [
+          {
+            'concept_id': 'mat_razao_proporcao',
+            'depends_on': 'geral_leitura_comando',
+            'strength': 0.4,
+            'source': 'demo_local'
+          },
+        ],
+        'concept_priority_weights': [
+          {
+            'concept_id': 'geral_leitura_comando',
+            'base_weight': 1.5,
+            'reason': 'fundacional_transversal',
+            'source': 'demo_local'
+          },
+          {
+            'concept_id': 'mat_razao_proporcao',
+            'base_weight': 1.3,
+            'reason': 'fundacional_matematica',
             'source': 'demo_local'
           },
         ],

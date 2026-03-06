@@ -636,62 +636,89 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     required List<SkillPriorityItem> priorities,
     int totalQuestions = 18,
   }) async {
-    if (priorities.isEmpty || totalQuestions <= 0) {
-      final fallback = await _localDatabase.searchQuestions(
-        db,
-        filter: const QuestionFilter(limit: 18),
-      );
-      return fallback
-          .map(
-            (item) => _ReelQuestionEntry(
-              question: item,
-              skill: item.skill,
-              band: 'forte',
-              priorityScore: 0,
-            ),
-          )
-          .toList();
+    if (totalQuestions <= 0) {
+      return const [];
     }
 
-    final slots = _buildAdaptiveSlots(
-      totalQuestions: totalQuestions,
-      priorities: priorities,
-    );
     final entries = <_ReelQuestionEntry>[];
     final seenIds = <String>{};
-    final random = Random();
-
-    for (final slot in slots) {
-      final pool = await _localDatabase.searchQuestions(
-        db,
-        filter: QuestionFilter(
-          skill: slot.skill,
-          limit: max(8, slot.questionCount * 4),
-        ),
-      );
-      if (pool.isEmpty) {
+    final priorityBySkill = <String, SkillPriorityItem>{};
+    for (final item in priorities) {
+      final normalizedSkill = item.skill.trim();
+      if (normalizedSkill.isEmpty) {
         continue;
       }
-      final ordered = List<QuestionCardItem>.from(pool)..shuffle(random);
-      for (final item in ordered) {
-        if (!seenIds.add(item.id)) {
-          continue;
-        }
-        entries.add(
-          _ReelQuestionEntry(
-            question: item,
+      priorityBySkill[normalizedSkill] = item;
+    }
+
+    final conceptCandidates = await _localDatabase.loadConceptQuestionCandidates(
+      db,
+      conceptLimit: 8,
+      perConceptQuestionLimit: 12,
+      maxQuestions: max(totalQuestions * 2, totalQuestions),
+    );
+    for (final candidate in conceptCandidates) {
+      final question = candidate.question;
+      if (!seenIds.add(question.id)) {
+        continue;
+      }
+      final normalizedSkill = question.skill.trim();
+      final skillPriority = priorityBySkill[normalizedSkill];
+      entries.add(
+        _ReelQuestionEntry(
+          question: question,
+          skill: normalizedSkill.isEmpty ? 'conceito' : normalizedSkill,
+          band: skillPriority?.band ?? 'foco',
+          priorityScore: max(
+            candidate.score,
+            skillPriority?.priorityScore ?? 0,
+          ),
+        ),
+      );
+      if (entries.length >= totalQuestions) {
+        return entries;
+      }
+    }
+
+    final random = Random();
+
+    if (priorities.isNotEmpty && entries.length < totalQuestions) {
+      final slots = _buildAdaptiveSlots(
+        totalQuestions: totalQuestions,
+        priorities: priorities,
+      );
+      for (final slot in slots) {
+        final pool = await _localDatabase.searchQuestions(
+          db,
+          filter: QuestionFilter(
             skill: slot.skill,
-            band: slot.band,
-            priorityScore: slot.priorityScore,
+            limit: max(8, slot.questionCount * 4),
           ),
         );
-        if (entries.length >= totalQuestions) {
-          return entries;
+        if (pool.isEmpty) {
+          continue;
         }
-        final perSkillCount =
-            entries.where((entry) => entry.skill == slot.skill);
-        if (perSkillCount.length >= slot.questionCount) {
-          break;
+        final ordered = List<QuestionCardItem>.from(pool)..shuffle(random);
+        for (final item in ordered) {
+          if (!seenIds.add(item.id)) {
+            continue;
+          }
+          entries.add(
+            _ReelQuestionEntry(
+              question: item,
+              skill: slot.skill,
+              band: slot.band,
+              priorityScore: slot.priorityScore,
+            ),
+          );
+          if (entries.length >= totalQuestions) {
+            return entries;
+          }
+          final perSkillCount =
+              entries.where((entry) => entry.skill == slot.skill);
+          if (perSkillCount.length >= slot.questionCount) {
+            break;
+          }
         }
       }
     }
