@@ -206,3 +206,13 @@ Decisão:
 - manter baseline `1.10` para conceitos derivados de habilidade e `1.00` para temas disciplinares não fundacionais;
 - registrar explicitamente a fórmula de ranking por conceito no roadmap para rastreabilidade (`weakness * baseWeight` como termo dominante).
 Impacto: o feed passa a ter viés intencional para lacunas fundacionais transversais, preservando fallback estável para conceitos não priorizados.
+
+## D-023 - Contrato canônico do painel de métricas de perfil (`T2.11`)
+Data: 2026-03-06
+Status: aceito
+Contexto: com feed híbrido e player de aula já operacionais, faltava padronizar o payload de métricas do perfil para evitar divergência entre cálculos de habilidade, conceito e progresso de aula.
+Decisão:
+- formalizar `profile_metrics_payload` em `docs/roadmap/references/t2_11_contrato_metricas_perfil.md`;
+- definir três blocos obrigatórios: `matriz_inep`, `grafo_conceitos`, `aulas`, com campos mínimos e regras de fallback offline;
+- adotar regra inicial de tipagem de aula por `lesson_id` (contém `recuperacao_rapida`) para separar concluídas de recuperação vs módulo completo enquanto o catálogo final não está fechado.
+Impacto: cria base única para UI de perfil, rastreabilidade entre métricas pedagógicas e evolução incremental sem quebrar compatibilidade local.

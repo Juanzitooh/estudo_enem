@@ -19,6 +19,7 @@
 - Referência técnica do canvas de grafo: `docs/roadmap/references/aprendizado_grafo.md`.
 - Política canônica de roteamento pós-erro: `docs/roadmap/references/t2_9_politica_roteamento_pos_erro.md`.
 - Tabela inicial de pesos fundacionais do grafo: `docs/roadmap/references/t2_10_pesos_fundacionais_grafo.md`.
+- Contrato do painel de métricas de perfil: `docs/roadmap/references/t2_11_contrato_metricas_perfil.md`.
 - Operação editorial M3 (taxonomia + workflow + vídeo): `docs/roadmap/references/m3_operacao_editorial.md`.
 - Publicação/release (versionamento por módulo + assinatura Android): `docs/roadmap/references/publicacao_release.md`.
 
@@ -76,9 +77,10 @@
 - Regra: `adaptive_enabled=false` em `prova_oficial`; diagnósticos e recomendações só após finalizar o caderno.
 
 ## Métricas de perfil (matriz + grafo + aulas)
-- Cobertura INEP por habilidade (`tentadas`, `domínio estimado`, `lacunas críticas`).
-- Domínio por conceito no grafo (`mastery`, `tendência`, `pré-requisitos pendentes`).
-- Consumo de aulas (`completas concluídas`, `recuperações rápidas concluídas`, `tempo total`).
+- Contrato canônico: `docs/roadmap/references/t2_11_contrato_metricas_perfil.md`.
+- Cobertura INEP por habilidade (`tentativas`, `acurácia`, `priority_band`, `coverage_status`).
+- Domínio por conceito no grafo (`mastery`, `priority_score`, `base_weight`, `dependency_pending_count`).
+- Consumo de aulas (`lessons_started`, `lessons_completed`, `completion_rate`, `completed_modulo_completo`, `completed_recuperacao_rapida`).
 
 ## Restrições operacionais
 - Sem backend obrigatório para uso principal.

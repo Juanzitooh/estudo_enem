@@ -1,11 +1,12 @@
 CURRENT_MILESTONE: M3 - Aulas por módulo operacional
-NEXT_TASK: T2.11 - Definir painel de métricas de perfil (`matriz INEP + grafo + aulas`)
+NEXT_TASK: T2.12 - Definir contrato de modos de sessão (`adaptativo` vs `prova oficial`)
 
 BLOCKERS:
 - T3.1 depende de validação manual do lote piloto com rubrica.
 - T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-03-06 - `T2.11` concluída com contrato canônico do painel de métricas de perfil (`matriz INEP + grafo + aulas`) em `docs/roadmap/references/t2_11_contrato_metricas_perfil.md`.
 - 2026-03-06 - `T2.10` concluída com tabela inicial de pesos fundacionais do grafo (leitura/interpretação + matemática básica) e impacto explícito no ranking documentados em `docs/roadmap/references/t2_10_pesos_fundacionais_grafo.md`.
 - 2026-03-06 - `T2.9` concluída com política canônica de roteamento pós-erro (`reels -> recuperação rápida|aula completa`) documentada em `docs/roadmap/references/t2_9_politica_roteamento_pos_erro.md`, incluindo gatilhos de `primeiro_contato`, `mastery` e `acertos_microtreino`.
 - 2026-03-06 - `T2.8` concluída com avaliação comparativa offline (`skill-only` vs `híbrido`) em 320 usuários simulados e decisão `manter_piloto` (sem rollout amplo) registrada em artefatos `report/csv/json`.

@@ -31,7 +31,7 @@ Aceite: relatório com métricas offline (`acurácia`, `tempo`, `retenção`) e 
 Aceite: regra documentada com gatilhos mínimos (`primeiro contato`, `mastery`, `acertos no microtreino`).
 - [x] T2.10 Definir pesos de conceitos fundacionais no grafo.
 Aceite: tabela de pesos inicial aprovada para leitura/interpretação e matemática básica com impacto explícito no ranking.
-- [ ] T2.11 Definir painel de métricas de perfil (`matriz INEP + grafo + aulas`).
+- [x] T2.11 Definir painel de métricas de perfil (`matriz INEP + grafo + aulas`).
 Aceite: contrato de métricas documentado com campos de cobertura por habilidade, domínio por conceito e aulas concluídas.
 - [ ] T2.12 Definir contrato de modos de sessão (`adaptativo` vs `prova oficial`).
 Aceite: contrato documentado com seleção de modo, parâmetros mínimos (`ano`, `dia`, `ordem`) e regra explícita de desligamento adaptativo na prova oficial.
