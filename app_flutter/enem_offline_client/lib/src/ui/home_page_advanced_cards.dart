@@ -5,6 +5,10 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
     final question = _currentTreinoQuestion;
     final answered = _treinoAcertos + _treinoErros;
     final accuracy = answered <= 0 ? 0 : (_treinoAcertos / answered) * 100;
+    final isOfficialExamSession = _treinoSessaoProvaOficial;
+    final sessionLabel = isOfficialExamSession
+        ? 'Prova oficial ENEM'
+        : 'Modo treino por habilidade (correção imediata)';
     const alternativas = ['A', 'B', 'C', 'D', 'E'];
 
     String previewText(String value) {
@@ -21,10 +25,14 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Modo treino por habilidade (correção imediata)',
-              style: TextStyle(fontWeight: FontWeight.bold),
+            Text(
+              sessionLabel,
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
+            if (isOfficialExamSession)
+              Text(
+                'Caderno ${_treinoProvaAno ?? '-'} dia ${_treinoProvaDia ?? '-'} | ordem fechada | sem roteamento pós-erro',
+              ),
             const SizedBox(height: 8),
             Wrap(
               spacing: 8,
@@ -128,7 +136,11 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                       ElevatedButton(
                         onPressed:
                             _busy || !_treinoRespondida ? null : _proximaTreino,
-                        child: const Text('Próxima questão'),
+                        child: Text(
+                          isOfficialExamSession
+                              ? 'Próxima questão (caderno)'
+                              : 'Próxima questão',
+                        ),
                       ),
                     ],
                   ),
@@ -862,6 +874,19 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
       return '${normalized.substring(0, 180)}...';
     }
 
+    final availableExamYears = _questionFilterOptions.years;
+    final availableExamDays = _questionFilterOptions.days
+        .where((item) => item == 1 || item == 2)
+        .toList(growable: false);
+    final selectedExamYear =
+        availableExamYears.contains(_provaOficialAnoSelecionado)
+            ? _provaOficialAnoSelecionado
+            : null;
+    final selectedExamDay = availableExamDays.contains(_provaOficialDiaSelecionado)
+        ? _provaOficialDiaSelecionado
+        : null;
+    final examSessionAnswered = _treinoAcertos + _treinoErros;
+
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -925,6 +950,97 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
                 ),
               ],
             ),
+            const SizedBox(height: 12),
+            const Divider(height: 1),
+            const SizedBox(height: 12),
+            const Text(
+              'Prova oficial ENEM (ano/dia)',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                SizedBox(
+                  width: 180,
+                  child: DropdownButtonFormField<int?>(
+                    isExpanded: true,
+                    key: ValueKey('official_exam_year_$selectedExamYear'),
+                    initialValue: selectedExamYear,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Ano',
+                    ),
+                    items: [
+                      const DropdownMenuItem<int?>(
+                        value: null,
+                        child: Text('Selecione'),
+                      ),
+                      ...availableExamYears.map(
+                        (value) => DropdownMenuItem<int?>(
+                          value: value,
+                          child: Text('$value'),
+                        ),
+                      ),
+                    ],
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            _updateState(() {
+                              _provaOficialAnoSelecionado = value;
+                            });
+                          },
+                  ),
+                ),
+                SizedBox(
+                  width: 150,
+                  child: DropdownButtonFormField<int?>(
+                    isExpanded: true,
+                    key: ValueKey('official_exam_day_$selectedExamDay'),
+                    initialValue: selectedExamDay,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Dia',
+                    ),
+                    items: [
+                      const DropdownMenuItem<int?>(
+                        value: null,
+                        child: Text('Selecione'),
+                      ),
+                      ...availableExamDays.map(
+                        (value) => DropdownMenuItem<int?>(
+                          value: value,
+                          child: Text('Dia $value'),
+                        ),
+                      ),
+                    ],
+                    onChanged: _busy
+                        ? null
+                        : (value) {
+                            _updateState(() {
+                              _provaOficialDiaSelecionado = value;
+                            });
+                          },
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: _busy ||
+                          selectedExamYear == null ||
+                          selectedExamDay == null
+                      ? null
+                      : _iniciarProvaOficialEnem,
+                  child: const Text('Iniciar prova oficial'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 6),
+            if (_treinoSessaoProvaOficial)
+              Text(
+                'Sessão oficial ativa: ENEM ${_treinoProvaAno ?? '-'} dia ${_treinoProvaDia ?? '-'} | '
+                '${_treinoQuestions.length} questão(ões) | respondidas $examSessionAnswered.',
+              ),
             const SizedBox(height: 8),
             Text('Questões no simulado: ${_simuladoQuestions.length}'),
             Text('Tempo sugerido: $_simuladoTempoTotalMinutos minutos'),

@@ -209,6 +209,11 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   List<QuestionCardItem> _simuladoQuestions = const [];
   int _simuladoTempoTotalMinutos = 0;
   bool _simuladoEmbaralhar = true;
+  int? _provaOficialAnoSelecionado;
+  int? _provaOficialDiaSelecionado;
+  bool _treinoSessaoProvaOficial = false;
+  int? _treinoProvaAno;
+  int? _treinoProvaDia;
   List<AttemptRecord> _recentAttempts = const [];
   List<StudyBlockSuggestion> _studyBlockSuggestions = const [];
   List<SkillPriorityItem> _skillPriorities = const [];
@@ -1098,6 +1103,18 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       final weakSkills = await _localDatabase.loadWeakSkills(db, limit: 5);
       final questionFilterOptions =
           await _localDatabase.loadQuestionFilterOptions(db);
+      final availableExamYears = questionFilterOptions.years;
+      final availableExamDays = questionFilterOptions.days
+          .where((item) => item == 1 || item == 2)
+          .toList(growable: false);
+      final selectedExamYear =
+          availableExamYears.contains(_provaOficialAnoSelecionado)
+              ? _provaOficialAnoSelecionado
+              : (availableExamYears.isEmpty ? null : availableExamYears.first);
+      final selectedExamDay =
+          availableExamDays.contains(_provaOficialDiaSelecionado)
+              ? _provaOficialDiaSelecionado
+              : (availableExamDays.isEmpty ? null : availableExamDays.first);
       final filteredQuestions = await _localDatabase.searchQuestions(
         db,
         filter: _buildQuestionFilter(),
@@ -1165,6 +1182,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         _globalAccuracy = accuracy;
         _databasePath = databasePath;
         _questionFilterOptions = questionFilterOptions;
+        _provaOficialAnoSelecionado = selectedExamYear;
+        _provaOficialDiaSelecionado = selectedExamDay;
         _filteredQuestions = filteredQuestions;
         _recentAttempts = recentAttempts;
         _studyBlockSuggestions = studyBlockSuggestions;
@@ -1623,6 +1642,13 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   }
 
   Future<void> _responderReel(String alternativa) async {
+    if (_treinoSessaoProvaOficial) {
+      setState(() {
+        _status =
+            'Prova oficial em andamento. Finalize o caderno para retomar o modo adaptativo.';
+      });
+      return;
+    }
     final current = _currentReelEntry;
     if (current == null) {
       return;
@@ -1860,7 +1886,13 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   void _startTreinoSession(
     List<QuestionCardItem> questions, {
     required String statusMessage,
+    bool isOfficialExam = false,
+    int? officialExamYear,
+    int? officialExamDay,
   }) {
+    if (isOfficialExam) {
+      _resetConceptDiagnosticState();
+    }
     setState(() {
       _treinoQuestions = questions;
       _treinoCurrentIndex = 0;
@@ -1870,8 +1902,96 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       _treinoRespostaSelecionada = '';
       _treinoFeedback = '';
       _treinoQuestionStartedAt = DateTime.now();
+      _treinoSessaoProvaOficial = isOfficialExam;
+      _treinoProvaAno = isOfficialExam ? officialExamYear : null;
+      _treinoProvaDia = isOfficialExam ? officialExamDay : null;
       _status = statusMessage;
     });
+  }
+
+  Future<void> _iniciarProvaOficialEnem() async {
+    final selectedYear = _provaOficialAnoSelecionado;
+    final selectedDay = _provaOficialDiaSelecionado;
+    if (selectedYear == null || selectedYear <= 0) {
+      setState(() {
+        _status = 'Selecione o ano para iniciar prova oficial.';
+      });
+      return;
+    }
+    if (selectedDay == null || selectedDay <= 0) {
+      setState(() {
+        _status = 'Selecione o dia para iniciar prova oficial.';
+      });
+      return;
+    }
+
+    setState(() {
+      _busy = true;
+      _status =
+          'Montando caderno oficial ENEM $selectedYear dia $selectedDay...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      final pool = await _localDatabase.searchQuestions(
+        db,
+        filter: QuestionFilter(
+          year: selectedYear,
+          day: selectedDay,
+          limit: 200,
+        ),
+      );
+      final caderno = pool
+          .where((item) => item.year == selectedYear && item.day == selectedDay)
+          .toList(growable: true)
+        ..sort((a, b) {
+          final byNumber = a.number.compareTo(b.number);
+          if (byNumber != 0) {
+            return byNumber;
+          }
+          final byVariation = a.variation.compareTo(b.variation);
+          if (byVariation != 0) {
+            return byVariation;
+          }
+          return a.id.compareTo(b.id);
+        });
+
+      if (caderno.isEmpty) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {
+          _status =
+              'Sem questões para ENEM $selectedYear dia $selectedDay no banco local.';
+        });
+        return;
+      }
+
+      if (!mounted) {
+        return;
+      }
+      _startTreinoSession(
+        caderno,
+        statusMessage:
+            'Prova oficial ENEM $selectedYear dia $selectedDay iniciada com ${caderno.length} questão(ões) em ordem fechada.',
+        isOfficialExam: true,
+        officialExamYear: selectedYear,
+        officialExamDay: selectedDay,
+      );
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao iniciar prova oficial: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
   }
 
   Future<void> _iniciarTreino() async {
@@ -2382,7 +2502,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         questionId: current.id,
         isCorrect: isCorrect,
         elapsedSeconds: elapsedSeconds,
-        answerSource: 'treino',
+        answerSource: _treinoSessaoProvaOficial ? 'prova_oficial' : 'treino',
       );
       await _refreshStats();
 
@@ -2429,6 +2549,11 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       final answered = _treinoAcertos + _treinoErros;
       final accuracy = answered <= 0 ? 0 : (_treinoAcertos / answered) * 100;
       setState(() {
+        if (_treinoSessaoProvaOficial) {
+          _status =
+              'Prova oficial concluída. Acertos: $_treinoAcertos | Erros: $_treinoErros | Acurácia ${accuracy.toStringAsFixed(1)}%.';
+          return;
+        }
         _status =
             'Treino concluído. Acertos: $_treinoAcertos | Erros: $_treinoErros | Acurácia ${accuracy.toStringAsFixed(1)}%.';
       });
@@ -2454,6 +2579,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       _treinoRespostaSelecionada = '';
       _treinoFeedback = '';
       _treinoQuestionStartedAt = null;
+      _treinoSessaoProvaOficial = false;
+      _treinoProvaAno = null;
+      _treinoProvaDia = null;
       _status = 'Sessão de treino encerrada.';
     });
   }
