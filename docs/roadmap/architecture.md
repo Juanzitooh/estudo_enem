@@ -21,6 +21,7 @@
 - Tabela inicial de pesos fundacionais do grafo: `docs/roadmap/references/t2_10_pesos_fundacionais_grafo.md`.
 - Contrato do painel de métricas de perfil: `docs/roadmap/references/t2_11_contrato_metricas_perfil.md`.
 - Contrato de modos de sessão: `docs/roadmap/references/t2_12_contrato_modos_sessao.md`.
+- Implementação de prova oficial no app: `docs/roadmap/references/t2_13_fluxo_prova_oficial_implementacao.md`.
 - Operação editorial M3 (taxonomia + workflow + vídeo): `docs/roadmap/references/m3_operacao_editorial.md`.
 - Publicação/release (versionamento por módulo + assinatura Android): `docs/roadmap/references/publicacao_release.md`.
 
@@ -73,6 +74,7 @@
 
 ## Modos de sessão de estudo
 - Contrato canônico: `docs/roadmap/references/t2_12_contrato_modos_sessao.md`.
+- Entrega técnica inicial no app: `docs/roadmap/references/t2_13_fluxo_prova_oficial_implementacao.md`.
 - `adaptativo` (plano comum): feed inteligente com priorização híbrida e intervenções pós-erro.
 - `prova_oficial`: execução de caderno ENEM por `ano/dia` em sequência fechada, sem intervenções adaptativas durante a sessão.
 - Contrato mínimo de sessão: `mode`, `exam_year`, `exam_day`, `question_order`, `adaptive_enabled`.

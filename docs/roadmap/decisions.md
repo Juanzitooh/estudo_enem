@@ -226,3 +226,13 @@ Decisão:
 - exigir parâmetros mínimos na prova oficial (`exam_year`, `exam_day`, `question_order=enem_oficial`);
 - tornar mandatória a regra `adaptive_enabled=false` em `prova_oficial` (com `post_error_routing` e `concept_diagnostic` desligados durante a sessão).
 Impacto: reduz ambiguidade na implementação de `T2.13`, garante simulação fiel do caderno e evita mistura de comportamentos adaptativos na prova oficial.
+
+## D-025 - Execução de prova oficial via sessão fechada no app (`T2.13`)
+Data: 2026-03-06
+Status: aceito
+Contexto: com contrato de modos definido em `T2.12`, era necessário fechar a implementação operacional da prova oficial no cliente offline.
+Decisão:
+- implementar seleção de prova oficial por `ano/dia` diretamente no card de simulados;
+- iniciar caderno em ordem fixa (`number ASC`, `variation ASC`) sem embaralhamento;
+- registrar respostas da prova com `answer_source='prova_oficial'` e bloquear respostas no reels enquanto sessão oficial estiver ativa.
+Impacto: o app passa a suportar simulação fiel de caderno ENEM no modo oficial sem intervenções adaptativas durante a resolução.
