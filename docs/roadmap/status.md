@@ -1,11 +1,12 @@
 CURRENT_MILESTONE: M3 - Aulas por módulo operacional
-NEXT_TASK: T2.2 - Atualizar `plano/tracker.md` com campo de erro por habilidade (`Hxx`)
+NEXT_TASK: T2.3 - Documentar rotina de atualização ao adicionar novos cadernos
 
 BLOCKERS:
 - T3.1 depende de validação manual do lote piloto com rubrica.
 - T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-03-06 - `T2.2` concluída com atualização do `plano/tracker.md` (campo explícito de erro por habilidade `Hxx`, tipo de erro, ação de revisão e exemplo de uso local).
 - 2026-03-06 - `T2.1` concluída no app: slots da previsão do planner agora abrem treino/módulo diretamente na UI (sem etapa manual extra).
 - 2026-03-06 - `T5.1` concluída: `dist.sh` validado com APK Android opcional por versão, checksum (`.sha256`) e registro no `dist_summary.txt`.
 - 2026-03-06 - `T3.2` concluída com ajustes em template/prompt (limpeza de placeholders/instruções internas, estrutura de questões completa e prompt operacional de recuperação rápida).

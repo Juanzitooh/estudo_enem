@@ -120,3 +120,12 @@ Decisão:
 - tornar cada slot diário do planner acionável com botões `Treinar agora` e `Abrir módulo`;
 - reutilizar mapeamentos existentes (`StudyBlockSuggestion`/`ModuleSuggestion`) com fallback por skill quando não houver módulo exato.
 Impacto: o fluxo planner -> execução ficou direto, reduzindo atrito operacional e atendendo o aceite de `T2.1`.
+
+## D-014 - Tracker operacional por habilidade com erro explícito (`Hxx`)
+Data: 2026-03-06
+Status: aceito
+Contexto: o tracker anterior registrava progresso geral, mas não estruturava evidência de erro por habilidade para fechar o ciclo diagnóstico -> ação -> reavaliação.
+Decisão:
+- atualizar `plano/tracker.md` com coluna dedicada de erro por habilidade (`Hxx`);
+- incluir campos complementares (`tipo de erro`, `evidência curta`, `ação de revisão`, `reavaliação`) e exemplo preenchido local.
+Impacto: melhora rastreabilidade pedagógica e facilita priorização do planner por habilidade com dados operacionais consistentes.

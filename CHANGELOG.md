@@ -48,6 +48,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T3.2` concluída com hardening de template/prompt: limpeza pré-publicação, remoção de placeholders/instruções internas e novo prompt dedicado para recuperação rápida.
 - `T5.1` concluída com validação do `dist.sh` para APK opcional por versão com checksum e registro no `dist_summary.txt`.
 - `T2.1` concluída no app com integração direta do planner: cada slot diário abre treino ou revisão de módulo sem etapa manual extra.
+- `T2.2` concluída com evolução do `plano/tracker.md` para erro explícito por habilidade (`Hxx`) e ciclo de revisão/reavaliação.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.
