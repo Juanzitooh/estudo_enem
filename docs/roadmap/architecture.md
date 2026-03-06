@@ -17,6 +17,8 @@
 - Compatibilidade app x conteúdo: `plano/politica_compatibilidade_atualizacao_offline.md`.
 - Estado editorial padrão: `rascunho -> revisado -> aprovado -> publicado`.
 - Referência técnica do canvas de grafo: `docs/roadmap/references/aprendizado_grafo.md`.
+- Operação editorial M3 (taxonomia + workflow + vídeo): `docs/roadmap/references/m3_operacao_editorial.md`.
+- Publicação/release (versionamento por módulo + assinatura Android): `docs/roadmap/references/publicacao_release.md`.
 
 ## Contrato de aula para aluno (derivado de Markdown)
 - Fonte editorial: `aulas/*/modulos/*.md` (completo para IA/revisão humana).

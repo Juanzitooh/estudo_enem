@@ -1,10 +1,13 @@
 CURRENT_MILESTONE: M3 - Aulas por módulo operacional
-NEXT_TASK: T3.11 - Consolidar decisão final dos templates após catalogação completa
+NEXT_TASK: T3.5 - Pilotar o template de recuperação rápida em 1 módulo real
 
 BLOCKERS:
-- T3.11 depende da catalogação completa dos 6 volumes para decisão editorial final.
+- T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-03-06 - `T3.3`, `T3.4` e `T3.6` concluídas com especificação operacional unificada de taxonomia, workflow editorial e integração de vídeo por minutagem.
+- 2026-03-06 - `T4.3` concluída com estratégia formal de versionamento incremental por módulo no manifesto.
+- 2026-03-06 - `T5.2` concluída com checklist de assinatura Android (`debug/local` vs `release`) e validação mínima.
 - 2026-03-05 - `T3.7` concluída com especificação formal do contrato `lesson_payload_aluno` (`campos exibíveis`, `campos internos`, transformação `md -> payload`).
 - 2026-03-05 - `T3.10` concluída com interrelação versionada `aula <-> questão`, marcação de tentativas desatualizadas e histórico por versão exibido na UI.
 - 2026-03-05 - Validação manual confirmou `T3.8` e `T3.9` no app (persistência local + desbloqueio de aprofundamento por tentativa mínima).

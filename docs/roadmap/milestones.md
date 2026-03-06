@@ -30,7 +30,7 @@ Critérios de saída:
 - aprofundamento da aula desbloqueado apenas após tentativa mínima de questões no próprio módulo.
 
 ## M4 - Publicação de conteúdo offline
-Status: `parcialmente_concluido`
+Status: `concluido`
 Critérios de saída:
 - contratos de metadados e compatibilidade ativos no manifest;
 - snapshots versionados em `conteudo/published/<versao>`;

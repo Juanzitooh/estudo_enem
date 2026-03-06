@@ -43,13 +43,13 @@ Aceite: usuário seleciona `ano/dia`, resolve caderno em sequência fechada e co
 Aceite: notas por módulo registradas e gaps recorrentes consolidados.
 - [ ] T3.2 Ajustar prompt/template com base no retrabalho identificado.
 Aceite: checklist de gaps reduzido e versão do prompt incrementada.
-- [ ] T3.3 Definir integração de aprofundamento por vídeo (minutagem).
+- [x] T3.3 Definir integração de aprofundamento por vídeo (minutagem).
 Aceite: proposta técnica aprovada com campos e fluxo no app.
-- [ ] T3.4 Definir workflow de revisão humana em lote (`rascunho -> revisado -> publicado`).
+- [x] T3.4 Definir workflow de revisão humana em lote (`rascunho -> revisado -> publicado`).
 Aceite: fluxo e critérios de aprovação documentados.
 - [ ] T3.5 Pilotar o template de recuperação rápida em 1 módulo real.
 Aceite: 1 aula rápida preenchida, revisada e testada no fluxo pós-erro.
-- [ ] T3.6 Consolidar a taxonomia editorial dos 3 tipos de aula.
+- [x] T3.6 Consolidar a taxonomia editorial dos 3 tipos de aula.
 Aceite: documentação única com papéis e gatilhos de uso para `habilidade`, `módulo completo` e `recuperação rápida`.
 - [x] T3.7 Definir contrato `lesson_payload_aluno` derivado de `aula_modulo_enem` aprovado.
 Aceite: especificação documentada com campos pedagógicos exibíveis, campos editoriais internos e regra de transformação `md -> payload`.
@@ -67,13 +67,13 @@ Aceite: decisão final registrada com base na catalogação dos 6 volumes e chec
 Aceite: diretórios existentes e documentados.
 - [x] T4.2 Publicar pipeline `manifest + assets + checksum` com contrato editorial.
 Aceite: script gera artefatos consistentes e manifests por domínio.
-- [ ] T4.3 Versionar conteúdo por módulo para histórico incremental.
+- [x] T4.3 Versionar conteúdo por módulo para histórico incremental.
 Aceite: estratégia de versionamento por módulo definida e aplicada.
 
 ## M5 - Distribuição do app
 - [ ] T5.1 Evoluir `dist.sh` para APK opcional por versão com checksum.
 Aceite: artefato e hash gerados com registro no resumo de release.
-- [ ] T5.2 Definir fluxo de assinatura Android (`debug/local` x `release`).
+- [x] T5.2 Definir fluxo de assinatura Android (`debug/local` x `release`).
 Aceite: checklist mínimo de assinatura e validação publicado.
 
 ## M6 - Pós-catálogo (bloqueado)

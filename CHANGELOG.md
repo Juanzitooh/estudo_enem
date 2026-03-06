@@ -41,6 +41,9 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - Fluxo de aula validado manualmente (`T3.8`/`T3.9`) e UI com aviso de tentativas desatualizadas por mudança de versão da aula.
 - `T3.10` concluída no app com histórico de tentativas por versão da aula e identificação de tentativas desatualizadas.
 - `T3.7` concluída com especificação formal do contrato `lesson_payload_aluno` e regra de transformação `md -> payload`.
+- `T3.3`, `T3.4` e `T3.6` concluídas com especificação operacional unificada para taxonomia editorial, workflow de revisão em lote e aprofundamento por vídeo com minutagem.
+- `T4.3` concluída com estratégia de versionamento incremental por módulo no manifesto de conteúdo.
+- `T5.2` concluída com fluxo de assinatura Android (`debug/local` vs `release`) e checklist mínimo de validação.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

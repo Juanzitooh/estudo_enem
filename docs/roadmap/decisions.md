@@ -82,3 +82,13 @@ Decisão:
 - definir explicitamente campos pedagógicos exibíveis e campos editoriais internos;
 - estabelecer regra de transformação `md -> payload` com validação mínima e versionamento por publicação.
 Impacto: reduz ambiguidade entre conteúdo de autoria e experiência final do app, permitindo escalar geração/revisão com compatibilidade estável no cliente.
+
+## D-010 - Aceleração sem catalogação (frente de contratos operacionais)
+Data: 2026-03-06
+Status: aceito
+Contexto: havia tarefas bloqueadas por catalogação total, mas várias definições operacionais podiam ser concluídas sem esse pré-requisito.
+Decisão:
+- consolidar taxonomia dos 3 tipos de aula, workflow editorial e contrato de vídeo por minutagem em `docs/roadmap/references/m3_operacao_editorial.md`;
+- formalizar versionamento incremental por módulo e fluxo de assinatura Android em `docs/roadmap/references/publicacao_release.md`;
+- reposicionar `NEXT_TASK` para item executável não bloqueado (`T3.5`), mantendo `T3.11` explicitamente bloqueada.
+Impacto: reduz fila de trabalho dependente de documentação e libera avanço prático nas próximas tarefas de implementação/piloto.
