@@ -55,6 +55,26 @@ Arquivos dessa camada:
 - `intercorrelacao/modulo_questao_matches.csv`: vínculos módulo-questão com tipo, score e confiança.
 - `intercorrelacao/resumo_modulo_questao_matches.md`: resumo da execução e distribuição de vínculos.
 
+## Q-matrix piloto por conceitos (Ciências Humanas)
+
+Gerar piloto de Q-matrix para feed híbrido (`habilidade + conceito`):
+
+```bash
+python3 scripts/gerar_qmatrix_piloto_humanas.py \
+  --mapped-csv questoes/mapeamento_habilidades/questoes_mapeadas.csv \
+  --out-dir questoes/mapeamento_habilidades/conceitos_piloto_humanas \
+  --min-questions 80 \
+  --target-questions 120
+```
+
+Artefatos gerados:
+- `conceitos_piloto_humanas/concepts.csv`
+- `conceitos_piloto_humanas/question_concepts.csv`
+- `conceitos_piloto_humanas/concept_dependencies.csv`
+- `conceitos_piloto_humanas/concept_priority_weights.csv`
+- `conceitos_piloto_humanas/concepts_bundle_piloto_humanas.json`
+- `conceitos_piloto_humanas/resumo_qmatrix_piloto_humanas.md`
+
 ## Consultar e filtrar o banco
 
 Script de consulta:

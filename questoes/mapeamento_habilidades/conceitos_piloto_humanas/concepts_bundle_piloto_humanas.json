@@ -1,0 +1,4113 @@
+{
+  "version": "concepts.piloto.humanas.2026.03.06.1",
+  "area": "Ciências Humanas",
+  "generated_from": "questoes/mapeamento_habilidades/questoes_mapeadas.csv",
+  "question_count": 120,
+  "concept_count": 79,
+  "concepts": [
+    {
+      "id": "ch_h10_ciencias_humanas_geral",
+      "label": "H10 em Ciências Humanas (geral)",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h10_sociologia",
+      "label": "H10 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h11_ciencias_humanas_geral",
+      "label": "H11 em Ciências Humanas (geral)",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h11_filosofia",
+      "label": "H11 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h11_geografia",
+      "label": "H11 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h11_historia",
+      "label": "H11 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h12_ciencias_humanas_geral",
+      "label": "H12 em Ciências Humanas (geral)",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h12_filosofia",
+      "label": "H12 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h12_historia",
+      "label": "H12 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h12_sociologia",
+      "label": "H12 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h13_historia",
+      "label": "H13 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h13_sociologia",
+      "label": "H13 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h14_filosofia",
+      "label": "H14 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h14_geografia",
+      "label": "H14 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h14_historia",
+      "label": "H14 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h15_ciencias_humanas_geral",
+      "label": "H15 em Ciências Humanas (geral)",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h15_filosofia",
+      "label": "H15 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h15_geografia",
+      "label": "H15 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h15_historia",
+      "label": "H15 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h15_sociologia",
+      "label": "H15 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h16_sociologia",
+      "label": "H16 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h18_filosofia",
+      "label": "H18 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h18_geografia",
+      "label": "H18 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h19_geografia",
+      "label": "H19 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h19_sociologia",
+      "label": "H19 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h1_historia",
+      "label": "H1 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h1_sociologia",
+      "label": "H1 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h20_ciencias_humanas_geral",
+      "label": "H20 em Ciências Humanas (geral)",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h20_filosofia",
+      "label": "H20 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h20_historia",
+      "label": "H20 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h20_sociologia",
+      "label": "H20 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h21_geografia",
+      "label": "H21 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h21_historia",
+      "label": "H21 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h21_sociologia",
+      "label": "H21 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h22_sociologia",
+      "label": "H22 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h23_filosofia",
+      "label": "H23 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h23_historia",
+      "label": "H23 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h23_sociologia",
+      "label": "H23 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h24_filosofia",
+      "label": "H24 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h24_sociologia",
+      "label": "H24 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h25_sociologia",
+      "label": "H25 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h26_sociologia",
+      "label": "H26 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h27_ciencias_humanas_geral",
+      "label": "H27 em Ciências Humanas (geral)",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h27_filosofia",
+      "label": "H27 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h27_geografia",
+      "label": "H27 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h29_geografia",
+      "label": "H29 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h29_sociologia",
+      "label": "H29 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h2_sociologia",
+      "label": "H2 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h30_historia",
+      "label": "H30 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h4_historia",
+      "label": "H4 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h5_historia",
+      "label": "H5 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h5_sociologia",
+      "label": "H5 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h6_filosofia",
+      "label": "H6 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h6_geografia",
+      "label": "H6 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h7_ciencias_humanas_geral",
+      "label": "H7 em Ciências Humanas (geral)",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h8_ciencias_humanas_geral",
+      "label": "H8 em Ciências Humanas (geral)",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h8_filosofia",
+      "label": "H8 em Filosofia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h8_geografia",
+      "label": "H8 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h8_sociologia",
+      "label": "H8 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h9_geografia",
+      "label": "H9 em Geografia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h9_historia",
+      "label": "H9 em História",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_h9_sociologia",
+      "label": "H9 em Sociologia",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "habilidade"
+    },
+    {
+      "id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "label": "Ciências Humanas (geral): Tema geral",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_filosofia_etica_e_politica",
+      "label": "Filosofia: Ética e Política",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_filosofia_tema_geral",
+      "label": "Filosofia: Tema geral",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "label": "Filosofia: Teoria do Conhecimento",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_geografia_geografia_fisica",
+      "label": "Geografia: Geografia Física",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_geografia_geografia_humana",
+      "label": "Geografia: Geografia Humana",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_geografia_geopolitica",
+      "label": "Geografia: Geopolítica",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_geografia_tema_geral",
+      "label": "Geografia: Tema geral",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_historia_historia_cultural",
+      "label": "História: História Cultural",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_historia_historia_do_brasil",
+      "label": "História: História do Brasil",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_historia_historia_geral",
+      "label": "História: História Geral",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_historia_tema_geral",
+      "label": "História: Tema geral",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "label": "Sociologia: Cidadania e Trabalho",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_sociologia_cultura_e_identidade",
+      "label": "Sociologia: Cultura e Identidade",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_sociologia_estrutura_social",
+      "label": "Sociologia: Estrutura Social",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "ch_tema_sociologia_tema_geral",
+      "label": "Sociologia: Tema geral",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario",
+      "type": "tema"
+    },
+    {
+      "id": "geral_leitura_comando",
+      "label": "Leitura de comando",
+      "area": "Ciências Humanas",
+      "difficulty": "basico",
+      "type": "fundacional"
+    }
+  ],
+  "question_concepts": [
+    {
+      "question_id": "2023_1_61_1",
+      "concept_id": "ch_h11_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_61_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_61_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_62_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_62_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_62_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_63_1",
+      "concept_id": "ch_h20_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_63_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_63_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_64_1",
+      "concept_id": "ch_h21_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_64_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_64_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_65_1",
+      "concept_id": "ch_h15_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_65_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_65_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_66_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_66_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_66_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_67_1",
+      "concept_id": "ch_h29_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_67_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_67_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_68_1",
+      "concept_id": "ch_h27_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_68_1",
+      "concept_id": "ch_tema_geografia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_68_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_69_1",
+      "concept_id": "ch_h12_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_69_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_69_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_70_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_70_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_70_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_71_1",
+      "concept_id": "ch_h1_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_71_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_71_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_72_1",
+      "concept_id": "ch_h20_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_72_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_72_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_73_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_73_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_73_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_74_1",
+      "concept_id": "ch_h14_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_74_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_74_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_75_1",
+      "concept_id": "ch_h15_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_75_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_75_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_76_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_76_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_76_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_77_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_77_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_77_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_78_1",
+      "concept_id": "ch_h15_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_78_1",
+      "concept_id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_78_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_79_1",
+      "concept_id": "ch_h20_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_79_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_79_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_80_1",
+      "concept_id": "ch_h19_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_80_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_80_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_81_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_81_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_81_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_82_1",
+      "concept_id": "ch_h20_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_82_1",
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_82_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_83_1",
+      "concept_id": "ch_h26_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_83_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_83_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_84_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_84_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_84_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_85_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_85_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_85_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_86_1",
+      "concept_id": "ch_h14_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_86_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_86_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_87_1",
+      "concept_id": "ch_h15_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_87_1",
+      "concept_id": "ch_tema_geografia_geografia_humana",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_87_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_88_1",
+      "concept_id": "ch_h23_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_88_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_88_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_89_1",
+      "concept_id": "ch_h13_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_89_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_89_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2023_1_90_1",
+      "concept_id": "ch_h15_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2023_1_90_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2023_1_90_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_46_1",
+      "concept_id": "ch_h9_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_46_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_46_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_47_1",
+      "concept_id": "ch_h24_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_47_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_47_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_48_1",
+      "concept_id": "ch_h15_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_48_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_48_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_49_1",
+      "concept_id": "ch_h11_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_49_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_49_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_50_1",
+      "concept_id": "ch_h14_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_50_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_50_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_51_1",
+      "concept_id": "ch_h5_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_51_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_51_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_52_1",
+      "concept_id": "ch_h5_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_52_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_52_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_53_1",
+      "concept_id": "ch_h9_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_53_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_53_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_54_1",
+      "concept_id": "ch_h25_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_54_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_54_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_55_1",
+      "concept_id": "ch_h27_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_55_1",
+      "concept_id": "ch_tema_filosofia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_55_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_56_1",
+      "concept_id": "ch_h2_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_56_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_56_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_57_1",
+      "concept_id": "ch_h10_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_57_1",
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_57_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_58_1",
+      "concept_id": "ch_h27_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_58_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_58_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_59_1",
+      "concept_id": "ch_h12_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_59_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_59_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_60_1",
+      "concept_id": "ch_h14_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_60_1",
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_60_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_61_1",
+      "concept_id": "ch_h18_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_61_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_61_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_62_1",
+      "concept_id": "ch_h14_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_62_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_62_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_63_1",
+      "concept_id": "ch_h5_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_63_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_63_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_64_1",
+      "concept_id": "ch_h14_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_64_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_64_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_65_1",
+      "concept_id": "ch_h5_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_65_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_65_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_66_1",
+      "concept_id": "ch_h8_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_66_1",
+      "concept_id": "ch_tema_geografia_geografia_humana",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_66_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_67_1",
+      "concept_id": "ch_h9_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_67_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_67_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_68_1",
+      "concept_id": "ch_h27_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_68_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_68_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_69_1",
+      "concept_id": "ch_h21_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_69_1",
+      "concept_id": "ch_tema_historia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_69_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_70_1",
+      "concept_id": "ch_h11_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_70_1",
+      "concept_id": "ch_tema_historia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_70_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_71_1",
+      "concept_id": "ch_h15_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_71_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_71_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_72_1",
+      "concept_id": "ch_h6_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_72_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_72_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_73_1",
+      "concept_id": "ch_h1_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_73_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_73_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_74_1",
+      "concept_id": "ch_h5_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_74_1",
+      "concept_id": "ch_tema_historia_historia_cultural",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_74_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_75_1",
+      "concept_id": "ch_h11_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_75_1",
+      "concept_id": "ch_tema_filosofia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_75_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_76_1",
+      "concept_id": "ch_h26_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_76_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_76_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_77_1",
+      "concept_id": "ch_h23_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_77_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_77_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_78_1",
+      "concept_id": "ch_h23_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_78_1",
+      "concept_id": "ch_tema_filosofia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_78_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_79_1",
+      "concept_id": "ch_h11_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_79_1",
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_79_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_80_1",
+      "concept_id": "ch_h14_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_80_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_80_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_81_1",
+      "concept_id": "ch_h8_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_81_1",
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_81_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_82_1",
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_82_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_82_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_83_1",
+      "concept_id": "ch_h6_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_83_1",
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_83_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_84_1",
+      "concept_id": "ch_h5_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_84_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_84_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_85_1",
+      "concept_id": "ch_h20_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_85_1",
+      "concept_id": "ch_tema_sociologia_estrutura_social",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_85_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_86_1",
+      "concept_id": "ch_h8_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_86_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_86_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_87_1",
+      "concept_id": "ch_h10_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_87_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_87_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_88_1",
+      "concept_id": "ch_h29_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_88_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_88_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_89_1",
+      "concept_id": "ch_h7_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_89_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_89_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2024_1_90_1",
+      "concept_id": "ch_h12_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2024_1_90_1",
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2024_1_90_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_46_1",
+      "concept_id": "ch_h9_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_46_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_46_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_47_1",
+      "concept_id": "ch_h18_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_47_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_47_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_48_1",
+      "concept_id": "ch_h14_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_48_1",
+      "concept_id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_48_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_49_1",
+      "concept_id": "ch_h20_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_49_1",
+      "concept_id": "ch_tema_historia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_49_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_50_1",
+      "concept_id": "ch_h12_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_50_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_50_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_51_1",
+      "concept_id": "ch_h11_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_51_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_51_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_52_1",
+      "concept_id": "ch_h15_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_52_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_52_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_53_1",
+      "concept_id": "ch_h1_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_53_1",
+      "concept_id": "ch_tema_historia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_53_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_54_1",
+      "concept_id": "ch_h19_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_54_1",
+      "concept_id": "ch_tema_geografia_geografia_humana",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_54_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_55_1",
+      "concept_id": "ch_h10_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_55_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_55_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_56_1",
+      "concept_id": "ch_h15_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_56_1",
+      "concept_id": "ch_tema_historia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_56_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_57_1",
+      "concept_id": "ch_h20_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_57_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_57_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_58_1",
+      "concept_id": "ch_h24_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_58_1",
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_58_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_59_1",
+      "concept_id": "ch_h29_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_59_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_59_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_60_1",
+      "concept_id": "ch_h23_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_60_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_60_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_61_1",
+      "concept_id": "ch_h23_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_61_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_61_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_62_1",
+      "concept_id": "ch_h20_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_62_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_62_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_63_1",
+      "concept_id": "ch_h9_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_63_1",
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_63_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_64_1",
+      "concept_id": "ch_h21_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_64_1",
+      "concept_id": "ch_tema_sociologia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_64_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_65_1",
+      "concept_id": "ch_h27_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_65_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_65_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_66_1",
+      "concept_id": "ch_h13_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_66_1",
+      "concept_id": "ch_tema_sociologia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_66_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_67_1",
+      "concept_id": "ch_h20_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_67_1",
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_67_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_68_1",
+      "concept_id": "ch_h14_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_68_1",
+      "concept_id": "ch_tema_historia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_68_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_69_1",
+      "concept_id": "ch_h11_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_69_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_69_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_70_1",
+      "concept_id": "ch_h8_ciencias_humanas_geral",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_70_1",
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_70_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_71_1",
+      "concept_id": "ch_h9_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_71_1",
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_71_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_72_1",
+      "concept_id": "ch_h30_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_72_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_72_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_73_1",
+      "concept_id": "ch_h9_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_73_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_73_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_74_1",
+      "concept_id": "ch_h12_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_74_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_74_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_75_1",
+      "concept_id": "ch_h5_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_75_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_75_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_76_1",
+      "concept_id": "ch_h20_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_76_1",
+      "concept_id": "ch_tema_historia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_76_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_77_1",
+      "concept_id": "ch_h4_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_77_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_77_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_78_1",
+      "concept_id": "ch_h11_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_78_1",
+      "concept_id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_78_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_79_1",
+      "concept_id": "ch_h8_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_79_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_79_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_80_1",
+      "concept_id": "ch_h8_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_80_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_80_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_81_1",
+      "concept_id": "ch_h22_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_81_1",
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_81_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_82_1",
+      "concept_id": "ch_h23_filosofia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_82_1",
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_82_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_83_1",
+      "concept_id": "ch_h21_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_83_1",
+      "concept_id": "ch_tema_historia_historia_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_83_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_84_1",
+      "concept_id": "ch_h18_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_84_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_84_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_85_1",
+      "concept_id": "ch_h14_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_85_1",
+      "concept_id": "ch_tema_historia_tema_geral",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_85_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_86_1",
+      "concept_id": "ch_h27_geografia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_86_1",
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_86_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_87_1",
+      "concept_id": "ch_h12_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_87_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_87_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_88_1",
+      "concept_id": "ch_h5_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_88_1",
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_88_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_89_1",
+      "concept_id": "ch_h16_sociologia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_89_1",
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_89_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    },
+    {
+      "question_id": "2025_1_90_1",
+      "concept_id": "ch_h14_historia",
+      "weight": 0.5,
+      "source": "habilidade_estimada"
+    },
+    {
+      "question_id": "2025_1_90_1",
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "weight": 0.3,
+      "source": "tema_estimado"
+    },
+    {
+      "question_id": "2025_1_90_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.2,
+      "source": "fundacional"
+    }
+  ],
+  "concept_dependencies": [
+    {
+      "concept_id": "ch_h10_ciencias_humanas_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h10_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h11_ciencias_humanas_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h11_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h11_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h11_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h12_ciencias_humanas_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h12_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h12_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h12_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h13_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h13_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h14_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h14_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h14_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h15_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h15_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h15_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h15_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h16_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h18_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h18_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h19_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h19_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h1_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h1_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h20_ciencias_humanas_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h20_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h20_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h20_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h21_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h21_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h21_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h22_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h23_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h23_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h23_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h24_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h24_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h25_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h26_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h27_ciencias_humanas_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h27_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h27_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h29_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h29_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h2_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h30_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h4_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h5_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h5_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h6_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h6_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h7_ciencias_humanas_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h8_ciencias_humanas_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h8_filosofia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h8_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h8_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h9_geografia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h9_historia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_h9_sociologia",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6,
+      "reason": "leitura_comando_suporte"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "ch_h10_ciencias_humanas_geral",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "ch_h11_ciencias_humanas_geral",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "ch_h12_ciencias_humanas_geral",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "ch_h15_ciencias_humanas_geral",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "ch_h20_ciencias_humanas_geral",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "ch_h27_ciencias_humanas_geral",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "ch_h7_ciencias_humanas_geral",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "ch_h8_ciencias_humanas_geral",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h12_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h14_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h15_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h18_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h20_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h23_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h24_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h27_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h6_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "ch_h8_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_tema_geral",
+      "depends_on": "ch_h11_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_tema_geral",
+      "depends_on": "ch_h23_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_tema_geral",
+      "depends_on": "ch_h27_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_tema_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "depends_on": "ch_h11_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "depends_on": "ch_h14_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "depends_on": "ch_h15_filosofia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "depends_on": "ch_h15_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "depends_on": "ch_h18_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "depends_on": "ch_h21_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "depends_on": "ch_h27_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "depends_on": "ch_h29_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "depends_on": "ch_h8_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "depends_on": "ch_h9_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_humana",
+      "depends_on": "ch_h15_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_humana",
+      "depends_on": "ch_h19_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_humana",
+      "depends_on": "ch_h8_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_humana",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "depends_on": "ch_h11_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "depends_on": "ch_h14_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "depends_on": "ch_h6_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "depends_on": "ch_h8_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "depends_on": "ch_h9_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_geografia_tema_geral",
+      "depends_on": "ch_h27_geografia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_geografia_tema_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_cultural",
+      "depends_on": "ch_h5_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_cultural",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h11_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h12_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h14_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h15_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h1_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h20_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h23_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h5_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "ch_h9_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h11_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h12_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h13_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h14_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h15_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h21_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h23_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h30_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "ch_h4_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_historia_tema_geral",
+      "depends_on": "ch_h11_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_tema_geral",
+      "depends_on": "ch_h14_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_tema_geral",
+      "depends_on": "ch_h15_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_tema_geral",
+      "depends_on": "ch_h1_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_tema_geral",
+      "depends_on": "ch_h20_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_tema_geral",
+      "depends_on": "ch_h21_historia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_historia_tema_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "depends_on": "ch_h10_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "depends_on": "ch_h12_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "depends_on": "ch_h16_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "depends_on": "ch_h20_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "depends_on": "ch_h22_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "depends_on": "ch_h24_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "depends_on": "ch_h9_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h15_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h19_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h1_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h20_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h23_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h25_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h26_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h29_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h2_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h5_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h8_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "ch_h9_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_estrutura_social",
+      "depends_on": "ch_h20_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_estrutura_social",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_tema_geral",
+      "depends_on": "ch_h13_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_tema_geral",
+      "depends_on": "ch_h21_sociologia",
+      "strength": 0.4,
+      "reason": "tema_relacionado_habilidade"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_tema_geral",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.5,
+      "reason": "interpretação_de_texto_base"
+    }
+  ],
+  "concept_priority_weights": [
+    {
+      "concept_id": "ch_h10_ciencias_humanas_geral",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h10_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h11_ciencias_humanas_geral",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h11_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h11_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h11_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h12_ciencias_humanas_geral",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h12_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h12_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h12_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h13_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h13_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h14_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h14_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h14_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h15_ciencias_humanas_geral",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h15_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h15_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h15_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h15_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h16_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h18_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h18_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h19_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h19_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h1_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h1_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h20_ciencias_humanas_geral",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h20_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h20_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h20_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h21_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h21_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h21_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h22_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h23_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h23_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h23_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h24_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h24_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h25_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h26_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h27_ciencias_humanas_geral",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h27_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h27_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h29_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h29_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h2_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h30_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h4_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h5_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h5_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h6_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h6_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h7_ciencias_humanas_geral",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h8_ciencias_humanas_geral",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h8_filosofia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h8_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h8_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h9_geografia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h9_historia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_h9_sociologia",
+      "base_weight": 1.1,
+      "reason": "habilidade_enem"
+    },
+    {
+      "concept_id": "ch_tema_ciencias_humanas_geral_tema_geral",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_etica_e_politica",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_tema_geral",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_filosofia_teoria_do_conhecimento",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_fisica",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geografia_humana",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_geografia_geopolitica",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_geografia_tema_geral",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_cultural",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_do_brasil",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_historia_historia_geral",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_historia_tema_geral",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cidadania_e_trabalho",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_cultura_e_identidade",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_estrutura_social",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "ch_tema_sociologia_tema_geral",
+      "base_weight": 1.0,
+      "reason": "tema_disciplinar"
+    },
+    {
+      "concept_id": "geral_leitura_comando",
+      "base_weight": 1.5,
+      "reason": "fundacional_transversal"
+    }
+  ]
+}

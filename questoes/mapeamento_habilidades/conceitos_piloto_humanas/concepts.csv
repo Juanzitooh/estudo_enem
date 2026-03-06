@@ -1,0 +1,80 @@
+id,label,area,difficulty,type
+ch_h10_ciencias_humanas_geral,H10 em Ciências Humanas (geral),Ciências Humanas,basico,habilidade
+ch_h10_sociologia,H10 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h11_ciencias_humanas_geral,H11 em Ciências Humanas (geral),Ciências Humanas,basico,habilidade
+ch_h11_filosofia,H11 em Filosofia,Ciências Humanas,basico,habilidade
+ch_h11_geografia,H11 em Geografia,Ciências Humanas,intermediario,habilidade
+ch_h11_historia,H11 em História,Ciências Humanas,basico,habilidade
+ch_h12_ciencias_humanas_geral,H12 em Ciências Humanas (geral),Ciências Humanas,basico,habilidade
+ch_h12_filosofia,H12 em Filosofia,Ciências Humanas,intermediario,habilidade
+ch_h12_historia,H12 em História,Ciências Humanas,basico,habilidade
+ch_h12_sociologia,H12 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h13_historia,H13 em História,Ciências Humanas,basico,habilidade
+ch_h13_sociologia,H13 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h14_filosofia,H14 em Filosofia,Ciências Humanas,intermediario,habilidade
+ch_h14_geografia,H14 em Geografia,Ciências Humanas,basico,habilidade
+ch_h14_historia,H14 em História,Ciências Humanas,intermediario,habilidade
+ch_h15_ciencias_humanas_geral,H15 em Ciências Humanas (geral),Ciências Humanas,basico,habilidade
+ch_h15_filosofia,H15 em Filosofia,Ciências Humanas,intermediario,habilidade
+ch_h15_geografia,H15 em Geografia,Ciências Humanas,intermediario,habilidade
+ch_h15_historia,H15 em História,Ciências Humanas,basico,habilidade
+ch_h15_sociologia,H15 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h16_sociologia,H16 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h18_filosofia,H18 em Filosofia,Ciências Humanas,basico,habilidade
+ch_h18_geografia,H18 em Geografia,Ciências Humanas,intermediario,habilidade
+ch_h19_geografia,H19 em Geografia,Ciências Humanas,intermediario,habilidade
+ch_h19_sociologia,H19 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h1_historia,H1 em História,Ciências Humanas,basico,habilidade
+ch_h1_sociologia,H1 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h20_ciencias_humanas_geral,H20 em Ciências Humanas (geral),Ciências Humanas,basico,habilidade
+ch_h20_filosofia,H20 em Filosofia,Ciências Humanas,basico,habilidade
+ch_h20_historia,H20 em História,Ciências Humanas,basico,habilidade
+ch_h20_sociologia,H20 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h21_geografia,H21 em Geografia,Ciências Humanas,basico,habilidade
+ch_h21_historia,H21 em História,Ciências Humanas,intermediario,habilidade
+ch_h21_sociologia,H21 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h22_sociologia,H22 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h23_filosofia,H23 em Filosofia,Ciências Humanas,intermediario,habilidade
+ch_h23_historia,H23 em História,Ciências Humanas,basico,habilidade
+ch_h23_sociologia,H23 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h24_filosofia,H24 em Filosofia,Ciências Humanas,basico,habilidade
+ch_h24_sociologia,H24 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h25_sociologia,H25 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h26_sociologia,H26 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h27_ciencias_humanas_geral,H27 em Ciências Humanas (geral),Ciências Humanas,basico,habilidade
+ch_h27_filosofia,H27 em Filosofia,Ciências Humanas,basico,habilidade
+ch_h27_geografia,H27 em Geografia,Ciências Humanas,intermediario,habilidade
+ch_h29_geografia,H29 em Geografia,Ciências Humanas,intermediario,habilidade
+ch_h29_sociologia,H29 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h2_sociologia,H2 em Sociologia,Ciências Humanas,basico,habilidade
+ch_h30_historia,H30 em História,Ciências Humanas,basico,habilidade
+ch_h4_historia,H4 em História,Ciências Humanas,basico,habilidade
+ch_h5_historia,H5 em História,Ciências Humanas,intermediario,habilidade
+ch_h5_sociologia,H5 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h6_filosofia,H6 em Filosofia,Ciências Humanas,basico,habilidade
+ch_h6_geografia,H6 em Geografia,Ciências Humanas,basico,habilidade
+ch_h7_ciencias_humanas_geral,H7 em Ciências Humanas (geral),Ciências Humanas,basico,habilidade
+ch_h8_ciencias_humanas_geral,H8 em Ciências Humanas (geral),Ciências Humanas,basico,habilidade
+ch_h8_filosofia,H8 em Filosofia,Ciências Humanas,basico,habilidade
+ch_h8_geografia,H8 em Geografia,Ciências Humanas,intermediario,habilidade
+ch_h8_sociologia,H8 em Sociologia,Ciências Humanas,intermediario,habilidade
+ch_h9_geografia,H9 em Geografia,Ciências Humanas,basico,habilidade
+ch_h9_historia,H9 em História,Ciências Humanas,intermediario,habilidade
+ch_h9_sociologia,H9 em Sociologia,Ciências Humanas,basico,habilidade
+ch_tema_ciencias_humanas_geral_tema_geral,Ciências Humanas (geral): Tema geral,Ciências Humanas,intermediario,tema
+ch_tema_filosofia_etica_e_politica,Filosofia: Ética e Política,Ciências Humanas,intermediario,tema
+ch_tema_filosofia_tema_geral,Filosofia: Tema geral,Ciências Humanas,intermediario,tema
+ch_tema_filosofia_teoria_do_conhecimento,Filosofia: Teoria do Conhecimento,Ciências Humanas,intermediario,tema
+ch_tema_geografia_geografia_fisica,Geografia: Geografia Física,Ciências Humanas,intermediario,tema
+ch_tema_geografia_geografia_humana,Geografia: Geografia Humana,Ciências Humanas,intermediario,tema
+ch_tema_geografia_geopolitica,Geografia: Geopolítica,Ciências Humanas,intermediario,tema
+ch_tema_geografia_tema_geral,Geografia: Tema geral,Ciências Humanas,intermediario,tema
+ch_tema_historia_historia_cultural,História: História Cultural,Ciências Humanas,intermediario,tema
+ch_tema_historia_historia_do_brasil,História: História do Brasil,Ciências Humanas,intermediario,tema
+ch_tema_historia_historia_geral,História: História Geral,Ciências Humanas,intermediario,tema
+ch_tema_historia_tema_geral,História: Tema geral,Ciências Humanas,intermediario,tema
+ch_tema_sociologia_cidadania_e_trabalho,Sociologia: Cidadania e Trabalho,Ciências Humanas,intermediario,tema
+ch_tema_sociologia_cultura_e_identidade,Sociologia: Cultura e Identidade,Ciências Humanas,intermediario,tema
+ch_tema_sociologia_estrutura_social,Sociologia: Estrutura Social,Ciências Humanas,intermediario,tema
+ch_tema_sociologia_tema_geral,Sociologia: Tema geral,Ciências Humanas,intermediario,tema
+geral_leitura_comando,Leitura de comando,Ciências Humanas,basico,fundacional
