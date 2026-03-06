@@ -2460,6 +2460,82 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     });
   }
 
+  Future<void> _revisarTeoriaModuloSuggestion(ModuleSuggestion item) async {
+    final hasModule = item.materia.trim().isNotEmpty || item.modulo > 0;
+    final message = hasModule
+        ? 'Aba Aulas aberta para revisar: ${item.materia.isEmpty ? '-' : item.materia}'
+            '${item.modulo > 0 ? ' | módulo ${item.modulo}' : ''}'
+            '${item.page.isEmpty ? '' : ' | pág. ${item.page}'}'
+            '${item.title.isEmpty ? '' : ' | ${item.title}'}'
+        : 'Aba Aulas aberta. Sem módulo exato para ${item.matchedSkill}; revisar conteúdo-base da skill.';
+    setState(() {
+      _selectedTabIndex = _tabAulas;
+      _focusedStudySkill = item.matchedSkill.trim();
+      _focusedStudyMateria = item.materia.trim();
+      _focusedStudyModulo = item.modulo;
+      _status = message;
+    });
+  }
+
+  Future<void> _iniciarTreinoPlannerSlot(
+    OfflinePlanSlot slot, {
+    StudyBlockSuggestion? studyBlock,
+    ModuleSuggestion? moduleSuggestion,
+  }) async {
+    if (_busy) {
+      return;
+    }
+    if (studyBlock != null) {
+      await _iniciarBlocoSugestao(studyBlock);
+      return;
+    }
+
+    final estimatedQuestions = (slot.minutes / 3).round().clamp(3, 20);
+    final normalizedArea = _normalizeAreaForQuestionFilter(
+      moduleSuggestion?.area ?? '',
+    );
+
+    setState(() {
+      _selectedTabIndex = _tabQuestoes;
+      _questionSkillSelecionada = slot.skill.trim();
+      if (normalizedArea.isNotEmpty) {
+        _questionAreaSelecionada = normalizedArea;
+      }
+      _questionMateriaSelecionada = '';
+      _questionDisciplineSelecionada = '';
+      _focusedStudySkill = slot.skill.trim();
+      _focusedStudyMateria = moduleSuggestion?.materia.trim() ?? '';
+      _focusedStudyModulo = moduleSuggestion?.modulo ?? 0;
+      _treinoQuantidadeController.text = '$estimatedQuestions';
+      _status = 'Abrindo treino direto do planner para ${slot.skill}...';
+    });
+
+    await _iniciarTreino();
+  }
+
+  Future<void> _abrirModuloPlannerSlot(
+    OfflinePlanSlot slot, {
+    StudyBlockSuggestion? studyBlock,
+    ModuleSuggestion? moduleSuggestion,
+  }) async {
+    if (studyBlock != null) {
+      await _revisarTeoriaSuggestion(studyBlock);
+      return;
+    }
+    if (moduleSuggestion != null) {
+      await _revisarTeoriaModuloSuggestion(moduleSuggestion);
+      return;
+    }
+    setState(() {
+      _selectedTabIndex = _tabAulas;
+      _focusedStudySkill = slot.skill.trim();
+      _focusedStudyMateria = '';
+      _focusedStudyModulo = 0;
+      _status =
+          'Aba Aulas aberta para ${slot.skill}. Sem módulo mapeado; revisar conteúdo-base da skill.';
+    });
+  }
+
   Future<void> _iniciarTreinoModuloSuggestion(ModuleSuggestion item) async {
     if (_busy) {
       return;

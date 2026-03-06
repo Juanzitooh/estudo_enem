@@ -425,13 +425,65 @@ extension _HomePageTabsProfileExt on _HomePageState {
                       Text('${day.dateLabel} | ${day.totalMinutes} min'),
                       const SizedBox(height: 4),
                       ...day.slots.map(
-                        (slot) => Padding(
-                          padding: const EdgeInsets.only(left: 8, bottom: 4),
-                          child: Text(
-                            '- ${slot.skill} (${slot.minutes}m) | ${slot.reason} | '
-                            '${_moduleHintForSkill(slot.skill)}',
+                        (slot) {
+                          final studyBlock =
+                              _findStudyBlockSuggestionForSkill(slot.skill);
+                          final moduleSuggestion =
+                              _findModuleSuggestionForSkill(slot.skill);
+                          return Padding(
+                            padding: const EdgeInsets.only(left: 8, bottom: 8),
+                            child: Container(
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey.shade300),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              padding: const EdgeInsets.all(8),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    '${slot.skill} (${slot.minutes}m) | ${slot.reason}',
+                                  ),
+                                  const SizedBox(height: 2),
+                                  Text(
+                                    _moduleHintForSkill(slot.skill),
+                                    style: TextStyle(color: palette.muted),
+                                  ),
+                                  const SizedBox(height: 6),
+                                  Wrap(
+                                    spacing: 8,
+                                    runSpacing: 8,
+                                    children: [
+                                      OutlinedButton(
+                                        onPressed: _busy
+                                            ? null
+                                            : () => _iniciarTreinoPlannerSlot(
+                                                  slot,
+                                                  studyBlock: studyBlock,
+                                                  moduleSuggestion:
+                                                      moduleSuggestion,
+                                                ),
+                                        child: const Text('Treinar agora'),
+                                      ),
+                                      OutlinedButton(
+                                        onPressed: _busy
+                                            ? null
+                                            : () => _abrirModuloPlannerSlot(
+                                                  slot,
+                                                  studyBlock: studyBlock,
+                                                  moduleSuggestion:
+                                                      moduleSuggestion,
+                                                ),
+                                        child: const Text('Abrir módulo'),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
                           ),
-                        ),
+                        },
                       ),
                     ],
                   ),
