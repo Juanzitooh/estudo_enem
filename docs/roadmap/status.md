@@ -1,11 +1,12 @@
 CURRENT_MILESTONE: M3 - Aulas por módulo operacional
-NEXT_TASK: T2.7 - Implementar diagnóstico pós-erro curto por conceito (3 perguntas objetivas)
+NEXT_TASK: T2.8 - Rodar avaliação comparativa do feed atual vs feed híbrido
 
 BLOCKERS:
 - T3.1 depende de validação manual do lote piloto com rubrica.
 - T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-03-06 - `T2.7` concluída no app com diagnóstico pós-erro por conceito (3 questões), atualização local de `concept_mastery` e uso desse domínio no ranking das próximas recomendações.
 - 2026-03-06 - `T2.6` concluída no app com seleção híbrida do reels (`conceito + habilidade`), ingestão offline de tabelas conceituais no bundle e fallback por habilidade quando não houver mapeamento.
 - 2026-03-06 - `T2.5` concluída com Q-matrix piloto em Ciências Humanas (`120` questões, `79` conceitos) e cobertura auditável em artefatos CSV/JSON/MD.
 - 2026-03-06 - `T2.4` concluída com contrato mínimo da camada de conceitos em `architecture.md` + exemplo de bundle offline.

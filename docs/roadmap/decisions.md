@@ -166,3 +166,13 @@ Decisão:
 - complementar a sessão com slots adaptativos por habilidade para manter continuidade da estratégia atual;
 - quando não houver mapeamento conceitual disponível, manter fallback automático para seleção por habilidade e fallback geral de questões.
 Impacto: permite rollout incremental do grafo no cliente offline com compatibilidade retroativa de conteúdo.
+
+## D-019 - Diagnóstico curto pós-erro com atualização local de `concept_mastery`
+Data: 2026-03-06
+Status: aceito
+Contexto: após habilitar o feed híbrido, faltava um mecanismo direto de intervenção pós-erro para refinar domínio conceitual local e alterar a recomendação seguinte sem depender apenas do histórico agregado de acertos.
+Decisão:
+- ao errar no reels, disparar diagnóstico rápido de até 3 questões do conceito principal associado à questão;
+- registrar tentativas desse microdiagnóstico no `progress` e consolidar resultado em `concept_mastery` por perfil;
+- considerar `concept_mastery` no cálculo de prioridade conceitual do feed híbrido (com peso maior que o observado bruto recente).
+Impacto: o app passa a ter loop curto de correção (`erro -> microdiagnóstico -> ajuste de domínio -> novo ranking`) totalmente offline.
