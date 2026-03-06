@@ -129,3 +129,12 @@ Decisão:
 - atualizar `plano/tracker.md` com coluna dedicada de erro por habilidade (`Hxx`);
 - incluir campos complementares (`tipo de erro`, `evidência curta`, `ação de revisão`, `reavaliação`) e exemplo preenchido local.
 Impacto: melhora rastreabilidade pedagógica e facilita priorização do planner por habilidade com dados operacionais consistentes.
+
+## D-015 - Rotina padrão para novos cadernos
+Data: 2026-03-06
+Status: aceito
+Contexto: a atualização de novos cadernos precisava de um procedimento único para evitar variação operacional entre extração, validação e publicação.
+Decisão:
+- consolidar rotina em `plano/rotina_atualizacao_cadernos.md`;
+- padronizar sequência: ingestão de PDF -> extração -> auditoria OCR -> mapeamento -> geração de bundle -> checklist.
+Impacto: atualização de novos anos fica reproduzível, auditável e mais segura para publicação incremental.

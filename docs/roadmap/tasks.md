@@ -15,7 +15,7 @@ Aceite: fluxo documentado com entrada, validação e publicação.
 Aceite: ação na UI abre treino/módulo correspondente sem etapa manual extra.
 - [x] T2.2 Atualizar `plano/tracker.md` com campo de erro por habilidade (`Hxx`).
 Aceite: modelo atualizado e validado em uso local.
-- [ ] T2.3 Documentar rotina de atualização ao adicionar novos cadernos.
+- [x] T2.3 Documentar rotina de atualização ao adicionar novos cadernos.
 Aceite: procedimento reproduzível com checklist.
 - [ ] T2.4 Definir contrato mínimo da camada de conceitos (`concepts`, `question_concepts`, `concept_dependencies`, `concept_mastery`).
 Aceite: contrato documentado em `docs/roadmap/architecture.md` com exemplo de bundle offline.
