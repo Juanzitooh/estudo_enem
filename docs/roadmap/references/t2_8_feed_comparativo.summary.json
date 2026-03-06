@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-03-06T16:46:59.481654+00:00",
+  "metadata": {
+    "release_zip": "app_flutter/releases/local.20260305173642/assets_local.20260305173642.zip",
+    "concept_bundle": "questoes/mapeamento_habilidades/conceitos_piloto_humanas/concepts_bundle_piloto_humanas.json",
+    "bundle_file": "content_bundle.json",
+    "users": 320,
+    "session_questions": 30,
+    "probe_questions": 6,
+    "cooldown_steps": 10,
+    "seed": 20260306
+  },
+  "dataset": {
+    "questions_evaluated": 120,
+    "skills": 27,
+    "concepts": 79
+  },
+  "policies": {
+    "skill_only": {
+      "mean_accuracy": 0.48604166666666665,
+      "mean_seconds": 111.49496095030811,
+      "mean_retention": 0.4791666666666667,
+      "stdev_accuracy": 0.1026620169528855,
+      "stdev_seconds": 2.8385262203839456,
+      "stdev_retention": 0.20719385350268701
+    },
+    "hybrid": {
+      "mean_accuracy": 0.48322916666666665,
+      "mean_seconds": 111.88316341695474,
+      "mean_retention": 0.4713541666666667,
+      "stdev_accuracy": 0.09398483012315127,
+      "stdev_seconds": 3.0016246616175013,
+      "stdev_retention": 0.20688827464431447
+    }
+  },
+  "decision": {
+    "decision": "manter_piloto",
+    "rationale": "ganho insuficiente para rollout amplo; manter coleta adicional e recalibrar pesos/diagnóstico.",
+    "delta_accuracy_pp": -0.281,
+    "delta_retention_pp": -0.781,
+    "delta_seconds": 0.388,
+    "thresholds": {
+      "retention_pp_min": 2.0,
+      "accuracy_pp_min": -1.0,
+      "seconds_max": 8.0
+    }
+  }
+}
