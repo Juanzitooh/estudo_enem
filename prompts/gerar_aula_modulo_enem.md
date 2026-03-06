@@ -1,4 +1,4 @@
-# Prompt padrao - Geracao de aula por modulo (ENEM)
+# Prompt padrao v2 - Geracao de aula por modulo (ENEM)
 
 Use este prompt em IA externa para gerar uma aula completa por modulo,
 seguindo o contrato editorial do projeto.
@@ -45,11 +45,17 @@ Regras obrigatorias:
    - ia_updated_at
    - manual_reviewed_at
    - manual_reviewed_by
+13) Nao deixar placeholders (`{...}`), reticencias (`...`) ou texto incompleto no resultado final.
+14) Nao incluir instrucoes internas no texto final (ex.: "usar cenario", "minimo 2", "preencher campo").
+15) Manter linguagem enxuta para aluno final; evitar tom de manual do professor.
+16) Preencher completamente as secoes 4.2 e 4.3 com conteudo concreto.
+17) Se a secao de recurso visual nao for aplicavel, preencher com `n/a` de forma curta.
 
 Formato de saida:
 - Retorne APENAS Markdown.
 - Respeite exatamente a estrutura do template abaixo.
 - Nao remover secoes obrigatorias.
+- Validar limpeza final antes de encerrar: sem placeholders e sem instrucoes internas visiveis.
 
 Template obrigatorio:
 {TEMPLATE_AULA_MODULO}

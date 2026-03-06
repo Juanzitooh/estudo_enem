@@ -41,7 +41,7 @@ Aceite: usuário seleciona `ano/dia`, resolve caderno em sequência fechada e co
 ## M3 - Aulas por módulo operacional
 - [ ] T3.1 Avaliar manualmente o lote piloto de 20 módulos com rubrica.
 Aceite: notas por módulo registradas e gaps recorrentes consolidados.
-- [ ] T3.2 Ajustar prompt/template com base no retrabalho identificado.
+- [x] T3.2 Ajustar prompt/template com base no retrabalho identificado.
 Aceite: checklist de gaps reduzido e versão do prompt incrementada.
 - [x] T3.3 Definir integração de aprofundamento por vídeo (minutagem).
 Aceite: proposta técnica aprovada com campos e fluxo no app.

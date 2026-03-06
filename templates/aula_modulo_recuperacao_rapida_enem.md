@@ -1,4 +1,5 @@
 # Aula ENEM — Módulo {volume}.{modulo} ({área}/{matéria})
+<!-- Template editorial: instruções internas não devem aparecer no conteúdo final do aluno. -->
 
 > Tipo de conteúdo: recuperação rápida pós-erro no feed adaptativo.
 > Público: aluno que já teve contato prévio com o tema.
@@ -66,7 +67,7 @@ Checklist:
 2. {pergunta objetiva para conceito 2}
 3. {pergunta objetiva para interpretação/comando}
 
-> Registrar quais perguntas ficaram erradas para atualizar `target_concepts` prioritários.
+<!-- Instrução interna: registrar perguntas erradas para atualizar `target_concepts`. -->
 
 ---
 
@@ -125,3 +126,8 @@ E) {alternativa E}
 - **Resumo em 2 linhas:** {síntese}
 - **Próxima ação imediata:** {voltar feed | repetir microtreino | abrir aula completa}
 - **Tempo extra sugerido:** {5-10 min}
+
+## 10. Limpeza pré-publicação (editorial interno)
+- [ ] Remover placeholders `{...}` e termos genéricos.
+- [ ] Remover instruções internas de operação editorial.
+- [ ] Garantir foco em recuperação rápida (10-15 min), sem virar aula completa.

@@ -45,6 +45,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T4.3` concluída com estratégia de versionamento incremental por módulo no manifesto de conteúdo.
 - `T5.2` concluída com fluxo de assinatura Android (`debug/local` vs `release`) e checklist mínimo de validação.
 - `T3.5` concluída com piloto real de recuperação rápida no módulo `V1_M1_antiguidade_oriental` e relatório de aceite do fluxo pós-erro.
+- `T3.2` concluída com hardening de template/prompt: limpeza pré-publicação, remoção de placeholders/instruções internas e novo prompt dedicado para recuperação rápida.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

@@ -92,3 +92,13 @@ Decisão:
 - formalizar versionamento incremental por módulo e fluxo de assinatura Android em `docs/roadmap/references/publicacao_release.md`;
 - reposicionar `NEXT_TASK` para item executável não bloqueado (`T3.5`), mantendo `T3.11` explicitamente bloqueada.
 Impacto: reduz fila de trabalho dependente de documentação e libera avanço prático nas próximas tarefas de implementação/piloto.
+
+## D-011 - Hardening de geração editorial após piloto
+Data: 2026-03-06
+Status: aceito
+Contexto: o piloto de recuperação rápida e a revisão do módulo completo evidenciaram retrabalho por placeholders residuais e instruções internas aparecendo no texto final.
+Decisão:
+- atualizar templates de módulo completo e recuperação rápida com checklist explícito de limpeza pré-publicação;
+- reforçar no prompt de geração por módulo (v2) a proibição de placeholders/reticências e texto instrucional no resultado final;
+- adicionar prompt operacional dedicado para recuperação rápida (`prompts/gerar_aula_recuperacao_rapida_enem.md`).
+Impacto: redução de retrabalho editorial, maior consistência do conteúdo parseável e menor risco de vazamento de instrução interna na experiência do aluno.

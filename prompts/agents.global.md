@@ -19,6 +19,7 @@ Gerar aulas no padrão ENEM:
 - `templates/aula_modulo_enem.md` (template obrigatório para aulas por módulo)
 - `templates/aula_modulo_recuperacao_rapida_enem.md` (template obrigatório para recuperação rápida)
 - `prompts/gerar_aula_modulo_enem.md` (prompt operacional para geração por módulo)
+- `prompts/gerar_aula_recuperacao_rapida_enem.md` (prompt operacional para geração de recuperação rápida)
 - `README.md` (fluxo operacional)
 - `CHANGELOG.md` (histórico de mudanças)
 
@@ -44,6 +45,7 @@ Gerar aulas no padrão ENEM:
 19. Incluir um problema real aplicado ao contexto brasileiro com perguntas de reflexão no fim da aula.
 20. Em aulas por módulo, incluir obrigatoriamente: objetivo pedagógico (`saber`, `aplicar`, `revisar`), seção “o que deve ser aprendido”, checagem final de entendimento (5–10 perguntas curtas) e bloco fixo de questões contextualizadas por módulo.
 21. Em aulas por módulo, exigir no mínimo 2 exemplos práticos brasileiros (cotidiano e aplicação profissional) e evitar contexto genérico/artificial.
+22. Antes de considerar uma aula pronta, remover placeholders (`{...}`), reticências (`...`) e instruções internas visíveis para o aluno final.
 
 ## Estrutura de saída
 - Aula em `aulas/{area}/HXX_{tema}.md`

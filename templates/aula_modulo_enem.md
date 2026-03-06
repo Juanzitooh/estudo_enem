@@ -1,4 +1,5 @@
 # Aula ENEM — Módulo {volume}.{modulo} ({área}/{matéria})
+<!-- Template editorial: instruções internas não devem aparecer no conteúdo final do aluno. -->
 
 ## Metadados editoriais
 **Status editorial:** {rascunho | revisado | aprovado | publicado}  
@@ -61,7 +62,7 @@ Checklist de saída:
 ---
 
 ## 5. Exemplos práticos contextualizados (mínimo 2)
-> Usar cenários reais de cotidiano e profissões no Brasil.
+<!-- Instrução interna: usar cenários reais de cotidiano e profissões no Brasil. -->
 
 ### Exemplo 1 — Cotidiano
 - **Cenário:** {ex.: transporte, consumo, impostos, saúde}
@@ -84,7 +85,7 @@ Checklist de saída:
 
 ---
 
-## 7. Recurso visual didático (obrigatório em Física/Química/Biologia/Matemática)
+## 7. Recurso visual didático (quando aplicável)
 - **Tipo:** {gráfico | diagrama | esquema | desenho}
 - **Objetivo:** {o que o visual esclarece}
 - **Referência:** `{assets/img/... | n/a}`
@@ -113,11 +114,40 @@ C) {alternativa C}<br>
 D) {alternativa D}<br>
 E) {alternativa E}
 
-**Q2 [Fácil].** …  
-**Q3 [Fácil].** …  
-**Q4 [Média].** …  
-**Q5 [Média].** …  
-**Q6 [Difícil].** …
+**Q2 [Fácil].** {enunciado contextualizado}<br>
+A) {alternativa A}<br>
+B) {alternativa B}<br>
+C) {alternativa C}<br>
+D) {alternativa D}<br>
+E) {alternativa E}
+
+**Q3 [Fácil].** {enunciado contextualizado}<br>
+A) {alternativa A}<br>
+B) {alternativa B}<br>
+C) {alternativa C}<br>
+D) {alternativa D}<br>
+E) {alternativa E}
+
+**Q4 [Média].** {enunciado contextualizado}<br>
+A) {alternativa A}<br>
+B) {alternativa B}<br>
+C) {alternativa C}<br>
+D) {alternativa D}<br>
+E) {alternativa E}
+
+**Q5 [Média].** {enunciado contextualizado}<br>
+A) {alternativa A}<br>
+B) {alternativa B}<br>
+C) {alternativa C}<br>
+D) {alternativa D}<br>
+E) {alternativa E}
+
+**Q6 [Difícil].** {enunciado contextualizado}<br>
+A) {alternativa A}<br>
+B) {alternativa B}<br>
+C) {alternativa C}<br>
+D) {alternativa D}<br>
+E) {alternativa E}
 
 ### 9.2 Gabarito comentado
 - ✅ Por que a alternativa correta está certa.
@@ -138,3 +168,8 @@ E) {alternativa E}
 - **Resumo em 3 linhas:** {síntese}
 - **Próximo bloco de treino recomendado:** {habilidade/matéria/módulo}
 - **Tempo sugerido de revisão:** {15–30 min}
+
+## 13. Limpeza pré-publicação (editorial interno)
+- [ ] Remover placeholders `{...}` e reticências `...`.
+- [ ] Remover instruções internas antes de publicar payload para aluno.
+- [ ] Garantir que o texto final está didático e objetivo (sem linguagem de template).
