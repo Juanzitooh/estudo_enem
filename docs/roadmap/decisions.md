@@ -102,3 +102,12 @@ Decisão:
 - reforçar no prompt de geração por módulo (v2) a proibição de placeholders/reticências e texto instrucional no resultado final;
 - adicionar prompt operacional dedicado para recuperação rápida (`prompts/gerar_aula_recuperacao_rapida_enem.md`).
 Impacto: redução de retrabalho editorial, maior consistência do conteúdo parseável e menor risco de vazamento de instrução interna na experiência do aluno.
+
+## D-012 - Fechamento de T5.1 por validação do pipeline existente
+Data: 2026-03-06
+Status: aceito
+Contexto: a tarefa `T5.1` estava pendente no roadmap, porém o `dist.sh` já implementava geração opcional de APK por versão com checksum e saída no resumo de release.
+Decisão:
+- considerar `T5.1` concluída após auditoria técnica do script e critérios de aceite;
+- manter `T5.2` como complemento de assinatura e checklist de publicação.
+Impacto: backlog alinhado ao estado real do código, reduzindo pendências artificiais no roadmap.

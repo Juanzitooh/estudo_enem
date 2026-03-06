@@ -46,6 +46,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T5.2` concluída com fluxo de assinatura Android (`debug/local` vs `release`) e checklist mínimo de validação.
 - `T3.5` concluída com piloto real de recuperação rápida no módulo `V1_M1_antiguidade_oriental` e relatório de aceite do fluxo pós-erro.
 - `T3.2` concluída com hardening de template/prompt: limpeza pré-publicação, remoção de placeholders/instruções internas e novo prompt dedicado para recuperação rápida.
+- `T5.1` concluída com validação do `dist.sh` para APK opcional por versão com checksum e registro no `dist_summary.txt`.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

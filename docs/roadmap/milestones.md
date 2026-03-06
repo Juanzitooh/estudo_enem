@@ -37,7 +37,7 @@ Critérios de saída:
 - política de origem de atualização consolidada.
 
 ## M5 - Distribuição app (desktop/web/android)
-Status: `em_andamento`
+Status: `concluido`
 Critérios de saída:
 - fluxo de APK opcional finalizado;
 - assinatura Android documentada;

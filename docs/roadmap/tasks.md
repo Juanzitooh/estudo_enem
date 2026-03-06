@@ -71,7 +71,7 @@ Aceite: script gera artefatos consistentes e manifests por domínio.
 Aceite: estratégia de versionamento por módulo definida e aplicada.
 
 ## M5 - Distribuição do app
-- [ ] T5.1 Evoluir `dist.sh` para APK opcional por versão com checksum.
+- [x] T5.1 Evoluir `dist.sh` para APK opcional por versão com checksum.
 Aceite: artefato e hash gerados com registro no resumo de release.
 - [x] T5.2 Definir fluxo de assinatura Android (`debug/local` x `release`).
 Aceite: checklist mínimo de assinatura e validação publicado.

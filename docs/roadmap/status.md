@@ -1,11 +1,12 @@
 CURRENT_MILESTONE: M3 - Aulas por módulo operacional
-NEXT_TASK: T5.1 - Evoluir `dist.sh` para APK opcional por versão com checksum
+NEXT_TASK: T2.1 - Integrar previsão do planner com abertura direta da tela de treino/módulo
 
 BLOCKERS:
 - T3.1 depende de validação manual do lote piloto com rubrica.
 - T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-03-06 - `T5.1` concluída: `dist.sh` validado com APK Android opcional por versão, checksum (`.sha256`) e registro no `dist_summary.txt`.
 - 2026-03-06 - `T3.2` concluída com ajustes em template/prompt (limpeza de placeholders/instruções internas, estrutura de questões completa e prompt operacional de recuperação rápida).
 - 2026-03-06 - `T3.5` concluída com piloto de recuperação rápida no módulo `V1_M1_antiguidade_oriental` e relatório de aceite do fluxo pós-erro.
 - 2026-03-06 - `T3.3`, `T3.4` e `T3.6` concluídas com especificação operacional unificada de taxonomia, workflow editorial e integração de vídeo por minutagem.
