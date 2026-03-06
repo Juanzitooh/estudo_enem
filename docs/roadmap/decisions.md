@@ -176,3 +176,13 @@ Decisão:
 - registrar tentativas desse microdiagnóstico no `progress` e consolidar resultado em `concept_mastery` por perfil;
 - considerar `concept_mastery` no cálculo de prioridade conceitual do feed híbrido (com peso maior que o observado bruto recente).
 Impacto: o app passa a ter loop curto de correção (`erro -> microdiagnóstico -> ajuste de domínio -> novo ranking`) totalmente offline.
+
+## D-020 - Resultado de T2.8: manter piloto do feed híbrido antes de rollout amplo
+Data: 2026-03-06
+Status: aceito
+Contexto: após concluir `T2.7`, era necessário comparar `skill-only` vs `híbrido` com métricas offline para decisão de rollout.
+Decisão:
+- executar avaliação reproduzível via `scripts/avaliar_feed_hibrido_offline.py` usando release local (`2032` questões) + Q-matrix piloto de Humanas (`120` questões mapeadas, `79` conceitos);
+- registrar artefatos em `docs/roadmap/references/t2_8_feed_comparativo.{report.md,summary.json,per_user.csv}`;
+- adotar decisão `manter_piloto` para o híbrido nesta etapa, sem rollout amplo imediato.
+Impacto: reduz risco de regressão pedagógica/operacional e direciona próximos ajustes de roteamento/pesos antes da expansão do híbrido para produção geral.

@@ -25,7 +25,7 @@ Aceite: mínimo de 80 questões mapeadas para 25+ conceitos com cobertura audit�
 Aceite: fallback por habilidade ativo quando não houver mapeamento conceitual.
 - [x] T2.7 Implementar diagnóstico pós-erro curto por conceito (3 perguntas objetivas).
 Aceite: respostas atualizam `concept_mastery` local e influenciam a próxima recomendação.
-- [ ] T2.8 Rodar avaliação comparativa do feed atual vs feed híbrido.
+- [x] T2.8 Rodar avaliação comparativa do feed atual vs feed híbrido.
 Aceite: relatório com métricas offline (`acurácia`, `tempo`, `retenção`) e decisão de rollout.
 - [ ] T2.9 Definir política de roteamento pós-erro (`reels -> recuperação rápida` vs `aula completa`).
 Aceite: regra documentada com gatilhos mínimos (`primeiro contato`, `mastery`, `acertos no microtreino`).
