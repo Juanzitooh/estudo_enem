@@ -27,7 +27,7 @@ Aceite: fallback por habilidade ativo quando não houver mapeamento conceitual.
 Aceite: respostas atualizam `concept_mastery` local e influenciam a próxima recomendação.
 - [x] T2.8 Rodar avaliação comparativa do feed atual vs feed híbrido.
 Aceite: relatório com métricas offline (`acurácia`, `tempo`, `retenção`) e decisão de rollout.
-- [ ] T2.9 Definir política de roteamento pós-erro (`reels -> recuperação rápida` vs `aula completa`).
+- [x] T2.9 Definir política de roteamento pós-erro (`reels -> recuperação rápida` vs `aula completa`).
 Aceite: regra documentada com gatilhos mínimos (`primeiro contato`, `mastery`, `acertos no microtreino`).
 - [ ] T2.10 Definir pesos de conceitos fundacionais no grafo.
 Aceite: tabela de pesos inicial aprovada para leitura/interpretação e matemática básica com impacto explícito no ranking.

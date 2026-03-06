@@ -1,11 +1,12 @@
 CURRENT_MILESTONE: M3 - Aulas por módulo operacional
-NEXT_TASK: T2.9 - Definir política de roteamento pós-erro (`reels -> recuperação rápida` vs `aula completa`)
+NEXT_TASK: T2.10 - Definir pesos de conceitos fundacionais no grafo
 
 BLOCKERS:
 - T3.1 depende de validação manual do lote piloto com rubrica.
 - T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-03-06 - `T2.9` concluída com política canônica de roteamento pós-erro (`reels -> recuperação rápida|aula completa`) documentada em `docs/roadmap/references/t2_9_politica_roteamento_pos_erro.md`, incluindo gatilhos de `primeiro_contato`, `mastery` e `acertos_microtreino`.
 - 2026-03-06 - `T2.8` concluída com avaliação comparativa offline (`skill-only` vs `híbrido`) em 320 usuários simulados e decisão `manter_piloto` (sem rollout amplo) registrada em artefatos `report/csv/json`.
 - 2026-03-06 - `T2.7` concluída no app com diagnóstico pós-erro por conceito (3 questões), atualização local de `concept_mastery` e uso desse domínio no ranking das próximas recomendações.
 - 2026-03-06 - `T2.6` concluída no app com seleção híbrida do reels (`conceito + habilidade`), ingestão offline de tabelas conceituais no bundle e fallback por habilidade quando não houver mapeamento.

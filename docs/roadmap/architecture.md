@@ -17,6 +17,7 @@
 - Compatibilidade app x conteúdo: `plano/politica_compatibilidade_atualizacao_offline.md`.
 - Estado editorial padrão: `rascunho -> revisado -> aprovado -> publicado`.
 - Referência técnica do canvas de grafo: `docs/roadmap/references/aprendizado_grafo.md`.
+- Política canônica de roteamento pós-erro: `docs/roadmap/references/t2_9_politica_roteamento_pos_erro.md`.
 - Operação editorial M3 (taxonomia + workflow + vídeo): `docs/roadmap/references/m3_operacao_editorial.md`.
 - Publicação/release (versionamento por módulo + assinatura Android): `docs/roadmap/references/publicacao_release.md`.
 
@@ -56,8 +57,9 @@
 
 ## Política de estudo (reels -> aula)
 - Entrada principal: feed de questões (`reels`) com priorização híbrida.
-- Pós-erro: roteamento para `recuperação rápida` quando houver contato prévio suficiente.
-- Escalada: roteamento para `aula completa` quando houver baixa base/primeiro contato/baixa retenção.
+- Pós-erro (`adaptativo`): executar microtreino de 3 questões e decidir por regra canônica.
+- Regra v1: `aula_completa` quando `primeiro_contato=true` ou `mastery<0.45` ou `acertos_microtreino<=1`; caso contrário `recuperação_rapida`.
+- Escalada: se `recuperação_rapida` terminar com acurácia `< 50%`, redirecionar para `aula_completa`.
 - Retorno ao feed: após critério mínimo de saída (microtreino/checagem).
 
 ## Modos de sessão de estudo

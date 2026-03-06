@@ -186,3 +186,13 @@ Decisão:
 - registrar artefatos em `docs/roadmap/references/t2_8_feed_comparativo.{report.md,summary.json,per_user.csv}`;
 - adotar decisão `manter_piloto` para o híbrido nesta etapa, sem rollout amplo imediato.
 Impacto: reduz risco de regressão pedagógica/operacional e direciona próximos ajustes de roteamento/pesos antes da expansão do híbrido para produção geral.
+
+## D-021 - Política canônica de roteamento pós-erro (`T2.9`)
+Data: 2026-03-06
+Status: aceito
+Contexto: após `T2.7` e `T2.8`, faltava transformar o roteamento `reels -> recuperação rápida|aula completa` em regra objetiva e auditável para reduzir decisões ad hoc.
+Decisão:
+- formalizar a política em `docs/roadmap/references/t2_9_politica_roteamento_pos_erro.md` com entradas mínimas: `primeiro_contato`, `mastery`, `acertos_microtreino`;
+- definir regra v1: enviar para `aula_completa` quando `primeiro_contato=true` ou `mastery<0.45` ou `acertos_microtreino<=1`; nos demais casos, enviar para `recuperação_rapida`;
+- definir escalada pós-recuperação: acurácia `< 50%` na recuperação rápida redireciona para `aula_completa`.
+Impacto: cria base única para implementação no app, telemetria comparável entre sessões e redução de intervenção longa desnecessária em erros pontuais.
