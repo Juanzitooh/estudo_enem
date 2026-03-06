@@ -47,7 +47,7 @@ Aceite: checklist de gaps reduzido e versão do prompt incrementada.
 Aceite: proposta técnica aprovada com campos e fluxo no app.
 - [x] T3.4 Definir workflow de revisão humana em lote (`rascunho -> revisado -> publicado`).
 Aceite: fluxo e critérios de aprovação documentados.
-- [ ] T3.5 Pilotar o template de recuperação rápida em 1 módulo real.
+- [x] T3.5 Pilotar o template de recuperação rápida em 1 módulo real.
 Aceite: 1 aula rápida preenchida, revisada e testada no fluxo pós-erro.
 - [x] T3.6 Consolidar a taxonomia editorial dos 3 tipos de aula.
 Aceite: documentação única com papéis e gatilhos de uso para `habilidade`, `módulo completo` e `recuperação rápida`.

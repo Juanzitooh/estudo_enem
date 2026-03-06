@@ -1,10 +1,11 @@
 CURRENT_MILESTONE: M3 - Aulas por módulo operacional
-NEXT_TASK: T3.5 - Pilotar o template de recuperação rápida em 1 módulo real
+NEXT_TASK: T3.2 - Ajustar prompt/template com base no retrabalho identificado
 
 BLOCKERS:
 - T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-03-06 - `T3.5` concluída com piloto de recuperação rápida no módulo `V1_M1_antiguidade_oriental` e relatório de aceite do fluxo pós-erro.
 - 2026-03-06 - `T3.3`, `T3.4` e `T3.6` concluídas com especificação operacional unificada de taxonomia, workflow editorial e integração de vídeo por minutagem.
 - 2026-03-06 - `T4.3` concluída com estratégia formal de versionamento incremental por módulo no manifesto.
 - 2026-03-06 - `T5.2` concluída com checklist de assinatura Android (`debug/local` vs `release`) e validação mínima.
