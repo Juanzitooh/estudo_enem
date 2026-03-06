@@ -138,3 +138,12 @@ Decisão:
 - consolidar rotina em `plano/rotina_atualizacao_cadernos.md`;
 - padronizar sequência: ingestão de PDF -> extração -> auditoria OCR -> mapeamento -> geração de bundle -> checklist.
 Impacto: atualização de novos anos fica reproduzível, auditável e mais segura para publicação incremental.
+
+## D-016 - Contrato de conceitos com exemplo de bundle offline
+Data: 2026-03-06
+Status: aceito
+Contexto: a camada conceitual já tinha definição textual, mas faltava artefato de referência para padronizar estrutura de bundle offline.
+Decisão:
+- formalizar no `architecture.md` o contrato mínimo de `concepts`, `question_concepts`, `concept_dependencies`, `concept_mastery` e `concept_priority_weights`;
+- publicar exemplo canônico em `docs/roadmap/references/concepts_bundle_offline_exemplo.json`.
+Impacto: reduz ambiguidade de implementação no app/pipeline e acelera execução de `T2.5` (Q-matrix piloto).

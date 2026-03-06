@@ -1,11 +1,12 @@
 CURRENT_MILESTONE: M3 - Aulas por módulo operacional
-NEXT_TASK: T2.4 - Definir contrato mínimo da camada de conceitos (`concepts`, `question_concepts`, `concept_dependencies`, `concept_mastery`)
+NEXT_TASK: T2.5 - Gerar Q-matrix piloto para 1 área sem depender do catálogo completo
 
 BLOCKERS:
 - T3.1 depende de validação manual do lote piloto com rubrica.
 - T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-03-06 - `T2.4` concluída com contrato mínimo da camada de conceitos em `architecture.md` + exemplo de bundle offline.
 - 2026-03-06 - `T2.3` concluída com rotina operacional documentada para entrada de novos cadernos (`extração`, `auditoria OCR`, `mapeamento`, `bundle` e checklist final).
 - 2026-03-06 - `T2.2` concluída com atualização do `plano/tracker.md` (campo explícito de erro por habilidade `Hxx`, tipo de erro, ação de revisão e exemplo de uso local).
 - 2026-03-06 - `T2.1` concluída no app: slots da previsão do planner agora abrem treino/módulo diretamente na UI (sem etapa manual extra).

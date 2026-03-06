@@ -1,0 +1,79 @@
+{
+  "version": "concepts.2026.03.06.1",
+  "generated_at_utc": "2026-03-06T18:00:00Z",
+  "concepts": [
+    {
+      "id": "ch_h13_civilizacoes_hidraulicas",
+      "label": "Civilizações hidráulicas",
+      "area": "Ciências Humanas",
+      "difficulty": "basico"
+    },
+    {
+      "id": "ch_h13_centralizacao_politica",
+      "label": "Centralização política no Oriente Antigo",
+      "area": "Ciências Humanas",
+      "difficulty": "intermediario"
+    },
+    {
+      "id": "geral_leitura_comando",
+      "label": "Leitura de comando",
+      "area": "Transversal",
+      "difficulty": "basico"
+    }
+  ],
+  "question_concepts": [
+    {
+      "question_id": "2023_1_45_1",
+      "concept_id": "ch_h13_civilizacoes_hidraulicas",
+      "weight": 0.7
+    },
+    {
+      "question_id": "2023_1_45_1",
+      "concept_id": "ch_h13_centralizacao_politica",
+      "weight": 0.3
+    },
+    {
+      "question_id": "2022_1_47_1",
+      "concept_id": "geral_leitura_comando",
+      "weight": 0.4
+    }
+  ],
+  "concept_dependencies": [
+    {
+      "concept_id": "ch_h13_centralizacao_politica",
+      "depends_on": "ch_h13_civilizacoes_hidraulicas",
+      "strength": 0.8
+    },
+    {
+      "concept_id": "ch_h13_centralizacao_politica",
+      "depends_on": "geral_leitura_comando",
+      "strength": 0.6
+    }
+  ],
+  "concept_priority_weights": [
+    {
+      "concept_id": "geral_leitura_comando",
+      "base_weight": 1.5,
+      "reason": "fundacional_transversal"
+    },
+    {
+      "concept_id": "ch_h13_civilizacoes_hidraulicas",
+      "base_weight": 1.1,
+      "reason": "nucleo_tema_modulo"
+    }
+  ],
+  "concept_mastery": [
+    {
+      "profile_id": "perfil_principal",
+      "concept_id": "ch_h13_civilizacoes_hidraulicas",
+      "mastery": 0.42,
+      "updated_at": "2026-03-06T17:45:00Z"
+    },
+    {
+      "profile_id": "perfil_principal",
+      "concept_id": "geral_leitura_comando",
+      "mastery": 0.55,
+      "updated_at": "2026-03-06T17:45:00Z"
+    }
+  ]
+}

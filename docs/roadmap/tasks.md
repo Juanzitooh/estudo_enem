@@ -17,7 +17,7 @@ Aceite: ação na UI abre treino/módulo correspondente sem etapa manual extra.
 Aceite: modelo atualizado e validado em uso local.
 - [x] T2.3 Documentar rotina de atualização ao adicionar novos cadernos.
 Aceite: procedimento reproduzível com checklist.
-- [ ] T2.4 Definir contrato mínimo da camada de conceitos (`concepts`, `question_concepts`, `concept_dependencies`, `concept_mastery`).
+- [x] T2.4 Definir contrato mínimo da camada de conceitos (`concepts`, `question_concepts`, `concept_dependencies`, `concept_mastery`).
 Aceite: contrato documentado em `docs/roadmap/architecture.md` com exemplo de bundle offline.
 - [ ] T2.5 Gerar Q-matrix piloto para 1 área sem depender do catálogo completo.
 Aceite: mínimo de 80 questões mapeadas para 25+ conceitos com cobertura auditável.

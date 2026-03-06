@@ -50,6 +50,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T2.1` concluída no app com integração direta do planner: cada slot diário abre treino ou revisão de módulo sem etapa manual extra.
 - `T2.2` concluída com evolução do `plano/tracker.md` para erro explícito por habilidade (`Hxx`) e ciclo de revisão/reavaliação.
 - `T2.3` concluída com rotina documentada para atualização de novos cadernos (extração, auditoria OCR, mapeamento e geração de bundle com checklist).
+- `T2.4` concluída com contrato mínimo da camada de conceitos e exemplo de bundle offline para implementação do feed híbrido.
 
 ### Changed
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.

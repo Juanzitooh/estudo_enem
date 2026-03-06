@@ -39,6 +39,19 @@
 - `concept_dependencies`: pré-requisitos (`concept_id`, `depends_on`, `strength`).
 - `concept_mastery`: domínio local por perfil (`profile_id`, `concept_id`, `mastery`, `updated_at`).
 - `concept_priority_weights`: pesos estruturais por conceito (`concept_id`, `base_weight`, `reason`).
+- Exemplo de bundle offline: `docs/roadmap/references/concepts_bundle_offline_exemplo.json`.
+
+### Exemplo resumido do bundle offline
+```json
+{
+  "version": "concepts.2026.03.06.1",
+  "concepts": [{"id": "geral_leitura_comando", "label": "Leitura de comando", "area": "Transversal", "difficulty": "basico"}],
+  "question_concepts": [{"question_id": "2023_1_45_1", "concept_id": "geral_leitura_comando", "weight": 0.4}],
+  "concept_dependencies": [{"concept_id": "ch_h13_centralizacao_politica", "depends_on": "ch_h13_civilizacoes_hidraulicas", "strength": 0.8}],
+  "concept_priority_weights": [{"concept_id": "geral_leitura_comando", "base_weight": 1.5, "reason": "fundacional_transversal"}],
+  "concept_mastery": [{"profile_id": "perfil_principal", "concept_id": "geral_leitura_comando", "mastery": 0.55, "updated_at": "2026-03-06T17:45:00Z"}]
+}
+```
 
 ## Política de estudo (reels -> aula)
 - Entrada principal: feed de questões (`reels`) com priorização híbrida.
