@@ -194,6 +194,18 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   String _diagnosticoFeedback = '';
   DateTime? _diagnosticoQuestionStartedAt;
   List<_DiagnosticAnswerEntry> _diagnosticoAnswerEntries = const [];
+  String _conceptDiagnosticSourceQuestionId = '';
+  String _conceptDiagnosticConceptId = '';
+  String _conceptDiagnosticConceptLabel = '';
+  List<QuestionCardItem> _conceptDiagnosticQuestions = const [];
+  int _conceptDiagnosticCurrentIndex = 0;
+  int _conceptDiagnosticAcertos = 0;
+  int _conceptDiagnosticErros = 0;
+  bool _conceptDiagnosticRespondida = false;
+  String _conceptDiagnosticRespostaSelecionada = '';
+  String _conceptDiagnosticFeedback = '';
+  DateTime? _conceptDiagnosticQuestionStartedAt;
+  double? _conceptDiagnosticMasteryAtualizada;
   List<QuestionCardItem> _simuladoQuestions = const [];
   int _simuladoTempoTotalMinutos = 0;
   bool _simuladoEmbaralhar = true;
@@ -629,6 +641,217 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       return null;
     }
     return _plannerReels[_reelCurrentIndex];
+  }
+
+  bool get _hasConceptDiagnosticSession => _conceptDiagnosticQuestions.isNotEmpty;
+
+  bool _isConceptDiagnosticSourceQuestion(String questionId) {
+    return _conceptDiagnosticSourceQuestionId.trim().isNotEmpty &&
+        _conceptDiagnosticSourceQuestionId == questionId;
+  }
+
+  QuestionCardItem? get _currentConceptDiagnosticQuestion {
+    if (_conceptDiagnosticQuestions.isEmpty) {
+      return null;
+    }
+    if (_conceptDiagnosticCurrentIndex < 0 ||
+        _conceptDiagnosticCurrentIndex >= _conceptDiagnosticQuestions.length) {
+      return null;
+    }
+    return _conceptDiagnosticQuestions[_conceptDiagnosticCurrentIndex];
+  }
+
+  void _resetConceptDiagnosticState({
+    String? statusMessage,
+  }) {
+    _conceptDiagnosticSourceQuestionId = '';
+    _conceptDiagnosticConceptId = '';
+    _conceptDiagnosticConceptLabel = '';
+    _conceptDiagnosticQuestions = const [];
+    _conceptDiagnosticCurrentIndex = 0;
+    _conceptDiagnosticAcertos = 0;
+    _conceptDiagnosticErros = 0;
+    _conceptDiagnosticRespondida = false;
+    _conceptDiagnosticRespostaSelecionada = '';
+    _conceptDiagnosticFeedback = '';
+    _conceptDiagnosticQuestionStartedAt = null;
+    _conceptDiagnosticMasteryAtualizada = null;
+    if (statusMessage != null) {
+      _status = statusMessage;
+    }
+  }
+
+  void _applyConceptDiagnosticSession({
+    required String sourceQuestionId,
+    required ConceptDiagnosticSession session,
+  }) {
+    _conceptDiagnosticSourceQuestionId = sourceQuestionId;
+    _conceptDiagnosticConceptId = session.conceptId;
+    _conceptDiagnosticConceptLabel = session.conceptLabel;
+    _conceptDiagnosticQuestions = List<QuestionCardItem>.from(session.questions);
+    _conceptDiagnosticCurrentIndex = 0;
+    _conceptDiagnosticAcertos = 0;
+    _conceptDiagnosticErros = 0;
+    _conceptDiagnosticRespondida = false;
+    _conceptDiagnosticRespostaSelecionada = '';
+    _conceptDiagnosticFeedback = '';
+    _conceptDiagnosticQuestionStartedAt = DateTime.now();
+    _conceptDiagnosticMasteryAtualizada = null;
+  }
+
+  Future<void> _responderConceptDiagnostic(String alternativa) async {
+    final current = _currentConceptDiagnosticQuestion;
+    if (current == null || _conceptDiagnosticRespondida) {
+      return;
+    }
+    final answer = current.answer.trim().toUpperCase();
+    if (answer.isEmpty) {
+      setState(() {
+        _conceptDiagnosticRespondida = true;
+        _conceptDiagnosticRespostaSelecionada = alternativa.toUpperCase();
+        _conceptDiagnosticFeedback =
+            'Questão sem gabarito. Esta tentativa não altera o diagnóstico.';
+      });
+      return;
+    }
+
+    final now = DateTime.now();
+    final elapsedSeconds = max(
+      1,
+      now.difference(_conceptDiagnosticQuestionStartedAt ?? now).inSeconds,
+    );
+    final selected = alternativa.toUpperCase();
+    final isCorrect = selected == answer;
+
+    setState(() {
+      _busy = true;
+      _status = 'Registrando diagnóstico por conceito...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      await _localDatabase.recordAnswer(
+        db,
+        questionId: current.id,
+        isCorrect: isCorrect,
+        elapsedSeconds: elapsedSeconds,
+        answerSource: 'diagnostico_conceito',
+      );
+
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _conceptDiagnosticRespondida = true;
+        _conceptDiagnosticRespostaSelecionada = selected;
+        if (isCorrect) {
+          _conceptDiagnosticAcertos += 1;
+        } else {
+          _conceptDiagnosticErros += 1;
+        }
+        _conceptDiagnosticFeedback = isCorrect
+            ? 'Correto! Gabarito: $answer.'
+            : 'Incorreto. Marcada: $selected | Gabarito: $answer.';
+        _status = isCorrect
+            ? 'Diagnóstico por conceito: acerto registrado.'
+            : 'Diagnóstico por conceito: erro registrado.';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao registrar diagnóstico por conceito: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _proximaConceptDiagnostic() async {
+    if (_conceptDiagnosticQuestions.isEmpty) {
+      return;
+    }
+    final nextIndex = _conceptDiagnosticCurrentIndex + 1;
+    if (nextIndex < _conceptDiagnosticQuestions.length) {
+      setState(() {
+        _conceptDiagnosticCurrentIndex = nextIndex;
+        _conceptDiagnosticRespondida = false;
+        _conceptDiagnosticRespostaSelecionada = '';
+        _conceptDiagnosticFeedback = '';
+        _conceptDiagnosticQuestionStartedAt = DateTime.now();
+      });
+      return;
+    }
+
+    final total = _conceptDiagnosticAcertos + _conceptDiagnosticErros;
+    if (total <= 0) {
+      setState(() {
+        _conceptDiagnosticCurrentIndex = _conceptDiagnosticQuestions.length;
+        _conceptDiagnosticRespondida = false;
+        _status = 'Diagnóstico por conceito concluído sem respostas válidas.';
+        _conceptDiagnosticQuestionStartedAt = null;
+      });
+      return;
+    }
+
+    setState(() {
+      _busy = true;
+      _status = 'Aplicando ajuste de domínio por conceito...';
+    });
+
+    try {
+      final db = await _localDatabase.open();
+      final updatedMastery = await _localDatabase.applyConceptDiagnosticResult(
+        db,
+        profileId: _activeStudentProfile?.id ?? '',
+        conceptId: _conceptDiagnosticConceptId,
+        correctCount: _conceptDiagnosticAcertos,
+        totalCount: total,
+      );
+      await _refreshStats();
+
+      if (!mounted) {
+        return;
+      }
+      final accuracy = (_conceptDiagnosticAcertos / total) * 100;
+      setState(() {
+        _conceptDiagnosticCurrentIndex = _conceptDiagnosticQuestions.length;
+        _conceptDiagnosticRespondida = false;
+        _conceptDiagnosticQuestionStartedAt = null;
+        _conceptDiagnosticMasteryAtualizada = updatedMastery;
+        final masteryText = updatedMastery == null
+            ? ''
+            : ' | domínio ${_percent(updatedMastery)}%';
+        _status =
+            'Diagnóstico por conceito concluído (${accuracy.toStringAsFixed(1)}%)$masteryText.';
+      });
+    } catch (error) {
+      if (!mounted) {
+        return;
+      }
+      setState(() {
+        _status = 'Falha ao concluir diagnóstico por conceito: $error';
+      });
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+        });
+      }
+    }
+  }
+
+  void _encerrarConceptDiagnostic() {
+    setState(() {
+      _resetConceptDiagnosticState(
+        statusMessage: 'Diagnóstico por conceito encerrado.',
+      );
+    });
   }
 
   Future<List<_ReelQuestionEntry>> _buildPlannerReels(
@@ -1442,6 +1665,15 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         elapsedSeconds: elapsedSeconds,
         answerSource: 'reels',
       );
+      ConceptDiagnosticSession? conceptDiagnosticSession;
+      if (!isCorrect) {
+        conceptDiagnosticSession =
+            await _localDatabase.loadConceptDiagnosticSession(
+          db,
+          sourceQuestionId: question.id,
+          questionLimit: 3,
+        );
+      }
       await _refreshStats(refreshReels: false);
       if (!mounted) {
         return;
@@ -1451,9 +1683,25 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         _reelFeedbackByQuestion[question.id] = isCorrect
             ? 'Correto! Gabarito: $answer.'
             : 'Incorreto. Marcada: $marked | Gabarito: $answer.';
-        _status = isCorrect
-            ? 'Acerto registrado no reels.'
-            : 'Erro registrado no reels.';
+        if (isCorrect) {
+          _status = 'Acerto registrado no reels.';
+          return;
+        }
+
+        if (conceptDiagnosticSession == null ||
+            conceptDiagnosticSession.questions.isEmpty) {
+          _resetConceptDiagnosticState();
+          _status =
+              'Erro registrado no reels. Sem diagnóstico por conceito disponível para esta questão.';
+          return;
+        }
+
+        _applyConceptDiagnosticSession(
+          sourceQuestionId: question.id,
+          session: conceptDiagnosticSession,
+        );
+        _status =
+            'Erro registrado no reels. Diagnóstico rápido iniciado (${_conceptDiagnosticQuestions.length} questão(ões)) em ${_conceptDiagnosticConceptLabel}.';
       });
     } catch (error) {
       if (!mounted) {

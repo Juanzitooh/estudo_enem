@@ -936,6 +936,108 @@ extension _HomePageTabsProfileExt on _HomePageState {
             ],
           ),
         ),
+        if (_hasConceptDiagnosticSession)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+            child: Card(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Builder(
+                  builder: (_) {
+                    final diagQuestion = _currentConceptDiagnosticQuestion;
+                    final diagAnswered =
+                        _conceptDiagnosticAcertos + _conceptDiagnosticErros;
+                    final diagTotal = _conceptDiagnosticQuestions.length;
+                    final diagAccuracy = diagAnswered <= 0
+                        ? 0
+                        : (_conceptDiagnosticAcertos / diagAnswered) * 100;
+                    return Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Diagnóstico rápido por conceito',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          '${_conceptDiagnosticConceptLabel.isEmpty ? _conceptDiagnosticConceptId : _conceptDiagnosticConceptLabel}'
+                          ' | ${diagQuestion == null ? diagTotal : _conceptDiagnosticCurrentIndex + 1}/$diagTotal'
+                          ' | acertos $_conceptDiagnosticAcertos | erros $_conceptDiagnosticErros'
+                          '${diagAnswered <= 0 ? '' : ' | ${diagAccuracy.toStringAsFixed(1)}%'}',
+                        ),
+                        if (_conceptDiagnosticMasteryAtualizada != null)
+                          Text(
+                            'Domínio atualizado: ${_percent(_conceptDiagnosticMasteryAtualizada!)}%',
+                          ),
+                        if (diagQuestion == null) ...[
+                          const SizedBox(height: 6),
+                          const Text(
+                            'Sessão concluída. Você pode atualizar o feed ou encerrar este diagnóstico.',
+                          ),
+                        ] else ...[
+                          const SizedBox(height: 6),
+                          Text(
+                            'Q ${diagQuestion.year}/${diagQuestion.day}/${diagQuestion.number}'
+                            '${diagQuestion.variation > 1 ? ' (v${diagQuestion.variation})' : ''}'
+                            '${diagQuestion.skill.trim().isEmpty ? '' : ' | ${diagQuestion.skill}'}',
+                          ),
+                          const SizedBox(height: 6),
+                          Text(previewText(diagQuestion.statement)),
+                          const SizedBox(height: 8),
+                          Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: alternatives
+                                .map(
+                                  (option) => OutlinedButton(
+                                    onPressed: _busy || _conceptDiagnosticRespondida
+                                        ? null
+                                        : () => _responderConceptDiagnostic(option),
+                                    child: Text(option),
+                                  ),
+                                )
+                                .toList(),
+                          ),
+                          if (_conceptDiagnosticRespostaSelecionada.isNotEmpty)
+                            Text(
+                              'Resposta marcada: $_conceptDiagnosticRespostaSelecionada',
+                            ),
+                          if (_conceptDiagnosticFeedback.isNotEmpty)
+                            Padding(
+                              padding: const EdgeInsets.only(top: 4),
+                              child: Text(_conceptDiagnosticFeedback),
+                            ),
+                        ],
+                        const SizedBox(height: 8),
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: [
+                            ElevatedButton(
+                              onPressed: _busy ||
+                                      !_conceptDiagnosticRespondida ||
+                                      diagQuestion == null
+                                  ? null
+                                  : () => _proximaConceptDiagnostic(),
+                              child: Text(
+                                diagQuestion == null
+                                    ? 'Concluído'
+                                    : 'Próxima questão',
+                              ),
+                            ),
+                            OutlinedButton(
+                              onPressed: _busy ? null : _encerrarConceptDiagnostic,
+                              child: const Text('Encerrar diagnóstico'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    );
+                  },
+                ),
+              ),
+            ),
+          ),
         Expanded(
           child: PageView.builder(
             scrollDirection: Axis.vertical,
@@ -1002,6 +1104,12 @@ extension _HomePageTabsProfileExt on _HomePageState {
                         if (feedback.isNotEmpty) ...[
                           const SizedBox(height: 6),
                           Text(feedback),
+                        ],
+                        if (_isConceptDiagnosticSourceQuestion(question.id)) ...[
+                          const SizedBox(height: 6),
+                          const Text(
+                            'Diagnóstico rápido ativo acima para reforçar o conceito deste erro.',
+                          ),
                         ],
                         if (!answered) ...[
                           const SizedBox(height: 6),

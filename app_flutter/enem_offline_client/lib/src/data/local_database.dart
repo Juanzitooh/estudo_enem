@@ -91,6 +91,18 @@ class ConceptQuestionCandidate {
   final double score;
 }
 
+class ConceptDiagnosticSession {
+  const ConceptDiagnosticSession({
+    required this.conceptId,
+    required this.conceptLabel,
+    required this.questions,
+  });
+
+  final String conceptId;
+  final String conceptLabel;
+  final List<QuestionCardItem> questions;
+}
+
 class _ConceptPriorityItem {
   const _ConceptPriorityItem({
     required this.conceptId,
@@ -1525,6 +1537,7 @@ class LocalDatabase {
       'question_concepts',
       'concept_dependencies',
       'concept_priority_weights',
+      'concept_mastery',
     ];
     for (final table in requiredTables) {
       if (!await _tableExists(db, table)) {
@@ -3646,17 +3659,29 @@ class LocalDatabase {
     }
 
     final rows = await db.rawQuery('''
+      WITH active_profile AS (
+        SELECT id
+        FROM student_profiles
+        WHERE is_active = 1
+        ORDER BY updated_at DESC
+        LIMIT 1
+      )
       SELECT
         qc.concept_id AS concept_id,
         COUNT(*) AS attempts,
         SUM(CASE WHEN p.is_correct = 1 THEN qc.weight ELSE 0 END) AS weighted_correct,
         SUM(qc.weight) AS weighted_total,
+        cm.mastery AS stored_mastery,
         COALESCE(MAX(cpw.base_weight), 1) AS base_weight,
         MAX(p.answered_at) AS last_answered_at
       FROM progress p
       JOIN question_concepts qc ON qc.question_id = p.question_id
       LEFT JOIN concept_priority_weights cpw
         ON LOWER(cpw.concept_id) = LOWER(qc.concept_id)
+      LEFT JOIN active_profile ap ON 1 = 1
+      LEFT JOIN concept_mastery cm
+        ON cm.profile_id = ap.id
+       AND LOWER(cm.concept_id) = LOWER(qc.concept_id)
       GROUP BY qc.concept_id
       HAVING COUNT(*) > 0
     ''');
@@ -3680,7 +3705,15 @@ class LocalDatabase {
         continue;
       }
 
-      final mastery = (weightedCorrect / weightedTotal).clamp(0, 1).toDouble();
+      final observedMastery =
+          (weightedCorrect / weightedTotal).clamp(0, 1).toDouble();
+      final storedMastery = _toOptionalDouble(row['stored_mastery']);
+      final mastery = storedMastery == null
+          ? observedMastery
+          : ((observedMastery * 0.35) +
+                  (storedMastery.clamp(0, 1).toDouble() * 0.65))
+              .clamp(0, 1)
+              .toDouble();
       final weakness = 1 - mastery;
       final confidence = _confidenceFromAttempts(attempts);
       final baseWeight = _toDouble(row['base_weight']).clamp(0.5, 3).toDouble();
@@ -3819,6 +3852,239 @@ class LocalDatabase {
     final ordered = byQuestion.values.toList()
       ..sort((a, b) => b.score.compareTo(a.score));
     return ordered.take(safeQuestionLimit).toList();
+  }
+
+  Future<ConceptDiagnosticSession?> loadConceptDiagnosticSession(
+    Database db, {
+    required String sourceQuestionId,
+    int questionLimit = 3,
+  }) async {
+    final normalizedSourceQuestionId = sourceQuestionId.trim();
+    if (normalizedSourceQuestionId.isEmpty) {
+      return null;
+    }
+    final safeLimit = questionLimit <= 0 ? 3 : questionLimit.clamp(1, 5).toInt();
+    if (!await _hasConceptGraphTables(db)) {
+      return null;
+    }
+
+    final conceptRows = await db.rawQuery(
+      '''
+      SELECT
+        qc.concept_id AS concept_id,
+        COALESCE(c.label, qc.concept_id) AS concept_label
+      FROM question_concepts qc
+      LEFT JOIN concepts c ON LOWER(c.id) = LOWER(qc.concept_id)
+      WHERE qc.question_id = ?
+      ORDER BY qc.weight DESC, qc.concept_id ASC
+      LIMIT 1
+      ''',
+      [normalizedSourceQuestionId],
+    );
+    if (conceptRows.isEmpty) {
+      return null;
+    }
+
+    final conceptId = _normalizeConceptId('${conceptRows.first['concept_id'] ?? ''}');
+    final conceptLabel = ('${conceptRows.first['concept_label'] ?? ''}').trim();
+    if (conceptId.isEmpty) {
+      return null;
+    }
+
+    const questionProjection = '''
+      q.id AS id,
+      q.year AS year,
+      q.day AS day,
+      q.number AS number,
+      COALESCE(q.variation, 1) AS variation,
+      COALESCE(q.area, '') AS area,
+      COALESCE(q.discipline, '') AS discipline,
+      COALESCE(q.materia, '') AS materia,
+      COALESCE(q.competency, '') AS competency,
+      COALESCE(q.skill, '') AS skill,
+      COALESCE(q.difficulty, '') AS difficulty,
+      CASE
+        WHEN COALESCE(q.has_image, 0) = 1 OR COALESCE(q.fallback_images, '') <> ''
+        THEN 1 ELSE 0
+      END AS has_image,
+      COALESCE(q.statement, '') AS statement,
+      COALESCE(q.answer, '') AS answer
+    ''';
+
+    final selectedQuestions = <QuestionCardItem>[];
+    final seenIds = <String>{};
+
+    final sourceRows = await db.rawQuery(
+      '''
+      SELECT $questionProjection
+      FROM questions q
+      WHERE q.id = ?
+      LIMIT 1
+      ''',
+      [normalizedSourceQuestionId],
+    );
+    final sourceQuestion =
+        sourceRows.isEmpty ? null : _questionCardFromRow(sourceRows.first);
+    final sourceSkill = sourceQuestion?.skill.trim() ?? '';
+
+    final conceptQuestionRows = await db.rawQuery(
+      '''
+      SELECT
+        $questionProjection,
+        COALESCE(qp.attempt_count, 0) AS attempt_count,
+        qc.weight AS concept_weight
+      FROM question_concepts qc
+      JOIN questions q ON q.id = qc.question_id
+      LEFT JOIN (
+        SELECT
+          question_id,
+          COUNT(*) AS attempt_count
+        FROM progress
+        GROUP BY question_id
+      ) qp ON qp.question_id = q.id
+      WHERE LOWER(qc.concept_id) = LOWER(?)
+      ORDER BY
+        CASE WHEN q.id = ? THEN 0 ELSE 1 END ASC,
+        COALESCE(qp.attempt_count, 0) ASC,
+        qc.weight DESC,
+        q.year DESC,
+        q.day ASC,
+        q.number ASC
+      LIMIT ?
+      ''',
+      [conceptId, normalizedSourceQuestionId, safeLimit * 6],
+    );
+
+    for (final row in conceptQuestionRows) {
+      final question = _questionCardFromRow(row);
+      if (question == null || !seenIds.add(question.id)) {
+        continue;
+      }
+      selectedQuestions.add(question);
+      if (selectedQuestions.length >= safeLimit) {
+        break;
+      }
+    }
+
+    if (selectedQuestions.length < safeLimit && sourceSkill.isNotEmpty) {
+      final skillRows = await db.rawQuery(
+        '''
+        SELECT $questionProjection
+        FROM questions q
+        WHERE LOWER(COALESCE(q.skill, '')) = LOWER(?)
+        ORDER BY q.year DESC, q.day ASC, q.number ASC
+        LIMIT ?
+        ''',
+        [sourceSkill, safeLimit * 6],
+      );
+      for (final row in skillRows) {
+        final question = _questionCardFromRow(row);
+        if (question == null || !seenIds.add(question.id)) {
+          continue;
+        }
+        selectedQuestions.add(question);
+        if (selectedQuestions.length >= safeLimit) {
+          break;
+        }
+      }
+    }
+
+    if (selectedQuestions.length < safeLimit) {
+      final fallbackRows = await db.rawQuery(
+        '''
+        SELECT $questionProjection
+        FROM questions q
+        ORDER BY q.year DESC, q.day ASC, q.number ASC
+        LIMIT ?
+        ''',
+        [safeLimit * 8],
+      );
+      for (final row in fallbackRows) {
+        final question = _questionCardFromRow(row);
+        if (question == null || !seenIds.add(question.id)) {
+          continue;
+        }
+        selectedQuestions.add(question);
+        if (selectedQuestions.length >= safeLimit) {
+          break;
+        }
+      }
+    }
+
+    if (selectedQuestions.isEmpty) {
+      return null;
+    }
+
+    return ConceptDiagnosticSession(
+      conceptId: conceptId,
+      conceptLabel: conceptLabel.isEmpty ? conceptId : conceptLabel,
+      questions: selectedQuestions.take(safeLimit).toList(),
+    );
+  }
+
+  Future<double?> applyConceptDiagnosticResult(
+    Database db, {
+    required String profileId,
+    required String conceptId,
+    required int correctCount,
+    required int totalCount,
+  }) async {
+    if (!await _hasConceptGraphTables(db)) {
+      return null;
+    }
+    final normalizedConceptId = _normalizeConceptId(conceptId);
+    if (normalizedConceptId.isEmpty || totalCount <= 0) {
+      return null;
+    }
+
+    var normalizedProfileId = profileId.trim();
+    if (normalizedProfileId.isEmpty) {
+      final rows = await db.query(
+        'student_profiles',
+        columns: ['id'],
+        where: 'is_active = 1',
+        orderBy: 'updated_at DESC',
+        limit: 1,
+      );
+      if (rows.isEmpty) {
+        return null;
+      }
+      normalizedProfileId = ('${rows.first['id'] ?? ''}').trim();
+      if (normalizedProfileId.isEmpty) {
+        return null;
+      }
+    }
+
+    final sessionMastery = (correctCount / totalCount).clamp(0, 1).toDouble();
+    final existingRows = await db.query(
+      'concept_mastery',
+      columns: ['mastery'],
+      where: 'profile_id = ? AND LOWER(concept_id) = LOWER(?)',
+      whereArgs: [normalizedProfileId, normalizedConceptId],
+      limit: 1,
+    );
+    final existingMastery = existingRows.isEmpty
+        ? null
+        : _toOptionalDouble(existingRows.first['mastery']);
+    final blendedMastery = existingMastery == null
+        ? sessionMastery
+        : ((existingMastery.clamp(0, 1).toDouble() * 0.7) +
+                (sessionMastery * 0.3))
+            .clamp(0, 1)
+            .toDouble();
+
+    await db.insert(
+      'concept_mastery',
+      {
+        'profile_id': normalizedProfileId,
+        'concept_id': normalizedConceptId,
+        'mastery': blendedMastery,
+        'updated_at': DateTime.now().toIso8601String(),
+      },
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+
+    return blendedMastery;
   }
 
   Future<List<ModuleSuggestion>> recommendModulesByWeakSkills(
