@@ -46,7 +46,7 @@ class _EnemOfflineAppState extends State<EnemOfflineApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Enem Questões',
+      title: 'Impulso ENEM',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),

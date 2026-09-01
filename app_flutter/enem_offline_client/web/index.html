@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -18,21 +18,68 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173F3C">
+  <meta
+    name="description"
+    content="Impulso ENEM: questões, aulas e planejamento adaptativo em uma experiência offline-first."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Impulso ENEM">
+  <meta
+    property="og:description"
+    content="Uma experiência de estudo adaptativa, responsiva e offline-first."
+  >
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Enem Questões">
+  <meta name="apple-mobile-web-app-title" content="Impulso ENEM">
   <link rel="apple-touch-icon" href="icons/Icon-192.png?v=icon-v2">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png?v=icon-v2"/>
 
-  <title>Enem Questões</title>
+  <title>Impulso ENEM — estudo inteligente</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    html, body {
+      background: #f6f5f0;
+      margin: 0;
+      min-height: 100%;
+    }
+
+    #loading {
+      align-items: center;
+      color: #173f3c;
+      display: flex;
+      flex-direction: column;
+      font: 700 13px/1.4 Arial, sans-serif;
+      inset: 0;
+      justify-content: center;
+      letter-spacing: 0.08em;
+      position: fixed;
+    }
+
+    #loading-mark {
+      align-items: center;
+      background: #173f3c;
+      border-radius: 18px;
+      color: #d7f47a;
+      display: flex;
+      font-size: 34px;
+      height: 58px;
+      justify-content: center;
+      margin-bottom: 16px;
+      width: 58px;
+    }
+  </style>
 </head>
 <body>
+  <div id="loading" role="status" aria-live="polite">
+    <div id="loading-mark">↗</div>
+    IMPULSO ENEM
+  </div>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader
@@ -42,5 +89,10 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      document.getElementById('loading')?.remove();
+    });
+  </script>
 </body>
 </html>

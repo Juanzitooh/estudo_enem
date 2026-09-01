@@ -67,25 +67,25 @@ class AppTheme {
   const AppTheme._();
 
   static const AppPalette lightPalette = AppPalette(
-    background: Color(0xFFF5F7F6),
+    background: Color(0xFFF6F5F0),
     surface: Color(0xFFFFFFFF),
-    text: Color(0xFF15221B),
-    muted: Color(0xFF5A6A61),
-    accent: Color(0xFF0A7A52),
-    success: Color(0xFF1F8A4C),
-    warning: Color(0xFFA35F00),
-    error: Color(0xFFB3261E),
+    text: Color(0xFF173230),
+    muted: Color(0xFF60716D),
+    accent: Color(0xFF173F3C),
+    success: Color(0xFF397A57),
+    warning: Color(0xFFB65C3B),
+    error: Color(0xFFB33C32),
   );
 
   static const AppPalette darkPalette = AppPalette(
-    background: Color(0xFF0E1512),
-    surface: Color(0xFF15211C),
-    text: Color(0xFFE8F2EC),
-    muted: Color(0xFFA5B9AF),
-    accent: Color(0xFF5DC79D),
-    success: Color(0xFF4CCF77),
-    warning: Color(0xFFF2B34D),
-    error: Color(0xFFFF897D),
+    background: Color(0xFF0E1918),
+    surface: Color(0xFF162421),
+    text: Color(0xFFF1F5EC),
+    muted: Color(0xFFAAB9B4),
+    accent: Color(0xFFD7F47A),
+    success: Color(0xFF80D19B),
+    warning: Color(0xFFFF9A78),
+    error: Color(0xFFFF8A80),
   );
 
   static ThemeData light() => _buildTheme(
@@ -112,6 +112,8 @@ class AppTheme {
     );
     final scheme = baseScheme.copyWith(
       primary: palette.accent,
+      secondary: const Color(0xFFD7F47A),
+      tertiary: const Color(0xFFFF8E70),
       surface: palette.surface,
       onSurface: palette.text,
       error: palette.error,
@@ -133,21 +135,24 @@ class AppTheme {
       textTheme: Typography.material2021().black.apply(
             bodyColor: palette.text,
             displayColor: palette.text,
+            fontFamily: 'sans-serif',
           ),
       cardTheme: CardThemeData(
         color: palette.surface,
-        elevation: 0.5,
+        elevation: 1.5,
+        shadowColor: palette.text.withValues(alpha: 0.08),
+        margin: EdgeInsets.zero,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-          side: BorderSide(color: palette.muted.withValues(alpha: 0.16)),
+          borderRadius: BorderRadius.circular(22),
+          side: BorderSide(color: palette.muted.withValues(alpha: 0.12)),
         ),
       ),
       appBarTheme: AppBarTheme(
         backgroundColor: palette.surface,
         foregroundColor: palette.text,
         surfaceTintColor: Colors.transparent,
-        elevation: 0.5,
-        shadowColor: palette.muted.withValues(alpha: 0.16),
+        elevation: 0,
+        shadowColor: Colors.transparent,
       ),
       dividerColor: palette.muted.withValues(alpha: 0.25),
       inputDecorationTheme: InputDecorationTheme(
@@ -155,11 +160,15 @@ class AppTheme {
         fillColor: palette.surface,
         labelStyle: TextStyle(color: palette.muted),
         helperStyle: TextStyle(color: palette.muted),
-        border: const OutlineInputBorder(),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
+        ),
         enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
           borderSide: BorderSide(color: palette.muted.withValues(alpha: 0.42)),
         ),
         focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
           borderSide: BorderSide(color: palette.accent, width: 1.8),
         ),
       ),
@@ -167,12 +176,29 @@ class AppTheme {
         style: ElevatedButton.styleFrom(
           backgroundColor: palette.accent,
           foregroundColor: onPrimary,
+          elevation: 0,
+          padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 17),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(14),
+          ),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           foregroundColor: palette.accent,
           side: BorderSide(color: palette.accent.withValues(alpha: 0.55)),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(14),
+          ),
+        ),
+      ),
+      navigationBarTheme: NavigationBarThemeData(
+        elevation: 0,
+        backgroundColor: palette.surface,
+        indicatorColor: scheme.secondary.withValues(alpha: 0.34),
+        labelTextStyle: WidgetStatePropertyAll(
+          TextStyle(color: palette.text, fontWeight: FontWeight.w600),
         ),
       ),
       sliderTheme: SliderThemeData(

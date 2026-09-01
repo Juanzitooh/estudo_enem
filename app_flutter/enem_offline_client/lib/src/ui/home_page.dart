@@ -21,6 +21,42 @@ import '../update/content_updater.dart';
 
 part 'home_page_tabs_profile.dart';
 part 'home_page_advanced_cards.dart';
+part 'home_page_dashboard.dart';
+
+class _AppDestination {
+  const _AppDestination({
+    required this.label,
+    required this.icon,
+    required this.selectedIcon,
+  });
+
+  final String label;
+  final IconData icon;
+  final IconData selectedIcon;
+}
+
+const List<_AppDestination> _appDestinations = [
+  _AppDestination(
+    label: 'Início',
+    icon: Icons.space_dashboard_outlined,
+    selectedIcon: Icons.space_dashboard_rounded,
+  ),
+  _AppDestination(
+    label: 'Aulas',
+    icon: Icons.auto_stories_outlined,
+    selectedIcon: Icons.auto_stories_rounded,
+  ),
+  _AppDestination(
+    label: 'Questões',
+    icon: Icons.bolt_outlined,
+    selectedIcon: Icons.bolt_rounded,
+  ),
+  _AppDestination(
+    label: 'Perfil',
+    icon: Icons.person_outline_rounded,
+    selectedIcon: Icons.person_rounded,
+  ),
+];
 
 class _AdaptiveSlot {
   const _AdaptiveSlot({
@@ -105,9 +141,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   static const Duration _autoUpdateInterval = Duration(minutes: 5);
   static const Duration _autoUpdateResumeDebounce = Duration(minutes: 1);
-  static const int _tabAulas = 0;
-  static const int _tabQuestoes = 1;
-  static const int _tabPerfil = 2;
+  static const int _tabInicio = 0;
+  static const int _tabAulas = 1;
+  static const int _tabQuestoes = 2;
+  static const int _tabPerfil = 3;
 
   final LocalDatabase _localDatabase = LocalDatabase();
   final TextEditingController _manifestController = TextEditingController(
@@ -244,7 +281,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   String _profileThemeMode = profileThemeModeSystem;
   double _profileFontScale = profileFontScaleDefault;
   DateTime? _lastAutoUpdateCheckAt;
-  int _selectedTabIndex = _tabQuestoes;
+  int _selectedTabIndex = _tabInicio;
   int _reelCurrentIndex = 0;
   List<_ReelQuestionEntry> _plannerReels = const [];
   DateTime? _reelQuestionStartedAt;
@@ -595,6 +632,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   }
 
   String _tabTitle() {
+    if (_selectedTabIndex == _tabInicio) {
+      return 'Visão geral';
+    }
     if (_selectedTabIndex == _tabQuestoes) {
       return 'Questões para você';
     }
@@ -605,6 +645,15 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       return 'Perfil e configurações';
     }
     return 'Enem Questões';
+  }
+
+  void _toggleTheme() {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final nextMode = isDark ? profileThemeModeLight : profileThemeModeDark;
+    setState(() {
+      _profileThemeMode = nextMode;
+    });
+    widget.onAppearanceChanged?.call(nextMode, _profileFontScale);
   }
 
   String _normalizeAreaForQuestionFilter(String value) {
@@ -648,7 +697,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     return _plannerReels[_reelCurrentIndex];
   }
 
-  bool get _hasConceptDiagnosticSession => _conceptDiagnosticQuestions.isNotEmpty;
+  bool get _hasConceptDiagnosticSession =>
+      _conceptDiagnosticQuestions.isNotEmpty;
 
   bool _isConceptDiagnosticSourceQuestion(String questionId) {
     return _conceptDiagnosticSourceQuestionId.trim().isNotEmpty &&
@@ -693,7 +743,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     _conceptDiagnosticSourceQuestionId = sourceQuestionId;
     _conceptDiagnosticConceptId = session.conceptId;
     _conceptDiagnosticConceptLabel = session.conceptLabel;
-    _conceptDiagnosticQuestions = List<QuestionCardItem>.from(session.questions);
+    _conceptDiagnosticQuestions =
+        List<QuestionCardItem>.from(session.questions);
     _conceptDiagnosticCurrentIndex = 0;
     _conceptDiagnosticAcertos = 0;
     _conceptDiagnosticErros = 0;
@@ -879,7 +930,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       priorityBySkill[normalizedSkill] = item;
     }
 
-    final conceptCandidates = await _localDatabase.loadConceptQuestionCandidates(
+    final conceptCandidates =
+        await _localDatabase.loadConceptQuestionCandidates(
       db,
       conceptLimit: 8,
       perConceptQuestionLimit: 12,
@@ -1726,8 +1778,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           sourceQuestionId: question.id,
           session: conceptDiagnosticSession,
         );
-        _status =
-            'Erro registrado no reels. Diagnóstico rápido iniciado (${_conceptDiagnosticQuestions.length} questão(ões)) em ${_conceptDiagnosticConceptLabel}.';
+        _status = 'Erro registrado no reels. Diagnóstico rápido iniciado '
+            '(${_conceptDiagnosticQuestions.length} questão(ões)) em '
+            '$_conceptDiagnosticConceptLabel.';
       });
     } catch (error) {
       if (!mounted) {
@@ -1764,9 +1817,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         localDatabase: _localDatabase,
         manifestUri: Uri.parse(manifestText),
       );
-      final result = await updater
-          .checkAndUpdate()
-          .timeout(const Duration(minutes: 3));
+      final result =
+          await updater.checkAndUpdate().timeout(const Duration(minutes: 3));
       await _refreshStats();
 
       if (!mounted) {
@@ -3003,15 +3055,14 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     ];
     final evidenceSnippets =
         (errorProfile?.evidence ?? const <SkillErrorEvidence>[])
-        .where((item) => item.errorCount > 0 && item.totalCount > 0)
-        .take(5)
-        .map(
-          (item) =>
-              '${item.evidenceType}:${item.evidenceValue} '
-              '(${(item.errorRate * 100).toStringAsFixed(0)}%, '
-              '${item.errorCount}/${item.totalCount})',
-        )
-        .toList();
+            .where((item) => item.errorCount > 0 && item.totalCount > 0)
+            .take(5)
+            .map(
+              (item) => '${item.evidenceType}:${item.evidenceValue} '
+                  '(${(item.errorRate * 100).toStringAsFixed(0)}%, '
+                  '${item.errorCount}/${item.totalCount})',
+            )
+            .toList();
 
     late final String prompt;
     late final String successMessage;
@@ -3117,49 +3168,16 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    final tabBody = _selectedTabIndex == _tabAulas
-        ? _buildAulasTab()
-        : _selectedTabIndex == _tabQuestoes
-            ? _buildReelsTab()
-            : _selectedTabIndex == _tabPerfil
-                ? _buildPerfilTab()
-                : _buildReelsTab();
+    final tabBody = _selectedTabIndex == _tabInicio
+        ? _buildDashboardTab()
+        : _selectedTabIndex == _tabAulas
+            ? _buildAulasTab()
+            : _selectedTabIndex == _tabQuestoes
+                ? _buildReelsTab()
+                : _selectedTabIndex == _tabPerfil
+                    ? _buildPerfilTab()
+                    : _buildReelsTab();
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(_tabTitle()),
-      ),
-      body: Column(
-        children: [
-          if (_busy) const LinearProgressIndicator(),
-          Expanded(child: tabBody),
-        ],
-      ),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _selectedTabIndex,
-        onDestinationSelected: (index) {
-          setState(() {
-            _selectedTabIndex = index;
-          });
-        },
-        destinations: const [
-          NavigationDestination(
-            icon: Icon(Icons.menu_book_outlined),
-            selectedIcon: Icon(Icons.menu_book),
-            label: 'Aulas',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.smart_display_outlined),
-            selectedIcon: Icon(Icons.smart_display),
-            label: 'Questões',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.person_outline),
-            selectedIcon: Icon(Icons.person),
-            label: 'Perfil',
-          ),
-        ],
-      ),
-    );
+    return _buildResponsiveShell(tabBody);
   }
 }
