@@ -153,7 +153,8 @@ class _LessonPlayerPageState extends State<LessonPlayerPage> {
   Future<void> _persistLessonQuestionAttempts(LessonPlayerData lesson) async {
     final attempts = <LessonQuestionAttemptInput>[];
     for (final question in lesson.questions) {
-      final selected = (_answersByQuestion[question.id] ?? '').trim().toUpperCase();
+      final selected =
+          (_answersByQuestion[question.id] ?? '').trim().toUpperCase();
       if (selected.isEmpty) {
         continue;
       }
@@ -296,7 +297,8 @@ class _LessonPlayerPageState extends State<LessonPlayerPage> {
               style: TextStyle(fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: 8),
-            if (contextData.window.isNotEmpty) Text('Janela: ${contextData.window}'),
+            if (contextData.window.isNotEmpty)
+              Text('Janela: ${contextData.window}'),
             const SizedBox(height: 8),
             ...contextData.events.map(
               (event) => Padding(
@@ -345,7 +347,8 @@ class _LessonPlayerPageState extends State<LessonPlayerPage> {
                       '${example.title}${example.kind.isEmpty ? '' : ' (${example.kind})'}',
                       style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
-                    if (example.scenario.isNotEmpty) Text('Cenário: ${example.scenario}'),
+                    if (example.scenario.isNotEmpty)
+                      Text('Cenário: ${example.scenario}'),
                     if (example.application.isNotEmpty)
                       Text('Aplicação: ${example.application}'),
                     if (example.conclusion.isNotEmpty)
@@ -454,26 +457,28 @@ class _LessonPlayerPageState extends State<LessonPlayerPage> {
             const SizedBox(height: 8),
             Text(question.statement),
             const SizedBox(height: 10),
-            ...question.options.map((option) {
-              final value = option.id;
-              final selectedThisOption = selected == value;
-              return RadioListTile<String>(
-                dense: true,
-                contentPadding: EdgeInsets.zero,
-                title: Text('${option.id}) ${option.text}'),
-                value: value,
-                groupValue: selected,
-                onChanged: _submitted
-                    ? null
-                    : (next) async {
-                        if (next == null) {
-                          return;
-                        }
-                        await _onSelectAlternative(question.id, next, lesson);
-                      },
-                selected: selectedThisOption,
-              );
-            }),
+            RadioGroup<String>(
+              groupValue: selected,
+              onChanged: (next) async {
+                if (_submitted || next == null) {
+                  return;
+                }
+                await _onSelectAlternative(question.id, next, lesson);
+              },
+              child: Column(
+                children: question.options.map((option) {
+                  final value = option.id;
+                  return RadioListTile<String>(
+                    dense: true,
+                    contentPadding: EdgeInsets.zero,
+                    title: Text('${option.id}) ${option.text}'),
+                    value: value,
+                    enabled: !_submitted,
+                    selected: selected == value,
+                  );
+                }).toList(),
+              ),
+            ),
             if (showResult)
               Container(
                 width: double.infinity,
@@ -546,9 +551,9 @@ class _LessonPlayerPageState extends State<LessonPlayerPage> {
             return const Center(child: CircularProgressIndicator());
           }
           if (snapshot.hasError || !snapshot.hasData) {
-            return Center(
+            return const Center(
               child: Padding(
-                padding: const EdgeInsets.all(24),
+                padding: EdgeInsets.all(24),
                 child: Text(
                   'Não foi possível carregar a aula. Verifique o asset e tente novamente.',
                 ),
@@ -651,15 +656,15 @@ class _LessonPlayerPageState extends State<LessonPlayerPage> {
                         runSpacing: 8,
                         children: [
                           FilledButton(
-                            onPressed:
-                                _submitted ? null : () async => _onSubmit(lesson),
+                            onPressed: _submitted
+                                ? null
+                                : () async => _onSubmit(lesson),
                             child: const Text('Finalizar e corrigir'),
                           ),
                           OutlinedButton(
-                            onPressed:
-                                answered == 0 && !_submitted
-                                    ? null
-                                    : () async => _onReset(lesson),
+                            onPressed: answered == 0 && !_submitted
+                                ? null
+                                : () async => _onReset(lesson),
                             child: const Text('Refazer'),
                           ),
                         ],

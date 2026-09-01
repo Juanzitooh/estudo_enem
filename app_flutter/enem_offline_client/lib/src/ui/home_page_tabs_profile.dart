@@ -15,7 +15,7 @@ extension _HomePageTabsProfileExt on _HomePageState {
     if (!mounted) {
       return;
     }
-    setState(() {
+    _updateState(() {
       _status = 'Aula demo visualizada.';
     });
   }
@@ -482,7 +482,7 @@ extension _HomePageTabsProfileExt on _HomePageState {
                                 ],
                               ),
                             ),
-                          ),
+                          );
                         },
                       ),
                     ],
@@ -990,9 +990,11 @@ extension _HomePageTabsProfileExt on _HomePageState {
                             children: alternatives
                                 .map(
                                   (option) => OutlinedButton(
-                                    onPressed: _busy || _conceptDiagnosticRespondida
+                                    onPressed: _busy ||
+                                            _conceptDiagnosticRespondida
                                         ? null
-                                        : () => _responderConceptDiagnostic(option),
+                                        : () =>
+                                            _responderConceptDiagnostic(option),
                                     child: Text(option),
                                   ),
                                 )
@@ -1026,7 +1028,8 @@ extension _HomePageTabsProfileExt on _HomePageState {
                               ),
                             ),
                             OutlinedButton(
-                              onPressed: _busy ? null : _encerrarConceptDiagnostic,
+                              onPressed:
+                                  _busy ? null : _encerrarConceptDiagnostic,
                               child: const Text('Encerrar diagnóstico'),
                             ),
                           ],
@@ -1105,7 +1108,8 @@ extension _HomePageTabsProfileExt on _HomePageState {
                           const SizedBox(height: 6),
                           Text(feedback),
                         ],
-                        if (_isConceptDiagnosticSourceQuestion(question.id)) ...[
+                        if (_isConceptDiagnosticSourceQuestion(
+                            question.id)) ...[
                           const SizedBox(height: 6),
                           const Text(
                             'Diagnóstico rápido ativo acima para reforçar o conceito deste erro.',
