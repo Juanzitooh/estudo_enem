@@ -4,6 +4,7 @@
 - Conteúdo e curadoria: `conteudo/`, `questoes/`, `aulas/`, `templates/`, `prompts/`.
 - Pipeline de publicação: `scripts/build_assets_release.py` e artefatos em `app_flutter/releases/`.
 - Consumo no cliente: `app_flutter/enem_offline_client/` (SQLite local + importação de conteúdo).
+- Apresentação web: dashboard e shell responsivo no mesmo cliente Flutter, sem duplicação de regras de produto.
 - Planejamento determinístico: `planner/` e scripts associados em `scripts/`.
 - Camada conceitual incremental: contratos de grafo (`conceito -> questão -> módulo`) para o feed adaptativo.
 
@@ -91,3 +92,10 @@
 - Conteúdo deve ser versionado e auditável.
 - Atualização deve preservar funcionamento offline entre releases.
 - Operação atual por habilidade deve seguir funcional durante a transição para feed híbrido.
+
+## Publicação da vitrine web
+- Artefato: build estático Flutter em `app_flutter/enem_offline_client/build/web/`.
+- Persistência: SQLite/Wasm local no navegador; a demonstração não depende de API.
+- Publicação canônica: `.github/workflows/deploy-pages.yml` no GitHub Pages.
+- Compatibilidade: `base-href` derivado pelo workflow para suportar o subdiretório do repositório.
+- Pipeline local existente (`deploy.sh`/`dist.sh`) permanece responsável por conteúdo versionado e releases multiplataforma.

@@ -49,3 +49,11 @@ Critérios de saída:
 - classificação de módulos por maturidade;
 - revisão editorial 2019-2026 concluída;
 - trilhas transversais por perfil publicadas.
+
+## M7 - Vitrine web e portfólio
+Status: `concluido`
+Critérios de saída:
+- dashboard web responsivo com identidade visual consistente;
+- demonstração navegável sem backend obrigatório;
+- workflow de publicação estática documentado e validado;
+- build web, análise estática e testes automatizados aprovados.

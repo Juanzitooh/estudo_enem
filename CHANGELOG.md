@@ -7,6 +7,10 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Dashboard inicial responsivo do Impulso ENEM com navegação lateral no desktop, navegação inferior no mobile, métricas, plano semanal, foco recomendado e jornada de estudo.
+- Identidade visual renovada com design tokens, temas claro/escuro, componentes responsivos e tela de carregamento da PWA.
+- Workflow `.github/workflows/deploy-pages.yml` para validar, compilar e publicar automaticamente o site no GitHub Pages.
+- Experiência de demonstração local acessível pela entrada do site, sem backend obrigatório.
 - Estrutura base do projeto para estudo do ENEM (`sources/`, `matriz/`, `plano/`, `prompts/`).
 - Conversão da Matriz de Referência do INEP para Markdown em `matriz/matriz_referencia_enem.md`.
 - Arquivos derivados por área em `matriz/habilidades_por_area/`.
@@ -62,6 +66,9 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T2.13` concluída no app com fluxo de prova oficial ENEM por `ano/dia`, caderno em sequência fechada e bloqueio de respostas no reels enquanto prova oficial estiver ativa.
 
 ### Changed
+- README reposicionado como apresentação de portfólio, com execução web e publicação estática documentadas.
+- Player de aula migrado para `RadioGroup`, com navegação por teclado e sem uso das APIs obsoletas de seleção.
+- Card do planner corrigido para restaurar análise, testes e build do cliente Flutter.
 - `README.md` ampliado com tipos de interação, fluxo semanal/diário e práticas de privacidade.
 - `agents.global.md` e `prompts/agents.global.md` alinhados para integrar README, CHANGELOG e regras globais.
 - `teste_aula_habilidade_base_h18.md` reestruturado no padrão de template definitivo e com imagens incorporadas.

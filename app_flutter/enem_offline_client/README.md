@@ -1,6 +1,7 @@
-# enem_offline_client
+# Impulso ENEM — cliente Flutter
 
-MVP Flutter para estudo ENEM offline.
+Cliente multiplataforma offline-first para estudo ENEM. A versão web inclui um
+dashboard responsivo preparado para demonstração pública e portfólio.
 
 ## Rodar
 
@@ -8,6 +9,23 @@ MVP Flutter para estudo ENEM offline.
 flutter pub get
 flutter run -d linux
 ```
+
+Para desenvolver a versão web:
+
+```bash
+flutter pub get
+flutter run -d chrome
+```
+
+Para gerar um site estático:
+
+```bash
+flutter build web --release
+```
+
+O resultado fica em `build/web/`. Na raiz do repositório, o workflow
+`.github/workflows/deploy-pages.yml` publica essa pasta automaticamente no
+GitHub Pages a cada push relevante para `main`.
 
 ## Configuração padrão (manifest + banco)
 

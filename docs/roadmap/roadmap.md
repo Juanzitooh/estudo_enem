@@ -52,3 +52,9 @@ Status: `bloqueado`
 - Trilha transversal entre módulos.
 - Revisão editorial 2019 -> 2026 por módulo.
 - Metadados de atualização final e gate de publicação.
+
+## R7 - Vitrine web e portfólio
+Status: `concluido`
+- Apresentar o produto com uma experiência web responsiva e visualmente autoral.
+- Permitir exploração demonstrativa sem backend obrigatório.
+- Automatizar a publicação estática no GitHub Pages.

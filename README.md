@@ -1,6 +1,53 @@
-# estudo_enem
+# Impulso ENEM
 
-Organização de estudo para o ENEM baseada na Matriz de Referência do INEP, com fluxo de uso no Codex.
+Plataforma de estudos offline-first com questões, aulas e planejamento
+adaptativo. O cliente Flutter foi desenhado para funcionar como produto e como
+vitrine de front-end: interface responsiva, tema claro/escuro, navegação
+adaptativa e dados persistidos localmente no navegador.
+
+[Ver demonstração online](https://juanzitooh.github.io/estudo_enem/)
+
+## Destaques do front-end
+
+- dashboard responsivo com layouts específicos para desktop e mobile;
+- identidade visual e componentes centralizados em um design system Flutter;
+- estados vazios demonstráveis sem backend;
+- acessibilidade com contraste, semântica e escala de texto;
+- PWA instalável com SQLite no navegador;
+- publicação automática e gratuita pelo GitHub Pages.
+
+## Rodar o site localmente
+
+```bash
+cd app_flutter/enem_offline_client
+flutter pub get
+flutter run -d chrome
+```
+
+O botão **Explorar demonstração** carrega uma base local para navegar pelos
+fluxos sem configurar servidor ou API.
+
+## Publicar no GitHub Pages
+
+1. Faça push para a branch `main`.
+2. No GitHub, abra **Settings > Pages**.
+3. Em **Source**, selecione **GitHub Actions**.
+
+O workflow [deploy-pages.yml](.github/workflows/deploy-pages.yml) valida,
+compila e publica o site automaticamente. Para outra hospedagem estática:
+
+```bash
+cd app_flutter/enem_offline_client
+flutter build web --release
+```
+
+Publique o conteúdo de `build/web/` no Netlify, Cloudflare Pages, Vercel ou em
+qualquer servidor estático.
+
+## Sobre o projeto
+
+Organização de estudo para o ENEM baseada na Matriz de Referência do INEP, com
+fluxo de uso no Codex.
 
 ## Objetivo
 

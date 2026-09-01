@@ -81,3 +81,69 @@ Aceite: checklist mínimo de assinatura e validação publicado.
 Aceite: catálogo completo classificado.
 - [ ] T6.2 Publicar trilhas transversais por perfil/carga horária.
 Aceite: trilhas validadas com critérios de progressão.
+
+## M7 - Vitrine web e portfólio
+
+### T7.1 - Criar vitrine web responsiva e deploy estático
+
+Status: `done`
+
+Tipo:
+- `impl`
+
+Depends on:
+- `none`
+
+Arquivos-alvo:
+- `app_flutter/enem_offline_client/lib/src/ui/`
+- `app_flutter/enem_offline_client/lib/main.dart`
+- `app_flutter/enem_offline_client/web/`
+- `.github/workflows/deploy-pages.yml`
+- `README.md`
+- `app_flutter/enem_offline_client/README.md`
+- `docs/roadmap/`
+- `CHANGELOG.md`
+
+Objetivo:
+- transformar o cliente Flutter Web em uma vitrine pública de design e produto,
+  com publicação simples em hospedagem estática.
+
+Escopo:
+- criar dashboard inicial responsivo e shell adaptativo para desktop/mobile;
+- consolidar identidade visual, estados de interação e experiência de demo;
+- configurar GitHub Pages e documentar execução/publicação;
+- corrigir bloqueios existentes que impeçam análise, teste ou build web.
+
+Fora de escopo:
+- criar backend, autenticação remota ou sincronização em nuvem;
+- reescrever as regras pedagógicas e o banco de questões;
+- alterar os fluxos nativos de release Linux, Windows ou Android.
+
+Passos de execução:
+1. Validar o estado atual do app e os bloqueios do build web.
+2. Implementar a nova camada visual sobre os fluxos existentes.
+3. Adicionar publicação estática automatizada e documentação curta.
+4. Executar formatação, análise, testes e build web de release.
+
+Saída esperada:
+- site Flutter responsivo, demonstrável e pronto para GitHub Pages.
+
+Validação automatica:
+- `dart format --output=none --set-exit-if-changed lib test`;
+- `flutter analyze`;
+- `flutter test`;
+- `flutter build web --release`.
+
+Gate manual:
+- `none`
+
+Criterio de aceite:
+- dashboard apresenta proposta, métricas e ações em desktop/mobile;
+- visitante consegue carregar a demo local e navegar sem backend;
+- workflow de Pages gera e publica o build estático;
+- todas as validações automatizadas finalizam sem erro.
+
+Referencias:
+- `docs/roadmap/vision.md`
+- `docs/roadmap/architecture.md`
+- `app_flutter/enem_offline_client/README.md`

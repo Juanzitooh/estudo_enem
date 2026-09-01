@@ -236,3 +236,14 @@ Decisão:
 - iniciar caderno em ordem fixa (`number ASC`, `variation ASC`) sem embaralhamento;
 - registrar respostas da prova com `answer_source='prova_oficial'` e bloquear respostas no reels enquanto sessão oficial estiver ativa.
 Impacto: o app passa a suportar simulação fiel de caderno ENEM no modo oficial sem intervenções adaptativas durante a resolução.
+
+## D-026 - Web pública como vitrine do produto
+Data: 2026-08-31
+Status: aceito
+Contexto: o cliente Flutter já concentrava os fluxos do produto, mas a entrada era utilitária e o deploy web estava orientado ao uso local, dificultando sua apresentação como projeto de portfólio.
+Decisão:
+- manter uma única base Flutter para web, desktop e mobile;
+- adicionar uma entrada visual responsiva que apresente proposta, métricas e atalhos para os fluxos reais;
+- manter a demonstração funcional sem backend por meio do SQLite local no navegador;
+- adotar GitHub Pages como publicação estática automática, preservando o pipeline local existente.
+Impacto: o repositório ganha uma experiência pública demonstrável e um fluxo simples de publicação sem introduzir backend ou duplicar a aplicação.

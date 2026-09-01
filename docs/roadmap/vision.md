@@ -8,6 +8,7 @@ Construir uma plataforma de estudo ENEM offline-first, orientada por desempenho 
 - diagnóstico pós-erro com recuperação direcionada;
 - três tipos de aula integrados ao fluxo (habilidade, módulo completo e recuperação rápida);
 - distribuição open source via app Flutter.
+- experiência web pública que também funcione como vitrine de design e produto.
 
 ## Princípios
 - Offline por padrão; internet apenas para atualização de conteúdo.
@@ -16,3 +17,4 @@ Construir uma plataforma de estudo ENEM offline-first, orientada por desempenho 
 - Modelagem incremental de conceitos (Q-matrix + dependências) sem bloquear a operação por habilidade.
 - Conceitos fundacionais (ex.: interpretação/compreensão e matemática básica) com peso estrutural maior na priorização.
 - Evolução incremental com checkpoints curtos e auditáveis.
+- Interface responsiva, acessível e demonstrável sem backend obrigatório.
