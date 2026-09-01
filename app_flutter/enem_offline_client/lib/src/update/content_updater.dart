@@ -60,8 +60,7 @@ class ContentUpdater {
   }
 
   Future<ContentManifest> _fetchManifest() async {
-    final response =
-        await _client.get(manifestUri).timeout(_manifestTimeout);
+    final response = await _client.get(manifestUri).timeout(_manifestTimeout);
     if (response.statusCode != 200) {
       throw Exception('Falha ao baixar manifest: HTTP ${response.statusCode}');
     }

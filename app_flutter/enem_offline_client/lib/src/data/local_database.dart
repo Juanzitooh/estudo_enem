@@ -3162,8 +3162,8 @@ class LocalDatabase {
     );
     return rows.map((row) {
       final lastAttemptedRaw = (row['last_attempted_at'] ?? '').toString();
-      final lastAttemptedAt =
-          DateTime.tryParse(lastAttemptedRaw) ?? DateTime.fromMillisecondsSinceEpoch(0);
+      final lastAttemptedAt = DateTime.tryParse(lastAttemptedRaw) ??
+          DateTime.fromMillisecondsSinceEpoch(0);
       return LessonVersionAttemptSummary(
         lessonVersion: (row['lesson_version'] ?? '').toString(),
         attemptCount: _toInt(row['attempt_count']),
@@ -3863,7 +3863,8 @@ class LocalDatabase {
     if (normalizedSourceQuestionId.isEmpty) {
       return null;
     }
-    final safeLimit = questionLimit <= 0 ? 3 : questionLimit.clamp(1, 5).toInt();
+    final safeLimit =
+        questionLimit <= 0 ? 3 : questionLimit.clamp(1, 5).toInt();
     if (!await _hasConceptGraphTables(db)) {
       return null;
     }
@@ -3885,7 +3886,8 @@ class LocalDatabase {
       return null;
     }
 
-    final conceptId = _normalizeConceptId('${conceptRows.first['concept_id'] ?? ''}');
+    final conceptId =
+        _normalizeConceptId('${conceptRows.first['concept_id'] ?? ''}');
     final conceptLabel = ('${conceptRows.first['concept_label'] ?? ''}').trim();
     if (conceptId.isEmpty) {
       return null;

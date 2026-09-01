@@ -882,9 +882,10 @@ extension _HomePageAdvancedCardsExt on _HomePageState {
         availableExamYears.contains(_provaOficialAnoSelecionado)
             ? _provaOficialAnoSelecionado
             : null;
-    final selectedExamDay = availableExamDays.contains(_provaOficialDiaSelecionado)
-        ? _provaOficialDiaSelecionado
-        : null;
+    final selectedExamDay =
+        availableExamDays.contains(_provaOficialDiaSelecionado)
+            ? _provaOficialDiaSelecionado
+            : null;
     final examSessionAnswered = _treinoAcertos + _treinoErros;
 
     return Card(
