@@ -6,6 +6,7 @@ BLOCKERS:
 - T3.11 segue bloqueada até a catalogação completa dos 6 volumes.
 
 RECENT_CHANGES:
+- 2026-09-01 - `T7.2` concluída: Pages habilitado com origem em GitHub Actions, actions oficiais atualizadas para Node 24 e vitrine publicada com workflow remoto aprovado e resposta HTTP 200.
 - 2026-08-31 - `T7.1` concluída com dashboard responsivo, shell adaptativo desktop/mobile, demonstração local, identidade visual renovada, PWA e publicação automatizada no GitHub Pages; validações de formatação, análise, testes de legibilidade e build web aprovadas.
 - 2026-03-06 - `T2.13` concluída no app com fluxo de prova oficial por `ano/dia`: montagem de caderno em ordem fechada, resolução da sessão sem roteamento adaptativo durante a prova e bloqueio de respostas no reels enquanto a prova está ativa.
 - 2026-03-06 - `T2.12` concluída com contrato canônico de modos de sessão (`adaptativo` vs `prova_oficial`) em `docs/roadmap/references/t2_12_contrato_modos_sessao.md`, incluindo parâmetros mínimos (`ano`, `dia`, `ordem`) e desligamento adaptativo obrigatório na prova oficial.

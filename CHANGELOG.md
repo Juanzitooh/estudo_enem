@@ -66,6 +66,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 - `T2.13` concluída no app com fluxo de prova oficial ENEM por `ano/dia`, caderno em sequência fechada e bloqueio de respostas no reels enquanto prova oficial estiver ativa.
 
 ### Changed
+- Publicação da vitrine corrigida com o GitHub Pages habilitado no modo Actions e actions oficiais atualizadas para versões compatíveis com Node 24.
 - README reposicionado como apresentação de portfólio, com execução web e publicação estática documentadas.
 - Player de aula migrado para `RadioGroup`, com navegação por teclado e sem uso das APIs obsoletas de seleção.
 - Card do planner corrigido para restaurar análise, testes e build do cliente Flutter.

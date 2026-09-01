@@ -147,3 +147,59 @@ Referencias:
 - `docs/roadmap/vision.md`
 - `docs/roadmap/architecture.md`
 - `app_flutter/enem_offline_client/README.md`
+
+### T7.2 - Corrigir bootstrap e runtime do deploy GitHub Pages
+
+Status: `done`
+
+Tipo:
+- `impl`
+
+Depends on:
+- `T7.1`
+
+Arquivos-alvo:
+- `.github/workflows/deploy-pages.yml`
+- `docs/roadmap/`
+- `CHANGELOG.md`
+
+Objetivo:
+- tornar a publicação da vitrine operacional no GitHub Pages e compatível com
+  o runtime Node 24 dos runners.
+
+Escopo:
+- criar a configuração do GitHub Pages com origem em GitHub Actions;
+- atualizar as actions oficiais de Pages para versões baseadas em Node 24;
+- validar o pipeline remoto e a URL pública gerada.
+
+Fora de escopo:
+- alterar a interface, conteúdo ou regras pedagógicas do app;
+- adicionar provedor de hospedagem ou credencial permanente ao repositório.
+
+Passos de execução:
+1. Confirmar o 404 da API do Pages e as versões oficiais compatíveis.
+2. Habilitar o Pages no modo `workflow` pela API do GitHub.
+3. Atualizar e validar o workflow de build e deploy.
+4. Executar o pipeline remoto e verificar a URL publicada.
+
+Saída esperada:
+- site publicado automaticamente pelo workflow do GitHub Pages.
+
+Validação automatica:
+- parsing YAML de `.github/workflows/deploy-pages.yml`;
+- `flutter analyze`;
+- `flutter test`;
+- `flutter build web --release`;
+- execução bem-sucedida do workflow `Publicar site`.
+
+Gate manual:
+- `none`
+
+Criterio de aceite:
+- API do Pages retorna `build_type=workflow`;
+- workflow conclui build e deploy sem avisos de runtime Node 20;
+- URL pública responde com sucesso e entrega a vitrine.
+
+Referencias:
+- `.github/workflows/deploy-pages.yml`
+- `app_flutter/enem_offline_client/README.md`
